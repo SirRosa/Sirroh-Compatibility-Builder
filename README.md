@@ -45,9 +45,15 @@ Not all embedded bundles contain importable FBX/Blender rigs;
 mesh data/typetrees are not the same as a ready-to-use model.
 Raw binary resources are preserved even when a decoder fails.
 
-The extractor does **not** automatically publish recovered third-party source
-to the public repository. GitHub Actions artifacts expire after 30 days.
-Respect applicable mod licenses when distributing recovered content.
+The separate **Publish extracted mods to repository** workflow runs the same
+extractor and commits the results to `main/Extracted/`, retaining the input
+categories and `To Adapt` / `To Recreate` folders. This is deliberately a
+separate workflow from the artifact-only **Bulk decompile Valheim mod DLLs**.
+Run it again after updating the archive to replace the published output.
+
+The repository is public: recovered code and resources published to `Extracted/`
+are publicly visible. Respect original mod authors' licenses and rights.
+GitHub Actions artifacts from the artifact-only workflow expire after 30 days.
 
 To change or add input DLLs, replace the source ZIP; it can contain arbitrary
 folders and nested ZIPs. The classifier groups results by the original paths,
