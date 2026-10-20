@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace YamlDotNet.Serialization.TypeInspectors;
+
+internal class NamingConventionTypeInspector : TypeInspectorSkeleton
+{
+	private readonly ITypeInspector innerTypeDescriptor;
+
+	private readonly INamingConvention namingConvention;
+
+	public NamingConventionTypeInspector(ITypeInspector innerTypeDescriptor, INamingConvention namingConvention)
+	{
+		this.innerTypeDescriptor = innerTypeDescriptor ?? throw new ArgumentNullException("innerTypeDescriptor");
+		this.namingConvention = namingConvention ?? throw new ArgumentNullException("namingConvention");
+	}
+
+	public override string GetEnumName(Type enumType, string name)
+	{
+		return innerTypeDescriptor.GetEnumName(enumType, name);
+	}
+
+	public override string GetEnumValue(object enumValue)
+	{
+		return innerTypeDescriptor.GetEnumValue(enumValue);
+	}
+
+	public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)
+	{
+		return innerTypeDescriptor.GetProperties(type, container).Select((IPropertyDescriptor p) =>
+		{
+			YamlMemberAttribute customAttribute = p.GetCustomAttribute<YamlMemberAttribute>();
+			return (customAttribute != null && !customAttribute.ApplyNamingConventions) ? p : new PropertyDescriptor(p)
+			{
+				Name = namingConvention.Apply(p.Name)
+			};
+		});
+	}
+
+	public override bool HasParseMethod(Type type)
+	{
+		return innerTypeDescriptor.HasParseMethod(type);
+	}
+
+	public override object? Parse(string value, Type expectedType)
+	{
+		return innerTypeDescriptor.Parse(value, expectedType);
+	}
+}

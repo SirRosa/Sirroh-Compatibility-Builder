@@ -1,0 +1,4002 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 63,
+      "text": "private static BaseUnityPlugin Mod;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 95,
+      "text": "public void Setup(ConfigFile config, BaseUnityPlugin modInstance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 14,
+      "text": "[BepInPlugin(\"neobotics.valheim_mod.slayerskills\", \"SlayerSkills\", \"1.2.0\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 15,
+      "text": "[BepInProcess(\"valheim.exe\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 16,
+      "text": "[BepInProcess(\"valheim_server.exe\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 17,
+      "text": "public class SlayerSkills : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 558,
+      "text": "harmony = new Harmony(((BaseUnityPlugin)this).Info.Metadata.GUID);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 567,
+      "text": "ServerConfiguration.Instance.Setup(((BaseUnityPlugin)this).Config, (BaseUnityPlugin)(object)_modInstance);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 568,
+      "text": "Cfg.BepInExConfig((BaseUnityPlugin)(object)_modInstance);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 49,
+      "text": "public static void BepInExConfig(BaseUnityPlugin _instance)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1247,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1766,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1771,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1781,
+      "text": "\"name\": \"BepInEx.BepInProcess\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1789,
+      "text": "\"name\": \"BepInEx.BepInProcess\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4968,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.ServerConfiguration::Setup(BepInEx.Configuration.ConfigFile,BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4978,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6412,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.Cfg::BepInExConfig(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6418,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7505,
+      "text": "\"BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7515,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7516,
+      "text": "\"BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7741,
+      "text": "\"System.String BepInEx.BepInPlugin::get_GUID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7811,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7884,
+      "text": "\"System.Void neobotics.ModSdk.ServerConfiguration::Setup(BepInEx.Configuration.ConfigFile,BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7895,
+      "text": "\"System.Void neobotics.ValheimMods.Cfg::BepInExConfig(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3115,
+      "text": "// System.Void neobotics.ModSdk.ServerConfiguration::Setup(BepInEx.Configuration.ConfigFile,BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3125,
+      "text": "IL_0020: stsfld BepInEx.BaseUnityPlugin neobotics.ModSdk.ServerConfiguration::Mod"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3177,
+      "text": "IL_0000: ldsfld BepInEx.BaseUnityPlugin neobotics.ModSdk.ServerConfiguration::Mod"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3178,
+      "text": "IL_0005: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3179,
+      "text": "IL_000a: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3180,
+      "text": "IL_000f: callvirt System.String BepInEx.BepInPlugin::get_GUID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3427,
+      "text": "IL_005a: ldsfld BepInEx.BaseUnityPlugin neobotics.ModSdk.ServerConfiguration::Mod"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5154,
+      "text": "// System.Void neobotics.ValheimMods.Cfg::BepInExConfig(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5164,
+      "text": "IL_001d: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5183,
+      "text": "IL_006d: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5195,
+      "text": "IL_00a1: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5212,
+      "text": "IL_00e7: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5229,
+      "text": "IL_012a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5241,
+      "text": "IL_015a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5253,
+      "text": "IL_018a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5270,
+      "text": "IL_01cd: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5282,
+      "text": "IL_01fd: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5294,
+      "text": "IL_022d: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5306,
+      "text": "IL_025d: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5318,
+      "text": "IL_028d: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5330,
+      "text": "IL_02bd: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5347,
+      "text": "IL_02ff: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5359,
+      "text": "IL_032f: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5644,
+      "text": "IL_0007: call BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5645,
+      "text": "IL_000c: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5646,
+      "text": "IL_0011: callvirt System.String BepInEx.BepInPlugin::get_GUID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5667,
+      "text": "IL_0016: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5669,
+      "text": "IL_0020: callvirt System.Void neobotics.ModSdk.ServerConfiguration::Setup(BepInEx.Configuration.ConfigFile,BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5671,
+      "text": "IL_002a: call System.Void neobotics.ValheimMods.Cfg::BepInExConfig(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6780,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 14,
+      "text": "[HarmonyPatch(typeof(ZNet), \"StopAll\")]"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 17,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 28,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 27,
+      "text": "[HarmonyPatch(typeof(Localization), \"SetLanguage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 30,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 37,
+      "text": "[HarmonyPatch(typeof(Game), \"Start\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 40,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 48,
+      "text": "[HarmonyPatch(typeof(ZNetScene), \"Awake\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 51,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 59,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateTrophyList\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 62,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 97,
+      "text": "[HarmonyPatch(typeof(CharacterDrop), \"OnDeath\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 100,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(CharacterDrop), \"DropItems\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 140,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 174,
+      "text": "[HarmonyPatch(typeof(Ragdoll), \"SaveLootList\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 177,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(Ragdoll), \"SpawnLoot\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 226,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 244,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_Damage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 247,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 267,
+      "text": "[HarmonyPatch(typeof(Character), \"Damage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 270,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 314,
+      "text": "[HarmonyPatch(typeof(Player), \"Save\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 317,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 347,
+      "text": "[HarmonyPatch(typeof(Player), \"Start\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 350,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 396,
+      "text": "[HarmonyPatch(typeof(Player), \"OnDestroy\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 399,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 422,
+      "text": "[HarmonyPatch(typeof(Skills), \"LowerAllSkills\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 425,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 444,
+      "text": "[HarmonyPatch(typeof(Skills), \"CheatRaiseSkill\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 481,
+      "text": "[HarmonyPatch(typeof(Skills), \"CheatResetSkill\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 559,
+      "text": "harmony.PatchAll(Assembly.GetExecutingAssembly());"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1318,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1338,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1998,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2018,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2038,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2058,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2078,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2098,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2118,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2138,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2158,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2178,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2198,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2218,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2238,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2258,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2278,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2298,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5149,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7024,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7047,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7070,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7097,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7120,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7174,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7201,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7228,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7282,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7313,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7340,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7363,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7386,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7413,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7823,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5651,
+      "text": "IL_002a: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/ConfigurationManagerAttributes.cs",
+      "line": 6,
+      "text": "public delegate void CustomHotkeyDrawerFunc(ConfigEntryBase setting, ref bool isCurrentlyAcceptingInput);"
+    },
+    {
+      "file": "csharp/ConfigurationManagerAttributes.cs",
+      "line": 10,
+      "text": "public Action<ConfigEntryBase> CustomDrawer;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/InputCycler.cs",
+      "line": 11,
+      "text": "private DelegatedConfigEntry<KeyboardShortcut> keyAdvance;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/InputCycler.cs",
+      "line": 13,
+      "text": "private DelegatedConfigEntry<KeyboardShortcut> keyReferse;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/InputCycler.cs",
+      "line": 31,
+      "text": "public void Init(bool useMouseWheel, DelegatedConfigEntry<KeyboardShortcut> keyAdvance, DelegatedConfigEntry<KeyboardShortcut> keyReverse = null)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 59,
+      "text": "public static List<DelegatedConfigEntryBase> ServerDelegatedEntries = new List<DelegatedConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 61,
+      "text": "private static ConfigFile LocalConfig;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 65,
+      "text": "private static string ConfigFileName;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 95,
+      "text": "public void Setup(ConfigFile config, BaseUnityPlugin modInstance)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 101,
+      "text": "ConfigFileName = Path.GetFileName(LocalConfig.ConfigFilePath);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 107,
+      "text": "ConfigWatcher = Utils.CreateFileWatcher(LocalConfig.ConfigFilePath, LoadConfig);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 112,
+      "text": "if (!File.Exists(LocalConfig.ConfigFilePath))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 123,
+      "text": "Log.Error(\"Error loading configuration file \" + ConfigFileName);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 148,
+      "text": "DelegatedConfigEntryBase delegatedConfigEntryBase = ServerDelegatedEntries.Find((DelegatedConfigEntryBase e) => e.Name == name && e.Section == section);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 149,
+      "text": "if (delegatedConfigEntryBase != null)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 152,
+      "text": "delegatedConfigEntryBase.ServerValue = text;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 154,
+      "text": "ConfigEntryBase val = LocalConfig[section, name];"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 166,
+      "text": "foreach (DelegatedConfigEntryBase serverDelegatedEntry in ServerDelegatedEntries)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntryBase.cs",
+      "line": 3,
+      "text": "public class DelegatedConfigEntryBase"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 6,
+      "text": "public class DelegatedConfigEntry<T> : DelegatedConfigEntryBase"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 8,
+      "text": "private ConfigEntry<T> _entry;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 16,
+      "text": "public ConfigEntry<T> ConfigEntry"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 29,
+      "text": "Name = ((ConfigEntryBase)_entry).Definition.Key;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 30,
+      "text": "Section = ((ConfigEntryBase)_entry).Definition.Section;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 31,
+      "text": "ServerValue = ((ConfigEntryBase)_entry).GetSerializedValue();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 48,
+      "text": "public DelegatedConfigEntry(bool useServerDelegate = false)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 53,
+      "text": "public DelegatedConfigEntry(Action<object, EventArgs> delegateHandler, bool useServerDelegate = false)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 56,
+      "text": "Log.Trace(\"DelegatedConfigEntry\");"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 93,
+      "text": "((ConfigEntryBase)_entry).SetSerializedValue(ServerValue);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 99,
+      "text": "ServerValue = ((ConfigEntryBase)_entry).GetSerializedValue();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 125,
+      "text": "if (ConfigEntry is ConfigEntry<KeyboardShortcut> val)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 136,
+      "text": "if (ConfigEntry is ConfigEntry<KeyboardShortcut> val)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DelegatedConfigEntry.cs",
+      "line": 147,
+      "text": "if (ConfigEntry is ConfigEntry<KeyboardShortcut> val)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 150,
+      "text": "ConfigEntry<LogLevels> val = s as ConfigEntry<LogLevels>;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 154,
+      "text": "Instance.Info($\"Change {((ConfigEntryBase)val).Definition.Key} to {val.Value}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 11,
+      "text": "public static DelegatedConfigEntry<Logging.LogLevels> debugLevel = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 13,
+      "text": "public static DelegatedConfigEntry<int> trophyCap = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 15,
+      "text": "public static DelegatedConfigEntry<int> damageCap = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 17,
+      "text": "public static DelegatedConfigEntry<int> trophyDistance = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 19,
+      "text": "public static DelegatedConfigEntry<bool> damagePhysical = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 21,
+      "text": "public static DelegatedConfigEntry<bool> damageElemental = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 23,
+      "text": "public static DelegatedConfigEntry<bool> damageOther = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 25,
+      "text": "public static DelegatedConfigEntry<SlayerSkills.Points> assignPoints = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 27,
+      "text": "public static DelegatedConfigEntry<bool> lowerSkillsOnDeath = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 29,
+      "text": "public static DelegatedConfigEntry<bool> allowCheats = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 31,
+      "text": "public static DelegatedConfigEntry<bool> useCreatureLevel = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 33,
+      "text": "public static DelegatedConfigEntry<int> bossPoints = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 35,
+      "text": "public static DelegatedConfigEntry<bool> tamesSlay = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 37,
+      "text": "public static DelegatedConfigEntry<bool> tamesBuff = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 39,
+      "text": "public static DelegatedConfigEntry<Color> skillColor = null;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 60,
+      "text": "debugLevel = new DelegatedConfigEntry<Logging.LogLevels>(ChangeLogging);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 61,
+      "text": "debugLevel.ConfigEntry = _instance.Config.Bind<Logging.LogLevels>(\"Utility\", \"LogLevel\", Logging.LogLevels.Info, \"Controls the level of information contained in the log\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 63,
+      "text": "skillColor = new DelegatedConfigEntry<Color>(SlayerSkills.ChangeColor);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 64,
+      "text": "skillColor.ConfigEntry = _instance.Config.Bind<Color>(\"Utility\", \"SkillTextColor\", Color.cyan, \"Sets the color for the Slayer Skill text in the Trophy panel.\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 65,
+      "text": "trophyCap = new DelegatedConfigEntry<int>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 66,
+      "text": "trophyCap.ConfigEntry = _instance.Config.Bind<int>(\"Slayer Skills\", \"SkillCap\", 100, new ConfigDescription(\"Sets the maximum Slayer level attainable. Every slayer point earned increases the percentage of the damage buff against a specific creature type. @\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 200), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 67,
+      "text": "trophyDistance = new DelegatedConfigEntry<int>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 68,
+      "text": "trophyDistance.ConfigEntry = _instance.Config.Bind<int>(\"Slayer Skills\", \"TrophyDistance\", 30, new ConfigDescription(\"Sets the maximum distance, in meters, that a player (in multiplayer) can be from the trophy drop to qualify for the trophy point. @\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(5, 50), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 69,
+      "text": "lowerSkillsOnDeath = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 70,
+      "text": "lowerSkillsOnDeath.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Skills\", \"LowerSkillsOnDeath\", true, \"If enabled, will lower slayer skills upon death (same % as standard skills) @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 71,
+      "text": "allowCheats = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 72,
+      "text": "allowCheats.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Skills\", \"AllowCheats\", false, \"If enabled, allows raising and resetting Slayer skills using 'raiseskill' and 'resetskill' commands from the console by using the trophy name for the creature. Use an underscore (_) instead of a space on the command line, e.g. 'raiseskill Deer_Trophy 3'. N"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 73,
+      "text": "damageCap = new DelegatedConfigEntry<int>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 74,
+      "text": "damageCap.ConfigEntry = _instance.Config.Bind<int>(\"Slayer Damage\", \"DamagePercent\", 100, new ConfigDescription(\"Sets the maximum damage buff percent of your normal damage. The applied buff percentage is determined by your current Slayer level. @\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 100), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 75,
+      "text": "damagePhysical = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 76,
+      "text": "damagePhysical.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Damage\", \"BuffPhysical\", true, \"If enabled, applies slayer bonus to physical damage (slash, blunt, pierce). @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 77,
+      "text": "damageElemental = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 78,
+      "text": "damageElemental.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Damage\", \"BuffElemental\", false, \"If enabled, applies slayer bonus to elemental damage (lightning, fire, frost). @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 79,
+      "text": "damageOther = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 80,
+      "text": "damageOther.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Damage\", \"BuffOther\", false, \"If enabled, applies slayer bonus to other damage (poison, spirit). @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 81,
+      "text": "assignPoints = new DelegatedConfigEntry<SlayerSkills.Points>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 82,
+      "text": "assignPoints.ConfigEntry = _instance.Config.Bind<SlayerSkills.Points>(\"Slayer Points\", \"MultiplayerPoints\", SlayerSkills.Points.Random, \"Controls how slayer skills are awarded in multiplayer. Random grants skill points to one player in group. All grants a skill point to every player in group. Distribute grants a fraction of a skill point evenly to "
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 83,
+      "text": "useCreatureLevel = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 84,
+      "text": "useCreatureLevel.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Points\", \"UseCreatureLevel\", false, \"If enabled, adjusts the Slayer points awarded on trophy drop based on the level (number of 'Stars') of the creature slain. @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 85,
+      "text": "bossPoints = new DelegatedConfigEntry<int>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 86,
+      "text": "bossPoints.ConfigEntry = _instance.Config.Bind<int>(\"Slayer Points\", \"BossAdjustment\", 3, new ConfigDescription(\"Adjusts Slayer points awarded to account for bosses. Equivalent to treating a boss as an 'X-Star' creature. Applies even if UseCreatureLevel is false (and adds if true). @\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 1"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 87,
+      "text": "tamesSlay = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 88,
+      "text": "tamesSlay.ConfigEntry = _instance.Config.Bind<bool>(\"Tamed Creatures\", \"TamesCanSlay\", true, \"If enabled, trophy drops from creatures slain by your tamed creatires count toward your Slayer skill. @\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 89,
+      "text": "tamesBuff = new DelegatedConfigEntry<bool>(useServerDelegate: true);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 90,
+      "text": "tamesBuff.ConfigEntry = _instance.Config.Bind<bool>(\"Tamed Creatures\", \"TamesGetBuff\", false, \"If enabled, your tamed creatures also recieve your Slayer buff. @\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 145,
+      "text": "\"type\": \"System.Action\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 660,
+      "text": "\"name\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 661,
+      "text": "\"baseType\": \"neobotics.ModSdk.DelegatedConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 668,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 697,
+      "text": "\"name\": \"ConfigEntry\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 698,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 710,
+      "text": "\"name\": \"neobotics.ModSdk.DelegatedConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 873,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 880,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1233,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003Cneobotics.ModSdk.DelegatedConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1240,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1253,
+      "text": "\"name\": \"ConfigFileName\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1381,
+      "text": "\"type\": \"System.Predicate\\u00601\\u003Cneobotics.ModSdk.DelegatedConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1566,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003Cneobotics.ModSdk.Logging/LogLevels\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1573,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1580,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1587,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1594,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1601,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1608,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1615,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003Cneobotics.ValheimMods.SlayerSkills/Points\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1622,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1629,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1636,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1643,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1650,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1657,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1664,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2345,
+      "text": "\"signature\": \"System.Void ConfigurationManagerAttributes/CustomHotkeyDrawerFunc::Invoke(BepInEx.Configuration.ConfigEntryBase,System.Boolean\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2351,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2365,
+      "text": "\"signature\": \"System.IAsyncResult ConfigurationManagerAttributes/CustomHotkeyDrawerFunc::BeginInvoke(BepInEx.Configuration.ConfigEntryBase,System.Boolean\\u0026,System.AsyncCallback,System.Object)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2371,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3487,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E neobotics.ModSdk.DelegatedConfigEntry\\u00601::get_ConfigEntry()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3489,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3498,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::set_ConfigEntry(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3504,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3514,
+      "text": "\"signature\": \"T neobotics.ModSdk.DelegatedConfigEntry\\u00601::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3525,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::set_Value(T)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3541,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::.ctor(System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3557,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::.ctor(System.Action\\u00602\\u003CSystem.Object,System.EventArgs\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3577,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::ServerDelegate(System.Object,System.EventArgs)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3597,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::EnableHandler(System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3613,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.DelegatedConfigEntry\\u00601::IsKeyPressed()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3624,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.DelegatedConfigEntry\\u00601::IsKeyDown()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3635,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.DelegatedConfigEntry\\u00601::IsKeyReleased()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3646,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::\\u003C.ctor\\u003Eb__11_0(System.Object,System.EventArgs)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3673,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntry\\u00601::\\u003C.ctor\\u003Eb__11_1(System.Object,System.EventArgs)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3700,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DelegatedConfigEntryBase::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4066,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.InputCycler::Init(System.Boolean,neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E,neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4076,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4080,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4968,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.ServerConfiguration::Setup(BepInEx.Configuration.ConfigFile,BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4974,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5192,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.ServerConfiguration/\\u003C\\u003Ec__DisplayClass17_0::\\u003CRPC_ClientConfigReceiver\\u003Eb__0(neobotics.ModSdk.DelegatedConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5198,
+      "text": "\"type\": \"neobotics.ModSdk.DelegatedConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7471,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7472,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003Cneobotics.ModSdk.Logging/LogLevels\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7473,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7486,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003Cneobotics.ModSdk.DelegatedConfigEntryBase\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7494,
+      "text": "\"!0 System.Collections.Generic.List\\u00601\\u003Cneobotics.ModSdk.DelegatedConfigEntryBase\\u003E::Find(System.Predicate\\u00601\\u003C!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7506,
+      "text": "\"BepInEx.Configuration.ConfigDefinition BepInEx.Configuration.ConfigEntryBase::get_Definition()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7507,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003Cneobotics.ModSdk.Logging/LogLevels\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7508,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003Cneobotics.ValheimMods.SlayerSkills/Points\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7509,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7510,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Int32\\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7511,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CUnityEngine.Color\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7512,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E neobotics.ModSdk.DelegatedConfigEntry\\u00601\\u003CT\\u003E::get_ConfigEntry()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7513,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase BepInEx.Configuration.ConfigFile::get_Item(System.String,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7514,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase BepInEx.Configuration.SettingChangedEventArgs::get_ChangedSetting()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7515,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 38,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ClientConfigReceiver.\" + GetPluginGuid(), (Action<ZRpc, ZPackage>)Instance.RPC_ClientConfigReceiver);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 39,
+      "text": "Log.Debug(\"Player registered RPC_ClientConfigReceiver\");"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 132,
+      "text": "public void RPC_ClientConfigReceiver(ZRpc zrpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 264,
+      "text": "public static Player GetPlayerByZDOID(ZDOID zid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 271,
+      "text": "ZDOID zDOID = ((Character)allPlayer).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 272,
+      "text": "if (zDOID.Equals(zid))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 280,
+      "text": "public static Character GetCharacterByZDOID(string cid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 286,
+      "text": "if (((object)allCharacter.GetZDOID()/*cast due to constrained. prefix*/).ToString().Equals(cid))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 294,
+      "text": "public static Character GetCharacterByZDOID(ZDOID cid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 301,
+      "text": "ZDOID zDOID = allCharacter.GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 302,
+      "text": "if (zDOID.Equals(cid))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 310,
+      "text": "public static ZNetPeer GetPeerByRPC(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 517,
+      "text": "ZNetView val2 = default;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 518,
+      "text": "if (persist && val.TryGetComponent<ZNetView>(ref val2))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/AudioHelper.cs",
+      "line": 25,
+      "text": "ZRoutedRpc.instance.Register<Vector3, string>(\"NeoPlayClip\", (Action<long, Vector3, string>)RPC_NeoPlayClip);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/AudioHelper.cs",
+      "line": 28,
+      "text": "public void RPC_NeoPlayClip(long sender, Vector3 sourcePoint, string clipName)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/AudioHelper.cs",
+      "line": 48,
+      "text": "ZRoutedRpc.instance.InvokeRoutedRPC(0L, \"NeoPlayClip\", new object[2] { sourcePoint, clipName });"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 44,
+      "text": "ZRoutedRpc.instance.Register<string, float>(\"RaiseSlayerStat\", (Action<long, string, float>)RPC_RaiseSlayerStat);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 202,
+      "text": "ZNetView val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 203,
+      "text": "if (!((Object)(object)character != (Object)null) || character.IsTamed() || !((Component)character).TryGetComponent<ZNetView>(ref val))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 244,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_Damage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 245,
+      "text": "private static class Character_RPC_Damage_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 248,
+      "text": "private static void Character_RPC_Damage_Prefix(Character __instance, HitData hit)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 250,
+      "text": "Log.Debug(\"Character_RPC_Damage_Patch_Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 271,
+      "text": "private static void Character_Damage_Prefix(Character __instance, HitData hit, ZNetView ___m_nview)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 334,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 335,
+      "text": "if (customData == null || zDOID == ZDOID.None || zDOID != currentPlayerZdoid)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 337,
+      "text": "Log.Debug($\"Player_Save_Patch_Prefix: no trustworthy data loaded (save zdoid={zDOID}, tracked={currentPlayerZdoid}), skipping sync\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 367,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 368,
+      "text": "if (zDOID == ZDOID.None)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 370,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix: no ZDOID yet (not networked), skipping load\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 377,
+      "text": "currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 382,
+      "text": "currentPlayerZdoid = zDOID;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 411,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 412,
+      "text": "if (zDOID != ZDOID.None && zDOID == currentPlayerZdoid)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 414,
+      "text": "Log.Debug($\"Player_OnDestroy_Patch_Postfix: clearing tracked data for zdoid={zDOID}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 416,
+      "text": "currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 532,
+      "text": "private static ZDOID currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 756,
+      "text": "localPlayer.m_skillLevelupEffects.Create(head.position, head.rotation, head, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 760,
+      "text": "private static void RPC_RaiseSlayerStat(long id, string itemName, float amt)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 762,
+      "text": "Log.Debug(\"RPC_RaiseSlayerStat\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 807,
+      "text": "ZRoutedRpc.instance.InvokeRoutedRPC(slayer, \"RaiseSlayerStat\", new object[2] { itemName, amount });"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 817,
+      "text": "ZNetView val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 820,
+      "text": "if (((Component)item).TryGetComponent<ZNetView>(ref val) && val.IsValid() && val.GetZDO().m_uid != ZDOID.None)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 823,
+      "text": "ZRoutedRpc.instance.InvokeRoutedRPC(val.GetZDO().GetOwner(), \"RaiseSlayerStat\", new object[2] { itemName, amount });"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 830,
+      "text": "ZNetView val2 = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 831,
+      "text": "if (((Component)playersInRange[index]).TryGetComponent<ZNetView>(ref val2) && val2.IsValid() && val2.GetZDO().m_uid != ZDOID.None)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 834,
+      "text": "ZRoutedRpc.instance.InvokeRoutedRPC(val2.GetZDO().GetOwner(), \"RaiseSlayerStat\", new object[2] { itemName, amount });"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1862,
+      "text": "\"name\": \"currentPlayerZdoid\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1863,
+      "text": "\"type\": \"ZDOID\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2152,
+      "text": "\"name\": \"neobotics.ValheimMods.SlayerSkills/Character_RPC_Damage_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2161,
+      "text": "\"RPC_Damage\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2435,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.AudioHelper::RPC_NeoPlayClip(System.Int64,UnityEngine.Vector3,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5030,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.ServerConfiguration::RPC_ClientConfigReceiver(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5035,
+      "text": "\"name\": \"zrpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5036,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5192,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.ServerConfiguration/\\u003C\\u003Ec__DisplayClass17_0::\\u003CRPC_ClientConfigReceiver\\u003Eb__0(neobotics.ModSdk.DelegatedConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5681,
+      "text": "\"signature\": \"Player neobotics.ModSdk.Utils::GetPlayerByZDOID(ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5687,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5697,
+      "text": "\"signature\": \"Character neobotics.ModSdk.Utils::GetCharacterByZDOID(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5713,
+      "text": "\"signature\": \"Character neobotics.ModSdk.Utils::GetCharacterByZDOID(ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5719,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5729,
+      "text": "\"signature\": \"ZNetPeer neobotics.ModSdk.Utils::GetPeerByRPC(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5735,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6883,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.SlayerSkills::RPC_RaiseSlayerStat(System.Int64,System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7267,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.SlayerSkills/Character_RPC_Damage_Patch::Character_RPC_Damage_Prefix(Character,HitData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7294,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.SlayerSkills/Character_Damage_Patch::Character_Damage_Prefix(Character,HitData,ZNetView)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7308,
+      "text": "\"type\": \"ZNetView\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7554,
+      "text": "\"System.Boolean neobotics.ModSdk.ServerConfiguration/\\u003C\\u003Ec__DisplayClass17_0::\\u003CRPC_ClientConfigReceiver\\u003Eb__0(neobotics.ModSdk.DelegatedConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7606,
+      "text": "\"System.Boolean UnityEngine.Component::TryGetComponent\\u003CZNetView\\u003E(!!0\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7610,
+      "text": "\"System.Boolean UnityEngine.GameObject::TryGetComponent\\u003CZNetView\\u003E(!!0\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7620,
+      "text": "\"System.Boolean ZDOID::Equals(ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7621,
+      "text": "\"System.Boolean ZDOID::op_Equality(ZDOID,ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7622,
+      "text": "\"System.Boolean ZDOID::op_Inequality(ZDOID,ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7625,
+      "text": "\"System.Boolean ZNetView::IsOwner()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7626,
+      "text": "\"System.Boolean ZNetView::IsValid()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7829,
+      "text": "\"System.Void neobotics.ModSdk.AudioHelper::RPC_NeoPlayClip(System.Int64,UnityEngine.Vector3,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7881,
+      "text": "\"System.Void neobotics.ModSdk.ServerConfiguration::RPC_ClientConfigReceiver(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7909,
+      "text": "\"System.Void neobotics.ValheimMods.SlayerSkills::RPC_RaiseSlayerStat(System.Int64,System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7915,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::.ctor(System.Object,System.IntPtr)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8003,
+      "text": "\"System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8004,
+      "text": "\"System.Void ZRoutedRpc::Register\\u003CSystem.String,System.Single\\u003E(System.String,System.Action\\u00603\\u003CSystem.Int64,!!0,!!1\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8005,
+      "text": "\"System.Void ZRoutedRpc::Register\\u003CUnityEngine.Vector3,System.String\\u003E(System.String,System.Action\\u00603\\u003CSystem.Int64,!!0,!!1\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8006,
+      "text": "\"System.Void ZRpc::Invoke(System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8007,
+      "text": "\"System.Void ZRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CZRpc,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8031,
+      "text": "\"UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8056,
+      "text": "\"ZDO ZNetView::GetZDO()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8057,
+      "text": "\"ZDOID Character::GetZDOID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8062,
+      "text": "\"ZRoutedRpc ZRoutedRpc::get_instance()\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8154,
+      "text": "\"Character_RPC_Damage_Patch_Prefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8237,
+      "text": "\"Player registered RPC_ClientConfigReceiver\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8238,
+      "text": "\"Player_OnDestroy_Patch_Postfix: clearing tracked data for zdoid={0}\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8240,
+      "text": "\"Player_Save_Patch_Prefix: no trustworthy data loaded (save zdoid={0}, tracked={1}), skipping sync\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8244,
+      "text": "\"Player_Start_Patch_Postfix: no ZDOID yet (not networked), skipping load\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8256,
+      "text": "\"RPC_RaiseSlayerStat\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 25,
+      "text": "IL_0010: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 28,
+      "text": "IL_001b: ldftn System.Void neobotics.ModSdk.AudioHelper::RPC_NeoPlayClip(System.Int64,UnityEngine.Vector3,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 30,
+      "text": "IL_0026: callvirt System.Void ZRoutedRpc::Register<UnityEngine.Vector3,System.String>(System.String,System.Action`3<System.Int64,!!0,!!1>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 33,
+      "text": "// System.Void neobotics.ModSdk.AudioHelper::RPC_NeoPlayClip(System.Int64,UnityEngine.Vector3,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 57,
+      "text": "IL_0000: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 72,
+      "text": "IL_001f: callvirt System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3183,
+      "text": "// System.Void neobotics.ModSdk.ServerConfiguration::RPC_ClientConfigReceiver(ZRpc,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3252,
+      "text": "IL_00b1: ldftn System.Boolean neobotics.ModSdk.ServerConfiguration/<>c__DisplayClass17_0::<RPC_ClientConfigReceiver>b__0(neobotics.ModSdk.DelegatedConfigEntryBase)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3383,
+      "text": "IL_0039: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3393,
+      "text": "IL_0057: callvirt System.Void ZRpc::Invoke(System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3471,
+      "text": "IL_0018: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3476,
+      "text": "IL_0031: ldftn System.Void neobotics.ModSdk.ServerConfiguration::RPC_ClientConfigReceiver(ZRpc,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3477,
+      "text": "IL_0037: newobj System.Void System.Action`2<ZRpc,ZPackage>::.ctor(System.Object,System.IntPtr)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3478,
+      "text": "IL_003c: callvirt System.Void ZRpc::Register<ZPackage>(System.String,System.Action`2<ZRpc,!!0>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3480,
+      "text": "IL_0046: ldstr \"Player registered RPC_ClientConfigReceiver\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3508,
+      "text": "// System.Boolean neobotics.ModSdk.ServerConfiguration/<>c__DisplayClass17_0::<RPC_ClientConfigReceiver>b__0(neobotics.ModSdk.DelegatedConfigEntryBase)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3598,
+      "text": "IL_0069: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3609,
+      "text": "IL_008c: callvirt System.Void ZRpc::Invoke(System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4128,
+      "text": "// Player neobotics.ModSdk.Utils::GetPlayerByZDOID(ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4129,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<Player>, Player, ZDOID, Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4138,
+      "text": "IL_0016: callvirt ZDOID Character::GetZDOID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4142,
+      "text": "IL_001f: call System.Boolean ZDOID::Equals(ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4161,
+      "text": "// Character neobotics.ModSdk.Utils::GetCharacterByZDOID(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4162,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<Character>, Character, ZDOID, Character"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4171,
+      "text": "IL_0016: callvirt ZDOID Character::GetZDOID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4174,
+      "text": "IL_001e: constrained. ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4196,
+      "text": "// Character neobotics.ModSdk.Utils::GetCharacterByZDOID(ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4197,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<Character>, Character, ZDOID, Character"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4206,
+      "text": "IL_0016: callvirt ZDOID Character::GetZDOID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4210,
+      "text": "IL_001f: call System.Boolean ZDOID::Equals(ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4229,
+      "text": "// ZNetPeer neobotics.ModSdk.Utils::GetPeerByRPC(ZRpc)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4240,
+      "text": "IL_001b: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4672,
+      "text": ".locals UnityEngine.GameObject, ZNetView"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4684,
+      "text": "IL_0015: callvirt System.Boolean UnityEngine.GameObject::TryGetComponent<ZNetView>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4687,
+      "text": "IL_001d: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6321,
+      "text": ".locals System.Boolean, System.String, System.Int32, System.Int32, System.Int32, System.Collections.Generic.IDictionary`2<System.String,System.Single>, System.String, UnityEngine.Transform, ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6457,
+      "text": "IL_0198: initobj ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6459,
+      "text": "IL_01a0: callvirt UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6463,
+      "text": "// System.Void neobotics.ValheimMods.SlayerSkills::RPC_RaiseSlayerStat(System.Int64,System.String,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6466,
+      "text": "IL_0005: ldstr \"RPC_RaiseSlayerStat\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6507,
+      "text": ".locals System.Collections.Generic.List`1<Player>, System.Int32, System.Collections.Generic.List`1<Player>, System.Int32, ZNetView, System.Collections.Generic.List`1/Enumerator<Player>, Player, ZNetView"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6567,
+      "text": "IL_00d5: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6581,
+      "text": "IL_00f3: callvirt System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6595,
+      "text": "IL_011e: callvirt System.Boolean UnityEngine.Component::TryGetComponent<ZNetView>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6598,
+      "text": "IL_012a: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6601,
+      "text": "IL_0136: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6602,
+      "text": "IL_013b: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6603,
+      "text": "IL_0140: ldsfld ZDOID ZDOID::None"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6604,
+      "text": "IL_0145: call System.Boolean ZDOID::op_Inequality(ZDOID,ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6609,
+      "text": "IL_015b: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6618,
+      "text": "IL_0180: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6620,
+      "text": "IL_0187: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6634,
+      "text": "IL_01a9: callvirt System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6655,
+      "text": "IL_01e1: callvirt System.Boolean UnityEngine.Component::TryGetComponent<ZNetView>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6658,
+      "text": "IL_01ea: callvirt System.Boolean ZNetView::IsValid()"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 378,
+      "text": "return ZoneSystem.instance.m_waterLevel - GetSolidHeight(p);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 397,
+      "text": "int solidRayMask = ZoneSystem.instance.m_solidRayMask;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 444,
+      "text": "ZNetScene instance = ZNetScene.instance;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 463,
+      "text": "ZNetScene instance = ZNetScene.instance;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 470,
+      "text": "val = ObjectDB.instance.GetItemPrefab(prefabHash);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 473,
+      "text": "logger.Debug(\"Found prefab in ObjectDB\");"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 493,
+      "text": "if ((Object)(object)ZNetScene.instance != (Object)null && !ZNetScene.instance.m_namedPrefabs.ContainsKey(stableHashCode))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 495,
+      "text": "ZNetScene.instance.m_prefabs.Add(prefab);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 496,
+      "text": "ZNetScene.instance.m_namedPrefabs[stableHashCode] = prefab;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 207,
+      "text": "ZNetScene.instance.m_prefabs.ForEach((GameObject x) =>"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 48,
+      "text": "[HarmonyPatch(typeof(ZNetScene), \"Awake\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 49,
+      "text": "private static class ZNetScene_Awake_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 52,
+      "text": "private static void ZNetScene_Awake_Postfix(ZNetScene __instance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 54,
+      "text": "Log.Debug(\"ZNetScene_Awake_Patch_Postfix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 661,
+      "text": "if (ZNetScene.instance?.m_prefabs == null)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 663,
+      "text": "Log.Debug(\"ZNetScene instance is null\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 668,
+      "text": "foreach (GameObject prefab in ZNetScene.instance.m_prefabs)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2032,
+      "text": "\"name\": \"neobotics.ValheimMods.SlayerSkills/ZNetScene_Awake_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2040,
+      "text": "\"ZNetScene\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7059,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.SlayerSkills/ZNetScene_Awake_Patch::ZNetScene_Awake_Postfix(ZNetScene)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7065,
+      "text": "\"type\": \"ZNetScene\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7530,
+      "text": "\"ObjectDB ObjectDB::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8027,
+      "text": "\"UnityEngine.GameObject ObjectDB::GetItemPrefab(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8030,
+      "text": "\"UnityEngine.GameObject ZNetScene::GetPrefab(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8060,
+      "text": "\"ZNetScene ZNetScene::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8061,
+      "text": "\"ZoneSystem ZoneSystem::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8192,
+      "text": "\"Found prefab in ObjectDB\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8299,
+      "text": "\"ZNetScene instance is null\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8300,
+      "text": "\"ZNetScene_Awake_Patch_Postfix\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1313,
+      "text": "IL_0000: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1314,
+      "text": "IL_0005: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4395,
+      "text": "IL_0000: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4396,
+      "text": "IL_0005: ldfld System.Single ZoneSystem::m_waterLevel"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4441,
+      "text": "IL_0000: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4442,
+      "text": "IL_0005: ldfld System.Int32 ZoneSystem::m_solidRayMask"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4542,
+      "text": "IL_0000: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4549,
+      "text": "IL_000d: call UnityEngine.GameObject ZNetScene::GetPrefab(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4580,
+      "text": "IL_0008: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4587,
+      "text": "IL_0015: call UnityEngine.GameObject ZNetScene::GetPrefab(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4598,
+      "text": "IL_0031: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4600,
+      "text": "IL_0037: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4607,
+      "text": "IL_0047: ldstr \"Found prefab in ObjectDB\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4636,
+      "text": "IL_000c: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4640,
+      "text": "IL_0019: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4641,
+      "text": "IL_001e: ldfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.GameObject> ZNetScene::m_namedPrefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4645,
+      "text": "IL_002b: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4646,
+      "text": "IL_0030: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4649,
+      "text": "IL_003b: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4650,
+      "text": "IL_0040: ldfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.GameObject> ZNetScene::m_namedPrefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6155,
+      "text": "IL_0000: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6161,
+      "text": "IL_000c: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6164,
+      "text": "IL_0018: ldstr \"ZNetScene instance is null\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6167,
+      "text": "IL_0023: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6168,
+      "text": "IL_0028: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6839,
+      "text": "// System.Void neobotics.ValheimMods.SlayerSkills/ZNetScene_Awake_Patch::ZNetScene_Awake_Postfix(ZNetScene)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6842,
+      "text": "IL_0005: ldstr \"ZNetScene_Awake_Patch_Postfix\""
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/neobotics.ModSdk/ServerConfiguration.cs",
+      "line": 39,
+      "text": "Log.Debug(\"Player registered RPC_ClientConfigReceiver\");"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 48,
+      "text": "public static void GetCharactersInRangeXZ(Vector3 point, float radius, List<Character> characters)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 53,
+      "text": "foreach (Character s_character in Character.s_characters)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 55,
+      "text": "if (DistanceSqrXZ(((Component)s_character).transform.position, point) < num)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 57,
+      "text": "characters.Add(s_character);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 264,
+      "text": "public static Player GetPlayerByZDOID(ZDOID zid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 269,
+      "text": "foreach (Player allPlayer in Player.GetAllPlayers())"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 271,
+      "text": "ZDOID zDOID = ((Character)allPlayer).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 274,
+      "text": "return allPlayer;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 280,
+      "text": "public static Character GetCharacterByZDOID(string cid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 284,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 286,
+      "text": "if (((object)allCharacter.GetZDOID()/*cast due to constrained. prefix*/).ToString().Equals(cid))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 288,
+      "text": "return allCharacter;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 294,
+      "text": "public static Character GetCharacterByZDOID(ZDOID cid)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 299,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 301,
+      "text": "ZDOID zDOID = allCharacter.GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 304,
+      "text": "return allCharacter;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/AudioHelper.cs",
+      "line": 57,
+      "text": "Vector3 position = ((Component)Player.m_localPlayer).transform.position;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 8,
+      "text": "private Dictionary<string, string> playerData;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 15,
+      "text": "playerData = sourceData;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 29,
+      "text": "playerData.Add(key, value);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 34,
+      "text": "return Data.Remove(key) & playerData.Remove(key);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 47,
+      "text": "if (playerData.ContainsKey(key))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 49,
+      "text": "playerData[key] = value;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 53,
+      "text": "playerData.Add(key, value);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 75,
+      "text": "if (!playerData.ContainsKey(datum.Key))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/CustomDataWrapper.cs",
+      "line": 77,
+      "text": "playerData.Add(datum.Key, datum.Value);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 199,
+      "text": "foreach (ItemData allItem in ((Humanoid)Player.m_localPlayer).GetInventory().GetAllItems())"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 213,
+      "text": "internal static void PrintAllCharacters()"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 215,
+      "text": "Character.GetAllCharacters().ForEach((Character x) =>"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 217,
+      "text": "Debug.Log((object)(\"Character \" + ((Object)x).name));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 8,
+      "text": "private Dictionary<string, string> playerData;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 15,
+      "text": "playerData = sourceData;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 29,
+      "text": "playerData.Add(key, value);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 34,
+      "text": "return Data.Remove(key) & playerData.Remove(key);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 47,
+      "text": "if (playerData.ContainsKey(key))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 49,
+      "text": "playerData[key] = value;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 53,
+      "text": "playerData.Add(key, value);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 75,
+      "text": "if (!playerData.ContainsKey(datum.Key))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/CustomDataWrapper.cs",
+      "line": 77,
+      "text": "playerData.Add(datum.Key, datum.Value);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 97,
+      "text": "[HarmonyPatch(typeof(CharacterDrop), \"OnDeath\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 98,
+      "text": "private static class CharacterDrop_OnDeath_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 101,
+      "text": "private static void CharacterDrop_OnDeath_Prefix(CharacterDrop __instance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 103,
+      "text": "Log.Debug(\"CharacterDrop_OnDeath_Patch_Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 105,
+      "text": "Character character = __instance.m_character;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 106,
+      "text": "if (!Object.op_Implicit((Object)(object)character) || character.IsPlayer())"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 110,
+      "text": "int num = ((!Cfg.useCreatureLevel.Value) ? 1 : character.m_level);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 111,
+      "text": "if (character.IsBoss())"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 115,
+      "text": "Log.Debug($\"Creature level {character.m_level} Slayer points {num}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 117,
+      "text": "HitData lastHit = character.m_lastHit;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 120,
+      "text": "s_dod.sender = GetSenderPlayer(lastHit.GetAttacker());"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 123,
+      "text": "long num2 = character.m_nview.GetZDO().GetLong(SLAYER_ID, 0L);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 131,
+      "text": "private static void CharacterDrop_OnDeath_Finalizer(CharacterDrop __instance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(CharacterDrop), \"DropItems\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 138,
+      "text": "private static class CharacterDrop_DropItems_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 141,
+      "text": "private static void CharacterDrop_DropItems_Postfix(List<KeyValuePair<GameObject, int>> drops, Vector3 centerPos, float dropArea)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 146,
+      "text": "Log.Debug(\"CharacterDrop_DropItems_Postfix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 178,
+      "text": "private static void Ragdoll_SaveLootList_Prefix(Ragdoll __instance, CharacterDrop characterDrop)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 181,
+      "text": "Character character = characterDrop.m_character;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 182,
+      "text": "HitData lastHit = character.m_lastHit;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 186,
+      "text": "num = GetSenderPlayer(lastHit.GetAttacker());"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 190,
+      "text": "num = character.m_nview.GetZDO().GetLong(SLAYER_ID, 0L);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 198,
+      "text": "Log.Debug(\"Character was not hit by player\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 203,
+      "text": "if (!((Object)(object)character != (Object)null) || character.IsTamed() || !((Component)character).TryGetComponent<ZNetView>(ref val))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 210,
+      "text": "int num2 = ((!Cfg.useCreatureLevel.Value) ? 1 : character.m_level);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 211,
+      "text": "if (character.IsBoss())"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 244,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_Damage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 245,
+      "text": "private static class Character_RPC_Damage_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 248,
+      "text": "private static void Character_RPC_Damage_Prefix(Character __instance, HitData hit)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 250,
+      "text": "Log.Debug(\"Character_RPC_Damage_Patch_Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 255,
+      "text": "Character attacker = hit.GetAttacker();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 256,
+      "text": "if (hit.HaveAttacker() && attacker.IsPlayer() && !__instance.IsPlayer() && HaveDotDamage(hit))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 267,
+      "text": "[HarmonyPatch(typeof(Character), \"Damage\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 268,
+      "text": "private static class Character_Damage_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 271,
+      "text": "private static void Character_Damage_Prefix(Character __instance, HitData hit, ZNetView ___m_nview)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 273,
+      "text": "Log.Debug(\"Character_Damage_Patch_Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 274,
+      "text": "if (__instance.IsPlayer())"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 278,
+      "text": "Character attacker = hit.GetAttacker();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 279,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 286,
+      "text": "if (attacker.m_tamed && ((Component)attacker).TryGetComponent<MonsterAI>(ref val) && (Object)(object)val.GetFollowTarget() == (Object)(object)localPlayer)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 290,
+      "text": "if (!((Object)(object)attacker == (Object)(object)localPlayer) && (!flag || !Cfg.tamesBuff.Value))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 314,
+      "text": "[HarmonyPatch(typeof(Player), \"Save\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 315,
+      "text": "public static class Player_Save_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 318,
+      "text": "public static void Player_Save_Patch_Prefix(Player __instance, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 328,
+      "text": "Log.Debug(\"Player_Save_Patch_Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 329,
+      "text": "if ((Object)(object)Player.m_localPlayer == (Object)null || (Object)(object)__instance != (Object)(object)Player.m_localPlayer)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 331,
+      "text": "Log.Debug(\"Player_Save_Patch_Prefix: not the local player, skipping sync\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 334,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 335,
+      "text": "if (customData == null || zDOID == ZDOID.None || zDOID != currentPlayerZdoid)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 337,
+      "text": "Log.Debug($\"Player_Save_Patch_Prefix: no trustworthy data loaded (save zdoid={zDOID}, tracked={currentPlayerZdoid}), skipping sync\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 347,
+      "text": "[HarmonyPatch(typeof(Player), \"Start\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 348,
+      "text": "public static class Player_OnSpawned_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 351,
+      "text": "public static void Player_Start_Patch_Postfix(Player __instance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 361,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 362,
+      "text": "if ((Object)(object)Player.m_localPlayer == (Object)null || (Object)(object)__instance != (Object)(object)Player.m_localPlayer)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 364,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix: not the local player, skipping load\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 367,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 370,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix: no ZDOID yet (not networked), skipping load\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 375,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix: ZNet.m_world is null, invalidating tracked data\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 377,
+      "text": "currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 382,
+      "text": "currentPlayerZdoid = zDOID;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 391,
+      "text": "Log.Debug(\"Player_Start_Patch_Postfix: no existing trophy collection, starting fresh\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 396,
+      "text": "[HarmonyPatch(typeof(Player), \"OnDestroy\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 397,
+      "text": "public static class Player_OnDestroy_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 400,
+      "text": "public static void Player_OnDestroy_Patch_Postfix(Player __instance)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 411,
+      "text": "ZDOID zDOID = ((Character)__instance).GetZDOID();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 412,
+      "text": "if (zDOID != ZDOID.None && zDOID == currentPlayerZdoid)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 414,
+      "text": "Log.Debug($\"Player_OnDestroy_Patch_Postfix: clearing tracked data for zdoid={zDOID}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 416,
+      "text": "currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 532,
+      "text": "private static ZDOID currentPlayerZdoid = ZDOID.None;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 598,
+      "text": "private static bool OkToKey(Player player)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 600,
+      "text": "if (!Chat.instance.HasFocus() && !Console.IsVisible() && (Object)(object)TextViewer.instance != (Object)null && !TextViewer.instance.IsVisible() && !GameCamera.InFreeFly() && !Minimap.IsOpen() && !TextInput.IsVisible() && !StoreGui.IsVisible() && !((Character)player).InCutscene() && !((Character)player).InBed() && !((Character)player).IsTeleporting"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 602,
+      "text": "return !((Character)player).InPlaceMode();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 609,
+      "text": "_ = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 631,
+      "text": "private static void ApplySlayerBonus(HitData hitData, float skillLevel)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 636,
+      "text": "Log.Debug($\"Before slayer Level {skillLevel} multiplier {num2} blunt {hitData.m_damage.m_blunt} slash {hitData.m_damage.m_slash} pierce {hitData.m_damage.m_pierce} fire {hitData.m_damage.m_fire} frost {hitData.m_damage.m_frost} lightning {hitData.m_damage.m_lightning} poison {hitData.m_damage.m_poison} spirit {hitData.m_damage.m_spirit}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 639,
+      "text": "hitData.m_damage.m_blunt += hitData.m_damage.m_blunt * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 640,
+      "text": "hitData.m_damage.m_slash += hitData.m_damage.m_slash * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 641,
+      "text": "hitData.m_damage.m_pierce += hitData.m_damage.m_pierce * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 645,
+      "text": "hitData.m_damage.m_fire += hitData.m_damage.m_fire * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 646,
+      "text": "hitData.m_damage.m_frost += hitData.m_damage.m_frost * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 647,
+      "text": "hitData.m_damage.m_lightning += hitData.m_damage.m_lightning * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 651,
+      "text": "hitData.m_damage.m_spirit += hitData.m_damage.m_spirit * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 652,
+      "text": "hitData.m_damage.m_poison += hitData.m_damage.m_poison * num2;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 654,
+      "text": "Log.Debug($\"After slayer Level {skillLevel} multiplier {num2} blunt {hitData.m_damage.m_blunt} slash {hitData.m_damage.m_slash} pierce {hitData.m_damage.m_pierce} fire {hitData.m_damage.m_fire} frost {hitData.m_damage.m_frost} lightning {hitData.m_damage.m_lightning} poison {hitData.m_damage.m_poison} spirit {hitData.m_damage.m_spirit}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 666,
+      "text": "CharacterDrop val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 670,
+      "text": "Character component = (Character)(object)prefab.GetComponent<Humanoid>();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 673,
+      "text": "component = prefab.GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 675,
+      "text": "if (!((Object)(object)component != (Object)null) || !prefab.TryGetComponent<CharacterDrop>(ref val))"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 725,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, $\"{text} Slayer Level {num}\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 743,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)1, $\"{text} Slayer Level {num3}\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 754,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 755,
+      "text": "Transform head = ((Character)localPlayer).m_head;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 756,
+      "text": "localPlayer.m_skillLevelupEffects.Create(head.position, head.rotation, head, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 766,
+      "text": "private static List<Player> GetPlayersInRange(Vector3 point, float range, List<Player> allPlayers)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 770,
+      "text": "List<Player> list = new List<Player>();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 771,
+      "text": "foreach (Player allPlayer in allPlayers)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 773,
+      "text": "if (Vector3.Distance(((Component)allPlayer).transform.position, point) < range)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 775,
+      "text": "list.Add(allPlayer);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 789,
+      "text": "List<Player> allPlayers = Player.GetAllPlayers();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 790,
+      "text": "int num = allPlayers.Count();"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 793,
+      "text": "List<Player> playersInRange = GetPlayersInRange(center, Cfg.trophyDistance.Value, allPlayers);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 794,
+      "text": "Log.Debug($\"Players in range {playersInRange.Count}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 795,
+      "text": "if (playersInRange.Count < num)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 797,
+      "text": "Log.Info($\"{num - playersInRange.Count} player(s) not in range of the dropped trophy.\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 799,
+      "text": "if (playersInRange.Count <= 0)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 806,
+      "text": "Log.Debug($\"Invoking RPC on Single player {slayer}\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 814,
+      "text": "amount /= (float)playersInRange.Count;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 818,
+      "text": "foreach (Player item in playersInRange)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 822,
+      "text": "Log.Debug($\"Invoking RPC on {val.GetZDO().GetOwner()} All players {item.GetPlayerName()}\");"
+    }
+  ],
+  "Skills": [
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 444,
+      "text": "[HarmonyPatch(typeof(Skills), \"CheatRaiseSkill\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 445,
+      "text": "private static class Skills_CheatRaiseSkill_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 449,
+      "text": "Logging.GetLogger().Debug(\"Skills CheatRaiseSkill Prefix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/Cfg.cs",
+      "line": 72,
+      "text": "allowCheats.ConfigEntry = _instance.Config.Bind<bool>(\"Slayer Skills\", \"AllowCheats\", false, \"If enabled, allows raising and resetting Slayer skills using 'raiseskill' and 'resetskill' commands from the console by using the trophy name for the creature. Use an underscore (_) instead of a space on the command line, e.g. 'raiseskill Deer_Trophy 3'. N"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2272,
+      "text": "\"name\": \"neobotics.ValheimMods.SlayerSkills/Skills_CheatRaiseSkill_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2281,
+      "text": "\"CheatRaiseSkill\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7425,
+      "text": "\"signature\": \"System.Boolean neobotics.ValheimMods.SlayerSkills/Skills_CheatRaiseSkill_Patch::Prefix(System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8200,
+      "text": "\"If enabled, allows raising and resetting Slayer skills using \\u0027raiseskill\\u0027 and \\u0027resetskill\\u0027 commands from the console by using the trophy name for the creature. Use an underscore (_) instead of a space on the command line, e.g. \\u0027raiseskill Deer_Trophy 3\\u0027. Note the trophy name is case sensitive! @\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8273,
+      "text": "\"Skills CheatRaiseSkill Prefix\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5245,
+      "text": "IL_016a: ldstr \"If enabled, allows raising and resetting Slayer skills using 'raiseskill' and 'resetskill' commands from the console by using the trophy name for the creature. Use an underscore (_) instead of a space on the command line, e.g. 'raiseskill Deer_Trophy 3'. Note the trophy name is case sensitive! @\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7594,
+      "text": "// System.Boolean neobotics.ValheimMods.SlayerSkills/Skills_CheatRaiseSkill_Patch::Prefix(System.String,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7597,
+      "text": "IL_0005: ldstr \"Skills CheatRaiseSkill Prefix\""
+    }
+  ],
+  "Taming/breeding": [
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 285,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 286,
+      "text": "if (attacker.m_tamed && ((Component)attacker).TryGetComponent<MonsterAI>(ref val) && (Object)(object)val.GetFollowTarget() == (Object)(object)localPlayer)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 860,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 861,
+      "text": "if (attacker.m_tamed && ((Component)attacker).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7605,
+      "text": "\"System.Boolean UnityEngine.Component::TryGetComponent\\u003CMonsterAI\\u003E(!!0\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8022,
+      "text": "\"UnityEngine.GameObject MonsterAI::GetFollowTarget()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6725,
+      "text": ".locals System.Int64, MonsterAI, UnityEngine.GameObject, Character"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6750,
+      "text": "IL_0038: callvirt System.Boolean UnityEngine.Component::TryGetComponent<MonsterAI>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6753,
+      "text": "IL_0040: callvirt UnityEngine.GameObject MonsterAI::GetFollowTarget()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7301,
+      "text": ".locals Character, Player, System.Boolean, MonsterAI, System.String, System.String, System.Single"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7326,
+      "text": "IL_003c: callvirt System.Boolean UnityEngine.Component::TryGetComponent<MonsterAI>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7329,
+      "text": "IL_0044: callvirt UnityEngine.GameObject MonsterAI::GetFollowTarget()"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 256,
+      "text": "ItemDrop val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 257,
+      "text": "if (Object.op_Implicit((Object)(object)prefab) && prefab.TryGetComponent<ItemDrop>(ref val))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 259,
+      "text": "result = val.m_itemData.GetIcon();"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/AudioHelper.cs",
+      "line": 41,
+      "text": "logger.Error(e, stackTrace: false);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 58,
+      "text": "private static void ItemDataInspector(ItemData item)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 74,
+      "text": "if (field.FieldType == typeof(ItemData))"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 76,
+      "text": "ItemData val = (ItemData)field.GetValue(o);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 79,
+      "text": "ItemDataInspector(val);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 197,
+      "text": "internal static void PrintInventory()"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/DebugUtils.cs",
+      "line": 199,
+      "text": "foreach (ItemData allItem in ((Humanoid)Player.m_localPlayer).GetInventory().GetAllItems())"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 114,
+      "text": "Error(e, stackTrace: false);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 117,
+      "text": "internal void Error(Exception e, bool stackTrace)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 122,
+      "text": "if (stackTrace)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 124,
+      "text": "Warning(e.StackTrace);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Logging.cs",
+      "line": 134,
+      "text": "Error(e.StackTrace);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 59,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateTrophyList\")]"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 60,
+      "text": "private static class InventoryGui_UpdateTrophyList_Patch"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 63,
+      "text": "private static void InventoryGui_UpdateTrophyList_Postfix(InventoryGui __instance, List<GameObject> ___m_trophyList)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 65,
+      "text": "Log.Debug(\"InventoryGui_UpdateTrophyList_Patch_Postfix\");"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 161,
+      "text": "ItemDrop val = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 164,
+      "text": "if ((Object)(object)drop.Key != (Object)null && drop.Key.TryGetComponent<ItemDrop>(ref val) && (int)val.m_itemData.m_shared.m_itemType == 13)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 166,
+      "text": "InitiateRaiseStat(val.m_itemData.m_shared.m_name, num, centerPos, slayer);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 667,
+      "text": "ItemDrop val2 = default;"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 681,
+      "text": "if ((Object)(object)drop.m_prefab != (Object)null && drop.m_prefab.TryGetComponent<ItemDrop>(ref val2) && (int)val2.m_itemData.m_shared.m_itemType == 13)"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 683,
+      "text": "string name = val2.m_itemData.m_shared.m_name;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2052,
+      "text": "\"name\": \"neobotics.ValheimMods.SlayerSkills/InventoryGui_UpdateTrophyList_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2060,
+      "text": "\"InventoryGui\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3226,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DebugUtils::ItemDataInspector(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3232,
+      "text": "\"type\": \"ItemDrop/ItemData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3330,
+      "text": "\"signature\": \"System.Void neobotics.ModSdk.DebugUtils::PrintInventory()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4828,
+      "text": "\"name\": \"stackTrace\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7082,
+      "text": "\"signature\": \"System.Void neobotics.ValheimMods.SlayerSkills/InventoryGui_UpdateTrophyList_Patch::InventoryGui_UpdateTrophyList_Postfix(InventoryGui,System.Collections.Generic.List\\u00601\\u003CUnityEngine.GameObject\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7088,
+      "text": "\"type\": \"InventoryGui\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7484,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop/ItemData\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7521,
+      "text": "\"Inventory Humanoid::GetInventory()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7576,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop/ItemData\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7609,
+      "text": "\"System.Boolean UnityEngine.GameObject::TryGetComponent\\u003CItemDrop\\u003E(!!0\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7649,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CItemDrop/ItemData\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7664,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CItemDrop/ItemData\\u003E Inventory::GetAllItems()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7763,
+      "text": "\"System.String System.Exception::get_StackTrace()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7837,
+      "text": "\"System.Void neobotics.ModSdk.DebugUtils::ItemDataInspector(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8039,
+      "text": "\"UnityEngine.Sprite ItemDrop/ItemData::GetIcon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8208,
+      "text": "\"InventoryGui_UpdateTrophyList_Patch_Postfix\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 962,
+      "text": "// System.Void neobotics.ModSdk.DebugUtils::ItemDataInspector(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 971,
+      "text": "IL_000d: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 976,
+      "text": ".locals ItemDrop/ItemData, UnityEngine.Transform, EffectList, EffectList/EffectData[], System.Int32, EffectList/EffectData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 979,
+      "text": "IL_0006: ldtoken ItemDrop/ItemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 986,
+      "text": "IL_001e: castclass ItemDrop/ItemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 991,
+      "text": "IL_0028: call System.Void neobotics.ModSdk.DebugUtils::ItemDataInspector(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1287,
+      "text": "// System.Void neobotics.ModSdk.DebugUtils::PrintInventory()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1288,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1290,
+      "text": "IL_0005: callvirt Inventory Humanoid::GetInventory()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1291,
+      "text": "IL_000a: callvirt System.Collections.Generic.List`1<ItemDrop/ItemData> Inventory::GetAllItems()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1292,
+      "text": "IL_000f: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<ItemDrop/ItemData>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1296,
+      "text": "IL_0019: call !0 System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1297,
+      "text": "IL_001e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1298,
+      "text": "IL_0023: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1301,
+      "text": "IL_002f: call System.Boolean System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1305,
+      "text": "IL_003a: constrained. System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2908,
+      "text": "IL_0020: callvirt System.String System.Exception::get_StackTrace()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2926,
+      "text": "IL_001d: callvirt System.String System.Exception::get_StackTrace()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4108,
+      "text": ".locals UnityEngine.Sprite, UnityEngine.GameObject, ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4119,
+      "text": "IL_0014: callvirt System.Boolean UnityEngine.GameObject::TryGetComponent<ItemDrop>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4122,
+      "text": "IL_001c: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4123,
+      "text": "IL_0021: callvirt UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6154,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<UnityEngine.GameObject>, UnityEngine.GameObject, Character, CharacterDrop, System.Collections.Generic.List`1/Enumerator<CharacterDrop/Drop>, CharacterDrop/Drop, ItemDrop, System.String, System.String"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6209,
+      "text": "IL_00a6: callvirt System.Boolean UnityEngine.GameObject::TryGetComponent<ItemDrop>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6212,
+      "text": "IL_00b2: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6213,
+      "text": "IL_00b7: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6214,
+      "text": "IL_00bc: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6218,
+      "text": "IL_00ca: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6219,
+      "text": "IL_00cf: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6220,
+      "text": "IL_00d4: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6847,
+      "text": "// System.Void neobotics.ValheimMods.SlayerSkills/InventoryGui_UpdateTrophyList_Patch::InventoryGui_UpdateTrophyList_Postfix(InventoryGui,System.Collections.Generic.List`1<UnityEngine.GameObject>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6850,
+      "text": "IL_0005: ldstr \"InventoryGui_UpdateTrophyList_Patch_Postfix\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7045,
+      "text": ".locals System.Int64, System.Int32, System.ValueTuple`2<System.Int64,System.Int32>, System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.KeyValuePair`2<UnityEngine.GameObject,System.Int32>>, System.Collections.Generic.KeyValuePair`2<UnityEngine.GameObject,System.Int32>, ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7090,
+      "text": "IL_008a: callvirt System.Boolean UnityEngine.GameObject::TryGetComponent<ItemDrop>(!!0&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7093,
+      "text": "IL_0093: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7094,
+      "text": "IL_0098: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7095,
+      "text": "IL_009d: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7099,
+      "text": "IL_00a8: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7100,
+      "text": "IL_00ad: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7101,
+      "text": "IL_00b2: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 252,
+      "text": "public static Sprite GetPrefabIcon(string prefabName)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/Utils.cs",
+      "line": 254,
+      "text": "Sprite result = null;"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 28,
+      "text": "public Sprite LoadSprite(string name, int width, int height, bool linear = false, float pixelsPerUnit = 100f)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 30,
+      "text": "logger.Debug(\"Reading image and creating sprite \" + name);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 33,
+      "text": "return LoadSprite(image, pixelsPerUnit);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 38,
+      "text": "public Sprite LoadSprite(Texture2D texture, float pixelsPerUnit = 100f)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 40,
+      "text": "return LoadSprite(texture, ((Object)texture).name, ((Texture)texture).width, ((Texture)texture).height, pixelsPerUnit);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 43,
+      "text": "public Sprite LoadSprite(Texture2D texture, string name, float width, float height, float pixelsPerUnit = 100f)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 55,
+      "text": "logger.Debug(\"Creating sprite \" + name + \" from existing texture\");"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 56,
+      "text": "Sprite val = Sprite.Create(texture, new Rect(0f, 0f, width, height), Vector2.zero, pixelsPerUnit);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 59,
+      "text": "throw new ApplicationException(\"Can't create sprite \" + name);"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 65,
+      "text": "public bool TryLoadImage(string name, int width, int height, bool linear, out Texture2D image)"
+    },
+    {
+      "file": "csharp/neobotics.ModSdk/ImageHelper.cs",
+      "line": 91,
+      "text": "Texture2D val = new Texture2D(width, height, (TextureFormat)4, true, linear);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 725,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, $\"{text} Slayer Level {num}\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/neobotics.ValheimMods/SlayerSkills.cs",
+      "line": 743,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)1, $\"{text} Slayer Level {num3}\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3928,
+      "text": "\"signature\": \"UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(System.String,System.Int32,System.Int32,System.Boolean,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3930,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3960,
+      "text": "\"signature\": \"UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3962,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3966,
+      "text": "\"type\": \"UnityEngine.Texture2D\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3980,
+      "text": "\"signature\": \"UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.String,System.Single,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3982,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3986,
+      "text": "\"type\": \"UnityEngine.Texture2D\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4012,
+      "text": "\"signature\": \"System.Boolean neobotics.ModSdk.ImageHelper::TryLoadImage(System.String,System.Int32,System.Int32,System.Boolean,UnityEngine.Texture2D\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4034,
+      "text": "\"type\": \"UnityEngine.Texture2D\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5665,
+      "text": "\"signature\": \"UnityEngine.Sprite neobotics.ModSdk.Utils::GetPrefabIcon(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5667,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7549,
+      "text": "\"System.Boolean neobotics.ModSdk.ImageHelper::TryLoadImage(System.String,System.Int32,System.Int32,System.Boolean,UnityEngine.Texture2D\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7611,
+      "text": "\"System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7820,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7997,
+      "text": "\"System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8039,
+      "text": "\"UnityEngine.Sprite ItemDrop/ItemData::GetIcon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8040,
+      "text": "\"UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8041,
+      "text": "\"UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.String,System.Single,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8042,
+      "text": "\"UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8142,
+      "text": "\"Can\\u0027t create sprite \","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8169,
+      "text": "\"Creating sprite \","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8255,
+      "text": "\"Reading image and creating sprite \","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2168,
+      "text": "// UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(System.String,System.Int32,System.Int32,System.Boolean,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2169,
+      "text": ".locals UnityEngine.Texture2D"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2172,
+      "text": "IL_0006: ldstr \"Reading image and creating sprite \""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2182,
+      "text": "IL_001e: call System.Boolean neobotics.ModSdk.ImageHelper::TryLoadImage(System.String,System.Int32,System.Int32,System.Boolean,UnityEngine.Texture2D&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2187,
+      "text": "IL_0029: call UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2192,
+      "text": "// UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2205,
+      "text": "IL_0017: call UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.String,System.Single,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2208,
+      "text": "// UnityEngine.Sprite neobotics.ModSdk.ImageHelper::LoadSprite(UnityEngine.Texture2D,System.String,System.Single,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2224,
+      "text": "IL_0021: ldstr \"Creating sprite \""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2237,
+      "text": "IL_0050: call UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2242,
+      "text": "IL_005e: ldstr \"Can't create sprite \""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2252,
+      "text": "// System.Boolean neobotics.ModSdk.ImageHelper::TryLoadImage(System.String,System.Int32,System.Int32,System.Boolean,UnityEngine.Texture2D&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2253,
+      "text": ".locals System.Byte[], UnityEngine.Texture2D, System.IO.Stream, System.String"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2321,
+      "text": "IL_00b1: newobj System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2326,
+      "text": "IL_00ba: call System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4107,
+      "text": "// UnityEngine.Sprite neobotics.ModSdk.Utils::GetPrefabIcon(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4108,
+      "text": ".locals UnityEngine.Sprite, UnityEngine.GameObject, ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4123,
+      "text": "IL_0021: callvirt UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6373,
+      "text": "IL_008e: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6435,
+      "text": "IL_0153: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

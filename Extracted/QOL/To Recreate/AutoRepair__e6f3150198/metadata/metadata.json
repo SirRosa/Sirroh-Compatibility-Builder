@@ -1,0 +1,322 @@
+﻿{
+  "input": "AutoRepair.dll",
+  "assembly": "AutoRepair, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.0.0.0",
+  "modules": [
+    {
+      "name": "AutoRepair.dll",
+      "mvid": "55c5b069-da7e-49a4-8718-f0dd4f5d8a5c"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "263"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "AutoRepair"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyDescriptionAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "AutoRepair"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCopyrightAttribute",
+      "arguments": [
+        "Copyright \u00A9  2026"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTrademarkAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.ComVisibleAttribute",
+      "arguments": [
+        "False"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.GuidAttribute",
+      "arguments": [
+        "7f98786e-0bb2-4664-9720-b8b80c418c49"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.0.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.8"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.8"
+        }
+      ],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "AutoRepair.Main",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Public, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "mtsukn.AutoRepair",
+            "AutoRepair",
+            "0.0.1"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "pluginGUID",
+          "type": "System.String",
+          "attributes": "Private, Static, Literal, HasDefault",
+          "constant": "mtsukn.AutoRepair",
+          "decorators": []
+        },
+        {
+          "name": "pluginName",
+          "type": "System.String",
+          "attributes": "Private, Static, Literal, HasDefault",
+          "constant": "AutoRepair",
+          "decorators": []
+        },
+        {
+          "name": "pluginVersion",
+          "type": "System.String",
+          "attributes": "Private, Static, Literal, HasDefault",
+          "constant": "0.0.1",
+          "decorators": []
+        },
+        {
+          "name": "HarmonyInstance",
+          "type": "HarmonyLib.Harmony",
+          "attributes": "Private, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "logger",
+          "type": "BepInEx.Logging.ManualLogSource",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "AutoRepair.Main/CraftingPatch",
+      "baseType": "System.Object",
+      "visibility": "NestedPublic, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "CraftingStation",
+            "Interact"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void AutoRepair.Main::Awake()",
+      "visibility": "Public, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Void AutoRepair.Main::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void AutoRepair.Main::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void AutoRepair.Main/CraftingPatch::Postfix(CraftingStation,Humanoid,System.Boolean,System.Boolean)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "CraftingStation"
+        },
+        {
+          "name": "user",
+          "type": "Humanoid"
+        },
+        {
+          "name": "repeat",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "alt",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 61
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "BepInEx.Logging.ManualLogSource BepInEx.Logging.Logger::CreateLogSource(System.String)",
+    "InventoryGui InventoryGui::get_instance()",
+    "System.Object System.Reflection.MethodBase::Invoke(System.Object,System.Object[])",
+    "System.Reflection.Assembly System.Reflection.Assembly::GetExecutingAssembly()",
+    "System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])",
+    "System.String System.String::Format(System.String,System.Object)",
+    "System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+  ],
+  "stringLiterals": [
+    " ",
+    "[AutoRepair] Repaired {0} objects!\n",
+    "AutoRepair",
+    "HaveRepairableItems",
+    "mtsukn.AutoRepair",
+    "RepairOneItem"
+  ],
+  "totals": {
+    "types": 3,
+    "methods": 4,
+    "strings": 6,
+    "calledMethods": 12,
+    "resources": 0
+  }
+}

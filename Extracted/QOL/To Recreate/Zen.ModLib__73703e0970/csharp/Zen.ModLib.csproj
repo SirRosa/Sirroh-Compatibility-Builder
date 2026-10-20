@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Zen.ModLib</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Zen.Resources.quickoutline_linux" />
+    <None Remove="Zen.Resources.quickoutline_osx" />
+    <None Remove="Zen.Resources.quickoutline_windows" />
+    <EmbeddedResource Include="Zen.Resources.quickoutline_linux" LogicalName="Zen.Resources.quickoutline_linux" />
+    <EmbeddedResource Include="Zen.Resources.quickoutline_osx" LogicalName="Zen.Resources.quickoutline_osx" />
+    <EmbeddedResource Include="Zen.Resources.quickoutline_windows" LogicalName="Zen.Resources.quickoutline_windows" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="BepInEx" />
+    <Reference Include="Jotunn" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem" />
+    <Reference Include="Splatform" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.AnimationModule" />
+  </ItemGroup>
+</Project>

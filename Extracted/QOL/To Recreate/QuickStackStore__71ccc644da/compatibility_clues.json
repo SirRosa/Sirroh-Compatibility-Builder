@@ -1,0 +1,4543 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 10,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 11,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 12,
+      "text": "[BepInPlugin(\"goldenrevolver.quick_stack_store\", \"Quick Stack - Store - Sort - Trash - Restock\", \"1.4.16\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 13,
+      "text": "public class QuickStackStorePlugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 43,
+      "text": "QSSConfig.LoadConfig((BaseUnityPlugin)(object)this);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 318,
+      "text": "internal static void LoadConfig(BaseUnityPlugin plugin)"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 327,
+      "text": "private static void LoadConfigInternal(BaseUnityPlugin plugin)"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonRenderer.cs",
+      "line": 628,
+      "text": "internal static void OnButtonRelevantSettingChanged(BaseUnityPlugin plugin, bool includeTrashButton = false)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 242,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 255,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 260,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 265,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3433,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35441,
+      "text": "\"signature\": \"System.Void QuickStackStore.QSSConfig::LoadConfig(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35447,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35457,
+      "text": "\"signature\": \"System.Void QuickStackStore.QSSConfig::LoadConfigInternal(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35463,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36656,
+      "text": "\"signature\": \"System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36662,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88919,
+      "text": "\"BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88962,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90276,
+      "text": "\"System.Version BepInEx.BepInPlugin::get_Version()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90323,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90376,
+      "text": "\"System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90426,
+      "text": "\"System.Void QuickStackStore.QSSConfig::LoadConfig(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90427,
+      "text": "\"System.Void QuickStackStore.QSSConfig::LoadConfigInternal(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 189,
+      "text": "IL_00f3: call System.Void QuickStackStore.QSSConfig::LoadConfig(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 200,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2046,
+      "text": "IL_0026: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2047,
+      "text": "IL_002b: callvirt System.Version BepInEx.BepInPlugin::get_Version()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2074,
+      "text": "IL_0026: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2075,
+      "text": "IL_002b: callvirt System.Version BepInEx.BepInPlugin::get_Version()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2362,
+      "text": "IL_008d: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2363,
+      "text": "IL_0092: callvirt System.Version BepInEx.BepInPlugin::get_Version()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6601,
+      "text": "// System.Void QuickStackStore.QSSConfig::LoadConfig(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6605,
+      "text": "IL_0002: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6612,
+      "text": "IL_0019: call System.Void QuickStackStore.QSSConfig::LoadConfigInternal(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6623,
+      "text": "// System.Void QuickStackStore.QSSConfig::LoadConfigInternal(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6629,
+      "text": "IL_0008: stfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6643,
+      "text": "IL_002a: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6644,
+      "text": "IL_002f: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8685,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8687,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8694,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8696,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8703,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8705,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8712,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8714,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8721,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8723,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8730,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8732,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8739,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8741,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8748,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8750,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8757,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8759,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8766,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8768,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8775,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8777,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8784,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8786,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8793,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8795,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8802,
+      "text": "IL_0001: ldfld BepInEx.BaseUnityPlugin QuickStackStore.QSSConfig/<>c__DisplayClass13_0::plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8804,
+      "text": "IL_0007: call System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9164,
+      "text": "// System.Void QuickStackStore.ButtonRenderer::OnButtonRelevantSettingChanged(BepInEx.BaseUnityPlugin,System.Boolean)"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(InventoryGui))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 22,
+      "text": "[HarmonyPatch(\"Show\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 23,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 42,
+      "text": "[HarmonyPatch(\"Hide\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 43,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 49,
+      "text": "[HarmonyPatch(\"UpdateItemDrag\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 50,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 119,
+      "text": "[HarmonyPatch(typeof(Player))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 122,
+      "text": "[HarmonyPatch(\"AutoPickup\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 123,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 135,
+      "text": "FieldInfo autoPickupField = AccessTools.DeclaredField(typeof(ItemDrop), \"m_autoPickup\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 136,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(TrashItemPlayerPatches), \"ShouldAutoPickup\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(InventoryGrid))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 14,
+      "text": "[HarmonyPatch(\"OnRightDown\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 15,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(\"OnLeftDown\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 22,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 41,
+      "text": "[HarmonyPatch(\"UpdateGamepad\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 42,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 45,
+      "text": "MethodInfo GetButtonDownMethod = AccessTools.DeclaredMethod(typeof(ZInput), \"GetButtonDown\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 46,
+      "text": "MethodInfo GetButtonDownWithConfigMethod = AccessTools.DeclaredMethod(typeof(InventoryGridButtonHandlingPatches), \"ReactToGetButtonDown\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Container))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 12,
+      "text": "[HarmonyPatch(\"Awake\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 13,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Localization))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationPatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(\"SetupLanguage\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 44,
+      "text": "Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), \"goldenrevolver.quick_stack_store\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(ItemData))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(\"GetTooltip\", new Type[]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 20,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchInventory.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Inventory))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchInventory.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(\"TopFirst\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchInventory.cs",
+      "line": 9,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PlayerPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PlayerPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(\"Start\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PlayerPatch.cs",
+      "line": 10,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/BorderRenderer.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(InventoryGrid))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/BorderRenderer.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(\"UpdateGui\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/BorderRenderer.cs",
+      "line": 16,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 731,
+      "text": "object obj = AccessTools.FieldRefAccess<ConfigFile, object>(\"_ioLock\").Invoke(Config);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 732,
+      "text": "Dictionary<ConfigDefinition, string> dictionary = (Dictionary<ConfigDefinition, string>)AccessTools.PropertyGetter(typeof(ConfigFile), \"OrphanedEntries\").Invoke(Config, new object[0]);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StackAllPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Container))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/StackAllPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(\"RPC_StackResponse\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/StackAllPatch.cs",
+      "line": 10,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(InventoryGui))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 13,
+      "text": "[HarmonyPatch(\"Show\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 14,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(\"Hide\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 24,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 31,
+      "text": "[HarmonyPatch(\"CloseContainer\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 32,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 57,
+      "text": "[HarmonyPatch(typeof(Game))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 60,
+      "text": "[HarmonyPatch(\"Logout\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/ButtonUIPatches.cs",
+      "line": 61,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchContainer.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Container))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchContainer.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(\"Awake\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchContainer.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchContainer.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(\"OnDestroyed\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/PatchContainer.cs",
+      "line": 16,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/FejdStartupPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(FejdStartup))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/FejdStartupPatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(\"Awake\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/FejdStartupPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TakeAllPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(InventoryGui))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TakeAllPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(\"OnTakeAll\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TakeAllPatch.cs",
+      "line": 10,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/QuickStackStore/KeybindChecker.cs",
+      "line": 9,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/QuickStackStore/KeybindChecker.cs",
+      "line": 12,
+      "text": "[HarmonyPatch(typeof(Player))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/KeybindChecker.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(\"Update\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/KeybindChecker.cs",
+      "line": 16,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 15,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 80,
+      "text": "Patches patchInfo = PatchProcessor.GetPatchInfo((MethodBase)AccessTools.DeclaredMethod(typeof(ZNet), \"Awake\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 90,
+      "text": "val.PatchAll(item);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 175,
+      "text": "AccessTools.DeclaredField(typeof(ZNet), \"m_connectionStatus\").SetValue(null, (object)(ConnectionStatus)3);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 224,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 248,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 249,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 284,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 285,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 298,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 299,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 26,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 33,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 36,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 73,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 74,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 96,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 99,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 120,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Shutdown\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 123,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 259,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 274,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 290,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 316,
+      "text": "AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\").SetValue(val, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 349,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 350,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 381,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 384,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 397,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 400,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 552,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 640,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 641,
+      "text": "SyncedList val = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 949,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1185,
+      "text": "AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\").SetValue(parameterInfo, type);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 308,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 621,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 695,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 714,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1348,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1466,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1605,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1840,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1892,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3859,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3893,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4093,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4217,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4289,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4362,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4614,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4633,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27888,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27933,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28111,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28199,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28227,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28665,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28693,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29819,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 32211,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 32219,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33058,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33066,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33125,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33133,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33997,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34005,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34028,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34036,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34419,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34427,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 9,
+      "text": "internal static ConfigEntry<T> BindSyncLocker<T>(this ConfigFile configFile, ConfigSync serverSyncInstance, string group, string name, T value, ConfigDescription description) where T : IConvertible"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 11,
+      "text": "ConfigEntry<T> val = configFile.Bind<T>(group, name, value, description);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 12,
+      "text": "serverSyncInstance.AddLockingConfigEntry<T>(val);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 16,
+      "text": "internal static ConfigEntry<T> BindSyncLocker<T>(this ConfigFile configFile, ConfigSync serverSyncInstance, string group, string name, T value, string description) where T : IConvertible"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 20,
+      "text": "return configFile.BindSyncLocker(serverSyncInstance, group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 23,
+      "text": "internal static ConfigEntry<T> BindSynced<T>(this ConfigFile configFile, ConfigSync serverSyncInstance, string group, string name, T value, ConfigDescription description, bool synchronizedSetting = true)"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 25,
+      "text": "ConfigEntry<T> val = configFile.Bind<T>(group, name, value, description);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 26,
+      "text": "SyncedConfigEntry<T> syncedConfigEntry = serverSyncInstance.AddConfigEntry<T>(val);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 27,
+      "text": "syncedConfigEntry.SynchronizedConfig = synchronizedSetting;"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 31,
+      "text": "internal static ConfigEntry<T> BindSynced<T>(this ConfigFile configFile, ConfigSync serverSyncInstance, string group, string name, T value, string description, bool synchronizedSetting = true)"
+    },
+    {
+      "file": "csharp/QuickStackStore/ServerSyncWrapper.cs",
+      "line": 35,
+      "text": "return configFile.BindSynced(serverSyncInstance, group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting);"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 8,
+      "text": "public static ConfigEntry<string> RestockLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 10,
+      "text": "public static ConfigEntry<string> QuickStackLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 12,
+      "text": "public static ConfigEntry<string> SortLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 14,
+      "text": "public static ConfigEntry<string> QuickStackResultMessageNothing;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 16,
+      "text": "public static ConfigEntry<string> QuickStackResultMessageNone;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 18,
+      "text": "public static ConfigEntry<string> QuickStackResultMessageOne;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 20,
+      "text": "public static ConfigEntry<string> QuickStackResultMessageMore;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 22,
+      "text": "public static ConfigEntry<string> RestockResultMessageNothing;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 24,
+      "text": "public static ConfigEntry<string> RestockResultMessageNone;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 26,
+      "text": "public static ConfigEntry<string> RestockResultMessagePartial;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 28,
+      "text": "public static ConfigEntry<string> RestockResultMessageFull;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 30,
+      "text": "public static ConfigEntry<string> QuickStackLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 32,
+      "text": "public static ConfigEntry<string> StoreAllLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 34,
+      "text": "public static ConfigEntry<string> SortLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 36,
+      "text": "public static ConfigEntry<string> RestockLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 38,
+      "text": "public static ConfigEntry<string> TrashLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 40,
+      "text": "public static ConfigEntry<string> TakeAllLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 42,
+      "text": "public static ConfigEntry<string> SortByInternalNameLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 44,
+      "text": "public static ConfigEntry<string> SortByTranslatedNameLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 46,
+      "text": "public static ConfigEntry<string> SortByValueLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 48,
+      "text": "public static ConfigEntry<string> SortByWeightLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 50,
+      "text": "public static ConfigEntry<string> SortByTypeLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 52,
+      "text": "public static ConfigEntry<string> TrashConfirmationOkayButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 54,
+      "text": "public static ConfigEntry<string> QuickTrashConfirmation;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 56,
+      "text": "public static ConfigEntry<string> CantTrashFavoritedItemWarning;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 58,
+      "text": "public static ConfigEntry<string> CantTrashFlagFavoritedItemWarning;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 60,
+      "text": "public static ConfigEntry<string> CantTrashHotkeyBarItemWarning;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 62,
+      "text": "public static ConfigEntry<string> CantFavoriteTrashFlaggedItemWarning;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 64,
+      "text": "public static ConfigEntry<string> FavoritedItemTooltip;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 66,
+      "text": "public static ConfigEntry<string> TrashFlaggedItemTooltip;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 70,
+      "text": "internal static string GetRelevantTranslation(ConfigEntry<string> config, string configName)"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 16,
+      "text": "public static ConfigEntry<ConfigTemplate> ConfigTemplate;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 18,
+      "text": "public static ConfigEntry<OverrideButtonDisplay> OverrideButtonDisplay;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 20,
+      "text": "public static ConfigEntry<OverrideKeybindBehavior> OverrideKeybindBehavior;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 22,
+      "text": "public static ConfigEntry<OverrideHotkeyBarBehavior> OverrideHotkeyBarBehavior;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 24,
+      "text": "public static ConfigEntry<bool> UseTopDownLogicForEverything;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 29,
+      "text": "public static ConfigEntry<DPadUsage> ControllerDPadUsageInInventoryGrid;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 31,
+      "text": "public static ConfigEntry<KeyboardShortcut> ControllerDPadUsageModifierKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 33,
+      "text": "public static ConfigEntry<bool> RemoveControllerButtonHintFromTakeAllButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 35,
+      "text": "public static ConfigEntry<bool> UseHardcodedControllerSupport;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 40,
+      "text": "public static ConfigEntry<Color> BorderColorFavoritedItem;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 42,
+      "text": "public static ConfigEntry<Color> BorderColorFavoritedItemOnFavoritedSlot;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 44,
+      "text": "public static ConfigEntry<Color> BorderColorFavoritedSlot;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 46,
+      "text": "public static ConfigEntry<Color> BorderColorTrashFlaggedItem;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 48,
+      "text": "public static ConfigEntry<Color> BorderColorTrashFlaggedItemOnFavoritedSlot;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 50,
+      "text": "public static ConfigEntry<FavoritingToggling> DisplayFavoriteToggleButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 52,
+      "text": "public static ConfigEntry<bool> DisplayTooltipHint;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 54,
+      "text": "public static ConfigEntry<KeyboardShortcut> FavoritingModifierKeybind1;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 56,
+      "text": "public static ConfigEntry<KeyboardShortcut> FavoritingModifierKeybind2;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 58,
+      "text": "public static ConfigEntry<FavoriteToggleButtonStyle> FavoriteToggleButtonStyle;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 65,
+      "text": "public static ConfigEntry<bool> AllowAreaStackingInMultiplayerWithoutMUC;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 67,
+      "text": "public static ConfigEntry<bool> AllowAreaStackingToNonPhysicalContainers;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 69,
+      "text": "public static ConfigEntry<bool> AllowAreaStackingToPhysicalNonPlayerBuiltContainers;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 71,
+      "text": "public static ConfigEntry<bool> SuppressContainerSoundAndVisuals;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 73,
+      "text": "public static ConfigEntry<bool> ToggleAreaStackRestockConfigServerSync;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 78,
+      "text": "public static ConfigEntry<bool> ChangeHoldToStackFeatureToUseModdedQuickStackingLogic;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 80,
+      "text": "public static ConfigEntry<ShowTwoButtons> DisplayQuickStackButtons;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 82,
+      "text": "public static ConfigEntry<bool> HideBaseGamePlaceStacksButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 84,
+      "text": "public static ConfigEntry<QuickStackBehavior> QuickStackHotkeyBehaviorWhenContainerOpen;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 86,
+      "text": "public static ConfigEntry<bool> QuickStackIncludesHotkeyBar;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 88,
+      "text": "public static ConfigEntry<KeyboardShortcut> QuickStackKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 90,
+      "text": "public static ConfigEntry<float> QuickStackToNearbyRange;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 92,
+      "text": "public static ConfigEntry<bool> QuickStackTrophiesIntoSameContainer;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 94,
+      "text": "public static ConfigEntry<bool> ShowQuickStackResultMessage;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 99,
+      "text": "public static ConfigEntry<ShowTwoButtons> DisplayRestockButtons;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 101,
+      "text": "public static ConfigEntry<float> RestockFromNearbyRange;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 103,
+      "text": "public static ConfigEntry<RestockBehavior> RestockHotkeyBehaviorWhenContainerOpen;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 105,
+      "text": "public static ConfigEntry<bool> RestockIncludesHotkeyBar;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 107,
+      "text": "public static ConfigEntry<KeyboardShortcut> RestockKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 109,
+      "text": "public static ConfigEntry<bool> RestockOnlyAmmoAndConsumables;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 111,
+      "text": "public static ConfigEntry<bool> RestockOnlyFavoritedItems;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 113,
+      "text": "public static ConfigEntry<int> RestockStackSizeLimitAmmo;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 115,
+      "text": "public static ConfigEntry<int> RestockStackSizeLimitConsumables;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 117,
+      "text": "public static ConfigEntry<int> RestockStackSizeLimitGeneral;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 119,
+      "text": "public static ConfigEntry<bool> ShowRestockResultMessage;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 124,
+      "text": "public static ConfigEntry<bool> ChestsUseImprovedTakeAllLogic;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 126,
+      "text": "public static ConfigEntry<bool> DisplayStoreAllButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 128,
+      "text": "public static ConfigEntry<bool> NeverMoveTakeAllButton;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 130,
+      "text": "public static ConfigEntry<KeyboardShortcut> StoreAllKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 132,
+      "text": "public static ConfigEntry<bool> StoreAllIncludesEquippedItems;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 134,
+      "text": "public static ConfigEntry<bool> StoreAllIncludesHotkeyBar;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 136,
+      "text": "public static ConfigEntry<KeyboardShortcut> TakeAllKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 141,
+      "text": "public static ConfigEntry<AutoSortBehavior> AutoSort;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 143,
+      "text": "public static ConfigEntry<ShowTwoButtons> DisplaySortButtons;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 145,
+      "text": "public static ConfigEntry<bool> DisplaySortCriteriaInLabel;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 147,
+      "text": "public static ConfigEntry<SortCriteriaEnum> SortCriteria;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 149,
+      "text": "public static ConfigEntry<SortBehavior> SortHotkeyBehaviorWhenContainerOpen;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 151,
+      "text": "public static ConfigEntry<bool> SortInAscendingOrder;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 153,
+      "text": "public static ConfigEntry<bool> SortIncludesHotkeyBar;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 155,
+      "text": "public static ConfigEntry<KeyboardShortcut> SortKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 157,
+      "text": "public static ConfigEntry<bool> SortLeavesEmptyFavoritedSlotsEmpty;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 159,
+      "text": "public static ConfigEntry<bool> SortMergesStacks;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 164,
+      "text": "public static ConfigEntry<bool> AlwaysConsiderTrophiesTrashFlagged;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 166,
+      "text": "public static ConfigEntry<bool> DisplayTrashCanUI;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 168,
+      "text": "public static ConfigEntry<bool> EnableQuickTrash;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 170,
+      "text": "public static ConfigEntry<bool> PreventAutoPickupOfTrashFlaggedItems;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 172,
+      "text": "public static ConfigEntry<KeyboardShortcut> QuickTrashKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 174,
+      "text": "public static ConfigEntry<ShowConfirmDialogOption> ShowConfirmDialogForNormalItem;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 176,
+      "text": "public static ConfigEntry<bool> ShowConfirmDialogForQuickTrash;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 178,
+      "text": "public static ConfigEntry<bool> TrashingCanAffectHotkeyBar;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 180,
+      "text": "public static ConfigEntry<KeyboardShortcut> TrashKeybind;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 182,
+      "text": "public static ConfigEntry<Color> TrashLabelColor;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 187,
+      "text": "public static ConfigEntry<DebugLevel> ShowDebugLogs;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 189,
+      "text": "public static ConfigEntry<DebugSeverity> DebugSeverity;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 191,
+      "text": "public static ConfigEntry<ResetFavoritingData> ResetAllFavoritingData;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 314,
+      "text": "public static ConfigFile Config;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 316,
+      "text": "internal static readonly List<ConfigEntryBase> keyBinds = new List<ConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 368,
+      "text": "GeneralConfig.ConfigTemplate = Config.Bind<ConfigTemplate>(text8, \"ConfigTemplate\", ConfigTemplate.NotCurrentlyLoadingTemplate, \"Immediately or at the next startup, resets the config and applies the selected config template. Does not change any custom keybinds!\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 370,
+      "text": "GeneralConfig.OverrideButtonDisplay = Config.Bind<OverrideButtonDisplay>(text8, \"OverrideButtonDisplay\", OverrideButtonDisplay.UseIndividualConfigOptions, \"Override to disable all new UI elements no matter the current individual setting of each of them.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 375,
+      "text": "GeneralConfig.OverrideHotkeyBarBehavior = Config.Bind<OverrideHotkeyBarBehavior>(text8, \"OverrideHotkeyBarBehavior\", OverrideHotkeyBarBehavior.NeverAffectHotkeyBar, \"Override to never affect the hotkey bar with any feature no matter the individual setting of each of them. Recommended to turn off if you are actually using favoriting.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 376,
+      "text": "GeneralConfig.OverrideKeybindBehavior = Config.Bind<OverrideKeybindBehavior>(text8, \"OverrideKeybindBehavior\", OverrideKeybindBehavior.UseIndividualConfigOptions, \"Override to disable all new keybinds no matter the current individual setting of each of them.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 390,
+      "text": "GeneralConfig.UseTopDownLogicForEverything = Config.Bind<bool>(text8, \"UseTopDownLogicForEverything\", false, \"Whether to always put items into the top first row (affects the entire game) rather than top or bottom first depending on the item type (base game uses top first only for weapons and tools, bottom first for the rest). Recommended to keep of"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 392,
+      "text": "ControllerConfig.ControllerDPadUsageInInventoryGrid = Config.Bind<DPadUsage>(text8, \"ControllerDPadUsageInInventoryGrid\", DPadUsage.Keybinds, \"In the base game the DPad and the left stick are both used for slot movement inside the inventory grid. This allows you to exclude the DPad from this to get more keys for keybinds.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 393,
+      "text": "ControllerConfig.ControllerDPadUsageModifierKeybind = Config.Bind<KeyboardShortcut>(text8, \"ControllerDPadUsageModifierKeybind\", new KeyboardShortcut((KeyCode)0, Array.Empty<KeyCode>()), string.Format(\"When {0} is set to {1}, then holding this prevents slot movement in the inventory grid with the DPad.\", \"ControllerDPadUsageInInventoryGrid\", DPadUs"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 394,
+      "text": "ControllerConfig.RemoveControllerButtonHintFromTakeAllButton = Config.Bind<bool>(text8, \"RemoveControllerButtonHintFromTakeAllButton\", false, \"Remove the button hint from the 'Take All' button while using a controller for consistency. Especially useful when using the new keybind TakeAllKeybind.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 399,
+      "text": "ControllerConfig.UseHardcodedControllerSupport = Config.Bind<bool>(text8, \"UseHardcodedControllerSupport\", true, \"Whether to enable the hardcoded controller bindings including UI hints while a controller is used. This disables custom hotkeys.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 405,
+      "text": "FavoriteConfig.BorderColorFavoritedItem = Config.Bind<Color>(text8, \"BorderColorFavoritedItem\", new Color(1f, 0.8482759f, 0f), \"Color of the border for slots containing favorited items.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 410,
+      "text": "FavoriteConfig.BorderColorFavoritedItemOnFavoritedSlot = Config.Bind<Color>(text8, \"BorderColorFavoritedItemOnFavoritedSlot\", new Color(0.5f, 0.67413795f, 0.5f), \"Color of the border of a favorited slot that also contains a favorited item.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 411,
+      "text": "FavoriteConfig.BorderColorFavoritedSlot = Config.Bind<Color>(text8, \"BorderColorFavoritedSlot\", new Color(0f, 0.5f, 1f), \"Color of the border for favorited slots.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 412,
+      "text": "FavoriteConfig.BorderColorTrashFlaggedItem = Config.Bind<Color>(text8, \"BorderColorTrashFlaggedItem\", new Color(0.5f, 0f, 0f), ConfigurationManagerAttributes.HiddenTrashingDisplay(\"Color of the border for slots containing trash flagged items.\"));"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 413,
+      "text": "FavoriteConfig.BorderColorTrashFlaggedItemOnFavoritedSlot = Config.Bind<Color>(text8, \"BorderColorTrashFlaggedItemOnFavoritedSlot\", Color.black, ConfigurationManagerAttributes.HiddenTrashingDisplay(\"Color of the border of a favorited slot that also contains a trash flagged item.\"));"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 414,
+      "text": "FavoriteConfig.DisplayFavoriteToggleButton = Config.Bind<FavoritingToggling>(text8, \"DisplayFavoriteToggleButton\", FavoritingToggling.EnabledTopButton, \"Whether to display a button to toggle favoriting mode on or off, allowing to favorite without holding any hotkey (\" + text + \"). This can also be used to trash flag. The hotkeys work independently."
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 423,
+      "text": "FavoriteConfig.DisplayTooltipHint = Config.Bind<bool>(text8, \"DisplayTooltipHint\", true, \"Whether to add additional info the item tooltip of a favorited or trash flagged item.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 424,
+      "text": "FavoriteConfig.FavoritingModifierKeybind1 = Config.Bind<KeyboardShortcut>(text8, \"FavoritingModifierKeybind1\", new KeyboardShortcut((KeyCode)308, Array.Empty<KeyCode>()), text7 + \" Identical to FavoritingModifierKeybind2.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 425,
+      "text": "FavoriteConfig.FavoritingModifierKeybind2 = Config.Bind<KeyboardShortcut>(text8, \"FavoritingModifierKeybind2\", new KeyboardShortcut((KeyCode)307, Array.Empty<KeyCode>()), text7 + \" Identical to FavoritingModifierKeybind1.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 428,
+      "text": "FavoriteConfig.FavoriteToggleButtonStyle = Config.Bind<FavoriteToggleButtonStyle>(text8, \"FavoriteToggleButtonStyle\", FavoriteToggleButtonStyle.TextStarInItemFavoriteColor, \"The style of the favorite toggling button enabled with DisplayFavoriteToggleButton.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 442,
+      "text": "QuickStackRestockConfig.AllowAreaStackingInMultiplayerWithoutMUC = Config.BindSynced(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"AllowAreaStackingInMultiplayerWithoutMUC\", value: false, ConfigurationManagerAttributes.MUCSettingDisplay(\"AllowAreaStackingInMultiplayer\", category, \"Whether you can use area quick stacking and area resto"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 447,
+      "text": "QuickStackRestockConfig.AllowAreaStackingToNonPhysicalContainers = Config.BindSynced(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"AllowAreaStackingToNonPhysicalContainers\", value: true, ConfigurationManagerAttributes.CustomCategoryWithDescription(category, \"Allow stacking to or restocking from containers without a physical piece obje"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 448,
+      "text": "QuickStackRestockConfig.AllowAreaStackingToPhysicalNonPlayerBuiltContainers = Config.BindSynced(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"AllowAreaStackingToPhysicalNonPlayerBuiltContainers\", value: false, ConfigurationManagerAttributes.CustomCategoryWithDescription(category, \"Allow stacking to or restocking from containers like d"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 449,
+      "text": "QuickStackRestockConfig.SuppressContainerSoundAndVisuals = Config.BindSynced(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"SuppressContainerSoundAndVisuals\", value: true, ConfigurationManagerAttributes.CustomCategoryWithDescription(category, \"Whether when a feature checks multiple containers in an area, they actually play opening soun"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 450,
+      "text": "QuickStackRestockConfig.ToggleAreaStackRestockConfigServerSync = Config.BindSyncLocker(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"ToggleAreaStackRestockConfigServerSync\", value: true, ConfigurationManagerAttributes.CustomCategoryWithDescription(category, \"Whether the config settings about area quick stacking and area restocking (in"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 452,
+      "text": "QuickStackConfig.ChangeHoldToStackFeatureToUseModdedQuickStackingLogic = Config.Bind<bool>(text8, \"ChangeHoldToStackFeatureToUseModdedQuickStackingLogic\", true, \"Whether to override the behavior when holding open on a container that you are hovering on with the modded quick stacking behavior. Does not override the behavior of the default 'Place Sta"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 453,
+      "text": "QuickStackConfig.DisplayQuickStackButtons = Config.Bind<ShowTwoButtons>(text8, \"DisplayQuickStackButtons\", ShowTwoButtons.BothButDependingOnContext, text5);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 458,
+      "text": "QuickStackConfig.HideBaseGamePlaceStacksButton = Config.Bind<bool>(text8, \"HideBaseGamePlaceStacksButton\", true, ConfigurationManagerAttributes.ForceEnabledDisplay(() => CompatibilitySupport.HasRandyPlugin() == CompatibilitySupport.RandyStatus.EnabledWithQuickSlots, \"Whether to hide the 'Place Stacks' button that uses the base game quick stacking l"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 463,
+      "text": "QuickStackConfig.QuickStackHotkeyBehaviorWhenContainerOpen = Config.Bind<QuickStackBehavior>(text8, \"QuickStackHotkeyBehaviorWhenContainerOpen\", QuickStackBehavior.QuickStackOnlyToCurrentContainer, text4);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 464,
+      "text": "QuickStackConfig.QuickStackIncludesHotkeyBar = Config.Bind<bool>(text8, \"QuickStackIncludesHotkeyBar\", true, \"Whether to also quick stack items from the hotkey bar (\" + text3 + \").\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 465,
+      "text": "QuickStackConfig.QuickStackKeybind = Config.Bind<KeyboardShortcut>(text8, \"QuickStackKeybind\", new KeyboardShortcut((KeyCode)112, Array.Empty<KeyCode>()), \"The hotkey to start quick stacking to the current or nearby containers (depending on QuickStackHotkeyBehaviorWhenContainerOpen, \" + text2 + \").\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 467,
+      "text": "QuickStackConfig.QuickStackToNearbyRange = Config.BindSynced(QuickStackRestockConfig.AreaStackRestockServerSync, text8, \"QuickStackToNearbyRange\", 10f, ConfigurationManagerAttributes.CustomCategoryWithDescription(category, description));"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 472,
+      "text": "QuickStackConfig.QuickStackTrophiesIntoSameContainer = Config.Bind<bool>(text8, \"QuickStackTrophiesIntoSameContainer\", false, \"Whether to put all types of trophies in the container if any trophy is found in that container.\");"
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 10,
+      "text": "internal const string rpc_requestSort = \"QuickStackStore_RequestSort\";"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 18,
+      "text": "__instance.m_nview = (Object.op_Implicit((Object)(object)__instance.m_rootObjectOverride) ? ((Component)__instance.m_rootObjectOverride).GetComponent<ZNetView>() : ((Component)__instance).GetComponent<ZNetView>());"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 25,
+      "text": "RPC_RequestSort(l, __instance);"
+    },
+    {
+      "file": "csharp/QuickStackStore/ContainerPatch.cs",
+      "line": 30,
+      "text": "public static void RPC_RequestSort(long _, Container container)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 112,
+      "text": "container.m_nview.InvokeRPC(\"QuickStackStore_RequestSort\", Array.Empty<object>());"
+    },
+    {
+      "file": "csharp/QuickStackStore/StackAllPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(\"RPC_StackResponse\")]"
+    },
+    {
+      "file": "csharp/QuickStackStore/AreaStackRestockHelper.cs",
+      "line": 85,
+      "text": "ZDOMan.instance.ForceSendZDO(ZNet.GetUID(), container.m_nview.GetZDO().m_uid);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 36,
+      "text": "private readonly List<ZRpc> ValidatedClients = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 81,
+      "text": "if (patchInfo != null && patchInfo.Postfixes.Count((Patch p) => p.PatchMethod.DeclaringType == typeof(ConfigSync.RegisterRPCPatch)) > 0)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 152,
+      "text": "private string ErrorServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 157,
+      "text": "private string Error(ZRpc? rpc = null)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 167,
+      "text": "private static VersionCheck[] GetFailedServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 178,
+      "text": "private static void DisconnectClient(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 183,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 188,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg, Action<ZRpc, ZPackage>? original)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 225,
+      "text": "private static bool RPC_PeerInfo(ZRpc rpc, ZNet __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 255,
+      "text": "IDictionary dictionary = (IDictionary)typeof(ZRpc).GetField(\"m_functions\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(peer.m_rpc);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 259,
+      "text": "Action<ZRpc, ZPackage> action = (Action<ZRpc, ZPackage>)obj.GetType().GetField(\"m_action\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(obj);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 260,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)((ZRpc rpc, ZPackage pkg) =>"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 267,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)CheckVersion);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 24,
+      "text": "public static ZRpc? currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 27,
+      "text": "private static void Prefix(ZRpc __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 34,
+      "text": "internal static class RegisterRPCPatch"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 42,
+      "text": "ZRoutedRpc.instance.Register<ZPackage>(configSync2.Name + \" ConfigSync\", (Action<long, ZPackage>)configSync2.RPC_FromOtherClientConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 108,
+      "text": "peer.m_rpc.Register<ZPackage>(configSync.Name + \" ConfigSync\", (Action<ZRpc, ZPackage>)configSync.RPC_FromServerConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 260,
+      "text": "private static void Prefix(ref Dictionary<Assembly, BufferingSocket>? __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 291,
+      "text": "private static void Postfix(Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 599,
+      "text": "private void RPC_FromServerConfigSync(ZRpc rpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 609,
+      "text": "private void RPC_FromOtherClientConfigSync(long sender, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 626,
+      "text": "ZRpc? currentRpc = SnatchCurrentlyHandlingRPC.currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 871,
+      "text": "ZRoutedRpc rpc = ZRoutedRpc.instance;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 949,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1120,
+      "text": "ZRpc.Serialize(new object[1] { value }, ref package);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1187,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, package, ref source);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1850,
+      "text": "\"name\": \"rpc_requestSort\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27890,
+      "text": "\"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27900,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27919,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27947,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27980,
+      "text": "\"type\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28058,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28230,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28356,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29209,
+      "text": "\"type\": \"ZRoutedRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29936,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29993,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 30145,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 30179,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34421,
+      "text": "\"RPC_StackResponse\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35363,
+      "text": "\"signature\": \"System.Void QuickStackStore.ContainerPatch::RPC_RequestSort(System.Int64,Container)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 81783,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 81789,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 81803,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82261,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82267,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82292,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82323,
+      "text": "\"signature\": \"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82339,
+      "text": "\"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82357,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82392,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82415,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.IDisposable.Dispose()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82433,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82444,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.Generic.IEnumerator\\u003CSystem.Object\\u003E.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82462,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.Reset()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82480,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82498,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82509,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82600,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Prefix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E\\u0026,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82614,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82639,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Postfix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82653,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84332,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84338,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84348,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84354,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84375,
+      "text": "\"signature\": \"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84381,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84402,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84408,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84418,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84424,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84438,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84444,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84452,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84462,
+      "text": "\"signature\": \"System.Boolean ServerSync.VersionCheck::RPC_PeerInfo(ZRpc,ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84468,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84480,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84796,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84802,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88715,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CZNetView\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88975,
+      "text": "\"ISocket ZRpc::GetSocket()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88988,
+      "text": "\"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89122,
+      "text": "\"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89226,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Contains(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89227,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89543,
+      "text": "\"System.Boolean ZNetView::HasOwner()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89544,
+      "text": "\"System.Boolean ZNetView::IsOwner()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89784,
+      "text": "\"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90086,
+      "text": "\"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90088,
+      "text": "\"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90402,
+      "text": "\"System.Void QuickStackStore.ContainerPatch::RPC_RequestSort(System.Int64,Container)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90518,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90519,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90542,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90543,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90544,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90562,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90563,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90564,
+      "text": "\"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90573,
+      "text": "\"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90613,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::.ctor(System.Object,System.IntPtr)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90614,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::Invoke(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90776,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90777,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91764,
+      "text": "\"System.Void ZDOMan::ForceSendZDO(System.Int64,ZDOID)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91766,
+      "text": "\"System.Void ZNetView::ClaimOwnership()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91767,
+      "text": "\"System.Void ZNetView::InvokeRPC(System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91768,
+      "text": "\"System.Void ZNetView::Register(System.String,System.Action\\u00601\\u003CSystem.Int64\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91769,
+      "text": "\"System.Void ZNetView::Unregister(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91779,
+      "text": "\"System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91780,
+      "text": "\"System.Void ZRoutedRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CSystem.Int64,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91781,
+      "text": "\"System.Void ZRpc::Deserialize(System.Reflection.ParameterInfo[],ZPackage,System.Collections.Generic.List\\u00601\\u003CSystem.Object\\u003E\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91782,
+      "text": "\"System.Void ZRpc::Invoke(System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91783,
+      "text": "\"System.Void ZRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CZRpc,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91784,
+      "text": "\"System.Void ZRpc::Serialize(System.Object[],ZPackage\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92184,
+      "text": "\"ZDO ZNetView::GetZDO()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92185,
+      "text": "\"ZDOMan ZDOMan::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92191,
+      "text": "\"ZRoutedRpc ZRoutedRpc::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1773,
+      "text": "IL_0002: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1774,
+      "text": "IL_0007: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1804,
+      "text": "IL_0002: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1906,
+      "text": "IL_0018: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1907,
+      "text": "IL_001d: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1924,
+      "text": "IL_0041: call ZDOMan ZDOMan::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1927,
+      "text": "IL_004c: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1928,
+      "text": "IL_0051: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1929,
+      "text": "IL_0056: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1930,
+      "text": "IL_005b: callvirt System.Void ZDOMan::ForceSendZDO(System.Int64,ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3188,
+      "text": "IL_0041: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3200,
+      "text": "IL_005b: ldfld ZNetView Container::m_nview"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3201,
+      "text": "IL_0060: callvirt System.Boolean ZNetView::HasOwner()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4207,
+      "text": "IL_0065: ldfld ZNetView Container::m_nview"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/QuickStackStore/KeybindChecker.cs",
+      "line": 143,
+      "text": "return IgnoreKeyPressesDueToPlayer(Player.m_localPlayer) || !Object.op_Implicit((Object)(object)ZNetScene.instance) || Minimap.IsOpen() || Menu.IsVisible() || Console.IsVisible() || StoreGui.IsVisible() || TextInput.IsVisible() || (Object.op_Implicit((Object)(object)Chat.instance) && Chat.instance.HasFocus()) || (Object.op_Implicit((Object)(object)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92188,
+      "text": "\"ZNetScene ZNetScene::get_instance()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1189,
+      "text": "IL_000d: call ZNetScene ZNetScene::get_instance()"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"F\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"L\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"T\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"D\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"O\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"A\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"E\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"O\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 2,
+      "text": "\"RestockLabelCharacter\": \"R\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 4,
+      "text": "\"SortLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/AzuEPI.Core.Slots/Model.cs",
+      "line": 27,
+      "text": "public Func<Player, ItemData?>? Get;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 11,
+      "text": "private static bool ShouldRestockItem(ItemData item, UserConfig playerConfig, int inventoryHeight, int inventoryWidth, bool includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 22,
+      "text": "return configBasedMaxStackSize > 1 && configBasedMaxStackSize > item.m_stack && (item.m_customData == null || item.m_customData.Count == 0) && ((item.m_gridPos.y > 0) | includeHotbar) && (!QSSConfig.RestockConfig.RestockOnlyAmmoAndConsumables.Value || (int)itemType == 9 || (int)itemType == 2) && (!QSSConfig.RestockConfig.RestockOnlyFavoritedItems.V"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 57,
+      "text": "internal static void DoRestock(Player player, bool RestockOnlyFromCurrentContainerOverride = false)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 60,
+      "text": "if (((Character)player).IsTeleporting() || !Object.op_Implicit((Object)(object)InventoryGui.instance.m_container))"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 65,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(player.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 67,
+      "text": "List<RestockData> list = (from itemData in ((Humanoid)player).m_inventory.m_inventory"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 68,
+      "text": "where ShouldRestockItem(itemData, playerConfig, ((Humanoid)player).m_inventory.GetHeight(), ((Humanoid)player).m_inventory.GetWidth(), includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 73,
+      "text": "((Character)player).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.RestockResultMessageNothing, \"RestockResultMessageNothing\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 87,
+      "text": "num = RestockFromThisContainer(list, ((Humanoid)player).m_inventory, currentContainer.m_inventory, hashSet);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 91,
+      "text": "ReportRestockResult(player, num, hashSet.Count, count);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 94,
+      "text": "List<Container> list2 = ContainerFinder.FindContainersInRange(((Component)player).transform.position, QSSConfig.RestockConfig.RestockFromNearbyRange.Value);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 99,
+      "text": "num += RestockFromMultipleContainers(list, player, list2, hashSet);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 103,
+      "text": "ReportRestockResult(player, num, hashSet.Count, count);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 106,
+      "text": "private static int RestockFromThisContainer(List<RestockData> itemsToRestock, Inventory playerInventory, Inventory container, HashSet<Vector2i> partiallyFilledStacks, bool callPlayerInvChanged = true)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 127,
+      "text": "playerInventory.MoveItemToThis(container, val, num4, restockData.itemData.m_gridPos.x, restockData.itemData.m_gridPos.y);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 138,
+      "text": "if (callPlayerInvChanged)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 140,
+      "text": "playerInventory.Changed(false, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 145,
+      "text": "private static int RestockFromMultipleContainers(List<RestockData> itemsToRestock, Player player, List<Container> containers, HashSet<Vector2i> partialRestockCounter)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 148,
+      "text": "bool isSinglePlayer = AreaStackRestockHelper.IsTrueSingleplayer();"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 151,
+      "text": "if (AreaStackRestockHelper.ShouldAffectNonOwnerContainer(container, player.GetPlayerID(), isSinglePlayer))"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 155,
+      "text": "num += RestockFromThisContainer(itemsToRestock, ((Humanoid)player).m_inventory, container.m_inventory, partialRestockCounter, callPlayerInvChanged: false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 160,
+      "text": "num += RestockFromThisContainer(itemsToRestock, ((Humanoid)player).m_inventory, container.m_inventory, partialRestockCounter, callPlayerInvChanged: false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 164,
+      "text": "((Humanoid)player).m_inventory.Changed(false, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 168,
+      "text": "public static void ReportRestockResult(Player player, int movedCount, int partiallyFilledCount, int totalCount)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 190,
+      "text": "((Character)player).Message((MessageType)2, text, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 13,
+      "text": "private static readonly Dictionary<long, UserConfig> playerConfigs = new Dictionary<long, UserConfig>();"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 27,
+      "text": "public static UserConfig GetPlayerConfig(long playerID)"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 29,
+      "text": "if (playerConfigs.TryGetValue(playerID, out var value))"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 33,
+      "text": "value = new UserConfig(playerID);"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 34,
+      "text": "playerConfigs[playerID] = value;"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 41,
+      "text": "_configPath = Path.Combine(Paths.ConfigPath, $\"QuickStackStore_player_{_uid}.dat\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 34,
+      "text": "Transform transform = ((Component)__instance.m_player).transform;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 74,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 75,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(localPlayer.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 78,
+      "text": "if (!playerConfig.ToggleItemNameTrashFlagging(InventoryGui.instance.m_dragItem.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 80,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashFlagFavoritedItemWarning, \"CantTrashFlagFavoritedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 90,
+      "text": "if (((Humanoid)localPlayer).m_inventory == ___m_dragInventory && ___m_dragItem.m_gridPos.y == 0 && (QSSConfig.GeneralConfig.OverrideHotkeyBarBehavior.Value == QSSConfig.OverrideHotkeyBarBehavior.NeverAffectHotkeyBar || !QSSConfig.TrashConfig.TrashingCanAffectHotkeyBar.Value))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 92,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashHotkeyBarItemWarning, \"CantTrashHotkeyBarItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 96,
+      "text": "if ((((Humanoid)localPlayer).m_inventory == ___m_dragInventory && playerConfig.IsSlotFavorited(___m_dragItem.m_gridPos)) || playerConfig.IsItemNameFavorited(___m_dragItem.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 98,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashFavoritedItemWarning, \"CantTrashFavoritedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 103,
+      "text": "if (value == QSSConfig.ShowConfirmDialogOption.Always || (value == QSSConfig.ShowConfirmDialogOption.WhenNotTrashFlagged && !playerConfig.IsItemNameConsideredTrashFlagged(___m_dragItem.m_shared)))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 119,
+      "text": "[HarmonyPatch(typeof(Player))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 120,
+      "text": "internal static class TrashItemPlayerPatches"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 136,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(TrashItemPlayerPatches), \"ShouldAutoPickup\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 155,
+      "text": "public static bool ShouldAutoPickup(ItemDrop itemDrop, bool isAutoPickupable, Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 161,
+      "text": "if ((Object)(object)player == (Object)null || (Object)(object)player != (Object)(object)Player.m_localPlayer || !QSSConfig.TrashConfig.PreventAutoPickupOfTrashFlaggedItems.Value)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 169,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(player.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 170,
+      "text": "return !playerConfig.IsItemNameConsideredTrashFlagged(itemDrop.m_itemData.m_shared);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 217,
+      "text": "Transform transform = ((Component)InventoryGui.instance.m_player).transform;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 309,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 310,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(localPlayer.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 312,
+      "text": "List<ItemData> inventory = ((Humanoid)localPlayer).m_inventory.m_inventory;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 316,
+      "text": "if ((val.m_gridPos.y != 0 || (QSSConfig.GeneralConfig.OverrideHotkeyBarBehavior.Value != QSSConfig.OverrideHotkeyBarBehavior.NeverAffectHotkeyBar && QSSConfig.TrashConfig.TrashingCanAffectHotkeyBar.Value)) && !playerConfig.IsSlotFavorited(val.m_gridPos) && playerConfig.IsItemNameConsideredTrashFlagged(val.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 319,
+      "text": "((Humanoid)localPlayer).RemoveEquipAction(val);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 320,
+      "text": "((Humanoid)localPlayer).UnequipItem(val, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 321,
+      "text": "((Humanoid)localPlayer).m_inventory.RemoveItem(val);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 326,
+      "text": "Helper.Log($\"Quick trashed {num} item/s from player inventory\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 327,
+      "text": "((Humanoid)localPlayer).m_inventory.Changed(false, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 334,
+      "text": "((Humanoid)Player.m_localPlayer).RemoveEquipAction(___m_dragItem);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 335,
+      "text": "((Humanoid)Player.m_localPlayer).UnequipItem(___m_dragItem, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 9,
+      "text": "internal static void DoTakeAllWithKeybind(Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 11,
+      "text": "if (Object.op_Implicit((Object)(object)InventoryGui.instance) && InventoryGui.IsVisible() && !((Object)(object)player != (Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 17,
+      "text": "internal static void DoStoreAllWithKeybind(Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 19,
+      "text": "if (Object.op_Implicit((Object)(object)InventoryGui.instance) && InventoryGui.IsVisible() && !((Object)(object)player != (Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 21,
+      "text": "StoreAllItemsInOrder(player);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 25,
+      "text": "private static bool ShouldStoreItem(ItemData item, UserConfig playerConfig, int inventoryHeight, int inventoryWidth, bool includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 28,
+      "text": "return ((item.m_gridPos.y > 0) | includeHotbar) && (QSSConfig.StoreTakeAllConfig.StoreAllIncludesEquippedItems.Value || !item.m_equipped) && !playerConfig.IsItemNameOrSlotFavorited(item) && !CompatibilitySupport.IsEquipOrQuickSlot(inventoryHeight, inventoryWidth, item.m_gridPos);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 31,
+      "text": "internal static void TakeAllItemsInOrder(Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 36,
+      "text": "Inventory inventory2 = ((Humanoid)player).m_inventory;"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 37,
+      "text": "MoveAllItemsInOrder(player, inventory, inventory2, takeAllOverride: true);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 41,
+      "text": "internal static void StoreAllItemsInOrder(Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 45,
+      "text": "Inventory inventory = ((Humanoid)player).m_inventory;"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 47,
+      "text": "MoveAllItemsInOrder(player, inventory, inventory2);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 51,
+      "text": "internal static void MoveAllItemsInOrder(Player player, Inventory fromInventory, Inventory toInventory, bool takeAllOverride = false)"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 53,
+      "text": "if (((Character)player).IsTeleporting())"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 65,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(player.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 67,
+      "text": "list = fromInventory.m_inventory.Where((ItemData item) => ShouldStoreItem(item, playerConfig, fromInventory.GetHeight(), fromInventory.GetWidth(), includeHotbar)).ToList();"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 84,
+      "text": "((Humanoid)Player.m_localPlayer).RemoveEquipAction(item);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 85,
+      "text": "((Humanoid)Player.m_localPlayer).UnequipItem(item, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 91,
+      "text": "Helper.Log($\"Moved {num} item/s from container to player inventory\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/StoreTakeAllModule.cs",
+      "line": 95,
+      "text": "Helper.Log($\"Moved {num} item/s from player inventory to container\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 65,
+      "text": "if ((Object)(object)__instance != (Object)(object)InventoryGui.instance.m_playerGrid)"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 109,
+      "text": "if ((Object)(object)__instance != (Object)(object)InventoryGui.instance.m_playerGrid)"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 113,
+      "text": "if (((Character)Player.m_localPlayer).IsTeleporting())"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 139,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 142,
+      "text": "UserConfig.GetPlayerConfig(localPlayer.GetPlayerID()).ToggleSlotFavoriting(buttonPos);"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 151,
+      "text": "if (!UserConfig.GetPlayerConfig(localPlayer.GetPlayerID()).ToggleItemNameFavoriting(itemAt.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 153,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantFavoriteTrashFlaggedItemWarning, \"CantFavoriteTrashFlaggedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 8,
+      "text": "public static ConfigEntry<string> RestockLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 10,
+      "text": "public static ConfigEntry<string> QuickStackLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/LocalizationConfig.cs",
+      "line": 12,
+      "text": "public static ConfigEntry<string> SortLabelCharacter;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 2,
+      "text": "using AzuExtendedPlayerInventory;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 29,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(Player.m_localPlayer.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 30,
+      "text": "if (playerConfig.IsItemNameFavorited(item.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TooltipRenderer.cs",
+      "line": 35,
+      "text": "else if (playerConfig.IsItemNameConsideredTrashFlagged(item.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 18,
+      "text": "private static bool ShouldSortItem(ItemData item, UserConfig playerConfig, int inventoryHeight, int inventoryWidth, bool includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 21,
+      "text": "return !playerConfig.IsItemNameFavorited(item.m_shared) && ShouldSortSlot(item.m_gridPos, playerConfig, inventoryHeight, inventoryWidth, includeHotbar);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 24,
+      "text": "private static bool ShouldSortSlot(Vector2i slot, UserConfig playerConfig, int playerInventoryHeight, int playerInventoryWidth, bool includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 29,
+      "text": "return ((slot.y > 0) | includeHotbar) && !playerConfig.IsSlotFavorited(slot) && !CompatibilitySupport.IsEquipOrQuickSlot(playerInventoryHeight, playerInventoryWidth, slot);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 32,
+      "text": "public static void DoSort(Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 35,
+      "text": "UserConfig playerConfig = UserConfig.GetPlayerConfig(player.GetPlayerID());"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 45,
+      "text": "SortPlayerInv(((Humanoid)player).m_inventory, playerConfig);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 51,
+      "text": "SortPlayerInv(((Humanoid)player).m_inventory, playerConfig);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 116,
+      "text": "public static void SortPlayerInv(Inventory inventory, UserConfig playerConfig)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 118,
+      "text": "SortInternal(inventory, playerConfig);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 121,
+      "text": "internal static void SortInternal(Inventory inventory, UserConfig playerConfig = null)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 129,
+      "text": "bool includeHotbar = playerConfig == null || (QSSConfig.GeneralConfig.OverrideHotkeyBarBehavior.Value != QSSConfig.OverrideHotkeyBarBehavior.NeverAffectHotkeyBar && QSSConfig.SortConfig.SortIncludesHotkeyBar.Value);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 130,
+      "text": "List<Vector2i> allowedSlots = GetAllowedSlots(inventory, includeHotbar, playerConfig);"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 131,
+      "text": "List<ItemData> list = ((playerConfig != null) ? inventory.m_inventory.Where((ItemData item) => ShouldSortItem(item, playerConfig, inventory.GetHeight(), inventory.GetWidth(), includeHotbar)).ToList() : new List<ItemData>(inventory.m_inventory));"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 147,
+      "text": "private static List<Vector2i> GetAllowedSlots(Inventory inventory, bool includeHotbar, UserConfig playerConfig)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 169,
+      "text": "if (playerConfig != null)"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 173,
+      "text": "if (playerConfig.IsItemNameFavorited(item.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/SortModule.cs",
+      "line": 184,
+      "text": "if (playerConfig == null || (!hashSet.Contains(val) && (!QSSConfig.SortConfig.SortLeavesEmptyFavoritedSlotsEmpty.Value || !playerConfig.IsSlotFavorited(val)) && !CompatibilitySupport.IsEquipOrQuickSlot(inventory.GetHeight(), inventory.GetWidth(), val)))"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Нічого для швидкого складання\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Складено 0 предметів\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Складено 1 предмет\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Складено {0} предметів\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Ukrainian.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Швидке складання\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"L\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Inget att snabblagra\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Lagrade 0 saker\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Lagrade 1 sak\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Lagrade {0} saker\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Swedish.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Snabblagra\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"S\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Rien à stocker\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"0 objet stocké\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"1 objet stocké\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"{0} objets stockés\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.French.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Stockage Rapide\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"D\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Nada que depositar\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Depositados 0 objetos\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Depositado 1 objeto\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Depositados {0} objetos\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Spanish.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Depósito rápido\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"无需快速堆叠\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"存入 0 个物品\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"存入 1 个物品\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"存入 {0} 个物品\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Chinese.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"快速堆叠(Q)\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Nichts zum Schnellstapeln\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"0 Gegenstände gestapelt\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"1 Gegenstand gestapelt\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"{0} Gegenstände gestapelt\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.German.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Schnellstapeln\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Нечего переносить\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Нет совпадающих предметов\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Перенесен 1 предмет\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Перемещенные предметы: {0}\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Russian.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Перенести\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Nie masz nic do przeniesienia\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Przeniesiono 0 przedmiotów\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Przeniesiono 1 przedmiot\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Przeniesiono {0} przedmioty(ów)\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Polish.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Przenieś zgodne\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"빠른 스택에 아무 것도 없음\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"누적된 항목 0개\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"누적된 항목 1개\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"누적된 항목 {0}개\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Korean.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"퀵 스택\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"E\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Nada para estocar\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Estocou 0 itens\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Estocou 1 item\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Estocou {0} itens\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Portuguese_Brazilian.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Estocar\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Niente da depositare\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Depositato 0 oggetti\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Depositato 1 oggetto\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Depositati {0} oggetti\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.Italian.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Deposito rapido\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 3,
+      "text": "\"QuickStackLabelCharacter\": \"Q\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 6,
+      "text": "\"QuickStackResultMessageNothing\": \"Nothing to quick stack\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 7,
+      "text": "\"QuickStackResultMessageNone\": \"Stacked 0 items\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 8,
+      "text": "\"QuickStackResultMessageOne\": \"Stacked 1 item\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 9,
+      "text": "\"QuickStackResultMessageMore\": \"Stacked {0} items\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 16,
+      "text": "\"QuickStackLabel\": \"Quick Stack\","
+    },
+    {
+      "file": "csharp/QuickStackStore.Translations.QuickStackStore.English.json",
+      "line": 35,
+      "text": "\"FavoritedItemTooltip\": \"Will not be quick stacked, sorted,\\nstore all'd or trashed\","
+    },
+    {
+      "file": "csharp/AzuEPI.Core.Slots/Model.cs",
+      "line": 27,
+      "text": "public Func<Player, ItemData?>? Get;"
+    },
+    {
+      "file": "csharp/AzuEPI.Core.Slots/Model.cs",
+      "line": 29,
+      "text": "public Func<ItemData, bool>? Valid;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 7,
+      "text": "namespace QuickStackStore;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 11,
+      "text": "private static bool ShouldRestockItem(ItemData item, UserConfig playerConfig, int inventoryHeight, int inventoryWidth, bool includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 20,
+      "text": "int configBasedMaxStackSize = GetConfigBasedMaxStackSize(item.m_shared);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 22,
+      "text": "return configBasedMaxStackSize > 1 && configBasedMaxStackSize > item.m_stack && (item.m_customData == null || item.m_customData.Count == 0) && ((item.m_gridPos.y > 0) | includeHotbar) && (!QSSConfig.RestockConfig.RestockOnlyAmmoAndConsumables.Value || (int)itemType == 9 || (int)itemType == 2) && (!QSSConfig.RestockConfig.RestockOnlyFavoritedItems.V"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 25,
+      "text": "private static int GetConfigBasedMaxStackSize(SharedData shared)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 31,
+      "text": "int num = shared.m_maxStackSize;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 35,
+      "text": "num2 = QSSConfig.RestockConfig.RestockStackSizeLimitAmmo.Value;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 39,
+      "text": "num2 = QSSConfig.RestockConfig.RestockStackSizeLimitConsumables.Value;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 43,
+      "text": "num2 = QSSConfig.RestockConfig.RestockStackSizeLimitGeneral.Value;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 52,
+      "text": "private static bool ShouldAreaRestock(Container currentContainer)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 54,
+      "text": "return QSSConfig.RestockConfig.RestockFromNearbyRange.Value > 0f && ((Object)(object)currentContainer == (Object)null || QSSConfig.RestockConfig.RestockHotkeyBehaviorWhenContainerOpen.Value != QSSConfig.RestockBehavior.RestockOnlyFromCurrentContainer) && CompatibilitySupport.AllowAreaStackingRestocking();"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 57,
+      "text": "internal static void DoRestock(Player player, bool RestockOnlyFromCurrentContainerOverride = false)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 60,
+      "text": "if (((Character)player).IsTeleporting() || !Object.op_Implicit((Object)(object)InventoryGui.instance.m_container))"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 64,
+      "text": "InventoryGui.instance.SetupDragItem((ItemData)null, (Inventory)null, 0);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 67,
+      "text": "List<RestockData> list = (from itemData in ((Humanoid)player).m_inventory.m_inventory"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 68,
+      "text": "where ShouldRestockItem(itemData, playerConfig, ((Humanoid)player).m_inventory.GetHeight(), ((Humanoid)player).m_inventory.GetWidth(), includeHotbar)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 69,
+      "text": "select new RestockData(itemData, itemData.m_stack, GetConfigBasedMaxStackSize(itemData.m_shared))).ToList();"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 80,
+      "text": "return -1 * Helper.CompareSlotOrder(a.itemData.m_gridPos, b.itemData.m_gridPos);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 84,
+      "text": "Container currentContainer = InventoryGui.instance.m_currentContainer;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 85,
+      "text": "if ((Object)(object)currentContainer != (Object)null)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 87,
+      "text": "num = RestockFromThisContainer(list, ((Humanoid)player).m_inventory, currentContainer.m_inventory, hashSet);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 89,
+      "text": "if (RestockOnlyFromCurrentContainerOverride || !ShouldAreaRestock(currentContainer))"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 94,
+      "text": "List<Container> list2 = ContainerFinder.FindContainersInRange(((Component)player).transform.position, QSSConfig.RestockConfig.RestockFromNearbyRange.Value);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 99,
+      "text": "num += RestockFromMultipleContainers(list, player, list2, hashSet);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 106,
+      "text": "private static int RestockFromThisContainer(List<RestockData> itemsToRestock, Inventory playerInventory, Inventory container, HashSet<Vector2i> partiallyFilledStacks, bool callPlayerInvChanged = true)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 117,
+      "text": "for (int num3 = container.m_inventory.Count - 1; num3 >= 0; num3--)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 119,
+      "text": "ItemData val = container.m_inventory[num3];"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 120,
+      "text": "if ((val.m_customData == null || val.m_customData.Count <= 0) && !(val.m_shared.m_name != restockData.itemData.m_shared.m_name) && val.m_quality == restockData.itemData.m_quality)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 122,
+      "text": "int num4 = Math.Min(restockData.maximumWantedStackSize - restockData.potentialCurrentStackSize, val.m_stack);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 125,
+      "text": "restockData.potentialCurrentStackSize += num4;"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 126,
+      "text": "partiallyFilledStacks.Add(restockData.itemData.m_gridPos);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 127,
+      "text": "playerInventory.MoveItemToThis(container, val, num4, restockData.itemData.m_gridPos.x, restockData.itemData.m_gridPos.y);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 129,
+      "text": "if (restockData.potentialCurrentStackSize == restockData.maximumWantedStackSize)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 140,
+      "text": "playerInventory.Changed(false, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 145,
+      "text": "private static int RestockFromMultipleContainers(List<RestockData> itemsToRestock, Player player, List<Container> containers, HashSet<Vector2i> partialRestockCounter)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 148,
+      "text": "bool isSinglePlayer = AreaStackRestockHelper.IsTrueSingleplayer();"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 149,
+      "text": "foreach (Container container in containers)"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 151,
+      "text": "if (AreaStackRestockHelper.ShouldAffectNonOwnerContainer(container, player.GetPlayerID(), isSinglePlayer))"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 155,
+      "text": "num += RestockFromThisContainer(itemsToRestock, ((Humanoid)player).m_inventory, container.m_inventory, partialRestockCounter, callPlayerInvChanged: false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 158,
+      "text": "container.m_nview.ClaimOwnership();"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 159,
+      "text": "AreaStackRestockHelper.SetNonMUCContainerInUse(container, isInUse: true);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 160,
+      "text": "num += RestockFromThisContainer(itemsToRestock, ((Humanoid)player).m_inventory, container.m_inventory, partialRestockCounter, callPlayerInvChanged: false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 161,
+      "text": "AreaStackRestockHelper.SetNonMUCContainerInUse(container, isInUse: false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 164,
+      "text": "((Humanoid)player).m_inventory.Changed(false, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 9,
+      "text": "namespace QuickStackStore;"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 41,
+      "text": "_configPath = Path.Combine(Paths.ConfigPath, $\"QuickStackStore_player_{_uid}.dat\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/UserConfig.cs",
+      "line": 187,
+      "text": "public bool IsItemNameOrSlotFavorited(ItemData item)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 12,
+      "text": "namespace QuickStackStore;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(InventoryGui))]"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 19,
+      "text": "internal static bool hasOpenedInventoryOnce;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 24,
+      "text": "private static void Show_Postfix(InventoryGui __instance)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 26,
+      "text": "hasOpenedInventoryOnce = true;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 30,
+      "text": "internal static void UpdateTrashCanUI(InventoryGui __instance)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 32,
+      "text": "if (hasOpenedInventoryOnce && !((Object)(object)__instance != (Object)(object)InventoryGui.instance) && !((Object)(object)trashRoot != (Object)null) && !CompatibilitySupport.DisallowAllTrashCanFeatures() && !CompatibilitySupport.HasPlugin(\"randyknapp.mods.auga\") && QSSConfig.GeneralConfig.OverrideButtonDisplay.Value != QSSConfig.OverrideButtonDispl"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 51,
+      "text": "private static void UpdateItemDrag_Postfix(InventoryGui __instance, ItemData ___m_dragItem, Inventory ___m_dragInventory, int ___m_dragAmount)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 69,
+      "text": "if (___m_dragInventory == null || !___m_dragInventory.ContainsItem(___m_dragItem))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 78,
+      "text": "if (!playerConfig.ToggleItemNameTrashFlagging(InventoryGui.instance.m_dragItem.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 90,
+      "text": "if (((Humanoid)localPlayer).m_inventory == ___m_dragInventory && ___m_dragItem.m_gridPos.y == 0 && (QSSConfig.GeneralConfig.OverrideHotkeyBarBehavior.Value == QSSConfig.OverrideHotkeyBarBehavior.NeverAffectHotkeyBar || !QSSConfig.TrashConfig.TrashingCanAffectHotkeyBar.Value))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 96,
+      "text": "if ((((Humanoid)localPlayer).m_inventory == ___m_dragInventory && playerConfig.IsSlotFavorited(___m_dragItem.m_gridPos)) || playerConfig.IsItemNameFavorited(___m_dragItem.m_shared))"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 107,
+      "text": "TrashItem(__instance, ___m_dragInventory, ___m_dragItem, ___m_dragAmount);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 112,
+      "text": "TrashItem(__instance, ___m_dragInventory, ___m_dragItem, ___m_dragAmount);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 135,
+      "text": "FieldInfo autoPickupField = AccessTools.DeclaredField(typeof(ItemDrop), \"m_autoPickup\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 155,
+      "text": "public static bool ShouldAutoPickup(ItemDrop itemDrop, bool isAutoPickupable, Player player)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 157,
+      "text": "if (!Object.op_Implicit((Object)(object)itemDrop) || itemDrop.m_itemData == null || itemDrop.m_itemData.m_shared == null)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 170,
+      "text": "return !playerConfig.IsItemNameConsideredTrashFlagged(itemDrop.m_itemData.m_shared);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 213,
+      "text": "if ((Object)(object)InventoryGui.instance == (Object)null)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 217,
+      "text": "Transform transform = ((Component)InventoryGui.instance.m_player).transform;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 312,
+      "text": "List<ItemData> inventory = ((Humanoid)localPlayer).m_inventory.m_inventory;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 313,
+      "text": "for (int num2 = inventory.Count - 1; num2 >= 0; num2--)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 315,
+      "text": "ItemData val = inventory[num2];"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 321,
+      "text": "((Humanoid)localPlayer).m_inventory.RemoveItem(val);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 324,
+      "text": "InventoryGui.instance.SetupDragItem((ItemData)null, (Inventory)null, 0);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 325,
+      "text": "InventoryGui.instance.UpdateCraftingPanel(false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 326,
+      "text": "Helper.Log($\"Quick trashed {num} item/s from player inventory\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 327,
+      "text": "((Humanoid)localPlayer).m_inventory.Changed(false, false);"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 73,
+      "text": "((Character)player).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.RestockResultMessageNothing, \"RestockResultMessageNothing\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/RestockModule.cs",
+      "line": 190,
+      "text": "((Character)player).Message((MessageType)2, text, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 80,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashFlagFavoritedItemWarning, \"CantTrashFlagFavoritedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 92,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashHotkeyBarItemWarning, \"CantTrashHotkeyBarItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 98,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantTrashFavoritedItemWarning, \"CantTrashFavoritedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 239,
+      "text": "((Component)val2).GetComponent<Image>().sprite = trashSprite;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 264,
+      "text": "val8.GetComponent<Image>().sprite = bgSprite;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 282,
+      "text": "public static Sprite trashSprite;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 284,
+      "text": "public static Sprite bgSprite;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 351,
+      "text": "private static void ShowBaseConfirmDialog(Sprite potentialIcon, string name, string amountText, UnityAction onConfirm)"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 376,
+      "text": "component4.sprite = potentialIcon;"
+    },
+    {
+      "file": "csharp/QuickStackStore/TrashModule.cs",
+      "line": 380,
+      "text": "component4.sprite = trashSprite;"
+    },
+    {
+      "file": "csharp/QuickStackStore/InventoryGridButtonHandlingPatches.cs",
+      "line": 153,
+      "text": "((Character)localPlayer).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.CantFavoriteTrashFlaggedItemWarning, \"CantFavoriteTrashFlaggedItemWarning\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 40,
+      "text": "BorderRenderer.border = Helper.LoadSprite(text + \".border.png\", new Rect(0f, 0f, 1024f, 1024f));"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 41,
+      "text": "TrashModule.trashSprite = Helper.LoadSprite(text + \".trash.png\", new Rect(0f, 0f, 64f, 64f));"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackStorePlugin.cs",
+      "line": 42,
+      "text": "TrashModule.bgSprite = Helper.LoadSprite(text + \".trashmask.png\", new Rect(0f, 0f, 96f, 112f));"
+    },
+    {
+      "file": "csharp/QuickStackStore/BorderRenderer.cs",
+      "line": 11,
+      "text": "public static Sprite border;"
+    },
+    {
+      "file": "csharp/QuickStackStore/BorderRenderer.cs",
+      "line": 106,
+      "text": "val.sprite = border;"
+    },
+    {
+      "file": "csharp/QuickStackStore/QSSConfig.cs",
+      "line": 489,
+      "text": "RestockConfig.RestockOnlyAmmoAndConsumables = Config.Bind<bool>(text8, \"RestockOnlyAmmoAndConsumables\", true, \"Whether restocking should only restock ammo and consumable or every stackable item (like materials). Also affected by RestockOnlyFavoritedItems.\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/StackAllPatch.cs",
+      "line": 27,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, \"$msg_inuse\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackModule.cs",
+      "line": 36,
+      "text": "((Character)player).Message((MessageType)2, LocalizationConfig.GetRelevantTranslation(LocalizationConfig.QuickStackResultMessageNothing, \"QuickStackResultMessageNothing\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/QuickStackModule.cs",
+      "line": 183,
+      "text": "}, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/QuickStackStore/Helper.cs",
+      "line": 59,
+      "text": "public static Sprite LoadSprite(string path, Rect size, Vector2? pivot = null, int units = 100)"
+    },
+    {
+      "file": "csharp/QuickStackStore/Helper.cs",
+      "line": 72,
+      "text": "Texture2D val = new Texture2D((int)size.width, (int)size.height, (TextureFormat)4, false, true);"
+    },
+    {
+      "file": "csharp/QuickStackStore/Helper.cs",
+      "line": 81,
+      "text": "typeof(Texture2D),"
+    },
+    {
+      "file": "csharp/QuickStackStore/Helper.cs",
+      "line": 86,
+      "text": "throw new MissingMethodException(\"Could not find UnityEngine.ImageConversion.LoadImage(Texture2D, byte[])\");"
+    },
+    {
+      "file": "csharp/QuickStackStore/Helper.cs",
+      "line": 95,
+      "text": "return Sprite.Create(val, size, pivot.Value, (float)units);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3870,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4244,
+      "text": "\"name\": \"trashSprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4245,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4251,
+      "text": "\"name\": \"bgSprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4252,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34108,
+      "text": "\"signature\": \"UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable\\u00601\\u003CUnityEngine.Vector2\\u003E,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34110,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38089,
+      "text": "\"signature\": \"System.Void QuickStackStore.TrashModule::ShowBaseConfirmDialog(UnityEngine.Sprite,System.String,System.String,UnityEngine.Events.UnityAction)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38095,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90353,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90490,
+      "text": "\"System.Void QuickStackStore.TrashModule::ShowBaseConfirmDialog(UnityEngine.Sprite,System.String,System.String,UnityEngine.Events.UnityAction)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91002,
+      "text": "\"System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91003,
+      "text": "\"System.Void UnityEngine.Texture2D::Apply()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91010,
+      "text": "\"System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91873,
+      "text": "\"UnityEngine.Sprite ItemDrop/ItemData::GetIcon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91874,
+      "text": "\"UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable\\u00601\\u003CUnityEngine.Vector2\\u003E,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91875,
+      "text": "\"UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92483,
+      "text": "\"Could not find UnityEngine.ImageConversion.LoadImage(Texture2D, byte[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92984,
+      "text": "\"Whether restocking should only restock ammo and consumable or every stackable item (like materials). Also affected by RestockOnlyFavoritedItems.\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 158,
+      "text": "IL_0074: call UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable`1<UnityEngine.Vector2>,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 159,
+      "text": "IL_0079: stsfld UnityEngine.Sprite QuickStackStore.BorderRenderer::border"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 172,
+      "text": "IL_00ae: call UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable`1<UnityEngine.Vector2>,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 173,
+      "text": "IL_00b3: stsfld UnityEngine.Sprite QuickStackStore.TrashModule::trashSprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 186,
+      "text": "IL_00e8: call UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable`1<UnityEngine.Vector2>,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 187,
+      "text": "IL_00ed: stsfld UnityEngine.Sprite QuickStackStore.TrashModule::bgSprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3425,
+      "text": "// UnityEngine.Sprite QuickStackStore.Helper::LoadSprite(System.String,UnityEngine.Rect,System.Nullable`1<UnityEngine.Vector2>,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3426,
+      "text": ".locals System.Reflection.Assembly, System.IO.Stream, UnityEngine.Texture2D, System.Boolean, System.IO.MemoryStream, System.Boolean, System.Reflection.Assembly, System.Type, System.Boolean, UnityEngine.Sprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3457,
+      "text": "IL_0048: newobj System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3486,
+      "text": "IL_009a: ldtoken UnityEngine.Texture2D"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3503,
+      "text": "IL_00ce: ldstr \"Could not find UnityEngine.ImageConversion.LoadImage(Texture2D, byte[])\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3523,
+      "text": "IL_00fb: callvirt System.Void UnityEngine.Texture2D::Apply()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3531,
+      "text": "IL_010c: call UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3675,
+      "text": "IL_00db: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4306,
+      "text": "IL_0070: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4410,
+      "text": "IL_0052: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4669,
+      "text": "IL_0101: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5152,
+      "text": "IL_00c2: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7253,
+      "text": "IL_08be: ldstr \"Whether restocking should only restock ammo and consumable or every stackable item (like materials). Also affected by RestockOnlyFavoritedItems.\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11165,
+      "text": "IL_0077: ldsfld UnityEngine.Sprite QuickStackStore.BorderRenderer::border"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11166,
+      "text": "IL_007c: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11997,
+      "text": "IL_00a1: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12438,
+      "text": "IL_0031: call System.Void QuickStackStore.TrashModule::ShowBaseConfirmDialog(UnityEngine.Sprite,System.String,System.String,UnityEngine.Events.UnityAction)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12615,
+      "text": "IL_0002: callvirt UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12630,
+      "text": "IL_003d: call System.Void QuickStackStore.TrashModule::ShowBaseConfirmDialog(UnityEngine.Sprite,System.String,System.String,UnityEngine.Events.UnityAction)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12634,
+      "text": "// System.Void QuickStackStore.TrashModule::ShowBaseConfirmDialog(UnityEngine.Sprite,System.String,System.String,UnityEngine.Events.UnityAction)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12744,
+      "text": "IL_017a: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12750,
+      "text": "IL_0185: ldsfld UnityEngine.Sprite QuickStackStore.TrashModule::trashSprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12751,
+      "text": "IL_018a: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13119,
+      "text": "IL_00ff: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13165,
+      "text": "IL_017d: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13200,
+      "text": "IL_01de: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13538,
+      "text": "IL_0135: ldsfld UnityEngine.Sprite QuickStackStore.TrashModule::trashSprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13539,
+      "text": "IL_013a: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13624,
+      "text": "IL_025e: ldsfld UnityEngine.Sprite QuickStackStore.TrashModule::bgSprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13625,
+      "text": "IL_0263: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    }
+  ]
+}

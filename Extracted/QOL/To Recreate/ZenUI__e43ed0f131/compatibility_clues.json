@@ -1,0 +1,3963 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 262,
+      "text": "Sprite sprite = ((BaseUnityPlugin)(object)ZenMod<Plugin>.Instance).LoadSpriteFromResource(\"exclamation.png\");"
+    },
+    {
+      "file": "csharp/ZenUI/Plugin.cs",
+      "line": 8,
+      "text": "[BepInPlugin(\"ZenDragon.ZenUI\", \"ZenUI\", \"1.9.3\")]"
+    },
+    {
+      "file": "csharp/ZenUI/Plugin.cs",
+      "line": 9,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/ZenUI/Plugin.cs",
+      "line": 10,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1120,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1130,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1135,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20130,
+      "text": "\"UnityEngine.Sprite Zen.Lib.AssetIO::LoadSpriteFromResource(BepInEx.BaseUnityPlugin,System.String)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6686,
+      "text": "IL_00de: call UnityEngine.Sprite Zen.Lib.AssetIO::LoadSpriteFromResource(BepInEx.BaseUnityPlugin,System.String)"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/ZenUI.Compatibility/ActivateOnCopy.cs",
+      "line": 9,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Compatibility/ActivateOnCopy.cs",
+      "line": 96,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Compatibility/ActivateOnCopy.cs",
+      "line": 97,
+      "text": "[HarmonyPatch(typeof(Game), \"Update\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 10,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 20,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 11,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 79,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 80,
+      "text": "[HarmonyPatch(typeof(Game), \"SpawnPlayer\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 89,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 90,
+      "text": "[HarmonyPatch(typeof(Player), \"TeleportTo\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 104,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 105,
+      "text": "[HarmonyPatch(typeof(MessageHud), \"ShowBiomeFoundMsg\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 118,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 119,
+      "text": "[HarmonyPatch(typeof(Player), \"AddKnownBiome\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 123,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(MessageHud), \"ShowBiomeFoundMsg\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 10,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 53,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 54,
+      "text": "[HarmonyPatch(typeof(Hud), \"OnDestroy\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 86,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 87,
+      "text": "[HarmonyPatch(typeof(Menu), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 93,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 94,
+      "text": "[HarmonyPatch(typeof(Menu), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PieceHealthColor.cs",
+      "line": 6,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PieceHealthColor.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PieceHealthColor.cs",
+      "line": 10,
+      "text": "[HarmonyPatch(typeof(Hud), \"UpdateCrosshair\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 11,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 26,
+      "text": "AccessTools.DeclaredMethod(typeof(HotkeyBar), \"UpdateIcons\", (Type[])null, (Type[])null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 27,
+      "text": "AccessTools.DeclaredMethod(typeof(InventoryGrid), \"UpdateGui\", (Type[])null, (Type[])null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 44,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.DeclaredField(typeof(SharedData), \"m_maxStackSize\"), (string)null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 46,
+      "text": "new CodeMatch((OpCode?)OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(string), \"Format\", new Type[3]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 9,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 12,
+      "text": "[HarmonyPatch(typeof(BuildUi), \"SetTagListActive\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 41,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 42,
+      "text": "[HarmonyPatch(typeof(Game), \"Start\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 14,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 331,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 332,
+      "text": "[HarmonyPatch(typeof(HotkeyBar), \"OnEnable\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 14,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 24,
+      "text": "[HarmonyPatch(typeof(Inventory), \"Changed\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 54,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 55,
+      "text": "[HarmonyPatch(typeof(Hud), \"Update\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 87,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 88,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnTakeAll\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 91,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Inventory), \"MoveAll\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 12,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 105,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 106,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 175,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 176,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"ResetView\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 185,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 186,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"UpdateGui\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 205,
+      "text": "new CodeMatch((OpCode?)OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(Vector2), \"op_Multiply\", new Type[2]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 210,
+      "text": "new CodeMatch((OpCode?)OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(Vector2), \"op_Subtraction\", new Type[2]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 237,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 238,
+      "text": "[HarmonyPatch(typeof(ScrollRectEnsureVisible), \"CenterOnItem\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 247,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 248,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"GetWidgetSize\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 265,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 266,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"UpdateGamepad\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 303,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldflda, (object)AccessTools.Field(typeof(InventoryGrid), \"m_selected\"), (string)null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 304,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.Field(typeof(Vector2i), \"x\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 309,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldflda, (object)AccessTools.Field(typeof(InventoryGrid), \"m_selected\"), (string)null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 310,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.Field(typeof(Vector2i), \"y\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 314,
+      "text": "new CodeMatch((OpCode?)OpCodes.Stfld, (object)AccessTools.DeclaredField(typeof(Vector2i), \"x\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 318,
+      "text": "new CodeMatch((OpCode?)OpCodes.Stfld, (object)AccessTools.DeclaredField(typeof(Vector2i), \"y\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 323,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.Field(typeof(InventoryGrid), \"m_width\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 328,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.Field(typeof(InventoryGrid), \"m_height\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 495,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 496,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"MoveToUpperInventoryGrid\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 510,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 511,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"MoveToLowerInventoryGrid\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 535,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 536,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"MoveToLowerInventoryGrid\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 540,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredPropertyGetter(typeof(InventoryGrid), \"SelectionGridPosition\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 559,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 560,
+      "text": "[HarmonyPatch(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 569,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 570,
+      "text": "[HarmonyPatch(typeof(Inventory), \"FindEmptySlot\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipFormat.cs",
+      "line": 8,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipFormat.cs",
+      "line": 27,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipFormat.cs",
+      "line": 28,
+      "text": "[HarmonyPatch(typeof(SE_Stats), \"GetDamageModifiersTooltipString\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 13,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 22,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(Inventory), \"StackAll\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 27,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Inventory), \"GetAllItems\", Array.Empty<Type>(), (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 55,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 56,
+      "text": "[HarmonyPatch(typeof(Inventory), \"StackAll\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 108,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 109,
+      "text": "[HarmonyPatch(typeof(Inventory), \"RemoveItem\", new Type[]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 124,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 125,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"DropItem\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 155,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 156,
+      "text": "[HarmonyPatch(typeof(Game), \"SpawnPlayer\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 168,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 169,
+      "text": "[HarmonyPatch(typeof(Player), \"OnSpawned\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 23,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 61,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateRecipeList\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 64,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 74,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1376,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1377,
+      "text": "[HarmonyPatch(typeof(Game), \"Start\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1386,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1387,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnDestroy\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1396,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1397,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"AddRecipeToList\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1453,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1454,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Update\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1485,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1486,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"SetRecipe\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1503,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1504,
+      "text": "[HarmonyPatch(typeof(Player), \"ToggleNoPlacementCost\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1513,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1514,
+      "text": "[HarmonyPatch(typeof(Player), \"ResetCharacterKnownItems\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1523,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1524,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1537,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1538,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"CreateItemTooltip\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1563,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1564,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"SetupRequirement\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1582,
+      "text": "new CodeMatch((OpCode?)OpCodes.Stfld, (object)AccessTools.DeclaredField(typeof(UITooltip), \"m_text\"), (string)null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1615,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1616,
+      "text": "[HarmonyPatch(typeof(Player), \"GetAvailableRecipes\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1619,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Player), \"RequiredCraftingStation\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1644,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1645,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateRecipe\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1692,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1693,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnTabCraftPressed\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1699,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1700,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1706,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1707,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1722,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1723,
+      "text": "[HarmonyPatch(typeof(UITooltip), \"OnHoverStart\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 10,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 18,
+      "text": "AccessTools.DeclaredMethod(typeof(Chat), \"AddInworldText\", (Type[])null, (Type[])null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 19,
+      "text": "AccessTools.DeclaredMethod(typeof(Terminal), \"AddString\", new Type[4]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 26,
+      "text": "AccessTools.DeclaredMethod(typeof(Terminal), \"AddString\", new Type[4]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 36,
+      "text": "[HarmonyTranspiler]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 42,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(string), \"ToUpper\", Array.Empty<Type>(), (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ChatRules.cs",
+      "line": 43,
+      "text": "MethodInfo methodInfo2 = AccessTools.DeclaredMethod(typeof(string), \"ToLowerInvariant\", Array.Empty<Type>(), (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 11,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 112,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 113,
+      "text": "[HarmonyPatch(typeof(Game), \"Start\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 161,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 162,
+      "text": "[HarmonyPatch(typeof(Hud), \"UpdateFood\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 175,
+      "text": "[HarmonyPostfix]"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 177,
+      "text": "Logging<Plugin>.Message(\"Ignoring config \" + ((ConfigEntryBase)Configs.InventoryRowsDefault).Definition.Key + \", key already exists: invrows\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 377,
+      "text": "ConfigEntry<StringList> config = Config.Define(isAdmin: true, \"Crafting Group Assignment\", group.ToString(), new StringList(value), \"Comma separated list of item prefab names explicitly assigned to this group.\\r\\nUse this to override the default groupings which are based on item type.\\r\\nThe prefix and suffix wildcard * is supported.\\r\\nExplicltly "
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryEquip.cs",
+      "line": 75,
+      "text": "ConfigEntry<Vector2> config = Config.Define<Vector2>(isAdmin: false, sectionName, $\"Assigned Slot {key}\", new Vector2((float)val.x, (float)val.y), $\"The inventory slot position for {key} items when equipped.\\r\\nInteger values only.  Set to -1 to disable.\\r\\nBe careful that every slot is assigned to a different grid position.\");"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 12,
+      "text": "public static readonly ConfigEntry<bool> CameraRemoveLensDirt;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 14,
+      "text": "public static readonly ConfigEntry<int> CameraLodBias;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 16,
+      "text": "public static readonly ConfigEntry<FirstPersonMode> CameraFirstPerson;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 18,
+      "text": "public static readonly ConfigEntry<RepositionShipControls> CameraZoomRepositionShipControls;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 20,
+      "text": "public static readonly ConfigEntry<BiomeNoticeType> NoticeShowBiome;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 22,
+      "text": "public static readonly ConfigEntry<bool> NoticeShowPieceRepair;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 24,
+      "text": "public static readonly ConfigEntry<bool> EnableAmmoCount;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 26,
+      "text": "public static readonly ConfigEntry<bool> AutoOpenSkillsPanel;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 28,
+      "text": "public static readonly ConfigEntry<bool> NoSlideAnimation;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 30,
+      "text": "public static readonly ConfigEntry<bool> ColoredFoodBars;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 32,
+      "text": "public static readonly ConfigEntry<bool> ColoredFoodBySimpleMajority;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 34,
+      "text": "public static readonly ConfigEntry<StringList> HideStatusEffects;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 36,
+      "text": "public static readonly ConfigEntry<bool> ChatForceCase;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 38,
+      "text": "public static readonly ConfigEntry<bool> ShowPieceHealthColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 40,
+      "text": "public static readonly ConfigEntry<SystemClock.DisplayMode> ShowSystemClock;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 42,
+      "text": "public static readonly ConfigEntry<bool> ThinScrollBars;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 44,
+      "text": "public static readonly ConfigEntry<bool> RescaleContainerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 46,
+      "text": "public static readonly ConfigEntry<bool> ShowShipHP;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 48,
+      "text": "public static readonly ConfigEntry<bool> ShowShipSailIndicator;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 50,
+      "text": "public static readonly ConfigEntry<KeyCode> TooltipDetailKey;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 52,
+      "text": "public static readonly ConfigEntry<bool> TooltipShowHint;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 54,
+      "text": "public static readonly ConfigEntry<TooltipStyle> TooltipDisplayMode;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 56,
+      "text": "public static readonly ConfigEntry<int> TooltipDelay;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 58,
+      "text": "public static readonly ConfigEntry<bool> TooltipShowTitleNorse;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 60,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelEnabled;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 62,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelTooltipReq;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 64,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelTooltipHover;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 66,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelSearch;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 68,
+      "text": "public static readonly ConfigEntry<Vector2> CraftPanelSearchPosition;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 70,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelSearchResources;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 72,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelSearchArmorSets;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 74,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelSortCraftable;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 76,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelShowAnyKnownStation;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 78,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelHideUncraftableVariants;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 80,
+      "text": "public static readonly ConfigEntry<float> CraftPanelUncraftableBrightness;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 82,
+      "text": "public static readonly ConfigEntry<string> CraftPanelUncraftableSymbol;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 84,
+      "text": "public static readonly ConfigEntry<Color> CraftPanelUncraftableSymbolColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 86,
+      "text": "public static readonly ConfigEntry<UncraftableSymbolPosition> CraftPanelUncraftableSymbolPosition;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 88,
+      "text": "public static readonly ConfigEntry<Vector2> CraftPanelInfoPosition;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 90,
+      "text": "public static readonly ConfigEntry<float> CraftPanelScrollSensitivity;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 92,
+      "text": "public static readonly ConfigEntry<bool> CraftPanelUntouchedItemIndicator;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 94,
+      "text": "public static readonly ConfigEntry<Color> CraftPanelUntouchedItemIndicatorColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 100,
+      "text": "public static readonly ConfigEntry<Color> ItemActivatedColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 102,
+      "text": "public static readonly ConfigEntry<Color> ItemActivatedHotbarColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 104,
+      "text": "public static readonly ConfigEntry<int> InventoryRowsDefault;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 106,
+      "text": "public static readonly ConfigEntry<bool> EnableTakeStacks;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 108,
+      "text": "public static readonly ConfigEntry<bool> RemoveItemFromSmallestStack;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 110,
+      "text": "public static readonly ConfigEntry<bool> StackingCombineExisting;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 112,
+      "text": "public static readonly ConfigEntry<bool> StackingExcludeHotbar;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 114,
+      "text": "public static readonly ConfigEntry<bool> StackingExcludeEquipable;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 116,
+      "text": "public static readonly ConfigEntry<InventoryRules.DropStyle> DiscardStyle;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 118,
+      "text": "public static readonly ConfigEntry<bool> AssignedGearSlots;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 120,
+      "text": "public static readonly ConfigEntry<Color> ItemStackColorFull;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 122,
+      "text": "public static readonly ConfigEntry<Color> ItemStackColorPartial;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 124,
+      "text": "public static readonly ConfigEntry<bool> ItemStackColorApply;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 126,
+      "text": "public static readonly ConfigEntry<InventoryStackAmountText.FormatStyle> ItemStackFormatStyle;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 128,
+      "text": "public static readonly ConfigEntry<Color> DurabilityGood;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 130,
+      "text": "public static readonly ConfigEntry<Color> DurabilityWorn;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 132,
+      "text": "public static readonly ConfigEntry<Color> DurabilityAtRisk;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 134,
+      "text": "public static readonly ConfigEntry<Color> DurabilityBroken;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 136,
+      "text": "public static readonly ConfigEntry<bool> DurabilityColorApply;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 138,
+      "text": "public static readonly ConfigEntry<bool> ShowQualityAsSymbols;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 140,
+      "text": "public static readonly ConfigEntry<bool> Rotate90Degrees;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 142,
+      "text": "public static readonly ConfigEntry<Color> ItemQualitySymbolColor;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 144,
+      "text": "public static readonly ConfigEntry<string> ExtraQualityLevelSym;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 192,
+      "text": "RescaleContainerGrid = Config.Define(isAdmin: true, \"General\", \"Rescale Container Grid\", defaultValue: true, \"Rescale the container grid to fit the contents of the Grausten Chest and Wardrobe so that no scrollbar is needed.\\r\\n[\" + ((ConfigEntryBase)NoSlideAnimation).Definition.Key + \" must be true for this to work]\\r\\n[logout required for changes "
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 208,
+      "text": "TooltipShowHint = Config.Define(isAdmin: false, \"Tooltips\", \"Show Details Key Hint\", defaultValue: true, \"Show or hide the \" + ((ConfigEntryBase)TooltipDetailKey).Definition.Key + \" hint on the lower right portion of the tooltip.\");"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 216,
+      "text": "((ConfigEntryBase)TooltipDetailKey).Definition.Key,"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 226,
+      "text": "ItemStackFormatStyle = Config.Define(isAdmin: false, \"Inventory\", \"Show Full Stack Style\", InventoryStackAmountText.FormatStyle.HideMaxWhenFull, \"How should full stacks be displayed?\\r\\n- Vanilla: X/Y\\r\\n- HideMaxWhenFull: X only when full, otherwise X/Y\\r\\n- HideMaxAlways: X only\\r\\nYou can also press \" + ((ConfigEntryBase)TooltipDetailKey).Defini"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 258,
+      "text": "CraftPanelUntouchedItemIndicatorColor = Config.Define<Color>(isAdmin: false, \"Crafting Panel\", \"Untouched Item Indicator Color\", UIColor.ValheimTooltipTitle.Color, \"Set the color for \" + ((ConfigEntryBase)CraftPanelUntouchedItemIndicator).Definition.Key + \"\\r\\n[close/open your UI for changes to take effect]\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 589,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 596,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 603,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.FirstPersonMode\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 610,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.RepositionShipControls\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 617,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.BiomeNoticeType\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 624,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 631,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 638,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 645,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 652,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 659,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 666,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZen.Lib.Config.StringList\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 673,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 680,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 687,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.Section.SystemClock/DisplayMode\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 694,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 701,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 708,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 715,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 722,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.KeyCode\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 729,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 736,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.TooltipStyle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 743,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 750,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 757,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 764,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 771,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 778,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 785,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Vector2\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 792,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 799,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 806,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 813,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 820,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 827,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 834,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 841,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 848,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.UncraftableSymbolPosition\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 855,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Vector2\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 862,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 869,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 876,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 897,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 904,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 911,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 918,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 925,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 932,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 939,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 946,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 953,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.Section.InventoryRules/DropStyle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 960,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 967,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 974,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 981,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 988,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.Section.InventoryStackAmountText/FormatStyle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 995,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1002,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1009,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1016,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1023,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1030,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1037,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1044,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1051,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2504,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CZen.Lib.Config.StringList\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3949,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Vector2\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19033,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19034,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19035,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19036,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19037,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19038,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.KeyCode\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19039,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Vector2\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19040,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CZen.Lib.Config.StringList\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19041,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.BiomeNoticeType\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19042,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CZenUI.FirstPersonMode\\u003E::get_Value()\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1373,
+      "text": "InventoryGui.instance.m_moveItemEffects.Create(((Component)InventoryGui.instance).transform.position, Quaternion.identity, (Transform)null, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 170,
+      "text": "InventoryGui.instance.m_moveItemEffects.Create(((Component)this).transform.position, Quaternion.identity, (Transform)null, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20115,
+      "text": "\"UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4121,
+      "text": ".locals ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4132,
+      "text": "IL_0027: initobj ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4134,
+      "text": "IL_002e: callvirt UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6456,
+      "text": ".locals ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6480,
+      "text": "IL_0047: initobj ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6482,
+      "text": "IL_004e: callvirt UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 87,
+      "text": "if (IsObjectDBRecipesChanged)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 91,
+      "text": "bool globalKey = ZoneSystem.instance.GetGlobalKey((GlobalKeys)25);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 150,
+      "text": "private static int _lastObjectDBRecipesCount;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 281,
+      "text": "private static bool IsObjectDBRecipesChanged => _lastObjectDBRecipesCount != ObjectDB.instance.m_recipes.Count;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 314,
+      "text": "if (!Object.op_Implicit((Object)(object)ZoneSystem.instance) || !ZoneSystem.instance.GetGlobalKey((GlobalKeys)25))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 578,
+      "text": "_lastObjectDBRecipesCount = 0;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 595,
+      "text": "foreach (Recipe item in ObjectDB.instance.m_recipes.Where((Recipe recipe) => Object.op_Implicit((Object)(object)recipe.m_item)))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 599,
+      "text": "_lastObjectDBRecipesCount = ObjectDB.instance.m_recipes.Count;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 376,
+      "text": "if (item.m_shared.m_teleportable || ZoneSystem.instance.GetGlobalKey((GlobalKeys)35))"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1846,
+      "text": "\"name\": \"_lastObjectDBRecipesCount\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1948,
+      "text": "\"name\": \"IsObjectDBRecipesChanged\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8116,
+      "text": "\"signature\": \"System.Boolean ZenUI.Section.CraftingPanel::get_IsObjectDBRecipesChanged()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19142,
+      "text": "\"ObjectDB ObjectDB::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19267,
+      "text": "\"System.Boolean ZenUI.Section.CraftingPanel::get_IsObjectDBRecipesChanged()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19347,
+      "text": "\"System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20182,
+      "text": "\"ZoneSystem ZoneSystem::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2251,
+      "text": "// System.Boolean ZenUI.Section.CraftingPanel::get_IsObjectDBRecipesChanged()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2253,
+      "text": "IL_0000: ldsfld System.Int32 ZenUI.Section.CraftingPanel::_lastObjectDBRecipesCount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2254,
+      "text": "IL_0005: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2255,
+      "text": "IL_000a: ldfld System.Collections.Generic.List`1<Recipe> ObjectDB::m_recipes"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2327,
+      "text": "IL_0000: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2330,
+      "text": "IL_000c: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2332,
+      "text": "IL_0013: callvirt System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2858,
+      "text": "IL_0012: stsfld System.Int32 ZenUI.Section.CraftingPanel::_lastObjectDBRecipesCount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2882,
+      "text": "IL_0015: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2883,
+      "text": "IL_001a: ldfld System.Collections.Generic.List`1<Recipe> ObjectDB::m_recipes"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2909,
+      "text": "IL_006a: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2910,
+      "text": "IL_006f: ldfld System.Collections.Generic.List`1<Recipe> ObjectDB::m_recipes"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2912,
+      "text": "IL_0079: stsfld System.Int32 ZenUI.Section.CraftingPanel::_lastObjectDBRecipesCount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5703,
+      "text": "IL_0025: call System.Boolean ZenUI.Section.CraftingPanel::get_IsObjectDBRecipesChanged()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5706,
+      "text": "IL_0031: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5708,
+      "text": "IL_0038: callvirt System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15258,
+      "text": "IL_0012: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15260,
+      "text": "IL_0019: callvirt System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 20,
+      "text": "private static void ShowBiomeMessage(this Player? player, BiomeSector? prevBiome = null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 22,
+      "text": "if (!Object.op_Implicit((Object)(object)player))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 26,
+      "text": "((MonoBehaviour)(object)player).Delay(3.5f, () =>"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 29,
+      "text": "BiomeSector biomeSector = WorldGenerator.instance.GetBiomeSector(((Component)player).transform.position, false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 80,
+      "text": "[HarmonyPatch(typeof(Game), \"SpawnPlayer\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 81,
+      "text": "private static void Game_SpawnPlayer(Game __instance, Player __result, bool spawnValkyrie)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 83,
+      "text": "if (!spawnValkyrie && Configs.NoticeShowBiome.Value.HasFlag(BiomeNoticeType.PlayerSpawn))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 90,
+      "text": "[HarmonyPatch(typeof(Player), \"TeleportTo\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 91,
+      "text": "private static void Player_TeleportTo(Player __instance, bool distantTeleport, bool __result)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 97,
+      "text": "((MonoBehaviour)(object)__instance).WhenNot((Func<bool>)((Character)__instance).IsTeleporting, (Action)(() =>"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 111,
+      "text": "if (Player.m_localPlayer.ShowTeleportAnimation())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 119,
+      "text": "[HarmonyPatch(typeof(Player), \"AddKnownBiome\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticeBiome.cs",
+      "line": 121,
+      "text": "private static IEnumerable<CodeInstruction> Player_AddKnownBiome_Transpiler(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 53,
+      "text": "int num = ((currentAmmo != null) ? ((Humanoid)Player.m_localPlayer).GetInventory().CountItems(currentAmmo.m_shared.m_name, -1, true) : 0);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 81,
+      "text": "int num2 = ((currentBait != null) ? ((Humanoid)Player.m_localPlayer).GetInventory().CountItems(currentBait.m_shared.m_name, -1, true) : 0);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 103,
+      "text": "if (!Player.m_localPlayer.IsReady())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 111,
+      "text": "ItemData ammoItem = ((Humanoid)Player.m_localPlayer).GetAmmoItem();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 112,
+      "text": "if (ammoItem == null || ammoItem.m_shared.m_ammoType != Item.m_shared.m_ammoType || !((Humanoid)Player.m_localPlayer).GetInventory().ContainsItem(ammoItem))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 114,
+      "text": "ammoItem = ((Humanoid)Player.m_localPlayer).GetInventory().GetAmmoItem(Item.m_shared.m_ammoType, (string)null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 125,
+      "text": "ItemData ammoItem = ((Humanoid)Player.m_localPlayer).GetAmmoItem();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 126,
+      "text": "if (ammoItem == null || ammoItem.m_shared.m_ammoType != Item.m_shared.m_ammoType || !((Humanoid)Player.m_localPlayer).GetInventory().ContainsItem(ammoItem))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 128,
+      "text": "ammoItem = ((Humanoid)Player.m_localPlayer).GetInventory().GetAmmoItem(Item.m_shared.m_ammoType, (string)null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 67,
+      "text": "Inventory inventory = ((Humanoid)Player.m_localPlayer).GetInventory();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 141,
+      "text": "return destInv.GetTotalWeight() + val.GetWeight(-1) <= Player.m_localPlayer.GetMaxCarryWeight();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 219,
+      "text": "if (destInv.GetTotalWeight() + item.GetWeight(-1) <= Player.m_localPlayer.GetMaxCarryWeight())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 224,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, \"$se_max_carryweight\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 525,
+      "text": "int num = __instance.m_playerGrid.GridWidth - __instance.m_containerGrid.m_height;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 32,
+      "text": "if (!Object.op_Implicit((Object)(object)Player.m_localPlayer) || ((Humanoid)Player.m_localPlayer).GetInventory() != inventory)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 125,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"DropItem\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 126,
+      "text": "private static void Humanoid_DropItem(Humanoid __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 132,
+      "text": "Player val = (Player)(object)((__instance is Player) ? __instance : null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 133,
+      "text": "if (!((Object)(object)val != (Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 143,
+      "text": "((Character)val).SetLookDir(transform.forward, 0f);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 156,
+      "text": "[HarmonyPatch(typeof(Game), \"SpawnPlayer\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 157,
+      "text": "private static void Game_SpawnPlayer(Game __instance, Player __result)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 159,
+      "text": "if (__instance.m_playerProfile.m_firstSpawn)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 161,
+      "text": "Logging<Plugin>.Info(\"Init new players to have config defined starting gear\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 162,
+      "text": "((Humanoid)__result).UnequipAllItems();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 163,
+      "text": "((Humanoid)__result).GetInventory().RemoveAll();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 164,
+      "text": "((Humanoid)__result).GiveDefaultItems();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 169,
+      "text": "[HarmonyPatch(typeof(Player), \"OnSpawned\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryRules.cs",
+      "line": 170,
+      "text": "private static void Player_OnSpawned(Player __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 96,
+      "text": "bool flag = globalKey || Player.m_localPlayer.HaveRequirements(recipe, false, 1, 1);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 97,
+      "text": "InventoryGui.instance.AddRecipeToList(Player.m_localPlayer, recipe, (ItemData)null, flag);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 287,
+      "text": "if (Object.op_Implicit((Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 289,
+      "text": "return (Object)(object)_currentStation != (Object)(object)Player.m_localPlayer.GetCurrentCraftingStation();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 316,
+      "text": "if (Object.op_Implicit((Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 318,
+      "text": "return Player.m_localPlayer.NoCostCheat();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1013,
+      "text": ".ThenBy((RecipeDataPair data) => data.Recipe.m_item.m_itemData.m_shared.m_consumeStatusEffect?.m_category)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1014,
+      "text": ".ThenBy((RecipeDataPair data) => data.Recipe.m_item.m_itemData.m_shared.m_attackStatusEffect?.m_category)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1015,
+      "text": ".ThenBy((RecipeDataPair data) => data.Recipe.m_item.m_itemData.m_shared.m_equipStatusEffect?.m_category)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1105,
+      "text": "DamageTypes damage = itemData.GetDamage();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1299,
+      "text": "if (!Object.op_Implicit((Object)(object)Player.m_localPlayer) || item == null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1304,
+      "text": "bool inCraftingStation = Player.m_localPlayer.m_inCraftingStation;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1467,
+      "text": "_currentStation = (Object.op_Implicit((Object)(object)Player.m_localPlayer) ? Player.m_localPlayer.GetCurrentCraftingStation() : null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1504,
+      "text": "[HarmonyPatch(typeof(Player), \"ToggleNoPlacementCost\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1505,
+      "text": "private static void Player_ToggleNoPlacementCost(Player __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1514,
+      "text": "[HarmonyPatch(typeof(Player), \"ResetCharacterKnownItems\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1515,
+      "text": "private static void Player_ResetCharacterKnownItems(Player __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1616,
+      "text": "[HarmonyPatch(typeof(Player), \"GetAvailableRecipes\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1617,
+      "text": "private static IEnumerable<CodeInstruction> Player_GetAvailableRecipes(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1619,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Player), \"RequiredCraftingStation\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1620,
+      "text": "Func<Player, Recipe, int, bool, bool> func = RequiredCraftingStation;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1622,
+      "text": "static bool RequiredCraftingStation(Player player, Recipe recipe, int qualityLevel, bool checkLevel)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1624,
+      "text": "if (!Configs.CraftPanelShowAnyKnownStation.Value || Object.op_Implicit((Object)(object)player.GetCurrentCraftingStation()))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1626,
+      "text": "return player.RequiredCraftingStation(recipe, qualityLevel, checkLevel);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1636,
+      "text": "if (player.m_currentStation.GetLevel(true) < recipe.GetRequiredStationLevel(qualityLevel))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1673,
+      "text": "if (Object.op_Implicit((Object)(object)Player.m_localPlayer.GetCurrentCraftingStation()))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1712,
+      "text": "__instance.UpdateContainer(Player.m_localPlayer);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1713,
+      "text": "__instance.UpdateRecipe(Player.m_localPlayer, Time.deltaTime);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 163,
+      "text": "private static void Hud_UpdateFood(Hud __instance, Player player)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FoodPanel.cs",
+      "line": 167,
+      "text": "List<Food> foods = player.GetFoods();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SkillsPanel.cs",
+      "line": 21,
+      "text": "if (Configs.AutoOpenSkillsPanel.Value && !Object.op_Implicit((Object)(object)Player.m_localPlayer.m_currentStation) && !Object.op_Implicit((Object)(object)container))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 22,
+      "text": "private const float ItemQualityCharacterSpacing = 8f;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 177,
+      "text": "uiElement.characterSpacing = 8f;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 229,
+      "text": "InventoryGrid playerGrid = InventoryGui.instance.m_playerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 232,
+      "text": "FoodPanel.FoodType.Health => playerGrid.m_foodHealthColor,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 233,
+      "text": "FoodPanel.FoodType.Stamina => playerGrid.m_foodStaminaColor,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ItemIcon.cs",
+      "line": 234,
+      "text": "FoodPanel.FoodType.Eitr => playerGrid.m_foodEitrColor,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 102,
+      "text": "base.m_elementPrefab = instance.m_playerGrid.m_elementPrefab;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 104,
+      "text": "base.m_elementSpace = instance.m_playerGrid.m_elementSpace;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 115,
+      "text": "base.m_tooltipAnchor = Object.Instantiate<RectTransform>(instance.m_playerGrid.m_tooltipAnchor, (Transform)(object)instance.m_crafting, false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 649,
+      "text": "((Behaviour)element.m_noteleport).enabled = IsUntouchedItemIndicatorEnabled && Object.op_Implicit((Object)(object)Player.m_localPlayer) && !Player.m_localPlayer.IsKnownMaterial(item.GetName());"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryEquip.cs",
+      "line": 102,
+      "text": "Inventory inventory = ((Humanoid)Player.m_localPlayer).GetInventory();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryEquip.cs",
+      "line": 134,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"EquipItem\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryEquip.cs",
+      "line": 135,
+      "text": "private static void Humanoid_EquipItem(Humanoid __instance, ItemData item, ref bool __runOriginal)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryEquip.cs",
+      "line": 137,
+      "text": "if (Configs.AssignedGearSlots.Value && Player.m_localPlayer.Is((Character)(object)__instance) && _autoReposition)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 13,
+      "text": "[HarmonyPatch(typeof(Player), \"Repair\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 15,
+      "text": "private static IEnumerable<CodeInstruction> Player_Repair(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 17,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(Character), \"Message\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 18,
+      "text": "Action<Character, MessageType, string, int, Sprite, bool> action = SuppressMessage;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 20,
+      "text": "static void SuppressMessage(Character c, MessageType type, string msg, int amount, Sprite icon, bool log)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 10,
+      "text": "internal class StatusEffectRules"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 13,
+      "text": "[HarmonyPatch(typeof(SEMan), \"GetHUDStatusEffects\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 14,
+      "text": "private static IEnumerable<CodeInstruction> SEMan_GetHUDStatusEffects_Transpiler(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 19,
+      "text": "Func<StatusEffect, List<StatusEffect>, bool> func = ShowStatusEffect;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 23,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.Field(typeof(StatusEffect), \"m_icon\"), (string)null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 32,
+      "text": "private static bool ShowStatusEffect(StatusEffect statusEffect, List<StatusEffect> effects)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 34,
+      "text": "if (effects == Hud.instance.m_tempStatusEffects)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 36,
+      "text": "if (Object.op_Implicit((Object)(object)statusEffect.m_icon))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 38,
+      "text": "return !Configs.HideStatusEffects.Value.Contains(statusEffect.m_name);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/StatusEffectRules.cs",
+      "line": 42,
+      "text": "return Object.op_Implicit((Object)(object)statusEffect.m_icon);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 245,
+      "text": "DamageTypes damage = item.GetDamage();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 439,
+      "text": "string StatusEffects()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 442,
+      "text": "List<StatusEffect> list = new List<StatusEffect>"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 445,
+      "text": "item.m_shared.m_attackStatusEffect,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 446,
+      "text": "item.m_shared.m_equipStatusEffect,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 447,
+      "text": "item.m_shared.m_consumeStatusEffect,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 448,
+      "text": "item.m_shared.m_perfectBlockStatusEffect,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 449,
+      "text": "item.m_shared.m_setStatusEffect"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 451,
+      "text": "list.RemoveAll((StatusEffect e) => !Object.op_Implicit((Object)(object)e));"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 460,
+      "text": "foreach (StatusEffect item3 in list)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 469,
+      "text": "float skillLevel = ((Character)Player.m_localPlayer).GetSkillLevel(item.m_shared.m_skillType);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 470,
+      "text": "foreach (StatusEffect item4 in list)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 476,
+      "text": "if (setSize > 0 && (Object)(object)item4 == (Object)(object)item.m_shared.m_setStatusEffect)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 478,
+      "text": "int setCount = ((Humanoid)Player.m_localPlayer).GetSetCount(item.m_shared.m_setName);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 485,
+      "text": "string text2 = ((!((Object)(object)item4 == (Object)(object)item.m_shared.m_consumeStatusEffect) && !item.GetName().Localize().Contains(item4.m_name.Localize())) ? (item4.m_name + \": \") : string.Empty);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipSummary.cs",
+      "line": 508,
+      "text": "StatusEffects(),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ShipHud.cs",
+      "line": 46,
+      "text": "private static void Hud_UpdateCrosshair(Player player, Hud __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ShipHud.cs",
+      "line": 73,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ShipHud.cs",
+      "line": 74,
+      "text": "if (!localPlayer.IsReady() || !((Character)localPlayer).IsAttachedToShip())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ShipHud.cs",
+      "line": 78,
+      "text": "Ship controlledShip = localPlayer.GetControlledShip();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CameraRules.cs",
+      "line": 167,
+      "text": "[HarmonyPatch(typeof(Player), \"FixedUpdate\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CameraRules.cs",
+      "line": 168,
+      "text": "private static IEnumerable<CodeInstruction> Player_FixedUpdate(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/TooltipState.cs",
+      "line": 132,
+      "text": "if (InventoryGui.IsVisible() && (((Humanoid)Player.m_localPlayer).GetInventory() == __instance || (Object.op_Implicit((Object)(object)InventoryGui.instance.ContainerGrid) && InventoryGui.instance.ContainerGrid.GetInventory() == __instance)))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelSearch.cs",
+      "line": 137,
+      "text": "return IsFiltered(recipe.m_item.m_itemData.m_shared.m_setStatusEffect?.m_name ?? string.Empty);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelSearch.cs",
+      "line": 202,
+      "text": "else if (Object.op_Implicit((Object)(object)Player.m_localPlayer) && !Console.IsVisible() && !TextInput.IsVisible() && !Minimap.InTextInput() && !Menu.IsVisible() && ZInput.GetButtonDown(\"Chat\"))"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 34,
+      "text": "public static readonly ConfigEntry<StringList> HideStatusEffects;"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 174,
+      "text": "NoticeShowBiome = Config.Define(isAdmin: true, \"Notifications\", \"Show Biome Notification\", BiomeNoticeType.PlayerSpawn | BiomeNoticeType.Teleport | BiomeNoticeType.Discovery, $\"Show the biome notification on key events.  (Vanilla: {BiomeNoticeType.Discovery})\\r\\nPlayer spawn, After teleport, First discovery\");"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 176,
+      "text": "HideStatusEffects = Config.Define(isAdmin: true, \"General\", \"Hide Status Effects\", new StringList { \"$se_windrun_name\", \"$item_beltstrength\", \"$item_demister\" }, \"Hide status effect icons from the UI.\\r\\nSome status effect icons are redundant and noisy and you don't need to see all of them all the time.\\r\\nDoes not change the internal application o"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 219,
+      "text": "EnableTakeStacks = Config.Define(isAdmin: false, \"Inventory\", \"Enable Take Stacks\", defaultValue: true, \"When enabled the Take All button changes behavior to three states instead of one. (Vanilla: false)\\r\\nThe state changes based on the condition of the inventory:\\r\\n- Take stacks: Unfilled stacks in the player's inventory are filled (example: ref"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 220,
+      "text": "DiscardStyle = Config.Define(isAdmin: false, \"Inventory\", \"Drop Style\", InventoryRules.DropStyle.CameraDirection, \"When dropping items on the ground throw them towards the camera instead of\\r\\nthe vanilla method of chucking them in the direction the character is facing\");"
+    },
+    {
+      "file": "csharp/ZenUI/Configs.cs",
+      "line": 228,
+      "text": "InventoryRowsDefault = Config.Define(isAdmin: true, \"Inventory\", \"Inventory Rows Default\", -1, Config.AcceptRange(-1, 6), \"CAUTION: This applies to all players on the server when installed on the server and client.\\r\\nNumber of inventory rows that a player starts the game with.\\r\\nSet to -1 to disable this config. (Vanilla: 3 + hotbar)\\r\\nThere are"
+    },
+    {
+      "file": "csharp/ZenUI/BiomeNoticeType.cs",
+      "line": 8,
+      "text": "PlayerSpawn = 1,"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 408,
+      "text": "\"name\": \"PlayerSpawn\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 665,
+      "text": "\"name\": \"HideStatusEffects\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2297,
+      "text": "\"type\": \"System.Func\\u00605\\u003CPlayer,Recipe,System.Int32,System.Boolean,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4829,
+      "text": "\"name\": \"ItemQualityCharacterSpacing\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5064,
+      "text": "\"name\": \"player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5065,
+      "text": "\"type\": \"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5115,
+      "text": "\"type\": \"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5182,
+      "text": "\"type\": \"System.Action\\u00606\\u003CCharacter,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5391,
+      "text": "\"name\": \"ZenUI.Section.StatusEffectRules\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5424,
+      "text": "\"name\": \"ZenUI.Section.StatusEffectRules/\\u003C\\u003EO\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5438,
+      "text": "\"name\": \"\\u003C0\\u003E__ShowStatusEffect\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5439,
+      "text": "\"type\": \"System.Func\\u00603\\u003CStatusEffect,System.Collections.Generic.List\\u00601\\u003CStatusEffect\\u003E,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6645,
+      "text": "\"type\": \"System.Predicate\\u00601\\u003CStatusEffect\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7804,
+      "text": "\"signature\": \"System.Collections.Generic.IEnumerable\\u00601\\u003CHarmonyLib.CodeInstruction\\u003E ZenUI.Section.CameraRules::Player_FixedUpdate(System.Collections.Generic.IEnumerable\\u00601\\u003CHarmonyLib.CodeInstruction\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7823,
+      "text": "\"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7900,
+      "text": "\"signature\": \"System.Single ZenUI.Section.CameraRules::\\u003CPlayer_FixedUpdate\\u003Eg__GetMaxDistance|7_0(System.Single)\","
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 12,
+      "text": "private static void InventoryGui_Show(InventoryGui __instance, Container container)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 16,
+      "text": "__instance.ToggleVisibleNoSlide(isVisible: true, container);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 22,
+      "text": "private static void InventoryGui_Hide(InventoryGui __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 27,
+      "text": "__instance.m_containerName.text = string.Empty;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 28,
+      "text": "__instance.ContainerGrid.DisableAllElements();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 32,
+      "text": "private static void ToggleVisibleNoSlide(this InventoryGui gui, bool isVisible, Container? container)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 36,
+      "text": "if (!Object.op_Implicit((Object)(object)container))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 38,
+      "text": "((Component)gui.m_container).gameObject.SetActive(false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 41,
+      "text": "else if (Object.op_Implicit((Object)(object)gui.m_currentContainer))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 43,
+      "text": "((Component)gui.m_container).gameObject.SetActive(true);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 45,
+      "text": "string text = (isVisible ? \"inventory_show\" : \"inventory_hide\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 50,
+      "text": "private static void DisableAllElements(this InventoryGrid? grid)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 56,
+      "text": "foreach (InventoryElement element in grid.m_elements)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 12,
+      "text": "internal static class InventoryStackAmountText"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 27,
+      "text": "AccessTools.DeclaredMethod(typeof(InventoryGrid), \"UpdateGui\", (Type[])null, (Type[])null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 44,
+      "text": "new CodeMatch((OpCode?)OpCodes.Ldfld, (object)AccessTools.DeclaredField(typeof(SharedData), \"m_maxStackSize\"), (string)null),"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 73,
+      "text": "arg2 = Configs.ItemStackColorPartial.Value;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 77,
+      "text": "arg2 = Configs.ItemStackColorFull.Value;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 83,
+      "text": "flag2 = Configs.ItemStackFormatStyle.Value switch"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryStackAmountText.cs",
+      "line": 92,
+      "text": "if (!Configs.ItemStackColorApply.Value)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 20,
+      "text": "__state = ((Component)__instance.m_tagListContainer).gameObject.activeSelf;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 33,
+      "text": "((Component)((Transform)__instance.m_tabContainer).parent.Find(\"InputHelp\")).gameObject.SetActive(showTabs);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 48,
+      "text": "SetupContainerScrollbars();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 79,
+      "text": "private static void SetupContainerScrollbars()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/ApplyThinScrollBars.cs",
+      "line": 88,
+      "text": "RectTransform val = (RectTransform)((Component)InventoryGui.instance.ContainerGrid.m_scrollbar).transform;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 19,
+      "text": "public ItemData? Item;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 49,
+      "text": "ItemData currentAmmo = GetCurrentAmmo();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 53,
+      "text": "int num = ((currentAmmo != null) ? ((Humanoid)Player.m_localPlayer).GetInventory().CountItems(currentAmmo.m_shared.m_name, -1, true) : 0);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 72,
+      "text": "ItemData currentBait = GetCurrentBait();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 81,
+      "text": "int num2 = ((currentBait != null) ? ((Humanoid)Player.m_localPlayer).GetInventory().CountItems(currentBait.m_shared.m_name, -1, true) : 0);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 101,
+      "text": "private ItemData? GetCurrentAmmo()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 111,
+      "text": "ItemData ammoItem = ((Humanoid)Player.m_localPlayer).GetAmmoItem();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 112,
+      "text": "if (ammoItem == null || ammoItem.m_shared.m_ammoType != Item.m_shared.m_ammoType || !((Humanoid)Player.m_localPlayer).GetInventory().ContainsItem(ammoItem))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 114,
+      "text": "ammoItem = ((Humanoid)Player.m_localPlayer).GetInventory().GetAmmoItem(Item.m_shared.m_ammoType, (string)null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 119,
+      "text": "private ItemData? GetCurrentBait()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 125,
+      "text": "ItemData ammoItem = ((Humanoid)Player.m_localPlayer).GetAmmoItem();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 126,
+      "text": "if (ammoItem == null || ammoItem.m_shared.m_ammoType != Item.m_shared.m_ammoType || !((Humanoid)Player.m_localPlayer).GetInventory().ContainsItem(ammoItem))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 128,
+      "text": "ammoItem = ((Humanoid)Player.m_localPlayer).GetInventory().GetAmmoItem(Item.m_shared.m_ammoType, (string)null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 305,
+      "text": "private static void UpdateAmmoAndIcon(HotkeyBar hotkeyBar, ElementData elementData, ItemData? itemData)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 316,
+      "text": "if (!elementData.m_used || itemData == null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 322,
+      "text": "value.Item = itemData;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 323,
+      "text": "if ((Object)(object)itemData.GetIcon() != (Object)(object)elementData.m_icon.sprite)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 15,
+      "text": "internal static class InventoryTakeAll"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 19,
+      "text": "Stacks,"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 24,
+      "text": "[HarmonyPatch(typeof(Inventory), \"Changed\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 26,
+      "text": "private static class InventoryChangedEvent"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 36,
+      "text": "public static void Invoke(params Inventory[] inventories)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 49,
+      "text": "private static bool IsSameName(this ItemData item, ItemData other)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 58,
+      "text": "if (!Configs.EnableTakeStacks.Value)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 62,
+      "text": "InventoryGui instance = InventoryGui.instance;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 63,
+      "text": "if (!Object.op_Implicit((Object)(object)instance) || !Object.op_Implicit((Object)(object)instance.m_currentContainer))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 67,
+      "text": "Inventory inventory = ((Humanoid)Player.m_localPlayer).GetInventory();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 68,
+      "text": "Inventory inventory2 = instance.m_currentContainer.GetInventory();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 69,
+      "text": "if (inventory != null && inventory2 != null)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 71,
+      "text": "_takeMode = GetMoveMode(inventory, inventory2);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 74,
+      "text": "TakeMode.Stacks => \"$inventory_take_stacks\","
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 75,
+      "text": "TakeMode.Weight => \"$inventory_take_weight\","
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 76,
+      "text": "TakeMode.All => \"$inventory_takeall\","
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 88,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnTakeAll\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 89,
+      "text": "private static IEnumerable<CodeInstruction> InventoryGui_OnTakeAll_Transpiler(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 91,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Inventory), \"MoveAll\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 92,
+      "text": "Action<Inventory, Inventory> action = InventoryMoveAll_Intercept;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 96,
+      "text": "private static void InventoryMoveAll_Intercept(Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 98,
+      "text": "if (!Configs.EnableTakeStacks.Value)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 111,
+      "text": "case TakeMode.Stacks:"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 112,
+      "text": "destInv.TakeStacks(sourceInv);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 125,
+      "text": "private static TakeMode GetMoveMode(Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 127,
+      "text": "if (!HasIncompleteStacks())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 135,
+      "text": "return TakeMode.Stacks;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 138,
+      "text": "ItemData val = sourceInv.GetItemsByWeight().FirstOrDefault();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 145,
+      "text": "bool HasIncompleteStacks()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 147,
+      "text": "return GetIncompleteSourceStacks(destInv, sourceInv).Any();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 151,
+      "text": "private static void TakeStacks(this Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 153,
+      "text": "Logging<Plugin>.Info(\"Fill stacks\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 154,
+      "text": "foreach (ItemData incompleteSourceStack in GetIncompleteSourceStacks(destInv, sourceInv))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 156,
+      "text": "destInv.FillStacksFrom(incompleteSourceStack);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 158,
+      "text": "if (Configs.StackingCombineExisting.Value)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 160,
+      "text": "destInv.CombineStacks();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 162,
+      "text": "sourceInv.m_inventory.RemoveAll((ItemData item) => item.m_shared.m_maxStackSize > 1 && item.m_stack == 0);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 163,
+      "text": "InventoryChangedEvent.Invoke(destInv, sourceInv);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 166,
+      "text": "private static void FillStacksFrom(this Inventory destInv, ItemData sourceItem)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 171,
+      "text": "msg.AppendLiteral(\"Filling stack from \");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 175,
+      "text": "foreach (ItemData item in from d in destInv.GetAllItems()"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 179,
+      "text": "int stack = sourceItem.m_stack;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 180,
+      "text": "int val = item.m_shared.m_maxStackSize - item.m_stack;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 181,
+      "text": "int num = Math.Min(stack, val);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 182,
+      "text": "item.m_stack += num;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 183,
+      "text": "ItemData val2 = sourceItem;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 184,
+      "text": "val2.m_stack -= num;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 190,
+      "text": "msg.AppendLiteral(\" to stack of \");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 194,
+      "text": "if (sourceItem.m_stack < 0)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 196,
+      "text": "throw new ArgumentOutOfRangeException(\"sourceItem\", sourceItem.m_stack, \"Source stack is less than 0\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 198,
+      "text": "if (sourceItem.m_stack == 0)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 205,
+      "text": "private static IEnumerable<ItemData> GetItemsByWeight(this Inventory inv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 212,
+      "text": "private static void TakeWeightLimit(this Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 215,
+      "text": "InventoryChangedEvent.CanInvoke = false;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 216,
+      "text": "foreach (ItemData item in sourceInv.GetItemsByWeight())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 227,
+      "text": "InventoryChangedEvent.CanInvoke = true;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 228,
+      "text": "InventoryChangedEvent.Invoke(destInv, sourceInv);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 231,
+      "text": "private static void TakeAll(this Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 236,
+      "text": "private static IEnumerable<ItemData> GetIncompleteSourceStacks(Inventory destInv, Inventory sourceInv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 239,
+      "text": "where item.m_stack < item.m_shared.m_maxStackSize"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 13,
+      "text": "internal static class FitContainerGrid"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 16,
+      "text": "private static class InventoryGuiShow"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 19,
+      "text": "private static void Prefix(InventoryGui __instance, Container? container, ref bool __state)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 25,
+      "text": "InventoryGrid val = __instance.InitContainerGrid();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 26,
+      "text": "if (Object.op_Implicit((Object)(object)container) && Object.op_Implicit((Object)(object)container.m_piece) && RescaledContainers.TryGetValue(container.m_piece.GetPrefabName(), out (float, bool) value))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 35,
+      "text": "private static void Postfix(InventoryGui __instance, Container? container, bool __state)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 37,
+      "text": "if (IsFeatureEnabled && Object.op_Implicit((Object)(object)container))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 41,
+      "text": "__instance.ContainerGrid.RotateGrid(isRotated: true);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 43,
+      "text": "__instance.ContainerGrid.ResetAnchorPosition();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 48,
+      "text": "private static readonly Dictionary<string, (float Scale, bool RotateInventory)> RescaledContainers = new Dictionary<string, (float, bool)>"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 58,
+      "text": "if (Configs.RescaleContainerGrid.Value)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 66,
+      "text": "private static InventoryGrid InitContainerGrid(this InventoryGui gui)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 73,
+      "text": "InventoryGrid containerGrid = gui.ContainerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 74,
+      "text": "containerGrid.m_gridRoot.anchorMax = new Vector2(0.5f, 1f);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 75,
+      "text": "containerGrid.m_gridRoot.anchorMin = new Vector2(0.5f, 0f);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 76,
+      "text": "RectTransform gridRoot = containerGrid.m_gridRoot;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 77,
+      "text": "Vector2 pivot = containerGrid.m_gridRoot.pivot;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 80,
+      "text": "return containerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 83,
+      "text": "private static void ResetAnchorPosition(this InventoryGrid grid)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 106,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 107,
+      "text": "private static void InventoryGui_Hide(InventoryGui __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 112,
+      "text": "InventoryGrid containerGrid = __instance.ContainerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 113,
+      "text": "((Transform)containerGrid.m_gridRoot).localScale = Vector3.one;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 114,
+      "text": "containerGrid.RotateGrid(isRotated: false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 118,
+      "text": "private static void RotateGrid(this InventoryGrid grid, bool isRotated)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 139,
+      "text": "private static bool IsContainerGrid(this InventoryGrid grid)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 141,
+      "text": "if (Object.op_Implicit((Object)(object)InventoryGui.instance))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 143,
+      "text": "return (Object)(object)InventoryGui.instance.ContainerGrid == (Object)(object)grid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 148,
+      "text": "private static bool IsRotated(this InventoryGrid grid)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 153,
+      "text": "if (IsFeatureEnabled && grid.IsContainerGrid())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 161,
+      "text": "private static bool IsRotated(this Inventory inv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 163,
+      "text": "if (!Object.op_Implicit((Object)(object)InventoryGui.instance))"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 167,
+      "text": "InventoryGrid containerGrid = InventoryGui.instance.ContainerGrid;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 168,
+      "text": "if (containerGrid.GetInventory() == inv)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 170,
+      "text": "return containerGrid.IsRotated();"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 176,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"ResetView\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 177,
+      "text": "private static void InventoryGrid_ResetView(InventoryGrid __instance)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 179,
+      "text": "if (IsFeatureEnabled && __instance.IsContainerGrid())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 186,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"UpdateGui\")]"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 187,
+      "text": "private static IEnumerable<CodeInstruction> InventoryGrid_UpdateGui(IEnumerable<CodeInstruction> codes)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 217,
+      "text": "Func<Vector2, InventoryGrid, Vector2> func = Intercept;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 225,
+      "text": "static Vector2 Intercept(Vector2 vanilla, InventoryGrid grid)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 229,
+      "text": "if (!IsFeatureEnabled || !grid.IsContainerGrid())"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 241,
+      "text": "if (Object.op_Implicit((Object)(object)InventoryGui.instance) && IsFeatureEnabled && (Object)(object)__instance.mContent == (Object)(object)InventoryGui.instance.ContainerGrid.m_gridRoot && !__instance.mScrollRect.horizontal)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/FitContainerGrid.cs",
+      "line": 243,
+      "text": "InventoryGui.instance.ContainerGrid.ResetAnchorPosition();"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 46,
+      "text": "gui.m_animator.Play(text, 0, 1f);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/PanelSlide.cs",
+      "line": 47,
+      "text": "gui.m_animator.Update(0f);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/SystemClock.cs",
+      "line": 158,
+      "text": "((TMP_Text)val3).fontSharedMaterial = ((TMP_Text)Hud.instance.m_hoverName).fontSharedMaterial;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 50,
+      "text": "Sprite val = ((currentAmmo != null) ? currentAmmo.GetIcon() : null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 58,
+      "text": "if ((Object)(object)ammoIcon.overrideSprite != (Object)(object)val)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 60,
+      "text": "ammoIcon.overrideSprite = val;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 73,
+      "text": "Sprite val2 = ((currentBait != null) ? currentBait.GetIcon() : null);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 77,
+      "text": "if ((Object)(object)baitIcon.overrideSprite != (Object)(object)val2)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 79,
+      "text": "baitIcon.overrideSprite = val2;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/AmmoCountIcon.cs",
+      "line": 323,
+      "text": "if ((Object)(object)itemData.GetIcon() != (Object)(object)elementData.m_icon.sprite)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/InventoryTakeAll.cs",
+      "line": 224,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, \"$se_max_carryweight\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 42,
+      "text": "private class CraftGroupItemTypes(string iconSpriteName, HashSet<ItemType> types)"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 46,
+      "text": "private Sprite? _icon;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 48,
+      "text": "public Sprite Icon"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 54,
+      "text": "return _icon = GUIManager.Instance.GetSprite(iconSpriteName);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 981,
+      "text": "((Component)val.transform.Find(\"icon\")).GetComponent<Image>().sprite = CraftGroups[group].Icon;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1323,
+      "text": "((Graphic)((Component)val3).gameObject.GetComponent<Image>()).material = UI.Materials.LitPanel;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1675,
+      "text": "gui.m_craftingStationIcon.overrideSprite = null;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanel.cs",
+      "line": 1681,
+      "text": "gui.m_craftingStationIcon.overrideSprite = val?.m_icon;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 17,
+      "text": "private readonly record struct RenderKey(ItemData Item, Sprite Icon, bool Selected, bool CanCraft, bool Hovered, int Amount);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 121,
+      "text": "base.m_inventory = new Inventory(\"$hud_crafting\", (Sprite)null, width, height);"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 262,
+      "text": "Sprite sprite = ((BaseUnityPlugin)(object)ZenMod<Plugin>.Instance).LoadSpriteFromResource(\"exclamation.png\");"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 280,
+      "text": "component2.m_noteleport.sprite = sprite;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 514,
+      "text": "element.m_icon.sprite = newKey.Icon;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/CraftingPanelGrid.cs",
+      "line": 649,
+      "text": "((Behaviour)element.m_noteleport).enabled = IsUntouchedItemIndicatorEnabled && Object.op_Implicit((Object)(object)Player.m_localPlayer) && !Player.m_localPlayer.IsKnownMaterial(item.GetName());"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 18,
+      "text": "Action<Character, MessageType, string, int, Sprite, bool> action = SuppressMessage;"
+    },
+    {
+      "file": "csharp/ZenUI.Section/NoticePieceRepair.cs",
+      "line": 20,
+      "text": "static void SuppressMessage(Character c, MessageType type, string msg, int amount, Sprite icon, bool log)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2103,
+      "text": "\"name\": \"\\u003CiconSpriteName\\u003EP\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2125,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2143,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2873,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2950,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5182,
+      "text": "\"type\": \"System.Action\\u00606\\u003CCharacter,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 9938,
+      "text": "\"name\": \"iconSpriteName\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 9953,
+      "text": "\"signature\": \"UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::get_Icon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 9955,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11424,
+      "text": "\"signature\": \"System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::.ctor(ItemDrop/ItemData,UnityEngine.Sprite,System.Boolean,System.Boolean,System.Boolean,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11434,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11501,
+      "text": "\"signature\": \"UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11503,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11519,
+      "text": "\"signature\": \"System.Void modreq(System.Runtime.CompilerServices.IsExternalInit) ZenUI.Section.CraftingPanelGrid/RenderKey::set_Icon(UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11525,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11889,
+      "text": "\"signature\": \"System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::Deconstruct(ItemDrop/ItemData\\u0026,UnityEngine.Sprite\\u0026,System.Boolean\\u0026,System.Boolean\\u0026,System.Boolean\\u0026,System.Int32\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11899,
+      "text": "\"type\": \"UnityEngine.Sprite\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 15518,
+      "text": "\"signature\": \"System.Void ZenUI.Section.NoticePieceRepair::\\u003CPlayer_Repair\\u003Eg__SuppressMessage|0_0(Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 15540,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19162,
+      "text": "\"System.Boolean Player::IsKnownMaterial(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19190,
+      "text": "\"System.Boolean System.Collections.Generic.EqualityComparer\\u00601\\u003CUnityEngine.Sprite\\u003E::Equals(!0,!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19359,
+      "text": "\"System.Collections.Generic.EqualityComparer\\u00601\\u003C!0\\u003E System.Collections.Generic.EqualityComparer\\u00601\\u003CUnityEngine.Sprite\\u003E::get_Default()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19426,
+      "text": "\"System.Int32 System.Collections.Generic.EqualityComparer\\u00601\\u003CUnityEngine.Sprite\\u003E::GetHashCode(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19611,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19624,
+      "text": "\"System.Void Inventory::.ctor(System.String,UnityEngine.Sprite,System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19670,
+      "text": "\"System.Void System.Action\\u00606\\u003CCharacter,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean\\u003E::.ctor(System.Object,System.IntPtr)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19809,
+      "text": "\"System.Void TMPro.TMP_Text::set_fontSharedMaterial(UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19824,
+      "text": "\"System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19825,
+      "text": "\"System.Void UnityEngine.Animator::Update(System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19861,
+      "text": "\"System.Void UnityEngine.UI.Graphic::set_material(UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19864,
+      "text": "\"System.Void UnityEngine.UI.Image::set_overrideSprite(UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 19865,
+      "text": "\"System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20001,
+      "text": "\"System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::.ctor(ItemDrop/ItemData,UnityEngine.Sprite,System.Boolean,System.Boolean,System.Boolean,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20058,
+      "text": "\"System.Void ZenUI.Section.NoticePieceRepair::\\u003CPlayer_Repair\\u003Eg__SuppressMessage|0_0(Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20116,
+      "text": "\"UnityEngine.Material TMPro.TMP_Text::get_fontSharedMaterial()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20117,
+      "text": "\"UnityEngine.Material Zen.Lib.UI/Materials::get_LitPanel()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20126,
+      "text": "\"UnityEngine.Sprite ItemDrop/ItemData::GetIcon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20127,
+      "text": "\"UnityEngine.Sprite Jotunn.Managers.GUIManager::GetSprite(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20128,
+      "text": "\"UnityEngine.Sprite UnityEngine.UI.Image::get_overrideSprite()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20129,
+      "text": "\"UnityEngine.Sprite UnityEngine.UI.Image::get_sprite()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20130,
+      "text": "\"UnityEngine.Sprite Zen.Lib.AssetIO::LoadSpriteFromResource(BepInEx.BaseUnityPlugin,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20131,
+      "text": "\"UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::get_Icon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 20132,
+      "text": "\"UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1126,
+      "text": "IL_0097: callvirt UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1129,
+      "text": "IL_00a2: callvirt UnityEngine.Sprite UnityEngine.UI.Image::get_sprite()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1258,
+      "text": ".locals ItemDrop/ItemData, UnityEngine.Sprite, ItemDrop/ItemData, UnityEngine.Sprite, System.Int32, System.Int32"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1280,
+      "text": "IL_0031: call UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1311,
+      "text": "IL_0087: callvirt UnityEngine.Sprite UnityEngine.UI.Image::get_overrideSprite()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1318,
+      "text": "IL_009b: callvirt System.Void UnityEngine.UI.Image::set_overrideSprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1335,
+      "text": "IL_00c0: call UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1345,
+      "text": "IL_00de: callvirt UnityEngine.Sprite UnityEngine.UI.Image::get_overrideSprite()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1352,
+      "text": "IL_00f2: callvirt System.Void UnityEngine.UI.Image::set_overrideSprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3217,
+      "text": "IL_0094: ldfld UnityEngine.Sprite[] ItemDrop/ItemData/SharedData::m_icons"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3278,
+      "text": "IL_014e: ldfld UnityEngine.Sprite[] ItemDrop/ItemData/SharedData::m_icons"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3601,
+      "text": "IL_0106: callvirt UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3602,
+      "text": "IL_010b: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4040,
+      "text": "IL_014e: call UnityEngine.Material Zen.Lib.UI/Materials::get_LitPanel()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4041,
+      "text": "IL_0153: callvirt System.Void UnityEngine.UI.Graphic::set_material(UnityEngine.Material)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4597,
+      "text": "IL_0018: callvirt System.Void UnityEngine.UI.Image::set_overrideSprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4622,
+      "text": "IL_0055: ldfld UnityEngine.Sprite CraftingStation::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4623,
+      "text": "IL_005a: callvirt System.Void UnityEngine.UI.Image::set_overrideSprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5645,
+      "text": "IL_0002: stfld System.String ZenUI.Section.CraftingPanel/CraftGroupItemTypes::<iconSpriteName>P"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5653,
+      "text": "// UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5654,
+      "text": ".locals UnityEngine.Sprite"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5656,
+      "text": "IL_0001: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5662,
+      "text": "IL_0014: ldfld System.String ZenUI.Section.CraftingPanel/CraftGroupItemTypes::<iconSpriteName>P"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5663,
+      "text": "IL_0019: callvirt UnityEngine.Sprite Jotunn.Managers.GUIManager::GetSprite(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5666,
+      "text": "IL_0020: stfld UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5670,
+      "text": "IL_0028: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanel/CraftGroupItemTypes::_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6315,
+      "text": "IL_0174: newobj System.Void Inventory::.ctor(System.String,UnityEngine.Sprite,System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6621,
+      "text": ".locals UnityEngine.Vector2, UnityEngine.Vector2, UnityEngine.Sprite, Zen.Logging`1/InterpolatedString<ZenUI.Plugin>, System.Boolean, UnityEngine.Rect, System.Int32, System.Int32, UnityEngine.Vector2, InventoryElement, System.Collections.IEnumerator, UnityEngine.Transform, System.String, System.Int32, System.Char, System.IDisposable"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6686,
+      "text": "IL_00de: call UnityEngine.Sprite Zen.Lib.AssetIO::LoadSpriteFromResource(BepInEx.BaseUnityPlugin,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6777,
+      "text": "IL_020a: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7266,
+      "text": "IL_0003: callvirt UnityEngine.Sprite ItemDrop/ItemData::GetIcon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7276,
+      "text": "IL_0021: newobj System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::.ctor(ItemDrop/ItemData,UnityEngine.Sprite,System.Boolean,System.Boolean,System.Boolean,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7409,
+      "text": "IL_013a: call UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7410,
+      "text": "IL_013f: callvirt System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7611,
+      "text": "IL_010d: callvirt System.Boolean Player::IsKnownMaterial(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8094,
+      "text": "// System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::.ctor(ItemDrop/ItemData,UnityEngine.Sprite,System.Boolean,System.Boolean,System.Boolean,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8101,
+      "text": "IL_0009: stfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8129,
+      "text": "// UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8132,
+      "text": "IL_0001: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8135,
+      "text": "// System.Void modreq(System.Runtime.CompilerServices.IsExternalInit) ZenUI.Section.CraftingPanelGrid/RenderKey::set_Icon(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8139,
+      "text": "IL_0002: stfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8239,
+      "text": "IL_0027: call UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8321,
+      "text": "IL_0016: call System.Collections.Generic.EqualityComparer`1<!0> System.Collections.Generic.EqualityComparer`1<UnityEngine.Sprite>::get_Default()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8323,
+      "text": "IL_001c: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8324,
+      "text": "IL_0021: callvirt System.Int32 System.Collections.Generic.EqualityComparer`1<UnityEngine.Sprite>::GetHashCode(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8378,
+      "text": "IL_0018: call System.Collections.Generic.EqualityComparer`1<!0> System.Collections.Generic.EqualityComparer`1<UnityEngine.Sprite>::get_Default()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8380,
+      "text": "IL_001e: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8382,
+      "text": "IL_0024: ldfld UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::<Icon>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8383,
+      "text": "IL_0029: callvirt System.Boolean System.Collections.Generic.EqualityComparer`1<UnityEngine.Sprite>::Equals(!0,!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8416,
+      "text": "// System.Void ZenUI.Section.CraftingPanelGrid/RenderKey::Deconstruct(ItemDrop/ItemData&,UnityEngine.Sprite&,System.Boolean&,System.Boolean&,System.Boolean&,System.Int32&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8424,
+      "text": "IL_000a: call UnityEngine.Sprite ZenUI.Section.CraftingPanelGrid/RenderKey::get_Icon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11834,
+      "text": "IL_005e: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12861,
+      "text": ".locals System.Reflection.MethodInfo, System.Action`6<Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12869,
+      "text": "IL_0017: ldsfld System.Action`6<Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean> ZenUI.Section.NoticePieceRepair/<>O::<0>__SuppressMessage"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12874,
+      "text": "IL_0021: ldftn System.Void ZenUI.Section.NoticePieceRepair::<Player_Repair>g__SuppressMessage|0_0(Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12875,
+      "text": "IL_0027: newobj System.Void System.Action`6<Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean>::.ctor(System.Object,System.IntPtr)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12877,
+      "text": "IL_002d: stsfld System.Action`6<Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean> ZenUI.Section.NoticePieceRepair/<>O::<0>__SuppressMessage"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12886,
+      "text": "// System.Void ZenUI.Section.NoticePieceRepair::<Player_Repair>g__SuppressMessage|0_0(Character,MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12897,
+      "text": "IL_0014: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12959,
+      "text": "IL_004d: ldfld UnityEngine.Animator InventoryGui::m_animator"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12963,
+      "text": "IL_0059: callvirt System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12965,
+      "text": "IL_005f: ldfld UnityEngine.Animator InventoryGui::m_animator"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12967,
+      "text": "IL_0069: callvirt System.Void UnityEngine.Animator::Update(System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13569,
+      "text": "IL_000e: ldfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13584,
+      "text": "IL_0037: ldfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13785,
+      "text": "IL_0109: callvirt UnityEngine.Material TMPro.TMP_Text::get_fontSharedMaterial()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13786,
+      "text": "IL_010e: callvirt System.Void TMPro.TMP_Text::set_fontSharedMaterial(UnityEngine.Material)"
+    }
+  ]
+}

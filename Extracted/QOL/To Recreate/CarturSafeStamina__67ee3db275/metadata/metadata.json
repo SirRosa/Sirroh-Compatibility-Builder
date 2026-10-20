@@ -1,0 +1,947 @@
+﻿{
+  "input": "CarturSafeStamina.dll",
+  "assembly": "CarturSafeStamina, Version=1.0.6.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.0.6.0",
+  "modules": [
+    {
+      "name": "CarturSafeStamina.dll",
+      "mvid": "213d265c-7d47-4448-98f8-597e2d94d89c"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_guiutils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_utils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.20.0, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.7.2"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.7.2"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        "CarturSafeStamina"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        "Release"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.0.6.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyInformationalVersionAttribute",
+      "arguments": [
+        "1.0.6\u002B3a70b3f439fa23adb6989e56d68a305369dfd079"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "CarturSafeStamina"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "CarturSafeStamina"
+      ],
+      "properties": [],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RefSafetyRulesAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.AttributeUsageAttribute",
+          "arguments": [
+            "2"
+          ],
+          "properties": [
+            {
+              "name": "AllowMultiple",
+              "value": "False"
+            },
+            {
+              "name": "Inherited",
+              "value": "False"
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Version",
+          "type": "System.Int32",
+          "attributes": "Public, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Plugin",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Public, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "com.jekkle.valheim.cartursafestamina",
+            "Cartur\u0027s Safe Stamina",
+            "1.0.13"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "PluginGuid",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "com.jekkle.valheim.cartursafestamina",
+          "decorators": []
+        },
+        {
+          "name": "PluginName",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "Cartur\u0027s Safe Stamina",
+          "decorators": []
+        },
+        {
+          "name": "PluginVersion",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "1.0.13",
+          "decorators": []
+        },
+        {
+          "name": "SafeRadius",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectSprint",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectJump",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectBuild",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectSwim",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectAttacks",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectSneak",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "AffectEncumbered",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "IgnoredCreatures",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.String\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_lastCheckTime",
+          "type": "System.Single",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_lastResult",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "CheckInterval",
+          "type": "System.Single",
+          "attributes": "Private, Static, Literal, HasDefault",
+          "constant": "0.25",
+          "decorators": []
+        },
+        {
+          "name": "_ignoredRaw",
+          "type": "System.String",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Ignored",
+          "type": "System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_RunStaminaDrain",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "SEMan",
+            "ModifyRunStaminaDrain"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_JumpStamina",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "SEMan",
+            "ModifyJumpStaminaUsage"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_GetBuildStamina",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Player",
+            "GetBuildStamina"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_GetAttackStamina",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Attack",
+            "GetAttackStamina"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_SwimStamina",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "SEMan",
+            "ModifySwimStaminaUsage"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_SneakStamina",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "SEMan",
+            "ModifySneakStaminaUsage"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_UpdateStats",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Player",
+            "UpdateStats",
+            [
+              "System.Single"
+            ]
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_EncumberedBracket",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Player",
+            "UpdateStats",
+            [
+              "System.Single"
+            ]
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Skip",
+          "type": "System.Boolean",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "CarturSafeStamina.Patch_EncumberedDrain",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Player",
+            "UseStamina"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor(System.Int32)",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Plugin::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 83
+    },
+    {
+      "signature": "System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 14
+    },
+    {
+      "signature": "System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 74
+    },
+    {
+      "signature": "System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "c",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 74
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Plugin::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Plugin::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_RunStaminaDrain::Postfix(System.Single\u0026,System.Boolean,Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "drain",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "minZero",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "___m_character",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 13
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_JumpStamina::Postfix(System.Single\u0026,System.Boolean,Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "staminaUse",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "minZero",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "___m_character",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 12
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_GetBuildStamina::Postfix(Player,System.Single\u0026)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Player"
+        },
+        {
+          "name": "__result",
+          "type": "System.Single\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 10
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_GetAttackStamina::Postfix(System.Single\u0026,Humanoid)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__result",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "___m_character",
+          "type": "Humanoid"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 25
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_SwimStamina::Postfix(System.Single\u0026,System.Boolean,Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "staminaUse",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "minZero",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "___m_character",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 12
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_SneakStamina::Postfix(System.Single\u0026,System.Boolean,Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "staminaUse",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "minZero",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "___m_character",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 12
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_UpdateStats::Postfix(Player,System.Single,System.Single\u0026,System.Single)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Player"
+        },
+        {
+          "name": "dt",
+          "type": "System.Single"
+        },
+        {
+          "name": "___m_stamina",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "___m_staminaRegenTimer",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 60
+    },
+    {
+      "signature": "System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "p",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 27
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_EncumberedBracket::Prefix(Player)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 16
+    },
+    {
+      "signature": "System.Void CarturSafeStamina.Patch_EncumberedBracket::Finalizer()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean CarturSafeStamina.Patch_EncumberedDrain::Prefix()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.String\u003E::get_Value()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CCharacter\u003E::get_Current()",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Boolean\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Single\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.String\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()",
+    "BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()",
+    "HarmonyLib.Harmony HarmonyLib.Harmony::CreateAndPatchAll(System.Reflection.Assembly,System.String)",
+    "Localization Localization::get_instance()",
+    "SEMan Character::GetSEMan()",
+    "System.Boolean BaseAI::IsEnemy(Character,Character)",
+    "System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)",
+    "System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)",
+    "System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)",
+    "System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)",
+    "System.Boolean Character::InAttack()",
+    "System.Boolean Character::InDodge()",
+    "System.Boolean Character::IsDead()",
+    "System.Boolean Character::IsEncumbered()",
+    "System.Boolean Character::IsOnGround()",
+    "System.Boolean Character::IsSwimming()",
+    "System.Boolean Character::IsWallRunning()",
+    "System.Boolean System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E::Add(!0)",
+    "System.Boolean System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E::Contains(!0)",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CCharacter\u003E::MoveNext()",
+    "System.Boolean System.String::op_Inequality(System.String,System.String)",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CCharacter\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601\u003CCharacter\u003E Character::GetAllCharacters()",
+    "System.Int32 System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E::get_Count()",
+    "System.Int32 System.String::get_Length()",
+    "System.Reflection.Assembly System.Type::get_Assembly()",
+    "System.Single Character::GetMaxStamina()",
+    "System.Single UnityEngine.Mathf::Min(System.Single,System.Single)",
+    "System.Single UnityEngine.Time::get_time()",
+    "System.Single UnityEngine.Vector3::get_sqrMagnitude()",
+    "System.String Localization::Localize(System.String)",
+    "System.String System.String::Trim()",
+    "System.String Utils::GetPrefabName(UnityEngine.GameObject)",
+    "System.String[] System.String::Split(System.Char[])",
+    "System.StringComparer System.StringComparer::get_OrdinalIgnoreCase()",
+    "System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void SEMan::ModifyStaminaRegen(System.Single\u0026)",
+    "System.Void System.Attribute::.ctor()",
+    "System.Void System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E::.ctor(System.Collections.Generic.IEqualityComparer\u00601\u003C!0\u003E)",
+    "System.Void System.Collections.Generic.HashSet\u00601\u003CSystem.String\u003E::Clear()",
+    "System.Void System.IDisposable::Dispose()",
+    "UnityEngine.GameObject UnityEngine.Component::get_gameObject()",
+    "UnityEngine.Transform UnityEngine.Component::get_transform()",
+    "UnityEngine.Vector3 UnityEngine.Transform::get_position()",
+    "UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)"
+  ],
+  "stringLiterals": [
+    "",
+    "AffectAttacks",
+    "AffectBuild",
+    "AffectEncumbered",
+    "AffectJump",
+    "AffectSneak",
+    "AffectSprint",
+    "AffectSwim",
+    "Cartur\u0027s Safe Stamina 1.0.13 loaded.",
+    "com.jekkle.valheim.cartursafestamina",
+    "Comma-separated creatures that never count as an enemy nearby, by prefab name or by the name shown in game (e.g. T.W.I.G). For modded creatures that are hostile by faction but never fight.",
+    "Free attack stamina when safe - chopping wood, mining, and weapon swings all pay through the same cost.",
+    "Free build/repair/remove stamina when safe. Covers every build tool, so planting with the cultivator and levelling with the hoe are free too.",
+    "Free jump stamina when safe.",
+    "Free sneak/crouch stamina when safe.",
+    "Free sprint stamina when safe.",
+    "Free swim stamina when safe. Note this also removes the drowning risk while safe, since drowning only starts once stamina is empty.",
+    "General",
+    "IgnoredCreatures",
+    "No stamina cost for sprint/jump/build/swim/attacks/sneak when no enemy is within this many meters.",
+    "Over the weight limit and safe: walking costs no stamina and stamina refills. Off by default, so being over-loaded costs you as in vanilla.",
+    "SafeRadius"
+  ],
+  "totals": {
+    "types": 13,
+    "methods": 19,
+    "strings": 22,
+    "calledMethods": 56,
+    "resources": 0
+  }
+}

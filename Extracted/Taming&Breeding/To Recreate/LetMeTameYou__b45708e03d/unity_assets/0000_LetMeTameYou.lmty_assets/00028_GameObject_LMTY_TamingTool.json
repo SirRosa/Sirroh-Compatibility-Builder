@@ -1,0 +1,56 @@
+{
+  "m_Component": [
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 912519225330899964
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -711060219038796087
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 7337749255747052043
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -4130422179159141618
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -6577273127180073922
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 5085537835647792513
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -5879216471019438463
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 2907436768670406010
+      }
+    }
+  ],
+  "m_Layer": 12,
+  "m_Name": "LMTY_TamingTool",
+  "m_Tag": 0,
+  "m_IsActive": true
+}

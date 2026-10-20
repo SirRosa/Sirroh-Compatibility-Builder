@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BlacksmithingExpanded</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="BlacksmithingExpanded.translations.English.yml" />
+    <None Remove="BlacksmithingExpanded.icons.smithing.png" />
+    <None Remove="ILRepack.List" />
+    <EmbeddedResource Include="BlacksmithingExpanded.translations.English.yml" LogicalName="BlacksmithingExpanded.translations.English.yml" />
+    <EmbeddedResource Include="BlacksmithingExpanded.icons.smithing.png" LogicalName="BlacksmithingExpanded.icons.smithing.png" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_valheim" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="0Harmony" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+  </ItemGroup>
+</Project>

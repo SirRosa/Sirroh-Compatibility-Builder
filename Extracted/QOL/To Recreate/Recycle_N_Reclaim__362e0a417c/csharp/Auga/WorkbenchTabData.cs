@@ -1,0 +1,17 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Auga;
+
+internal class WorkbenchTabData
+{
+	public int Index;
+
+	public Text TabTitle;
+
+	public GameObject TabButtonGO;
+
+	public GameObject RequirementsPanelGO;
+
+	public GameObject ItemInfoGO;
+}

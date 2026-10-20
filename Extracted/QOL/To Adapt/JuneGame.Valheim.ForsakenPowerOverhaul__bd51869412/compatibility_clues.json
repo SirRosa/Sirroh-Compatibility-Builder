@@ -1,0 +1,3453 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 17,
+      "text": "[BepInPlugin(\"JuneGame.Valheim.ForsakenPowerOverhaul\", \"Forsaken Power Overhaul\", \"2.2.0\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 18,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 20,
+      "text": "internal class ForsakenPowerOverhaul : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2107,
+      "text": "ConfigEntry_Button_PowerCycle = ((BaseUnityPlugin)this).Config.Bind<KeyCode>(\"C00 Client\", \"PowerCycle\", (KeyCode)103, val2);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2108,
+      "text": "ConfigEntry_General_Preset = ((BaseUnityPlugin)this).Config.Bind<string>(\"S00 Server: General\", \"Preset\", \"Vanilla+\", val3);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2109,
+      "text": "ConfigEntry_General_GuardianPower_ActiveDuration = ((BaseUnityPlugin)this).Config.Bind<int>(\"S00 Server: General\", \"PowerActiveDuration\", 60, val4);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2110,
+      "text": "ConfigEntry_General_GuardianPower_CooldownDuration = ((BaseUnityPlugin)this).Config.Bind<int>(\"S00 Server: General\", \"PowerCooldownDuration\", 240, val5);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2111,
+      "text": "ConfigEntry_PowerCycle_Bool = ((BaseUnityPlugin)this).Config.Bind<bool>(\"S00 Server: General\", \"Enable Power Cycling\", true, val6);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2112,
+      "text": "Config_SE_CorpseRun_Bool = ((BaseUnityPlugin)this).Config.Bind<bool>(\"SX1 Server: Corpse Run\", \"Enabled\", true, val31);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2118,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxHealth\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text, 0, val7);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2119,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxHealth\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text, 0, val7);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2120,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_HealthRegen\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text2, 0, val8);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2121,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_HealthRegenModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text3, 0f, val9);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2122,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxStamina\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text4, 0, val10);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2123,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_StaminaRegenModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text5, 0f, val11);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2124,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxEitr\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text6, 0, val12);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2125,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_EitrRegenModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text7, 0f, val13);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2126,
+      "text": "Dictionary_ConfigEntry_Int[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxWeight\"] = ((BaseUnityPlugin)this).Config.Bind<int>(text34, text8, 0, val14);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2127,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MoveSpeedModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text9, 0f, val15);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2128,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_JumpForceModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text10, 0f, val16);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2129,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_MaxFallSpeed\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text11, 0f, val17);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2130,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_EquipmentSpeedModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text12, 0f, val18);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2131,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_WindSpeedModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text13, 0f, val19);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2132,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_RunStaminaCostModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text14, 0f, val20);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2133,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_JumpStaminaCostModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text15, 0f, val21);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2134,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_StealthModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text16, 0f, val22);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2135,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_NoiseModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text17, 0f, val23);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2136,
+      "text": "Dictionary_ConfigEntry_String[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_StatusAttributes\"] = ((BaseUnityPlugin)this).Config.Bind<string>(text34, text18, \"\", val24);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2137,
+      "text": "Dictionary_ConfigEntry_String[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_OutgoingDamageTypes\"] = ((BaseUnityPlugin)this).Config.Bind<string>(text34, text19, \"\", val25);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2138,
+      "text": "Dictionary_ConfigEntry_String[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_OutgoingDamageModifiers\"] = ((BaseUnityPlugin)this).Config.Bind<string>(text34, text20, \"\", val26);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2139,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_FallDamageModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text21, 0f, val27);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2140,
+      "text": "Dictionary_ConfigEntry_Float[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_HeatDamageModifier\"] = ((BaseUnityPlugin)this).Config.Bind<float>(text34, text22, 0f, val28);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2141,
+      "text": "Dictionary_ConfigEntry_String[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_IncomingDamageTypes\"] = ((BaseUnityPlugin)this).Config.Bind<string>(text34, text23, \"\", val29);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2142,
+      "text": "Dictionary_ConfigEntry_String[\"ConfigEntry_\" + list_BossName + \"_\" + list_Component + \"_IncomingDamageModifiers\"] = ((BaseUnityPlugin)this).Config.Bind<string>(text34, text24, \"\", val30);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2145,
+      "text": "((BaseUnityPlugin)this).Config.SettingChanged += Config_SettingChanged;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2146,
+      "text": "((BaseUnityPlugin)this).Config.SaveOnConfigSet = true;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 2147,
+      "text": "((BaseUnityPlugin)this).Config.Save();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 229,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 234,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 244,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7330,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7452,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 712,
+      "text": "IL_04a1: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 720,
+      "text": "IL_04bf: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 728,
+      "text": "IL_04e0: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 736,
+      "text": "IL_04fe: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 744,
+      "text": "IL_051f: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 752,
+      "text": "IL_053c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 848,
+      "text": "IL_062a: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 880,
+      "text": "IL_0672: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 912,
+      "text": "IL_06ba: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 944,
+      "text": "IL_0702: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 976,
+      "text": "IL_074e: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1008,
+      "text": "IL_0796: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1040,
+      "text": "IL_07e3: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1072,
+      "text": "IL_082c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1104,
+      "text": "IL_0879: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1136,
+      "text": "IL_08c2: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1168,
+      "text": "IL_090f: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1200,
+      "text": "IL_095c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1232,
+      "text": "IL_09a9: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1264,
+      "text": "IL_09f6: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1296,
+      "text": "IL_0a43: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1328,
+      "text": "IL_0a90: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1360,
+      "text": "IL_0add: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1392,
+      "text": "IL_0b2a: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1424,
+      "text": "IL_0b77: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1456,
+      "text": "IL_0bc4: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1488,
+      "text": "IL_0c11: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1520,
+      "text": "IL_0c5e: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1552,
+      "text": "IL_0cab: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1584,
+      "text": "IL_0cf8: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1616,
+      "text": "IL_0d45: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1640,
+      "text": "IL_0d98: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1652,
+      "text": "IL_0dbe: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1656,
+      "text": "IL_0dca: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12091,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 37,
+      "text": "[HarmonyPatch(typeof(BossStone), \"Start\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 53,
+      "text": "[HarmonyPatch(typeof(BossStone), \"DelayedAttachEffects_Step3\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 69,
+      "text": "[HarmonyPatch(typeof(ItemStand), \"GetHoverText\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 93,
+      "text": "[HarmonyPatch(typeof(ItemStand), \"IsGuardianPowerActive\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 105,
+      "text": "[HarmonyPatch(typeof(Player), \"OnSpawned\", new Type[] { typeof(bool) })]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 123,
+      "text": "[HarmonyPatch(typeof(Player), \"ActivateGuardianPower\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 162,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxHealth\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 181,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateFood\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 197,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxStamina\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 216,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxEitr\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 235,
+      "text": "[HarmonyPatch(typeof(Player), \"GetEquipmentMovementModifier\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 288,
+      "text": "[HarmonyPatch(typeof(Player), \"GetEquipmentHeatResistanceModifier\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 304,
+      "text": "[HarmonyPatch(typeof(SEMan), \"HaveStatusAttribute\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 325,
+      "text": "[HarmonyPatch(typeof(Ship), \"GetSailForce\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 346,
+      "text": "[HarmonyPatch(typeof(TextsDialog), \"AddActiveEffects\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3226,
+      "text": "new Harmony(\"JuneGame.Valheim.ForsakenPowerOverhaul\").PatchAll();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5386,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5406,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5426,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5446,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5466,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5489,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5509,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5533,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5553,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5577,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5601,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5621,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5641,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5661,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5681,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7487,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6091,
+      "text": "IL_001f: callvirt System.Void HarmonyLib.Harmony::PatchAll()"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 81,
+      "text": "if (!ConfigEntry_PowerCycle_Bool.Value && !__instance.IsGuardianPowerActive((Humanoid)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 98,
+      "text": "if ((Object)(object)__instance != (Object)null && ConfigEntry_PowerCycle_Bool.Value)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 143,
+      "text": "__instance.m_guardianPowerCooldown = ConfigEntry_General_GuardianPower_CooldownDuration.Value;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 472,
+      "text": "private static ConfigEntry<KeyCode> ConfigEntry_Button_PowerCycle;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 474,
+      "text": "private static ConfigEntry<string> ConfigEntry_General_Preset;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 476,
+      "text": "private static ConfigEntry<int> ConfigEntry_General_GuardianPower_ActiveDuration;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 478,
+      "text": "private static ConfigEntry<int> ConfigEntry_General_GuardianPower_CooldownDuration;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 480,
+      "text": "private static ConfigEntry<bool> ConfigEntry_PowerCycle_Bool;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 482,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Passive_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 484,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Passive_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 486,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 488,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Passive_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 490,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 492,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Passive_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 494,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 496,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Passive_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 498,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 500,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 502,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 504,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 506,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 508,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 510,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 512,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 514,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 516,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 518,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 520,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 522,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 524,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 526,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_IncomingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 528,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Passive_HeatDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 530,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Active_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 532,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Active_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 534,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 536,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Active_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 538,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 540,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Active_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 542,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 544,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Active_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 546,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 548,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 550,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 552,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 554,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 556,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 558,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 560,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 562,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 564,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 566,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 568,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 570,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 572,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 574,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_IncomingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 576,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Active_HeatDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 578,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Shared_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 580,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Shared_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 582,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 584,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Shared_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 586,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 588,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Shared_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 590,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 592,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Shared_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 594,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 596,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 598,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 600,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 602,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 604,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 606,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 608,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 610,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 612,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 614,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 616,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 618,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 620,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 622,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_IncomingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 624,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Shared_HeatDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 626,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Equipped_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 628,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Equipped_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 630,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 632,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Equipped_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 634,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 636,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Equipped_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 638,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 640,
+      "text": "private static ConfigEntry<int> ConfigEntry_Eikthyr_Equipped_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 642,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 644,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 646,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 648,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 650,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 652,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 654,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 656,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 658,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 660,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 662,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 664,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 666,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 668,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 670,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_IncomingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 672,
+      "text": "private static ConfigEntry<float> ConfigEntry_Eikthyr_Equipped_HeatDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 674,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Passive_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 676,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Passive_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 678,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 680,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Passive_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 682,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 684,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Passive_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 686,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 688,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Passive_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 690,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 692,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 694,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 696,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 698,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 700,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 702,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 704,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 706,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 708,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 710,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 712,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 714,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 716,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 718,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_IncomingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 720,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Passive_HeatDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 722,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Active_MaxHealth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 724,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Active_HealthRegen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 726,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_HealthRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 728,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Active_MaxStamina;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 730,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_StaminaRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 732,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Active_MaxEitr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 734,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_EitrRegenModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 736,
+      "text": "private static ConfigEntry<int> ConfigEntry_TheElder_Active_MaxWeight;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 738,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_MoveSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 740,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_JumpForceModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 742,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_MaxFallSpeed;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 744,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_EquipmentSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 746,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_WindSpeedModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 748,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_RunStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 750,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_JumpStaminaCostModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 752,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_StealthModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 754,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_NoiseModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 756,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_StatusAttributes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 758,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 760,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_OutgoingDamageModifiers;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 762,
+      "text": "private static ConfigEntry<float> ConfigEntry_TheElder_Active_FallDamageModifier;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 764,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_IncomingDamageTypes;"
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4072,
+      "text": "val.Create(position, ((Component)Player.m_localPlayer).transform.rotation, ((Component)Player.m_localPlayer).transform, 0.5f, -1, default(ZDOID));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4081,
+      "text": "val.Create(position, ((Component)Player.m_localPlayer).transform.rotation, ((Component)Player.m_localPlayer).transform, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7553,
+      "text": "\"UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8823,
+      "text": ".locals EffectList, UnityEngine.Vector3, ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8875,
+      "text": "IL_00a0: initobj ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8877,
+      "text": "IL_00a7: callvirt UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8903,
+      "text": "IL_00fa: initobj ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8905,
+      "text": "IL_0101: callvirt UnityEngine.GameObject[] EffectList::Create(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Single,System.Int32,ZDOID)"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 78,
+      "text": "if ((Object)(object)__instance.m_guardianPower != (Object)null && (Object)(object)ZoneSystem.instance != (Object)null && ZoneSystem.instance.GetGlobalKey(__instance.m_guardianPower.m_name.Replace(\"$se_\", \"GK_FPO_BossStone_\").Replace(\"_name\", \"\")))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1936,
+      "text": "stringBuilder.Append(\"<smallcaps>\" + GetLocalization(\"$ui_fpo_passive\") + \"</smallcaps></size><size=16>\\n\" + GetToolTipStringFormat((StatusEffect)(object)(StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_\" + New_String + \"_Passive\"))) + \"</size><size=20>\\n\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1941,
+      "text": "stringBuilder.Append(\"<smallcaps>\" + GetLocalization(\"$ui_fpo_equipped $ui_fpo_passive\") + \"</smallcaps></size><size=16>\\n\" + GetToolTipStringFormat((StatusEffect)(object)(StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_\" + New_String + \"_Equipped\"))) + \"</size><size=20>\\n\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1946,
+      "text": "stringBuilder.Append(\"<smallcaps>\" + GetLocalization(\"$ui_fpo_active\") + \"</smallcaps></size><size=16>\\n\" + GetToolTipStringFormat((StatusEffect)(object)(StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_\" + New_String + \"_Active\"))) + \"</size><size=20>\\n\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1951,
+      "text": "stringBuilder.Append(\"<smallcaps>\" + GetLocalization(\"$ui_fpo_shared $ui_fpo_active\") + \"</smallcaps></size><size=16>\\n\" + GetToolTipStringFormat((StatusEffect)(object)(StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_\" + New_String + \"_Shared\"))) + \"</size><size=20>\\n\\n\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3227,
+      "text": "PrefabManager.OnVanillaPrefabsAvailable += Add_Prefabs;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3238,
+      "text": "if (!((Object)(object)ObjectDB.m_instance != (Object)null))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3259,
+      "text": "StatusEffect_FPO_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3260,
+      "text": "StatusEffect_FPO_Eikthyr = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Eikthyr\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3261,
+      "text": "StatusEffect_FPO_TheElder = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_TheElder\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3262,
+      "text": "StatusEffect_FPO_Bonemass = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Bonemass\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3263,
+      "text": "StatusEffect_FPO_Moder = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Moder\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3264,
+      "text": "StatusEffect_FPO_Yagluth = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Yagluth\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3265,
+      "text": "StatusEffect_FPO_Queen = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Queen\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3266,
+      "text": "StatusEffect_FPO_Fader = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Fader\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3267,
+      "text": "StatusEffect_FPO_Eikthyr_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Eikthyr_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3268,
+      "text": "StatusEffect_FPO_TheElder_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_TheElder_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3269,
+      "text": "StatusEffect_FPO_Bonemass_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Bonemass_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3270,
+      "text": "StatusEffect_FPO_Moder_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Moder_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3271,
+      "text": "StatusEffect_FPO_Yagluth_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Yagluth_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3272,
+      "text": "StatusEffect_FPO_Queen_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Queen_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3273,
+      "text": "StatusEffect_FPO_Fader_Passive = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Fader_Passive\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3274,
+      "text": "StatusEffect_FPO_Eikthyr_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Eikthyr_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3275,
+      "text": "StatusEffect_FPO_TheElder_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_TheElder_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3276,
+      "text": "StatusEffect_FPO_Bonemass_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Bonemass_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3277,
+      "text": "StatusEffect_FPO_Moder_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Moder_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3278,
+      "text": "StatusEffect_FPO_Yagluth_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Yagluth_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3279,
+      "text": "StatusEffect_FPO_Queen_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Queen_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3280,
+      "text": "StatusEffect_FPO_Fader_Equipped = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Fader_Equipped\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3281,
+      "text": "StatusEffect_FPO_Eikthyr_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Eikthyr_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3282,
+      "text": "StatusEffect_FPO_TheElder_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_TheElder_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3283,
+      "text": "StatusEffect_FPO_Bonemass_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Bonemass_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3284,
+      "text": "StatusEffect_FPO_Moder_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Moder_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3285,
+      "text": "StatusEffect_FPO_Yagluth_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Yagluth_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3286,
+      "text": "StatusEffect_FPO_Queen_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Queen_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3287,
+      "text": "StatusEffect_FPO_Fader_Active = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Fader_Active\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3288,
+      "text": "StatusEffect_FPO_Eikthyr_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Eikthyr_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3289,
+      "text": "StatusEffect_FPO_TheElder_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_TheElder_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3290,
+      "text": "StatusEffect_FPO_Bonemass_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Bonemass_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3291,
+      "text": "StatusEffect_FPO_Moder_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Moder_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3292,
+      "text": "StatusEffect_FPO_Yagluth_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Yagluth_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3293,
+      "text": "StatusEffect_FPO_Queen_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Queen_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3294,
+      "text": "StatusEffect_FPO_Fader_Shared = (StatusEffect_FPO)(object)ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Fader_Shared\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3343,
+      "text": "if (!ZoneSystem.instance.GetGlobalKey(\"gk_fpo_bossstone_\" + bossName) && bossName != \"\")"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3345,
+      "text": "ZoneSystem.instance.SetGlobalKey(\"gk_fpo_bossstone_\" + bossName);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3351,
+      "text": "ZoneSystem.instance.SetGlobalKey(\"gk_fpo_bossstone_passive\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3360,
+      "text": "if (ZoneSystem.instance.GetGlobalKey(\"gk_fpo_bossstone_\" + list_BossName))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3374,
+      "text": "foreach (string globalKey in ZoneSystem.instance.GetGlobalKeys())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3386,
+      "text": "if (Object.op_Implicit((Object)(object)((Character)Player.m_localPlayer).m_seman.GetStatusEffect(GetHash(\"SE_FPO_Passive\"))) && ((Character)Player.m_localPlayer).m_seman.GetStatusEffect(GetHash(\"SE_FPO_Passive\")).GetTooltipString() != ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_Passive\")).GetTooltipString())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3390,
+      "text": "if (!Object.op_Implicit((Object)(object)((Character)Player.m_localPlayer).m_seman.GetStatusEffect(GetHash(\"SE_FPO_Passive\"))) && ZoneSystem.instance.GetGlobalKey(\"gk_fpo_bossstone_passive\"))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3407,
+      "text": "if (((Character)Player.m_localPlayer).m_seman.GetStatusEffect(GetHash(\"SE_FPO_\" + list_BossName + \"_Equipped\")).GetTooltipString() != ObjectDB.m_instance.GetStatusEffect(GetHash(\"SE_FPO_\" + list_BossName + \"_Equipped\")).GetTooltipString())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3453,
+      "text": "StatusEffect statusEffect = ObjectDB.m_instance.GetStatusEffect(GetHash(\"Rested\"));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3458,
+      "text": "foreach (string globalKey in ZoneSystem.instance.GetGlobalKeys())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3540,
+      "text": "StatusEffect statusEffect = ObjectDB.m_instance.GetStatusEffect(GetHash(text));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3590,
+      "text": "m_prefab = PrefabManager.Instance.GetPrefab(\"fx_GP_Activation\")"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3597,
+      "text": "StatusEffect statusEffect = ObjectDB.m_instance.GetStatusEffect(GetHash(text));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3602,
+      "text": "foreach (string globalKey in ZoneSystem.instance.GetGlobalKeys())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3961,
+      "text": "if (!((Object)(object)New_Player == (Object)(object)Player.m_localPlayer) || New_Player.GetGuardianPowerName().StartsWith(\"GP_\") || !ZoneSystem.instance.GetGlobalKey(\"gk_fpo_bossstone_passive\"))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3982,
+      "text": "if (!ZoneSystem.instance.GetGlobalKey(\"gk_fpo_bossstone_passive\"))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 3988,
+      "text": "foreach (string globalKey in ZoneSystem.instance.GetGlobalKeys())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4007,
+      "text": "foreach (string globalKey in ZoneSystem.instance.GetGlobalKeys())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4069,
+      "text": "m_prefab = PrefabManager.Instance.GetPrefab(\"GO_FPO_Effect_PowerUnlock\"),"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4078,
+      "text": "m_prefab = PrefabManager.Instance.GetPrefab(\"sfx_gui_button\"),"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4141,
+      "text": "GameObject val = PrefabManager.Instance.CreateClonedPrefab(\"GO_FPO_Effect_PowerUnlock\", \"fx_GP_Stone\");"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4151,
+      "text": "PrefabManager.Instance.AddPrefab(val);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4152,
+      "text": "PrefabManager.OnVanillaPrefabsAvailable -= Add_Prefabs;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7338,
+      "text": "\"Jotunn.Managers.PrefabManager Jotunn.Managers.PrefabManager::get_Instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7341,
+      "text": "\"StatusEffect ObjectDB::GetStatusEffect(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7380,
+      "text": "\"System.Boolean ZoneSystem::GetGlobalKey(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7412,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CSystem.String\\u003E ZoneSystem::GetGlobalKeys()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7496,
+      "text": "\"System.Void Jotunn.Managers.PrefabManager::add_OnVanillaPrefabsAvailable(System.Action)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7497,
+      "text": "\"System.Void Jotunn.Managers.PrefabManager::AddPrefab(UnityEngine.GameObject)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7498,
+      "text": "\"System.Void Jotunn.Managers.PrefabManager::remove_OnVanillaPrefabsAvailable(System.Action)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7549,
+      "text": "\"System.Void ZoneSystem::SetGlobalKey(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7550,
+      "text": "\"UnityEngine.GameObject Jotunn.Managers.PrefabManager::CreateClonedPrefab(System.String,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7551,
+      "text": "\"UnityEngine.GameObject Jotunn.Managers.PrefabManager::GetPrefab(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7562,
+      "text": "\"ZoneSystem ZoneSystem::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 58,
+      "text": "IL_0071: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 64,
+      "text": "IL_008b: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 104,
+      "text": "IL_00ea: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 110,
+      "text": "IL_0104: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 150,
+      "text": "IL_0163: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 156,
+      "text": "IL_017d: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 196,
+      "text": "IL_01dc: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 202,
+      "text": "IL_01f6: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6101,
+      "text": "IL_003f: call System.Void Jotunn.Managers.PrefabManager::add_OnVanillaPrefabsAvailable(System.Action)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6118,
+      "text": "IL_0000: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6161,
+      "text": "IL_0000: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6164,
+      "text": "IL_000f: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6167,
+      "text": "IL_001e: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6170,
+      "text": "IL_002d: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6173,
+      "text": "IL_003c: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6176,
+      "text": "IL_004b: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6179,
+      "text": "IL_005a: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6182,
+      "text": "IL_0069: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6185,
+      "text": "IL_0078: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6188,
+      "text": "IL_0087: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6191,
+      "text": "IL_0096: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6194,
+      "text": "IL_00a5: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6197,
+      "text": "IL_00b4: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6200,
+      "text": "IL_00c3: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6203,
+      "text": "IL_00d2: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6206,
+      "text": "IL_00e1: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6209,
+      "text": "IL_00f0: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6212,
+      "text": "IL_00ff: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6215,
+      "text": "IL_010e: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6218,
+      "text": "IL_011d: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6221,
+      "text": "IL_012c: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6224,
+      "text": "IL_013b: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6227,
+      "text": "IL_014a: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6230,
+      "text": "IL_0159: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6233,
+      "text": "IL_0168: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6236,
+      "text": "IL_0177: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6239,
+      "text": "IL_0186: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6242,
+      "text": "IL_0195: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6245,
+      "text": "IL_01a4: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6248,
+      "text": "IL_01b3: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6251,
+      "text": "IL_01c2: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6254,
+      "text": "IL_01d1: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6257,
+      "text": "IL_01e0: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6260,
+      "text": "IL_01ef: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6263,
+      "text": "IL_01fe: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6266,
+      "text": "IL_020d: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6269,
+      "text": "IL_021c: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6272,
+      "text": "IL_022b: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6275,
+      "text": "IL_023a: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6278,
+      "text": "IL_0249: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6281,
+      "text": "IL_0258: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6284,
+      "text": "IL_0267: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6287,
+      "text": "IL_0276: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6290,
+      "text": "IL_0285: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6293,
+      "text": "IL_0294: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6296,
+      "text": "IL_02a3: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6299,
+      "text": "IL_02b2: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6302,
+      "text": "IL_02c1: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6305,
+      "text": "IL_02d0: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6308,
+      "text": "IL_02df: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6311,
+      "text": "IL_02ee: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6314,
+      "text": "IL_02fd: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6317,
+      "text": "IL_030c: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6320,
+      "text": "IL_031b: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6323,
+      "text": "IL_032a: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6326,
+      "text": "IL_0339: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6329,
+      "text": "IL_0348: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6332,
+      "text": "IL_0357: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6335,
+      "text": "IL_0366: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6338,
+      "text": "IL_0375: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6341,
+      "text": "IL_0384: ldsfld ObjectDB ObjectDB::m_instance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6344,
+      "text": "IL_0393: callvirt StatusEffect ObjectDB::GetStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6347,
+      "text": "IL_03a2: ldsfld ObjectDB ObjectDB::m_instance"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 27,
+      "text": "PlayerKeys_Update();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 30,
+      "text": "if ((Object)(object)Player.m_localPlayer != (Object)null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 32,
+      "text": "Power_Unlock_Spawn(Player.m_localPlayer);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 61,
+      "text": "PlayerKeys_Update();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 81,
+      "text": "if (!ConfigEntry_PowerCycle_Bool.Value && !__instance.IsGuardianPowerActive((Humanoid)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 105,
+      "text": "[HarmonyPatch(typeof(Player), \"OnSpawned\", new Type[] { typeof(bool) })]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 106,
+      "text": "private class Patch_Player_OnSpawned"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 108,
+      "text": "private static void Postfix(ref Player __instance)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 113,
+      "text": "PlayerKeys_Update();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 123,
+      "text": "[HarmonyPatch(typeof(Player), \"ActivateGuardianPower\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 124,
+      "text": "private class Patch_Player_ActivateGuardianPower"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 126,
+      "text": "private static bool Prefix(ref Player __instance, ref bool __result)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 138,
+      "text": "if (Object.op_Implicit((Object)(object)((Character)__instance).m_seman.GetStatusEffect(hash)))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 140,
+      "text": "((Character)__instance).m_seman.RemoveStatusEffect(hash, false);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 142,
+      "text": "((Character)__instance).m_seman.AddStatusEffect(hash, true, 0, 0f, (short)(-1));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 146,
+      "text": "((Character)__instance).AddAdrenaline(__instance.m_adrenalineGuardianPower);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 148,
+      "text": "foreach (StatusEffect statusEffect in ((Character)__instance).m_seman.GetStatusEffects())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 150,
+      "text": "if (((Object)statusEffect).name.StartsWith(\"SE_FPO_\") && ((Object)statusEffect).name != \"SE_FPO_Passive\" && ((Object)statusEffect).name != text)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 152,
+      "text": "((Character)__instance).m_seman.RemoveStatusEffect(statusEffect, false);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 162,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxHealth\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 167,
+      "text": "private class Patch_Player_SetMaxHealth"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 169,
+      "text": "private static bool Prefix(ref Player __instance, ref float health)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 174,
+      "text": "num += Update_Player_BaseStats(\"MaxHealth\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 181,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateFood\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 182,
+      "text": "private class Patch_Player_UpdateFood"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 184,
+      "text": "private static void Postfix(ref Player __instance)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 189,
+      "text": "num += Update_Player_BaseStats(\"HealthRegen\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 191,
+      "text": "((Character)__instance).m_seman.ModifyHealthRegen(ref num2);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 192,
+      "text": "((Character)__instance).Heal(num * num2, true);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 197,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxStamina\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 202,
+      "text": "private class Patch_Player_SetMaxStamina"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 204,
+      "text": "private static bool Prefix(ref Player __instance, ref float stamina)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 209,
+      "text": "num += Update_Player_BaseStats(\"MaxStamina\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 216,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMaxEitr\", new Type[]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 221,
+      "text": "private class Patch_Player_SetMaxEitr"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 223,
+      "text": "private static bool Prefix(ref Player __instance, ref float eitr)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 228,
+      "text": "num += Update_Player_BaseStats(\"MaxEitr\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 235,
+      "text": "[HarmonyPatch(typeof(Player), \"GetEquipmentMovementModifier\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 236,
+      "text": "private class Patch_Player_GetEquipmentMovementModifier"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 238,
+      "text": "private static void Postfix(ref Player __instance, ref float __result)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 245,
+      "text": "num += Update_Player_BaseStats(\"EquipmentSpeedModifier\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 251,
+      "text": "if (((Humanoid)__instance).m_rightItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 253,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_rightItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_rightItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_rightItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 255,
+      "text": "if (((Humanoid)__instance).m_leftItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 257,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_leftItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_leftItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_leftItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 259,
+      "text": "if (((Humanoid)__instance).m_chestItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 261,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_chestItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_chestItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_chestItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 263,
+      "text": "if (((Humanoid)__instance).m_legItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 265,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_legItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_legItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_legItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 267,
+      "text": "if (((Humanoid)__instance).m_helmetItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 269,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_helmetItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_helmetItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_helmetItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 271,
+      "text": "if (((Humanoid)__instance).m_shoulderItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 273,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_shoulderItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_shoulderItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_shoulderItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 275,
+      "text": "if (((Humanoid)__instance).m_utilityItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 277,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_utilityItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_utilityItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_utilityItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 279,
+      "text": "if (((Humanoid)__instance).m_trinketItem != null)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 281,
+      "text": "__instance.m_equipmentModifierValues[0] += ((((Humanoid)__instance).m_trinketItem.m_shared.m_movementModifier < 0f) ? (((Humanoid)__instance).m_trinketItem.m_shared.m_movementModifier * num) : ((Humanoid)__instance).m_trinketItem.m_shared.m_movementModifier);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 288,
+      "text": "[HarmonyPatch(typeof(Player), \"GetEquipmentHeatResistanceModifier\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 289,
+      "text": "private class Patch_Player_GetEquipmentHeatResistanceModifier"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 291,
+      "text": "private static void Postfix(ref Player __instance, ref float __result)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 296,
+      "text": "num += Update_Player_BaseStats(\"HeatDamageModifier\", __instance);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 304,
+      "text": "[HarmonyPatch(typeof(SEMan), \"HaveStatusAttribute\")]"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 305,
+      "text": "private class Patch_SEMan_HaveStatusAttribute"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 307,
+      "text": "private static void Postfix(ref SEMan __instance, ref StatusAttribute value, ref bool __result)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 314,
+      "text": "foreach (StatusEffect statusEffect in __instance.GetStatusEffects())"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 316,
+      "text": "if (((Object)statusEffect).name.StartsWith(\"SE_FPO_\") && ((StatusEffect_FPO)(object)statusEffect).HaveAttribute(value))"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 338,
+      "text": "foreach (Player player in __instance.m_players)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 340,
+      "text": "num += Update_Player_BaseStats(\"WindSpeedModifier\", player);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 361,
+      "text": "List<StatusEffect> list = new List<StatusEffect>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 362,
+      "text": "((Character)Player.m_localPlayer).GetSEMan().GetHUDStatusEffects(list);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 363,
+      "text": "foreach (StatusEffect item in list)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 370,
+      "text": "foreach (StatusEffect item2 in list)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 377,
+      "text": "foreach (StatusEffect item3 in list)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 384,
+      "text": "foreach (StatusEffect item4 in list)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 405,
+      "text": "private class StatusEffect_FPO : SE_Stats"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 421,
+      "text": "public List<SkillType> m_OutgoingDamageTypes = new List<SkillType>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 444,
+      "text": "public override void ModifyAttack(SkillType New_SkillTypeA, ref HitData New_HitData)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 453,
+      "text": "foreach (SkillType outgoingDamageType in m_OutgoingDamageTypes)"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 457,
+      "text": "New_HitData.m_damage.Modify(1f + m_OutgoingDamageModifiers[m_OutgoingDamageTypes.IndexOf(outgoingDamageType)]);"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 518,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 524,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 566,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 572,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 614,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 620,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 662,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 668,
+      "text": "private static ConfigEntry<string> ConfigEntry_Eikthyr_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 710,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 716,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 758,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 764,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 806,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 812,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 854,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 860,
+      "text": "private static ConfigEntry<string> ConfigEntry_TheElder_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 902,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 908,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 950,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 956,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 998,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1004,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1046,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1052,
+      "text": "private static ConfigEntry<string> ConfigEntry_Bonemass_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1094,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1100,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1142,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1148,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1190,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1196,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1238,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1244,
+      "text": "private static ConfigEntry<string> ConfigEntry_Moder_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1286,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1292,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1334,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1340,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1382,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1388,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1430,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1436,
+      "text": "private static ConfigEntry<string> ConfigEntry_Yagluth_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1478,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1484,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1526,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1532,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1574,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1580,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1622,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1628,
+      "text": "private static ConfigEntry<string> ConfigEntry_Queen_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1670,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Passive_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1676,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Passive_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1718,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Active_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1724,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Active_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1766,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Shared_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1772,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Shared_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1814,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Equipped_OutgoingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1820,
+      "text": "private static ConfigEntry<string> ConfigEntry_Fader_Equipped_IncomingDamageTypes;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1844,
+      "text": "private static List<StatusEffect_FPO> List_StatusEffect_FPO = new List<StatusEffect_FPO>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1846,
+      "text": "private static List<StatusEffect_FPO> List_StatusEffect_FPO_Passive = new List<StatusEffect_FPO>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1848,
+      "text": "private static List<StatusEffect_FPO> List_StatusEffect_FPO_Equipped = new List<StatusEffect_FPO>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1850,
+      "text": "private static List<StatusEffect_FPO> List_StatusEffect_FPO_Active = new List<StatusEffect_FPO>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1852,
+      "text": "private static List<StatusEffect_FPO> List_StatusEffect_FPO_Shared = new List<StatusEffect_FPO>();"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1858,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Passive;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1860,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Eikthyr;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1862,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_TheElder;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1864,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Bonemass;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1866,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Moder;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1868,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Yagluth;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1870,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Queen;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1872,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Fader;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1874,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_Eikthyr_Passive;"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 1876,
+      "text": "private static StatusEffect_FPO StatusEffect_FPO_TheElder_Passive;"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 400,
+      "text": "__instance.m_texts.Insert(0, new TextInfo(GetLocalization(\"$inventory_activeeffects\"), GetLocalization(stringBuilder)));"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4747,
+      "text": "return \"$inventory_chop\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4749,
+      "text": "return \"$inventory_pierce\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4751,
+      "text": "return \"$inventory_slash\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4753,
+      "text": "return \"$inventory_blunt\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4762,
+      "text": "return \"$inventory_pickaxe\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4770,
+      "text": "return \"$inventory_fire\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4778,
+      "text": "return \"$inventory_frost\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4782,
+      "text": "return \"$inventory_lightning\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4793,
+      "text": "return \"$inventory_poison\";"
+    },
+    {
+      "file": "csharp/ForsakenPowerOverhaul/ForsakenPowerOverhaul.cs",
+      "line": 4797,
+      "text": "return \"$inventory_spirit\";"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7649,
+      "text": "\"$inventory_activeeffects\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7650,
+      "text": "\"$inventory_blunt\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7651,
+      "text": "\"$inventory_chop\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7652,
+      "text": "\"$inventory_fire\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7653,
+      "text": "\"$inventory_frost\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7654,
+      "text": "\"$inventory_lightning\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7655,
+      "text": "\"$inventory_pickaxe\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7656,
+      "text": "\"$inventory_pierce\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7657,
+      "text": "\"$inventory_poison\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7658,
+      "text": "\"$inventory_slash\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7659,
+      "text": "\"$inventory_spirit\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11849,
+      "text": "IL_0077: ldstr \"$inventory_pierce\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11852,
+      "text": "IL_007f: ldstr \"$inventory_slash\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11855,
+      "text": "IL_0087: ldstr \"$inventory_blunt\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11858,
+      "text": "IL_008f: ldstr \"$inventory_chop\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11861,
+      "text": "IL_0097: ldstr \"$inventory_pickaxe\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11867,
+      "text": "IL_00a7: ldstr \"$inventory_lightning\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11870,
+      "text": "IL_00af: ldstr \"$inventory_frost\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11873,
+      "text": "IL_00b7: ldstr \"$inventory_fire\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11876,
+      "text": "IL_00bf: ldstr \"$inventory_poison\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11879,
+      "text": "IL_00c7: ldstr \"$inventory_spirit\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12657,
+      "text": "IL_0056: ldfld ItemDrop/ItemData Humanoid::m_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12668,
+      "text": "IL_006e: ldfld ItemDrop/ItemData Humanoid::m_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12669,
+      "text": "IL_0073: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12670,
+      "text": "IL_0078: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12675,
+      "text": "IL_0086: ldfld ItemDrop/ItemData Humanoid::m_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12676,
+      "text": "IL_008b: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12677,
+      "text": "IL_0090: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12681,
+      "text": "IL_0099: ldfld ItemDrop/ItemData Humanoid::m_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12682,
+      "text": "IL_009e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12683,
+      "text": "IL_00a3: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12690,
+      "text": "IL_00ae: ldfld ItemDrop/ItemData Humanoid::m_leftItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12701,
+      "text": "IL_00c6: ldfld ItemDrop/ItemData Humanoid::m_leftItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12702,
+      "text": "IL_00cb: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12703,
+      "text": "IL_00d0: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12708,
+      "text": "IL_00de: ldfld ItemDrop/ItemData Humanoid::m_leftItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12709,
+      "text": "IL_00e3: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12710,
+      "text": "IL_00e8: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12714,
+      "text": "IL_00f1: ldfld ItemDrop/ItemData Humanoid::m_leftItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12715,
+      "text": "IL_00f6: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12716,
+      "text": "IL_00fb: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12723,
+      "text": "IL_0106: ldfld ItemDrop/ItemData Humanoid::m_chestItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12734,
+      "text": "IL_011e: ldfld ItemDrop/ItemData Humanoid::m_chestItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12735,
+      "text": "IL_0123: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12736,
+      "text": "IL_0128: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12741,
+      "text": "IL_0136: ldfld ItemDrop/ItemData Humanoid::m_chestItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12742,
+      "text": "IL_013b: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12743,
+      "text": "IL_0140: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12747,
+      "text": "IL_0149: ldfld ItemDrop/ItemData Humanoid::m_chestItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12748,
+      "text": "IL_014e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12749,
+      "text": "IL_0153: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12756,
+      "text": "IL_015e: ldfld ItemDrop/ItemData Humanoid::m_legItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12767,
+      "text": "IL_0176: ldfld ItemDrop/ItemData Humanoid::m_legItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12768,
+      "text": "IL_017b: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12769,
+      "text": "IL_0180: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12774,
+      "text": "IL_018e: ldfld ItemDrop/ItemData Humanoid::m_legItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12775,
+      "text": "IL_0193: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12776,
+      "text": "IL_0198: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12780,
+      "text": "IL_01a1: ldfld ItemDrop/ItemData Humanoid::m_legItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12781,
+      "text": "IL_01a6: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12782,
+      "text": "IL_01ab: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12789,
+      "text": "IL_01b6: ldfld ItemDrop/ItemData Humanoid::m_helmetItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12800,
+      "text": "IL_01ce: ldfld ItemDrop/ItemData Humanoid::m_helmetItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12801,
+      "text": "IL_01d3: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12802,
+      "text": "IL_01d8: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12807,
+      "text": "IL_01e6: ldfld ItemDrop/ItemData Humanoid::m_helmetItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12808,
+      "text": "IL_01eb: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12809,
+      "text": "IL_01f0: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12813,
+      "text": "IL_01f9: ldfld ItemDrop/ItemData Humanoid::m_helmetItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12814,
+      "text": "IL_01fe: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12815,
+      "text": "IL_0203: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12822,
+      "text": "IL_020e: ldfld ItemDrop/ItemData Humanoid::m_shoulderItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12833,
+      "text": "IL_0226: ldfld ItemDrop/ItemData Humanoid::m_shoulderItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12834,
+      "text": "IL_022b: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12835,
+      "text": "IL_0230: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12840,
+      "text": "IL_023e: ldfld ItemDrop/ItemData Humanoid::m_shoulderItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12841,
+      "text": "IL_0243: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12842,
+      "text": "IL_0248: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12846,
+      "text": "IL_0251: ldfld ItemDrop/ItemData Humanoid::m_shoulderItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12847,
+      "text": "IL_0256: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12848,
+      "text": "IL_025b: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12855,
+      "text": "IL_0266: ldfld ItemDrop/ItemData Humanoid::m_utilityItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12866,
+      "text": "IL_027e: ldfld ItemDrop/ItemData Humanoid::m_utilityItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12867,
+      "text": "IL_0283: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12868,
+      "text": "IL_0288: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12873,
+      "text": "IL_0296: ldfld ItemDrop/ItemData Humanoid::m_utilityItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12874,
+      "text": "IL_029b: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12875,
+      "text": "IL_02a0: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12879,
+      "text": "IL_02a9: ldfld ItemDrop/ItemData Humanoid::m_utilityItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12880,
+      "text": "IL_02ae: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12881,
+      "text": "IL_02b3: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12888,
+      "text": "IL_02be: ldfld ItemDrop/ItemData Humanoid::m_trinketItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12899,
+      "text": "IL_02d6: ldfld ItemDrop/ItemData Humanoid::m_trinketItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12900,
+      "text": "IL_02db: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12901,
+      "text": "IL_02e0: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12906,
+      "text": "IL_02ee: ldfld ItemDrop/ItemData Humanoid::m_trinketItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12907,
+      "text": "IL_02f3: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12908,
+      "text": "IL_02f8: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12912,
+      "text": "IL_0301: ldfld ItemDrop/ItemData Humanoid::m_trinketItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12913,
+      "text": "IL_0306: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12914,
+      "text": "IL_030b: ldfld System.Single ItemDrop/ItemData/SharedData::m_movementModifier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13271,
+      "text": "IL_021c: ldstr \"$inventory_activeeffects\""
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "metadata/instructions.il",
+      "line": 6867,
+      "text": "IL_018c: ldfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6868,
+      "text": "IL_0191: stfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7275,
+      "text": "IL_0074: ldfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7276,
+      "text": "IL_0079: stfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7539,
+      "text": "IL_03cb: ldfld UnityEngine.Sprite StatusEffect::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7540,
+      "text": "IL_03d0: stfld UnityEngine.Sprite StatusEffect::m_icon"
+    }
+  ]
+}

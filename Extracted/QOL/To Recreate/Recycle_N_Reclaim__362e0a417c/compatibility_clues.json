@@ -1,0 +1,5218 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 32,
+      "text": "private static BaseUnityPlugin _plugin;"
+    },
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 36,
+      "text": "private static BaseUnityPlugin plugin"
+    },
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 55,
+      "text": "_plugin = (BaseUnityPlugin)Chainloader.ManagerObject.GetComponent((Type)source.First([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (TypeInfo t) => t.IsClass && typeof(BaseUnityPlugin).IsAssignableFrom(t)));"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 26,
+      "text": "[BepInPlugin(\"Azumatt.Recycle_N_Reclaim\", \"Recycle_N_Reclaim\", \"1.4.5\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 27,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 28,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 29,
+      "text": "public class Recycle_N_ReclaimPlugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 371,
+      "text": "((BaseUnityPlugin)this).Config.Save();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 401,
+      "text": "((BaseUnityPlugin)this).Config.Reload();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 469,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 892,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 939,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1270,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1291,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1301,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1306,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35208,
+      "text": "\"signature\": \"BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35210,
+      "text": "\"returnType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90018,
+      "text": "\"BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90019,
+      "text": "\"BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90036,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90040,
+      "text": "\"BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91217,
+      "text": "\"System.String BepInEx.BepInPlugin::get_Name()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91449,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1011,
+      "text": "// BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1013,
+      "text": "IL_0000: ldsfld BepInEx.BaseUnityPlugin LocalizationManager.Localizer::_plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1056,
+      "text": "IL_009b: castclass BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1057,
+      "text": "IL_00a0: stsfld BepInEx.BaseUnityPlugin LocalizationManager.Localizer::_plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1058,
+      "text": "IL_00a5: ldsfld BepInEx.BaseUnityPlugin LocalizationManager.Localizer::_plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1225,
+      "text": "IL_0000: call BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1265,
+      "text": "IL_0039: call BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1266,
+      "text": "IL_003e: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1267,
+      "text": "IL_0043: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1268,
+      "text": "IL_0048: callvirt System.String BepInEx.BepInPlugin::get_Name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1324,
+      "text": "IL_00db: call BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1325,
+      "text": "IL_00e0: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1326,
+      "text": "IL_00e5: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1327,
+      "text": "IL_00ea: callvirt System.String BepInEx.BepInPlugin::get_Name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1363,
+      "text": "IL_0148: call BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1364,
+      "text": "IL_014d: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1365,
+      "text": "IL_0152: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1366,
+      "text": "IL_0157: callvirt System.String BepInEx.BepInPlugin::get_Name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1382,
+      "text": "IL_0194: call BepInEx.BaseUnityPlugin LocalizationManager.Localizer::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1383,
+      "text": "IL_0199: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1384,
+      "text": "IL_019e: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1385,
+      "text": "IL_01a3: callvirt System.String BepInEx.BepInPlugin::get_Name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1685,
+      "text": "IL_0008: ldtoken BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2347,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2418,
+      "text": "IL_001e: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2575,
+      "text": "IL_0031: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2611,
+      "text": "IL_0011: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 229,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Localization), \"SetupLanguage\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Localizer), \"LoadLocalization\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 230,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(FejdStartup), \"SetupGui\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Localizer), \"LoadLocalizationLater\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 231,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(FejdStartup), \"Start\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Localizer), \"SafeCallLocalizeComplete\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 316,
+      "text": "_harmony.PatchAll(executingAssembly);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 456,
+      "text": "Container val = (Container)AccessTools.Field(typeof(InventoryGui), \"m_currentContainer\").GetValue(InventoryGui.instance);"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 81,
+      "text": "val.Patch((MethodBase)item, (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(API), \"Transpiler\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/VerifyClient.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/RegisterAndCheckVersion.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/ShowConnectionError.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateItemDrag\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/RemoveDisconnectedPeerFromVerified.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"UpdateGui\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridButtonHandlingPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(InventoryGrid))]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridButtonHandlingPatches.cs",
+      "line": 12,
+      "text": "[HarmonyPatch(\"OnLeftClick\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridButtonHandlingPatches.cs",
+      "line": 13,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridButtonHandlingPatches.cs",
+      "line": 28,
+      "text": "[HarmonyPatch(\"UpdateGamepad\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGuiShowPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Show\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/TooltipRenderer.cs",
+      "line": 12,
+      "text": "[HarmonyPatch(typeof(ItemData))]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/TooltipRenderer.cs",
+      "line": 15,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/TooltipRenderer.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(\"GetTooltip\", new Type[]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGuiHidePatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 15,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 89,
+      "text": "Patches patchInfo = PatchProcessor.GetPatchInfo((MethodBase)AccessTools.DeclaredMethod(typeof(ZNet), \"Awake\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 99,
+      "text": "val.PatchAll(item);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 184,
+      "text": "AccessTools.DeclaredField(typeof(ZNet), \"m_connectionStatus\").SetValue(null, (object)(ConnectionStatus)3);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 232,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 233,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 257,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 258,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 293,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 294,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 307,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 308,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 31,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 38,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 43,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 82,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 83,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 105,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 110,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 134,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Shutdown\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 138,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 152,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 275,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 286,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 287,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 291,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 307,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 313,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 328,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 329,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 333,
+      "text": "AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\").SetValue(val, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 366,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 367,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 404,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 419,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 423,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 587,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 675,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 676,
+      "text": "SyncedList val = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 984,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1222,
+      "text": "AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\").SetValue(parameterInfo, type);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/PredefinedGroupGrab.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(ObjectDB), \"Awake\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/RecipeListScroll.cs",
+      "line": 9,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/RecipeListScroll.cs",
+      "line": 18,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Awake\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/RecipeListScroll.cs",
+      "line": 19,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 14,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnTabCraftPressed\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"OnTabUpgradePressed\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 17,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 24,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateCraftingPanel\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 25,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 35,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Hide\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 36,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 46,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateCraftingPanel\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 47,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 65,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 66,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateRecipe\", new Type[]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 81,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 82,
+      "text": "[HarmonyPatch(typeof(Inventory), \"Changed\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 92,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"Update\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 93,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 103,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"EquipItem\", new Type[]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 108,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"UnequipItem\", new Type[]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/InventoryGuiPatches.cs",
+      "line": 113,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2099,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2844,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3061,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3097,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3117,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3137,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3369,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3402,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4385,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4506,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4533,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4553,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4573,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5549,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5594,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5772,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5860,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5888,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6334,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6362,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7466,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38720,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38729,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38746,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38769,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38778,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38801,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38810,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38833,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38842,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38873,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38879,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38909,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38915,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38936,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38945,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38968,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38981,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38994,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 39017,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 39026,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 41115,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 41123,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 41170,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 41304,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 41310,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42808,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42839,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43076,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43105,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43147,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43186,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43679,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43722,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45005,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45014,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45041,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45050,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45077,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45086,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45109,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45118,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91169,
+      "text": "\"System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)\","
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/LocalizationManager/Localizer.cs",
+      "line": 77,
+      "text": "public static void AddPlaceholder<T>(string key, string placeholder, ConfigEntry<T> config, [_003Cc6ee30b4_002D1fc8_002D48a6_002Db646_002D32a3d54a7999_003ENullable(new byte[] { 2, 1, 1 })] Func<T, string> convertConfigValue = null)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 51,
+      "text": "public Action<ConfigEntryBase> CustomDrawer;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 86,
+      "text": "private static string ConfigFileName = \"Azumatt.Recycle_N_Reclaim.cfg\";"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 88,
+      "text": "private static string ConfigFileFullPath = Paths.ConfigPath + Path.DirectorySeparatorChar + ConfigFileName;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 119,
+      "text": "private static ConfigEntry<Toggle> _serverConfigLocked = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 121,
+      "text": "public static ConfigEntry<Toggle> ApplyCraftedBy = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 123,
+      "text": "public static ConfigEntry<KeyboardShortcut> hotKey = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 125,
+      "text": "public static ConfigEntry<Toggle> discardInvEnabled = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 127,
+      "text": "public static ConfigEntry<Toggle> lockToAdmin = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 129,
+      "text": "public static ConfigEntry<Toggle> returnUnknownResources = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 131,
+      "text": "public static ConfigEntry<Toggle> returnEnchantedResources = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 133,
+      "text": "public static ConfigEntry<float> returnResources = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 135,
+      "text": "private ConfigEntry<string> _stationFilterListString;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 139,
+      "text": "public static ConfigEntry<float> RecipeListScrollSpeedMultiplier = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 141,
+      "text": "public static ConfigEntry<Toggle> StationFilterEnabled = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 143,
+      "text": "public static ConfigEntry<Toggle> EnableExperimentalCraftingTabUI = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 145,
+      "text": "public static ConfigEntry<Toggle> NotifyOnSalvagingImpediments = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 147,
+      "text": "public static ConfigEntry<Toggle> PreventZeroResourceYields = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 149,
+      "text": "public static ConfigEntry<Toggle> UnstackableItemsAlwaysReturnAtLeastOneResource = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 151,
+      "text": "public static ConfigEntry<float> RecyclingRate = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 153,
+      "text": "public static ConfigEntry<Toggle> ContainerRecyclingEnabled = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 155,
+      "text": "public static ConfigEntry<Toggle> IgnoreItemsOnHotbar = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 157,
+      "text": "public static ConfigEntry<Vector3> ContainerRecyclingButtonPositionJsonString = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 159,
+      "text": "public static ConfigEntry<Toggle> AllowRecyclingUnknownRecipes = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 161,
+      "text": "public static ConfigEntry<Toggle> DebugAlwaysDumpAnalysisContext = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 163,
+      "text": "public static ConfigEntry<Toggle> DebugAllowSpammyLogs = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 165,
+      "text": "public static ConfigEntry<Toggle> HideEquippedItemsInRecyclingTab = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 167,
+      "text": "public static ConfigEntry<Toggle> RequireExactCraftingStationForRecycling = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 169,
+      "text": "public static ConfigEntry<Toggle> returnEnchantedResourcesReclaiming = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 171,
+      "text": "public static ConfigEntry<Color> BorderColorTrashedItem = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 173,
+      "text": "public static ConfigEntry<Color> BorderColorTrashedSlot = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 175,
+      "text": "public static ConfigEntry<bool> DisplayTooltipHint = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 177,
+      "text": "public static ConfigEntry<bool> ShowRecycleYieldInTooltip = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 179,
+      "text": "public static ConfigEntry<KeyboardShortcut> UndoRecycleKeybind = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 181,
+      "text": "public static ConfigEntry<float> UndoRecycleGracePeriodSeconds = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 183,
+      "text": "public static ConfigEntry<KeyboardShortcut> TrashingModifierKeybind1 = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 185,
+      "text": "public static ConfigEntry<KeyboardShortcut> TrashingKeybind = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 187,
+      "text": "public static ConfigEntry<string> TrashedSlotTooltip = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 191,
+      "text": "private ConfigEntry<string> StationFilterListString"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 229,
+      "text": "ConfigSyncVar.AddLockingConfigEntry<Toggle>(_serverConfigLocked);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 232,
+      "text": "discardInvEnabled = config(text, \"Enabled\", Toggle.On, new ConfigDescription(\"If on, you'll be able to discard things inside of the player inventory.\", (AcceptableValueBase)null, new object[1]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 239,
+      "text": "lockToAdmin = config(text, \"Lock to Admin\", Toggle.On, new ConfigDescription(\"If on, only admin's can use this feature.\", (AcceptableValueBase)null, new object[1]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 246,
+      "text": "hotKey = config<KeyboardShortcut>(text, \"DiscardHotkey(s)\", new KeyboardShortcut((KeyCode)127, Array.Empty<KeyCode>()), new ConfigDescription(\"The hotkey to discard an item or regain resources. Must be enabled\", (AcceptableValueBase)(object)new AcceptableShortcuts(), Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 311,
+      "text": "YAMLUtils.WriteConfigFileFromResource(yamlPath);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 376,
+      "text": "FileSystemWatcher fileSystemWatcher = new FileSystemWatcher(Paths.ConfigPath, ConfigFileName);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 394,
+      "text": "if (!File.Exists(ConfigFileFullPath))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 405,
+      "text": "Recycle_N_ReclaimLogger.LogError((object)(\"There was an issue loading your \" + ConfigFileName));"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 464,
+      "text": "private ConfigEntry<T> config<[_003Cc6ee30b4_002D1fc8_002D48a6_002Db646_002D32a3d54a7999_003ENullable(2)] T>(string group, string name, T value, ConfigDescription description, bool synchronizedSetting = true)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 468,
+      "text": "ConfigDescription val = new ConfigDescription(description.Description + (synchronizedSetting ? \" [Synced with Server]\" : \" [Not Synced with Server]\"), description.AcceptableValues, description.Tags);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 469,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 470,
+      "text": "ConfigSyncVar.AddConfigEntry<T>(val2).SynchronizedConfig = synchronizedSetting;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 474,
+      "text": "private ConfigEntry<T> config<[_003Cc6ee30b4_002D1fc8_002D48a6_002Db646_002D32a3d54a7999_003ENullable(2)] T>(string group, string name, T value, string description, bool synchronizedSetting = true)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 478,
+      "text": "return config(group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 150,
+      "text": "public static void AddUncutGem(GameObject prefab, string colorName, [_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(2)] ConfigEntry<float> dropChance = null)"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 10,
+      "text": "internal abstract class OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 17,
+      "text": "public abstract ConfigEntryBase BaseConfig { get; }"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 128,
+      "text": "public readonly Dictionary<OwnConfigEntryBase, object> configValues = new Dictionary<OwnConfigEntryBase, object>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 379,
+      "text": "ZPackage package = ConfigsToPackage(configSync.allConfigs.Select([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (OwnConfigEntryBase c) => c.BaseConfig), configSync.allCustomValues, entries, partial: false);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 406,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 408,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 409,
+      "text": "if (ownConfigEntryBase == null || isWritableConfig(ownConfigEntryBase))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 413,
+      "text": "__result = TomlTypeConverter.ConvertToString(ownConfigEntryBase.LocalBaseValue, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 419,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 424,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, string value)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 426,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 427,
+      "text": "if (ownConfigEntryBase == null || ownConfigEntryBase.LocalBaseValue == null)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 433,
+      "text": "ownConfigEntryBase.LocalBaseValue = TomlTypeConverter.ConvertToValue(value, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 474,
+      "text": "private readonly HashSet<OwnConfigEntryBase> allConfigs = new HashSet<OwnConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 483,
+      "text": "private OwnConfigEntryBase lockedConfig = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 580,
+      "text": "public SyncedConfigEntry<T> AddConfigEntry<[_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(2)] T>(ConfigEntry<T> configEntry)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 582,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData((ConfigEntryBase)(object)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 583,
+      "text": "SyncedConfigEntry<T> syncedEntry = ownConfigEntryBase as SyncedConfigEntry<T>;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 586,
+      "text": "syncedEntry = new SyncedConfigEntry<T>(configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 587,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 590,
+      "text": "}.Concat(((ConfigEntryBase)configEntry).Description.Tags ?? Array.Empty<object>()).Concat(new SyncedConfigEntry<T>[1] { syncedEntry }).ToArray());"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 591,
+      "text": "configEntry.SettingChanged += [_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (object _, EventArgs _) =>"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 595,
+      "text": "Broadcast(0L, (ConfigEntryBase)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 603,
+      "text": "public SyncedConfigEntry<T> AddLockingConfigEntry<[_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(0)] T>(ConfigEntry<T> lockingConfig) where T : IConvertible"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 607,
+      "text": "throw new Exception(\"Cannot initialize locking ConfigEntry twice\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 609,
+      "text": "lockedConfig = AddConfigEntry<T>(lockingConfig);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 614,
+      "text": "return (SyncedConfigEntry<T>)lockedConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 732,
+      "text": "ConfigFile val2 = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 734,
+      "text": "foreach (KeyValuePair<OwnConfigEntryBase, object> configValue in parsedConfigs.configValues)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 742,
+      "text": "val2 = configValue.Key.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 787,
+      "text": "Dictionary<string, OwnConfigEntryBase> dictionary = allConfigs.Where([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (OwnConfigEntryBase c) => c.SynchronizedConfig).ToDictionary([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (OwnConfigEntryBase c) => c.BaseConfig.Definition.Sect"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 808,
+      "text": "OwnConfigEntryBase value2;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 858,
+      "text": "private static bool isWritableConfig(OwnConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 870,
+      "text": "foreach (OwnConfigEntryBase allConfig in allConfigs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 878,
+      "text": "ConfigFile val = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 880,
+      "text": "foreach (OwnConfigEntryBase item in allConfigs.Where([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (OwnConfigEntryBase config) => config.LocalBaseValue != null))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 884,
+      "text": "val = item.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1022,
+      "text": "private void Broadcast(long target, params ConfigEntryBase[] configs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1049,
+      "text": "private static OwnConfigEntryBase configData(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1051,
+      "text": "return config.Description.Tags?.OfType<OwnConfigEntryBase>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1055,
+      "text": "public static SyncedConfigEntry<T> ConfigData<[_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(2)] T>(ConfigEntry<T> config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1057,
+      "text": "return ((ConfigEntryBase)config).Description.Tags?.OfType<SyncedConfigEntry<T>>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1060,
+      "text": "private static T configAttribute<[_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(2)] T>(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1065,
+      "text": "private static Type configType(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1075,
+      "text": "private static ZPackage ConfigsToPackage([_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(new byte[] { 2, 1 })] IEnumerable<ConfigEntryBase> configs = null, [_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(new byte[] { 2, 1 })] IEnumerable<CustomSyncedValueBase> customValues = null, [_003Cd95a9308_002Dc"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1079,
+      "text": "List<ConfigEntryBase> list = configs?.Where([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (ConfigEntryBase config) => configData(config).SynchronizedConfig).ToList() ?? new List<ConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1098,
+      "text": "foreach (ConfigEntryBase item3 in list)"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 10,
+      "text": "internal class SyncedConfigEntry<[_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(2)] T>(ConfigEntry<T> sourceConfig) : OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 12,
+      "text": "public readonly ConfigEntry<T> SourceConfig = sourceConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 14,
+      "text": "public override ConfigEntryBase BaseConfig => (ConfigEntryBase)(object)SourceConfig;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/YAMLUtils.cs",
+      "line": 14,
+      "text": "internal static void WriteConfigFileFromResource(string configFilePath)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/YAMLUtils.cs",
+      "line": 25,
+      "text": "File.WriteAllText(configFilePath, contents);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1186,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1341,
+      "text": "\"name\": \"ConfigFileName\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1348,
+      "text": "\"name\": \"ConfigFileFullPath\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1454,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1461,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1468,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1475,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1482,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1489,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1496,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1503,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1510,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1524,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1531,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1538,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1545,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1552,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1559,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1566,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1573,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1580,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1587,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Vector3\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1594,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1601,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1608,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1615,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1622,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1629,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CRecycle_N_Reclaim.Recycle_N_ReclaimPlugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1636,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1643,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CUnityEngine.Color\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1650,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1657,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1664,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1671,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1678,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1685,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1692,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1706,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1813,
+      "text": "\"type\": \"System.Action\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2012,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4908,
+      "text": "\"name\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4964,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4971,
+      "text": "\"name\": \"ServerSync.SyncedConfigEntry\\u00601\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/VerifyClient.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/VerifyClient.cs",
+      "line": 11,
+      "text": "private static bool Prefix(ZRpc rpc, ZPackage pkg, ref ZNet __instance)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/VerifyClient.cs",
+      "line": 26,
+      "text": "ZRoutedRpc.instance.InvokeRoutedRPC(ZRoutedRpc.instance.GetServerPeerID(), \"Recycle_N_ReclaimRequestAdminSync\", new object[1] { (object)new ZPackage() });"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/RegisterAndCheckVersion.cs",
+      "line": 16,
+      "text": "peer.m_rpc.Register<ZPackage>(\"Recycle_N_Reclaim_VersionCheck\", (Action<ZRpc, ZPackage>)RpcHandlers.RPC_Recycle_N_Reclaim_Version);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/RpcHandlers.cs",
+      "line": 14,
+      "text": "public static readonly List<ZRpc> ValidatedPeers = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/RpcHandlers.cs",
+      "line": 16,
+      "text": "public static void RPC_Recycle_N_Reclaim_Version(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 44,
+      "text": "private readonly List<ZRpc> ValidatedClients = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 90,
+      "text": "if (patchInfo != null && patchInfo.Postfixes.Count([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (Patch p) => p.PatchMethod.DeclaringType == typeof(ConfigSync.RegisterRPCPatch)) > 0)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 161,
+      "text": "private string ErrorServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 166,
+      "text": "private string Error([_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(2)] ZRpc rpc = null)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 176,
+      "text": "private static VersionCheck[] GetFailedServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 187,
+      "text": "private static void DisconnectClient(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 192,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 197,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg, [_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(new byte[] { 2, 1, 1 })] Action<ZRpc, ZPackage> original)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 232,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 234,
+      "text": "private static bool RPC_PeerInfo(ZRpc rpc, ZNet __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 264,
+      "text": "IDictionary dictionary = (IDictionary)typeof(ZRpc).GetField(\"m_functions\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(peer.m_rpc);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 268,
+      "text": "Action<ZRpc, ZPackage> action = (Action<ZRpc, ZPackage>)obj.GetType().GetField(\"m_action\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(obj);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 269,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)([_003C0b1bc451_002D3ff1_002D4275_002D8206_002Dee850795ae9e_003ENullableContext(0)] (ZRpc rpc, [_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(1)] ZPackage pkg) =>"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 276,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)CheckVersion);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 28,
+      "text": "public static ZRpc currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 32,
+      "text": "private static void Prefix(ZRpc __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 40,
+      "text": "internal static class RegisterRPCPatch"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 49,
+      "text": "ZRoutedRpc.instance.Register<ZPackage>(configSync2.Name + \" ConfigSync\", (Action<long, ZPackage>)configSync2.RPC_FromOtherClientConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 119,
+      "text": "peer.m_rpc.Register<ZPackage>(configSync.Name + \" ConfigSync\", (Action<ZRpc, ZPackage>)configSync.RPC_FromServerConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 152,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 277,
+      "text": "private static void Prefix([_003Cd95a9308_002Dc7a9_002D45b5_002Da3c4_002D4f2dd2e4581b_003ENullable(new byte[] { 2, 1, 1 })] ref Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 286,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 287,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 308,
+      "text": "private static void Postfix(Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 313,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 328,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 329,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 634,
+      "text": "private void RPC_FromServerConfigSync(ZRpc rpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 644,
+      "text": "private void RPC_FromOtherClientConfigSync(long sender, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 661,
+      "text": "ZRpc currentRpc = SnatchCurrentlyHandlingRPC.currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 906,
+      "text": "ZRoutedRpc rpc = ZRoutedRpc.instance;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 984,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1157,
+      "text": "ZRpc.Serialize(new object[1] { value }, ref package);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1224,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, package, ref source);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3100,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3176,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5551,
+      "text": "\"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5569,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5588,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5616,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5649,
+      "text": "\"type\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5727,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5891,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6025,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6878,
+      "text": "\"type\": \"ZRoutedRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7605,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7662,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7814,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7848,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38061,
+      "text": "\"signature\": \"System.Boolean Recycle_N_Reclaim.GamePatches.VerifyClient::Prefix(ZRpc,ZPackage,ZNet\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38067,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38166,
+      "text": "\"signature\": \"System.Void Recycle_N_Reclaim.GamePatches.RpcHandlers::RPC_Recycle_N_Reclaim_Version(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 38172,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42311,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42317,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42331,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42789,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42795,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42820,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42851,
+      "text": "\"signature\": \"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42859,
+      "text": "\"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42885,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42920,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42943,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.IDisposable.Dispose()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42961,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42972,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.Generic.IEnumerator\\u003CSystem.Object\\u003E.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 42990,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.Reset()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43008,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43026,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43037,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43128,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Prefix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E\\u0026,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43142,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43167,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Postfix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 43181,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44860,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44866,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44876,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44882,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44903,
+      "text": "\"signature\": \"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44909,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44930,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44936,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44946,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44952,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44966,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44972,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44980,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44990,
+      "text": "\"signature\": \"System.Boolean ServerSync.VersionCheck::RPC_PeerInfo(ZRpc,ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 44996,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45008,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45324,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 45330,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90052,
+      "text": "\"ISocket ZRpc::GetSocket()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90080,
+      "text": "\"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90197,
+      "text": "\"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90334,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Contains(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90335,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90898,
+      "text": "\"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91077,
+      "text": "\"System.Int64 ZRoutedRpc::GetServerPeerID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91255,
+      "text": "\"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91257,
+      "text": "\"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91579,
+      "text": "\"System.Void Recycle_N_Reclaim.GamePatches.RpcHandlers::RPC_Recycle_N_Reclaim_Version(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91665,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91666,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91689,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91690,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91691,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91711,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91712,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91713,
+      "text": "\"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91722,
+      "text": "\"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91755,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::.ctor(System.Object,System.IntPtr)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91756,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::Invoke(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91978,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91979,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92927,
+      "text": "\"System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92928,
+      "text": "\"System.Void ZRoutedRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CSystem.Int64,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92929,
+      "text": "\"System.Void ZRpc::Deserialize(System.Reflection.ParameterInfo[],ZPackage,System.Collections.Generic.List\\u00601\\u003CSystem.Object\\u003E\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92930,
+      "text": "\"System.Void ZRpc::Invoke(System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92931,
+      "text": "\"System.Void ZRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CZRpc,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 92932,
+      "text": "\"System.Void ZRpc::Serialize(System.Object[],ZPackage\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93312,
+      "text": "\"ZDO ZNetView::GetZDO()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93319,
+      "text": "\"ZRoutedRpc ZRoutedRpc::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5739,
+      "text": "IL_0010: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5742,
+      "text": "IL_001b: ldftn System.Void Recycle_N_Reclaim.GamePatches.RpcHandlers::RPC_Recycle_N_Reclaim_Version(ZRpc,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5743,
+      "text": "IL_0021: newobj System.Void System.Action`2<ZRpc,ZPackage>::.ctor(System.Object,System.IntPtr)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5744,
+      "text": "IL_0026: callvirt System.Void ZRpc::Register<ZPackage>(System.String,System.Action`2<ZRpc,!!0>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5760,
+      "text": "IL_0066: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5768,
+      "text": "IL_007a: callvirt System.Void ZRpc::Invoke(System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5771,
+      "text": "// System.Boolean Recycle_N_Reclaim.GamePatches.VerifyClient::Prefix(ZRpc,ZPackage,ZNet&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5777,
+      "text": "IL_0009: ldsfld System.Collections.Generic.List`1<ZRpc> Recycle_N_Reclaim.GamePatches.RpcHandlers::ValidatedPeers"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5779,
+      "text": "IL_000f: callvirt System.Boolean System.Collections.Generic.List`1<ZRpc>::Contains(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5786,
+      "text": "IL_0023: ldfld ISocket ZRpc::m_socket"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5800,
+      "text": "IL_0051: callvirt System.Void ZRpc::Invoke(System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5806,
+      "text": "IL_0000: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5807,
+      "text": "IL_0005: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5808,
+      "text": "IL_000a: callvirt System.Int64 ZRoutedRpc::GetServerPeerID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5816,
+      "text": "IL_0022: callvirt System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5860,
+      "text": "IL_0015: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5861,
+      "text": "IL_001a: ldfld ISocket ZRpc::m_socket"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5866,
+      "text": "IL_0033: ldsfld System.Collections.Generic.List`1<ZRpc> Recycle_N_Reclaim.GamePatches.RpcHandlers::ValidatedPeers"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5868,
+      "text": "IL_0039: ldfld ZRpc ZNetPeer::m_rpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5869,
+      "text": "IL_003e: callvirt System.Boolean System.Collections.Generic.List`1<ZRpc>::Remove(!0)"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 46,
+      "text": "if (ObjectDB.instance.TryGetItemPrefab(rItemData.m_shared, ref val) && (Object)(object)val != (Object)null)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 50,
+      "text": "foreach (GameObject item in ObjectDB.instance.m_items)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 97,
+      "text": "Recipe recipe = ObjectDB.instance.GetRecipe(___m_dragItem);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 106,
+      "text": "GameObject itemPrefab = ObjectDB.instance.GetItemPrefab(enchantCost.Item);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 110,
+      "text": "Recipe recipe2 = ObjectDB.instance.GetRecipe(val.m_itemData);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 130,
+      "text": "select ObjectDB.instance.GetItemPrefab(gem.gemPrefab).GetComponent<ItemDrop>() into itemDrop"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 134,
+      "text": "Recipe recipe3 = ObjectDB.instance.GetRecipe(item.Value);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 34,
+      "text": "internal static void BuildRecipeCache(ObjectDB instance)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 333,
+      "text": "GameObject itemPrefab = ObjectDB.instance.GetItemPrefab(enchantCost.Item);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 337,
+      "text": "Recipe recipe = ObjectDB.instance.GetRecipe(val);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 367,
+      "text": "ObjectDB instance2 = ObjectDB.instance;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 378,
+      "text": "ObjectDB instance = ObjectDB.instance;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 60,
+      "text": "GameObject itemPrefab = ObjectDB.instance.GetItemPrefab(GetPrefabName(((Object)inputGameObject).name));"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 78,
+      "text": "internal static void CreatePredefinedGroups(ObjectDB __instance)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 168,
+      "text": "GameObject val = ObjectDB.instance.GetItemPrefab(\"Cultivator\").GetComponent<ItemDrop>().m_itemData.m_shared.m_buildPieces.m_pieces.FirstOrDefault([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (GameObject p) =>"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 178,
+      "text": "if (ZNetScene.instance.GetPrefab(\"smelter\").GetComponent<Smelter>().m_conversion.Any([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemConversion c) => c.m_from.m_itemData.m_shared.m_name == sharedData.m_name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 182,
+      "text": "if (ZNetScene.instance.GetPrefab(\"smelter\").GetComponent<Smelter>().m_conversion.Any([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemConversion c) => c.m_to.m_itemData.m_shared.m_name == sharedData.m_name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 186,
+      "text": "if (ZNetScene.instance.GetPrefab(\"blastfurnace\").GetComponent<Smelter>().m_conversion.Any([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemConversion c) => c.m_from.m_itemData.m_shared.m_name == sharedData.m_name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 190,
+      "text": "if (ZNetScene.instance.GetPrefab(\"blastfurnace\").GetComponent<Smelter>().m_conversion.Any([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemConversion c) => c.m_to.m_itemData.m_shared.m_name == sharedData.m_name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/GroupUtils.cs",
+      "line": 194,
+      "text": "if (ZNetScene.instance.GetPrefab(\"charcoal_kiln\").GetComponent<Smelter>().m_conversion.Any([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemConversion c) => c.m_from.m_itemData.m_shared.m_name == sharedData.m_name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/PredefinedGroupGrab.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(ObjectDB), \"Awake\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/PredefinedGroupGrab.cs",
+      "line": 13,
+      "text": "private static void Postfix(ObjectDB __instance)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.YAMLStuff/PredefinedGroupGrab.cs",
+      "line": 15,
+      "text": "if (Object.op_Implicit((Object)(object)ZNetScene.instance))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 257,
+      "text": "bool globalKey = ZoneSystem.instance.GetGlobalKey((GlobalKeys)25);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2101,
+      "text": "\"ObjectDB\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36425,
+      "text": "\"signature\": \"System.Void Recycle_N_Reclaim.YAMLStuff.PredefinedGroupGrab::Postfix(ObjectDB)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36431,
+      "text": "\"type\": \"ObjectDB\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36585,
+      "text": "\"signature\": \"System.Void Recycle_N_Reclaim.YAMLStuff.GroupUtils::CreatePredefinedGroups(ObjectDB)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36591,
+      "text": "\"type\": \"ObjectDB\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 39942,
+      "text": "\"signature\": \"System.Void Recycle_N_Reclaim.GamePatches.Recycling.Reclaimer::BuildRecipeCache(ObjectDB)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 39948,
+      "text": "\"type\": \"ObjectDB\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90064,
+      "text": "\"ObjectDB ObjectDB::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90066,
+      "text": "\"Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90129,
+      "text": "\"System.Boolean ObjectDB::TryGetItemPrefab(ItemDrop/ItemData/SharedData,UnityEngine.GameObject\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 90596,
+      "text": "\"System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91562,
+      "text": "\"System.Void Recycle_N_Reclaim.GamePatches.Recycling.Reclaimer::BuildRecipeCache(ObjectDB)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 91642,
+      "text": "\"System.Void Recycle_N_Reclaim.YAMLStuff.GroupUtils::CreatePredefinedGroups(ObjectDB)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93010,
+      "text": "\"UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93015,
+      "text": "\"UnityEngine.GameObject ZNetScene::GetPrefab(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93315,
+      "text": "\"ZNetScene ZNetScene::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 93316,
+      "text": "\"ZoneSystem ZoneSystem::get_instance()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2931,
+      "text": "// System.Void Recycle_N_Reclaim.YAMLStuff.PredefinedGroupGrab::Postfix(ObjectDB)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2933,
+      "text": "IL_0000: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2938,
+      "text": "IL_000e: call System.Void Recycle_N_Reclaim.YAMLStuff.GroupUtils::CreatePredefinedGroups(ObjectDB)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2940,
+      "text": "IL_0014: call System.Void Recycle_N_Reclaim.GamePatches.Recycling.Reclaimer::BuildRecipeCache(ObjectDB)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3036,
+      "text": "IL_0000: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3040,
+      "text": "IL_0010: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3069,
+      "text": "// System.Void Recycle_N_Reclaim.YAMLStuff.GroupUtils::CreatePredefinedGroups(ObjectDB)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3072,
+      "text": "IL_0001: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ObjectDB::m_items"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3237,
+      "text": "IL_02b9: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3239,
+      "text": "IL_02c3: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3243,
+      "text": "IL_02d7: ldfld PieceTable ItemDrop/ItemData/SharedData::m_buildPieces"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3244,
+      "text": "IL_02dc: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> PieceTable::m_pieces"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3287,
+      "text": "IL_0354: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3289,
+      "text": "IL_035e: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3299,
+      "text": "IL_0387: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3301,
+      "text": "IL_0391: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3311,
+      "text": "IL_03ba: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3313,
+      "text": "IL_03c4: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3323,
+      "text": "IL_03ed: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3325,
+      "text": "IL_03f7: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3335,
+      "text": "IL_0420: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3337,
+      "text": "IL_042a: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5082,
+      "text": "IL_0000: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5086,
+      "text": "IL_000d: callvirt System.Boolean ObjectDB::TryGetItemPrefab(ItemDrop/ItemData/SharedData,UnityEngine.GameObject&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5094,
+      "text": "IL_001f: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5095,
+      "text": "IL_0024: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ObjectDB::m_items"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5201,
+      "text": "IL_004a: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5203,
+      "text": "IL_0050: callvirt Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5257,
+      "text": "IL_0116: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5260,
+      "text": "IL_0122: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5272,
+      "text": "IL_0142: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5275,
+      "text": "IL_014e: callvirt Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5407,
+      "text": "IL_031e: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5410,
+      "text": "IL_032a: callvirt Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5708,
+      "text": "IL_0000: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5711,
+      "text": "IL_000b: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7262,
+      "text": "IL_027a: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 7264,
+      "text": "IL_0281: callvirt System.Boolean ZoneSystem::GetGlobalKey(GlobalKeys)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8565,
+      "text": "// System.Void Recycle_N_Reclaim.GamePatches.Recycling.Reclaimer::BuildRecipeCache(ObjectDB)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8570,
+      "text": "IL_000b: ldfld System.Collections.Generic.List`1<Recipe> ObjectDB::m_recipes"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9694,
+      "text": "IL_0035: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9697,
+      "text": "IL_0040: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9716,
+      "text": "IL_0070: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9718,
+      "text": "IL_0077: callvirt Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9889,
+      "text": "IL_00ef: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 9897,
+      "text": "IL_0102: call Recipe ObjectDB::GetRecipe(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10273,
+      "text": "IL_0000: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10281,
+      "text": "IL_0011: call UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/EpicLootAPI/FxAttachMode.cs",
+      "line": 9,
+      "text": "Player,"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MagicItemEffectDefinition.cs",
+      "line": 37,
+      "text": "public FxAttachMode EquipFxMode = FxAttachMode.Player;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EffectType.cs",
+      "line": 404,
+      "text": "public static string DamageBonusFromPlayerWeight = \"DamageBonusFromPlayerWeight\";"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EffectType.cs",
+      "line": 406,
+      "text": "public static string StaminaRegenBonusFromPlayerWeight = \"StaminaRegenBonusFromPlayerWeight\";"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EffectType.cs",
+      "line": 408,
+      "text": "public static string GainMaxStaminaBasedOnPlayerMaxHealth = \"GainMaxStaminaBasedOnPlayerMaxHealth\";"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 52,
+      "text": "private static readonly Method API_GetPlayerTotalActiveMagicEffectValue = new Method(\"GetTotalPlayerActiveMagicEffectValue\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 54,
+      "text": "private static readonly Method API_PlayerHasActiveMagicEffect = new Method(\"PlayerHasActiveMagicEffect\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 74,
+      "text": "private static readonly Method API_AddBountyCompletedListener = new Method(\"AddBountyCompletedListener\", typeof(Action<Player, string>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 76,
+      "text": "private static readonly Method API_RemoveBountyCompletedListener = new Method(\"RemoveBountyCompletedListener\", typeof(Action<Player, string>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 102,
+      "text": "private static readonly Method API_RegisterEquipmentProvider = new Method(\"RegisterEquipmentProvider\", typeof(string), typeof(Func<Player, List<ItemData>>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 110,
+      "text": "private static readonly Method API_InvalidatePlayerEffectCache = new Method(\"InvalidatePlayerEffectCache\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 195,
+      "text": "public static bool HasLegendaryItem(this Player player, string legendaryItemID)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 197,
+      "text": "bool flag = (bool)(API_HasLegendaryItem.Invoke(player, legendaryItemID)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 203,
+      "text": "public static bool HasLegendarySet(this Player player, string legendarySetID, out int count)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 206,
+      "text": "object[] array = API_HasLegendarySet.Invoke(player, legendarySetID, count);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 214,
+      "text": "public static bool HasActiveMagicEffectOnWeapon(Player player, ItemData item, string effectType, out float effectValue)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 217,
+      "text": "object[] array = API_HasActiveMagicEffectOnWeapon.Invoke(player, item, effectType, effectValue);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 225,
+      "text": "public static float GetTotalActiveMagicEffectValue(Player player, ItemData item, string effectType, float scale = 1f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 227,
+      "text": "float num = (float)(API_GetTotalActiveMagicEffectValue.Invoke(player, item, effectType, scale)[0] ?? ((object)0f));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 233,
+      "text": "public static float GetTotalActiveMagicEffectValueForWeapon(Player player, ItemData item, string effectType, float scale = 1f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 235,
+      "text": "float num = (float)(API_GetTotalActiveMagicEffectValueForWeapon.Invoke(player, item, effectType, scale)[0] ?? ((object)0f));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 241,
+      "text": "public static bool HasActiveMagicEffect(Player player, string effectType, ItemData item, out float effectValue)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 244,
+      "text": "object[] array = API_HasActiveMagicEffect.Invoke(player, effectType, item, effectValue);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 252,
+      "text": "public static float GetTotalActiveSetEffectValue(Player player, string effectType, float scale = 1f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 254,
+      "text": "float num = (float)(API_GetTotalActiveSetEffectValue.Invoke(player, effectType, scale)[0] ?? ((object)0f));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 260,
+      "text": "public static List<MagicItemEffect> GetAllActiveMagicEffects(this Player player, string effectType = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 262,
+      "text": "List<string> list = (List<string>)(API_GetAllActiveMagicEffects.Invoke(player, effectType)[0] ?? new List<string>());"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 273,
+      "text": "public static List<MagicItemEffect> GetAllActiveSetMagicEffects(this Player player, string effectType = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 275,
+      "text": "List<string> list = (List<string>)(API_GetAllSetMagicEffects.Invoke(player, effectType)[0] ?? new List<string>());"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 305,
+      "text": "public static float GetTotalActiveMagicEffectValue(this Player player, string effectType, float scale = 1f, ItemData ignoreThisItem = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 307,
+      "text": "float num = (float)(API_GetPlayerTotalActiveMagicEffectValue.Invoke(player, effectType, scale, ignoreThisItem)[0] ?? ((object)0f));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 313,
+      "text": "public static bool HasActiveMagicEffect(this Player player, string effectType, out float effectValue, float scale = 1f, ItemData ignoreThisItem = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 316,
+      "text": "object[] array = API_PlayerHasActiveMagicEffect.Invoke(player, effectType, effectValue, scale, ignoreThisItem);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 359,
+      "text": "public static bool AddBountyCompletedListener(Action<Player, string> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 365,
+      "text": "public static bool RemoveBountyCompletedListener(Action<Player, string> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 490,
+      "text": "public static bool RegisterEquipmentProvider(string id, Func<Player, List<ItemData>> getExtraEquipped)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 504,
+      "text": "public static void InvalidatePlayerEffectCache(this Player player)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 506,
+      "text": "API_InvalidatePlayerEffectCache.Invoke(player);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/AbilityDefinition.cs",
+      "line": 31,
+      "text": "[Description(\"Register a status effect ability which activates on player input\")]"
+    },
+    {
+      "file": "csharp/EpicLootAPI/AbilityDefinition.cs",
+      "line": 32,
+      "text": "public AbilityDefinition(string ID, string iconAsset, float cooldown, string statusEffectName)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/AbilityDefinition.cs",
+      "line": 37,
+      "text": "Action = AbilityAction.StatusEffect;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/AbilityDefinition.cs",
+      "line": 38,
+      "text": "ActionParams.Add(statusEffectName);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 11,
+      "text": "protected Player Player;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 19,
+      "text": "public virtual void Initialize(Player player, string id, float cooldown)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 21,
+      "text": "Player = player;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 84,
+      "text": "public virtual void ActivateStatusEffectAction()"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 95,
+      "text": "if (!((Object)(object)Player == (Object)null))"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 97,
+      "text": "((Character)Player).m_nview.GetZDO().Set(CooldownEndKey, cooldownEndTime);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 103,
+      "text": "if ((Object)(object)Player == (Object)null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Proxy.cs",
+      "line": 107,
+      "text": "return ((Character)Player).m_nview.GetZDO().GetFloat(CooldownEndKey, 0f);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/LegendaryInfo.cs",
+      "line": 28,
+      "text": "public FxAttachMode EquipFxMode = FxAttachMode.Player;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/AbilityAction.cs",
+      "line": 11,
+      "text": "StatusEffect"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 230,
+      "text": "ApplyCraftedBy = config(\"1 - General\", \"Apply Crafted By\", Toggle.On, \"If on, the player will be the 'crafter' of each recycled item. If off, these values are empty\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 232,
+      "text": "discardInvEnabled = config(text, \"Enabled\", Toggle.On, new ConfigDescription(\"If on, you'll be able to discard things inside of the player inventory.\", (AcceptableValueBase)null, new object[1]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 268,
+      "text": "RecyclingRate = config(\"3 - Reclaiming\", \"RecyclingRate\", 0.5f, \"Rate at which the resources are recycled. Value must be between 0 and 1.\\nThe mod always rolls *down*, so if you were supposed to get 2.5 items, you would only receive 2. If the recycling rate is 0.5 (50%), the player will receive half of the resources they would usually need to craft"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 296,
+      "text": "NotifyOnSalvagingImpediments = config(\"4 - UI\", \"NotifyOnSalvagingImpediments\", Toggle.On, \"If enabled and recycling a specific item runs into any issues, the mod will print a message\\nin the center of the screen (native Valheim notification). At the time of implementation,\\nthis happens in the following cases:\\n - not enough free slots in the inve"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 455,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 459,
+      "text": "Recycle_N_ReclaimLogger.LogDebug((object)(\"Player \" + localPlayer.GetPlayerName() + \" triggered recycling\"));"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 460,
+      "text": "Reclaimer.RecycleInventoryForAllRecipes(val.GetInventory(), GroupUtils.GetPrefabName(((Object)((Component)val).transform).name), localPlayer);"
+    },
+    {
+      "file": "csharp/Auga/PlayerPanelTabData.cs",
+      "line": 6,
+      "text": "internal class PlayerPanelTabData"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 199,
+      "text": "public static bool PlayerPanel_HasTab(string tabID)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 204,
+      "text": "public static PlayerPanelTabData PlayerPanel_AddTab(string tabID, Sprite tabIcon, string tabTitleText, Action<int> onTabSelected)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 209,
+      "text": "public static bool PlayerPanel_IsTabActive(GameObject tabButton)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 214,
+      "text": "public static Button PlayerPanel_GetTabButton(int index)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 282,
+      "text": "public static void ComplexTooltip_AddStatusEffectTooltipCreatedListener(Action<GameObject, StatusEffect> listener)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 365,
+      "text": "public static void ComplexTooltip_SetStatusEffect(GameObject complexTooltipGO, StatusEffect statusEffect)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 92,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, ((Object)___m_dragItem.m_dropPrefab).name + \" is blocked via ExcludeLists.yml file [inventory excludes]\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 98,
+      "text": "if ((Object)(object)recipe != (Object)null && (Recycle_N_ReclaimPlugin.returnUnknownResources.Value.IsOn() || Player.m_localPlayer.IsRecipeKnown(___m_dragItem.m_shared.m_name)))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 111,
+      "text": "bool flag = (Object)(object)recipe2 != (Object)null && Player.m_localPlayer.IsRecipeKnown(val.m_itemData.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 112,
+      "text": "bool flag2 = Player.m_localPlayer.m_knownMaterial.Contains(val.m_itemData.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 115,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_no_material_recipes\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 135,
+      "text": "bool flag3 = (Object)(object)recipe3 != (Object)null && Player.m_localPlayer.IsRecipeKnown(item.Value.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 136,
+      "text": "bool flag4 = Player.m_localPlayer.m_knownMaterial.Contains(item.Value.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 139,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_no_material_recipes\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 171,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 172,
+      "text": "Inventory inventory = ((Humanoid)localPlayer).GetInventory();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 173,
+      "text": "if ((Recycle_N_ReclaimPlugin.ApplyCraftedBy.Value.IsOn() ? inventory.AddItem(((Object)val2).name, num3, item2.m_resItem.m_itemData.m_quality, item2.m_resItem.m_itemData.m_variant, localPlayer.GetPlayerID(), localPlayer.GetPlayerName(), false, false) : inventory.AddItem(((Object)val2).name, num3, item2.m_resItem.m_itemData.m_quality, item2.m_resItem"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 176,
+      "text": "ItemDrop component = Object.Instantiate<GameObject>(val2, (transform = ((Component)Player.m_localPlayer).transform).position + transform.forward + transform.up, transform.rotation).GetComponent<ItemDrop>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 192,
+      "text": "((Humanoid)Player.m_localPlayer).RemoveEquipAction(___m_dragItem);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 193,
+      "text": "((Humanoid)Player.m_localPlayer).UnequipItem(___m_dragItem, false);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core.Tokens/TagDirective.cs",
+      "line": 31,
+      "text": "throw new ArgumentException(\"Tag handle must start and end with '!' and contain alphanumerical characters only.\", \"handle\");"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 164,
+      "text": "public static T GetEffectPower<T>([_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(1)] this Player player, [_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(1)] string name) where T : struct"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 210,
+      "text": "public static bool IsJewelryEquipped(Player player, string prefabName)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/LookAheadBuffer.cs",
+      "line": 114,
+      "text": "throw new ArgumentOutOfRangeException(\"length\", \"The length must be between 1 and the number of characters in the buffer. Use the Peek() and / or Cache() methods to fill the buffer.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 270,
+      "text": "CharacterAnalyzer<StringLookAheadBuffer> characterAnalyzer = new CharacterAnalyzer<StringLookAheadBuffer>(new StringLookAheadBuffer(value));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 272,
+      "text": "bool flag4 = characterAnalyzer.IsWhiteBreakOrZero(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 288,
+      "text": "while (!characterAnalyzer.EndOfInput)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 292,
+      "text": "if (characterAnalyzer.Check(\"#,[]{}&*!|>\\\\\\\"%@`'\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 296,
+      "text": "flag9 = characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 297,
+      "text": "flag17 |= characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 299,
+      "text": "if (characterAnalyzer.Check(\"?:\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 307,
+      "text": "if (characterAnalyzer.Check('-') & flag4)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 315,
+      "text": "if (characterAnalyzer.Check(\",?[]{}\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 319,
+      "text": "if (characterAnalyzer.Check(':'))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 327,
+      "text": "if (characterAnalyzer.Check('#') & flag3)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 332,
+      "text": "flag17 |= characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 334,
+      "text": "if (!flag16 && !characterAnalyzer.IsPrintable())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 338,
+      "text": "if (characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 342,
+      "text": "if (characterAnalyzer.IsSpace())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 348,
+      "text": "if (characterAnalyzer.Buffer.Position >= characterAnalyzer.Buffer.Length - 1)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 360,
+      "text": "else if (characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 366,
+      "text": "if (characterAnalyzer.Buffer.Position >= characterAnalyzer.Buffer.Length - 1)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 387,
+      "text": "flag3 = characterAnalyzer.IsWhiteBreakOrZero();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 388,
+      "text": "characterAnalyzer.Skip(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 389,
+      "text": "if (!characterAnalyzer.EndOfInput)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 391,
+      "text": "flag4 = characterAnalyzer.IsWhiteBreakOrZero(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1131,
+      "text": "private static bool IsSpace(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1133,
+      "text": "return character == ' ';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1136,
+      "text": "private static bool IsBreak(char character, out char breakChar)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1138,
+      "text": "switch (character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1147,
+      "text": "breakChar = character;"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1155,
+      "text": "private static bool IsBlank(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1157,
+      "text": "if (character != ' ')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1159,
+      "text": "return character == '\\t';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1164,
+      "text": "private static bool IsPrintable(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1166,
+      "text": "switch (character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1169,
+      "text": "if (character != '\\u0085' && (character < '\\u00a0' || character > '\\ud7ff'))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1171,
+      "text": "if (character >= '\\ue000')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1173,
+      "text": "return character <= '\\ufffd';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1640,
+      "text": "CharacterAnalyzer<StringLookAheadBuffer> characterAnalyzer = new CharacterAnalyzer<StringLookAheadBuffer>(new StringLookAheadBuffer(value));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1641,
+      "text": "if (characterAnalyzer.IsSpace() || characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1648,
+      "text": "if (value.Length == 0 || !characterAnalyzer.IsBreak(value.Length - 1))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1652,
+      "text": "else if (value.Length >= 2 && characterAnalyzer.IsBreak(value.Length - 2))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1751,
+      "text": "private void WriteBreak(char breakCharacter = '\\n')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1753,
+      "text": "if (breakCharacter == '\\n')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1759,
+      "text": "output.Write(breakCharacter);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/MergingParser.cs",
+      "line": 214,
+      "text": "throw new SemanticErrorException(@event.Value.Start, @event.Value.End, \"Unrecognized merge key pattern\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/AnchorName.cs",
+      "line": 27,
+      "text": "throw new ArgumentException(\"Anchor cannot be empty or contain disallowed characters: []{},\\nThe value was '\" + value + \"'.\", \"value\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 45,
+      "text": "private readonly CharacterAnalyzer<LookAheadBuffer> analyzer;"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 127,
+      "text": "analyzer = new CharacterAnalyzer<LookAheadBuffer>(new LookAheadBuffer(input, 1024));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 165,
+      "text": "private char ReadCurrentCharacter()"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 382,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning for the next token, found character that cannot start any token.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 466,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 548,
+      "text": "throw new SemanticErrorException(in start, cursor.Mark(), \"While scanning a version directive, did not find preceding <document end>.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 689,
+      "text": "throw new SemanticErrorException(previousAnchor.Start, previousAnchor.End, \"Anchor before sequence entry on same line is not allowed.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 797,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 975,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1056,
+      "text": "throw new SemanticErrorException(in end, cursor.Mark(), \"While scanning a literal block scalar, found extra spaces in first line.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1060,
+      "text": "throw new SemanticErrorException(in end, cursor.Mark(), \"While scanning a literal block scalar, found more spaces in lines above first content line.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1160,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a quoted scalar, found unknown escape character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1180,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a quoted scalar, found invalid Unicode character escape code.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1190,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1203,
+      "text": "builder2.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1363,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1376,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a plain scalar, found a tab character that violate indentation.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1380,
+      "text": "builder2.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1452,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1464,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a directive, found unexpected non-alphabetical character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1488,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a %YAML directive, did not find expected digit or '.' character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1535,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 22,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 24,
+      "text": "return cache.GetOrAdd(type, (Type t) => innerTypeDescriptor.GetProperties(t, container).ToList());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/WritablePropertiesTypeInspector.cs",
+      "line": 92,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableFieldsTypeInspector.cs",
+      "line": 75,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CompositeTypeInspector.cs",
+      "line": 24,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CompositeTypeInspector.cs",
+      "line": 26,
+      "text": "return typeInspectors.SelectMany([_003Cb1cb263d_002Dbe44_002D4c1a_002D933e_002D4d061ea9093c_003ENullableContext(0)] (ITypeInspector i) => i.GetProperties(type, container));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/NamingConventionTypeInspector.cs",
+      "line": 22,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/NamingConventionTypeInspector.cs",
+      "line": 24,
+      "text": "return innerTypeDescriptor.GetProperties(type, container).Select([_003Cb1cb263d_002Dbe44_002D4c1a_002D933e_002D4d061ea9093c_003ENullableContext(0)] (IPropertyDescriptor p) =>"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableAndWritablePropertiesTypeInspector.cs",
+      "line": 19,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableAndWritablePropertiesTypeInspector.cs",
+      "line": 21,
+      "text": "return from p in innerTypeDescriptor.GetProperties(type, container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadablePropertiesTypeInspector.cs",
+      "line": 92,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 13,
+      "text": "public abstract IEnumerable<IPropertyDescriptor> GetProperties(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 16,
+      "text": "public IPropertyDescriptor GetProperty(Type type, [_003C803c1201_002Db0ca_002D444d_002D853f_002D458ef77c9197_003ENullable(2)] object container, string name, [MaybeNullWhen(true)] bool ignoreUnmatched)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 18,
+      "text": "IEnumerable<IPropertyDescriptor> enumerable = from p in GetProperties(type, container)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/SocketedEffect.cs",
+      "line": 20,
+      "text": "public float StackMultiplier = 1f;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 64,
+      "text": "private static readonly Method API_RegisterMagicEffectRequirement = new Method(\"RegisterMagicEffectRequirement\", typeof(string), typeof(Func<ItemData, object, string, bool, bool, bool, bool>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 66,
+      "text": "private static readonly Method API_AddMagicItemChangedListener = new Method(\"AddMagicItemChangedListener\", typeof(Action<ItemData, string>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 68,
+      "text": "private static readonly Method API_RemoveMagicItemChangedListener = new Method(\"RemoveMagicItemChangedListener\", typeof(Action<ItemData, string>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 70,
+      "text": "private static readonly Method API_AddLootGeneratedListener = new Method(\"AddLootGeneratedListener\", typeof(Action<ItemData>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 72,
+      "text": "private static readonly Method API_RemoveLootGeneratedListener = new Method(\"RemoveLootGeneratedListener\", typeof(Action<ItemData>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 98,
+      "text": "private static readonly Method API_RegisterInventoryProvider = new Method(\"RegisterInventoryProvider\", typeof(string), typeof(Func<List<ItemData>>), typeof(Func<string, int>), typeof(Func<string, int, int>), typeof(Func<ItemData, int, int>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 100,
+      "text": "private static readonly Method API_UnregisterInventoryProvider = new Method(\"UnregisterInventoryProvider\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 102,
+      "text": "private static readonly Method API_RegisterEquipmentProvider = new Method(\"RegisterEquipmentProvider\", typeof(string), typeof(Func<Player, List<ItemData>>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 106,
+      "text": "private static readonly Method API_RegisterSacrificeFilter = new Method(\"RegisterSacrificeFilter\", typeof(string), typeof(Func<ItemData, bool>));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 154,
+      "text": "private static readonly Method API_GetItemDecoratedName = new Method(\"GetItemDecoratedName\", typeof(ItemData), typeof(string));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 156,
+      "text": "private static readonly Method API_ApplyMagicItemBackground = new Method(\"ApplyMagicItemBackground\", typeof(GameObject), typeof(GameObject), typeof(ItemData), typeof(bool));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 158,
+      "text": "private static readonly Method API_ApplyMagicItemBackgroundToIcon = new Method(\"ApplyMagicItemBackgroundToIcon\", typeof(GameObject), typeof(ItemData));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 187,
+      "text": "public static bool RegisterMagicEffectRequirement(string externalRequirement, Func<ItemData, object, string, bool, bool, bool, bool> requirement)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 214,
+      "text": "public static bool HasActiveMagicEffectOnWeapon(Player player, ItemData item, string effectType, out float effectValue)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 225,
+      "text": "public static float GetTotalActiveMagicEffectValue(Player player, ItemData item, string effectType, float scale = 1f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 233,
+      "text": "public static float GetTotalActiveMagicEffectValueForWeapon(Player player, ItemData item, string effectType, float scale = 1f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 241,
+      "text": "public static bool HasActiveMagicEffect(Player player, string effectType, ItemData item, out float effectValue)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 305,
+      "text": "public static float GetTotalActiveMagicEffectValue(this Player player, string effectType, float scale = 1f, ItemData ignoreThisItem = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 313,
+      "text": "public static bool HasActiveMagicEffect(this Player player, string effectType, out float effectValue, float scale = 1f, ItemData ignoreThisItem = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 324,
+      "text": "public static MagicItem GetMagicItem(this ItemData itemData)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 326,
+      "text": "string text = (string)(API_GetMagicItemJson.Invoke(itemData)[0] ?? \"\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 335,
+      "text": "public static bool AddMagicItemChangedListener(Action<ItemData, string> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 341,
+      "text": "public static bool RemoveMagicItemChangedListener(Action<ItemData, string> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 347,
+      "text": "public static bool AddLootGeneratedListener(Action<ItemData> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 353,
+      "text": "public static bool RemoveLootGeneratedListener(Action<ItemData> listener)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 371,
+      "text": "public static bool TryMakeMagicItem(this ItemData item, ItemRarity rarity, float luck = 0f, string? legendaryID = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 379,
+      "text": "public static MagicItem? RollMagicItem(ItemRarity rarity, ItemData item, float luck = 0f)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 398,
+      "text": "public static bool ApplyMagicItem(this ItemData item, MagicItem magicItem)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 447,
+      "text": "public static List<string> GetAvailableEffectTypes(this ItemData item, ItemRarity rarity, MagicItem? magicItem = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 476,
+      "text": "public static bool RegisterInventoryProvider(string id, Func<List<ItemData>> getItems, Func<string, int> countItem, Func<string, int, int> removeItem, Func<ItemData, int, int> removeExactItem)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 478,
+      "text": "bool flag = (bool)(API_RegisterInventoryProvider.Invoke(id, getItems, countItem, removeItem, removeExactItem)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 479,
+      "text": "logger.LogDebug($\"Registered inventory provider: {id}, {flag}\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 484,
+      "text": "public static bool UnregisterInventoryProvider(string id)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 486,
+      "text": "return (bool)(API_UnregisterInventoryProvider.Invoke(id)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 490,
+      "text": "public static bool RegisterEquipmentProvider(string id, Func<Player, List<ItemData>> getExtraEquipped)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 510,
+      "text": "public static bool RegisterSacrificeFilter(string id, Func<ItemData, bool> canSacrifice)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 554,
+      "text": "public static bool IsMagicItem(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 560,
+      "text": "public static bool TryGetRarity(this ItemData item, out ItemRarity rarity)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 574,
+      "text": "public static string GetDisplayName(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 580,
+      "text": "public static string GetDecoratedName(this ItemData item, string colorOverride = null)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 604,
+      "text": "public static string GetItemRarityColor(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 610,
+      "text": "public static bool IsEpicLootItem(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 616,
+      "text": "public static bool IsShardStone(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 622,
+      "text": "public static bool IsRunestone(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 628,
+      "text": "public static bool IsMagicCraftingMaterial(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 634,
+      "text": "public static bool IsUnidentified(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 640,
+      "text": "public static bool CanBeMagicItem(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 646,
+      "text": "public static bool HasMagicEffect(this ItemData item, string effectType, bool includeSocketed = true)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 658,
+      "text": "public static List<ItemAmount> GetEnchantCosts(this ItemData item, ItemRarity rarity)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 664,
+      "text": "public static List<ItemAmount> GetSacrificeProducts(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 683,
+      "text": "public static bool ApplyMagicItemBackground(GameObject slotRoot, GameObject equippedOverlay, ItemData item, bool inventoryGrid)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 685,
+      "text": "return (bool)(API_ApplyMagicItemBackground.Invoke(slotRoot, equippedOverlay, item, inventoryGrid)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 689,
+      "text": "public static bool ApplyMagicItemBackgroundToIcon(GameObject iconObject, ItemData item)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 96,
+      "text": "private ContainerRecyclingButtonHolder _containerRecyclingButton;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 149,
+      "text": "public static ConfigEntry<Toggle> UnstackableItemsAlwaysReturnAtLeastOneResource = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 153,
+      "text": "public static ConfigEntry<Toggle> ContainerRecyclingEnabled = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 157,
+      "text": "public static ConfigEntry<Vector3> ContainerRecyclingButtonPositionJsonString = null;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 231,
+      "text": "string text = \"2 - Inventory Recycle\";"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 232,
+      "text": "discardInvEnabled = config(text, \"Enabled\", Toggle.On, new ConfigDescription(\"If on, you'll be able to discard things inside of the player inventory.\", (AcceptableValueBase)null, new object[1]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 247,
+      "text": "returnUnknownResources = config(text, \"ReturnUnknownResources\", Toggle.Off, \"If on, discarding an item in the inventory will return resources if recipe is unknown\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 248,
+      "text": "returnEnchantedResources = config(text, \"ReturnEnchantedResources\", Toggle.On, \"If on and Epic Loot or Jewelcrafting is installed, discarding an item in the inventory will return resources for Epic Loot enchantments or Jewelcrafting gems\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 268,
+      "text": "RecyclingRate = config(\"3 - Reclaiming\", \"RecyclingRate\", 0.5f, \"Rate at which the resources are recycled. Value must be between 0 and 1.\\nThe mod always rolls *down*, so if you were supposed to get 2.5 items, you would only receive 2. If the recycling rate is 0.5 (50%), the player will receive half of the resources they would usually need to craft"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 280,
+      "text": "UnstackableItemsAlwaysReturnAtLeastOneResource = config(\"3 - Reclaiming\", \"UnstackableItemsAlwaysReturnAtLeastOneResource\", Toggle.On, \"If enabled and recycling a specific _unstackable_ item would yield 0 of a material,\\ninstead you will receive 1. If disabled, you get nothing.\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 282,
+      "text": "returnEnchantedResourcesReclaiming = config(\"3 - Reclaiming\", \"ReturnEnchantedResources\", Toggle.On, \"If on and Epic Loot or Jewelcrafting is installed, discarding an item in the inventory will return resources for Epic Loot enchantments or Jewelcrafting gems\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 294,
+      "text": "ContainerRecyclingButtonPositionJsonString = config<Vector3>(\"4 - UI\", \"ContainerButtonPosition\", new Vector3(496f, -374f, -1f), \"The last saved recycling button position stored in JSON\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 295,
+      "text": "ContainerRecyclingEnabled = config(\"4 - UI\", \"ContainerRecyclingEnabled\", Toggle.On, \"If enabled, the mod will display the container recycling button\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 296,
+      "text": "NotifyOnSalvagingImpediments = config(\"4 - UI\", \"NotifyOnSalvagingImpediments\", Toggle.On, \"If enabled and recycling a specific item runs into any issues, the mod will print a message\\nin the center of the screen (native Valheim notification). At the time of implementation,\\nthis happens in the following cases:\\n - not enough free slots in the inve"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 322,
+      "text": "InventoryGridUpdateGuiPatch.border = loadSprite(\"trashingborder.png\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 326,
+      "text": "_containerRecyclingButton = ((Component)this).gameObject.AddComponent<ContainerRecyclingButtonHolder>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 327,
+      "text": "_containerRecyclingButton.OnRecycleAllTriggered += ContainerRecyclingTriggered;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 451,
+      "text": "private void ContainerRecyclingTriggered()"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 456,
+      "text": "Container val = (Container)AccessTools.Field(typeof(InventoryGui), \"m_currentContainer\").GetValue(InventoryGui.instance);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 460,
+      "text": "Reclaimer.RecycleInventoryForAllRecipes(val.GetInventory(), GroupUtils.GetPrefabName(((Object)((Component)val).transform).name), localPlayer);"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 195,
+      "text": "public static void Tooltip_MakeItemTooltip(GameObject obj, ItemData item)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 274,
+      "text": "public static void ComplexTooltip_AddItemTooltipCreatedListener(Action<GameObject, ItemData> listener)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 290,
+      "text": "public static void ComplexTooltip_AddItemStatPreprocessor(Func<ItemData, string, string, Tuple<string, string>> itemStatPreprocessor)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 348,
+      "text": "public static string ComplexTooltip_GenerateItemSubtext(GameObject complexTooltipGO, ItemData item)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 353,
+      "text": "public static void ComplexTooltip_SetItem(GameObject complexTooltipGO, ItemData item, int quality = -1, int variant = -1)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 357,
+      "text": "public static void ComplexTooltip_SetItemNoTextBoxes(GameObject complexTooltipGO, ItemData item, int quality = -1, int variant = -1)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 43,
+      "text": "public static GameObject FindItemPrefab(ItemData rItemData)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 46,
+      "text": "if (ObjectDB.instance.TryGetItemPrefab(rItemData.m_shared, ref val) && (Object)(object)val != (Object)null)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 54,
+      "text": "ItemDrop component = item.GetComponent<ItemDrop>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 55,
+      "text": "if (!((Object)(object)component == (Object)null) && component.m_itemData?.m_shared != null && component.m_itemData.m_shared.m_name == rItemData.m_shared.m_name)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 64,
+      "text": "public static IEnumerable<int> SpentQualityLevels(Requirement req, ItemData item)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 74,
+      "text": "public static void InventoryRecycleItem(ItemData ___m_dragItem, int ___m_dragAmount, Inventory ___m_dragInventory, InventoryGui __instance, GameObject ___m_dragGo)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 90,
+      "text": "if (GroupUtils.IsPrefabExcludedInInventory(((Object)___m_dragItem.m_dropPrefab).name))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 92,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, ((Object)___m_dragItem.m_dropPrefab).name + \" is blocked via ExcludeLists.yml file [inventory excludes]\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 100,
+      "text": "Recycle_N_ReclaimPlugin.Recycle_N_ReclaimLogger.LogDebug((object)$\"Recipe stack: {recipe.m_amount} num of stacks: {___m_dragAmount / recipe.m_amount}\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 107,
+      "text": "ItemDrop val = ((itemPrefab != null) ? itemPrefab.GetComponent<ItemDrop>() : null);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 110,
+      "text": "Recipe recipe2 = ObjectDB.instance.GetRecipe(val.m_itemData);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 111,
+      "text": "bool flag = (Object)(object)recipe2 != (Object)null && Player.m_localPlayer.IsRecipeKnown(val.m_itemData.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 112,
+      "text": "bool flag2 = Player.m_localPlayer.m_knownMaterial.Contains(val.m_itemData.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 128,
+      "text": "foreach (KeyValuePair<ItemDrop, ItemData> item in (from gem in API.GetGems(___m_dragItem)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 130,
+      "text": "select ObjectDB.instance.GetItemPrefab(gem.gemPrefab).GetComponent<ItemDrop>() into itemDrop"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 131,
+      "text": "where (Object)(object)itemDrop != (Object)null"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 132,
+      "text": "select itemDrop).ToDictionary([_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemDrop itemDrop) => itemDrop, [_003C98e96a37_002Df374_002D406e_002Dbbe0_002D48fa13b28265_003ENullableContext(0)] (ItemDrop itemDrop) => itemDrop.m_itemData))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 144,
+      "text": "m_amount = (((Object)(object)recipe3 != (Object)null) ? recipe3.m_amount : item.Value.m_stack),"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 157,
+      "text": "GameObject val2 = FindItemPrefab(item2.m_resItem.m_itemData);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 162,
+      "text": "ItemData itemData = val2.GetComponent<ItemDrop>().m_itemData.Clone();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 167,
+      "text": "int num3 = Mathf.Min(item2.m_resItem.m_itemData.m_shared.m_maxStackSize, num2);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 169,
+      "text": "if (!GroupUtils.IsPrefabExcludedInInventory(Utils.GetPrefabName(val2)))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 172,
+      "text": "Inventory inventory = ((Humanoid)localPlayer).GetInventory();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 173,
+      "text": "if ((Recycle_N_ReclaimPlugin.ApplyCraftedBy.Value.IsOn() ? inventory.AddItem(((Object)val2).name, num3, item2.m_resItem.m_itemData.m_quality, item2.m_resItem.m_itemData.m_variant, localPlayer.GetPlayerID(), localPlayer.GetPlayerName(), false, false) : inventory.AddItem(((Object)val2).name, num3, item2.m_resItem.m_itemData.m_quality, item2.m_resItem"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 176,
+      "text": "ItemDrop component = Object.Instantiate<GameObject>(val2, (transform = ((Component)Player.m_localPlayer).transform).position + transform.forward + transform.up, transform.rotation).GetComponent<ItemDrop>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 177,
+      "text": "component.m_itemData = itemData;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 178,
+      "text": "component.m_itemData.m_dropPrefab = val2;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 179,
+      "text": "component.m_itemData.m_stack = num3;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 190,
+      "text": "if (___m_dragAmount == ___m_dragItem.m_stack)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 194,
+      "text": "___m_dragInventory.RemoveItem(___m_dragItem);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 198,
+      "text": "___m_dragInventory.RemoveItem(___m_dragItem, ___m_dragAmount);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"UpdateItemDrag\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 12,
+      "text": "private static void Postfix(InventoryGui __instance, ItemData ___m_dragItem, Inventory ___m_dragInventory, int ___m_dragAmount, ref GameObject ___m_dragGo)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 19,
+      "text": "if (value.IsDown() && ___m_dragItem != null && ___m_dragInventory.ContainsItem(___m_dragItem))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 21,
+      "text": "Recycle_N_ReclaimPlugin.Recycle_N_ReclaimLogger.LogDebug((object)$\"Discarding {___m_dragAmount}/{___m_dragItem.m_stack} {((Object)___m_dragItem.m_dropPrefab).name}\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/UpdateItemDragPatch.cs",
+      "line": 22,
+      "text": "Utils.InventoryRecycleItem(___m_dragItem, ___m_dragAmount, ___m_dragInventory, __instance, ___m_dragGo);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 32,
+      "text": "public delegate bool GemBreakHandler([_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(2)] ItemData container, ItemData gem, int count = 1);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 35,
+      "text": "public delegate bool ItemBreakHandler(ItemData container);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 38,
+      "text": "public delegate bool ItemMirroredHandler(ItemData item);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 170,
+      "text": "public static List<GemInfo> GetGems(ItemData item)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 175,
+      "text": "public static bool SetGems(ItemData item, [_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(new byte[] { 1, 2 })] List<GemInfo> gems)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 194,
+      "text": "public static void SetSocketsLock(ItemData item, bool enabled)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 226,
+      "text": "public static bool FillItemContainerTooltip([_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(2)] ItemData item, Transform root, bool showInteract)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 231,
+      "text": "public static Color? GetSocketableItemColor(ItemData item)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 76,
+      "text": "private readonly Stack<EmitterState> states = new Stack<EmitterState>();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 80,
+      "text": "private readonly Stack<int> indents = new Stack<int>();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 39,
+      "text": "private readonly Stack<int> indents = new Stack<int>();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 43,
+      "text": "private readonly Stack<SimpleKey> simpleKeys = new Stack<SimpleKey>();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 46,
+      "text": "private readonly Stack<ParserState> states = new Stack<ParserState>();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(InventoryGrid), \"UpdateGui\")]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 12,
+      "text": "internal static class InventoryGridUpdateGuiPatch"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 16,
+      "text": "[HarmonyAfter(new string[] { \"Azumatt.AzuAutoStore\", \"goldenrevolver.quick_stack_store\" })]"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 17,
+      "text": "internal static void Postfix(Player player, Inventory ___m_inventory, List<InventoryElement> ___m_elements)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 26,
+      "text": "if ((Object)(object)player == (Object)null || ((Humanoid)player).m_inventory != ___m_inventory)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 30,
+      "text": "int width = ___m_inventory.GetWidth();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 32,
+      "text": "for (int i = 0; i < ___m_inventory.GetHeight(); i++)"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 11,
+      "text": "internal class MaterialConversion"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 19,
+      "text": "public MaterialConversionType Type;"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 21,
+      "text": "public List<MaterialConversionRequirement> Resources = new List<MaterialConversionRequirement>();"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 23,
+      "text": "internal static readonly Method API_AddMaterialConversion = new Method(\"AddMaterialConversion\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 25,
+      "text": "internal static readonly Method API_UpdateMaterialConversion = new Method(\"UpdateMaterialConversion\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 27,
+      "text": "internal static readonly List<MaterialConversion> MaterialConversions = new List<MaterialConversion>();"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 29,
+      "text": "[Description(\"Creates a new material conversion definition.\")]"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 30,
+      "text": "public MaterialConversion(MaterialConversionType type, string name, string product, int amount = 1)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 36,
+      "text": "MaterialConversions.Add(this);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 39,
+      "text": "public MaterialConversion()"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 45,
+      "text": "foreach (MaterialConversion item in new List<MaterialConversion>(MaterialConversions))"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 55,
+      "text": "if (!(API_AddMaterialConversion.Invoke(text)[0] is string value))"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 59,
+      "text": "MaterialConversions.Remove(this);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 61,
+      "text": "EpicLoot.logger.LogDebug(\"Registered material conversion: \" + Name);"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 72,
+      "text": "bool flag = (bool)(API_UpdateMaterialConversion.Invoke(value, text)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversion.cs",
+      "line": 73,
+      "text": "EpicLoot.logger.LogDebug($\"Updated material conversion: {Name}, {flag}\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 138,
+      "text": "private static readonly Method API_IsMagicCraftingMaterial = new Method(\"IsMagicCraftingMaterial\");"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 164,
+      "text": "MaterialConversion.RegisterAll();"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 628,
+      "text": "public static bool IsMagicCraftingMaterial(this ItemData item)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/EpicLoot.cs",
+      "line": 630,
+      "text": "return (bool)(API_IsMagicCraftingMaterial.Invoke(item)[0] ?? ((object)false));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversionRequirement.cs",
+      "line": 8,
+      "text": "internal class MaterialConversionRequirement"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversionRequirement.cs",
+      "line": 14,
+      "text": "public MaterialConversionRequirement(string item, int amount = 1)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversionRequirement.cs",
+      "line": 20,
+      "text": "public MaterialConversionRequirement()"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Helpers.cs",
+      "line": 29,
+      "text": "public static void Add(this List<MaterialConversionRequirement> list, string item, int amount = 1)"
+    },
+    {
+      "file": "csharp/EpicLootAPI/Helpers.cs",
+      "line": 31,
+      "text": "list.Add(new MaterialConversionRequirement(item, amount));"
+    },
+    {
+      "file": "csharp/EpicLootAPI/MaterialConversionType.cs",
+      "line": 8,
+      "text": "internal enum MaterialConversionType"
+    },
+    {
+      "file": "csharp/EpicLootAPI/SecretStashType.cs",
+      "line": 8,
+      "text": "Materials,"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 280,
+      "text": "UnstackableItemsAlwaysReturnAtLeastOneResource = config(\"3 - Reclaiming\", \"UnstackableItemsAlwaysReturnAtLeastOneResource\", Toggle.On, \"If enabled and recycling a specific _unstackable_ item would yield 0 of a material,\\ninstead you will receive 1. If disabled, you get nothing.\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 283,
+      "text": "PreventZeroResourceYields = config(\"3 - Reclaiming\", \"PreventZeroResourceYields\", Toggle.On, \"If enabled and recycling an item that would yield 0 of any material,\\ninstead you will receive 1. If disabled, you get nothing.\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 322,
+      "text": "InventoryGridUpdateGuiPatch.border = loadSprite(\"trashingborder.png\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 335,
+      "text": "internal static Sprite loadSprite(string name)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 339,
+      "text": "Texture2D val = loadTexture(name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 342,
+      "text": "return Sprite.Create(val, new Rect(0f, 0f, (float)((Texture)val).width, (float)((Texture)val).height), Vector2.zero);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 347,
+      "text": "private static Texture2D loadTexture(string name)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim/Recycle_N_ReclaimPlugin.cs",
+      "line": 353,
+      "text": "Texture2D val = new Texture2D(0, 0);"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 133,
+      "text": "public static Sprite GetItemBackgroundSprite()"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 163,
+      "text": "public static Button DiamondButton_Create(Transform parent, string name, [CanBeNull] Sprite icon)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 204,
+      "text": "public static PlayerPanelTabData PlayerPanel_AddTab(string tabID, Sprite tabIcon, string tabTitleText, Action<int> onTabSelected)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 224,
+      "text": "public static WorkbenchTabData Workbench_AddWorkbenchTab(string tabID, Sprite tabIcon, string tabTitleText, Action<int> onTabSelected)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 229,
+      "text": "public static WorkbenchTabData Workbench_AddVanillaWorkbenchTab(string tabID, Sprite tabIcon, string tabTitleText, Action<int> onTabSelected)"
+    },
+    {
+      "file": "csharp/Auga/API.cs",
+      "line": 340,
+      "text": "public static void ComplexTooltip_SetIcon(GameObject complexTooltipGO, Sprite icon)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 17,
+      "text": "public static Texture2D LoadTextureFromResources(string pathName, string folderName = \"Assets\")"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 24,
+      "text": "Texture2D val = new Texture2D(2, 2);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 25,
+      "text": "Texture2D result = new Texture2D(2, 2);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 92,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, ((Object)___m_dragItem.m_dropPrefab).name + \" is blocked via ExcludeLists.yml file [inventory excludes]\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 112,
+      "text": "bool flag2 = Player.m_localPlayer.m_knownMaterial.Contains(val.m_itemData.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 115,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_no_material_recipes\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 136,
+      "text": "bool flag4 = Player.m_localPlayer.m_knownMaterial.Contains(item.Value.m_shared.m_name);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches/Utils.cs",
+      "line": 139,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_no_material_recipes\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 17,
+      "text": "public class GemInfo(string gemPrefab, Sprite gemSprite, Dictionary<string, float> gemEffects, Dictionary<string, float[]> gemEffectsPowerRange, [_003C96fffd91_002Dd0cc_002D4e8f_002D89c5_002Da3d60f7cf3d4_003ENullable(new byte[] { 2, 1 })] Dictionary<string, uint> gemSeed = null)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 24,
+      "text": "public readonly Sprite gemSprite = gemSprite;"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 60,
+      "text": "public static GameObject CreateNecklaceFromTemplate(string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 70,
+      "text": "public static GameObject CreateRingFromTemplate(string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 83,
+      "text": "public static List<GameObject> AddGems(string type, string colorName, Material material, Color color)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 93,
+      "text": "public static GameObject AddDestructibleFromTemplate(string type, string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 103,
+      "text": "public static GameObject AddUncutFromTemplate(string type, string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 113,
+      "text": "public static GameObject AddAndRegisterUncutFromTemplate(string type, string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 123,
+      "text": "public static GameObject AddShardFromTemplate(string type, string colorName, Material material)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 133,
+      "text": "public static GameObject[] AddTieredGemFromTemplate(string type, string colorName, Material material, Color color)"
+    },
+    {
+      "file": "csharp/Jewelcrafting/API.cs",
+      "line": 180,
+      "text": "public static Sprite GetSocketBorder()"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 14,
+      "text": "public static Sprite border;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGridUpdateGuiPatch.cs",
+      "line": 96,
+      "text": "val.sprite = border;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.MarkAsTrash/InventoryGuiHidePatch.cs",
+      "line": 13,
+      "text": "if (__instance.m_animator.GetBool(\"visible\"))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 85,
+      "text": "MessageHud.instance.ShowMessage((MessageType)2, stringBuilder.ToString(), 0, (Sprite)null, false, true);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 118,
+      "text": "AnalyzeMaterialYieldForItem(analysisContext);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 283,
+      "text": "private static void AnalyzeMaterialYieldForItem(RecyclingAnalysisContext analysisContext)"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 339,
+      "text": "if ((!Player.m_localPlayer.m_knownMaterial.Contains(val.m_shared.m_name) && !Recycle_N_ReclaimPlugin.AllowRecyclingUnknownRecipes.Value.IsOn()) || ((Object)(object)recipe != (Object)null && !flag))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.Recycling/Reclaimer.cs",
+      "line": 381,
+      "text": "if ((!Player.m_localPlayer.m_knownMaterial.Contains(item4.Value.m_shared.m_name) && !Recycle_N_ReclaimPlugin.AllowRecyclingUnknownRecipes.Value.IsOn()) || (!(((Object)(object)val == (Object)null) | flag) && !Recycle_N_ReclaimPlugin.AllowRecyclingUnknownRecipes.Value.IsOn()))"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 77,
+      "text": "Texture2D val = Utils.LoadTextureFromResources(\"RecyclingPanel.png\");"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 78,
+      "text": "Sprite tabIcon = Sprite.Create(val, new Rect(0f, 0f, (float)((Texture)val).width, (float)((Texture)val).height), new Vector2(0f, 0f), 100f);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 225,
+      "text": "component.sprite = context.Item.GetIcon();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 361,
+      "text": "instance.m_craftingStationIcon.sprite = currentCraftingStation.m_icon;"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 391,
+      "text": "recipeIcon.sprite = val.Recipe.m_item.m_itemData.m_shared.m_icons[itemData?.m_variant ?? igui.get_m_selectedVariant()];"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 543,
+      "text": "component.sprite = entry.RecipeItemData.GetIcon();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.GamePatches.UI/StationRecyclingTabHolder.cs",
+      "line": 589,
+      "text": "component.sprite = entry.RecipeItemData.GetIcon();"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.Managers/RecycleUndoManager.cs",
+      "line": 48,
+      "text": "((Character)localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_undo_expired\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.Managers/RecycleUndoManager.cs",
+      "line": 57,
+      "text": "((Character)localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_undo_failed\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.Managers/RecycleUndoManager.cs",
+      "line": 84,
+      "text": "((Character)localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_undo_failed\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/Recycle_N_Reclaim.Managers/RecycleUndoManager.cs",
+      "line": 89,
+      "text": "((Character)localPlayer).Message((MessageType)2, Recycle_N_ReclaimPlugin.Localize(\"$azumatt_recycle_n_reclaim_undo_success\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4397,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27726,
+      "text": "\"name\": \"gemSprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 27727,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29434,
+      "text": "\"name\": \"API_IsMagicCraftingMaterial\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33496,
+      "text": "\"name\": \"EpicLootAPI.MaterialConversionType\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33518,
+      "text": "\"type\": \"EpicLootAPI.MaterialConversionType\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33525,
+      "text": "\"type\": \"EpicLootAPI.MaterialConversionType\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33532,
+      "text": "\"type\": \"EpicLootAPI.MaterialConversionType\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33542,
+      "text": "\"name\": \"EpicLootAPI.MaterialConversionRequirement\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33590,
+      "text": "\"name\": \"EpicLootAPI.MaterialConversion\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33642,
+      "text": "\"type\": \"EpicLootAPI.MaterialConversionType\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33649,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CEpicLootAPI.MaterialConversionRequirement\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33655,
+      "text": "\"name\": \"API_AddMaterialConversion\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33662,
+      "text": "\"name\": \"API_UpdateMaterialConversion\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33669,
+      "text": "\"name\": \"MaterialConversions\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33670,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CEpicLootAPI.MaterialConversion\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 33989,
+      "text": "\"name\": \"Materials\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35762,
+      "text": "\"signature\": \"UnityEngine.Sprite Recycle_N_Reclaim.Recycle_N_ReclaimPlugin::loadSprite(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35764,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35778,
+      "text": "\"signature\": \"UnityEngine.Texture2D Recycle_N_Reclaim.Recycle_N_ReclaimPlugin::loadTexture(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35780,
+      "text": "\"returnType\": \"UnityEngine.Texture2D\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 37797,
+      "text": "\"signature\": \"UnityEngine.Texture2D Recycle_N_Reclaim.GamePatches.Utils::LoadTextureFromResources(System.String,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 37799,
+      "text": "\"returnType\": \"UnityEngine.Texture2D\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 40166,
+      "text": "\"signature\": \"System.Void Recycle_N_Reclaim.GamePatches.Recycling.Reclaimer::AnalyzeMaterialYieldForItem(Recycle_N_Reclaim.GamePatches.Recycling.RecyclingAnalysisContext)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82455,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::CreateNecklaceFromTemplate(System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82464,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82465,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82495,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::CreateRingFromTemplate(System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82504,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82505,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82555,
+      "text": "\"signature\": \"System.Collections.Generic.List\\u00601\\u003CUnityEngine.GameObject\\u003E Jewelcrafting.API::AddGems(System.String,System.String,UnityEngine.Material,UnityEngine.Color)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82568,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82569,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82607,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::AddDestructibleFromTemplate(System.String,System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82620,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82621,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82655,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::AddUncutFromTemplate(System.String,System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82668,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82669,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82703,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::AddAndRegisterUncutFromTemplate(System.String,System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82716,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82717,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82751,
+      "text": "\"signature\": \"UnityEngine.GameObject Jewelcrafting.API::AddShardFromTemplate(System.String,System.String,UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82764,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82765,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82799,
+      "text": "\"signature\": \"UnityEngine.GameObject[] Jewelcrafting.API::AddTieredGemFromTemplate(System.String,System.String,UnityEngine.Material,UnityEngine.Color)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82812,
+      "text": "\"name\": \"material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82813,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83031,
+      "text": "\"signature\": \"UnityEngine.Sprite Jewelcrafting.API::GetSocketBorder()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83033,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83237,
+      "text": "\"signature\": \"System.Void Jewelcrafting.API/GemInfo::.ctor(System.String,UnityEngine.Sprite,System.Collections.Generic.Dictionary\\u00602\\u003CSystem.String,System.Single\\u003E,System.Collections.Generic.Dictionary\\u00602\\u003CSystem.String,System.Single[]\\u003E,System.Collections.Generic.Dictionary\\u00602\\u003CSystem.String,System.UInt32\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83246,
+      "text": "\"name\": \"gemSprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83247,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83837,
+      "text": "\"signature\": \"UnityEngine.Sprite Auga.API::GetItemBackgroundSprite()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83839,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83972,
+      "text": "\"signature\": \"UnityEngine.UI.Button Auga.API::DiamondButton_Create(UnityEngine.Transform,System.String,UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83986,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84180,
+      "text": "\"signature\": \"Auga.PlayerPanelTabData Auga.API::PlayerPanel_AddTab(System.String,UnityEngine.Sprite,System.String,System.Action\\u00601\\u003CSystem.Int32\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84190,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84256,
+      "text": "\"signature\": \"Auga.WorkbenchTabData Auga.API::Workbench_AddWorkbenchTab(System.String,UnityEngine.Sprite,System.String,System.Action\\u00601\\u003CSystem.Int32\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84266,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84284,
+      "text": "\"signature\": \"Auga.WorkbenchTabData Auga.API::Workbench_AddVanillaWorkbenchTab(System.String,UnityEngine.Sprite,System.String,System.Action\\u00601\\u003CSystem.Int32\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84294,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84781,
+      "text": "\"signature\": \"System.Void Auga.API::ComplexTooltip_SetIcon(UnityEngine.GameObject,UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 84791,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 87403,
+      "text": "\"signature\": \"System.Boolean EpicLootAPI.EpicLoot::IsMagicCraftingMaterial(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88052,
+      "text": "\"signature\": \"System.Void EpicLootAPI.Helpers::Add(System.Collections.Generic.List\\u00601\\u003CEpicLootAPI.MaterialConversionRequirement\\u003E,System.String,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 88058,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CEpicLootAPI.MaterialConversionRequirement\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89072,
+      "text": "\"signature\": \"System.Void EpicLootAPI.MaterialConversionRequirement::.ctor(System.String,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89092,
+      "text": "\"signature\": \"System.Void EpicLootAPI.MaterialConversionRequirement::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 89103,
+      "text": "\"signature\": \"System.Void EpicLootAPI.MaterialConversion::.ctor(EpicLootAPI.MaterialConversionType,System.String,System.String,System.Int32)\","
+    }
+  ]
+}

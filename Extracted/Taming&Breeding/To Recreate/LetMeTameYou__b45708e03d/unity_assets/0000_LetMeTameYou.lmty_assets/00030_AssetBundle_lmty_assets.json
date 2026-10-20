@@ -1,0 +1,426 @@
+{
+  "m_Name": "lmty_assets",
+  "m_PreloadTable": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -8408031071810994355
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7420537356336560937
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8206672791378357589
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -7980026259691147867
+    },
+    {
+      "m_FileID": 1,
+      "m_PathID": 6
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8830399635378246434
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8348251254355672145
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6766405830603527344
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6577273127180073922
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5879216471019438463
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4929274236611494294
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4850512016903265157
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4408988584386159041
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4130422179159141618
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3360499203341825839
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3215113687407556328
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2802781245273507780
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2738417110629585175
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2071691724490353217
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -1595017369407133874
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -1260455158007988758
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -711060219038796087
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 89324583943775895
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 912519225330899964
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1031200657461445095
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1194892700068173884
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1332066325252503773
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2907436768670406010
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3128912771433658546
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4467893445354652928
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4943423701212729458
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5085537835647792513
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5174628962119999810
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5655801327854570194
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6177413767701056349
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6339088040716100688
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7327573337360734397
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7337749255747052043
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7540311576752983218
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7740393368292195206
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6528674481901690810
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6660897017818528663
+    },
+    {
+      "m_FileID": 1,
+      "m_PathID": 6
+    },
+    {
+      "m_FileID": 1,
+      "m_PathID": 7
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6766405830603527344
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6719621158903103615
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6483485409502838713
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4929274236611494294
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4850512016903265157
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4516185462333704289
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3826085976610438171
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3215113687407556328
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3068949790059954802
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2802781245273507780
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2738417110629585175
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2398715659923944291
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2179744616865472330
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -2071691724490353217
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -1713858751931311857
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -1282883312166926902
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1031200657461445095
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1855051983229156857
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3128912771433658546
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3680752095752745093
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4075783952233880069
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4196159067935696004
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4467893445354652928
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4586685034417452220
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4778104735068842861
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4943423701212729458
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4947187105966918028
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5174628962119999810
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6066598371517989514
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6339088040716100688
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6967988756625867017
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7196409882079820079
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7327573337360734397
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7740393368292195206
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8787795989032434509
+    }
+  ],
+  "m_Container": [
+    [
+      "assets/lmty/lmty_tamingtool.prefab",
+      {
+        "preloadIndex": 4,
+        "preloadSize": 36,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -1260455158007988758
+        }
+      }
+    ],
+    [
+      "assets/lmty/lmty_tamingtootest1.prefab",
+      {
+        "preloadIndex": 42,
+        "preloadSize": 37,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": 6967988756625867017
+        }
+      }
+    ],
+    [
+      "assets/lmty/newchickenegg.png",
+      {
+        "preloadIndex": 40,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -6528674481901690810
+        }
+      }
+    ],
+    [
+      "assets/lmty/newchickenegg.png",
+      {
+        "preloadIndex": 40,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": 6660897017818528663
+        }
+      }
+    ],
+    [
+      "assets/lmty/newdragonegg.png",
+      {
+        "preloadIndex": 0,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": 7420537356336560937
+        }
+      }
+    ],
+    [
+      "assets/lmty/newdragonegg.png",
+      {
+        "preloadIndex": 0,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -8408031071810994355
+        }
+      }
+    ],
+    [
+      "assets/lmty/newrockyegg.png",
+      {
+        "preloadIndex": 2,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -8206672791378357589
+        }
+      }
+    ],
+    [
+      "assets/lmty/newrockyegg.png",
+      {
+        "preloadIndex": 2,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -7980026259691147867
+        }
+      }
+    ]
+  ],
+  "m_MainAsset": {
+    "preloadIndex": 0,
+    "preloadSize": 0,
+    "asset": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_RuntimeCompatibility": 1,
+  "m_AssetBundleName": "lmty_assets",
+  "m_Dependencies": [],
+  "m_IsStreamedSceneAssetBundle": false,
+  "m_ExplicitDataLayout": 0,
+  "m_PathFlags": 7,
+  "m_SceneHashes": []
+}

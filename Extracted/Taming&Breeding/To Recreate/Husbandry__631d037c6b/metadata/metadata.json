@@ -1,0 +1,4387 @@
+﻿{
+  "input": "Husbandry.dll",
+  "assembly": "Husbandry, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.1.0.0",
+  "modules": [
+    {
+      "name": "Husbandry.dll",
+      "mvid": "0c53463e-04b6-4c05-8881-5f1463af721f"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_utils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null",
+    "netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETStandard,Version=v2.1"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Standard 2.1"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        "Husbandry"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        "Release"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.1.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyInformationalVersionAttribute",
+      "arguments": [
+        "1.1.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "Husbandry"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "Husbandry"
+      ],
+      "properties": [],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RefSafetyRulesAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.AttributeUsageAttribute",
+          "arguments": [
+            "2"
+          ],
+          "properties": [
+            {
+              "name": "AllowMultiple",
+              "value": "False"
+            },
+            {
+              "name": "Inherited",
+              "value": "False"
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Version",
+          "type": "System.Int32",
+          "attributes": "Public, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.ModInfo",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Guid",
+          "type": "System.String",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "dafini.husbandry",
+          "decorators": []
+        },
+        {
+          "name": "Name",
+          "type": "System.String",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "Husbandry",
+          "decorators": []
+        },
+        {
+          "name": "Version",
+          "type": "System.String",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "1.1.0",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Plugin",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "dafini.husbandry",
+            "Husbandry",
+            "1.1.0"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "BepInEx.BepInProcess",
+          "arguments": [
+            "valheim.exe"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "BepInEx.BepInProcess",
+          "arguments": [
+            "valheim_server.exe"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "_harmony",
+          "type": "HarmonyLib.Harmony",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_started",
+          "type": "System.Boolean",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Util.Log",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Source",
+          "type": "BepInEx.Logging.ManualLogSource",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Patches.BreedPatch",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Procreation",
+            "Procreate"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u003CSkipped\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Skipped",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Patches.ShoveePatch",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Tameable",
+            "Interact"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u003CArmed\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Armed",
+          "type": "System.Boolean",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Patches.TickPatch",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "BaseAI",
+            "UpdateAI"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Clocks",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "PerSecond",
+          "type": "System.Int64",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "10000000",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Courtship",
+      "baseType": "System.Object",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "_last",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E",
+          "attributes": "Private, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "Count",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Mending",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Pasture",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Slice",
+          "type": "System.Int32",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "128",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Pasture/Cursor",
+      "baseType": "System.ValueType",
+      "visibility": "NestedAssembly, SequentialLayout, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Prefab",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Index",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Passes",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Verdict",
+      "baseType": "System.Enum",
+      "visibility": "Sealed",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "value__",
+          "type": "System.Int32",
+          "attributes": "Public, SpecialName, RTSpecialName",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "NotOurs",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "0",
+          "decorators": []
+        },
+        {
+          "name": "Expecting",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "1",
+          "decorators": []
+        },
+        {
+          "name": "Alone",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "2",
+          "decorators": []
+        },
+        {
+          "name": "Hungry",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "3",
+          "decorators": []
+        },
+        {
+          "name": "Capped",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "4",
+          "decorators": []
+        },
+        {
+          "name": "Courting",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "5",
+          "decorators": []
+        },
+        {
+          "name": "Conceives",
+          "type": "Husbandry.Offline.Verdict",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "6",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Quickening",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Steward",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Interval",
+          "type": "System.Single",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "1",
+          "decorators": []
+        },
+        {
+          "name": "\u003CRunning\u003Ek__BackingField",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CConsidered\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CAttended\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CHealed\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CCourted\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CConceived\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CCapped\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "_next",
+          "type": "System.Single",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_cursor",
+          "type": "Husbandry.Offline.Pasture/Cursor",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_tameables",
+          "type": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Species",
+          "type": "Husbandry.Herd.Kinds",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Courting",
+          "type": "Husbandry.Offline.Courtship",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Settled",
+          "type": "Husbandry.Herd.Census",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Building",
+          "type": "System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Census/Head\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Present",
+          "type": "System.Collections.Generic.HashSet\u00601\u003CSystem.Int64\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Batch",
+          "type": "System.Collections.Generic.List\u00601\u003CZDO\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "Running",
+          "type": "System.Boolean",
+          "attributes": []
+        },
+        {
+          "name": "Considered",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Attended",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Healed",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Courted",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Conceived",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Capped",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Offline.Untended",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Idle.Cadence",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Idle.Drowse",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Banks",
+          "type": "System.Runtime.CompilerServices.ConditionalWeakTable\u00602\u003CBaseAI,Husbandry.Idle.Drowse/Holder\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "\u003CSkipped\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CThought\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CDozing\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Skipped",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Thought",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Dozing",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Idle.Drowse/Holder",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Nap",
+          "type": "Husbandry.Idle.Nap",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Idle.Nap",
+      "baseType": "System.ValueType",
+      "visibility": "SequentialLayout, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Banked",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Missed",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Beast",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Bumping",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Key",
+          "type": "System.String",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "husbandry_solid",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Cap",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Census",
+      "baseType": "System.Object",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "_by",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E",
+          "attributes": "Private, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "\u003CTakenAt\u003Ek__BackingField",
+          "type": "System.Single",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CCounted\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "TakenAt",
+          "type": "System.Single",
+          "attributes": []
+        },
+        {
+          "name": "Counted",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Species",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Census/Head",
+      "baseType": "System.ValueType",
+      "visibility": "NestedAssembly, SequentialLayout, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Prefab",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Where",
+          "type": "UnityEngine.Vector3",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Tamed",
+          "type": "System.Boolean",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Kinds",
+      "baseType": "System.Object",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "_by",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E",
+          "attributes": "Private, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "Count",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Kinds/Kind",
+      "baseType": "System.ValueType",
+      "visibility": "NestedAssembly, SequentialLayout, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Name",
+          "type": "System.String",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Hash",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Breeds",
+          "type": "System.Boolean",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "FedDuration",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "PregnancyDuration",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "RequiredLovePoints",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "MaxCreatures",
+          "type": "System.Int32",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "TotalCheckRange",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "PartnerCheckRange",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "MaxHealth",
+          "type": "System.Single",
+          "attributes": "Assembly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Muster",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Taken",
+          "type": "Husbandry.Herd.Census",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Heads",
+          "type": "System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Census/Head\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "\u003CTakings\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Counted",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Species",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Takings",
+          "type": "System.Int32",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Herd.Shoving",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Every",
+          "type": "System.Single",
+          "attributes": "Assembly, Static, Literal, HasDefault",
+          "constant": "0.5",
+          "decorators": []
+        },
+        {
+          "name": "\u003CPhased\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CSolid\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CSweeps\u003Ek__BackingField",
+          "type": "System.Int32",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "_next",
+          "type": "System.Single",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Known",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "Phased",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Solid",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Sweeps",
+          "type": "System.Int32",
+          "attributes": []
+        },
+        {
+          "name": "Wanted",
+          "type": "System.Boolean",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Config.HusbandryConfig",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "Enabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "ThrottleIdle",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "NearRange",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "FarRange",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "MidSkip",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Int32\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "FarSkip",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Int32\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "CheapCensus",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "CensusInterval",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "SoftCap",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Int32\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Shoving",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "OfflineUpkeep",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "OfflineHealing",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "HealPerSecond",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "OfflineBreeding",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "CourtingInterval",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "OfflineHunger",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "ForgetAfter",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "Verbose",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Assembly, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Commands.HusbandryCommand",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Husbandry.Commands.HusbandryCommand/\u003C\u003Ec",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Sealed, Serializable, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u003C\u003E9",
+          "type": "Husbandry.Commands.HusbandryCommand/\u003C\u003Ec",
+          "attributes": "Public, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "\u003C\u003E9__0_0",
+          "type": "Terminal/ConsoleEvent",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor(System.Int32)",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Void Husbandry.Plugin::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 21
+    },
+    {
+      "signature": "System.Void Husbandry.Plugin::Update()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 27
+    },
+    {
+      "signature": "System.Void Husbandry.Plugin::OnDestroy()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void Husbandry.Plugin::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Util.Log::Info(System.String)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "what",
+          "type": "System.String"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void Husbandry.Util.Log::Warn(System.String)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "what",
+          "type": "System.String"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void Husbandry.Util.Log::Debug(System.String)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "what",
+          "type": "System.String"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 14
+    },
+    {
+      "signature": "System.Int32 Husbandry.Patches.BreedPatch::get_Skipped()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Patches.BreedPatch::set_Skipped(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Patches.BreedPatch::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.BreedPatch::Prepare()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 14
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.BreedPatch::Prefix(Procreation)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Procreation"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPrefix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 76
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.ShoveePatch::Prepare()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.ShoveePatch::get_Armed()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Patches.ShoveePatch::set_Armed(System.Boolean)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Patches.ShoveePatch::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Patches.ShoveePatch::Postfix()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.ShoveePatch::Prefix(Tameable,Humanoid,System.Boolean,System.Boolean,System.Boolean\u0026)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Tameable"
+        },
+        {
+          "name": "user",
+          "type": "Humanoid"
+        },
+        {
+          "name": "hold",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "alt",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "__result",
+          "type": "System.Boolean\u0026"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPrefix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 58
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.TickPatch::Prepare()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Boolean Husbandry.Patches.TickPatch::Prefix(BaseAI,System.Single\u0026,System.Boolean\u0026)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "BaseAI"
+        },
+        {
+          "name": "dt",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "__result",
+          "type": "System.Boolean\u0026"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPrefix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "HarmonyLib.HarmonyPriority",
+          "arguments": [
+            "200"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 11
+    },
+    {
+      "signature": "System.Double Husbandry.Offline.Clocks::Between(System.Int64,System.Int64)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Double",
+      "parameters": [
+        {
+          "name": "then",
+          "type": "System.Int64"
+        },
+        {
+          "name": "now",
+          "type": "System.Int64"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Clocks::Elapsed(System.Int64,System.Int64,System.Double)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "stamp",
+          "type": "System.Int64"
+        },
+        {
+          "name": "now",
+          "type": "System.Int64"
+        },
+        {
+          "name": "span",
+          "type": "System.Double"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Int64 Husbandry.Offline.Clocks::Ago(System.Int64,System.Double)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Int64",
+      "parameters": [
+        {
+          "name": "now",
+          "type": "System.Int64"
+        },
+        {
+          "name": "seconds",
+          "type": "System.Double"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Courtship::get_Count()",
+      "visibility": "Assembly, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Courtship::Clear()",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "ZDOID"
+        },
+        {
+          "name": "now",
+          "type": "System.Single"
+        },
+        {
+          "name": "interval",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 16
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "ZDOID"
+        },
+        {
+          "name": "now",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Courtship::Forget(System.Single,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Int32",
+      "parameters": [
+        {
+          "name": "now",
+          "type": "System.Single"
+        },
+        {
+          "name": "after",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 51
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Courtship::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Single Husbandry.Offline.Mending::Restored(System.Single,System.Single,System.Single,System.Double)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Single",
+      "parameters": [
+        {
+          "name": "health",
+          "type": "System.Single"
+        },
+        {
+          "name": "max",
+          "type": "System.Single"
+        },
+        {
+          "name": "perSecond",
+          "type": "System.Single"
+        },
+        {
+          "name": "seconds",
+          "type": "System.Double"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 35
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Mending::Worth(System.Single,System.Single)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "before",
+          "type": "System.Single"
+        },
+        {
+          "name": "after",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "Husbandry.Offline.Pasture/Cursor Husbandry.Offline.Pasture::Next(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "Husbandry.Offline.Pasture/Cursor",
+      "parameters": [
+        {
+          "name": "at",
+          "type": "Husbandry.Offline.Pasture/Cursor"
+        },
+        {
+          "name": "prefabCount",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 37
+    },
+    {
+      "signature": "Husbandry.Offline.Pasture/Cursor Husbandry.Offline.Pasture::Continued(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "Husbandry.Offline.Pasture/Cursor",
+      "parameters": [
+        {
+          "name": "at",
+          "type": "Husbandry.Offline.Pasture/Cursor"
+        },
+        {
+          "name": "reached",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 15
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Pasture::Valid(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "at",
+          "type": "Husbandry.Offline.Pasture/Cursor"
+        },
+        {
+          "name": "prefabCount",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 20
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Pasture::Wrapped(Husbandry.Offline.Pasture/Cursor,Husbandry.Offline.Pasture/Cursor)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "before",
+          "type": "Husbandry.Offline.Pasture/Cursor"
+        },
+        {
+          "name": "after",
+          "type": "Husbandry.Offline.Pasture/Cursor"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E",
+      "parameters": [
+        {
+          "name": "prefabs",
+          "type": "System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 37
+    },
+    {
+      "signature": "Husbandry.Offline.Verdict Husbandry.Offline.Quickening::Judge(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "Husbandry.Offline.Verdict",
+      "parameters": [
+        {
+          "name": "tamed",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "pregnant",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "havePartner",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "hungry",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "underCap",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "lovePoints",
+          "type": "System.Int32"
+        },
+        {
+          "name": "required",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 34
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Quickening::Carrying(System.Int64)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "stamp",
+          "type": "System.Int64"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Quickening::Courts(Husbandry.Offline.Verdict)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "verdict",
+          "type": "Husbandry.Offline.Verdict"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Quickening::Conceives(Husbandry.Offline.Verdict)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "verdict",
+          "type": "Husbandry.Offline.Verdict"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Quickening::Company(System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "sameKindNearby",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Steward::get_Running()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Running(System.Boolean)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Considered()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Considered(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Attended()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Attended(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Healed()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Healed(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Courted()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Courted(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Conceived()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Conceived(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Offline.Steward::get_Capped()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::set_Capped(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 31
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Steward::ShouldRun(System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "isServer",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "enabled",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Begin()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Tick()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 36
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Gather(ZNet)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "net",
+          "type": "ZNet"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 35
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Steward::Prefabs()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 64
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Slice(ZDOMan)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "zdoMan",
+          "type": "ZDOMan"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 69
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Consider(ZDO,Husbandry.Herd.Kinds/Kind)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "zdo",
+          "type": "ZDO"
+        },
+        {
+          "name": "kind",
+          "type": "Husbandry.Herd.Kinds/Kind"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 68
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Mend(ZDO,Husbandry.Herd.Kinds/Kind)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "zdo",
+          "type": "ZDO"
+        },
+        {
+          "name": "kind",
+          "type": "Husbandry.Herd.Kinds/Kind"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 36
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::Breed(ZDO,Husbandry.Herd.Kinds/Kind,UnityEngine.Vector3,System.Int64)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "zdo",
+          "type": "ZDO"
+        },
+        {
+          "name": "kind",
+          "type": "Husbandry.Herd.Kinds/Kind"
+        },
+        {
+          "name": "where",
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "now",
+          "type": "System.Int64"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 135
+    },
+    {
+      "signature": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Offline.Steward::Report()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 196
+    },
+    {
+      "signature": "System.Void Husbandry.Offline.Steward::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 13
+    },
+    {
+      "signature": "System.Boolean Husbandry.Offline.Untended::Yes(System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "hasOwner",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "ownerIsPresent",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Int32 Husbandry.Idle.Cadence::Every(System.Single,System.Single,System.Single,System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Int32",
+      "parameters": [
+        {
+          "name": "distance",
+          "type": "System.Single"
+        },
+        {
+          "name": "near",
+          "type": "System.Single"
+        },
+        {
+          "name": "far",
+          "type": "System.Single"
+        },
+        {
+          "name": "midSkip",
+          "type": "System.Int32"
+        },
+        {
+          "name": "farSkip",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 30
+    },
+    {
+      "signature": "System.Single Husbandry.Idle.Cadence::FromCamera(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector3)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Single",
+      "parameters": [
+        {
+          "name": "where",
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "havePlayer",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "player",
+          "type": "UnityEngine.Vector3"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Int32 Husbandry.Idle.Drowse::get_Skipped()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse::set_Skipped(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Idle.Drowse::get_Thought()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse::set_Thought(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Idle.Drowse::get_Dozing()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse::set_Dozing(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single\u0026)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "ai",
+          "type": "BaseAI"
+        },
+        {
+          "name": "dt",
+          "type": "System.Single\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 72
+    },
+    {
+      "signature": "System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "ai",
+          "type": "BaseAI"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 54
+    },
+    {
+      "signature": "System.Single Husbandry.Idle.Drowse::Distance(BaseAI)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Single",
+      "parameters": [
+        {
+          "name": "ai",
+          "type": "BaseAI"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 17
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Idle.Drowse/Holder::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean Husbandry.Idle.Nap::Think(Husbandry.Idle.Nap\u0026,System.Int32,System.Single,System.Single\u0026)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "nap",
+          "type": "Husbandry.Idle.Nap\u0026"
+        },
+        {
+          "name": "every",
+          "type": "System.Int32"
+        },
+        {
+          "name": "dt",
+          "type": "System.Single"
+        },
+        {
+          "name": "give",
+          "type": "System.Single\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 44
+    },
+    {
+      "signature": "System.Single Husbandry.Idle.Nap::Wake(Husbandry.Idle.Nap\u0026,System.Single)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Single",
+      "parameters": [
+        {
+          "name": "nap",
+          "type": "Husbandry.Idle.Nap\u0026"
+        },
+        {
+          "name": "dt",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Beast::Ours(System.Boolean,System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "tamed",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "hasNetView",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "owned",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Beast::Dozy(System.Boolean,System.Boolean,System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "ours",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "alerted",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "hasTarget",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "following",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 12
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Bumping::Phased(System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "tamed",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "solid",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Bumping::Toggled(System.Boolean,System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "tamed",
+          "type": "System.Boolean"
+        },
+        {
+          "name": "solid",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Bumping::Mine(System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "tamed",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.String Husbandry.Herd.Bumping::Says(System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.String",
+      "parameters": [
+        {
+          "name": "solid",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.String Husbandry.Herd.Bumping::Plain(System.Boolean)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.String",
+      "parameters": [
+        {
+          "name": "solid",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Cap::Effective(System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Int32",
+      "parameters": [
+        {
+          "name": "vanilla",
+          "type": "System.Int32"
+        },
+        {
+          "name": "configured",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 22
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Cap::Reached(System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "nearby",
+          "type": "System.Int32"
+        },
+        {
+          "name": "cap",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 11
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Cap::CertainlyUnder(System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "worldTotal",
+          "type": "System.Int32"
+        },
+        {
+          "name": "cap",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Single Husbandry.Herd.Census::get_TakenAt()",
+      "visibility": "Assembly, HideBySig, SpecialName",
+      "returnType": "System.Single",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Census::set_TakenAt(System.Single)",
+      "visibility": "Private, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Census::get_Counted()",
+      "visibility": "Assembly, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Census::set_Counted(System.Int32)",
+      "visibility": "Private, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Census::get_Species()",
+      "visibility": "Assembly, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Census::Clear()",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 10
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Census::Stale(System.Single,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "now",
+          "type": "System.Single"
+        },
+        {
+          "name": "interval",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Census::Take(System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Census/Head\u003E,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "heads",
+          "type": "System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Census/Head\u003E"
+        },
+        {
+          "name": "now",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 59
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Census::Total(System.Int32)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Int32",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 11
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Census::Within(System.Int32,UnityEngine.Vector3,System.Single)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Int32",
+      "parameters": [
+        {
+          "name": "prefab",
+          "type": "System.Int32"
+        },
+        {
+          "name": "point",
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "radius",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 70
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Census::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Kinds::get_Count()",
+      "visibility": "Assembly, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Kinds::Clear()",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Kinds::Load(System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "kinds",
+          "type": "System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 29
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Kinds::Find(System.Int32,Husbandry.Herd.Kinds/Kind\u0026)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "hash",
+          "type": "System.Int32"
+        },
+        {
+          "name": "kind",
+          "type": "Husbandry.Herd.Kinds/Kind\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E Husbandry.Herd.Kinds::Read(System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E",
+      "parameters": [
+        {
+          "name": "prefabs",
+          "type": "System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 124
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Kinds::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Muster::get_Counted()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Muster::get_Species()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Muster::get_Takings()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Muster::set_Takings(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Muster::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 7
+    },
+    {
+      "signature": "Husbandry.Herd.Census Husbandry.Herd.Muster::Current(System.Single)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "Husbandry.Herd.Census",
+      "parameters": [
+        {
+          "name": "now",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 81
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Muster::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Shoving::get_Phased()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::set_Phased(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Shoving::get_Solid()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::set_Solid(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Int32 Husbandry.Herd.Shoving::get_Sweeps()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Int32",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::set_Sweeps(System.Int32)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::ResetForTests()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 11
+    },
+    {
+      "signature": "System.Int64 Husbandry.Herd.Shoving::Pair(System.Int32,System.Int32)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Int64",
+      "parameters": [
+        {
+          "name": "one",
+          "type": "System.Int32"
+        },
+        {
+          "name": "two",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 20
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Shoving::get_Wanted()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "System.Boolean",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::Tick(System.Single)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "now",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 18
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::Restore()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 90
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::Sweep()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 104
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::Set(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "beast",
+          "type": "UnityEngine.Collider"
+        },
+        {
+          "name": "person",
+          "type": "UnityEngine.Collider"
+        },
+        {
+          "name": "phase",
+          "type": "System.Boolean"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 35
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "beast",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 25
+    },
+    {
+      "signature": "System.Boolean Husbandry.Herd.Shoving::Toggle(Character)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "beast",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 48
+    },
+    {
+      "signature": "System.Void Husbandry.Herd.Shoving::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "cfg",
+          "type": "BepInEx.Configuration.ConfigFile"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 172
+    },
+    {
+      "signature": "System.Void Husbandry.Commands.HusbandryCommand::Register()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 24
+    },
+    {
+      "signature": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Commands.HusbandryCommand::Report()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 167
+    },
+    {
+      "signature": "System.Void Husbandry.Commands.HusbandryCommand/\u003C\u003Ec::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Commands.HusbandryCommand/\u003C\u003Ec::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void Husbandry.Commands.HusbandryCommand/\u003C\u003Ec::\u003CRegister\u003Eb__0_0(Terminal/ConsoleEventArgs)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "Terminal/ConsoleEventArgs"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 20
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "!!0 UnityEngine.Component::GetComponent\u003CCharacter\u003E()",
+    "!!0 UnityEngine.Component::GetComponent\u003CZNetView\u003E()",
+    "!!0 UnityEngine.GameObject::GetComponent\u003CCharacter\u003E()",
+    "!!0 UnityEngine.GameObject::GetComponent\u003CProcreation\u003E()",
+    "!!0 UnityEngine.GameObject::GetComponent\u003CTameable\u003E()",
+    "!!0[] System.Array::Empty\u003CSystem.Object\u003E()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Int32\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E::get_Value()",
+    "!0 System.Collections.Generic.IEnumerator\u00601\u003CHusbandry.Herd.Census/Head\u003E::get_Current()",
+    "!0 System.Collections.Generic.IEnumerator\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E::get_Current()",
+    "!0 System.Collections.Generic.IEnumerator\u00601\u003CUnityEngine.GameObject\u003E::get_Current()",
+    "!0 System.Collections.Generic.KeyValuePair\u00602\u003CZDOID,System.Single\u003E::get_Key()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CBaseAI\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CCharacter\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CUnityEngine.Vector3\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CZDO\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CZDOID\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601/Enumerator\u003CZNetPeer\u003E::get_Current()",
+    "!0 System.Collections.Generic.List\u00601\u003CSystem.String\u003E::get_Item(System.Int32)",
+    "!1 System.Collections.Generic.KeyValuePair\u00602\u003CZDOID,System.Single\u003E::get_Value()",
+    "!1 System.Runtime.CompilerServices.ConditionalWeakTable\u00602\u003CBaseAI,Husbandry.Idle.Drowse/Holder\u003E::GetOrCreateValue(!0)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Boolean\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Int32\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Single\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)",
+    "BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()",
+    "BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()",
+    "Character BaseAI::GetTargetCreature()",
+    "Husbandry.Herd.Census Husbandry.Herd.Muster::Current(System.Single)",
+    "Husbandry.Offline.Pasture/Cursor Husbandry.Offline.Pasture::Continued(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+    "Husbandry.Offline.Pasture/Cursor Husbandry.Offline.Pasture::Next(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+    "Husbandry.Offline.Verdict Husbandry.Offline.Quickening::Judge(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32)",
+    "System.Boolean BaseAI::IsAlerted()",
+    "System.Boolean Character::IsPlayer()",
+    "System.Boolean Character::IsTamed()",
+    "System.Boolean Husbandry.Herd.Beast::Dozy(System.Boolean,System.Boolean,System.Boolean,System.Boolean)",
+    "System.Boolean Husbandry.Herd.Beast::Ours(System.Boolean,System.Boolean,System.Boolean)",
+    "System.Boolean Husbandry.Herd.Bumping::Mine(System.Boolean)",
+    "System.Boolean Husbandry.Herd.Bumping::Phased(System.Boolean,System.Boolean)",
+    "System.Boolean Husbandry.Herd.Bumping::Toggled(System.Boolean,System.Boolean)",
+    "System.Boolean Husbandry.Herd.Cap::CertainlyUnder(System.Int32,System.Int32)",
+    "System.Boolean Husbandry.Herd.Cap::Reached(System.Int32,System.Int32)",
+    "System.Boolean Husbandry.Herd.Census::Stale(System.Single,System.Single)",
+    "System.Boolean Husbandry.Herd.Kinds::Find(System.Int32,Husbandry.Herd.Kinds/Kind\u0026)",
+    "System.Boolean Husbandry.Herd.Shoving::get_Wanted()",
+    "System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)",
+    "System.Boolean Husbandry.Herd.Shoving::Toggle(Character)",
+    "System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)",
+    "System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single\u0026)",
+    "System.Boolean Husbandry.Idle.Nap::Think(Husbandry.Idle.Nap\u0026,System.Int32,System.Single,System.Single\u0026)",
+    "System.Boolean Husbandry.Offline.Clocks::Elapsed(System.Int64,System.Int64,System.Double)",
+    "System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)",
+    "System.Boolean Husbandry.Offline.Mending::Worth(System.Single,System.Single)",
+    "System.Boolean Husbandry.Offline.Pasture::Valid(Husbandry.Offline.Pasture/Cursor,System.Int32)",
+    "System.Boolean Husbandry.Offline.Pasture::Wrapped(Husbandry.Offline.Pasture/Cursor,Husbandry.Offline.Pasture/Cursor)",
+    "System.Boolean Husbandry.Offline.Quickening::Carrying(System.Int64)",
+    "System.Boolean Husbandry.Offline.Quickening::Company(System.Int32)",
+    "System.Boolean Husbandry.Offline.Quickening::Conceives(Husbandry.Offline.Verdict)",
+    "System.Boolean Husbandry.Offline.Quickening::Courts(Husbandry.Offline.Verdict)",
+    "System.Boolean Husbandry.Offline.Steward::get_Running()",
+    "System.Boolean Husbandry.Offline.Steward::Prefabs()",
+    "System.Boolean Husbandry.Offline.Steward::ShouldRun(System.Boolean,System.Boolean)",
+    "System.Boolean Husbandry.Offline.Untended::Yes(System.Boolean,System.Boolean)",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602/Enumerator\u003CZDOID,System.Single\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E::TryGetValue(!0,!1\u0026)",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E::TryGetValue(!0,!1\u0026)",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E::TryGetValue(!0,!1\u0026)",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::Remove(!0)",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::TryGetValue(!0,!1\u0026)",
+    "System.Boolean System.Collections.Generic.HashSet\u00601\u003CSystem.Int64\u003E::Add(!0)",
+    "System.Boolean System.Collections.Generic.HashSet\u00601\u003CSystem.Int64\u003E::Contains(!0)",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CBaseAI\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CCharacter\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CUnityEngine.Vector3\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CZDO\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CZDOID\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CZNetPeer\u003E::MoveNext()",
+    "System.Boolean System.Collections.IEnumerator::MoveNext()",
+    "System.Boolean System.Single::IsNaN(System.Single)",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean ZDO::GetBool(System.Int32,System.Boolean)",
+    "System.Boolean ZDO::HasOwner()",
+    "System.Boolean ZDOMan::GetAllZDOsWithPrefabIterative(System.String,System.Collections.Generic.List\u00601\u003CZDO\u003E,System.Int32\u0026)",
+    "System.Boolean ZNet::IsServer()",
+    "System.Boolean ZNetView::IsOwner()",
+    "System.Boolean ZNetView::IsValid()",
+    "System.Collections.Generic.Dictionary\u00602/Enumerator\u003C!0,!1\u003E System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::GetEnumerator()",
+    "System.Collections.Generic.IEnumerator\u00601\u003C!0\u003E System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Census/Head\u003E::GetEnumerator()",
+    "System.Collections.Generic.IEnumerator\u00601\u003C!0\u003E System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E::GetEnumerator()",
+    "System.Collections.Generic.IEnumerator\u00601\u003C!0\u003E System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E::GetEnumerator()",
+    "System.Collections.Generic.KeyValuePair\u00602\u003C!0,!1\u003E System.Collections.Generic.Dictionary\u00602/Enumerator\u003CZDOID,System.Single\u003E::get_Current()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CBaseAI\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CCharacter\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CSystem.String\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CZDO\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CZDOID\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601/Enumerator\u003C!0\u003E System.Collections.Generic.List\u00601\u003CZNetPeer\u003E::GetEnumerator()",
+    "System.Collections.Generic.List\u00601\u003CBaseAI\u003E BaseAI::get_BaseAIInstances()",
+    "System.Collections.Generic.List\u00601\u003CCharacter\u003E Character::GetAllCharacters()",
+    "System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E Husbandry.Herd.Kinds::Read(System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E)",
+    "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Commands.HusbandryCommand::Report()",
+    "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable\u00601\u003CUnityEngine.GameObject\u003E)",
+    "System.Collections.Generic.List\u00601\u003CSystem.String\u003E Husbandry.Offline.Steward::Report()",
+    "System.Collections.Generic.List\u00601\u003CZNetPeer\u003E ZNet::GetPeers()",
+    "System.DateTime ZNet::GetTime()",
+    "System.Double Husbandry.Offline.Clocks::Between(System.Int64,System.Int64)",
+    "System.Int32 Husbandry.Herd.Cap::Effective(System.Int32,System.Int32)",
+    "System.Int32 Husbandry.Herd.Census::get_Counted()",
+    "System.Int32 Husbandry.Herd.Census::get_Species()",
+    "System.Int32 Husbandry.Herd.Census::Total(System.Int32)",
+    "System.Int32 Husbandry.Herd.Census::Within(System.Int32,UnityEngine.Vector3,System.Single)",
+    "System.Int32 Husbandry.Herd.Kinds::get_Count()",
+    "System.Int32 Husbandry.Herd.Muster::get_Counted()",
+    "System.Int32 Husbandry.Herd.Muster::get_Species()",
+    "System.Int32 Husbandry.Herd.Muster::get_Takings()",
+    "System.Int32 Husbandry.Herd.Shoving::get_Phased()",
+    "System.Int32 Husbandry.Herd.Shoving::get_Solid()",
+    "System.Int32 Husbandry.Herd.Shoving::get_Sweeps()",
+    "System.Int32 Husbandry.Idle.Cadence::Every(System.Single,System.Single,System.Single,System.Int32,System.Int32)",
+    "System.Int32 Husbandry.Idle.Drowse::get_Dozing()",
+    "System.Int32 Husbandry.Idle.Drowse::get_Skipped()",
+    "System.Int32 Husbandry.Idle.Drowse::get_Thought()",
+    "System.Int32 Husbandry.Offline.Courtship::Forget(System.Single,System.Single)",
+    "System.Int32 Husbandry.Offline.Courtship::get_Count()",
+    "System.Int32 Husbandry.Offline.Steward::get_Attended()",
+    "System.Int32 Husbandry.Offline.Steward::get_Capped()",
+    "System.Int32 Husbandry.Offline.Steward::get_Conceived()",
+    "System.Int32 Husbandry.Offline.Steward::get_Considered()",
+    "System.Int32 Husbandry.Offline.Steward::get_Courted()",
+    "System.Int32 Husbandry.Offline.Steward::get_Healed()",
+    "System.Int32 Husbandry.Patches.BreedPatch::get_Skipped()",
+    "System.Int32 StringExtensionMethods::GetStableHashCode(System.String)",
+    "System.Int32 System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.List\u00601\u003CCharacter\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.List\u00601\u003CSystem.String\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E::get_Count()",
+    "System.Int32 System.Collections.Generic.List\u00601\u003CZDOID\u003E::get_Count()",
+    "System.Int32 UnityEngine.Object::GetInstanceID()",
+    "System.Int32 ZDO::GetInt(System.Int32,System.Int32)",
+    "System.Int32 ZDO::GetPrefab()",
+    "System.Int64 Husbandry.Herd.Shoving::Pair(System.Int32,System.Int32)",
+    "System.Int64 System.DateTime::get_Ticks()",
+    "System.Int64 ZDO::GetLong(System.Int32,System.Int64)",
+    "System.Int64 ZDO::GetOwner()",
+    "System.Int64 ZDOMan::GetSessionID()",
+    "System.Single Husbandry.Herd.Census::get_TakenAt()",
+    "System.Single Husbandry.Idle.Cadence::FromCamera(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector3)",
+    "System.Single Husbandry.Idle.Drowse::Distance(BaseAI)",
+    "System.Single Husbandry.Idle.Nap::Wake(Husbandry.Idle.Nap\u0026,System.Single)",
+    "System.Single Husbandry.Offline.Mending::Restored(System.Single,System.Single,System.Single,System.Double)",
+    "System.Single UnityEngine.Time::get_time()",
+    "System.Single UnityEngine.Vector3::Distance(UnityEngine.Vector3,UnityEngine.Vector3)",
+    "System.Single ZDO::GetFloat(System.Int32,System.Single)",
+    "System.String Husbandry.Herd.Bumping::Plain(System.Boolean)",
+    "System.String System.Int32::ToString()",
+    "System.String System.Single::ToString()",
+    "System.String System.String::Concat(System.String,System.String,System.String,System.String)",
+    "System.String System.String::Concat(System.String,System.String,System.String)",
+    "System.String System.String::Concat(System.String[])",
+    "System.String UnityEngine.Object::get_name()",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Configuration.AcceptableValueRange\u00601\u003CSystem.Int32\u003E::.ctor(!0,!0)",
+    "System.Void BepInEx.Configuration.AcceptableValueRange\u00601\u003CSystem.Single\u003E::.ctor(!0,!0)",
+    "System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void BepInEx.Logging.ManualLogSource::LogWarning(System.Object)",
+    "System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.Harmony::PatchAll()",
+    "System.Void HarmonyLib.Harmony::UnpatchSelf()",
+    "System.Void Husbandry.Commands.HusbandryCommand::Register()",
+    "System.Void Husbandry.Commands.HusbandryCommand/\u003C\u003Ec::.ctor()",
+    "System.Void Husbandry.Commands.HusbandryCommand/\u003C\u003Ec::\u003CRegister\u003Eb__0_0(Terminal/ConsoleEventArgs)",
+    "System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)",
+    "System.Void Husbandry.Herd.Census::.ctor()",
+    "System.Void Husbandry.Herd.Census::Clear()",
+    "System.Void Husbandry.Herd.Census::set_Counted(System.Int32)",
+    "System.Void Husbandry.Herd.Census::set_TakenAt(System.Single)",
+    "System.Void Husbandry.Herd.Census::Take(System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Census/Head\u003E,System.Single)",
+    "System.Void Husbandry.Herd.Kinds::.ctor()",
+    "System.Void Husbandry.Herd.Kinds::Clear()",
+    "System.Void Husbandry.Herd.Kinds::Load(System.Collections.Generic.IEnumerable\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E)",
+    "System.Void Husbandry.Herd.Muster::set_Takings(System.Int32)",
+    "System.Void Husbandry.Herd.Shoving::Restore()",
+    "System.Void Husbandry.Herd.Shoving::set_Phased(System.Int32)",
+    "System.Void Husbandry.Herd.Shoving::set_Solid(System.Int32)",
+    "System.Void Husbandry.Herd.Shoving::set_Sweeps(System.Int32)",
+    "System.Void Husbandry.Herd.Shoving::Set(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)",
+    "System.Void Husbandry.Herd.Shoving::Sweep()",
+    "System.Void Husbandry.Herd.Shoving::Tick(System.Single)",
+    "System.Void Husbandry.Idle.Drowse::set_Dozing(System.Int32)",
+    "System.Void Husbandry.Idle.Drowse::set_Skipped(System.Int32)",
+    "System.Void Husbandry.Idle.Drowse::set_Thought(System.Int32)",
+    "System.Void Husbandry.Offline.Courtship::.ctor()",
+    "System.Void Husbandry.Offline.Courtship::Clear()",
+    "System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)",
+    "System.Void Husbandry.Offline.Steward::Begin()",
+    "System.Void Husbandry.Offline.Steward::Breed(ZDO,Husbandry.Herd.Kinds/Kind,UnityEngine.Vector3,System.Int64)",
+    "System.Void Husbandry.Offline.Steward::Consider(ZDO,Husbandry.Herd.Kinds/Kind)",
+    "System.Void Husbandry.Offline.Steward::Gather(ZNet)",
+    "System.Void Husbandry.Offline.Steward::Mend(ZDO,Husbandry.Herd.Kinds/Kind)",
+    "System.Void Husbandry.Offline.Steward::set_Attended(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Capped(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Conceived(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Considered(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Courted(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Healed(System.Int32)",
+    "System.Void Husbandry.Offline.Steward::set_Running(System.Boolean)",
+    "System.Void Husbandry.Offline.Steward::Slice(ZDOMan)",
+    "System.Void Husbandry.Offline.Steward::Tick()",
+    "System.Void Husbandry.Patches.BreedPatch::set_Skipped(System.Int32)",
+    "System.Void Husbandry.Patches.ShoveePatch::set_Armed(System.Boolean)",
+    "System.Void Husbandry.Util.Log::Debug(System.String)",
+    "System.Void Husbandry.Util.Log::Info(System.String)",
+    "System.Void System.Attribute::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E::Clear()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,Husbandry.Herd.Kinds/Kind\u003E::set_Item(!0,!1)",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E::Clear()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E\u003E::set_Item(!0,!1)",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E::Clear()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int64,System.Boolean\u003E::set_Item(!0,!1)",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::Clear()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CZDOID,System.Single\u003E::set_Item(!0,!1)",
+    "System.Void System.Collections.Generic.HashSet\u00601\u003CSystem.Int64\u003E::.ctor()",
+    "System.Void System.Collections.Generic.HashSet\u00601\u003CSystem.Int64\u003E::Clear()",
+    "System.Void System.Collections.Generic.List\u00601\u003CCharacter\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CCharacter\u003E::Add(!0)",
+    "System.Void System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Census/Head\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Census/Head\u003E::Add(!0)",
+    "System.Void System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Census/Head\u003E::Clear()",
+    "System.Void System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CHusbandry.Herd.Kinds/Kind\u003E::Add(!0)",
+    "System.Void System.Collections.Generic.List\u00601\u003CSystem.String\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CSystem.String\u003E::Add(!0)",
+    "System.Void System.Collections.Generic.List\u00601\u003CSystem.String\u003E::AddRange(System.Collections.Generic.IEnumerable\u00601\u003C!0\u003E)",
+    "System.Void System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CUnityEngine.Vector3\u003E::Add(!0)",
+    "System.Void System.Collections.Generic.List\u00601\u003CZDO\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CZDO\u003E::Clear()",
+    "System.Void System.Collections.Generic.List\u00601\u003CZDOID\u003E::.ctor()",
+    "System.Void System.Collections.Generic.List\u00601\u003CZDOID\u003E::Add(!0)",
+    "System.Void System.IDisposable::Dispose()",
+    "System.Void System.Object::.ctor()",
+    "System.Void System.Runtime.CompilerServices.ConditionalWeakTable\u00602\u003CBaseAI,Husbandry.Idle.Drowse/Holder\u003E::.ctor()",
+    "System.Void Terminal::AddString(System.String)",
+    "System.Void Terminal/ConsoleCommand::.ctor(System.String,System.String,Terminal/ConsoleEvent,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Terminal/ConsoleOptionsFetcher,System.Boolean,System.Boolean,System.Boolean)",
+    "System.Void Terminal/ConsoleEvent::.ctor(System.Object,System.IntPtr)",
+    "System.Void UnityEngine.Physics::IgnoreCollision(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)",
+    "System.Void ZDO::Set(System.Int32,System.Boolean)",
+    "System.Void ZDO::Set(System.Int32,System.Int32,System.Boolean)",
+    "System.Void ZDO::Set(System.Int32,System.Int64)",
+    "System.Void ZDO::Set(System.Int32,System.Single)",
+    "System.Void ZNetView::ClaimOwnership()",
+    "UnityEngine.CapsuleCollider Character::GetCollider()",
+    "UnityEngine.GameObject MonsterAI::GetFollowTarget()",
+    "UnityEngine.Transform UnityEngine.Component::get_transform()",
+    "UnityEngine.Vector3 UnityEngine.Transform::get_position()",
+    "UnityEngine.Vector3 ZDO::GetPosition()",
+    "ZDO ZNetView::GetZDO()",
+    "ZDOMan ZDOMan::get_instance()",
+    "ZNet ZNet::get_instance()",
+    "ZNetScene ZNetScene::get_instance()"
+  ],
+  "stringLiterals": [
+    " ",
+    "  breeding   ",
+    "  census     ",
+    "  clocks     ",
+    "  not running - this machine does not hold the world",
+    "  tames      ",
+    "  throttle   off",
+    "  throttle   on: nothing inside ",
+    "  ticks      ",
+    "  upkeep     ",
+    "  watching   ",
+    " beyond",
+    " considered, ",
+    " courting clock(s)",
+    " courting, ",
+    " expecting, ",
+    " full pass(es)",
+    " healed, ",
+    " held at the cap",
+    " idle-tame frame(s) seen",
+    " is expecting",
+    " left to the client holding them",
+    " out to ",
+    " round(s) skipped at the cap",
+    " skipped, ",
+    " species",
+    " species, taken ",
+    " tame(s) across ",
+    " tameable prefab(s), ",
+    " tameable prefab(s), cursor ",
+    " thought, ",
+    " time(s)",
+    " with numbers read off the prefab.",
+    "--- husbandry (offline) ---",
+    "--- husbandry 1.1.0 ---",
+    ", ",
+    "/",
+    "$msg_husbandry_phased",
+    "$msg_husbandry_solid",
+    "Advanced",
+    "An idle tame in the middle band thinks one physics tick in this many. At 4 that is about twelve times a second instead of fifty.",
+    "Breeding",
+    "CensusInterval",
+    "CheapCensus",
+    "CourtingInterval",
+    "dafini.husbandry",
+    "Enabled",
+    "FarRange",
+    "FarSkip",
+    "ForgetAfter",
+    "General",
+    "HealPerSecond",
+    "Health per real second for an unattended tame. A wolf left in a corner of the map comes back whole in a few minutes rather than never.",
+    "Herd",
+    "Honour hunger when deciding whether an unattended pair may breed. Worth knowing: unloaded tames ALREADY get hungry, in vanilla, because the feeding timer is a world-time stamp rather than a loaded timer. Turning this off does not feed them; it only stops hunger holding up offline breeding.",
+    "husbandry",
+    "Husbandry found ",
+    "Husbandry is looking after unattended tames on this machine.",
+    "Husbandry is switched off in config and is doing nothing.",
+    "husbandry_solid",
+    "Husbandry: ",
+    "husbandry: an unattended ",
+    "Husbandry: this machine does not hold the world, so the offline upkeep is not running here. The throttle still is.",
+    "Inside this many metres nothing is throttled at all, so the animals you are actually looking at behave exactly as they always did.",
+    "Let a tame that is standing around doing nothing think less often. It only ever applies to a TAMED creature that is not alerted, has nothing targeted and is following nobody - so it never touches anything hostile, anything in a fight, or anything at your heel. The time a skipped tick would have had is handed to the next one, so every timer inside the AI still lands where it would have.",
+    "Let an unattended tame slowly heal. It never raises one that is dying or dead, and never takes one above its own maximum.",
+    "Let unattended pairs get on with it, slowly. This does NOT create an animal: it sets the same pregnancy stamp the game sets, and the game itself gives birth - with the right level, the right tamed flag and its own cap check - on the first frame somebody loads the zone.",
+    "Log every decision. Useful for a bug report, noisy otherwise.",
+    "Look after tames in zones nobody has loaded. Runs only where the whole ZDO table lives - a dedicated server, a host, or single-player - and only on animals no connected machine is simulating.",
+    "m, one in ",
+    "m, one tick in ",
+    "Master switch. Off means this mod does nothing at all.",
+    "MidSkip",
+    "NearRange",
+    "Offline",
+    "OfflineBreeding",
+    "OfflineHealing",
+    "OfflineHunger",
+    "OfflineUpkeep",
+    "Past this, the far band applies. Between the two, the mid band does.",
+    "Replace the breeding system\u0027s population count with one shared count. Vanilla\u0027s runs per animal, walks EVERY ai in the world, compares object names as strings and does a GetComponent per match - four times per breeding round, per animal. That is the one cost that grows with the SQUARE of the herd. This changes no behaviour; it only stops asking the same question sixty times.",
+    "Seconds before this mod stops remembering an animal it has not seen. Only affects in-memory clocks; nothing is stored in your save.",
+    "Seconds between one step of courting and the next, for an unattended animal. Loaded, the game grants these every few seconds; this is the setting that makes away-from-home breeding a trickle rather than a population you come home to.",
+    "Seconds between shared population counts. Breeding runs on a ten-second invoke and pregnancies take minutes, so a count a few seconds old cannot change any decision that depends on it.",
+    "Shoving",
+    "SoftCap",
+    "Stop breeding once this many of a species are within the prefab\u0027s own check range. 0 uses the game\u0027s own cap unchanged. This can only ever make breeding stop SOONER than vanilla, never later - and it never removes an animal, only births.",
+    "The same, for idle tames past FarRange. This is the number that does the work in a big pen. Worst case it costs an animal a fifth of a second noticing something, and only ever an animal that was standing still, unalerted, with nothing targeted, a long way off.",
+    "Throttle",
+    "ThrottleIdle",
+    "Verbose",
+    "what Husbandry is doing",
+    "Whether your own tamed animals can push you around. Off by default, which is the point: one wolf is a companion and forty are a moving wall that puts you in the water. Hostile creatures are never affected - walking through something that wants to eat you is a cheat rather than a convenience. Hold E on any tame to make that one solid again; the choice is stored on the animal and survives a relog.",
+    "will get in your way again",
+    "will stay out of your way"
+  ],
+  "totals": {
+    "types": 34,
+    "methods": 142,
+    "strings": 95,
+    "calledMethods": 273,
+    "resources": 0
+  }
+}

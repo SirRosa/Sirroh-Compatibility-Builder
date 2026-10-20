@@ -1,0 +1,306 @@
+{
+  "m_Name": "EGACrystalPiese",
+  "m_SubMeshes": [
+    {
+      "firstByte": 0,
+      "indexCount": 42,
+      "topology": 0,
+      "baseVertex": 0,
+      "firstVertex": 0,
+      "vertexCount": 11,
+      "localAABB": {
+        "m_Center": {
+          "x": -0.021052487194538116,
+          "y": 0.14576253294944763,
+          "z": -0.005767032504081726
+        },
+        "m_Extent": {
+          "x": 0.2479812502861023,
+          "y": 0.648018479347229,
+          "z": 0.2764274477958679
+        }
+      }
+    }
+  ],
+  "m_Shapes": {
+    "vertices": [],
+    "shapes": [],
+    "channels": [],
+    "fullWeights": []
+  },
+  "m_BindPose": [],
+  "m_BoneNameHashes": [],
+  "m_RootBoneNameHash": 0,
+  "m_BonesAABB": [],
+  "m_VariableBoneCountWeights": {
+    "m_Data": []
+  },
+  "m_MeshCompression": 0,
+  "m_IsReadable": true,
+  "m_KeepVertices": true,
+  "m_KeepIndices": true,
+  "m_IndexFormat": 0,
+  "m_IndexBuffer": [
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    0,
+    3,
+    0,
+    4,
+    0,
+    1,
+    0,
+    1,
+    0,
+    5,
+    0,
+    2,
+    0,
+    4,
+    0,
+    5,
+    0,
+    1,
+    0,
+    5,
+    0,
+    6,
+    0,
+    2,
+    0,
+    4,
+    0,
+    6,
+    0,
+    5,
+    0,
+    6,
+    0,
+    7,
+    0,
+    2,
+    0,
+    4,
+    0,
+    7,
+    0,
+    6,
+    0,
+    7,
+    0,
+    8,
+    0,
+    2,
+    0,
+    4,
+    0,
+    8,
+    0,
+    7,
+    0,
+    8,
+    0,
+    9,
+    0,
+    2,
+    0,
+    4,
+    0,
+    10,
+    0,
+    8,
+    0,
+    8,
+    0,
+    10,
+    0,
+    9,
+    0
+  ],
+  "m_VertexData": {
+    "m_VertexCount": 11,
+    "m_Channels": [
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 3
+      },
+      {
+        "stream": 0,
+        "offset": 12,
+        "format": 0,
+        "dimension": 3
+      },
+      {
+        "stream": 0,
+        "offset": 24,
+        "format": 0,
+        "dimension": 4
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 40,
+        "format": 0,
+        "dimension": 2
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      },
+      {
+        "stream": 0,
+        "offset": 0,
+        "format": 0,
+        "dimension": 0
+      }
+    ],
+    "m_DataSize": {
+      "byte_count": 528
+    }
+  },
+  "m_CompressedMesh": {
+    "m_Vertices": {
+      "m_NumItems": 0,
+      "m_Range": 0.0,
+      "m_Start": 0.0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_UV": {
+      "m_NumItems": 0,
+      "m_Range": 0.0,
+      "m_Start": 0.0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_Normals": {
+      "m_NumItems": 0,
+      "m_Range": 0.0,
+      "m_Start": 0.0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_Tangents": {
+      "m_NumItems": 0,
+      "m_Range": 0.0,
+      "m_Start": 0.0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_Weights": {
+      "m_NumItems": 0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_NormalSigns": {
+      "m_NumItems": 0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_TangentSigns": {
+      "m_NumItems": 0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_FloatColors": {
+      "m_NumItems": 0,
+      "m_Range": 0.0,
+      "m_Start": 0.0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_BoneIndices": {
+      "m_NumItems": 0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_Triangles": {
+      "m_NumItems": 0,
+      "m_Data": [],
+      "m_BitSize": 0
+    },
+    "m_UVInfo": 0
+  },
+  "m_LocalAABB": {
+    "m_Center": {
+      "x": -0.021052487194538116,
+      "y": 0.14576253294944763,
+      "z": -0.005767032504081726
+    },
+    "m_Extent": {
+      "x": 0.2479812502861023,
+      "y": 0.648018479347229,
+      "z": 0.2764274477958679
+    }
+  },
+  "m_MeshUsageFlags": 4,
+  "m_BakedConvexCollisionMesh": [],
+  "m_BakedTriangleCollisionMesh": [],
+  "m_MeshMetrics[0]": 3.1308469772338867,
+  "m_MeshMetrics[1]": 1.0,
+  "m_StreamData": {
+    "offset": 0,
+    "size": 0,
+    "path": ""
+  }
+}

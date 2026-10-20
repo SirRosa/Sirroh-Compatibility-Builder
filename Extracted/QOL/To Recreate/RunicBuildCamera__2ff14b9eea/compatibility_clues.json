@@ -1,0 +1,3323 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 9,
+      "text": "[BepInPlugin(\"chazman.RunicBuildCamera\", \"Runic Build Camera\", \"1.0.8\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 10,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 11,
+      "text": "public sealed class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 29,
+      "text": "Diagnostics.Initialize(((BaseUnityPlugin)this).Logger);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 30,
+      "text": "BuildCameraConfig.Bind(((BaseUnityPlugin)this).Config);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/CompatibilityGuard.cs",
+      "line": 27,
+      "text": "BepInPlugin metadata = value.Metadata;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/CompatibilityGuard.cs",
+      "line": 38,
+      "text": "BepInPlugin metadata2 = value2.Metadata;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 812,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 817,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 827,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7823,
+      "text": "\"BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7846,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7847,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8071,
+      "text": "\"System.String BepInEx.BepInPlugin::get_GUID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8072,
+      "text": "\"System.String BepInEx.BepInPlugin::get_Name()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8105,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 576,
+      "text": "IL_0029: call BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 582,
+      "text": "IL_0035: call System.String BepInEx.BepInPlugin::get_GUID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 590,
+      "text": "IL_0048: call BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 596,
+      "text": "IL_0054: call System.String BepInEx.BepInPlugin::get_Name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1316,
+      "text": "IL_0001: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1319,
+      "text": "IL_000c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1532,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 47,
+      "text": "_harmony.PatchAll(typeof(Plugin).Assembly);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 37,
+      "text": "private static readonly FieldInfo BallInstanceField = AccessTools.Field(typeof(SE_Demister), \"m_ballInstance\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"Update\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 31,
+      "text": "private static readonly FieldInfo EnableAutoPickupField = AccessTools.Field(typeof(Player), \"m_enableAutoPickup\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 33,
+      "text": "private static readonly FieldInfo ItemInstancesField = AccessTools.Field(typeof(ItemDrop), \"s_instances\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/GameCameraUpdateCameraPatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 11,
+      "text": "private static readonly FieldInfo AreasField = AccessTools.Field(typeof(PrivateArea), \"m_allAreas\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 13,
+      "text": "private static readonly Func<PrivateArea, bool> Enabled = AccessTools.MethodDelegate<Func<PrivateArea, bool>>(AccessTools.Method(typeof(PrivateArea), \"IsEnabled\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 15,
+      "text": "private static readonly Func<PrivateArea, Vector3, float, bool> Inside = AccessTools.MethodDelegate<Func<PrivateArea, Vector3, float, bool>>(AccessTools.Method(typeof(PrivateArea), \"IsInside\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 17,
+      "text": "private static readonly Func<PrivateArea, bool> LocalAccess = AccessTools.MethodDelegate<Func<PrivateArea, bool>>(AccessTools.Method(typeof(PrivateArea), \"HaveLocalAccess\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerPieceRayRemoteLimitPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"PieceRayTest\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementRangePatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetLocalPlayerCameraCleanupPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"SetLocalPlayer\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementGhostRangePatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemoteEffectsLocalPlayerCleanupPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"SetLocalPlayer\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/CraftingStationScopedBuildRangePatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(CraftingStation), \"GetStationBuildRange\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterUpdateStatusEffectPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SE_Demister), \"UpdateStatusEffect\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetControlsPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetMouseLookIsolationPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMouseLook\", new Type[] { typeof(Vector2) })]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerHotbarCameraExitPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"UseHotbarItem\", new Type[] { typeof(int) })]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRemoveEffectsPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SE_Demister), \"RemoveEffects\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 76,
+      "text": "_maxPlaceDistance = AccessTools.FieldRefAccess<Player, float>(RequireField(typeof(Player), \"m_maxPlaceDistance\", typeof(float)));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 77,
+      "text": "_rightItem = AccessTools.FieldRefAccess<Humanoid, ItemData>(RequireField(typeof(Humanoid), \"m_rightItem\", typeof(ItemData)));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 82,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Player), \"TakeInput\", Type.EmptyTypes, (Type[])null);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 87,
+      "text": "_takeInput = AccessTools.MethodDelegate<TakeInputDelegate>(methodInfo, (object)null, true);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 244,
+      "text": "FieldInfo fieldInfo = AccessTools.Field(owner, name);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 254,
+      "text": "MethodInfo methodInfo = AccessTools.Method(owner, name, parameters, (Type[])null);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerTakeInputIsolationPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"TakeInput\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/GameCameraRemoteEffectsPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1062,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1082,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1134,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1157,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1180,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1200,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1220,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1237,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1254,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1271,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1288,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1479,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1496,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1516,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1536,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1809,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CPlayer,System.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1816,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7784,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CRunicBuildCamera.Integration.ValheimAdapter/TakeInputDelegate\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7785,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Func\\u00602\\u003CPrivateArea,System.Boolean\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7786,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Func\\u00604\\u003CPrivateArea,UnityEngine.Vector3,System.Single,System.Boolean\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7820,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7821,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CPlayer,System.Single\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7849,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CHumanoid,ItemDrop/ItemData\\u003E(System.Reflection.FieldInfo)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7850,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CPlayer,System.Single\\u003E(System.Reflection.FieldInfo)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8026,
+      "text": "\"System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8028,
+      "text": "\"System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8117,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1350,
+      "text": "IL_0082: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3282,
+      "text": "IL_000f: call System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3455,
+      "text": "IL_000f: call System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3462,
+      "text": "IL_002a: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3465,
+      "text": "IL_0031: call !!0 HarmonyLib.AccessTools::MethodDelegate<System.Func`2<PrivateArea,System.Boolean>>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3472,
+      "text": "IL_004c: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3475,
+      "text": "IL_0053: call !!0 HarmonyLib.AccessTools::MethodDelegate<System.Func`4<PrivateArea,UnityEngine.Vector3,System.Single,System.Boolean>>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3482,
+      "text": "IL_006e: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3485,
+      "text": "IL_0075: call !!0 HarmonyLib.AccessTools::MethodDelegate<System.Func`2<PrivateArea,System.Boolean>>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4378,
+      "text": "IL_0032: call System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4383,
+      "text": "IL_004b: call System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4469,
+      "text": "IL_002b: call HarmonyLib.AccessTools/FieldRef`2<!!0,!!1> HarmonyLib.AccessTools::FieldRefAccess<Player,System.Single>(System.Reflection.FieldInfo)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4470,
+      "text": "IL_0030: stsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4477,
+      "text": "IL_0053: call HarmonyLib.AccessTools/FieldRef`2<!!0,!!1> HarmonyLib.AccessTools::FieldRefAccess<Humanoid,ItemDrop/ItemData>(System.Reflection.FieldInfo)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4478,
+      "text": "IL_0058: stsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4600,
+      "text": "IL_01ea: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4621,
+      "text": "IL_022d: call !!0 HarmonyLib.AccessTools::MethodDelegate<RunicBuildCamera.Integration.ValheimAdapter/TakeInputDelegate>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4652,
+      "text": "IL_0006: stsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4654,
+      "text": "IL_000c: stsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4721,
+      "text": "IL_000b: ldsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4725,
+      "text": "IL_0015: ldsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4727,
+      "text": "IL_001b: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4785,
+      "text": "IL_000f: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4808,
+      "text": "IL_004b: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4810,
+      "text": "IL_0051: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Player,System.Single>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4830,
+      "text": "IL_0085: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4832,
+      "text": "IL_008b: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Player,System.Single>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4855,
+      "text": "IL_0028: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4857,
+      "text": "IL_002f: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4860,
+      "text": "IL_003a: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Player,System.Single>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4950,
+      "text": "IL_003a: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4952,
+      "text": "IL_0041: ldsfld HarmonyLib.AccessTools/FieldRef`2<Player,System.Single> RunicBuildCamera.Integration.ValheimAdapter::_maxPlaceDistance"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4955,
+      "text": "IL_004c: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Player,System.Single>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4969,
+      "text": "IL_0002: call System.Reflection.FieldInfo HarmonyLib.AccessTools::Field(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4994,
+      "text": "IL_0004: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/RunicBuildCamera/Plugin.cs",
+      "line": 30,
+      "text": "BuildCameraConfig.Bind(((BaseUnityPlugin)this).Config);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 23,
+      "text": "internal static ConfigEntry<bool> Enabled { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 25,
+      "text": "internal static ConfigEntry<KeyboardShortcut> ToggleShortcut { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 27,
+      "text": "internal static ConfigEntry<float> CameraRange { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 29,
+      "text": "internal static ConfigEntry<float> MoveSpeed { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 31,
+      "text": "internal static ConfigEntry<float> FastMoveMultiplier { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 33,
+      "text": "internal static ConfigEntry<bool> WorldRelativeMovement { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 35,
+      "text": "internal static ConfigEntry<float> RemoteActionDistance { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 37,
+      "text": "internal static ConfigEntry<bool> PickupEnabled { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 39,
+      "text": "internal static ConfigEntry<float> PickupRange { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 41,
+      "text": "internal static ConfigEntry<float> PickupIntervalSeconds { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 43,
+      "text": "internal static ConfigEntry<bool> DemisterFollowCamera { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 45,
+      "text": "internal static ConfigEntry<float> DemisterRangeMultiplier { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 47,
+      "text": "internal static ConfigEntry<bool> InvertMouseHorizontal { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 49,
+      "text": "internal static ConfigEntry<bool> InvertMouseVertical { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 51,
+      "text": "internal static ConfigEntry<bool> InvertControllerHorizontal { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 53,
+      "text": "internal static ConfigEntry<bool> InvertControllerVertical { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 55,
+      "text": "internal static ConfigEntry<bool> VerboseLogging { get; private set; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 59,
+      "text": "internal static void Bind(ConfigFile config)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 86,
+      "text": "private static ConfigEntry<T> BindEntry<T>(ConfigFile config, string section, string key, T defaultValue, string description)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 88,
+      "text": "ConfigEntry<T> val = config.Bind<T>(section, key, defaultValue, description);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 93,
+      "text": "private static ConfigEntry<float> BindRange(ConfigFile config, string section, string key, float defaultValue, float minimum, float maximum, string description)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 97,
+      "text": "ConfigEntry<float> val = config.Bind<float>(section, key, defaultValue, new ConfigDescription(description, (AcceptableValueBase)(object)new AcceptableValueRange<float>(minimum, maximum), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera/BuildCameraConfig.cs",
+      "line": 102,
+      "text": "private static void HookChange<T>(ConfigEntry<T> entry)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 391,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 405,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 419,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 433,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 447,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 461,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 475,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 489,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 503,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 517,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 531,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 545,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 559,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 573,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 587,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 601,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 615,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 645,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 650,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 655,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 660,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 665,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 670,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 675,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 680,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 685,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 690,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 695,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 700,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 705,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 710,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 715,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 720,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 725,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 777,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3102,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_Enabled()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3104,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3120,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_Enabled(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3126,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3143,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E RunicBuildCamera.BuildCameraConfig::get_ToggleShortcut()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3145,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3161,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_ToggleShortcut(BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3167,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3184,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_CameraRange()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3186,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3202,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_CameraRange(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3208,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3225,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_MoveSpeed()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3227,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3243,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_MoveSpeed(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3249,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3266,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_FastMoveMultiplier()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3268,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3284,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_FastMoveMultiplier(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3290,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3307,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_WorldRelativeMovement()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3309,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3325,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_WorldRelativeMovement(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3331,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3348,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_RemoteActionDistance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3350,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3366,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_RemoteActionDistance(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3372,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3389,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_PickupEnabled()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3391,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3407,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_PickupEnabled(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3413,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3430,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_PickupRange()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3432,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3448,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_PickupRange(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3454,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3471,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_PickupIntervalSeconds()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3473,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3489,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_PickupIntervalSeconds(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3495,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3512,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_DemisterFollowCamera()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3514,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3530,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_DemisterFollowCamera(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3536,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3553,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::get_DemisterRangeMultiplier()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3555,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3571,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_DemisterRangeMultiplier(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3577,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3594,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertMouseHorizontal()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3596,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3612,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_InvertMouseHorizontal(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3618,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3635,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertMouseVertical()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3637,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3653,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_InvertMouseVertical(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3659,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3676,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertControllerHorizontal()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3678,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3694,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_InvertControllerHorizontal(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3700,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3717,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertControllerVertical()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3719,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3735,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_InvertControllerVertical(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3741,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3758,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_VerboseLogging()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3760,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3776,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::set_VerboseLogging(BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3782,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3845,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::Bind(BepInEx.Configuration.ConfigFile)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3851,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3861,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E RunicBuildCamera.BuildCameraConfig::BindEntry(BepInEx.Configuration.ConfigFile,System.String,System.String,T,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3863,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3867,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3893,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E RunicBuildCamera.BuildCameraConfig::BindRange(BepInEx.Configuration.ConfigFile,System.String,System.String,System.Single,System.Single,System.Single,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3895,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3899,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3933,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.BuildCameraConfig::HookChange(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3939,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7796,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7797,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7798,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7824,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Single\\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7825,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CT\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7826,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E RunicBuildCamera.BuildCameraConfig::get_ToggleShortcut()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7827,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_DemisterFollowCamera()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7828,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_Enabled()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7829,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertControllerHorizontal()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7830,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertControllerVertical()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7831,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertMouseHorizontal()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7832,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_InvertMouseVertical()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7833,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E RunicBuildCamera.BuildCameraConfig::get_PickupEnabled()\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 27,
+      "text": "private static readonly HashSet<ZDOID> SeenThisScan = new HashSet<ZDOID>();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 29,
+      "text": "private static readonly Dictionary<ZDOID, CooldownEntry> Cooldowns = new Dictionary<ZDOID, CooldownEntry>();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 165,
+      "text": "ZNetView component = ((Component)val).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 211,
+      "text": "private static bool TryEvaluate(ItemDrop itemDrop, ZDOID id, Player player, Inventory inventory, Vector3 cameraPosition, float range, float now, bool ignoreCooldown = false)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 261,
+      "text": "private static void SetCooldown(ZDOID id, float retryAt)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 291,
+      "text": "List<ZDOID> list = null;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 292,
+      "text": "foreach (KeyValuePair<ZDOID, CooldownEntry> cooldown in Cooldowns)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 298,
+      "text": "list = new List<ZDOID>();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 307,
+      "text": "foreach (ZDOID item in list)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 321,
+      "text": "ZDOID key = ZDOID.None;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 323,
+      "text": "foreach (KeyValuePair<ZDOID, CooldownEntry> cooldown in Cooldowns)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1604,
+      "text": "\"type\": \"System.Collections.Generic.HashSet\\u00601\\u003CZDOID\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1611,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5615,
+      "text": "\"signature\": \"System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5625,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5659,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5665,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7790,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CZNetView\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7803,
+      "text": "\"!0 System.Collections.Generic.KeyValuePair\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::get_Key()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7807,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CZDOID\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7816,
+      "text": "\"!1 System.Collections.Generic.KeyValuePair\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7921,
+      "text": "\"System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7937,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7947,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::ContainsKey(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7948,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7949,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7952,
+      "text": "\"System.Boolean System.Collections.Generic.HashSet\\u00601\\u003CZDOID\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7956,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CZDOID\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7978,
+      "text": "\"System.Boolean ZDOID::IsNone()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7983,
+      "text": "\"System.Boolean ZNetView::IsValid()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7991,
+      "text": "\"System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8003,
+      "text": "\"System.Collections.Generic.KeyValuePair\\u00602\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8007,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8013,
+      "text": "\"System.Int32 System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8207,
+      "text": "\"System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8239,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8240,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::Clear()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8241,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry\\u003E::set_Item(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8243,
+      "text": "\"System.Void System.Collections.Generic.HashSet\\u00601\\u003CZDOID\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8244,
+      "text": "\"System.Void System.Collections.Generic.HashSet\\u00601\\u003CZDOID\\u003E::Clear()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8252,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8253,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8302,
+      "text": "\"ZDO ZNetView::GetZDO()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3550,
+      "text": "IL_0078: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3551,
+      "text": "IL_007d: callvirt System.Int32 System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3643,
+      "text": ".locals System.Int32, System.Int32, System.Collections.Generic.List`1<ItemDrop>, System.Exception, System.Int32, ItemDrop, ZNetView, ZDO, System.Boolean, System.Exception"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3686,
+      "text": "IL_007d: ldsfld System.Collections.Generic.HashSet`1<ZDOID> RunicBuildCamera.Integration.RemotePickupRuntime::SeenThisScan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3687,
+      "text": "IL_0082: callvirt System.Void System.Collections.Generic.HashSet`1<ZDOID>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3722,
+      "text": "IL_00f0: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3729,
+      "text": "IL_0103: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3734,
+      "text": "IL_010f: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3739,
+      "text": "IL_011f: ldflda ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3740,
+      "text": "IL_0124: call System.Boolean ZDOID::IsNone()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3742,
+      "text": "IL_012e: ldsfld System.Collections.Generic.HashSet`1<ZDOID> RunicBuildCamera.Integration.RemotePickupRuntime::SeenThisScan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3744,
+      "text": "IL_0135: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3745,
+      "text": "IL_013a: callvirt System.Boolean System.Collections.Generic.HashSet`1<ZDOID>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3752,
+      "text": "IL_0150: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3759,
+      "text": "IL_015c: call System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3773,
+      "text": "IL_017f: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3777,
+      "text": "IL_018d: call System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3783,
+      "text": "IL_01a2: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3790,
+      "text": "IL_01ae: call System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3793,
+      "text": "IL_01b7: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3796,
+      "text": "IL_01c3: call System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3811,
+      "text": "IL_01ec: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3819,
+      "text": "IL_0205: call System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3834,
+      "text": "IL_022e: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3837,
+      "text": "IL_023a: call System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3846,
+      "text": "IL_0254: ldsfld System.Collections.Generic.HashSet`1<ZDOID> RunicBuildCamera.Integration.RemotePickupRuntime::SeenThisScan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3847,
+      "text": "IL_0259: callvirt System.Void System.Collections.Generic.HashSet`1<ZDOID>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3854,
+      "text": "// System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3874,
+      "text": "IL_0020: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3877,
+      "text": "IL_0028: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::TryGetValue(!0,!1&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3981,
+      "text": "IL_013b: call System.Boolean ZDOID::IsNone()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4022,
+      "text": "// System.Void RunicBuildCamera.Integration.RemotePickupRuntime::SetCooldown(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4025,
+      "text": "IL_0002: call System.Boolean ZDOID::IsNone()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4028,
+      "text": "IL_000a: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4030,
+      "text": "IL_0010: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::ContainsKey(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4032,
+      "text": "IL_0017: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4033,
+      "text": "IL_001c: callvirt System.Int32 System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4040,
+      "text": "IL_003d: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4041,
+      "text": "IL_0042: callvirt System.Void System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4052,
+      "text": "IL_005d: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4057,
+      "text": "IL_006a: callvirt System.Void System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::set_Item(!0,!1)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4061,
+      "text": ".locals System.Collections.Generic.List`1<ZDOID>, System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>, System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>, RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry, S"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4062,
+      "text": "IL_0000: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4063,
+      "text": "IL_0005: callvirt System.Int32 System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4068,
+      "text": "IL_000f: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4069,
+      "text": "IL_0014: callvirt System.Collections.Generic.Dictionary`2/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4073,
+      "text": "IL_001e: call System.Collections.Generic.KeyValuePair`2<!0,!1> System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4077,
+      "text": "IL_0027: call !1 System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4084,
+      "text": "IL_0039: newobj System.Void System.Collections.Generic.List`1<ZDOID>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4088,
+      "text": "IL_0042: call !0 System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Key()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4089,
+      "text": "IL_0047: callvirt System.Void System.Collections.Generic.List`1<ZDOID>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4091,
+      "text": "IL_004e: call System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4095,
+      "text": "IL_0059: constrained. System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4102,
+      "text": "IL_006a: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<ZDOID>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4106,
+      "text": "IL_0075: call !0 System.Collections.Generic.List`1/Enumerator<ZDOID>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4108,
+      "text": "IL_007c: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4110,
+      "text": "IL_0083: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::Remove(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4113,
+      "text": "IL_008b: call System.Boolean System.Collections.Generic.List`1/Enumerator<ZDOID>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4117,
+      "text": "IL_0096: constrained. System.Collections.Generic.List`1/Enumerator<ZDOID>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4125,
+      "text": ".locals System.Boolean, ZDOID, System.Int64, System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>, System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>, RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4128,
+      "text": "IL_0002: ldsfld ZDOID ZDOID::None"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4132,
+      "text": "IL_0012: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4133,
+      "text": "IL_0017: callvirt System.Collections.Generic.Dictionary`2/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4137,
+      "text": "IL_0021: call System.Collections.Generic.KeyValuePair`2<!0,!1> System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4142,
+      "text": "IL_002d: call !1 System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4151,
+      "text": "IL_0042: call !0 System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Key()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4154,
+      "text": "IL_004a: call !1 System.Collections.Generic.KeyValuePair`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4160,
+      "text": "IL_005b: call System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4164,
+      "text": "IL_0066: constrained. System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4169,
+      "text": "IL_0075: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4171,
+      "text": "IL_007b: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::Remove(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4217,
+      "text": "IL_002f: ldsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4218,
+      "text": "IL_0034: callvirt System.Void System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4219,
+      "text": "IL_0039: ldsfld System.Collections.Generic.HashSet`1<ZDOID> RunicBuildCamera.Integration.RemotePickupRuntime::SeenThisScan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4220,
+      "text": "IL_003e: callvirt System.Void System.Collections.Generic.HashSet`1<ZDOID>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4371,
+      "text": "IL_000f: newobj System.Void System.Collections.Generic.HashSet`1<ZDOID>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4372,
+      "text": "IL_0014: stsfld System.Collections.Generic.HashSet`1<ZDOID> RunicBuildCamera.Integration.RemotePickupRuntime::SeenThisScan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4373,
+      "text": "IL_0019: newobj System.Void System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4374,
+      "text": "IL_001e: stsfld System.Collections.Generic.Dictionary`2<ZDOID,RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry> RunicBuildCamera.Integration.RemotePickupRuntime::Cooldowns"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 315,
+      "text": "if ((Object)(object)ZoneSystem.instance != (Object)null && ZoneSystem.instance.GetGroundHeight(result.Position, ref num5) && result.Position.y < num5)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7984,
+      "text": "\"System.Boolean ZoneSystem::GetGroundHeight(UnityEngine.Vector3,System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8303,
+      "text": "\"ZoneSystem ZoneSystem::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2137,
+      "text": "IL_018c: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2141,
+      "text": "IL_0199: call ZoneSystem ZoneSystem::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2145,
+      "text": "IL_01a7: callvirt System.Boolean ZoneSystem::GetGroundHeight(UnityEngine.Vector3,System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4737,
+      "text": "IL_0033: ldfld PieceTable ItemDrop/ItemData/SharedData::m_buildPieces"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/Runic.Localization.English.json",
+      "line": 6,
+      "text": "\"text_1c9f371d5f2c\": \"Maximum distance, in metres, that the detached camera may travel from the player.\","
+    },
+    {
+      "file": "csharp/Runic.Localization.English.json",
+      "line": 11,
+      "text": "\"text_2fbfdd579ce5\": \"Move the player's active Wisplight mist-clearing effect with the detached camera. This does nothing without an active Wisplight demister.\","
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 45,
+      "text": "internal static void AfterStatusEffectUpdate(SE_Demister effect)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 70,
+      "text": "bool flag = BuildCameraRuntime.TryGetActiveContext(out var player, out var cameraPosition, out var _);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 71,
+      "text": "if (!num || !flag || (Object)(object)player == (Object)null || (Object)(object)player != (Object)(object)Player.m_localPlayer || (Object)(object)((StatusEffect)effect).m_character != (Object)(object)player || !IsFinite(cameraPosition))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 234,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 235,
+      "text": "if (Object.op_Implicit((Object)(object)state.Ball) && Object.op_Implicit((Object)(object)localPlayer))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterRuntime.cs",
+      "line": 237,
+      "text": "state.Ball.transform.position = ((Character)localPlayer).GetCenterPoint();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"Update\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 7,
+      "text": "internal static class PlayerUpdateInputScopePatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 9,
+      "text": "private static void Prefix(Player __instance, ref bool __state)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 13,
+      "text": "__state = PlayerUpdateInputIsolation.Enter(__instance);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputScopePatch.cs",
+      "line": 26,
+      "text": "PlayerUpdateInputIsolation.Exit();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 31,
+      "text": "private static readonly FieldInfo EnableAutoPickupField = AccessTools.Field(typeof(Player), \"m_enableAutoPickup\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 39,
+      "text": "private static Player _lastPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 67,
+      "text": "bool flag = BuildCameraRuntime.TryGetActiveContext(out var player, out var cameraPosition, out var _);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 73,
+      "text": "if (!num || (Object)(object)player == (Object)null || (Object)(object)player != (Object)(object)Player.m_localPlayer || ((Character)player).IsTeleporting() || !TryReadAutoPickupState(player, out var enabled) || !enabled)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 75,
+      "text": "if (_wasActive || (Object)(object)_lastPlayer != (Object)null || Cooldowns.Count != 0)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 81,
+      "text": "if ((Object)(object)player != (Object)(object)_lastPlayer)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 84,
+      "text": "_lastPlayer = player;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 97,
+      "text": "Inventory inventory = ((Humanoid)player).GetInventory();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 100,
+      "text": "Scan(player, inventory, cameraPosition, num3, num2, time);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 120,
+      "text": "private static void Scan(Player player, Inventory inventory, Vector3 cameraPosition, float range, float interval, float now)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 174,
+      "text": "if (!TryEvaluate(val, val2.m_uid, player, inventory, cameraPosition, range, now))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 186,
+      "text": "if (!TryEvaluate(val, val2.m_uid, player, inventory, cameraPosition, range, now, ignoreCooldown: true))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 191,
+      "text": "bool flag = ((Humanoid)player).Pickup(((Component)val).gameObject, true, true);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 211,
+      "text": "private static bool TryEvaluate(ItemDrop itemDrop, ZDOID id, Player player, Inventory inventory, Vector3 cameraPosition, float range, float now, bool ignoreCooldown = false)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 242,
+      "text": "if (flag && !flag2 && !PlayerWardPickupAccess.Allows(position))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 244,
+      "text": "Report(\"Camera pickup rejected \" + val.m_name + \": PlayerWardDenied\", warning: false);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 247,
+      "text": "bool isUniqueOrQuestItem = val.m_questItem || ((Humanoid)player).HaveUniqueKey(val.m_name);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 251,
+      "text": "float maxCarryWeight = player.GetMaxCarryWeight();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 355,
+      "text": "_lastPlayer = null;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 366,
+      "text": "private static bool TryReadAutoPickupState(Player player, out bool enabled)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 369,
+      "text": "if ((Object)(object)player == (Object)null || EnableAutoPickupField == null || EnableAutoPickupField.FieldType != typeof(bool) || !EnableAutoPickupField.IsStatic)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 379,
+      "text": "((Character)player).Message((MessageType)1, \"$hud_autopickup: $hud_off\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 384,
+      "text": "Report(\"Camera pickup paused: player auto-pickup is off.\", warning: false);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 9,
+      "text": "internal static class PlayerWardPickupAccess"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 22,
+      "text": "foreach (PrivateArea item in (AreasField?.GetValue(null) as List<PrivateArea>) ?? throw new InvalidOperationException(\"Cannot read the player ward registry.\"))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerWardPickupAccess.cs",
+      "line": 27,
+      "text": "if (Object.op_Implicit((Object)(object)component) && component.IsPlacedByPlayer() && Enabled(item) && Inside(item, target, 0f) && !LocalAccess(item))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerPieceRayRemoteLimitPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"PieceRayTest\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerPieceRayRemoteLimitPatch.cs",
+      "line": 7,
+      "text": "internal static class PlayerPieceRayRemoteLimitPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerPieceRayRemoteLimitPatch.cs",
+      "line": 9,
+      "text": "private static void Postfix(Player __instance, [HarmonyArgument(\"point\")] ref Vector3 point, ref bool __result)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerPieceRayRemoteLimitPatch.cs",
+      "line": 12,
+      "text": "if (__result && BuildCameraRuntime.ShouldFreezePlayer(__instance) && !BuildCameraRuntime.IsWithinRemoteActionLimit(__instance, point))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 6,
+      "text": "internal static class PlayerUpdateInputIsolation"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 12,
+      "text": "private static Player _player;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 20,
+      "text": "internal static bool Enter(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 22,
+      "text": "if (!BuildCameraRuntime.ShouldFreezePlayer(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 28,
+      "text": "_player = player;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 36,
+      "text": "internal static void CaptureTakeInput(Player player, bool original)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 38,
+      "text": "if (_depth > 0 && !((Object)(object)player == (Object)null) && !((Object)(object)player != (Object)(object)_player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 45,
+      "text": "internal static bool ShouldSuppress(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 47,
+      "text": "if (_depth > 0 && (Object)(object)player != (Object)null && (Object)(object)player == (Object)(object)_player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 49,
+      "text": "return BuildCameraRuntime.ShouldFreezePlayer(player);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 54,
+      "text": "internal static bool PlacementInput(Player player, bool current)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 56,
+      "text": "if (!ShouldSuppress(player) || !_captured)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdateInputIsolation.cs",
+      "line": 70,
+      "text": "_player = null;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementRangePatch.cs",
+      "line": 8,
+      "text": "internal static class PlayerUpdatePlacementRangePatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementRangePatch.cs",
+      "line": 17,
+      "text": "private static void Prefix(Player __instance, ref bool takeInput, ref ValheimAdapter.RangeLease __state)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementRangePatch.cs",
+      "line": 21,
+      "text": "takeInput = PlayerUpdateInputIsolation.PlacementInput(__instance, takeInput);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 57,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 65,
+      "text": "ActivationFeedback(localPlayer, text + ((object)val/*cast due to constrained. prefix*/).ToString());"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 71,
+      "text": "ActivationFeedback(localPlayer, (!ConfigEnabled()) ? RunicText.Get(\"text_e1ab24965475\") : RunicText.Get(\"text_4ea5638c368a\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 75,
+      "text": "else if (Session.IsActive && (!SessionBelongsToUsablePlayer(localPlayer) || (Object)(object)GameCamera.instance == (Object)null))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 84,
+      "text": "ActivationFeedback(localPlayer, \"Off.\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 86,
+      "text": "else if (ValheimAdapter.CanTakeInput(localPlayer))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 88,
+      "text": "TryStart(localPlayer);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 92,
+      "text": "ActivationFeedback(localPlayer, RunicText.Get(\"text_f46af67108b2\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 97,
+      "text": "if (!ValheimAdapter.IsBuildToolEquipped(localPlayer))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 102,
+      "text": "Session.Reanchor(((Component)localPlayer).transform.position);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 131,
+      "text": "internal static void OnLocalPlayerAssigned(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 133,
+      "text": "if (Session.IsActive && ((Object)(object)player == (Object)null || !Session.BelongsTo(((Object)player).GetInstanceID())))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 139,
+      "text": "internal static bool ShouldFreezePlayer(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 141,
+      "text": "if (IsActive && (Object)(object)player != (Object)null && Session.BelongsTo(((Object)player).GetInstanceID()))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 143,
+      "text": "return ValheimAdapter.IsLocalPlayer(player);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 148,
+      "text": "internal static ValheimAdapter.RangeLease EnterRemoteActionRange(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 150,
+      "text": "if (!ShouldFreezePlayer(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 155,
+      "text": "return ValheimAdapter.EnterRemoteActionRange(player, num, num);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 158,
+      "text": "internal static bool IsWithinRemoteActionLimit(Player player, Vector3 target)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 166,
+      "text": "if (!ShouldFreezePlayer(player) || (Object)(object)((Character)player).m_eye == (Object)null || !IsFinite(target))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 171,
+      "text": "Vector3 value = target - ((Character)player).m_eye.position;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 188,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 189,
+      "text": "if (!SessionBelongsToUsablePlayer(localPlayer))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 194,
+      "text": "Session.Reanchor(((Component)localPlayer).transform.position);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 195,
+      "text": "if (_focused && ValheimAdapter.CanTakeInput(localPlayer) && !Console.IsVisible() && ((Object)(object)Hud.instance == (Object)null || !Hud.IsPieceSelectionVisible()))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 203,
+      "text": "internal static bool TryGetActiveContext(out Player player, out Vector3 cameraPosition, out Quaternion cameraRotation)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 213,
+      "text": "player = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 214,
+      "text": "if (!IsActive || !SessionBelongsToUsablePlayer(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 237,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 239,
+      "text": "return CameraExitInput.HideRequested(ZInput.GetButtonDown(\"Hide\"), (int)ZInput.InputLayout != 0 && ZInput.IsGamepadActive(), shortControllerRelease, ((Character)localPlayer).InPlaceMode(), ZInput.GetButton(\"JoyAltKeys\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 242,
+      "text": "private static void TryStart(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 247,
+      "text": "if (!ValheimAdapter.IsBuildToolEquipped(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 249,
+      "text": "ActivationFeedback(player, RunicText.Get(\"text_aad211031f8b\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 255,
+      "text": "ActivationFeedback(player, RunicText.Get(\"text_2e15e203e13d\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 259,
+      "text": "Session.Begin(((Object)player).GetInstanceID(), ((Component)player).transform.position, ((Component)instance).transform.position, ((Component)instance).transform.rotation, range);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 260,
+      "text": "ActivationFeedback(player, RunicText.Get(\"text_3691699c3e79\"));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 263,
+      "text": "private static void ActivationFeedback(Player player, string message)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 266,
+      "text": "if ((Object)(object)player != (Object)null)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 268,
+      "text": "((Character)player).Message((MessageType)1, RunicText.Get(\"text_5a7920bb73fd\") + message, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 288,
+      "text": "float num = Input.GetAxis(\"Mouse X\") * PlayerController.m_mouseSens;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 289,
+      "text": "float num2 = Input.GetAxis(\"Mouse Y\") * PlayerController.m_mouseSens;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 296,
+      "text": "if (PlayerController.m_invertMouse)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 330,
+      "text": "private static bool SessionBelongsToUsablePlayer(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 332,
+      "text": "if ((Object)(object)player != (Object)null && Session.BelongsTo(((Object)player).GetInstanceID()))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 334,
+      "text": "return ValheimAdapter.IsUsableLocalPlayer(player);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetLocalPlayerCameraCleanupPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"SetLocalPlayer\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetLocalPlayerCameraCleanupPatch.cs",
+      "line": 6,
+      "text": "internal static class PlayerSetLocalPlayerCameraCleanupPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetLocalPlayerCameraCleanupPatch.cs",
+      "line": 8,
+      "text": "private static void Postfix(Player __instance)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetLocalPlayerCameraCleanupPatch.cs",
+      "line": 12,
+      "text": "BuildCameraRuntime.OnLocalPlayerAssigned(__instance);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementGhostRangePatch.cs",
+      "line": 8,
+      "text": "internal static class PlayerUpdatePlacementGhostRangePatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerUpdatePlacementGhostRangePatch.cs",
+      "line": 15,
+      "text": "private static void Prefix(Player __instance, ref ValheimAdapter.RangeLease __state)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemoteEffectsLocalPlayerCleanupPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"SetLocalPlayer\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemoteEffectsLocalPlayerCleanupPatch.cs",
+      "line": 6,
+      "text": "internal static class RemoteEffectsLocalPlayerCleanupPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterUpdateStatusEffectPatch.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SE_Demister), \"UpdateStatusEffect\")]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterUpdateStatusEffectPatch.cs",
+      "line": 6,
+      "text": "internal static class DemisterUpdateStatusEffectPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/DemisterUpdateStatusEffectPatch.cs",
+      "line": 12,
+      "text": "DemisterRuntime.AfterStatusEffectUpdate(__instance);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetControlsPatch.cs",
+      "line": 8,
+      "text": "internal static class PlayerSetControlsPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetControlsPatch.cs",
+      "line": 15,
+      "text": "private static void Prefix(Player __instance, ref Vector3 movedir, ref bool attack, ref bool attackHold, ref bool secondaryAttack, ref bool secondaryAttackHold, ref bool block, ref bool blockHold, ref bool jump, ref bool crouch, ref bool run, ref bool autoRun, ref bool dodge)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetControlsPatch.cs",
+      "line": 19,
+      "text": "if (BuildCameraRuntime.ShouldFreezePlayer(__instance))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetMouseLookIsolationPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"SetMouseLook\", new Type[] { typeof(Vector2) })]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetMouseLookIsolationPatch.cs",
+      "line": 8,
+      "text": "internal static class PlayerSetMouseLookIsolationPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetMouseLookIsolationPatch.cs",
+      "line": 10,
+      "text": "private static void Prefix(Player __instance, ref Vector2 mouseLook)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerSetMouseLookIsolationPatch.cs",
+      "line": 14,
+      "text": "if (BuildCameraRuntime.ShouldFreezePlayer(__instance))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerHotbarCameraExitPatch.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Player), \"UseHotbarItem\", new Type[] { typeof(int) })]"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerHotbarCameraExitPatch.cs",
+      "line": 7,
+      "text": "internal static class PlayerHotbarCameraExitPatch"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerHotbarCameraExitPatch.cs",
+      "line": 9,
+      "text": "private static void Prefix(Player __instance)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/PlayerHotbarCameraExitPatch.cs",
+      "line": 11,
+      "text": "if (BuildCameraRuntime.ShouldFreezePlayer(__instance))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 12,
+      "text": "private delegate bool TakeInputDelegate(Player player);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 16,
+      "text": "internal Player Player;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 27,
+      "text": "private readonly int _playerId;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 33,
+      "text": "internal RangeLease(int playerId, RangeState state)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 35,
+      "text": "_playerId = playerId;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 44,
+      "text": "ExitRange(_playerId, _state);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 51,
+      "text": "private static FieldRef<Player, float> _maxPlaceDistance;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 53,
+      "text": "private static FieldRef<Humanoid, ItemData> _rightItem;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 76,
+      "text": "_maxPlaceDistance = AccessTools.FieldRefAccess<Player, float>(RequireField(typeof(Player), \"m_maxPlaceDistance\", typeof(float)));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 77,
+      "text": "_rightItem = AccessTools.FieldRefAccess<Humanoid, ItemData>(RequireField(typeof(Humanoid), \"m_rightItem\", typeof(ItemData)));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 78,
+      "text": "UpdatePlacementMethod = RequireMethod(typeof(Player), \"UpdatePlacement\", typeof(void), typeof(bool), typeof(float));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 79,
+      "text": "UpdatePlacementGhostMethod = RequireMethod(typeof(Player), \"UpdatePlacementGhost\", typeof(void), typeof(bool));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 81,
+      "text": "SetControlsMethod = RequireMethod(typeof(Player), \"SetControls\", typeof(void), typeof(Vector3), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool), typeof(bool));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 82,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(Player), \"TakeInput\", Type.EmptyTypes, (Type[])null);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 85,
+      "text": "throw new MissingMethodException(typeof(Player).FullName, \"TakeInput()\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 112,
+      "text": "internal static bool IsLocalPlayer(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 114,
+      "text": "if ((Object)(object)player != (Object)null && (Object)(object)Player.m_localPlayer != (Object)null)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 116,
+      "text": "return (Object)(object)player == (Object)(object)Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 121,
+      "text": "internal static bool IsUsableLocalPlayer(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 123,
+      "text": "if (!IsLocalPlayer(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 129,
+      "text": "return !((Character)player).IsDead() && !((Character)player).IsTeleporting();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 137,
+      "text": "internal static bool IsBuildToolEquipped(Player player)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 139,
+      "text": "if (!IsUsableLocalPlayer(player))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 145,
+      "text": "ItemData val = ((_rightItem != null) ? _rightItem.Invoke((Humanoid)(object)player) : null);"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/Runic.Localization.English.json",
+      "line": 23,
+      "text": "\"text_7e340344c138\": \"Allow nearby loose world-item drops to be collected while the detached camera is active. Chests and other containers are excluded.\","
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 25,
+      "text": "private static readonly ItemDrop[] ItemBuffer = new ItemDrop[128];"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 33,
+      "text": "private static readonly FieldInfo ItemInstancesField = AccessTools.Field(typeof(ItemDrop), \"s_instances\");"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 97,
+      "text": "Inventory inventory = ((Humanoid)player).GetInventory();"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 98,
+      "text": "if (inventory != null)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 100,
+      "text": "Scan(player, inventory, cameraPosition, num3, num2, time);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 120,
+      "text": "private static void Scan(Player player, Inventory inventory, Vector3 cameraPosition, float range, float interval, float now)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 134,
+      "text": "if (!(ItemInstancesField?.GetValue(null) is List<ItemDrop> items))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 159,
+      "text": "ItemDrop val = ItemBuffer[_pendingIndex];"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 174,
+      "text": "if (!TryEvaluate(val, val2.m_uid, player, inventory, cameraPosition, range, now))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 186,
+      "text": "if (!TryEvaluate(val, val2.m_uid, player, inventory, cameraPosition, range, now, ignoreCooldown: true))"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 211,
+      "text": "private static bool TryEvaluate(ItemDrop itemDrop, ZDOID id, Player player, Inventory inventory, Vector3 cameraPosition, float range, float now, bool ignoreCooldown = false)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 222,
+      "text": "ItemData itemData = itemDrop.m_itemData;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 223,
+      "text": "SharedData val = itemData?.m_shared;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 224,
+      "text": "if (itemData == null || val == null)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 229,
+      "text": "Vector3 position = ((Component)itemDrop).transform.position;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 241,
+      "text": "bool flag2 = (Object)(object)((Component)itemDrop).GetComponent<Fish>() != (Object)null;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 248,
+      "text": "bool inventoryCanAdd = inventory.CanAddItem(itemData, -1);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 249,
+      "text": "float weight = itemData.GetWeight(-1);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 250,
+      "text": "float num2 = inventory.GetTotalWeight() + weight;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 253,
+      "text": "PickupRejectionReason pickupRejectionReason = PickupPolicy.Evaluate(new PickupCandidateFacts(!id.IsNone(), flag, flag2, itemDrop.m_autoPickup, itemDrop.IsPiece(), itemDrop.InTar(), isUniqueOrQuestItem, inventoryCanAdd, wouldExceedCarryWeight, isCoolingDown));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 53,
+      "text": "private static FieldRef<Humanoid, ItemData> _rightItem;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 77,
+      "text": "_rightItem = AccessTools.FieldRefAccess<Humanoid, ItemData>(RequireField(typeof(Humanoid), \"m_rightItem\", typeof(ItemData)));"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/ValheimAdapter.cs",
+      "line": 145,
+      "text": "ItemData val = ((_rightItem != null) ? _rightItem.Invoke((Humanoid)(object)player) : null);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupRejectionReason.cs",
+      "line": 13,
+      "text": "InventoryFull,"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupCandidateFacts.cs",
+      "line": 19,
+      "text": "internal bool InventoryCanAdd { get; }"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupCandidateFacts.cs",
+      "line": 25,
+      "text": "internal PickupCandidateFacts(bool hasValidNetworkIdentity, bool isWithinRange, bool isFish, bool autoPickupEnabled, bool isPiece, bool isInTar, bool isUniqueOrQuestItem, bool inventoryCanAdd, bool wouldExceedCarryWeight, bool isCoolingDown)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupCandidateFacts.cs",
+      "line": 34,
+      "text": "InventoryCanAdd = inventoryCanAdd;"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupPolicy.cs",
+      "line": 74,
+      "text": "if (!facts.InventoryCanAdd)"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Core/PickupPolicy.cs",
+      "line": 76,
+      "text": "return PickupRejectionReason.InventoryFull;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1597,
+      "text": "\"type\": \"ItemDrop[]\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1816,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2462,
+      "text": "\"name\": \"InventoryFull\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2599,
+      "text": "\"name\": \"\\u003CInventoryCanAdd\\u003Ek__BackingField\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2678,
+      "text": "\"name\": \"InventoryCanAdd\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5579,
+      "text": "\"signature\": \"System.Void RunicBuildCamera.Integration.RemotePickupRuntime::Scan(Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5588,
+      "text": "\"name\": \"inventory\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5589,
+      "text": "\"type\": \"Inventory\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5615,
+      "text": "\"signature\": \"System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5620,
+      "text": "\"name\": \"itemDrop\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5621,
+      "text": "\"type\": \"ItemDrop\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5632,
+      "text": "\"name\": \"inventory\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5633,
+      "text": "\"type\": \"Inventory\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7386,
+      "text": "\"name\": \"inventoryCanAdd\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7531,
+      "text": "\"signature\": \"System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::get_InventoryCanAdd()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7820,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7849,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CHumanoid,ItemDrop/ItemData\\u003E(System.Reflection.FieldInfo)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7852,
+      "text": "\"Inventory Humanoid::GetInventory()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7872,
+      "text": "\"System.Boolean Inventory::CanAddItem(ItemDrop/ItemData,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7873,
+      "text": "\"System.Boolean ItemDrop::CanPickup(System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7874,
+      "text": "\"System.Boolean ItemDrop::InTar()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7875,
+      "text": "\"System.Boolean ItemDrop::IsPiece()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7894,
+      "text": "\"System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::get_InventoryCanAdd()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7921,
+      "text": "\"System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8012,
+      "text": "\"System.Int32 RunicBuildCamera.Core.PickupScanWindow::CopyNext\\u003CItemDrop\\u003E(System.Collections.Generic.IReadOnlyList\\u00601\\u003CT\\u003E,T[],System.Int32\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8034,
+      "text": "\"System.Single Inventory::GetTotalWeight()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8035,
+      "text": "\"System.Single ItemDrop/ItemData::GetWeight(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8119,
+      "text": "\"System.Void ItemDrop::Load()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8120,
+      "text": "\"System.Void ItemDrop::RequestOwn()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8206,
+      "text": "\"System.Void RunicBuildCamera.Integration.RemotePickupRuntime::Scan(Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3505,
+      "text": ".locals System.Boolean, Player, UnityEngine.Vector3, System.Boolean, System.Single, System.Single, System.Single, Inventory, UnityEngine.Quaternion"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3604,
+      "text": "IL_0126: callvirt Inventory Humanoid::GetInventory()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3615,
+      "text": "IL_013c: call System.Void RunicBuildCamera.Integration.RemotePickupRuntime::Scan(Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3642,
+      "text": "// System.Void RunicBuildCamera.Integration.RemotePickupRuntime::Scan(Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3643,
+      "text": ".locals System.Int32, System.Int32, System.Collections.Generic.List`1<ItemDrop>, System.Exception, System.Int32, ItemDrop, ZNetView, ZDO, System.Boolean, System.Exception"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3652,
+      "text": "IL_0012: isinst System.Collections.Generic.List`1<ItemDrop>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3664,
+      "text": "IL_0038: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3666,
+      "text": "IL_0042: call System.Int32 RunicBuildCamera.Core.PickupScanWindow::CopyNext<ItemDrop>(System.Collections.Generic.IReadOnlyList`1<T>,T[],System.Int32&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3693,
+      "text": "IL_0091: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3699,
+      "text": "IL_00a4: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3703,
+      "text": "IL_00b1: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3749,
+      "text": "IL_0147: callvirt System.Void ItemDrop::Load()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3759,
+      "text": "IL_015c: call System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3763,
+      "text": "IL_016a: callvirt System.Void ItemDrop::RequestOwn()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3770,
+      "text": "IL_0176: callvirt System.Boolean ItemDrop::CanPickup(System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3780,
+      "text": "IL_0199: callvirt System.Void ItemDrop::Load()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3790,
+      "text": "IL_01ae: call System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3854,
+      "text": "// System.Boolean RunicBuildCamera.Integration.RemotePickupRuntime::TryEvaluate(ItemDrop,ZDOID,Player,Inventory,UnityEngine.Vector3,System.Single,System.Single,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3855,
+      "text": ".locals ItemDrop/ItemData, ItemDrop/ItemData/SharedData, System.Boolean, RunicBuildCamera.Integration.RemotePickupRuntime/CooldownEntry, UnityEngine.Vector3, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Single, System.Single, System.Single, System.Boolean, RunicBuildCamera.Core.PickupCandidateFacts, RunicBuildCamera.Core.P"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3857,
+      "text": "IL_0001: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3864,
+      "text": "IL_000e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3918,
+      "text": "IL_0097: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3926,
+      "text": "IL_00af: ldfld System.Boolean ItemDrop/ItemData/SharedData::m_questItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3930,
+      "text": "IL_00b8: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3938,
+      "text": "IL_00ca: callvirt System.Boolean Inventory::CanAddItem(ItemDrop/ItemData,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3942,
+      "text": "IL_00d3: callvirt System.Single ItemDrop/ItemData::GetWeight(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3945,
+      "text": "IL_00db: callvirt System.Single Inventory::GetTotalWeight()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3987,
+      "text": "IL_0148: ldfld System.Boolean ItemDrop::m_autoPickup"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3989,
+      "text": "IL_014e: callvirt System.Boolean ItemDrop::IsPiece()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3991,
+      "text": "IL_0154: callvirt System.Boolean ItemDrop::InTar()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4009,
+      "text": "IL_0182: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4221,
+      "text": "IL_0043: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4223,
+      "text": "IL_0049: ldsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4369,
+      "text": "IL_0005: newarr ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4370,
+      "text": "IL_000a: stsfld ItemDrop[] RunicBuildCamera.Integration.RemotePickupRuntime::ItemBuffer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4380,
+      "text": "IL_003c: ldtoken ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4474,
+      "text": "IL_0044: ldtoken ItemDrop/ItemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4477,
+      "text": "IL_0053: call HarmonyLib.AccessTools/FieldRef`2<!!0,!!1> HarmonyLib.AccessTools::FieldRefAccess<Humanoid,ItemDrop/ItemData>(System.Reflection.FieldInfo)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4478,
+      "text": "IL_0058: stsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4654,
+      "text": "IL_000c: stsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4714,
+      "text": ".locals ItemDrop/ItemData, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4721,
+      "text": "IL_000b: ldsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4725,
+      "text": "IL_0015: ldsfld HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData> RunicBuildCamera.Integration.ValheimAdapter::_rightItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4727,
+      "text": "IL_001b: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<Humanoid,ItemDrop/ItemData>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4733,
+      "text": "IL_0026: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4736,
+      "text": "IL_002e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4737,
+      "text": "IL_0033: ldfld PieceTable ItemDrop/ItemData/SharedData::m_buildPieces"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5905,
+      "text": "IL_0036: ldarg.s inventoryCanAdd"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5906,
+      "text": "IL_0038: stfld System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::<InventoryCanAdd>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5957,
+      "text": "// System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::get_InventoryCanAdd()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5960,
+      "text": "IL_0001: ldfld System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::<InventoryCanAdd>k__BackingField"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6075,
+      "text": "IL_0047: call System.Boolean RunicBuildCamera.Core.PickupCandidateFacts::get_InventoryCanAdd()"
+    },
+    {
+      "file": "metadata/embedded_resources/0000_Runic.Localization.English.json",
+      "line": 23,
+      "text": "\"text_7e340344c138\": \"Allow nearby loose world-item drops to be collected while the detached camera is active. Chests and other containers are excluded.\","
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/RunicBuildCamera.Integration/RemotePickupRuntime.cs",
+      "line": 379,
+      "text": "((Character)player).Message((MessageType)1, \"$hud_autopickup: $hud_off\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/RunicBuildCamera.Integration/BuildCameraRuntime.cs",
+      "line": 268,
+      "text": "((Character)player).Message((MessageType)1, RunicText.Get(\"text_5a7920bb73fd\") + message, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8115,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2006,
+      "text": "IL_002e: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4274,
+      "text": "IL_0075: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

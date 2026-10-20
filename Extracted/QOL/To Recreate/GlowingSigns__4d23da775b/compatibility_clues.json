@@ -1,0 +1,673 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 8,
+      "text": "[BepInPlugin(\"com.robert.glowingsigns\", \"Glowing Signs\", \"1.0.0\")]"
+    },
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 9,
+      "text": "[BepInProcess(\"valheim.exe\")]"
+    },
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 10,
+      "text": "public sealed class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 26,
+      "text": "Log = ((BaseUnityPlugin)this).Logger;"
+    },
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 29,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)\"Glowing Signs 1.0.0 loaded. Restoring legacy color-matched sign glow.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 314,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 335,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 345,
+      "text": "\"name\": \"BepInEx.BepInProcess\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 831,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 846,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 63,
+      "text": "IL_0001: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 74,
+      "text": "IL_002c: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 94,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/GlowingSigns/SignPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Sign))]"
+    },
+    {
+      "file": "csharp/GlowingSigns/SignPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(\"Awake\")]"
+    },
+    {
+      "file": "csharp/GlowingSigns/SignPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/GlowingSigns/SignPatches.cs",
+      "line": 15,
+      "text": "[HarmonyPatch(\"OnCheckPermissionCompleted\")]"
+    },
+    {
+      "file": "csharp/GlowingSigns/SignPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 28,
+      "text": "_harmony.PatchAll(Assembly.GetExecutingAssembly());"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 524,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 777,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 785,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 808,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 816,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 853,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 72,
+      "text": "IL_0026: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/GlowingSigns/Plugin.cs",
+      "line": 39,
+      "text": "LegacySignGlow.DisposeMaterials();"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 11,
+      "text": "private const string LegacyShaderName = \"TextMeshPro/Distance Field\";"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 13,
+      "text": "private static readonly int FaceColorId = Shader.PropertyToID(\"_FaceColor\");"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 15,
+      "text": "private static readonly Dictionary<int, Material> MaterialsByFontMaterial = new Dictionary<int, Material>();"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 17,
+      "text": "private static Shader? _legacyShader;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 21,
+      "text": "private static bool _loggedMissingShader;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 34,
+      "text": "Shader val = FindLegacyShader();"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 40,
+      "text": "Material val2 = ((font != null) ? ((TMP_Asset)font).material : null);"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 45,
+      "text": "Material orCreateLegacyMaterial = GetOrCreateLegacyMaterial(val2, val);"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 46,
+      "text": "if (!((Object)(object)((TMP_Text)textWidget).fontSharedMaterial == (Object)(object)orCreateLegacyMaterial))"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 48,
+      "text": "((TMP_Text)textWidget).fontSharedMaterial = orCreateLegacyMaterial;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 50,
+      "text": "((Graphic)textWidget).SetMaterialDirty();"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 68,
+      "text": "internal static void DisposeMaterials()"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 70,
+      "text": "foreach (Material value in MaterialsByFontMaterial.Values)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 77,
+      "text": "MaterialsByFontMaterial.Clear();"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 78,
+      "text": "_legacyShader = null;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 81,
+      "text": "private static Material GetOrCreateLegacyMaterial(Material source, Shader legacyShader)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 90,
+      "text": "if (MaterialsByFontMaterial.TryGetValue(instanceID, out Material value) && (Object)(object)value != (Object)null)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 94,
+      "text": "value = new Material(source)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 98,
+      "text": "shader = legacyShader"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 104,
+      "text": "MaterialsByFontMaterial[instanceID] = value;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 108,
+      "text": "private static Shader? FindLegacyShader()"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 110,
+      "text": "if ((Object)(object)_legacyShader != (Object)null)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 112,
+      "text": "return _legacyShader;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 114,
+      "text": "_legacyShader = Shader.Find(\"TextMeshPro/Distance Field\");"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 115,
+      "text": "if ((Object)(object)_legacyShader == (Object)null && !_loggedMissingShader)"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 117,
+      "text": "_loggedMissingShader = true;"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 118,
+      "text": "Plugin.Log.LogError((object)\"Required shader 'TextMeshPro/Distance Field' was not found. Sign glow cannot be restored.\");"
+    },
+    {
+      "file": "csharp/GlowingSigns/LegacySignGlow.cs",
+      "line": 120,
+      "text": "return _legacyShader;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 440,
+      "text": "\"name\": \"LegacyShaderName\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 454,
+      "text": "\"name\": \"MaterialsByFontMaterial\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 455,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 461,
+      "text": "\"name\": \"_legacyShader\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 462,
+      "text": "\"type\": \"UnityEngine.Shader\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 484,
+      "text": "\"name\": \"_loggedMissingShader\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 704,
+      "text": "\"signature\": \"System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 715,
+      "text": "\"signature\": \"UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 717,
+      "text": "\"returnType\": \"UnityEngine.Material\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 721,
+      "text": "\"type\": \"UnityEngine.Material\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 724,
+      "text": "\"name\": \"legacyShader\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 725,
+      "text": "\"type\": \"UnityEngine.Shader\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 735,
+      "text": "\"signature\": \"UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 737,
+      "text": "\"returnType\": \"UnityEngine.Shader\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 830,
+      "text": "\"!1 System.Collections.Generic.Dictionary\\u00602/ValueCollection/Enumerator\\u003CSystem.Int32,UnityEngine.Material\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 833,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602/ValueCollection/Enumerator\\u003CSystem.Int32,UnityEngine.Material\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 834,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 835,
+      "text": "\"System.Boolean UnityEngine.Material::HasProperty(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 838,
+      "text": "\"System.Collections.Generic.Dictionary\\u00602/ValueCollection/Enumerator\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602/ValueCollection\\u003CSystem.Int32,UnityEngine.Material\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 839,
+      "text": "\"System.Collections.Generic.Dictionary\\u00602/ValueCollection\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E::get_Values()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 841,
+      "text": "\"System.Int32 UnityEngine.Shader::PropertyToID(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 850,
+      "text": "\"System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 856,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 857,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E::Clear()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 858,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Int32,UnityEngine.Material\\u003E::set_Item(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 860,
+      "text": "\"System.Void TMPro.TMP_Text::set_fontSharedMaterial(UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 862,
+      "text": "\"System.Void UnityEngine.Material::.ctor(UnityEngine.Material)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 863,
+      "text": "\"System.Void UnityEngine.Material::set_shader(UnityEngine.Shader)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 864,
+      "text": "\"System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 868,
+      "text": "\"System.Void UnityEngine.UI.Graphic::SetMaterialDirty()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 871,
+      "text": "\"UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 872,
+      "text": "\"UnityEngine.Material TMPro.TMP_Asset::get_material()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 873,
+      "text": "\"UnityEngine.Material TMPro.TMP_Text::get_fontSharedMaterial()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 874,
+      "text": "\"UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 875,
+      "text": "\"UnityEngine.Shader UnityEngine.Shader::Find(System.String)\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 884,
+      "text": "\"Required shader \\u0027TextMeshPro/Distance Field\\u0027 was not found. Sign glow cannot be restored.\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 88,
+      "text": "IL_0011: call System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 98,
+      "text": ".locals TMPro.TextMeshProUGUI, UnityEngine.Shader, UnityEngine.Material, UnityEngine.Material, System.Exception"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 107,
+      "text": "IL_0015: call UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 121,
+      "text": "IL_0036: call UnityEngine.Material TMPro.TMP_Asset::get_material()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 130,
+      "text": "IL_0049: call UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 133,
+      "text": "IL_0050: callvirt UnityEngine.Material TMPro.TMP_Text::get_fontSharedMaterial()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 140,
+      "text": "IL_0061: callvirt System.Void TMPro.TMP_Text::set_fontSharedMaterial(UnityEngine.Material)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 144,
+      "text": "IL_006d: callvirt System.Void UnityEngine.UI.Graphic::SetMaterialDirty()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 167,
+      "text": "// System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 168,
+      "text": ".locals System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,UnityEngine.Material>, UnityEngine.Material"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 169,
+      "text": "IL_0000: ldsfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> GlowingSigns.LegacySignGlow::MaterialsByFontMaterial"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 170,
+      "text": "IL_0005: callvirt System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material>::get_Values()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 171,
+      "text": "IL_000a: callvirt System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,UnityEngine.Material>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 175,
+      "text": "IL_0014: call !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,UnityEngine.Material>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 184,
+      "text": "IL_002b: call System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,UnityEngine.Material>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 188,
+      "text": "IL_0036: constrained. System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,UnityEngine.Material>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 191,
+      "text": "IL_0042: ldsfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> GlowingSigns.LegacySignGlow::MaterialsByFontMaterial"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 192,
+      "text": "IL_0047: callvirt System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 194,
+      "text": "IL_004d: stsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 198,
+      "text": "// UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 199,
+      "text": ".locals System.Int32, UnityEngine.Material"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 203,
+      "text": "IL_0007: ldsfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> GlowingSigns.LegacySignGlow::MaterialsByFontMaterial"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 206,
+      "text": "IL_000f: callvirt System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material>::TryGetValue(!0,!1&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 215,
+      "text": "IL_0022: newobj System.Void UnityEngine.Material::.ctor(UnityEngine.Material)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 227,
+      "text": "IL_0047: callvirt System.Void UnityEngine.Material::set_shader(UnityEngine.Shader)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 231,
+      "text": "IL_0053: callvirt System.Boolean UnityEngine.Material::HasProperty(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 236,
+      "text": "IL_0065: callvirt System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 237,
+      "text": "IL_006a: ldsfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> GlowingSigns.LegacySignGlow::MaterialsByFontMaterial"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 240,
+      "text": "IL_0071: callvirt System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material>::set_Item(!0,!1)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 244,
+      "text": "// UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 246,
+      "text": "IL_0000: ldsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 250,
+      "text": "IL_000d: ldsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 253,
+      "text": "IL_0018: call UnityEngine.Shader UnityEngine.Shader::Find(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 254,
+      "text": "IL_001d: stsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 255,
+      "text": "IL_0022: ldsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 259,
+      "text": "IL_002f: ldsfld System.Boolean GlowingSigns.LegacySignGlow::_loggedMissingShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 262,
+      "text": "IL_0037: stsfld System.Boolean GlowingSigns.LegacySignGlow::_loggedMissingShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 264,
+      "text": "IL_0041: ldstr \"Required shader 'TextMeshPro/Distance Field' was not found. Sign glow cannot be restored.\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 266,
+      "text": "IL_004b: ldsfld UnityEngine.Shader GlowingSigns.LegacySignGlow::_legacyShader"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 272,
+      "text": "IL_0005: call System.Int32 UnityEngine.Shader::PropertyToID(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 274,
+      "text": "IL_000f: newobj System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 275,
+      "text": "IL_0014: stsfld System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> GlowingSigns.LegacySignGlow::MaterialsByFontMaterial"
+    }
+  ]
+}

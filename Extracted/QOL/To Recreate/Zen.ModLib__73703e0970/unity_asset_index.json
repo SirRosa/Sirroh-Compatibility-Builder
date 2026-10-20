@@ -1,0 +1,110 @@
+[
+  {
+    "source": "0001_Zen.Resources.quickoutline_osx",
+    "objects": [
+      {
+        "index": 0,
+        "type": "Shader",
+        "pathId": "-8059422131994640245",
+        "typetree": "unity_assets/0001_Zen.Resources.quickoutline_osx/00000_Shader_unnamed.json"
+      },
+      {
+        "index": 1,
+        "type": "Material",
+        "pathId": "-6090589401790733240",
+        "typetree": "unity_assets/0001_Zen.Resources.quickoutline_osx/00001_Material_OutlineMask.json"
+      },
+      {
+        "index": 2,
+        "type": "Material",
+        "pathId": "-707507822120624319",
+        "typetree": "unity_assets/0001_Zen.Resources.quickoutline_osx/00002_Material_OutlineFill.json"
+      },
+      {
+        "index": 3,
+        "type": "AssetBundle",
+        "pathId": "1",
+        "typetree": "unity_assets/0001_Zen.Resources.quickoutline_osx/00003_AssetBundle_quickoutline.json"
+      },
+      {
+        "index": 4,
+        "type": "Shader",
+        "pathId": "1799155862265806252",
+        "typetree": "unity_assets/0001_Zen.Resources.quickoutline_osx/00004_Shader_unnamed.json"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "source": "0000_Zen.Resources.quickoutline_linux",
+    "objects": [
+      {
+        "index": 0,
+        "type": "Shader",
+        "pathId": "-8059422131994640245",
+        "typetree": "unity_assets/0000_Zen.Resources.quickoutline_linux/00000_Shader_unnamed.json"
+      },
+      {
+        "index": 1,
+        "type": "Material",
+        "pathId": "-6090589401790733240",
+        "typetree": "unity_assets/0000_Zen.Resources.quickoutline_linux/00001_Material_OutlineMask.json"
+      },
+      {
+        "index": 2,
+        "type": "Material",
+        "pathId": "-707507822120624319",
+        "typetree": "unity_assets/0000_Zen.Resources.quickoutline_linux/00002_Material_OutlineFill.json"
+      },
+      {
+        "index": 3,
+        "type": "AssetBundle",
+        "pathId": "1",
+        "typetree": "unity_assets/0000_Zen.Resources.quickoutline_linux/00003_AssetBundle_quickoutline.json"
+      },
+      {
+        "index": 4,
+        "type": "Shader",
+        "pathId": "1799155862265806252",
+        "typetree": "unity_assets/0000_Zen.Resources.quickoutline_linux/00004_Shader_unnamed.json"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "source": "0002_Zen.Resources.quickoutline_windows",
+    "objects": [
+      {
+        "index": 0,
+        "type": "Shader",
+        "pathId": "-8059422131994640245",
+        "typetree": "unity_assets/0002_Zen.Resources.quickoutline_windows/00000_Shader_unnamed.json"
+      },
+      {
+        "index": 1,
+        "type": "Material",
+        "pathId": "-6090589401790733240",
+        "typetree": "unity_assets/0002_Zen.Resources.quickoutline_windows/00001_Material_OutlineMask.json"
+      },
+      {
+        "index": 2,
+        "type": "Material",
+        "pathId": "-707507822120624319",
+        "typetree": "unity_assets/0002_Zen.Resources.quickoutline_windows/00002_Material_OutlineFill.json"
+      },
+      {
+        "index": 3,
+        "type": "AssetBundle",
+        "pathId": "1",
+        "typetree": "unity_assets/0002_Zen.Resources.quickoutline_windows/00003_AssetBundle_quickoutline.json"
+      },
+      {
+        "index": 4,
+        "type": "Shader",
+        "pathId": "1799155862265806252",
+        "typetree": "unity_assets/0002_Zen.Resources.quickoutline_windows/00004_Shader_unnamed.json"
+      }
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,894 @@
+﻿{
+  "input": "GlowingSigns.dll",
+  "assembly": "GlowingSigns, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.0.0.0",
+  "modules": [
+    {
+      "name": "GlowingSigns.dll",
+      "mvid": "e8aef467-0708-4036-9a82-3ac5fbd4097c"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.3, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "Glowing Signs"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyDescriptionAttribute",
+      "arguments": [
+        "Restores glowing text on Valheim signs."
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "Glowing Signs"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCopyrightAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.ComVisibleAttribute",
+      "arguments": [
+        "False"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.GuidAttribute",
+      "arguments": [
+        "b1922e24-9d65-48ca-a8e8-a0e1c4b28ea1"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.0.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyInformationalVersionAttribute",
+      "arguments": [
+        "1.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.8"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.8"
+        }
+      ],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.NullableAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.AttributeUsageAttribute",
+          "arguments": [
+            "27524"
+          ],
+          "properties": [
+            {
+              "name": "AllowMultiple",
+              "value": "False"
+            },
+            {
+              "name": "Inherited",
+              "value": "False"
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "NullableFlags",
+          "type": "System.Byte[]",
+          "attributes": "Public, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.NullableContextAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.AttributeUsageAttribute",
+          "arguments": [
+            "5196"
+          ],
+          "properties": [
+            {
+              "name": "AllowMultiple",
+              "value": "False"
+            },
+            {
+              "name": "Inherited",
+              "value": "False"
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Flag",
+          "type": "System.Byte",
+          "attributes": "Public, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RefSafetyRulesAttribute",
+      "baseType": "System.Attribute",
+      "visibility": "Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.EmbeddedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.AttributeUsageAttribute",
+          "arguments": [
+            "2"
+          ],
+          "properties": [
+            {
+              "name": "AllowMultiple",
+              "value": "False"
+            },
+            {
+              "name": "Inherited",
+              "value": "False"
+            }
+          ],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Version",
+          "type": "System.Int32",
+          "attributes": "Public, InitOnly",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "GlowingSigns.Plugin",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Public, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "arguments": [
+            "1"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.Runtime.CompilerServices.NullableAttribute",
+          "arguments": [
+            "0"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "com.robert.glowingsigns",
+            "Glowing Signs",
+            "1.0.0"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "BepInEx.BepInProcess",
+          "arguments": [
+            "valheim.exe"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "PluginGuid",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "com.robert.glowingsigns",
+          "decorators": []
+        },
+        {
+          "name": "PluginName",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "Glowing Signs",
+          "decorators": []
+        },
+        {
+          "name": "PluginVersion",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "1.0.0",
+          "decorators": []
+        },
+        {
+          "name": "_harmony",
+          "type": "HarmonyLib.Harmony",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.NullableAttribute",
+              "arguments": [
+                "2"
+              ],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "\u003CLog\u003Ek__BackingField",
+          "type": "BepInEx.Logging.ManualLogSource",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+              "arguments": [],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Log",
+          "type": "BepInEx.Logging.ManualLogSource",
+          "attributes": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "name": "GlowingSigns.LegacySignGlow",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "arguments": [
+            "1"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.Runtime.CompilerServices.NullableAttribute",
+          "arguments": [
+            "0"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "LegacyShaderName",
+          "type": "System.String",
+          "attributes": "Private, Static, Literal, HasDefault",
+          "constant": "TextMeshPro/Distance Field",
+          "decorators": []
+        },
+        {
+          "name": "FaceColorId",
+          "type": "System.Int32",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "MaterialsByFontMaterial",
+          "type": "System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_legacyShader",
+          "type": "UnityEngine.Shader",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": [
+            {
+              "name": "System.Runtime.CompilerServices.NullableAttribute",
+              "arguments": [
+                "2"
+              ],
+              "properties": [],
+              "fields": []
+            }
+          ]
+        },
+        {
+          "name": "_loggedSuccess",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_loggedMissingShader",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_loggedFailure",
+          "type": "System.Boolean",
+          "attributes": "Private, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "GlowingSigns.SignPatches",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "arguments": [
+            "1"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "System.Runtime.CompilerServices.NullableAttribute",
+          "arguments": [
+            "0"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Sign"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte)",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Byte"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 11
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte[])",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Byte[]"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.NullableContextAttribute::.ctor(System.Byte)",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Byte"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Void System.Runtime.CompilerServices.RefSafetyRulesAttribute::.ctor(System.Int32)",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "",
+          "type": "System.Int32"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "BepInEx.Logging.ManualLogSource GlowingSigns.Plugin::get_Log()",
+      "visibility": "Assembly, Static, HideBySig, SpecialName",
+      "returnType": "BepInEx.Logging.ManualLogSource",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void GlowingSigns.Plugin::set_Log(BepInEx.Logging.ManualLogSource)",
+      "visibility": "Private, Static, HideBySig, SpecialName",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "BepInEx.Logging.ManualLogSource"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void GlowingSigns.Plugin::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 16
+    },
+    {
+      "signature": "System.Void GlowingSigns.Plugin::OnDestroy()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 9
+    },
+    {
+      "signature": "System.Void GlowingSigns.Plugin::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void GlowingSigns.LegacySignGlow::Apply(Sign)",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "sign",
+          "type": "Sign"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 66
+    },
+    {
+      "signature": "System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()",
+      "visibility": "Assembly, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 27
+    },
+    {
+      "signature": "UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "UnityEngine.Material",
+      "parameters": [
+        {
+          "name": "source",
+          "type": "UnityEngine.Material"
+        },
+        {
+          "name": "legacyShader",
+          "type": "UnityEngine.Shader"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 43
+    },
+    {
+      "signature": "UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "UnityEngine.Shader",
+      "parameters": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "arguments": [
+            "2"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 22
+    },
+    {
+      "signature": "System.Void GlowingSigns.LegacySignGlow::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 6
+    },
+    {
+      "signature": "System.Void GlowingSigns.SignPatches::AwakePostfix(Sign)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Sign"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Awake"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "HarmonyLib.HarmonyPostfix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void GlowingSigns.SignPatches::PermissionCompletedPostfix(Sign)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Sign"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "OnCheckPermissionCompleted"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "HarmonyLib.HarmonyPostfix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "!1 System.Collections.Generic.Dictionary\u00602/ValueCollection/Enumerator\u003CSystem.Int32,UnityEngine.Material\u003E::get_Current()",
+    "BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()",
+    "BepInEx.Logging.ManualLogSource GlowingSigns.Plugin::get_Log()",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602/ValueCollection/Enumerator\u003CSystem.Int32,UnityEngine.Material\u003E::MoveNext()",
+    "System.Boolean System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E::TryGetValue(!0,!1\u0026)",
+    "System.Boolean UnityEngine.Material::HasProperty(System.Int32)",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Collections.Generic.Dictionary\u00602/ValueCollection/Enumerator\u003C!0,!1\u003E System.Collections.Generic.Dictionary\u00602/ValueCollection\u003CSystem.Int32,UnityEngine.Material\u003E::GetEnumerator()",
+    "System.Collections.Generic.Dictionary\u00602/ValueCollection\u003C!0,!1\u003E System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E::get_Values()",
+    "System.Int32 UnityEngine.Object::GetInstanceID()",
+    "System.Int32 UnityEngine.Shader::PropertyToID(System.String)",
+    "System.Reflection.Assembly System.Reflection.Assembly::GetExecutingAssembly()",
+    "System.String System.String::Concat(System.String,System.String)",
+    "System.String System.String::Format(System.String,System.Object)",
+    "System.String UnityEngine.Object::get_name()",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Logging.ManualLogSource::LogError(System.Object)",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void GlowingSigns.LegacySignGlow::Apply(Sign)",
+    "System.Void GlowingSigns.LegacySignGlow::DisposeMaterials()",
+    "System.Void GlowingSigns.Plugin::set_Log(BepInEx.Logging.ManualLogSource)",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)",
+    "System.Void HarmonyLib.Harmony::UnpatchSelf()",
+    "System.Void System.Attribute::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E::.ctor()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E::Clear()",
+    "System.Void System.Collections.Generic.Dictionary\u00602\u003CSystem.Int32,UnityEngine.Material\u003E::set_Item(!0,!1)",
+    "System.Void System.IDisposable::Dispose()",
+    "System.Void TMPro.TMP_Text::set_fontSharedMaterial(UnityEngine.Material)",
+    "System.Void TMPro.TMP_Text::UpdateMeshPadding()",
+    "System.Void UnityEngine.Material::.ctor(UnityEngine.Material)",
+    "System.Void UnityEngine.Material::set_shader(UnityEngine.Shader)",
+    "System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)",
+    "System.Void UnityEngine.Object::Destroy(UnityEngine.Object)",
+    "System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)",
+    "System.Void UnityEngine.Object::set_name(System.String)",
+    "System.Void UnityEngine.UI.Graphic::SetMaterialDirty()",
+    "TMPro.TMP_FontAsset TMPro.TMP_Text::get_font()",
+    "UnityEngine.Color UnityEngine.Color::get_white()",
+    "UnityEngine.Material GlowingSigns.LegacySignGlow::GetOrCreateLegacyMaterial(UnityEngine.Material,UnityEngine.Shader)",
+    "UnityEngine.Material TMPro.TMP_Asset::get_material()",
+    "UnityEngine.Material TMPro.TMP_Text::get_fontSharedMaterial()",
+    "UnityEngine.Shader GlowingSigns.LegacySignGlow::FindLegacyShader()",
+    "UnityEngine.Shader UnityEngine.Shader::Find(System.String)"
+  ],
+  "stringLiterals": [
+    " (Glowing Signs)",
+    "_FaceColor",
+    "com.robert.glowingsigns",
+    "Could not restore sign glow: {0}",
+    "Glowing Signs 1.0.0 loaded. Restoring legacy color-matched sign glow.",
+    "Legacy sign glow is active; glow colors follow the displayed text colors.",
+    "Required shader \u0027TextMeshPro/Distance Field\u0027 was not found. Sign glow cannot be restored.",
+    "TextMeshPro/Distance Field"
+  ],
+  "totals": {
+    "types": 8,
+    "methods": 17,
+    "strings": 8,
+    "calledMethods": 46,
+    "resources": 0
+  }
+}

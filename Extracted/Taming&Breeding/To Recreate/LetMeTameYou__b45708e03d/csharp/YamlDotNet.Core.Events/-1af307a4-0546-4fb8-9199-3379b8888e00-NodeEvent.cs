@@ -1,0 +1,22 @@
+namespace YamlDotNet.Core.Events;
+
+internal abstract class _003C1af307a4_002D0546_002D4fb8_002D9199_002D3379b8888e00_003ENodeEvent : _003C47bae968_002D6c5e_002D4df2_002D83b4_002D202823c3b1a4_003EParsingEvent
+{
+	public _003Ccca93639_002Dbccb_002D4800_002Dad4c_002D8f4e0d58ede2_003EAnchorName Anchor { get; }
+
+	public _003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName Tag { get; }
+
+	public abstract bool IsCanonical { get; }
+
+	protected _003C1af307a4_002D0546_002D4fb8_002D9199_002D3379b8888e00_003ENodeEvent(_003Ccca93639_002Dbccb_002D4800_002Dad4c_002D8f4e0d58ede2_003EAnchorName anchor, _003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName tag, _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark start, _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark end)
+		: base(in start, in end)
+	{
+		Anchor = anchor;
+		Tag = tag;
+	}
+
+	protected _003C1af307a4_002D0546_002D4fb8_002D9199_002D3379b8888e00_003ENodeEvent(_003Ccca93639_002Dbccb_002D4800_002Dad4c_002D8f4e0d58ede2_003EAnchorName anchor, _003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName tag)
+		: this(anchor, tag, _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark.Empty, _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark.Empty)
+	{
+	}
+}

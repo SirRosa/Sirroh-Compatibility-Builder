@@ -1,0 +1,12 @@
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.Serialization;
+
+internal sealed class _003C7b029d40_002Dc8f8_002D4c06_002D8678_002D56f5fad39c49_003ESequenceEndEventInfo : _003C69c46928_002D3464_002D45e3_002Db68c_002Dad66c35dc08c_003EEventInfo
+{
+	[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+	public _003C7b029d40_002Dc8f8_002D4c06_002D8678_002D56f5fad39c49_003ESequenceEndEventInfo(_003C7939ce99_002D9715_002D4aac_002D881a_002Dac56bffa0212_003EIObjectDescriptor source)
+		: base(source)
+	{
+	}
+}

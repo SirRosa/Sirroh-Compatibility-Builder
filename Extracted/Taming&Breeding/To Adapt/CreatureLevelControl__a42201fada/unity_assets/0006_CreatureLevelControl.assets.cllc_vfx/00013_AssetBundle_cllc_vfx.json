@@ -1,0 +1,133 @@
+{
+  "m_Name": "cllc_vfx",
+  "m_PreloadTable": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -8715636831619945659
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8075536264292357824
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -7963907286071434616
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -7757630129681056783
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -7333432679192460894
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -7226785898658612445
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -6813724575973254652
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -5057468317463985418
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4646834378953846735
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -4272152137561318532
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -3912571066487109049
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -1586521616971095747
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -375372474729895596
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2391109734448446470
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2400458477577888684
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 2506895321784075383
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3276229400515869524
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3554895233995225250
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 3916293812648289931
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5878907374660627551
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6289505209069268440
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6643908347596120576
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7296985840847850153
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7372847635757022675
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 8702488859957822594
+    }
+  ],
+  "m_Container": [
+    [
+      "assets/hovl studio/aaa magic circles vol 3/prefabs/cllc_eff.prefab",
+      {
+        "preloadIndex": 0,
+        "preloadSize": 25,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -8715636831619945659
+        }
+      }
+    ]
+  ],
+  "m_MainAsset": {
+    "preloadIndex": 0,
+    "preloadSize": 0,
+    "asset": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_RuntimeCompatibility": 1,
+  "m_AssetBundleName": "cllc_vfx",
+  "m_Dependencies": [],
+  "m_IsStreamedSceneAssetBundle": false,
+  "m_ExplicitDataLayout": 0,
+  "m_PathFlags": 7,
+  "m_SceneHashes": []
+}

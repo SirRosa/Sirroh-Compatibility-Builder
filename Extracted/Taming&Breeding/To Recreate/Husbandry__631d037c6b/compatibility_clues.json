@@ -1,0 +1,2758 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 12,
+      "text": "[BepInPlugin(\"dafini.husbandry\", \"Husbandry\", \"1.1.0\")]"
+    },
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 13,
+      "text": "[BepInProcess(\"valheim.exe\")]"
+    },
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 14,
+      "text": "[BepInProcess(\"valheim_server.exe\")]"
+    },
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 15,
+      "text": "internal sealed class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 25,
+      "text": "Log.Source = ((BaseUnityPlugin)this).Logger;"
+    },
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 26,
+      "text": "HusbandryConfig.Bind(((BaseUnityPlugin)this).Config);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 226,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 231,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 241,
+      "text": "\"name\": \"BepInEx.BepInProcess\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 249,
+      "text": "\"name\": \"BepInEx.BepInProcess\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4035,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4036,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4176,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 20,
+      "text": "IL_0001: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 23,
+      "text": "IL_000c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 85,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 33,
+      "text": "_harmony.PatchAll();"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Interact\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 32,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/TickPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(BaseAI), \"UpdateAI\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/TickPatch.cs",
+      "line": 19,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/BreedPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/BreedPatch.cs",
+      "line": 32,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 301,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 342,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 383,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1691,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1804,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1846,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4184,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 37,
+      "text": "IL_0043: callvirt System.Void HarmonyLib.Harmony::PatchAll()"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/Husbandry/Plugin.cs",
+      "line": 26,
+      "text": "HusbandryConfig.Bind(((BaseUnityPlugin)this).Config);"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 8,
+      "text": "internal static ConfigEntry<bool> Enabled;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 10,
+      "text": "internal static ConfigEntry<bool> ThrottleIdle;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 12,
+      "text": "internal static ConfigEntry<float> NearRange;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 14,
+      "text": "internal static ConfigEntry<float> FarRange;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 16,
+      "text": "internal static ConfigEntry<int> MidSkip;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 18,
+      "text": "internal static ConfigEntry<int> FarSkip;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 20,
+      "text": "internal static ConfigEntry<bool> CheapCensus;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 22,
+      "text": "internal static ConfigEntry<float> CensusInterval;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 24,
+      "text": "internal static ConfigEntry<int> SoftCap;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 26,
+      "text": "internal static ConfigEntry<bool> Shoving;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 28,
+      "text": "internal static ConfigEntry<bool> OfflineUpkeep;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 30,
+      "text": "internal static ConfigEntry<bool> OfflineHealing;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 32,
+      "text": "internal static ConfigEntry<float> HealPerSecond;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 34,
+      "text": "internal static ConfigEntry<bool> OfflineBreeding;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 36,
+      "text": "internal static ConfigEntry<float> CourtingInterval;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 38,
+      "text": "internal static ConfigEntry<bool> OfflineHunger;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 40,
+      "text": "internal static ConfigEntry<float> ForgetAfter;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 42,
+      "text": "internal static ConfigEntry<bool> Verbose;"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 44,
+      "text": "internal static void Bind(ConfigFile cfg)"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 66,
+      "text": "NearRange = cfg.Bind<float>(\"Throttle\", \"NearRange\", 24f, new ConfigDescription(\"Inside this many metres nothing is throttled at all, so the animals you are actually looking at behave exactly as they always did.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(5f, 128f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 67,
+      "text": "FarRange = cfg.Bind<float>(\"Throttle\", \"FarRange\", 48f, new ConfigDescription(\"Past this, the far band applies. Between the two, the mid band does.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(10f, 256f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 68,
+      "text": "MidSkip = cfg.Bind<int>(\"Throttle\", \"MidSkip\", 4, new ConfigDescription(\"An idle tame in the middle band thinks one physics tick in this many. At 4 that is about twelve times a second instead of fifty.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 25), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 69,
+      "text": "FarSkip = cfg.Bind<int>(\"Throttle\", \"FarSkip\", 10, new ConfigDescription(\"The same, for idle tames past FarRange. This is the number that does the work in a big pen. Worst case it costs an animal a fifth of a second noticing something, and only ever an animal that was standing still, unalerted, with nothing targeted, a long way off.\", (AcceptableVa"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 71,
+      "text": "CensusInterval = cfg.Bind<float>(\"Breeding\", \"CensusInterval\", 3f, new ConfigDescription(\"Seconds between shared population counts. Breeding runs on a ten-second invoke and pregnancies take minutes, so a count a few seconds old cannot change any decision that depends on it.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(0.5f, 60f), "
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 72,
+      "text": "SoftCap = cfg.Bind<int>(\"Breeding\", \"SoftCap\", 0, new ConfigDescription(\"Stop breeding once this many of a species are within the prefab's own check range. 0 uses the game's own cap unchanged. This can only ever make breeding stop SOONER than vanilla, never later - and it never removes an animal, only births.\", (AcceptableValueBase)(object)new Acce"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 76,
+      "text": "HealPerSecond = cfg.Bind<float>(\"Offline\", \"HealPerSecond\", 0.25f, new ConfigDescription(\"Health per real second for an unattended tame. A wolf left in a corner of the map comes back whole in a few minutes rather than never.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(0f, 20f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 78,
+      "text": "CourtingInterval = cfg.Bind<float>(\"Offline\", \"CourtingInterval\", 180f, new ConfigDescription(\"Seconds between one step of courting and the next, for an unattended animal. Loaded, the game grants these every few seconds; this is the setting that makes away-from-home breeding a trickle rather than a population you come home to.\", (AcceptableValueBas"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 80,
+      "text": "ForgetAfter = cfg.Bind<float>(\"Advanced\", \"ForgetAfter\", 600f, new ConfigDescription(\"Seconds before this mod stops remembering an animal it has not seen. Only affects in-memory clocks; nothing is stored in your save.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(60f, 7200f), Array.Empty<object>()));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1325,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1332,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1339,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1346,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1353,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1360,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1367,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1374,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1381,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1388,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1395,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1402,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1409,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1416,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1423,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1430,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1437,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1444,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3931,
+      "text": "\"signature\": \"System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3937,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigFile\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4015,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4016,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4017,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4032,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4033,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Int32\\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4034,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Single\\u003E(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4035,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4179,
+      "text": "\"System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4189,
+      "text": "\"System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 23,
+      "text": "IL_000c: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 24,
+      "text": "IL_0011: call System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 25,
+      "text": "IL_0016: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 26,
+      "text": "IL_001b: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 58,
+      "text": "IL_0025: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineUpkeep"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 59,
+      "text": "IL_002a: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 112,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Verbose"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 114,
+      "text": "IL_0007: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Verbose"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 115,
+      "text": "IL_000c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 146,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 148,
+      "text": "IL_0007: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 149,
+      "text": "IL_000c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 151,
+      "text": "IL_0013: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::CheapCensus"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 153,
+      "text": "IL_001a: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::CheapCensus"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 154,
+      "text": "IL_001f: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 196,
+      "text": "IL_004e: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::SoftCap"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 197,
+      "text": "IL_0053: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Int32>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 242,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 244,
+      "text": "IL_0007: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 245,
+      "text": "IL_000c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 336,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 338,
+      "text": "IL_0007: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 339,
+      "text": "IL_000c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 899,
+      "text": "IL_005c: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::ForgetAfter"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 900,
+      "text": "IL_0061: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1136,
+      "text": "IL_0093: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineHealing"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1137,
+      "text": "IL_0098: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1142,
+      "text": "IL_00a6: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineBreeding"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1143,
+      "text": "IL_00ab: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1174,
+      "text": "IL_002e: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::HealPerSecond"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1175,
+      "text": "IL_0033: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1200,
+      "text": "IL_0010: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::CourtingInterval"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1201,
+      "text": "IL_0015: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1212,
+      "text": "IL_0035: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineHunger"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1213,
+      "text": "IL_003a: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1239,
+      "text": "IL_0082: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::SoftCap"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1240,
+      "text": "IL_0087: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Int32>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1653,
+      "text": "IL_000b: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::ThrottleIdle"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1655,
+      "text": "IL_0012: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::ThrottleIdle"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1656,
+      "text": "IL_0017: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1686,
+      "text": "IL_0063: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::NearRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1687,
+      "text": "IL_0068: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1688,
+      "text": "IL_006d: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::FarRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1689,
+      "text": "IL_0072: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1690,
+      "text": "IL_0077: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::MidSkip"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1691,
+      "text": "IL_007c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Int32>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1692,
+      "text": "IL_0081: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::FarSkip"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1693,
+      "text": "IL_0086: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Int32>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2437,
+      "text": "IL_0006: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::CensusInterval"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2438,
+      "text": "IL_000b: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2598,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Shoving"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2600,
+      "text": "IL_0007: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Shoving"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2601,
+      "text": "IL_000c: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2958,
+      "text": "// System.Void Husbandry.Config.HusbandryConfig::Bind(BepInEx.Configuration.ConfigFile)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2965,
+      "text": "IL_0011: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2966,
+      "text": "IL_0016: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2972,
+      "text": "IL_002c: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2973,
+      "text": "IL_0031: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::ThrottleIdle"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2983,
+      "text": "IL_005f: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2984,
+      "text": "IL_0064: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2985,
+      "text": "IL_0069: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::NearRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2995,
+      "text": "IL_0097: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2996,
+      "text": "IL_009c: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2997,
+      "text": "IL_00a1: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::FarRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3007,
+      "text": "IL_00c4: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3008,
+      "text": "IL_00c9: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Int32>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3009,
+      "text": "IL_00ce: stsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::MidSkip"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3019,
+      "text": "IL_00f2: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3020,
+      "text": "IL_00f7: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Int32>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3021,
+      "text": "IL_00fc: stsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::FarSkip"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3027,
+      "text": "IL_0112: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3028,
+      "text": "IL_0117: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::CheapCensus"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3038,
+      "text": "IL_0145: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3039,
+      "text": "IL_014a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3040,
+      "text": "IL_014f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::CensusInterval"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3050,
+      "text": "IL_0175: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3051,
+      "text": "IL_017a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Int32>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3052,
+      "text": "IL_017f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Int32> Husbandry.Config.HusbandryConfig::SoftCap"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3058,
+      "text": "IL_0195: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3059,
+      "text": "IL_019a: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::Shoving"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3065,
+      "text": "IL_01b0: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3066,
+      "text": "IL_01b5: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineUpkeep"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3072,
+      "text": "IL_01cb: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3073,
+      "text": "IL_01d0: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineHealing"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3083,
+      "text": "IL_01fe: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3084,
+      "text": "IL_0203: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3085,
+      "text": "IL_0208: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::HealPerSecond"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3091,
+      "text": "IL_021e: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3092,
+      "text": "IL_0223: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Husbandry.Config.HusbandryConfig::OfflineBreeding"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3102,
+      "text": "IL_0251: newobj System.Void BepInEx.Configuration.ConfigDescription::.ctor(System.String,BepInEx.Configuration.AcceptableValueBase,System.Object[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3103,
+      "text": "IL_0256: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,BepInEx.Configuration.ConfigDescription)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3104,
+      "text": "IL_025b: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Husbandry.Config.HusbandryConfig::CourtingInterval"
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 77,
+      "text": "ZDOMan instance = ZDOMan.instance;"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 93,
+      "text": "Present.Add(ZDOMan.GetSessionID());"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 125,
+      "text": "private static void Slice(ZDOMan zdoMan)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 134,
+      "text": "bool allZDOsWithPrefabIterative = zdoMan.GetAllZDOsWithPrefabIterative(text, Batch, ref index);"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 7,
+      "text": "private readonly Dictionary<ZDOID, float> _last = new Dictionary<ZDOID, float>();"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 16,
+      "text": "internal bool Ready(ZDOID id, float now, float interval)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 26,
+      "text": "internal void Courted(ZDOID id, float now)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 38,
+      "text": "List<ZDOID> list = new List<ZDOID>();"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 39,
+      "text": "foreach (KeyValuePair<ZDOID, float> item in _last)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Courtship.cs",
+      "line": 46,
+      "text": "foreach (ZDOID item2 in list)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 62,
+      "text": "ZNetView component2 = ((Component)ai).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Muster.cs",
+      "line": 47,
+      "text": "ZNetView component2 = ((Component)item).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 180,
+      "text": "ZNetView val = (((Object)(object)beast == (Object)null) ? null : ((Component)beast).GetComponent<ZNetView>());"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 194,
+      "text": "ZNetView component = ((Component)beast).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/BreedPatch.cs",
+      "line": 40,
+      "text": "ZNetView component = ((Component)__instance).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 423,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1952,
+      "text": "\"signature\": \"System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1958,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1976,
+      "text": "\"signature\": \"System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1982,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2642,
+      "text": "\"signature\": \"System.Void Husbandry.Offline.Steward::Slice(ZDOMan)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2647,
+      "text": "\"name\": \"zdoMan\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2648,
+      "text": "\"type\": \"ZDOMan\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4010,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CZNetView\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4021,
+      "text": "\"!0 System.Collections.Generic.KeyValuePair\\u00602\\u003CZDOID,System.Single\\u003E::get_Key()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4027,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CZDOID\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4030,
+      "text": "\"!1 System.Collections.Generic.KeyValuePair\\u00602\\u003CZDOID,System.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4061,
+      "text": "\"System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4073,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003CZDOID,System.Single\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4077,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4078,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4086,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CZDOID\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4094,
+      "text": "\"System.Boolean ZDOMan::GetAllZDOsWithPrefabIterative(System.String,System.Collections.Generic.List\\u00601\\u003CZDO\\u003E,System.Int32\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4096,
+      "text": "\"System.Boolean ZNetView::IsOwner()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4097,
+      "text": "\"System.Boolean ZNetView::IsValid()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4098,
+      "text": "\"System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4102,
+      "text": "\"System.Collections.Generic.KeyValuePair\\u00602\\u003C!0,!1\\u003E System.Collections.Generic.Dictionary\\u00602/Enumerator\\u003CZDOID,System.Single\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4108,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4148,
+      "text": "\"System.Int32 System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4152,
+      "text": "\"System.Int32 System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4160,
+      "text": "\"System.Int64 ZDOMan::GetSessionID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4211,
+      "text": "\"System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4224,
+      "text": "\"System.Void Husbandry.Offline.Steward::Slice(ZDOMan)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4240,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4241,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::Clear()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4242,
+      "text": "\"System.Void System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::set_Item(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4259,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4260,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZDOID\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4272,
+      "text": "\"System.Void ZNetView::ClaimOwnership()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4278,
+      "text": "\"ZDO ZNetView::GetZDO()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4279,
+      "text": "\"ZDOMan ZDOMan::get_instance()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 162,
+      "text": ".locals ZNetView, System.Int32, System.Int32, Husbandry.Herd.Census"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 170,
+      "text": "IL_000c: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 177,
+      "text": "IL_001c: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 180,
+      "text": "IL_0024: callvirt System.Boolean ZNetView::IsOwner()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 185,
+      "text": "IL_002e: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 206,
+      "text": "IL_0065: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 390,
+      "text": "IL_0001: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 391,
+      "text": "IL_0006: callvirt System.Int32 System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 397,
+      "text": "IL_0001: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 398,
+      "text": "IL_0006: callvirt System.Void System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::Clear()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 401,
+      "text": "// System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 404,
+      "text": "IL_0001: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 407,
+      "text": "IL_0009: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::TryGetValue(!0,!1&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 420,
+      "text": "// System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 423,
+      "text": "IL_0001: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 426,
+      "text": "IL_0008: callvirt System.Void System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::set_Item(!0,!1)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 430,
+      "text": ".locals System.Collections.Generic.List`1<ZDOID>, System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,System.Single>, System.Collections.Generic.KeyValuePair`2<ZDOID,System.Single>, System.Collections.Generic.List`1/Enumerator<ZDOID>, ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 431,
+      "text": "IL_0000: newobj System.Void System.Collections.Generic.List`1<ZDOID>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 434,
+      "text": "IL_0007: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 435,
+      "text": "IL_000c: callvirt System.Collections.Generic.Dictionary`2/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 439,
+      "text": "IL_0016: call System.Collections.Generic.KeyValuePair`2<!0,!1> System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,System.Single>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 443,
+      "text": "IL_001f: call !1 System.Collections.Generic.KeyValuePair`2<ZDOID,System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 449,
+      "text": "IL_002b: call !0 System.Collections.Generic.KeyValuePair`2<ZDOID,System.Single>::get_Key()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 450,
+      "text": "IL_0030: callvirt System.Void System.Collections.Generic.List`1<ZDOID>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 452,
+      "text": "IL_0037: call System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,System.Single>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 456,
+      "text": "IL_0042: constrained. System.Collections.Generic.Dictionary`2/Enumerator<ZDOID,System.Single>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 460,
+      "text": "IL_004f: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<ZDOID>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 464,
+      "text": "IL_0059: call !0 System.Collections.Generic.List`1/Enumerator<ZDOID>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 467,
+      "text": "IL_0061: ldfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 469,
+      "text": "IL_0068: callvirt System.Boolean System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::Remove(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 472,
+      "text": "IL_0070: call System.Boolean System.Collections.Generic.List`1/Enumerator<ZDOID>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 476,
+      "text": "IL_007b: constrained. System.Collections.Generic.List`1/Enumerator<ZDOID>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 480,
+      "text": "IL_0088: callvirt System.Int32 System.Collections.Generic.List`1<ZDOID>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 488,
+      "text": "IL_0001: newobj System.Void System.Collections.Generic.Dictionary`2<ZDOID,System.Single>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 489,
+      "text": "IL_0006: stfld System.Collections.Generic.Dictionary`2<ZDOID,System.Single> Husbandry.Offline.Courtship::_last"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 867,
+      "text": ".locals ZDOMan, ZNet"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 879,
+      "text": "IL_0025: call ZDOMan ZDOMan::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 896,
+      "text": "IL_004d: call System.Void Husbandry.Offline.Steward::Slice(ZDOMan)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 910,
+      "text": "IL_000f: call System.Int64 ZDOMan::GetSessionID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1011,
+      "text": "// System.Void Husbandry.Offline.Steward::Slice(ZDOMan)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1034,
+      "text": "IL_0054: callvirt System.Boolean ZDOMan::GetAllZDOsWithPrefabIterative(System.String,System.Collections.Generic.List`1<ZDO>,System.Int32&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1198,
+      "text": "IL_0006: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1202,
+      "text": "IL_001a: callvirt System.Boolean Husbandry.Offline.Courtship::Ready(ZDOID,System.Single,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1279,
+      "text": "IL_00f4: ldfld ZDOID ZDO::m_uid"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1281,
+      "text": "IL_00fe: callvirt System.Void Husbandry.Offline.Courtship::Courted(ZDOID,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1721,
+      "text": ".locals Character, ZNetView, MonsterAI, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1726,
+      "text": "IL_0008: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1741,
+      "text": "IL_002a: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1749,
+      "text": "IL_003c: callvirt System.Boolean ZNetView::IsOwner()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2434,
+      "text": ".locals System.Collections.Generic.List`1<BaseAI>, System.Collections.Generic.List`1/Enumerator<BaseAI>, BaseAI, Character, ZNetView, Husbandry.Herd.Census/Head"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2471,
+      "text": "IL_0069: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2478,
+      "text": "IL_007c: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2485,
+      "text": "IL_0094: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2874,
+      "text": ".locals ZNetView"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2880,
+      "text": "IL_000a: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2889,
+      "text": "IL_001d: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2894,
+      "text": "IL_0027: callvirt ZDO ZNetView::GetZDO()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2902,
+      "text": ".locals ZNetView, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2914,
+      "text": "IL_0019: callvirt !!0 UnityEngine.Component::GetComponent<ZNetView>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2921,
+      "text": "IL_0029: callvirt System.Boolean ZNetView::IsValid()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2926,
+      "text": "IL_0033: callvirt System.Void ZNetView::ClaimOwnership()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2933,
+      "text": "IL_0046: callvirt ZDO ZNetView::GetZDO()"
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 114,
+      "text": "ZNetScene instance = ZNetScene.instance;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4281,
+      "text": "\"ZNetScene ZNetScene::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 945,
+      "text": ".locals ZNetScene, System.Int32"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 953,
+      "text": "IL_0015: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 960,
+      "text": "IL_0025: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 965,
+      "text": "IL_002f: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 970,
+      "text": "IL_0044: ldfld System.Collections.Generic.List`1<UnityEngine.GameObject> ZNetScene::m_prefabs"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 61,
+      "text": "Character component = ((Component)ai).GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 72,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 73,
+      "text": "if ((Object)(object)localPlayer == (Object)null)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 77,
+      "text": "return Cadence.FromCamera(((Component)ai).transform.position, havePlayer: true, ((Component)localPlayer).transform.position);"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Cadence.cs",
+      "line": 32,
+      "text": "internal static float FromCamera(Vector3 where, bool havePlayer, Vector3 player)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Cadence.cs",
+      "line": 36,
+      "text": "if (!havePlayer)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Cadence.cs",
+      "line": 40,
+      "text": "return Vector3.Distance(where, player);"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Kinds.cs",
+      "line": 73,
+      "text": "Character component3 = prefab.GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Muster.cs",
+      "line": 44,
+      "text": "Character component = ((Component)item).GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 72,
+      "text": "List<Character> allCharacters = Character.GetAllCharacters();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 73,
+      "text": "if (allCharacters == null)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 78,
+      "text": "List<Character> list = new List<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 79,
+      "text": "List<Character> list2 = new List<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 80,
+      "text": "foreach (Character item in allCharacters)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 84,
+      "text": "if (item.IsPlayer())"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 94,
+      "text": "foreach (Character item2 in list2)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 101,
+      "text": "foreach (Character item3 in list)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 115,
+      "text": "List<Character> allCharacters = Character.GetAllCharacters();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 116,
+      "text": "if (allCharacters == null)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 121,
+      "text": "List<Character> list = new List<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 122,
+      "text": "List<Character> list2 = new List<Character>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 123,
+      "text": "foreach (Character item in allCharacters)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 127,
+      "text": "if (item.IsPlayer())"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 141,
+      "text": "foreach (Character item2 in list2)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 149,
+      "text": "foreach (Character item3 in list)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 178,
+      "text": "internal static bool IsSolid(Character beast)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Shoving.cs",
+      "line": 188,
+      "text": "internal static bool Toggle(Character beast)"
+    },
+    {
+      "file": "csharp/Husbandry.Config/HusbandryConfig.cs",
+      "line": 74,
+      "text": "OfflineUpkeep = cfg.Bind<bool>(\"Offline\", \"OfflineUpkeep\", true, \"Look after tames in zones nobody has loaded. Runs only where the whole ZDO table lives - a dedicated server, a host, or single-player - and only on animals no connected machine is simulating.\");"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 33,
+      "text": "private static bool Prefix(Tameable __instance, Humanoid user, bool hold, bool alt, ref bool __result)"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 40,
+      "text": "Character val = (((Object)(object)__instance == (Object)null) ? null : ((Component)__instance).GetComponent<Character>());"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 55,
+      "text": "((Character)user).Message((MessageType)2, val.m_name + \" \" + Bumping.Plain(Shoving.IsSolid(val)), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1777,
+      "text": "\"signature\": \"System.Boolean Husbandry.Patches.ShoveePatch::Prefix(Tameable,Humanoid,System.Boolean,System.Boolean,System.Boolean\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1787,
+      "text": "\"type\": \"Humanoid\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2809,
+      "text": "\"name\": \"havePlayer\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2813,
+      "text": "\"name\": \"player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3888,
+      "text": "\"signature\": \"System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3894,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3904,
+      "text": "\"signature\": \"System.Boolean Husbandry.Herd.Shoving::Toggle(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3910,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4009,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CCharacter\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4011,
+      "text": "\"!!0 UnityEngine.GameObject::GetComponent\\u003CCharacter\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4023,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CCharacter\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4037,
+      "text": "\"Character BaseAI::GetTargetCreature()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4043,
+      "text": "\"System.Boolean Character::IsPlayer()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4044,
+      "text": "\"System.Boolean Character::IsTamed()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4055,
+      "text": "\"System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4056,
+      "text": "\"System.Boolean Husbandry.Herd.Shoving::Toggle(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4082,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CCharacter\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4104,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4111,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E Character::GetAllCharacters()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4149,
+      "text": "\"System.Int32 System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4182,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4245,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4246,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4273,
+      "text": "\"UnityEngine.CapsuleCollider Character::GetCollider()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4352,
+      "text": "\"Look after tames in zones nobody has loaded. Runs only where the whole ZDO table lives - a dedicated server, a host, or single-player - and only on animals no connected machine is simulating.\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 273,
+      "text": "// System.Boolean Husbandry.Patches.ShoveePatch::Prefix(Tameable,Humanoid,System.Boolean,System.Boolean,System.Boolean&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 274,
+      "text": ".locals Character"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 290,
+      "text": "IL_001a: callvirt !!0 UnityEngine.Component::GetComponent<Character>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 301,
+      "text": "IL_002f: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 307,
+      "text": "IL_003e: call System.Boolean Husbandry.Herd.Shoving::Toggle(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 318,
+      "text": "IL_0053: ldfld System.String Character::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 321,
+      "text": "IL_005e: call System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 327,
+      "text": "IL_0070: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1721,
+      "text": ".locals Character, ZNetView, MonsterAI, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1723,
+      "text": "IL_0001: callvirt !!0 UnityEngine.Component::GetComponent<Character>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1733,
+      "text": "IL_0018: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1770,
+      "text": "IL_0070: callvirt Character BaseAI::GetTargetCreature()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1778,
+      "text": ".locals Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1779,
+      "text": "IL_0000: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2264,
+      "text": ".locals System.Collections.Generic.List`1<Husbandry.Herd.Kinds/Kind>, System.Collections.Generic.IEnumerator`1<UnityEngine.GameObject>, UnityEngine.GameObject, Tameable, Procreation, Character, Husbandry.Herd.Kinds/Kind"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2293,
+      "text": "IL_0046: callvirt !!0 UnityEngine.GameObject::GetComponent<Character>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2372,
+      "text": "IL_0132: ldfld System.Single Character::m_health"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2434,
+      "text": ".locals System.Collections.Generic.List`1<BaseAI>, System.Collections.Generic.List`1/Enumerator<BaseAI>, BaseAI, Character, ZNetView, Husbandry.Herd.Census/Head"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2461,
+      "text": "IL_0051: callvirt !!0 UnityEngine.Component::GetComponent<Character>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2468,
+      "text": "IL_0061: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2630,
+      "text": ".locals System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1/Enumerator<Character>, Character, UnityEngine.CapsuleCollider, System.Collections.Generic.List`1/Enumerator<Character>, UnityEngine.CapsuleCollider"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2631,
+      "text": "IL_0000: call System.Collections.Generic.List`1<Character> Character::GetAllCharacters()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2638,
+      "text": "IL_0014: newobj System.Void System.Collections.Generic.List`1<Character>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2640,
+      "text": "IL_001a: newobj System.Void System.Collections.Generic.List`1<Character>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2643,
+      "text": "IL_0021: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2647,
+      "text": "IL_002b: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2654,
+      "text": "IL_003e: callvirt System.Boolean Character::IsPlayer()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2658,
+      "text": "IL_0048: callvirt System.Void System.Collections.Generic.List`1<Character>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2661,
+      "text": "IL_0051: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2665,
+      "text": "IL_005b: callvirt System.Void System.Collections.Generic.List`1<Character>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2667,
+      "text": "IL_0062: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2671,
+      "text": "IL_006d: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2675,
+      "text": "IL_007a: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2679,
+      "text": "IL_0084: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2680,
+      "text": "IL_0089: callvirt UnityEngine.CapsuleCollider Character::GetCollider()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2687,
+      "text": "IL_009b: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2691,
+      "text": "IL_00a6: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2692,
+      "text": "IL_00ab: callvirt UnityEngine.CapsuleCollider Character::GetCollider()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2703,
+      "text": "IL_00c8: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2707,
+      "text": "IL_00d3: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2711,
+      "text": "IL_00e1: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2715,
+      "text": "IL_00ec: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2726,
+      "text": ".locals System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1<Character>, System.Collections.Generic.List`1/Enumerator<Character>, Character, Character, UnityEngine.CapsuleCollider, System.Boolean, System.Collections.Generic.List`1/Enumerator<Character>, UnityEngine.CapsuleColl"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2727,
+      "text": "IL_0000: call System.Collections.Generic.List`1<Character> Character::GetAllCharacters()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2736,
+      "text": "IL_0016: newobj System.Void System.Collections.Generic.List`1<Character>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2738,
+      "text": "IL_001c: newobj System.Void System.Collections.Generic.List`1<Character>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2741,
+      "text": "IL_0023: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2745,
+      "text": "IL_002d: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2752,
+      "text": "IL_0040: callvirt System.Boolean Character::IsPlayer()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2756,
+      "text": "IL_004a: callvirt System.Void System.Collections.Generic.List`1<Character>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2759,
+      "text": "IL_0053: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2763,
+      "text": "IL_005d: callvirt System.Void System.Collections.Generic.List`1<Character>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2765,
+      "text": "IL_0064: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2769,
+      "text": "IL_006f: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2773,
+      "text": "IL_007c: callvirt System.Int32 System.Collections.Generic.List`1<Character>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2776,
+      "text": "IL_0084: callvirt System.Int32 System.Collections.Generic.List`1<Character>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2780,
+      "text": "IL_008d: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2784,
+      "text": "IL_0097: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2787,
+      "text": "IL_00a0: callvirt UnityEngine.CapsuleCollider Character::GetCollider()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2795,
+      "text": "IL_00b4: call System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2799,
+      "text": "IL_00c1: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2803,
+      "text": "IL_00cc: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2804,
+      "text": "IL_00d1: callvirt UnityEngine.CapsuleCollider Character::GetCollider()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2815,
+      "text": "IL_00ef: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2819,
+      "text": "IL_00fa: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2823,
+      "text": "IL_0108: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2827,
+      "text": "IL_0113: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2873,
+      "text": "// System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2901,
+      "text": "// System.Boolean Husbandry.Herd.Shoving::Toggle(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2908,
+      "text": "IL_000a: callvirt System.Boolean Character::IsTamed()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2929,
+      "text": "IL_003a: call System.Boolean Husbandry.Herd.Shoving::IsSolid(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2943,
+      "text": "IL_0070: ldfld System.String Character::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3064,
+      "text": "IL_01ab: ldstr \"Look after tames in zones nobody has loaded. Runs only where the whole ZDO table lives - a dedicated server, a host, or single-player - and only on animals no connected machine is simulating.\""
+    }
+  ],
+  "Taming/breeding": [
+    {
+      "file": "csharp/Husbandry.Offline/Pasture.cs",
+      "line": 64,
+      "text": "internal static List<string> Tameables(IEnumerable<GameObject> prefabs)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Pasture.cs",
+      "line": 73,
+      "text": "if (!((Object)(object)prefab == (Object)null) && !((Object)(object)prefab.GetComponent<Tameable>() == (Object)null))"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 17,
+      "text": "private static List<string> _tameables;"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 51,
+      "text": "_tameables = null;"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 110,
+      "text": "if (_tameables != null)"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 112,
+      "text": "return _tameables.Count > 0;"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 119,
+      "text": "_tameables = Pasture.Tameables(instance.m_prefabs);"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 121,
+      "text": "Log.Info(\"Husbandry found \" + _tameables.Count + \" tameable prefab(s), \" + Species.Count + \" with numbers read off the prefab.\");"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 122,
+      "text": "return _tameables.Count > 0;"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 127,
+      "text": "if (!Pasture.Valid(_cursor, _tameables.Count))"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 131,
+      "text": "string text = _tameables[_cursor.Prefab];"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 140,
+      "text": "Pasture.Cursor cursor = (allZDOsWithPrefabIterative ? Pasture.Next(_cursor, _tameables.Count) : Pasture.Continued(_cursor, index));"
+    },
+    {
+      "file": "csharp/Husbandry.Offline/Steward.cs",
+      "line": 245,
+      "text": "list.Add(\"  watching   \" + ((_tameables != null) ? _tameables.Count : 0) + \" tameable prefab(s), cursor \" + _cursor.Prefab + \"/\" + _cursor.Index + \", \" + _cursor.Passes + \" full pass(es)\");"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 15,
+      "text": "private static readonly ConditionalWeakTable<BaseAI, Holder> Banks = new ConditionalWeakTable<BaseAI, Holder>();"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 30,
+      "text": "internal static bool Skip(BaseAI ai, ref float dt)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 59,
+      "text": "private static bool Dozy(BaseAI ai)"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 64,
+      "text": "MonsterAI val = (MonsterAI)(object)((ai is MonsterAI) ? ai : null);"
+    },
+    {
+      "file": "csharp/Husbandry.Idle/Drowse.cs",
+      "line": 68,
+      "text": "private static float Distance(BaseAI ai)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Kinds.cs",
+      "line": 69,
+      "text": "Tameable component = prefab.GetComponent<Tameable>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Kinds.cs",
+      "line": 72,
+      "text": "Procreation component2 = prefab.GetComponent<Procreation>();"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Muster.cs",
+      "line": 35,
+      "text": "List<BaseAI> baseAIInstances = BaseAI.BaseAIInstances;"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Muster.cs",
+      "line": 36,
+      "text": "if (baseAIInstances != null)"
+    },
+    {
+      "file": "csharp/Husbandry.Herd/Muster.cs",
+      "line": 38,
+      "text": "foreach (BaseAI item in baseAIInstances)"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Interact\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 33,
+      "text": "private static bool Prefix(Tameable __instance, Humanoid user, bool hold, bool alt, ref bool __result)"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/TickPatch.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(BaseAI), \"UpdateAI\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/TickPatch.cs",
+      "line": 21,
+      "text": "private static bool Prefix(BaseAI __instance, ref float dt, ref bool __result)"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/BreedPatch.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/Husbandry.Patches/BreedPatch.cs",
+      "line": 33,
+      "text": "private static bool Prefix(Procreation __instance)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 303,
+      "text": "\"Procreation\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 344,
+      "text": "\"Tameable\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 385,
+      "text": "\"BaseAI\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 702,
+      "text": "\"name\": \"_tameables\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 819,
+      "text": "\"type\": \"System.Runtime.CompilerServices.ConditionalWeakTable\\u00602\\u003CBaseAI,Husbandry.Idle.Drowse/Holder\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1680,
+      "text": "\"signature\": \"System.Boolean Husbandry.Patches.BreedPatch::Prefix(Procreation)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1686,
+      "text": "\"type\": \"Procreation\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1777,
+      "text": "\"signature\": \"System.Boolean Husbandry.Patches.ShoveePatch::Prefix(Tameable,Humanoid,System.Boolean,System.Boolean,System.Boolean\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1783,
+      "text": "\"type\": \"Tameable\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1827,
+      "text": "\"signature\": \"System.Boolean Husbandry.Patches.TickPatch::Prefix(BaseAI,System.Single\\u0026,System.Boolean\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1833,
+      "text": "\"type\": \"BaseAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2155,
+      "text": "\"signature\": \"System.Collections.Generic.List\\u00601\\u003CSystem.String\\u003E Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable\\u00601\\u003CUnityEngine.GameObject\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2958,
+      "text": "\"signature\": \"System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2964,
+      "text": "\"type\": \"BaseAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2978,
+      "text": "\"signature\": \"System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2984,
+      "text": "\"type\": \"BaseAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2994,
+      "text": "\"signature\": \"System.Single Husbandry.Idle.Drowse::Distance(BaseAI)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3000,
+      "text": "\"type\": \"BaseAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4012,
+      "text": "\"!!0 UnityEngine.GameObject::GetComponent\\u003CProcreation\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4013,
+      "text": "\"!!0 UnityEngine.GameObject::GetComponent\\u003CTameable\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4022,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CBaseAI\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4031,
+      "text": "\"!1 System.Runtime.CompilerServices.ConditionalWeakTable\\u00602\\u003CBaseAI,Husbandry.Idle.Drowse/Holder\\u003E::GetOrCreateValue(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4037,
+      "text": "\"Character BaseAI::GetTargetCreature()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4042,
+      "text": "\"System.Boolean BaseAI::IsAlerted()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4057,
+      "text": "\"System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4058,
+      "text": "\"System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4081,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CBaseAI\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4103,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CBaseAI\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4110,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CBaseAI\\u003E BaseAI::get_BaseAIInstances()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4114,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CSystem.String\\u003E Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable\\u00601\\u003CUnityEngine.GameObject\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4163,
+      "text": "\"System.Single Husbandry.Idle.Drowse::Distance(BaseAI)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4263,
+      "text": "\"System.Void System.Runtime.CompilerServices.ConditionalWeakTable\\u00602\\u003CBaseAI,Husbandry.Idle.Drowse/Holder\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4274,
+      "text": "\"UnityEngine.GameObject MonsterAI::GetFollowTarget()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4312,
+      "text": "\" tameable prefab(s), \","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4313,
+      "text": "\" tameable prefab(s), cursor \","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 161,
+      "text": "// System.Boolean Husbandry.Patches.BreedPatch::Prefix(Procreation)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 195,
+      "text": "IL_0049: ldfld System.Int32 Procreation::m_maxCreatures"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 226,
+      "text": "IL_009a: ldfld System.Single Procreation::m_totalCheckRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 273,
+      "text": "// System.Boolean Husbandry.Patches.ShoveePatch::Prefix(Tameable,Humanoid,System.Boolean,System.Boolean,System.Boolean&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 344,
+      "text": "// System.Boolean Husbandry.Patches.TickPatch::Prefix(BaseAI,System.Single&,System.Boolean&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 348,
+      "text": "IL_0002: call System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 631,
+      "text": "// System.Collections.Generic.List`1<System.String> Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable`1<UnityEngine.GameObject>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 651,
+      "text": "IL_0025: callvirt !!0 UnityEngine.GameObject::GetComponent<Tameable>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 838,
+      "text": "IL_0040: stsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 946,
+      "text": "IL_0000: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 948,
+      "text": "IL_0007: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 966,
+      "text": "IL_0034: call System.Collections.Generic.List`1<System.String> Husbandry.Offline.Pasture::Tameables(System.Collections.Generic.IEnumerable`1<UnityEngine.GameObject>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 967,
+      "text": "IL_0039: stsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 981,
+      "text": "IL_0063: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 989,
+      "text": "IL_0078: ldstr \" tameable prefab(s), \""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1005,
+      "text": "IL_00a5: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1014,
+      "text": "IL_0005: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1020,
+      "text": "IL_0021: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1065,
+      "text": "IL_00b6: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1355,
+      "text": "IL_0037: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1357,
+      "text": "IL_003e: ldsfld System.Collections.Generic.List`1<System.String> Husbandry.Offline.Steward::_tameables"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1367,
+      "text": "IL_0056: ldstr \" tameable prefab(s), cursor \""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1645,
+      "text": "// System.Boolean Husbandry.Idle.Drowse::Skip(BaseAI,System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1660,
+      "text": "IL_0020: ldsfld System.Runtime.CompilerServices.ConditionalWeakTable`2<BaseAI,Husbandry.Idle.Drowse/Holder> Husbandry.Idle.Drowse::Banks"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1662,
+      "text": "IL_0026: callvirt !1 System.Runtime.CompilerServices.ConditionalWeakTable`2<BaseAI,Husbandry.Idle.Drowse/Holder>::GetOrCreateValue(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1665,
+      "text": "IL_002d: call System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1685,
+      "text": "IL_005e: call System.Single Husbandry.Idle.Drowse::Distance(BaseAI)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1720,
+      "text": "// System.Boolean Husbandry.Idle.Drowse::Dozy(BaseAI)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1721,
+      "text": ".locals Character, ZNetView, MonsterAI, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1754,
+      "text": "IL_004a: isinst MonsterAI"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1761,
+      "text": "IL_005a: callvirt UnityEngine.GameObject MonsterAI::GetFollowTarget()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1768,
+      "text": "IL_006a: callvirt System.Boolean BaseAI::IsAlerted()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1770,
+      "text": "IL_0070: callvirt Character BaseAI::GetTargetCreature()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1777,
+      "text": "// System.Single Husbandry.Idle.Drowse::Distance(BaseAI)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1799,
+      "text": "IL_0000: newobj System.Void System.Runtime.CompilerServices.ConditionalWeakTable`2<BaseAI,Husbandry.Idle.Drowse/Holder>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1800,
+      "text": "IL_0005: stsfld System.Runtime.CompilerServices.ConditionalWeakTable`2<BaseAI,Husbandry.Idle.Drowse/Holder> Husbandry.Idle.Drowse::Banks"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2264,
+      "text": ".locals System.Collections.Generic.List`1<Husbandry.Herd.Kinds/Kind>, System.Collections.Generic.IEnumerator`1<UnityEngine.GameObject>, UnityEngine.GameObject, Tameable, Procreation, Character, Husbandry.Herd.Kinds/Kind"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2283,
+      "text": "IL_002b: callvirt !!0 UnityEngine.GameObject::GetComponent<Tameable>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2290,
+      "text": "IL_003e: callvirt !!0 UnityEngine.GameObject::GetComponent<Procreation>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2314,
+      "text": "IL_0087: ldfld System.Single Tameable::m_fedDuration"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2322,
+      "text": "IL_009f: ldfld System.Single Procreation::m_pregnancyDuration"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2332,
+      "text": "IL_00be: ldfld System.Int32 Procreation::m_requiredLovePoints"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2342,
+      "text": "IL_00d9: ldfld System.Int32 Procreation::m_maxCreatures"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2352,
+      "text": "IL_00f4: ldfld System.Single Procreation::m_totalCheckRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2362,
+      "text": "IL_0113: ldfld System.Single Procreation::m_partnerCheckRange"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2434,
+      "text": ".locals System.Collections.Generic.List`1<BaseAI>, System.Collections.Generic.List`1/Enumerator<BaseAI>, BaseAI, Character, ZNetView, Husbandry.Herd.Census/Head"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2445,
+      "text": "IL_0027: call System.Collections.Generic.List`1<BaseAI> BaseAI::get_BaseAIInstances()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2450,
+      "text": "IL_0034: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<BaseAI>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2454,
+      "text": "IL_0041: call !0 System.Collections.Generic.List`1/Enumerator<BaseAI>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2499,
+      "text": "IL_00c6: call System.Boolean System.Collections.Generic.List`1/Enumerator<BaseAI>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2503,
+      "text": "IL_00d4: constrained. System.Collections.Generic.List`1/Enumerator<BaseAI>"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/Husbandry.Patches/ShoveePatch.cs",
+      "line": 55,
+      "text": "((Character)user).Message((MessageType)2, val.m_name + \" \" + Bumping.Plain(Shoving.IsSolid(val)), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4182,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 327,
+      "text": "IL_0070: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

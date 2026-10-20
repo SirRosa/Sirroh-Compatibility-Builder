@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Recycle_N_Reclaim</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Recycle_N_Reclaim.Assets.RecyclingPanel.png" />
+    <None Remove="Recycle_N_Reclaim.Assets.trashingborder.png" />
+    <None Remove="Recycle_N_Reclaim.YAMLStuff.Example.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.English.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.Russian.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.Chinese.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.French.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.German.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.Japanese.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.Korean.yml" />
+    <None Remove="Recycle_N_Reclaim.translations.Spanish.yml" />
+    <None Remove="ILRepack.List" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.Assets.RecyclingPanel.png" LogicalName="Recycle_N_Reclaim.Assets.RecyclingPanel.png" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.Assets.trashingborder.png" LogicalName="Recycle_N_Reclaim.Assets.trashingborder.png" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.YAMLStuff.Example.yml" LogicalName="Recycle_N_Reclaim.YAMLStuff.Example.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.English.yml" LogicalName="Recycle_N_Reclaim.translations.English.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.Russian.yml" LogicalName="Recycle_N_Reclaim.translations.Russian.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.Chinese.yml" LogicalName="Recycle_N_Reclaim.translations.Chinese.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.French.yml" LogicalName="Recycle_N_Reclaim.translations.French.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.German.yml" LogicalName="Recycle_N_Reclaim.translations.German.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.Japanese.yml" LogicalName="Recycle_N_Reclaim.translations.Japanese.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.Korean.yml" LogicalName="Recycle_N_Reclaim.translations.Korean.yml" />
+    <EmbeddedResource Include="Recycle_N_Reclaim.translations.Spanish.yml" LogicalName="Recycle_N_Reclaim.translations.Spanish.yml" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="Newtonsoft.Json" />
+  </ItemGroup>
+</Project>

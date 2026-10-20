@@ -1,0 +1,768 @@
+﻿{
+  "input": "Slayer.dll",
+  "assembly": "Slayer, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.0.2.0",
+  "modules": [
+    {
+      "name": "Slayer.dll",
+      "mvid": "8ec7889e-50f3-4b4d-ad4b-7a7d0293ce0c"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null",
+    "Jotunn, Version=2.27.1.0, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "263"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "Slayer"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyDescriptionAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "Slayer"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCopyrightAttribute",
+      "arguments": [
+        "Copyright \u00A9  2021"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTrademarkAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.ComVisibleAttribute",
+      "arguments": [
+        "False"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.GuidAttribute",
+      "arguments": [
+        "e3243d22-4307-4008-ba36-9f326008cde5"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.0.2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.8"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.8"
+        }
+      ],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerDamage",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerDamage/DamagePatch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "ItemDrop/ItemData",
+            "GetDamage",
+            [
+              "System.Int32",
+              "System.Single"
+            ]
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerExperience",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerExperience/ExperiencePatch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Character",
+            "Damage"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerPushback",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerPushback/PushbackPatch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Character",
+            "ApplyPushback",
+            [
+              "UnityEngine.Vector3",
+              "System.Single"
+            ]
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerStagger",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerStagger/AddStaggerDamagePatch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Character",
+            "AddStaggerDamage"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.Slayer",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "neithar.Slayer",
+            "Slayer",
+            "1.0.2"
+          ],
+          "properties": [],
+          "fields": []
+        },
+        {
+          "name": "BepInEx.BepInDependency",
+          "unresolvedArguments": true,
+          "reason": "Failed to resolve assembly: \u0027BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null\u0027"
+        }
+      ],
+      "fields": [
+        {
+          "name": "PluginGUID",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "neithar.Slayer",
+          "decorators": []
+        },
+        {
+          "name": "PluginName",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "Slayer",
+          "decorators": []
+        },
+        {
+          "name": "PluginVersion",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "1.0.2",
+          "decorators": []
+        },
+        {
+          "name": "SlayerType",
+          "type": "Skills/SkillType",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "DebugLogging",
+          "type": "System.Boolean",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "False",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerConfig",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "DamageAmount",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "DamageEnabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "PushbackResistanceAmount",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "PushbackResistanceEnabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "StaggerDamageAmount",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "StaggerDamageEnabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "Slayer.SlayerWeapons",
+      "baseType": "System.Object",
+      "visibility": "Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void Slayer.SlayerDamage::Initialize()",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Void Slayer.SlayerDamage/DamagePatch::Postfix(ItemDrop/ItemData,HitData/DamageTypes\u0026)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "ItemDrop/ItemData"
+        },
+        {
+          "name": "__result",
+          "type": "HitData/DamageTypes\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 45
+    },
+    {
+      "signature": "System.Void Slayer.SlayerExperience::Initialize()",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Void Slayer.SlayerExperience/ExperiencePatch::Prefix(Character,HitData)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Character"
+        },
+        {
+          "name": "hit",
+          "type": "HitData"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 51
+    },
+    {
+      "signature": "System.Void Slayer.SlayerPushback::Initialize()",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Slayer.SlayerPushback/PushbackPatch::Prefix(Character,UnityEngine.Vector3\u0026,System.Single\u0026)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Character"
+        },
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3\u0026"
+        },
+        {
+          "name": "pushForce",
+          "type": "System.Single\u0026"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 66
+    },
+    {
+      "signature": "System.Void Slayer.SlayerPushback/PushbackPatch::ApplyResistance(UnityEngine.Vector3\u0026,System.Single\u0026,System.Single)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "dir",
+          "type": "UnityEngine.Vector3\u0026"
+        },
+        {
+          "name": "pushForce",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "resistance",
+          "type": "System.Single"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 28
+    },
+    {
+      "signature": "System.Void Slayer.SlayerStagger::Initialize()",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 2
+    },
+    {
+      "signature": "System.Void Slayer.SlayerStagger/AddStaggerDamagePatch::Prefix(Character,System.Single\u0026,UnityEngine.Vector3,HitData)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Character"
+        },
+        {
+          "name": "damage",
+          "type": "System.Single\u0026"
+        },
+        {
+          "name": "forceDirection",
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "hit",
+          "type": "HitData"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPrefix",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 92
+    },
+    {
+      "signature": "System.Void Slayer.Slayer::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 21
+    },
+    {
+      "signature": "System.Void Slayer.Slayer::DebugLog(System.String)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "message",
+          "type": "System.String"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 5
+    },
+    {
+      "signature": "System.Void Slayer.Slayer::CreateSkill()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 58
+    },
+    {
+      "signature": "UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)",
+      "visibility": "Private, HideBySig",
+      "returnType": "UnityEngine.Texture2D",
+      "parameters": [
+        {
+          "name": "resourceName",
+          "type": "System.String"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 66
+    },
+    {
+      "signature": "System.Void Slayer.Slayer::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 4
+    },
+    {
+      "signature": "System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "plugin",
+          "type": "BepInEx.BaseUnityPlugin"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 50
+    },
+    {
+      "signature": "System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)",
+      "visibility": "Public, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "weapon",
+          "type": "ItemDrop/ItemData"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 43
+    }
+  ],
+  "resources": [
+    {
+      "name": "Slayer.Assets.krom_no_bg.png",
+      "type": "Embedded",
+      "attributes": "Public",
+      "file": "0000_Slayer.Assets.krom_no_bg.png",
+      "size": 4111,
+      "sha256": "273298e8f0ad5bcf9134aade855ddf0bc57e3ac80f9e180d1ec5756deeb591e7"
+    }
+  ],
+  "calledMethods": [
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E::get_Value()",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Boolean\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Single\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()",
+    "Character HitData::GetAttacker()",
+    "ItemDrop/ItemData Humanoid::GetCurrentWeapon()",
+    "Jotunn.Managers.SkillManager Jotunn.Managers.SkillManager::get_Instance()",
+    "Skills/SkillType Jotunn.Managers.SkillManager::AddSkill(Jotunn.Configs.SkillConfig)",
+    "System.Boolean Character::InAttack()",
+    "System.Boolean Character::IsBlocking()",
+    "System.Boolean Jotunn.Utils.AssetUtils::LoadImage(UnityEngine.Texture2D,System.Byte[])",
+    "System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32)",
+    "System.Int32 UnityEngine.Texture::get_height()",
+    "System.Int32 UnityEngine.Texture::get_width()",
+    "System.Int64 System.IO.Stream::get_Length()",
+    "System.IO.Stream System.Reflection.Assembly::GetManifestResourceStream(System.String)",
+    "System.Reflection.Assembly System.Reflection.Assembly::GetExecutingAssembly()",
+    "System.Single Character::GetSkillFactor(Skills/SkillType)",
+    "System.Single HitData/DamageTypes::GetTotalDamage()",
+    "System.Single UnityEngine.Mathf::Clamp01(System.Single)",
+    "System.String System.String::Concat(System.String,System.String)",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void Character::RaiseSkill(Skills/SkillType,System.Single)",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.Harmony::PatchAll()",
+    "System.Void HitData/DamageTypes::Modify(System.Single)",
+    "System.Void Jotunn.Configs.SkillConfig::.ctor()",
+    "System.Void Jotunn.Configs.SkillConfig::set_Description(System.String)",
+    "System.Void Jotunn.Configs.SkillConfig::set_Icon(UnityEngine.Sprite)",
+    "System.Void Jotunn.Configs.SkillConfig::set_Identifier(System.String)",
+    "System.Void Jotunn.Configs.SkillConfig::set_IncreaseStep(System.Single)",
+    "System.Void Jotunn.Configs.SkillConfig::set_Name(System.String)",
+    "System.Void Jotunn.Logger::LogError(System.Object)",
+    "System.Void Slayer.Slayer::CreateSkill()",
+    "System.Void Slayer.Slayer::DebugLog(System.String)",
+    "System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)",
+    "System.Void Slayer.SlayerDamage::Initialize()",
+    "System.Void Slayer.SlayerExperience::Initialize()",
+    "System.Void Slayer.SlayerPushback::Initialize()",
+    "System.Void Slayer.SlayerPushback/PushbackPatch::ApplyResistance(UnityEngine.Vector3\u0026,System.Single\u0026,System.Single)",
+    "System.Void System.IDisposable::Dispose()",
+    "System.Void UnityEngine.Rect::.ctor(System.Single,System.Single,System.Single,System.Single)",
+    "System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)",
+    "System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)",
+    "UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)",
+    "UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)",
+    "UnityEngine.Vector3 UnityEngine.Vector3::get_zero()"
+  ],
+  "stringLiterals": [
+    "Bonus",
+    "Damage",
+    "Damage Increase Enabled",
+    "Damage system initialized.",
+    "Deal more damage with two-handed and dual weapons",
+    "Enable or disable the damage increase",
+    "Enable or disable the pushback resistance",
+    "Enable Slayer\u0027s bonus stagger damage.",
+    "Enabled",
+    "Experience system initialized.",
+    "Failed to load image data into texture",
+    "Maximum stagger damage bonus at Slayer skill level 100.",
+    "neithar.Slayer",
+    "Percentage of pushback resistance gained with each level of the skill",
+    "Pushback Resistance Amount",
+    "Pushback Resistance Enabled",
+    "Resource not found: ",
+    "Slayer",
+    "Slayer initialized.",
+    "Slayer.Assets.krom_no_bg.png",
+    "Stagger Damage",
+    "Texture load failed!",
+    "The percentage by which two-handed weapon damage is increased at level 100",
+    "Value"
+  ],
+  "totals": {
+    "types": 12,
+    "methods": 16,
+    "strings": 24,
+    "calledMethods": 51,
+    "resources": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "m_Component": [
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 7540311576752983218
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 1332066325252503773
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -4408988584386159041
+      }
+    }
+  ],
+  "m_Layer": 12,
+  "m_Name": "TamingStick",
+  "m_Tag": 0,
+  "m_IsActive": true
+}

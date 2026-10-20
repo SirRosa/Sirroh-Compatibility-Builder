@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ZenUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ZenUI.Resources.exclamation.png" />
+    <EmbeddedResource Include="ZenUI.Resources.exclamation.png" LogicalName="ZenUI.Resources.exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx" />
+    <Reference Include="Zen.ModLib">
+      <HintPath>../../../../../../../../../../../tmp/compat-builder-o8a9ecd7/unpacked/QOL/To Recreate/Zen.ModLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="0Harmony" />
+    <Reference Include="Jotunn" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="assembly_postprocessing" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="gui_framework" />
+    <Reference Include="Splatform" />
+    <Reference Include="UnityEngine.UIModule" />
+    <Reference Include="UnityEngine.AnimationModule" />
+  </ItemGroup>
+</Project>

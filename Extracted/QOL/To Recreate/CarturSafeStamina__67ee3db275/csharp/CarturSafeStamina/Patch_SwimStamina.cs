@@ -1,0 +1,15 @@
+using HarmonyLib;
+
+namespace CarturSafeStamina;
+
+[HarmonyPatch(typeof(SEMan), "ModifySwimStaminaUsage")]
+public static class Patch_SwimStamina
+{
+	private static void Postfix(ref float staminaUse, bool minZero, Character ___m_character)
+	{
+		if (minZero && Plugin.AffectSwim.Value && Plugin.IsLocalAndSafe(___m_character))
+		{
+			staminaUse = 0f;
+		}
+	}
+}

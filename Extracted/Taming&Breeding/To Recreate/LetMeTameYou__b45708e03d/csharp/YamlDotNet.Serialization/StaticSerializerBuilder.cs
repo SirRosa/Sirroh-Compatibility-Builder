@@ -1,0 +1,474 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization.Converters;
+using YamlDotNet.Serialization.EventEmitters;
+using YamlDotNet.Serialization.NamingConventions;
+using YamlDotNet.Serialization.ObjectFactories;
+using YamlDotNet.Serialization.ObjectGraphTraversalStrategies;
+using YamlDotNet.Serialization.ObjectGraphVisitors;
+using YamlDotNet.Serialization.TypeInspectors;
+using YamlDotNet.Serialization.TypeResolvers;
+
+namespace YamlDotNet.Serialization;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(new byte[] { 0, 1 })]
+internal sealed class StaticSerializerBuilder : StaticBuilderSkeleton<StaticSerializerBuilder>
+{
+	[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)]
+	private class ValueSerializer : _003Cd24940d8_002Db261_002D4d22_002Da068_002D8208a07cf4f1_003EIValueSerializer
+	{
+		private readonly _003C2e4836f2_002D9cba_002D49fb_002Da7bf_002Df4beabd1fc33_003EIObjectGraphTraversalStrategy traversalStrategy;
+
+		private readonly _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter eventEmitter;
+
+		private readonly IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters;
+
+		private readonly _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> preProcessingPhaseObjectGraphVisitorFactories;
+
+		private readonly _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>> emissionPhaseObjectGraphVisitorFactories;
+
+		public ValueSerializer(_003C2e4836f2_002D9cba_002D49fb_002Da7bf_002Df4beabd1fc33_003EIObjectGraphTraversalStrategy traversalStrategy, _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter eventEmitter, IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters, _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> preProcessingPhaseObjectGraphVisitorFactories, _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>> emissionPhaseObjectGraphVisitorFactories)
+		{
+			this.traversalStrategy = traversalStrategy;
+			this.eventEmitter = eventEmitter;
+			this.typeConverters = typeConverters;
+			this.preProcessingPhaseObjectGraphVisitorFactories = preProcessingPhaseObjectGraphVisitorFactories;
+			this.emissionPhaseObjectGraphVisitorFactories = emissionPhaseObjectGraphVisitorFactories;
+		}
+
+		[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(2)]
+		public void SerializeValue([_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(1)] _003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter emitter, object value, Type type)
+		{
+			Type type2 = type ?? ((value != null) ? value.GetType() : typeof(object));
+			Type staticType = type ?? typeof(object);
+			_003Ce413efdf_002D5e9a_002D4b56_002D9686_002Da7eb44e10568_003EObjectDescriptor graph = new _003Ce413efdf_002D5e9a_002D4b56_002D9686_002Da7eb44e10568_003EObjectDescriptor(value, type2, staticType);
+			List<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> preProcessingPhaseObjectGraphVisitors = preProcessingPhaseObjectGraphVisitorFactories.BuildComponentList(typeConverters);
+			foreach (_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing> item in preProcessingPhaseObjectGraphVisitors)
+			{
+				traversalStrategy.Traverse(graph, item, default, NestedObjectSerializer);
+			}
+			_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter> visitor = emissionPhaseObjectGraphVisitorFactories.BuildComponentChain(new _003C8b687c6d_002D5038_002D49e2_002Dbc4c_002D6f21086f2b79_003EEmittingObjectGraphVisitor(eventEmitter), [_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(0)] (_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter> inner) => new _003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs(inner, eventEmitter, preProcessingPhaseObjectGraphVisitors, typeConverters, NestedObjectSerializer));
+			traversalStrategy.Traverse(graph, visitor, emitter, NestedObjectSerializer);
+			[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(2)]
+			void NestedObjectSerializer(object v, Type t)
+			{
+				SerializeValue(emitter, v, t);
+			}
+		}
+	}
+
+	private readonly StaticContext context;
+
+	private readonly StaticObjectFactory factory;
+
+	private _003Ccd89c802_002Db8bb_002D4ca7_002Dab84_002Dc783332e7b22_003EObjectGraphTraversalStrategyFactory objectGraphTraversalStrategyFactory;
+
+	private readonly _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> preProcessingPhaseObjectGraphVisitorFactories;
+
+	private readonly _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>> emissionPhaseObjectGraphVisitorFactories;
+
+	private readonly _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> eventEmitterFactories;
+
+	private readonly Dictionary<Type, _003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName> tagMappings = new Dictionary<Type, _003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName>();
+
+	private int maximumRecursion = 50;
+
+	private _003C2ff6c2f5_002D6a69_002D425e_002Dacb2_002Dae4d9d5cfb1d_003EEmitterSettings emitterSettings = _003C2ff6c2f5_002D6a69_002D425e_002Dacb2_002Dae4d9d5cfb1d_003EEmitterSettings.Default;
+
+	private _003Caf16b6a9_002D04e6_002D4f66_002Dbcda_002Daf3138fe7971_003EDefaultValuesHandling defaultValuesHandlingConfiguration;
+
+	private bool quoteNecessaryStrings;
+
+	private bool quoteYaml1_1Strings;
+
+	private _003Cd305849e_002D94a1_002D4819_002Dbce0_002D16e0b811ff5d_003EScalarStyle defaultScalarStyle;
+
+	protected override StaticSerializerBuilder Self => this;
+
+	public StaticSerializerBuilder(StaticContext context)
+		: base((_003C9a18e817_002D7f53_002D45f5_002D8cc8_002D78dd60e37121_003EITypeResolver)new _003C729a702b_002D7658_002D4330_002D8b52_002D8a8c56eea577_003EDynamicTypeResolver())
+	{
+		this.context = context;
+		factory = context.GetFactory();
+		typeInspectorFactories.Add(typeof(_003Cfba57f66_002D4e0b_002D4477_002D9105_002Db9b0b4957763_003ECachedTypeInspector), (_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector inner) => new _003Cfba57f66_002D4e0b_002D4477_002D9105_002Db9b0b4957763_003ECachedTypeInspector(inner));
+		typeInspectorFactories.Add(typeof(_003Cf2cd6aa7_002D767a_002D449b_002D8198_002D55e156780a2f_003ENamingConventionTypeInspector), (_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector inner) => (!(namingConvention is _003C4aa8658e_002D2183_002D4694_002Db0ce_002D777f343e803b_003ENullNamingConvention)) ? new _003Cf2cd6aa7_002D767a_002D449b_002D8198_002D55e156780a2f_003ENamingConventionTypeInspector(inner, namingConvention) : inner);
+		typeInspectorFactories.Add(typeof(_003C696a98cc_002D544c_002D4e6a_002D89dd_002Dd31f8c518db5_003EYamlAttributesTypeInspector), (_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector inner) => new _003C696a98cc_002D544c_002D4e6a_002D89dd_002Dd31f8c518db5_003EYamlAttributesTypeInspector(inner));
+		preProcessingPhaseObjectGraphVisitorFactories = new _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> { 
+		{
+			typeof(_003C90628da6_002D885d_002D4902_002Dabe1_002Df6c29fadf294_003EAnchorAssigner),
+			(IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters) => new _003C90628da6_002D885d_002D4902_002Dabe1_002Df6c29fadf294_003EAnchorAssigner(typeConverters)
+		} };
+		emissionPhaseObjectGraphVisitorFactories = new _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>>
+		{
+			{
+				typeof(_003C9bfdac72_002Dfdeb_002D445b_002Da1d3_002D7417be1d9eae_003ECustomSerializationObjectGraphVisitor),
+				(_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => new _003C9bfdac72_002Dfdeb_002D445b_002Da1d3_002D7417be1d9eae_003ECustomSerializationObjectGraphVisitor(args.InnerVisitor, args.TypeConverters, args.NestedObjectSerializer)
+			},
+			{
+				typeof(_003Cb130d4cf_002Dce8d_002D4e06_002D9e86_002D8ee9f1233ae9_003EAnchorAssigningObjectGraphVisitor),
+				(_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => new _003Cb130d4cf_002Dce8d_002D4e06_002D9e86_002D8ee9f1233ae9_003EAnchorAssigningObjectGraphVisitor(args.InnerVisitor, args.EventEmitter, args.GetPreProcessingPhaseObjectGraphVisitor<_003C90628da6_002D885d_002D4902_002Dabe1_002Df6c29fadf294_003EAnchorAssigner>())
+			},
+			{
+				typeof(_003C1044ec24_002Df872_002D425b_002Db9ca_002D54756225f7f6_003EDefaultValuesObjectGraphVisitor),
+				(_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => new _003C1044ec24_002Df872_002D425b_002Db9ca_002D54756225f7f6_003EDefaultValuesObjectGraphVisitor(defaultValuesHandlingConfiguration, args.InnerVisitor, factory)
+			},
+			{
+				typeof(_003C4cb051fe_002Dae7b_002D44ee_002D9814_002Dae1e573143b3_003ECommentsObjectGraphVisitor),
+				(_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => new _003C4cb051fe_002Dae7b_002D44ee_002D9814_002Dae1e573143b3_003ECommentsObjectGraphVisitor(args.InnerVisitor)
+			}
+		};
+		eventEmitterFactories = new _003C2cd31a20_002D83ff_002D4e8e_002D9b5c_002D5f71fde1499d_003ELazyComponentRegistrationList<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> { 
+		{
+			typeof(_003Cbbffadd9_002Da0ac_002D4c3e_002D8eb2_002Deb15a457ecc5_003ETypeAssigningEventEmitter),
+			(_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter inner) => new _003Cbbffadd9_002Da0ac_002D4c3e_002D8eb2_002Deb15a457ecc5_003ETypeAssigningEventEmitter(inner, tagMappings, quoteNecessaryStrings, quoteYaml1_1Strings, defaultScalarStyle, yamlFormatter, enumNamingConvention, BuildTypeInspector())
+		} };
+		objectGraphTraversalStrategyFactory = (_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector typeInspector, _003C9a18e817_002D7f53_002D45f5_002D8cc8_002D78dd60e37121_003EITypeResolver typeResolver, IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters, int maximumRecursion) => new _003Ca079ef9c_002D85aa_002D4d79_002D91da_002D46578d914a96_003EFullObjectGraphTraversalStrategy(typeInspector, typeResolver, maximumRecursion, namingConvention, factory);
+	}
+
+	public StaticSerializerBuilder WithQuotingNecessaryStrings(bool quoteYaml1_1Strings = false)
+	{
+		quoteNecessaryStrings = true;
+		this.quoteYaml1_1Strings = quoteYaml1_1Strings;
+		return this;
+	}
+
+	public StaticSerializerBuilder WithQuotingNecessaryStrings()
+	{
+		quoteNecessaryStrings = true;
+		return this;
+	}
+
+	public StaticSerializerBuilder WithDefaultScalarStyle(_003Cd305849e_002D94a1_002D4819_002Dbce0_002D16e0b811ff5d_003EScalarStyle style)
+	{
+		defaultScalarStyle = style;
+		return this;
+	}
+
+	public StaticSerializerBuilder WithMaximumRecursion(int maximumRecursion)
+	{
+		if (maximumRecursion <= 0)
+		{
+			throw new ArgumentOutOfRangeException("maximumRecursion", $"The maximum recursion specified ({maximumRecursion}) is invalid. It should be a positive integer.");
+		}
+		this.maximumRecursion = maximumRecursion;
+		return this;
+	}
+
+	public StaticSerializerBuilder WithEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>(Func<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, TEventEmitter> eventEmitterFactory) where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		return WithEventEmitter(eventEmitterFactory, (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> w) =>
+		{
+			w.OnTop();
+		});
+	}
+
+	public StaticSerializerBuilder WithEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>(Func<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, _003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector, TEventEmitter> eventEmitterFactory) where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		return WithEventEmitter(eventEmitterFactory, (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> w) =>
+		{
+			w.OnTop();
+		});
+	}
+
+	public StaticSerializerBuilder WithEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>(Func<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, TEventEmitter> eventEmitterFactory, Action<_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter>> where) where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		return WithEventEmitter((_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter e, _003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector _) => eventEmitterFactory(e), where);
+	}
+
+	public StaticSerializerBuilder WithEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>(Func<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, _003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector, TEventEmitter> eventEmitterFactory, Action<_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter>> where) where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		if (eventEmitterFactory == null)
+		{
+			throw new ArgumentNullException("eventEmitterFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(eventEmitterFactories.CreateRegistrationLocationSelector(typeof(TEventEmitter), (_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter inner) => eventEmitterFactory(inner, BuildTypeInspector())));
+		return Self;
+	}
+
+	public StaticSerializerBuilder WithEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>(_003C31eb9eed_002D785d_002D4044_002D9081_002Def6bfa032f83_003EWrapperFactory<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter, TEventEmitter> eventEmitterFactory, Action<_003C7b4f1b17_002D7cba_002D4703_002D871c_002Da756aba66c35_003EITrackingRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter>> where) where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		if (eventEmitterFactory == null)
+		{
+			throw new ArgumentNullException("eventEmitterFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(eventEmitterFactories.CreateTrackingRegistrationLocationSelector(typeof(TEventEmitter), (_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter wrapped, _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter inner) => eventEmitterFactory(wrapped, inner)));
+		return Self;
+	}
+
+	public StaticSerializerBuilder WithoutEventEmitter<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TEventEmitter>() where TEventEmitter : _003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter
+	{
+		return WithoutEventEmitter(typeof(TEventEmitter));
+	}
+
+	public StaticSerializerBuilder WithoutEventEmitter(Type eventEmitterType)
+	{
+		if (eventEmitterType == null)
+		{
+			throw new ArgumentNullException("eventEmitterType");
+		}
+		eventEmitterFactories.Remove(eventEmitterType);
+		return this;
+	}
+
+	public override StaticSerializerBuilder WithTagMapping(_003Cc95e2442_002D9554_002D4a91_002D80d4_002De2a252f4f81d_003ETagName tag, Type type)
+	{
+		if (tag.IsEmpty)
+		{
+			throw new ArgumentException("Non-specific tags cannot be maped");
+		}
+		if (type == null)
+		{
+			throw new ArgumentNullException("type");
+		}
+		if (tagMappings.TryGetValue(type, out var value))
+		{
+			throw new ArgumentException($"Type already has a registered tag '{value}' for type '{type.FullName}'", "type");
+		}
+		tagMappings.Add(type, tag);
+		return this;
+	}
+
+	public StaticSerializerBuilder WithoutTagMapping(Type type)
+	{
+		if (type == null)
+		{
+			throw new ArgumentNullException("type");
+		}
+		if (!tagMappings.Remove(type))
+		{
+			throw new KeyNotFoundException("Tag for type '" + type.FullName + "' is not registered");
+		}
+		return this;
+	}
+
+	public StaticSerializerBuilder EnsureRoundtrip()
+	{
+		objectGraphTraversalStrategyFactory = (_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector typeInspector, _003C9a18e817_002D7f53_002D45f5_002D8cc8_002D78dd60e37121_003EITypeResolver typeResolver, IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters, int maximumRecursion) => new _003Cb192437f_002Dbd1e_002D4f75_002Dbaf6_002D5a6b0e86d935_003ERoundtripObjectGraphTraversalStrategy(typeConverters, typeInspector, typeResolver, maximumRecursion, namingConvention, settings, factory);
+		WithEventEmitter((_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter inner) => new _003Cbbffadd9_002Da0ac_002D4c3e_002D8eb2_002Deb15a457ecc5_003ETypeAssigningEventEmitter(inner, tagMappings, quoteNecessaryStrings, quoteYaml1_1Strings: false, _003Cd305849e_002D94a1_002D4819_002Dbce0_002D16e0b811ff5d_003EScalarStyle.Plain, _003C7ac57b10_002Ded2c_002D4254_002D96e1_002D3b85a1ba3278_003EYamlFormatter.Default, enumNamingConvention, BuildTypeInspector()), (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> loc) =>
+		{
+			loc.InsteadOf<_003Cbbffadd9_002Da0ac_002D4c3e_002D8eb2_002Deb15a457ecc5_003ETypeAssigningEventEmitter>();
+		});
+		return WithTypeInspector((_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector inner) => new _003Ce9d64664_002D780c_002D48f6_002D81d1_002Db37d0843fdf1_003EReadableAndWritablePropertiesTypeInspector(inner), (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector> loc) =>
+		{
+			loc.OnBottom();
+		});
+	}
+
+	public StaticSerializerBuilder DisableAliases()
+	{
+		preProcessingPhaseObjectGraphVisitorFactories.Remove(typeof(_003C90628da6_002D885d_002D4902_002Dabe1_002Df6c29fadf294_003EAnchorAssigner));
+		emissionPhaseObjectGraphVisitorFactories.Remove(typeof(_003Cb130d4cf_002Dce8d_002D4e06_002D9e86_002D8ee9f1233ae9_003EAnchorAssigningObjectGraphVisitor));
+		return this;
+	}
+
+	[Obsolete("The default behavior is now to always emit default values, thefore calling this method has no effect. This behavior is now controlled by ConfigureDefaultValuesHandling.", true)]
+	public StaticSerializerBuilder EmitDefaults()
+	{
+		return ConfigureDefaultValuesHandling(_003Caf16b6a9_002D04e6_002D4f66_002Dbcda_002Daf3138fe7971_003EDefaultValuesHandling.Preserve);
+	}
+
+	public StaticSerializerBuilder ConfigureDefaultValuesHandling(_003Caf16b6a9_002D04e6_002D4f66_002Dbcda_002Daf3138fe7971_003EDefaultValuesHandling configuration)
+	{
+		defaultValuesHandlingConfiguration = configuration;
+		return this;
+	}
+
+	public StaticSerializerBuilder JsonCompatible()
+	{
+		emitterSettings = emitterSettings.WithMaxSimpleKeyLength(int.MaxValue).WithoutAnchorName().WithUtf16SurrogatePairs();
+		return WithTypeConverter(new _003Cda832479_002Da086_002D45cf_002Da1f7_002D552ede25808b_003EGuidConverter(jsonCompatible: true), (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> w) =>
+		{
+			w.InsteadOf<_003Cda832479_002Da086_002D45cf_002Da1f7_002D552ede25808b_003EGuidConverter>();
+		}).WithTypeConverter(new DateTime8601Converter(_003Cd305849e_002D94a1_002D4819_002Dbce0_002D16e0b811ff5d_003EScalarStyle.DoubleQuoted)).WithEventEmitter((_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter inner) => new _003C1c0249be_002Deaa3_002D4ff8_002Da38e_002D5a60e13b2f28_003EJsonEventEmitter(inner, yamlFormatter, enumNamingConvention, BuildTypeInspector()), (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter> loc) =>
+		{
+			loc.InsteadOf<_003Cbbffadd9_002Da0ac_002D4c3e_002D8eb2_002Deb15a457ecc5_003ETypeAssigningEventEmitter>();
+		});
+	}
+
+	public StaticSerializerBuilder WithNewLine(string newLine)
+	{
+		emitterSettings = emitterSettings.WithNewLine(newLine);
+		return this;
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(TObjectGraphVisitor objectGraphVisitor) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		return WithPreProcessingPhaseObjectGraphVisitor(objectGraphVisitor, (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> w) =>
+		{
+			w.OnTop();
+		});
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(Func<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, TObjectGraphVisitor> objectGraphVisitorFactory) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		return WithPreProcessingPhaseObjectGraphVisitor(objectGraphVisitorFactory, (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>> w) =>
+		{
+			w.OnTop();
+		});
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(TObjectGraphVisitor objectGraphVisitor, Action<_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		if (objectGraphVisitor == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitor");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(preProcessingPhaseObjectGraphVisitorFactories.CreateRegistrationLocationSelector(typeof(TObjectGraphVisitor), (IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> _) => objectGraphVisitor));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(Func<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, TObjectGraphVisitor> objectGraphVisitorFactory, Action<_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		if (objectGraphVisitorFactory == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(preProcessingPhaseObjectGraphVisitorFactories.CreateRegistrationLocationSelector(typeof(TObjectGraphVisitor), (IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters) => objectGraphVisitorFactory(typeConverters)));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(_003Cd39f13d8_002Df580_002D4171_002Da00c_002Dc44ac6e939ed_003EWrapperFactory<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>, TObjectGraphVisitor> objectGraphVisitorFactory, Action<_003C7b4f1b17_002D7cba_002D4703_002D871c_002Da756aba66c35_003EITrackingRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		if (objectGraphVisitorFactory == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(preProcessingPhaseObjectGraphVisitorFactories.CreateTrackingRegistrationLocationSelector(typeof(TObjectGraphVisitor), (_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing> wrapped, IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> _) => objectGraphVisitorFactory(wrapped)));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(_003C31eb9eed_002D785d_002D4044_002D9081_002Def6bfa032f83_003EWrapperFactory<IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter>, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>, TObjectGraphVisitor> objectGraphVisitorFactory, Action<_003C7b4f1b17_002D7cba_002D4703_002D871c_002Da756aba66c35_003EITrackingRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		if (objectGraphVisitorFactory == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(preProcessingPhaseObjectGraphVisitorFactories.CreateTrackingRegistrationLocationSelector(typeof(TObjectGraphVisitor), (_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing> wrapped, IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters) => objectGraphVisitorFactory(wrapped, typeConverters)));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithoutPreProcessingPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>() where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003C86c82a35_002D8d4c_002D48eb_002D9248_002D54b686e6174f_003ENothing>
+	{
+		return WithoutPreProcessingPhaseObjectGraphVisitor(typeof(TObjectGraphVisitor));
+	}
+
+	public StaticSerializerBuilder WithoutPreProcessingPhaseObjectGraphVisitor(Type objectGraphVisitorType)
+	{
+		if (objectGraphVisitorType == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorType");
+		}
+		preProcessingPhaseObjectGraphVisitorFactories.Remove(objectGraphVisitorType);
+		return this;
+	}
+
+	public StaticSerializerBuilder WithObjectGraphTraversalStrategyFactory(_003Ccd89c802_002Db8bb_002D4ca7_002Dab84_002Dc783332e7b22_003EObjectGraphTraversalStrategyFactory objectGraphTraversalStrategyFactory)
+	{
+		this.objectGraphTraversalStrategyFactory = objectGraphTraversalStrategyFactory;
+		return this;
+	}
+
+	public StaticSerializerBuilder WithEmissionPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(Func<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, TObjectGraphVisitor> objectGraphVisitorFactory) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>
+	{
+		return WithEmissionPhaseObjectGraphVisitor(objectGraphVisitorFactory, (_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>> w) =>
+		{
+			w.OnTop();
+		});
+	}
+
+	public StaticSerializerBuilder WithEmissionPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(Func<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, TObjectGraphVisitor> objectGraphVisitorFactory, Action<_003Ce90b0d63_002D97fe_002D48e5_002D8aba_002D6bd8b2703b95_003EIRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>
+	{
+		if (objectGraphVisitorFactory == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(emissionPhaseObjectGraphVisitorFactories.CreateRegistrationLocationSelector(typeof(TObjectGraphVisitor), (_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => objectGraphVisitorFactory(args)));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithEmissionPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>(_003C31eb9eed_002D785d_002D4044_002D9081_002Def6bfa032f83_003EWrapperFactory<_003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs, _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>, TObjectGraphVisitor> objectGraphVisitorFactory, Action<_003C7b4f1b17_002D7cba_002D4703_002D871c_002Da756aba66c35_003EITrackingRegistrationLocationSelectionSyntax<_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>>> where) where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>
+	{
+		if (objectGraphVisitorFactory == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorFactory");
+		}
+		if (where == null)
+		{
+			throw new ArgumentNullException("where");
+		}
+		where(emissionPhaseObjectGraphVisitorFactories.CreateTrackingRegistrationLocationSelector(typeof(TObjectGraphVisitor), (_003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter> wrapped, _003C60b29b70_002Dd419_002D4a24_002Dbdde_002D5c94bad547f9_003EEmissionPhaseObjectGraphVisitorArgs args) => objectGraphVisitorFactory(wrapped, args)));
+		return this;
+	}
+
+	public StaticSerializerBuilder WithoutEmissionPhaseObjectGraphVisitor<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)] TObjectGraphVisitor>() where TObjectGraphVisitor : _003Cd0224a9c_002Da50e_002D4b39_002D9113_002Dc2af3da8da9e_003EIObjectGraphVisitor<_003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter>
+	{
+		return WithoutEmissionPhaseObjectGraphVisitor(typeof(TObjectGraphVisitor));
+	}
+
+	public StaticSerializerBuilder WithoutEmissionPhaseObjectGraphVisitor(Type objectGraphVisitorType)
+	{
+		if (objectGraphVisitorType == null)
+		{
+			throw new ArgumentNullException("objectGraphVisitorType");
+		}
+		emissionPhaseObjectGraphVisitorFactories.Remove(objectGraphVisitorType);
+		return this;
+	}
+
+	public StaticSerializerBuilder WithIndentedSequences()
+	{
+		emitterSettings = emitterSettings.WithIndentedSequences();
+		return this;
+	}
+
+	public _003C71c4f03b_002D8897_002D4b69_002D97f6_002Dd22b7b1b20c2_003EISerializer Build()
+	{
+		return _003C109dd29f_002D4d8f_002D406e_002Daaa1_002Da67908c2e897_003ESerializer.FromValueSerializer(BuildValueSerializer(), emitterSettings);
+	}
+
+	public _003Cd24940d8_002Db261_002D4d22_002Da068_002D8208a07cf4f1_003EIValueSerializer BuildValueSerializer()
+	{
+		IEnumerable<_003C5384a3d0_002D8336_002D4a99_002Db8c4_002D408e36f4fefa_003EIYamlTypeConverter> typeConverters = BuildTypeConverters();
+		_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector typeInspector = BuildTypeInspector();
+		_003C2e4836f2_002D9cba_002D49fb_002Da7bf_002Df4beabd1fc33_003EIObjectGraphTraversalStrategy traversalStrategy = objectGraphTraversalStrategyFactory(typeInspector, typeResolver, typeConverters, maximumRecursion);
+		_003Ca359f02a_002D4850_002D48f6_002Da961_002Dc904bad904ab_003EIEventEmitter eventEmitter = eventEmitterFactories.BuildComponentChain(new _003C10f354d9_002Deede_002D471e_002D9cd4_002Dbce33adfa4ba_003EWriterEventEmitter());
+		return new ValueSerializer(traversalStrategy, eventEmitter, typeConverters, preProcessingPhaseObjectGraphVisitorFactories.Clone(), emissionPhaseObjectGraphVisitorFactories.Clone());
+	}
+
+	public _003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector BuildTypeInspector()
+	{
+		_003C0f2e048a_002Dc25c_002D452c_002Db9b3_002Ddcbaebd877c5_003EITypeInspector typeInspector = context.GetTypeInspector();
+		return typeInspectorFactories.BuildComponentChain(typeInspector);
+	}
+}

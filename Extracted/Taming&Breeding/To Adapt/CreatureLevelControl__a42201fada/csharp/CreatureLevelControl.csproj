@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CreatureLevelControl</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="CreatureLevelControl.languages.German.yml" />
+    <None Remove="CreatureLevelControl.languages.English.yml" />
+    <None Remove="CreatureLevelControl.languages.French.yml" />
+    <None Remove="CreatureLevelControl.languages.Chinese.yml" />
+    <None Remove="CreatureLevelControl.CreatureConfig.yml" />
+    <None Remove="CreatureLevelControl.ItemConfig.yml" />
+    <None Remove="CreatureLevelControl.assets.cllc_vfx" />
+    <None Remove="ILRepack.List" />
+    <EmbeddedResource Include="CreatureLevelControl.languages.German.yml" LogicalName="CreatureLevelControl.languages.German.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.languages.English.yml" LogicalName="CreatureLevelControl.languages.English.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.languages.French.yml" LogicalName="CreatureLevelControl.languages.French.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.languages.Chinese.yml" LogicalName="CreatureLevelControl.languages.Chinese.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.CreatureConfig.yml" LogicalName="CreatureLevelControl.CreatureConfig.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.ItemConfig.yml" LogicalName="CreatureLevelControl.ItemConfig.yml" />
+    <EmbeddedResource Include="CreatureLevelControl.assets.cllc_vfx" LogicalName="CreatureLevelControl.assets.cllc_vfx" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="BepInEx" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_utils" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="0Harmony" />
+    <Reference Include="SoftReferenceableAssets" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.ParticleSystemModule" />
+    <Reference Include="Splatform" />
+  </ItemGroup>
+</Project>

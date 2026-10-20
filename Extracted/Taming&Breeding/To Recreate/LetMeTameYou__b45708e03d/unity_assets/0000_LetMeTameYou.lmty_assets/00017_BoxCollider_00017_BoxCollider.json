@@ -1,0 +1,30 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -8830399635378246434
+  },
+  "m_Material": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_IncludeLayers": {
+    "m_Bits": 0
+  },
+  "m_ExcludeLayers": {
+    "m_Bits": 0
+  },
+  "m_LayerOverridePriority": 0,
+  "m_IsTrigger": false,
+  "m_ProvidesContacts": false,
+  "m_Enabled": true,
+  "m_Size": {
+    "x": 0.15000000596046448,
+    "y": 0.15000000596046448,
+    "z": 1.2000000476837158
+  },
+  "m_Center": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}

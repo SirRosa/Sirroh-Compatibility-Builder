@@ -1,0 +1,10 @@
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core.Events;
+
+namespace YamlDotNet.Core;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+internal interface _003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter
+{
+	void Emit(_003C47bae968_002D6c5e_002D4df2_002D83b4_002D202823c3b1a4_003EParsingEvent @event);
+}

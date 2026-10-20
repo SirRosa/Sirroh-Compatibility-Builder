@@ -1,0 +1,25 @@
+{
+  "m_Name": "Floating",
+  "m_ExecutionOrder": 0,
+  "m_PropertiesHash": {
+    "bytes[0]": 178,
+    "bytes[1]": 101,
+    "bytes[2]": 200,
+    "bytes[3]": 116,
+    "bytes[4]": 243,
+    "bytes[5]": 124,
+    "bytes[6]": 100,
+    "bytes[7]": 71,
+    "bytes[8]": 40,
+    "bytes[9]": 167,
+    "bytes[10]": 100,
+    "bytes[11]": 73,
+    "bytes[12]": 187,
+    "bytes[13]": 40,
+    "bytes[14]": 237,
+    "bytes[15]": 248
+  },
+  "m_ClassName": "Floating",
+  "m_Namespace": "",
+  "m_AssemblyName": "assembly_valheim.dll"
+}

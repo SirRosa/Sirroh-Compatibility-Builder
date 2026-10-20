@@ -1,0 +1,25 @@
+{
+  "m_Name": "ItemDrop",
+  "m_ExecutionOrder": 0,
+  "m_PropertiesHash": {
+    "bytes[0]": 18,
+    "bytes[1]": 194,
+    "bytes[2]": 139,
+    "bytes[3]": 112,
+    "bytes[4]": 43,
+    "bytes[5]": 87,
+    "bytes[6]": 224,
+    "bytes[7]": 254,
+    "bytes[8]": 84,
+    "bytes[9]": 44,
+    "bytes[10]": 195,
+    "bytes[11]": 115,
+    "bytes[12]": 220,
+    "bytes[13]": 181,
+    "bytes[14]": 23,
+    "bytes[15]": 209
+  },
+  "m_ClassName": "ItemDrop",
+  "m_Namespace": "",
+  "m_AssemblyName": "assembly_valheim.dll"
+}

@@ -1,0 +1,11 @@
+using System;
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core;
+
+namespace YamlDotNet.Serialization;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(2)]
+internal interface _003Cd24940d8_002Db261_002D4d22_002Da068_002D8208a07cf4f1_003EIValueSerializer
+{
+	void SerializeValue([_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(1)] _003Ce3ac13c3_002D7cb5_002D4d88_002D8b7b_002D9dd21bdaf81d_003EIEmitter emitter, object value, Type type);
+}

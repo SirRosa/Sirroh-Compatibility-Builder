@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LetMeTameYou</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="LetMeTameYou.lmty_assets" />
+    <None Remove="LetMeTameYou.translations.English.yml" />
+    <None Remove="LetMeTameYou.Assets.LetMeTameYou_DefaultTameList.yml" />
+    <None Remove="ILRepack.List" />
+    <EmbeddedResource Include="LetMeTameYou.lmty_assets" LogicalName="LetMeTameYou.lmty_assets" />
+    <EmbeddedResource Include="LetMeTameYou.translations.English.yml" LogicalName="LetMeTameYou.translations.English.yml" />
+    <EmbeddedResource Include="LetMeTameYou.Assets.LetMeTameYou_DefaultTameList.yml" LogicalName="LetMeTameYou.Assets.LetMeTameYou_DefaultTameList.yml" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="MonsterModifiers" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_valheim" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="BepInEx" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="BepInEx" />
+  </ItemGroup>
+</Project>

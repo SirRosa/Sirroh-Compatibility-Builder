@@ -1,0 +1,577 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": -1260455158007988758
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -4929274236611494294
+  },
+  "m_Name": "",
+  "m_autoPickup": 1,
+  "m_autoDestroy": 1,
+  "m_itemData": {
+    "m_stack": 1,
+    "m_durability": 100.0,
+    "m_quality": 1,
+    "m_variant": 0,
+    "m_worldLevel": 0,
+    "m_pickedUp": 0,
+    "m_shared": {
+      "m_name": "$item_taming_stick",
+      "m_subtitle": "",
+      "m_dlc": "",
+      "m_itemType": 3,
+      "m_icons": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 1031200657461445095
+        }
+      ],
+      "m_attachOverride": 0,
+      "m_description": "$item_taming_stick_desc",
+      "m_maxStackSize": 1,
+      "m_autoStack": 1,
+      "m_maxQuality": 4,
+      "m_scaleByQuality": 0.0,
+      "m_weight": 2.0,
+      "m_scaleWeightByQuality": 0.0,
+      "m_value": 0,
+      "m_teleportable": 1,
+      "m_questItem": 0,
+      "m_equipDuration": 0.20000000298023224,
+      "m_variants": 0,
+      "m_trophyPos": {
+        "x": 0,
+        "y": 0
+      },
+      "m_buildPieces": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_centerCamera": 0,
+      "m_setName": "",
+      "m_setSize": 0,
+      "m_setStatusEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_equipStatusEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_eitrRegenModifier": 0.0,
+      "m_movementModifier": -0.05000000074505806,
+      "m_homeItemsStaminaModifier": 0.0,
+      "m_heatResistanceModifier": 0.0,
+      "m_jumpStaminaModifier": 0.0,
+      "m_attackStaminaModifier": 0.0,
+      "m_blockStaminaModifier": 0.0,
+      "m_dodgeStaminaModifier": 0.0,
+      "m_swimStaminaModifier": 0.0,
+      "m_sneakStaminaModifier": 0.0,
+      "m_runStaminaModifier": 0.0,
+      "m_food": 0.0,
+      "m_foodStamina": 0.0,
+      "m_foodEitr": 0.0,
+      "m_foodBurnTime": 0.0,
+      "m_foodRegen": 0.0,
+      "m_foodEatAnimTime": 1.0,
+      "m_isDrink": 0,
+      "m_armorMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_helmetHideHair": 1,
+      "m_helmetHideBeard": 0,
+      "m_helmetHairSettings": [],
+      "m_helmetBeardSettings": [],
+      "m_armor": 20.0,
+      "m_armorPerLevel": 1.0,
+      "m_damageModifiers": [],
+      "m_blockPower": 3.0,
+      "m_blockPowerPerLevel": 0.0,
+      "m_deflectionForce": 20.0,
+      "m_deflectionForcePerLevel": 5.0,
+      "m_timedBlockBonus": 2.0,
+      "m_perfectBlockStaminaRegen": 0.0,
+      "m_perfectBlockStatusEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_buildBlockCharges": 0,
+      "m_maxBlockCharges": 5,
+      "m_blockChargeDecayTime": 1.0,
+      "m_blockChargeBlockingDecayMult": 0.25,
+      "m_blockChargeEffects": {
+        "m_effectPrefabs": []
+      },
+      "m_maxAdrenaline": 0.0,
+      "m_fullAdrenalineSE": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_blockAdrenaline": 2.0,
+      "m_perfectBlockAdrenaline": 5.0,
+      "m_animationState": 12,
+      "m_skillType": 0,
+      "m_toolTier": 0,
+      "m_damages": {
+        "m_damage": 0.0,
+        "m_blunt": 0.0,
+        "m_slash": 0.0,
+        "m_pierce": 0.0,
+        "m_chop": 0.0,
+        "m_pickaxe": 0.0,
+        "m_fire": 0.0,
+        "m_frost": 0.0,
+        "m_lightning": 0.0,
+        "m_poison": 0.0,
+        "m_spirit": 0.0
+      },
+      "m_damagesPerLevel": {
+        "m_damage": 0.0,
+        "m_blunt": 0.0,
+        "m_slash": 0.0,
+        "m_pierce": 0.0,
+        "m_chop": 0.0,
+        "m_pickaxe": 0.0,
+        "m_fire": 0.0,
+        "m_frost": 0.0,
+        "m_lightning": 0.0,
+        "m_poison": 0.0,
+        "m_spirit": 0.0
+      },
+      "m_attackForce": 70.0,
+      "m_backstabBonus": 3.0,
+      "m_dodgeable": 1,
+      "m_blockable": 1,
+      "m_tamedOnly": 1,
+      "m_alwaysRotate": 0,
+      "m_attackStatusEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_attackStatusEffectChance": 1.0,
+      "m_spawnOnHit": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_spawnOnHitTerrain": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_projectileToolTip": 1,
+      "m_ammoType": "",
+      "m_attack": {
+        "m_attackType": 0,
+        "m_attackAnimation": "swing_longsword",
+        "m_chargeAnimationBool": "",
+        "m_attackRandomAnimations": 0,
+        "m_attackChainLevels": 3,
+        "m_loopingAttack": 0,
+        "m_consumeItem": 0,
+        "m_hitTerrain": 1,
+        "m_hitFriendly": 0,
+        "m_isHomeItem": 0,
+        "m_attackStamina": 6.0,
+        "m_attackAdrenaline": 1.0,
+        "m_attackUseAdrenaline": 0.0,
+        "m_attackEitr": 0.0,
+        "m_attackHealth": 0.0,
+        "m_attackHealthPercentage": 0.0,
+        "m_attackHealthLowBlockUse": 1,
+        "m_attackHealthReturnHit": 0.0,
+        "m_attackKillsSelf": 0,
+        "m_speedFactor": 0.30000001192092896,
+        "m_speedFactorRotation": 0.30000001192092896,
+        "m_attackStartNoise": 10.0,
+        "m_attackHitNoise": 40.0,
+        "m_damageMultiplier": 1.0,
+        "m_damageMultiplierPerMissingHP": 0.0,
+        "m_damageMultiplierByTotalHealthMissing": 0.0,
+        "m_staminaReturnPerMissingHP": 0.0,
+        "m_forceMultiplier": 1.0,
+        "m_staggerMultiplier": 1.0,
+        "m_recoilPushback": 0.0,
+        "m_selfDamage": 0,
+        "m_attackOriginJoint": "",
+        "m_attackRange": 2.4000000953674316,
+        "m_attackHeight": 0.800000011920929,
+        "m_attackHeightChar1": 0.0,
+        "m_attackHeightChar2": 0.0,
+        "m_attackOffset": 0.0,
+        "m_spawnOnTrigger": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_toggleFlying": 0,
+        "m_attach": 0,
+        "m_cantUseInDungeon": 0,
+        "m_requiresReload": 0,
+        "m_reloadAnimation": "",
+        "m_reloadTime": 2.0,
+        "m_reloadStaminaDrain": 0.0,
+        "m_reloadEitrDrain": 0.0,
+        "m_bowDraw": 0,
+        "m_drawDurationMin": 0.0,
+        "m_drawStaminaDrain": 0.0,
+        "m_drawEitrDrain": 0.0,
+        "m_drawAnimationState": "",
+        "m_drawVelocityCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 1.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 1.0,
+              "value": 1.0,
+              "inSlope": 1.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        },
+        "m_attackAngle": 90.0,
+        "m_attackRayWidth": 0.30000001192092896,
+        "m_attackRayWidthCharExtra": 0.0,
+        "m_maxYAngle": 0.0,
+        "m_lowerDamagePerHit": 1,
+        "m_hitPointtype": 0,
+        "m_hitThroughWalls": 0,
+        "m_multiHit": 1,
+        "m_pickaxeSpecial": 0,
+        "m_lastChainDamageMultiplier": 2.0,
+        "m_resetChainIfHit": 0,
+        "m_spawnOnHit": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_spawnOnHitChance": 0.0,
+        "m_raiseSkillAmount": 1.0,
+        "m_skillHitType": 4,
+        "m_specialHitSkill": 0,
+        "m_specialHitType": 0,
+        "m_attackProjectile": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_projectileVel": 10.0,
+        "m_projectileVelMin": 2.0,
+        "m_randomVelocity": 0,
+        "m_projectileAccuracy": 10.0,
+        "m_projectileAccuracyMin": 20.0,
+        "m_circularProjectileLaunch": 0,
+        "m_distributeProjectilesAroundCircle": 0,
+        "m_skillAccuracy": 0,
+        "m_useCharacterFacing": 0,
+        "m_useCharacterFacingYAim": 0,
+        "m_launchAngle": 0.0,
+        "m_projectiles": 1,
+        "m_projectileBursts": 1,
+        "m_burstInterval": 0.0,
+        "m_destroyPreviousProjectile": 0,
+        "m_perBurstResourceUsage": 0,
+        "m_harvest": 0,
+        "m_harvestRadius": 0.0,
+        "m_harvestRadiusMaxLevel": 0.0,
+        "m_hitEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_hitTerrainEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_startEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_triggerEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_trailStartEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_burstEffect": {
+          "m_effectPrefabs": []
+        }
+      },
+      "m_secondaryAttack": {
+        "m_attackType": 0,
+        "m_attackAnimation": "",
+        "m_chargeAnimationBool": "",
+        "m_attackRandomAnimations": 0,
+        "m_attackChainLevels": 0,
+        "m_loopingAttack": 0,
+        "m_consumeItem": 0,
+        "m_hitTerrain": 1,
+        "m_hitFriendly": 0,
+        "m_isHomeItem": 0,
+        "m_attackStamina": 20.0,
+        "m_attackAdrenaline": 1.0,
+        "m_attackUseAdrenaline": 0.0,
+        "m_attackEitr": 0.0,
+        "m_attackHealth": 0.0,
+        "m_attackHealthPercentage": 0.0,
+        "m_attackHealthLowBlockUse": 1,
+        "m_attackHealthReturnHit": 0.0,
+        "m_attackKillsSelf": 0,
+        "m_speedFactor": 0.20000000298023224,
+        "m_speedFactorRotation": 0.20000000298023224,
+        "m_attackStartNoise": 10.0,
+        "m_attackHitNoise": 30.0,
+        "m_damageMultiplier": 1.0,
+        "m_damageMultiplierPerMissingHP": 0.0,
+        "m_damageMultiplierByTotalHealthMissing": 0.0,
+        "m_staminaReturnPerMissingHP": 0.0,
+        "m_forceMultiplier": 1.0,
+        "m_staggerMultiplier": 1.0,
+        "m_recoilPushback": 0.0,
+        "m_selfDamage": 0,
+        "m_attackOriginJoint": "",
+        "m_attackRange": 1.5,
+        "m_attackHeight": 0.6000000238418579,
+        "m_attackHeightChar1": 0.0,
+        "m_attackHeightChar2": 0.0,
+        "m_attackOffset": 0.0,
+        "m_spawnOnTrigger": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_toggleFlying": 0,
+        "m_attach": 0,
+        "m_cantUseInDungeon": 0,
+        "m_requiresReload": 0,
+        "m_reloadAnimation": "",
+        "m_reloadTime": 2.0,
+        "m_reloadStaminaDrain": 0.0,
+        "m_reloadEitrDrain": 0.0,
+        "m_bowDraw": 0,
+        "m_drawDurationMin": 0.0,
+        "m_drawStaminaDrain": 0.0,
+        "m_drawEitrDrain": 0.0,
+        "m_drawAnimationState": "",
+        "m_drawVelocityCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 1.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 1.0,
+              "value": 1.0,
+              "inSlope": 1.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        },
+        "m_attackAngle": 90.0,
+        "m_attackRayWidth": 0.0,
+        "m_attackRayWidthCharExtra": 0.0,
+        "m_maxYAngle": 0.0,
+        "m_lowerDamagePerHit": 1,
+        "m_hitPointtype": 0,
+        "m_hitThroughWalls": 0,
+        "m_multiHit": 1,
+        "m_pickaxeSpecial": 0,
+        "m_lastChainDamageMultiplier": 2.0,
+        "m_resetChainIfHit": 0,
+        "m_spawnOnHit": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_spawnOnHitChance": 0.0,
+        "m_raiseSkillAmount": 1.0,
+        "m_skillHitType": 4,
+        "m_specialHitSkill": 0,
+        "m_specialHitType": 0,
+        "m_attackProjectile": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_projectileVel": 10.0,
+        "m_projectileVelMin": 2.0,
+        "m_randomVelocity": 0,
+        "m_projectileAccuracy": 10.0,
+        "m_projectileAccuracyMin": 20.0,
+        "m_circularProjectileLaunch": 0,
+        "m_distributeProjectilesAroundCircle": 0,
+        "m_skillAccuracy": 0,
+        "m_useCharacterFacing": 0,
+        "m_useCharacterFacingYAim": 0,
+        "m_launchAngle": 0.0,
+        "m_projectiles": 1,
+        "m_projectileBursts": 1,
+        "m_burstInterval": 0.0,
+        "m_destroyPreviousProjectile": 0,
+        "m_perBurstResourceUsage": 0,
+        "m_harvest": 0,
+        "m_harvestRadius": 0.0,
+        "m_harvestRadiusMaxLevel": 0.0,
+        "m_hitEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_hitTerrainEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_startEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_triggerEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_trailStartEffect": {
+          "m_effectPrefabs": []
+        },
+        "m_burstEffect": {
+          "m_effectPrefabs": []
+        }
+      },
+      "m_itemStandOffsets": [],
+      "m_useDurability": 1,
+      "m_destroyBroken": 0,
+      "m_canBeReparied": 1,
+      "m_maxDurability": 100.0,
+      "m_durabilityPerLevel": 50.0,
+      "m_useDurabilityDrain": 1.0,
+      "m_durabilityDrain": 0.0,
+      "m_placementDurabilitySkill": 0,
+      "m_placementDurabilityMax": 0.5,
+      "m_aiAttackRange": 2.0,
+      "m_aiAttackRangeMin": 0.0,
+      "m_aiAttackInterval": 2.0,
+      "m_aiAttackMaxAngle": 5.0,
+      "m_aiInvertAngleCheck": 0,
+      "m_aiWhenFlying": 1,
+      "m_aiWhenFlyingAltitudeMin": 0.0,
+      "m_aiWhenFlyingAltitudeMax": 999999.0,
+      "m_aiWhenWalking": 1,
+      "m_aiWhenSwiming": 1,
+      "m_aiPrioritized": 0,
+      "m_aiInDungeonOnly": 0,
+      "m_aiInMistOnly": 0,
+      "m_aiMaxHealthPercentage": 1.0,
+      "m_aiMinHealthPercentage": 0.0,
+      "m_aiTargetType": 0,
+      "m_hitEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_hitTerrainEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_blockEffect": {
+        "m_effectPrefabs": [
+          {
+            "m_prefab": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "m_enabled": 1,
+            "m_variant": -1,
+            "m_attach": 0,
+            "m_follow": 0,
+            "m_inheritParentRotation": 0,
+            "m_inheritParentScale": 0,
+            "m_multiplyParentVisualScale": 0,
+            "m_randomRotation": 0,
+            "m_scale": 0,
+            "m_childTransform": ""
+          },
+          {
+            "m_prefab": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "m_enabled": 1,
+            "m_variant": -1,
+            "m_attach": 0,
+            "m_follow": 0,
+            "m_inheritParentRotation": 0,
+            "m_inheritParentScale": 0,
+            "m_multiplyParentVisualScale": 0,
+            "m_randomRotation": 0,
+            "m_scale": 0,
+            "m_childTransform": ""
+          },
+          {
+            "m_prefab": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "m_enabled": 1,
+            "m_variant": -1,
+            "m_attach": 0,
+            "m_follow": 0,
+            "m_inheritParentRotation": 0,
+            "m_inheritParentScale": 0,
+            "m_multiplyParentVisualScale": 0,
+            "m_randomRotation": 0,
+            "m_scale": 0,
+            "m_childTransform": ""
+          }
+        ]
+      },
+      "m_startEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_holdStartEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_equipEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_unequipEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_triggerEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_trailStartEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_buildEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_destroyEffect": {
+        "m_effectPrefabs": []
+      },
+      "m_consumeStatusEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_appendToolTip": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      }
+    }
+  },
+  "m_pieceEnableObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_pieceDisabledObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

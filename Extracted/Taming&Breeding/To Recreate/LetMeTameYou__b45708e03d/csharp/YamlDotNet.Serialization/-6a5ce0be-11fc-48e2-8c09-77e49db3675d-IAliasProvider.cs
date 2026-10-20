@@ -1,0 +1,10 @@
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core;
+
+namespace YamlDotNet.Serialization;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+internal interface _003C6a5ce0be_002D11fc_002D48e2_002D8c09_002D77e49db3675d_003EIAliasProvider
+{
+	_003Ccca93639_002Dbccb_002D4800_002Dad4c_002D8f4e0d58ede2_003EAnchorName GetAlias(object target);
+}

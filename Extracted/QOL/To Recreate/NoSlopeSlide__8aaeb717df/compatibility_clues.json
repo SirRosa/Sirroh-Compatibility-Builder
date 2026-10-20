@@ -1,0 +1,370 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 7,
+      "text": "[BepInPlugin(\"orax.NoSlopeSlide\", \"NoSlopeSlide\", \"0.1.0\")]"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 8,
+      "text": "public class NoSlopeSlide : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 24,
+      "text": "Enabled = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"Enabled\", true, \"Enable this mod.\");"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 27,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)\"NoSlopeSlide v0.1.0 loaded.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 154,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 159,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 365,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 366,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 378,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 20,
+      "text": "IL_003c: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 39,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplySlide\")]"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 25,
+      "text": "[HarmonyPatch(typeof(Character), \"UpdateMotion\")]"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 26,
+      "text": "_harmony.PatchAll();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 226,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 246,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 381,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 18,
+      "text": "IL_0036: callvirt System.Void HarmonyLib.Harmony::PatchAll()"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 16,
+      "text": "public static ConfigEntry<bool> Enabled;"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/NoSlopeSlide.cs",
+      "line": 24,
+      "text": "Enabled = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"Enabled\", true, \"Enable this mod.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 193,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 363,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 364,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 365,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10,
+      "text": "IL_0016: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11,
+      "text": "IL_001b: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> NoSlopeSlide.NoSlopeSlide::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 50,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> NoSlopeSlide.NoSlopeSlide::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 51,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 75,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> NoSlopeSlide.NoSlopeSlide::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 76,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplySlide\")]"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 9,
+      "text": "private class Character_ApplySlide_Patch"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 11,
+      "text": "private static bool Prefix(Character __instance)"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 19,
+      "text": "return !__instance.IsPlayer();"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 25,
+      "text": "[HarmonyPatch(typeof(Character), \"UpdateMotion\")]"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 26,
+      "text": "private class Character_UpdateMotion_Patch"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 28,
+      "text": "private static void Prefix(Character __instance)"
+    },
+    {
+      "file": "csharp/NoSlopeSlide/Patch.cs",
+      "line": 40,
+      "text": "if (NoSlopeSlide.Enabled.Value && !((Object)(object)__instance == (Object)null) && !((Object)(object)__instance != (Object)(object)Player.m_localPlayer) && !(__instance.GetMoveDir() != Vector3.zero) && __instance.IsOnGround() && !__instance.IsSwimming() && !__instance.IsAttached() && !__instance.IsRiding() && !__instance.IsDead() && !((Object)(obje"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 220,
+      "text": "\"name\": \"NoSlopeSlide.Patch/Character_ApplySlide_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 228,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 240,
+      "text": "\"name\": \"NoSlopeSlide.Patch/Character_UpdateMotion_Patch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 248,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 306,
+      "text": "\"signature\": \"System.Boolean NoSlopeSlide.Patch/Character_ApplySlide_Patch::Prefix(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 312,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 322,
+      "text": "\"signature\": \"System.Void NoSlopeSlide.Patch/Character_ApplySlide_Patch::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 333,
+      "text": "\"signature\": \"System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::Prefix(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 339,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 349,
+      "text": "\"signature\": \"System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 367,
+      "text": "\"Ship Character::GetStandingOnShip()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 368,
+      "text": "\"System.Boolean Character::IsAttached()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 369,
+      "text": "\"System.Boolean Character::IsDead()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 370,
+      "text": "\"System.Boolean Character::IsOnGround()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 371,
+      "text": "\"System.Boolean Character::IsPlayer()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 372,
+      "text": "\"System.Boolean Character::IsRiding()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 373,
+      "text": "\"System.Boolean Character::IsSwimming()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 386,
+      "text": "\"UnityEngine.Vector3 Character::GetMoveDir()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 48,
+      "text": "// System.Boolean NoSlopeSlide.Patch/Character_ApplySlide_Patch::Prefix(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 60,
+      "text": "IL_0018: callvirt System.Boolean Character::IsPlayer()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 67,
+      "text": "// System.Void NoSlopeSlide.Patch/Character_ApplySlide_Patch::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 73,
+      "text": "// System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::Prefix(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0017: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 89,
+      "text": "IL_0025: callvirt UnityEngine.Vector3 Character::GetMoveDir()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 94,
+      "text": "IL_0037: callvirt System.Boolean Character::IsOnGround()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 97,
+      "text": "IL_003f: callvirt System.Boolean Character::IsSwimming()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 100,
+      "text": "IL_0047: callvirt System.Boolean Character::IsAttached()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 103,
+      "text": "IL_004f: callvirt System.Boolean Character::IsRiding()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 106,
+      "text": "IL_0057: callvirt System.Boolean Character::IsDead()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 109,
+      "text": "IL_005f: callvirt Ship Character::GetStandingOnShip()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 118,
+      "text": "IL_0075: ldfld UnityEngine.Vector3 Character::m_lastGroundNormal"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 143,
+      "text": "// System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::.ctor()"
+    }
+  ]
+}

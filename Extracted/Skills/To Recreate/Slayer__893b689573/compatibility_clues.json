@@ -1,0 +1,1086 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 13,
+      "text": "[BepInPlugin(\"neithar.Slayer\", \"Slayer\", \"1.0.2\")]"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 14,
+      "text": "[BepInDependency(/*Could not decode attribute arguments.*/)]"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 15,
+      "text": "internal class Slayer : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 30,
+      "text": "SlayerConfig.Initialize((BaseUnityPlugin)(object)this);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 20,
+      "text": "public static void Initialize(BaseUnityPlugin plugin)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 282,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 287,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 297,
+      "text": "\"name\": \"BepInEx.BepInDependency\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 640,
+      "text": "\"signature\": \"System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 646,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 687,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 708,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 722,
+      "text": "\"System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 329,
+      "text": "IL_0002: call System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 491,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 495,
+      "text": "// System.Void Slayer.SlayerConfig::Initialize(BepInEx.BaseUnityPlugin)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 499,
+      "text": "IL_0002: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 507,
+      "text": "IL_0026: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 515,
+      "text": "IL_0046: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 523,
+      "text": "IL_006a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 531,
+      "text": "IL_008a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 539,
+      "text": "IL_00aa: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplyPushback\", new Type[]"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 32,
+      "text": "new Harmony(\"neithar.Slayer\").PatchAll();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Character), \"AddStaggerDamage\")]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 11,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(ItemData), \"GetDamage\", new Type[]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Character), \"Damage\")]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 169,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 203,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 233,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 267,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 563,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 711,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 336,
+      "text": "IL_0019: call System.Void HarmonyLib.Harmony::PatchAll()"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 8,
+      "text": "public static ConfigEntry<float> DamageAmount;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 10,
+      "text": "public static ConfigEntry<bool> DamageEnabled;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 12,
+      "text": "public static ConfigEntry<float> PushbackResistanceAmount;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 14,
+      "text": "public static ConfigEntry<bool> PushbackResistanceEnabled;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 16,
+      "text": "public static ConfigEntry<float> StaggerDamageAmount;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 18,
+      "text": "public static ConfigEntry<bool> StaggerDamageEnabled;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 22,
+      "text": "DamageAmount = plugin.Config.Bind<float>(\"Damage\", \"Value\", 25f, \"The percentage by which two-handed weapon damage is increased at level 100\");"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 23,
+      "text": "DamageEnabled = plugin.Config.Bind<bool>(\"Damage Increase Enabled\", \"Value\", true, \"Enable or disable the damage increase\");"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 24,
+      "text": "PushbackResistanceAmount = plugin.Config.Bind<float>(\"Pushback Resistance Amount\", \"Value\", 2f, \"Percentage of pushback resistance gained with each level of the skill\");"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 25,
+      "text": "PushbackResistanceEnabled = plugin.Config.Bind<bool>(\"Pushback Resistance Enabled\", \"Value\", true, \"Enable or disable the pushback resistance\");"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 26,
+      "text": "StaggerDamageEnabled = plugin.Config.Bind<bool>(\"Stagger Damage\", \"Enabled\", true, \"Enable Slayer's bonus stagger damage.\");"
+    },
+    {
+      "file": "csharp/Slayer/SlayerConfig.cs",
+      "line": 27,
+      "text": "StaggerDamageAmount = plugin.Config.Bind<float>(\"Stagger Damage\", \"Bonus\", 50f, \"Maximum stagger damage bonus at Slayer skill level 100.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 351,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 358,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 365,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 372,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 379,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 386,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 683,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 684,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 685,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 686,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Single\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 687,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13,
+      "text": "IL_0001: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::DamageEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14,
+      "text": "IL_0006: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 45,
+      "text": "IL_004d: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::DamageAmount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 46,
+      "text": "IL_0052: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 128,
+      "text": "IL_0001: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::PushbackResistanceEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 129,
+      "text": "IL_0006: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 161,
+      "text": "IL_004b: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::PushbackResistanceAmount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 162,
+      "text": "IL_0050: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 233,
+      "text": "IL_0001: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::StaggerDamageEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 234,
+      "text": "IL_0006: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 303,
+      "text": "IL_00a3: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::StaggerDamageAmount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 304,
+      "text": "IL_00a8: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 499,
+      "text": "IL_0002: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 504,
+      "text": "IL_001b: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 505,
+      "text": "IL_0020: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::DamageAmount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 507,
+      "text": "IL_0026: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 512,
+      "text": "IL_003b: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 513,
+      "text": "IL_0040: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::DamageEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 515,
+      "text": "IL_0046: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 520,
+      "text": "IL_005f: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 521,
+      "text": "IL_0064: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::PushbackResistanceAmount"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 523,
+      "text": "IL_006a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 528,
+      "text": "IL_007f: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 529,
+      "text": "IL_0084: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::PushbackResistanceEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 531,
+      "text": "IL_008a: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 536,
+      "text": "IL_009f: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 537,
+      "text": "IL_00a4: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> Slayer.SlayerConfig::StaggerDamageEnabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 539,
+      "text": "IL_00aa: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 544,
+      "text": "IL_00c3: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 545,
+      "text": "IL_00c8: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> Slayer.SlayerConfig::StaggerDamageAmount"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplyPushback\", new Type[]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 16,
+      "text": "private static void Prefix(Character __instance, ref Vector3 dir, ref float pushForce)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 23,
+      "text": "Player val = (Player)(object)((__instance is Player) ? __instance : null);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 24,
+      "text": "if (val != null && !((Object)(object)val != (Object)(object)Player.m_localPlayer))"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 26,
+      "text": "float skillFactor = ((Character)val).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 28,
+      "text": "if (((Character)val).InAttack())"
+    },
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 32,
+      "text": "else if (((Character)val).IsBlocking())"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 8,
+      "text": "[HarmonyPatch(typeof(Character), \"AddStaggerDamage\")]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 12,
+      "text": "private static void Prefix(Character __instance, ref float damage, Vector3 forceDirection, HitData hit)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 21,
+      "text": "Character attacker = hit.GetAttacker();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 26,
+      "text": "Player val = (Player)(object)((attacker is Player) ? attacker : null);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 29,
+      "text": "ItemData currentWeapon = ((Humanoid)val).GetCurrentWeapon();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 32,
+      "text": "float skillFactor = ((Character)val).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 16,
+      "text": "private static void Postfix(ItemData __instance, ref DamageTypes __result)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 21,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 22,
+      "text": "if (!((Object)(object)localPlayer == (Object)null) && SlayerWeapons.IsSlayerWeapon(__instance))"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 24,
+      "text": "float skillFactor = ((Character)localPlayer).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Character), \"Damage\")]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 10,
+      "text": "private static void Prefix(Character __instance, HitData hit)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 13,
+      "text": "Character attacker = hit.GetAttacker();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 14,
+      "text": "Player val = (Player)(object)((attacker is Player) ? attacker : null);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 17,
+      "text": "ItemData currentWeapon = ((Humanoid)val).GetCurrentWeapon();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 20,
+      "text": "((Character)val).RaiseSkill(Slayer.SlayerType, 0.5f);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 205,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 235,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 269,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 419,
+      "text": "\"signature\": \"System.Void Slayer.SlayerDamage/DamagePatch::Postfix(ItemDrop/ItemData,HitData/DamageTypes\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 429,
+      "text": "\"type\": \"HitData/DamageTypes\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 450,
+      "text": "\"signature\": \"System.Void Slayer.SlayerExperience/ExperiencePatch::Prefix(Character,HitData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 456,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 460,
+      "text": "\"type\": \"HitData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 481,
+      "text": "\"signature\": \"System.Void Slayer.SlayerPushback/PushbackPatch::Prefix(Character,UnityEngine.Vector3\\u0026,System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 487,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 540,
+      "text": "\"signature\": \"System.Void Slayer.SlayerStagger/AddStaggerDamagePatch::Prefix(Character,System.Single\\u0026,UnityEngine.Vector3,HitData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 546,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 558,
+      "text": "\"type\": \"HitData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 688,
+      "text": "\"Character HitData::GetAttacker()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 689,
+      "text": "\"ItemDrop/ItemData Humanoid::GetCurrentWeapon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 692,
+      "text": "\"System.Boolean Character::InAttack()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 693,
+      "text": "\"System.Boolean Character::IsBlocking()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 704,
+      "text": "\"System.Single Character::GetSkillFactor(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 705,
+      "text": "\"System.Single HitData/DamageTypes::GetTotalDamage()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 709,
+      "text": "\"System.Void Character::RaiseSkill(Skills/SkillType,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 712,
+      "text": "\"System.Void HitData/DamageTypes::Modify(System.Single)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10,
+      "text": "// System.Void Slayer.SlayerDamage/DamagePatch::Postfix(ItemDrop/ItemData,HitData/DamageTypes&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11,
+      "text": ".locals Player, System.Single, System.Single, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 21,
+      "text": "IL_0014: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 41,
+      "text": "IL_0041: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 54,
+      "text": "IL_0062: call System.Void HitData/DamageTypes::Modify(System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 66,
+      "text": "// System.Void Slayer.SlayerExperience/ExperiencePatch::Prefix(Character,HitData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 67,
+      "text": ".locals Player, ItemDrop/ItemData, System.Boolean, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 70,
+      "text": "IL_0002: callvirt Character HitData::GetAttacker()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 71,
+      "text": "IL_0007: isinst Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_001c: callvirt ItemDrop/ItemData Humanoid::GetCurrentWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 103,
+      "text": "IL_003f: ldflda HitData/DamageTypes HitData::m_damage"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 104,
+      "text": "IL_0044: call System.Single HitData/DamageTypes::GetTotalDamage()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 116,
+      "text": "IL_0066: callvirt System.Void Character::RaiseSkill(Skills/SkillType,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 125,
+      "text": "// System.Void Slayer.SlayerPushback/PushbackPatch::Prefix(Character,UnityEngine.Vector3&,System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 126,
+      "text": ".locals Player, System.Single, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 138,
+      "text": "IL_0016: isinst Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 150,
+      "text": "IL_002c: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 158,
+      "text": "IL_0044: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 167,
+      "text": "IL_005d: callvirt System.Boolean Character::InAttack()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 179,
+      "text": "IL_0075: callvirt System.Boolean Character::IsBlocking()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 230,
+      "text": "// System.Void Slayer.SlayerStagger/AddStaggerDamagePatch::Prefix(Character,System.Single&,UnityEngine.Vector3,HitData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 231,
+      "text": ".locals Character, Player, ItemDrop/ItemData, System.Single, System.Single, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 249,
+      "text": "IL_0029: callvirt Character HitData::GetAttacker()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 259,
+      "text": "IL_0042: isinst Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 269,
+      "text": "IL_0058: callvirt ItemDrop/ItemData Humanoid::GetCurrentWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 300,
+      "text": "IL_009c: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    }
+  ],
+  "Skills": [
+    {
+      "file": "csharp/Slayer/SlayerPushback.cs",
+      "line": 26,
+      "text": "float skillFactor = ((Character)val).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 32,
+      "text": "float skillFactor = ((Character)val).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 24,
+      "text": "float skillFactor = ((Character)localPlayer).GetSkillFactor(Slayer.SlayerType);"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 20,
+      "text": "((Character)val).RaiseSkill(Slayer.SlayerType, 0.5f);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 704,
+      "text": "\"System.Single Character::GetSkillFactor(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 709,
+      "text": "\"System.Void Character::RaiseSkill(Skills/SkillType,System.Single)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 41,
+      "text": "IL_0041: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 116,
+      "text": "IL_0066: callvirt System.Void Character::RaiseSkill(Skills/SkillType,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 158,
+      "text": "IL_0044: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 300,
+      "text": "IL_009c: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/Slayer/SlayerWeapons.cs",
+      "line": 5,
+      "text": "public static bool IsSlayerWeapon(ItemData weapon)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerStagger.cs",
+      "line": 29,
+      "text": "ItemData currentWeapon = ((Humanoid)val).GetCurrentWeapon();"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(ItemData), \"GetDamage\", new Type[]"
+    },
+    {
+      "file": "csharp/Slayer/SlayerDamage.cs",
+      "line": 16,
+      "text": "private static void Postfix(ItemData __instance, ref DamageTypes __result)"
+    },
+    {
+      "file": "csharp/Slayer/SlayerExperience.cs",
+      "line": 17,
+      "text": "ItemData currentWeapon = ((Humanoid)val).GetCurrentWeapon();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 171,
+      "text": "\"ItemDrop/ItemData\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 419,
+      "text": "\"signature\": \"System.Void Slayer.SlayerDamage/DamagePatch::Postfix(ItemDrop/ItemData,HitData/DamageTypes\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 425,
+      "text": "\"type\": \"ItemDrop/ItemData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 656,
+      "text": "\"signature\": \"System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 662,
+      "text": "\"type\": \"ItemDrop/ItemData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 689,
+      "text": "\"ItemDrop/ItemData Humanoid::GetCurrentWeapon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 695,
+      "text": "\"System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10,
+      "text": "// System.Void Slayer.SlayerDamage/DamagePatch::Postfix(ItemDrop/ItemData,HitData/DamageTypes&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 31,
+      "text": "IL_002a: call System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 67,
+      "text": ".locals Player, ItemDrop/ItemData, System.Boolean, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_001c: callvirt ItemDrop/ItemData Humanoid::GetCurrentWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 94,
+      "text": "IL_002d: call System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 231,
+      "text": ".locals Character, Player, ItemDrop/ItemData, System.Single, System.Single, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 269,
+      "text": "IL_0058: callvirt ItemDrop/ItemData Humanoid::GetCurrentWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 279,
+      "text": "IL_006b: call System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 287,
+      "text": "IL_007c: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 288,
+      "text": "IL_0081: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 548,
+      "text": "// System.Boolean Slayer.SlayerWeapons::IsSlayerWeapon(ItemDrop/ItemData)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 561,
+      "text": "IL_000e: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 562,
+      "text": "IL_0013: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 575,
+      "text": "IL_0029: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 576,
+      "text": "IL_002e: ldfld Skills/SkillType ItemDrop/ItemData/SharedData::m_skillType"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 57,
+      "text": "Texture2D val = LoadEmbeddedTexture(\"Slayer.Assets.krom_no_bg.png\");"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 63,
+      "text": "Sprite icon = Sprite.Create(val, new Rect(0f, 0f, (float)((Texture)val).width, (float)((Texture)val).height), new Vector2(0.5f, 0.5f));"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 75,
+      "text": "private Texture2D LoadEmbeddedTexture(string resourceName)"
+    },
+    {
+      "file": "csharp/Slayer/Slayer.cs",
+      "line": 88,
+      "text": "Texture2D val = new Texture2D(2, 2);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 613,
+      "text": "\"signature\": \"UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 615,
+      "text": "\"returnType\": \"UnityEngine.Texture2D\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 694,
+      "text": "\"System.Boolean Jotunn.Utils.AssetUtils::LoadImage(UnityEngine.Texture2D,System.Byte[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 715,
+      "text": "\"System.Void Jotunn.Configs.SkillConfig::set_Icon(UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 729,
+      "text": "\"System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 731,
+      "text": "\"UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 732,
+      "text": "\"UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 358,
+      "text": ".locals UnityEngine.Texture2D, UnityEngine.Sprite, Jotunn.Configs.SkillConfig, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 362,
+      "text": "IL_0007: call UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 388,
+      "text": "IL_0056: call UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 405,
+      "text": "IL_0087: callvirt System.Void Jotunn.Configs.SkillConfig::set_Icon(UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 418,
+      "text": "// UnityEngine.Texture2D Slayer.Slayer::LoadEmbeddedTexture(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 419,
+      "text": ".locals System.Reflection.Assembly, System.IO.Stream, System.Byte[], UnityEngine.Texture2D, System.Boolean, UnityEngine.Texture2D, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 458,
+      "text": "IL_004c: newobj System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 462,
+      "text": "IL_0054: call System.Boolean Jotunn.Utils.AssetUtils::LoadImage(UnityEngine.Texture2D,System.Byte[])"
+    }
+  ]
+}

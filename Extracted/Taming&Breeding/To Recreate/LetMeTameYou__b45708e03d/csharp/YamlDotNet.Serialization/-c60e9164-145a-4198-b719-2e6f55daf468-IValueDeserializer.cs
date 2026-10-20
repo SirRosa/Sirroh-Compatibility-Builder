@@ -1,0 +1,13 @@
+using System;
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization.Utilities;
+
+namespace YamlDotNet.Serialization;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+internal interface _003Cc60e9164_002D145a_002D4198_002Db719_002D2e6f55daf468_003EIValueDeserializer
+{
+	[return: _003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)]
+	object DeserializeValue(_003C7c152f22_002D242a_002D414b_002D85f1_002D679cb123b4c6_003EIParser parser, Type expectedType, _003Cda3bae27_002D43f3_002D4951_002Db3b1_002D1040cb481116_003ESerializerState state, _003Cc60e9164_002D145a_002D4198_002Db719_002D2e6f55daf468_003EIValueDeserializer nestedObjectDeserializer);
+}

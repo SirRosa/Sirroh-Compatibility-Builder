@@ -1,0 +1,138 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LongshipUpgrades</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="LongshipUpgrades.Assets.ashlands_hull.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_01.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_02.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_02.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_01.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_original.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_original.png" />
+    <None Remove="LongshipUpgrades.Assets.shields_original.png" />
+    <None Remove="LongshipUpgrades.Assets.ashlands_hull_damaged.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_03.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_04.png" />
+    <None Remove="LongshipUpgrades.Assets.sail_05.png" />
+    <None Remove="LongshipUpgrades.Assets.shields_01.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_03.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_04.png" />
+    <None Remove="LongshipUpgrades.Assets.tent_05.png" />
+    <None Remove="LongshipUpgrades.translations.English.json" />
+    <None Remove="LongshipUpgrades.translations.Russian.json" />
+    <None Remove="LongshipUpgrades.translations.German.json" />
+    <None Remove="LongshipUpgrades.translations.Spanish.json" />
+    <None Remove="LongshipUpgrades.translations.Turkish.json" />
+    <None Remove="LongshipUpgrades.translations.Portuguese_Brazilian.json" />
+    <None Remove="LongshipUpgrades.translations.Chinese.json" />
+    <None Remove="LongshipUpgrades.translations.Japanese.json" />
+    <None Remove="LongshipUpgrades.translations.Polish.json" />
+    <None Remove="LongshipUpgrades.translations.Chinese_Trad.json" />
+    <None Remove="LongshipUpgrades.translations.Czech.json" />
+    <None Remove="LongshipUpgrades.translations.Dutch.json" />
+    <None Remove="LongshipUpgrades.translations.French.json" />
+    <None Remove="LongshipUpgrades.translations.Korean.json" />
+    <None Remove="LongshipUpgrades.translations.Ukrainian.json" />
+    <None Remove="LongshipUpgrades.translations.Bulgarian.json" />
+    <None Remove="LongshipUpgrades.translations.Croatian.json" />
+    <None Remove="LongshipUpgrades.translations.Danish.json" />
+    <None Remove="LongshipUpgrades.translations.Finnish.json" />
+    <None Remove="LongshipUpgrades.translations.Georgian.json" />
+    <None Remove="LongshipUpgrades.translations.Greek.json" />
+    <None Remove="LongshipUpgrades.translations.Hindi.json" />
+    <None Remove="LongshipUpgrades.translations.Hungarian.json" />
+    <None Remove="LongshipUpgrades.translations.Icelandic.json" />
+    <None Remove="LongshipUpgrades.translations.Italian.json" />
+    <None Remove="LongshipUpgrades.translations.Latvian.json" />
+    <None Remove="LongshipUpgrades.translations.Lithuanian.json" />
+    <None Remove="LongshipUpgrades.translations.Macedonian.json" />
+    <None Remove="LongshipUpgrades.translations.Norwegian.json" />
+    <None Remove="LongshipUpgrades.translations.Portuguese_European.json" />
+    <None Remove="LongshipUpgrades.translations.Romanian.json" />
+    <None Remove="LongshipUpgrades.translations.Serbian.json" />
+    <None Remove="LongshipUpgrades.translations.Slovak.json" />
+    <None Remove="LongshipUpgrades.translations.Swedish.json" />
+    <None Remove="LongshipUpgrades.translations.Thai.json" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.ashlands_hull.png" LogicalName="LongshipUpgrades.Assets.ashlands_hull.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_01.png" LogicalName="LongshipUpgrades.Assets.tent_01.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_02.png" LogicalName="LongshipUpgrades.Assets.tent_02.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_02.png" LogicalName="LongshipUpgrades.Assets.sail_02.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_01.png" LogicalName="LongshipUpgrades.Assets.sail_01.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_original.png" LogicalName="LongshipUpgrades.Assets.sail_original.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_original.png" LogicalName="LongshipUpgrades.Assets.tent_original.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.shields_original.png" LogicalName="LongshipUpgrades.Assets.shields_original.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.ashlands_hull_damaged.png" LogicalName="LongshipUpgrades.Assets.ashlands_hull_damaged.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_03.png" LogicalName="LongshipUpgrades.Assets.sail_03.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_04.png" LogicalName="LongshipUpgrades.Assets.sail_04.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.sail_05.png" LogicalName="LongshipUpgrades.Assets.sail_05.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.shields_01.png" LogicalName="LongshipUpgrades.Assets.shields_01.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_03.png" LogicalName="LongshipUpgrades.Assets.tent_03.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_04.png" LogicalName="LongshipUpgrades.Assets.tent_04.png" />
+    <EmbeddedResource Include="LongshipUpgrades.Assets.tent_05.png" LogicalName="LongshipUpgrades.Assets.tent_05.png" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.English.json" LogicalName="LongshipUpgrades.translations.English.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Russian.json" LogicalName="LongshipUpgrades.translations.Russian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.German.json" LogicalName="LongshipUpgrades.translations.German.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Spanish.json" LogicalName="LongshipUpgrades.translations.Spanish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Turkish.json" LogicalName="LongshipUpgrades.translations.Turkish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Portuguese_Brazilian.json" LogicalName="LongshipUpgrades.translations.Portuguese_Brazilian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Chinese.json" LogicalName="LongshipUpgrades.translations.Chinese.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Japanese.json" LogicalName="LongshipUpgrades.translations.Japanese.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Polish.json" LogicalName="LongshipUpgrades.translations.Polish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Chinese_Trad.json" LogicalName="LongshipUpgrades.translations.Chinese_Trad.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Czech.json" LogicalName="LongshipUpgrades.translations.Czech.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Dutch.json" LogicalName="LongshipUpgrades.translations.Dutch.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.French.json" LogicalName="LongshipUpgrades.translations.French.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Korean.json" LogicalName="LongshipUpgrades.translations.Korean.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Ukrainian.json" LogicalName="LongshipUpgrades.translations.Ukrainian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Bulgarian.json" LogicalName="LongshipUpgrades.translations.Bulgarian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Croatian.json" LogicalName="LongshipUpgrades.translations.Croatian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Danish.json" LogicalName="LongshipUpgrades.translations.Danish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Finnish.json" LogicalName="LongshipUpgrades.translations.Finnish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Georgian.json" LogicalName="LongshipUpgrades.translations.Georgian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Greek.json" LogicalName="LongshipUpgrades.translations.Greek.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Hindi.json" LogicalName="LongshipUpgrades.translations.Hindi.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Hungarian.json" LogicalName="LongshipUpgrades.translations.Hungarian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Icelandic.json" LogicalName="LongshipUpgrades.translations.Icelandic.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Italian.json" LogicalName="LongshipUpgrades.translations.Italian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Latvian.json" LogicalName="LongshipUpgrades.translations.Latvian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Lithuanian.json" LogicalName="LongshipUpgrades.translations.Lithuanian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Macedonian.json" LogicalName="LongshipUpgrades.translations.Macedonian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Norwegian.json" LogicalName="LongshipUpgrades.translations.Norwegian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Portuguese_European.json" LogicalName="LongshipUpgrades.translations.Portuguese_European.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Romanian.json" LogicalName="LongshipUpgrades.translations.Romanian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Serbian.json" LogicalName="LongshipUpgrades.translations.Serbian.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Slovak.json" LogicalName="LongshipUpgrades.translations.Slovak.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Swedish.json" LogicalName="LongshipUpgrades.translations.Swedish.json" />
+    <EmbeddedResource Include="LongshipUpgrades.translations.Thai.json" LogicalName="LongshipUpgrades.translations.Thai.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="BepInEx" />
+    <Reference Include="0Harmony" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="UnityEngine.ParticleSystemModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.AudioModule" />
+    <Reference Include="ConditionalConfigSync" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_utils" />
+    <Reference Include="Splatform" />
+    <Reference Include="YamlDotNet" />
+    <Reference Include="SoftReferenceableAssets" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+  </ItemGroup>
+</Project>

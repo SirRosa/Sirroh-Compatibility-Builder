@@ -1,0 +1,7 @@
+using System;
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.Serialization;
+
+[return: _003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)]
+internal delegate object _003Ccf1bb9c3_002D9707_002D4afa_002Daa6b_002D02a0a9430a5f_003EObjectDeserializer(Type type);

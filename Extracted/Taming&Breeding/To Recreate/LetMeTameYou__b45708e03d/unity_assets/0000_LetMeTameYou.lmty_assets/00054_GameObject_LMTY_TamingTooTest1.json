@@ -1,0 +1,56 @@
+{
+  "m_Component": [
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 4778104735068842861
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 4075783952233880069
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -2179744616865472330
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -1282883312166926902
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": -3826085976610438171
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 4196159067935696004
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 8787795989032434509
+      }
+    },
+    {
+      "component": {
+        "m_FileID": 0,
+        "m_PathID": 4586685034417452220
+      }
+    }
+  ],
+  "m_Layer": 12,
+  "m_Name": "LMTY_TamingTooTest1",
+  "m_Tag": 0,
+  "m_IsActive": true
+}

@@ -1,0 +1,440 @@
+﻿{
+  "input": "FoodFreezer.dll",
+  "assembly": "FoodFreezer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "version": "1.0.0.0",
+  "modules": [
+    {
+      "name": "FoodFreezer.dll",
+      "mvid": "d4c02472-6a58-44ed-b69c-56d9718e8058"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.7.2"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.7.2"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        "FoodFreezer"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        "Release"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "1.0.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyInformationalVersionAttribute",
+      "arguments": [
+        "1.0.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "FoodFreezer"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "FoodFreezer"
+      ],
+      "properties": [],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "FoodFreezer.Plugin",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Public, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "com.foodfreezer.foodfreezer",
+            "FoodFreezer",
+            "1.0.0"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "Enabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "HearthCheckRadius",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "RequireLitFire",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "FallbackToRestingBuff",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "HearthLayerMask",
+          "type": "System.Int32",
+          "attributes": "Private, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "harmony",
+          "type": "HarmonyLib.Harmony",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "FoodFreezer.Plugin/\u003C\u003Ec",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, Sealed, Serializable, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+          "arguments": [],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u003C\u003E9",
+          "type": "FoodFreezer.Plugin/\u003C\u003Ec",
+          "attributes": "Public, Static, InitOnly",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "\u003C\u003E9__6_0",
+          "type": "System.Func\u00602\u003CSystem.Reflection.MethodInfo,System.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "FoodFreezer.PluginInfo",
+      "baseType": "System.Object",
+      "visibility": "Public, Abstract, Sealed, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [
+        {
+          "name": "GUID",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "com.foodfreezer.foodfreezer",
+          "decorators": []
+        },
+        {
+          "name": "Name",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "FoodFreezer",
+          "decorators": []
+        },
+        {
+          "name": "Version",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "1.0.0",
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void FoodFreezer.Plugin::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 103
+    },
+    {
+      "signature": "System.Boolean FoodFreezer.Plugin::UpdateFoodPrefix(Player)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 22
+    },
+    {
+      "signature": "System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 19
+    },
+    {
+      "signature": "System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "player",
+          "type": "Player"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 45
+    },
+    {
+      "signature": "System.Void FoodFreezer.Plugin::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void FoodFreezer.Plugin::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 13
+    },
+    {
+      "signature": "System.Void FoodFreezer.Plugin/\u003C\u003Ec::.cctor()",
+      "visibility": "Private, Static, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void FoodFreezer.Plugin/\u003C\u003Ec::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean FoodFreezer.Plugin/\u003C\u003Ec::\u003CAwake\u003Eb__6_0(System.Reflection.MethodInfo)",
+      "visibility": "Assembly, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "m",
+          "type": "System.Reflection.MethodInfo"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 19
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "!!0 UnityEngine.Component::GetComponentInParent\u003CFireplace\u003E()",
+    "!!0[] System.Linq.Enumerable::ToArray\u003CSystem.Reflection.MethodInfo\u003E(System.Collections.Generic.IEnumerable\u00601\u003C!!0\u003E)",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E::get_Value()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Single\u003E::get_Value()",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Boolean\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Single\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()",
+    "BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()",
+    "SEMan Character::GetSEMan()",
+    "System.Boolean Fireplace::IsBurning()",
+    "System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)",
+    "System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)",
+    "System.Boolean FoodFreezer.Plugin/\u003C\u003Ec::\u003CAwake\u003Eb__6_0(System.Reflection.MethodInfo)",
+    "System.Boolean SEMan::HaveStatusEffect(System.Int32)",
+    "System.Boolean System.String::op_Equality(System.String,System.String)",
+    "System.Boolean System.Type::op_Equality(System.Type,System.Type)",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Collections.Generic.IEnumerable\u00601\u003C!!0\u003E System.Linq.Enumerable::Where\u003CSystem.Reflection.MethodInfo\u003E(System.Collections.Generic.IEnumerable\u00601\u003C!!0\u003E,System.Func\u00602\u003C!!0,System.Boolean\u003E)",
+    "System.Int32 UnityEngine.LayerMask::GetMask(System.String[])",
+    "System.Reflection.MethodInfo HarmonyLib.Harmony::Patch(System.Reflection.MethodBase,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)",
+    "System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags)",
+    "System.String HarmonyLib.GeneralExtensions::FullDescription(System.Reflection.MethodBase)",
+    "System.String System.Reflection.MemberInfo::get_Name()",
+    "System.String System.String::Concat(System.String,System.String)",
+    "System.String System.String::Format(System.String,System.Object,System.Object,System.Object)",
+    "System.Type System.Reflection.MemberInfo::get_DeclaringType()",
+    "System.Type System.Reflection.MethodInfo::get_ReturnType()",
+    "System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void FoodFreezer.Plugin/\u003C\u003Ec::.ctor()",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.HarmonyMethod::.ctor(System.Type,System.String,System.Type[])",
+    "System.Void System.Func\u00602\u003CSystem.Reflection.MethodInfo,System.Boolean\u003E::.ctor(System.Object,System.IntPtr)",
+    "System.Void System.Object::.ctor()",
+    "UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere(UnityEngine.Vector3,System.Single,System.Int32)",
+    "UnityEngine.Transform UnityEngine.Component::get_transform()",
+    "UnityEngine.Vector3 UnityEngine.Transform::get_position()"
+  ],
+  "stringLiterals": [
+    "{0} {1} loaded ({2} UpdateFood overload(s) patched).",
+    "1.0.0",
+    "Also freeze food while the Rested/Resting status effect is active.",
+    "com.foodfreezer.foodfreezer",
+    "Enabled",
+    "FallbackToRestingBuff",
+    "FoodFreezer",
+    "General",
+    "HearthCheckRadius",
+    "Master toggle for FoodFreezer.",
+    "Only freeze food while the hearth is burning.",
+    "Patched ",
+    "piece",
+    "piece_nonsolid",
+    "Radius (meters) around the player to search for a hearth.",
+    "RequireLitFire",
+    "UpdateFood",
+    "UpdateFoodPrefix"
+  ],
+  "totals": {
+    "types": 4,
+    "methods": 9,
+    "strings": 18,
+    "calledMethods": 39,
+    "resources": 0
+  }
+}

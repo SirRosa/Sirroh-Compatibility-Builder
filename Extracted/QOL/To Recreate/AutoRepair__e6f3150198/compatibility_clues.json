@@ -1,0 +1,187 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 10,
+      "text": "[BepInPlugin(\"mtsukn.AutoRepair\", \"AutoRepair\", \"0.0.1\")]"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 11,
+      "text": "public class Main : BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 153,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 158,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 301,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 21,
+      "text": "IL_0011: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 13,
+      "text": "[HarmonyPatch(typeof(CraftingStation), \"Interact\")]"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 20,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(InventoryGui), \"HaveRepairableItems\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 24,
+      "text": "AccessTools.Method(typeof(InventoryGui), \"RepairOneItem\", (Type[])null, (Type[])null).Invoke(instance, null);"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 47,
+      "text": "HarmonyInstance.PatchAll(executingAssembly);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 215,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 298,
+      "text": "\"System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 305,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10,
+      "text": "IL_000e: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 44,
+      "text": "IL_001a: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 57,
+      "text": "IL_0038: call System.Reflection.MethodInfo HarmonyLib.AccessTools::Method(System.Type,System.String,System.Type[],System.Type[])"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 16,
+      "text": "public static void Postfix(CraftingStation __instance, Humanoid user, bool repeat, bool alt)"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 28,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, \" \", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 264,
+      "text": "\"signature\": \"System.Void AutoRepair.Main/CraftingPatch::Postfix(CraftingStation,Humanoid,System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 274,
+      "text": "\"type\": \"Humanoid\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 303,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 32,
+      "text": "// System.Void AutoRepair.Main/CraftingPatch::Postfix(CraftingStation,Humanoid,System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 78,
+      "text": "IL_0062: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0070: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 19,
+      "text": "InventoryGui instance = InventoryGui.instance;"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 20,
+      "text": "MethodInfo methodInfo = AccessTools.Method(typeof(InventoryGui), \"HaveRepairableItems\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 24,
+      "text": "AccessTools.Method(typeof(InventoryGui), \"RepairOneItem\", (Type[])null, (Type[])null).Invoke(instance, null);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 295,
+      "text": "\"InventoryGui InventoryGui::get_instance()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 33,
+      "text": ".locals System.Int32, InventoryGui, System.Reflection.MethodInfo, System.Boolean, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 37,
+      "text": "IL_0003: call InventoryGui InventoryGui::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 39,
+      "text": "IL_0009: ldtoken InventoryGui"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 52,
+      "text": "IL_0027: ldtoken InventoryGui"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/AutoRepair/Main.cs",
+      "line": 28,
+      "text": "((Character)Player.m_localPlayer).Message((MessageType)2, \" \", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 303,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0070: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

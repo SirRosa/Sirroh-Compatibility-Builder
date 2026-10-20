@@ -1,0 +1,4710 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 15,
+      "text": "[BepInPlugin(\"xtav1m.BetterTames\", \"BetterTames\", \"0.9.0\")]"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 16,
+      "text": "public class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 113,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 192,
+      "text": "((BaseUnityPlugin)this).Config.SaveOnConfigSet = false;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 256,
+      "text": "((BaseUnityPlugin)this).Config.SaveOnConfigSet = true;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 257,
+      "text": "((BaseUnityPlugin)this).Config.Save();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 278,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 299,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11278,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11654,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 76,
+      "text": "IL_0037: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 94,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 607,
+      "text": "IL_0765: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 611,
+      "text": "IL_0771: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 618,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 15,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 22,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(Growup), \"Start\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 29,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 30,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_SetTamed\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 39,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 40,
+      "text": "[HarmonyPatch(typeof(Character), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 8,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<Character, float> RegenAllHpTime = AccessTools.FieldRefAccess<Character, float>(\"m_regenAllHPTime\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 18,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 20,
+      "text": "private static readonly FieldRef<Character, HitData> LastHit = AccessTools.FieldRefAccess<Character, HitData>(\"m_lastHit\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 22,
+      "text": "private static readonly FieldRef<Player, Character> HoveringCreature = AccessTools.FieldRefAccess<Player, Character>(\"m_hoveringCreature\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 24,
+      "text": "private static readonly Func<Character, float> GetHealth = AccessTools.MethodDelegate<Func<Character, float>>(AccessTools.Method(typeof(Character), \"GetHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 26,
+      "text": "private static readonly Func<Character, float> GetMaxHealth = AccessTools.MethodDelegate<Func<Character, float>>(AccessTools.Method(typeof(Character), \"GetMaxHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 28,
+      "text": "private static readonly Action<Character, float> SetHealth = AccessTools.MethodDelegate<Action<Character, float>>(AccessTools.Method(typeof(Character), \"SetHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 30,
+      "text": "private static readonly Func<Humanoid, ItemData> GetCurrentWeapon = AccessTools.MethodDelegate<Func<Humanoid, ItemData>>(AccessTools.Method(typeof(Humanoid), \"GetCurrentWeapon\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 32,
+      "text": "private static readonly Action<MonsterAI> Sleep = AccessTools.MethodDelegate<Action<MonsterAI>>(AccessTools.Method(typeof(MonsterAI), \"Sleep\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 34,
+      "text": "private static readonly Action<MonsterAI> Wakeup = AccessTools.MethodDelegate<Action<MonsterAI>>(AccessTools.Method(typeof(MonsterAI), \"Wakeup\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 36,
+      "text": "private static readonly Action<BaseAI> StopMoving = AccessTools.MethodDelegate<Action<BaseAI>>(AccessTools.Method(typeof(BaseAI), \"StopMoving\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 38,
+      "text": "private static readonly Action<MonsterAI, bool> SetAlerted = AccessTools.MethodDelegate<Action<MonsterAI, bool>>(AccessTools.Method(typeof(MonsterAI), \"SetAlerted\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 40,
+      "text": "private static readonly Action<BaseAI, ZDOID> SetTargetInfo = AccessTools.MethodDelegate<Action<BaseAI, ZDOID>>(AccessTools.Method(typeof(BaseAI), \"SetTargetInfo\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 42,
+      "text": "private static readonly Func<MonsterAI, bool> IsSleeping = AccessTools.MethodDelegate<Func<MonsterAI, bool>>(AccessTools.Method(typeof(MonsterAI), \"IsSleeping\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 44,
+      "text": "private static readonly Action<ZNetView> ClaimOwnership = AccessTools.MethodDelegate<Action<ZNetView>>(AccessTools.Method(typeof(ZNetView), \"ClaimOwnership\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 46,
+      "text": "private static readonly Func<Player, bool> TakeInput = AccessTools.MethodDelegate<Func<Player, bool>>(AccessTools.Method(typeof(Player), \"TakeInput\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 48,
+      "text": "private static readonly FieldRef<Character, Vector3> MoveDir = AccessTools.FieldRefAccess<Character, Vector3>(\"m_moveDir\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 50,
+      "text": "private static readonly FieldRef<Character, Vector3> CurrentVel = AccessTools.FieldRefAccess<Character, Vector3>(\"m_currentVel\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 52,
+      "text": "private static readonly FieldRef<Character, Rigidbody> Body = AccessTools.FieldRefAccess<Character, Rigidbody>(\"m_body\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 54,
+      "text": "private static readonly FieldRef<Character, ZSyncAnimation> ZAnim = AccessTools.FieldRefAccess<Character, ZSyncAnimation>(\"m_zanim\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 56,
+      "text": "private static readonly Action<ZSyncAnimation, int, float> SetAnimFloat = AccessTools.MethodDelegate<Action<ZSyncAnimation, int, float>>(AccessTools.Method(typeof(ZSyncAnimation), \"SetFloat\", new Type[2]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 68,
+      "text": "private static readonly FieldRef<Player, int> InteractMask = AccessTools.FieldRefAccess<Player, int>(\"m_interactMask\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 82,
+      "text": "private static readonly FieldInfo HudsField = AccessTools.Field(typeof(EnemyHud), \"m_huds\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 84,
+      "text": "private static readonly FieldInfo HudNameField = AccessTools.Field(AccessTools.Inner(typeof(EnemyHud), \"HudData\"), \"m_name\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 7,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 10,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(Character), \"CheckDeath\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 17,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 18,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplyDamage\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 24,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 25,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 31,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 32,
+      "text": "[HarmonyPatch(typeof(Procreation), \"ReadyForProcreation\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 41,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 42,
+      "text": "[HarmonyPatch(typeof(MonsterAI), \"UpdateSleep\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 48,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 49,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Interact\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 60,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 61,
+      "text": "[HarmonyPatch(typeof(Character), \"GetHoverText\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 67,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 68,
+      "text": "[HarmonyPatch(typeof(EnemyHud), \"UpdateHuds\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 74,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 75,
+      "text": "[HarmonyPatch(typeof(Player), \"FindHoverObject\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 81,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 82,
+      "text": "[HarmonyPatch(typeof(BaseAI), \"IsEnemy\", new Type[]"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 97,
+      "text": "new Harmony(\"xtav1m.BetterTames\").PatchAll();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 6,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 10,
+      "text": "[HarmonyPatch(typeof(Container), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 17,
+      "text": "[HarmonyPatch(typeof(MonsterAI), \"FindClosestConsumableItem\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<MonsterAI, List<ItemDrop>> ConsumeItems = AccessTools.FieldRefAccess<MonsterAI, List<ItemDrop>>(\"m_consumeItems\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 12,
+      "text": "private static readonly FieldRef<MonsterAI, Action<ItemDrop>> OnConsumedItem = AccessTools.FieldRefAccess<MonsterAI, Action<ItemDrop>>(\"m_onConsumedItem\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 14,
+      "text": "private static readonly FieldRef<BaseAI, ZSyncAnimation> Animator = AccessTools.FieldRefAccess<BaseAI, ZSyncAnimation>(\"m_animator\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 16,
+      "text": "private static readonly FieldRef<Humanoid, EffectList> ConsumeEffects = AccessTools.FieldRefAccess<Humanoid, EffectList>(\"m_consumeItemEffects\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 18,
+      "text": "private static readonly Func<Container, Inventory> GetInventory = AccessTools.MethodDelegate<Func<Container, Inventory>>(AccessTools.Method(typeof(Container), \"GetInventory\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/TimerPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/TimerPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/TimerPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Character), \"GetHoverText\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/PortalPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/PortalPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/PortalPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(TeleportWorld), \"Teleport\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 9,
+      "text": "private static readonly FieldRef<TeleportWorld, ZNetView> PortalView = AccessTools.FieldRefAccess<TeleportWorld, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<TeleportWorld, float> ExitDistance = AccessTools.FieldRefAccess<TeleportWorld, float>(\"m_exitDistance\");"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 18,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 89,
+      "text": "Patches patchInfo = PatchProcessor.GetPatchInfo((MethodBase)AccessTools.DeclaredMethod(typeof(ZNet), \"Awake\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 99,
+      "text": "val.PatchAll(item);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 184,
+      "text": "AccessTools.DeclaredField(typeof(ZNet), \"m_connectionStatus\").SetValue(null, (object)(ConnectionStatus)3);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 232,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 233,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 257,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 258,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 293,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 294,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 307,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 308,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 24,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 31,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 39,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 43,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 82,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 83,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 106,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 110,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 135,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Shutdown\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 138,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 153,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 276,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 286,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 287,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 291,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 307,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 313,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 328,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 329,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 333,
+      "text": "AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\").SetValue(val, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 366,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 367,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 405,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 419,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 423,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 587,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 675,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 676,
+      "text": "SyncedList val = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 984,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1222,
+      "text": "AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\").SetValue(parameterInfo, type);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 22,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(Character), \"SetLevel\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/CommandPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/CommandPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/CommandPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 12,
+      "text": "private static readonly Func<Player, bool> TakeInput = AccessTools.MethodDelegate<Func<Player, bool>>(AccessTools.Method(typeof(Player), \"TakeInput\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/LevelingPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/LevelingPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/LevelingPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Character), \"OnDeath\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/Leveling.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Character, HitData> LastHit = AccessTools.FieldRefAccess<Character, HitData>(\"m_lastHit\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/Leveling.cs",
+      "line": 13,
+      "text": "private static readonly Func<Character, float> GetMaxHealth = AccessTools.MethodDelegate<Func<Character, float>>(AccessTools.Method(typeof(Character), \"GetMaxHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/Leveling.cs",
+      "line": 15,
+      "text": "private static readonly Action<Character, float> SetHealth = AccessTools.MethodDelegate<Action<Character, float>>(AccessTools.Method(typeof(Character), \"SetHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUpPatches.cs",
+      "line": 5,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUpPatches.cs",
+      "line": 8,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUpPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Player), \"OnSpawned\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 13,
+      "text": "private static readonly FieldRef<Character, Rigidbody> CharacterBody = AccessTools.FieldRefAccess<Character, Rigidbody>(\"m_body\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 15,
+      "text": "private static readonly Func<Player, bool> TakeInput = AccessTools.MethodDelegate<Func<Player, bool>>(AccessTools.Method(typeof(Player), \"TakeInput\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 17,
+      "text": "private static readonly FieldRef<ZDOMan, Dictionary<ZDOID, ZDO>> AllZDOs = AccessTools.FieldRefAccess<ZDOMan, Dictionary<ZDOID, ZDO>>(\"m_objectsByID\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 19,
+      "text": "private static readonly FieldRef<BaseAI, AgentType> PathAgent = AccessTools.FieldRefAccess<BaseAI, AgentType>(\"m_pathAgentType\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 21,
+      "text": "private static readonly Action<ZNetView> ClaimOwnership = AccessTools.MethodDelegate<Action<ZNetView>>(AccessTools.Method(typeof(ZNetView), \"ClaimOwnership\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 828,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 878,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CCharacter,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 885,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CCharacter,HitData\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 892,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CPlayer,Character\\u003E\","
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 18,
+      "text": "public static ConfigEntry<bool> showTamingTimer;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 20,
+      "text": "public static ConfigEntry<bool> showBreedingTimer;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 22,
+      "text": "public static ConfigEntry<bool> showGrowthTimer;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 24,
+      "text": "public static ConfigEntry<int> tamingTime;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 26,
+      "text": "public static ConfigEntry<int> lovePoints;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 28,
+      "text": "public static ConfigEntry<int> growthTime;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 30,
+      "text": "public static ConfigEntry<int> maxCreaturesNearby;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 32,
+      "text": "public static ConfigEntry<float> maxCreaturesRange;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 34,
+      "text": "public static ConfigEntry<int> offspringStarChance;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 36,
+      "text": "public static ConfigEntry<bool> commandAllTames;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 38,
+      "text": "public static ConfigEntry<KeyboardShortcut> massFollowKey;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 40,
+      "text": "public static ConfigEntry<KeyboardShortcut> massStayKey;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 42,
+      "text": "public static ConfigEntry<float> massCommandRange;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 44,
+      "text": "public static ConfigEntry<bool> tamesFightOwnKind;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 46,
+      "text": "public static ConfigEntry<bool> catchUpTeleport;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 48,
+      "text": "public static ConfigEntry<float> catchUpDistance;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 50,
+      "text": "public static ConfigEntry<KeyboardShortcut> teleportFollowersKey;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 52,
+      "text": "public static ConfigEntry<bool> bigTamesEnterDungeons;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 54,
+      "text": "public static ConfigEntry<bool> portalTeleport;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 56,
+      "text": "public static ConfigEntry<bool> starUpOnKill;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 58,
+      "text": "public static ConfigEntry<int> starUpBaseChance;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 60,
+      "text": "public static ConfigEntry<int> starUpBonusPerStar;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 62,
+      "text": "public static ConfigEntry<bool> healOnStarUp;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 64,
+      "text": "public static ConfigEntry<int> regenTime;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 66,
+      "text": "public static ConfigEntry<bool> protectAllTames;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 68,
+      "text": "public static ConfigEntry<int> recoveryTime;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 70,
+      "text": "public static ConfigEntry<KeyboardShortcut> toggleProtectionKey;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 72,
+      "text": "public static ConfigEntry<bool> showDownedTames;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 74,
+      "text": "public static ConfigEntry<bool> wildEatFromChests;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 76,
+      "text": "public static ConfigEntry<bool> tamesEatFromChests;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 78,
+      "text": "public static ConfigEntry<float> chestRange;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 80,
+      "text": "public static ConfigEntry<bool> chestRequireOnlyFood;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 82,
+      "text": "public static ConfigEntry<bool> debugMode;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 108,
+      "text": "private ConfigEntry<T> ConfigSync<T>(string group, string name, T value, ConfigDescription description, bool synchronizedSetting = true)"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 112,
+      "text": "ConfigDescription val = new ConfigDescription(description.Description + (synchronizedSetting ? \" [Synced with Server]\" : \" [Not Synced with Server]\"), description.AcceptableValues, description.Tags);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 113,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 114,
+      "text": "configSync.AddConfigEntry<T>(val2).SynchronizedConfig = synchronizedSetting;"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 193,
+      "text": "ConfigEntry<bool> lockingConfig = ConfigSync(\"1 - General\", \"Lock Configuration\", value: true, new ConfigDescription(\"If enabled, the configuration is locked and can be changed by server admins only.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 194,
+      "text": "configSync.AddLockingConfigEntry<bool>(lockingConfig);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 195,
+      "text": "showTamingTimer = ConfigSync(\"2 - Timers\", \"Show Taming Timer\", value: true, new ConfigDescription(\"Show how long a creature you are taming has left, counting any taming boost from players nearby. The timer is marked paused while the creature is hungry or frightened, since taming stops then.\", (AcceptableValueBase)null, Array.Empty<object>()), sync"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 196,
+      "text": "showBreedingTimer = ConfigSync(\"2 - Timers\", \"Show Breeding Timer\", value: true, new ConfigDescription(\"Show how long a pregnant tame has left before giving birth. A tame that is not pregnant shows its love points instead: it gains one now and then while fed, calm and next to a partner, and gets pregnant when they are full.\", (AcceptableValueBase)n"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 197,
+      "text": "showGrowthTimer = ConfigSync(\"2 - Timers\", \"Show Growth Timer\", value: true, new ConfigDescription(\"Show how long offspring have left before growing up.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 198,
+      "text": "tamingTime = ConfigSync(\"3 - Taming\", \"Taming Time\", 30, new ConfigDescription(\"Minutes of feeding it takes to tame any creature.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 180), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 199,
+      "text": "lovePoints = ConfigSync(\"4 - Breeding\", \"Love Points Needed\", 3, new ConfigDescription(\"Love points a tame needs before it gets pregnant. It gains one now and then while fed, calm and next to a partner.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 20), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 200,
+      "text": "growthTime = ConfigSync(\"4 - Breeding\", \"Growth Time\", 30, new ConfigDescription(\"Minutes offspring take to grow up.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 180), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 201,
+      "text": "maxCreaturesNearby = ConfigSync(\"4 - Breeding\", \"Crowd Limit\", 6, new ConfigDescription(\"How many creatures of the same kind can be nearby before breeding stops.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(1, 20), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 202,
+      "text": "maxCreaturesRange = ConfigSync(\"4 - Breeding\", \"Crowd Range\", 10f, new ConfigDescription(\"How far, in meters, Crowd Limit counts around a breeding pair.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(1f, 200f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 203,
+      "text": "offspringStarChance = ConfigSync(\"4 - Breeding\", \"Offspring Star Chance\", 25, new ConfigDescription(\"Percent chance a newborn is one star above the tame giving birth, up to 2 stars. Eggs are not affected.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 100), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 224,
+      "text": "commandAllTames = ConfigSync(\"5 - Commands\", \"Command Any Tame\", value: true, new ConfigDescription(\"Press E on any tame to make it follow you or stay, not only on wolves, lox and the others the game allows. Off leaves each creature as the game or its mod made it.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 225,
+      "text": "massFollowKey = ConfigSync<KeyboardShortcut>(\"5 - Commands\", \"Follow All Key\", new KeyboardShortcut((KeyCode)102, new KeyCode[1] { (KeyCode)308 }), new ConfigDescription(\"Every tame in range that is not following anyone starts following you.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 226,
+      "text": "massStayKey = ConfigSync<KeyboardShortcut>(\"5 - Commands\", \"Stay All Key\", new KeyboardShortcut((KeyCode)103, new KeyCode[1] { (KeyCode)308 }), new ConfigDescription(\"Every tame in range that is following you stays where it is.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 227,
+      "text": "massCommandRange = ConfigSync(\"5 - Commands\", \"Follow/Stay All Range\", 30f, new ConfigDescription(\"How far, in meters, the Follow All and Stay All keys reach.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(5f, 100f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 228,
+      "text": "tamesFightOwnKind = ConfigSync(\"1 - General\", \"Tames Fight Their Own Kind\", value: true, new ConfigDescription(\"A tame fights wild creatures of its own kind that are in a fight, like a tamed wolf defending you from wild wolves. Calm ones, and ones you are partway through taming, are left alone. The game normally keeps them on the same side.\", (Acce"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 233,
+      "text": "catchUpTeleport = ConfigSync(\"6 - Teleport\", \"Teleport Lost Tames\", value: true, new ConfigDescription(\"A tame that is following you teleports to you if it falls too far behind, and after you die and respawn. Vanilla following has no distance limit, so a tame stuck on terrain or left behind at your death is otherwise stuck or lost for good.\", (Acce"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 234,
+      "text": "catchUpDistance = ConfigSync(\"6 - Teleport\", \"Teleport Distance\", 30f, new ConfigDescription(\"How far, in meters, a following tame can fall behind before it teleports to you.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(20f, 50f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 235,
+      "text": "teleportFollowersKey = ConfigSync<KeyboardShortcut>(\"6 - Teleport\", \"Teleport Tames Key\", new KeyboardShortcut((KeyCode)104, new KeyCode[1] { (KeyCode)308 }), new ConfigDescription(\"Every tame following you teleports to you right away.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 236,
+      "text": "bigTamesEnterDungeons = ConfigSync(\"6 - Teleport\", \"Big Tames Enter Dungeons\", value: false, new ConfigDescription(\"Following tames come with you into dungeons and back out. Turn off to leave big tames, like lox, outside, since they get stuck in narrow corridors.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 237,
+      "text": "portalTeleport = ConfigSync(\"6 - Teleport\", \"Tames Follow Through Portals\", value: true, new ConfigDescription(\"Tames following you near a portal come through it with you. The game normally leaves them behind.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 238,
+      "text": "starUpOnKill = ConfigSync(\"7 - Leveling\", \"Gain Stars From Kills\", value: true, new ConfigDescription(\"A tame has a chance to gain a star whenever it kills an enemy, up to 2 stars. The chance is higher the more stars the enemy has over the tame; killing something the same star or lower gives no bonus.\", (AcceptableValueBase)null, Array.Empty<object"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 239,
+      "text": "starUpBaseChance = ConfigSync(\"7 - Leveling\", \"Star Chance\", 10, new ConfigDescription(\"Base percent chance to gain a star on a kill.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 100), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 240,
+      "text": "starUpBonusPerStar = ConfigSync(\"7 - Leveling\", \"Bonus Chance Per Star\", 5, new ConfigDescription(\"Percent added per star the killed enemy has over the tame.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 100), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 241,
+      "text": "healOnStarUp = ConfigSync(\"7 - Leveling\", \"Heal On New Star\", value: true, new ConfigDescription(\"A tame that gains a star from a kill is healed to full.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 242,
+      "text": "regenTime = ConfigSync(\"8 - Health\", \"Full Heal Time\", 3600, new ConfigDescription(\"Seconds a tame takes to heal from empty to full. Lower is faster. Regeneration pauses while a tame is hungry, the same as the game's own creatures.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(60, 7200), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 247,
+      "text": "protectAllTames = ConfigSync(\"8 - Health\", \"Protect All Tames\", value: true, new ConfigDescription(\"A tame that would die lies down to recover instead. Enemies leave it alone while it is down. A butcher knife still kills it. Individual tames can be switched with the Protection Key.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 248,
+      "text": "recoveryTime = ConfigSync(\"8 - Health\", \"Recovery Time\", 60, new ConfigDescription(\"Seconds a recovering tame rests, healing back to full, before it gets up.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(10, 600), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 249,
+      "text": "toggleProtectionKey = ConfigSync<KeyboardShortcut>(\"8 - Health\", \"Protection Key\", new KeyboardShortcut((KeyCode)101, new KeyCode[1] { (KeyCode)308 }), new ConfigDescription(\"Switch protection on or off for the tame you are looking at, overriding Protect All Tames for that tame.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetti"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 250,
+      "text": "showDownedTames = ConfigSync(\"8 - Health\", \"Show Recovering Tames\", value: true, new ConfigDescription(\"Show the name and health bar of a recovering tame when you look at it. The game hides sleeping creatures from the crosshair, so with this off a recovering tame shows no name or health bar and the Protection Key can't reach it.\", (AcceptableValueB"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 251,
+      "text": "wildEatFromChests = ConfigSync(\"9 - Feeding\", \"Wild Creatures Eat From Chests\", value: true, new ConfigDescription(\"A hungry creature you are taming eats from a nearby chest when there is no food on the ground, so taming keeps going without dropping food by hand.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 252,
+      "text": "tamesEatFromChests = ConfigSync(\"9 - Feeding\", \"Tames Eat From Chests\", value: true, new ConfigDescription(\"A hungry tame eats from a nearby chest when there is no food on the ground, which keeps it healing and breeding.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 253,
+      "text": "chestRange = ConfigSync(\"9 - Feeding\", \"Chest Range\", 10f, new ConfigDescription(\"How far, in meters, a creature reaches for a chest. It eats in place and never walks to it. Only chests a player built count, not dungeon or other world loot.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(2f, 30f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 254,
+      "text": "chestRequireOnlyFood = ConfigSync(\"9 - Feeding\", \"Only Food Chests\", value: false, new ConfigDescription(\"Only eat from a chest that holds nothing but food this creature eats, so a feeding chest can sit next to your storage without being raided.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 255,
+      "text": "debugMode = ConfigSync(\"Debug\", \"Debug Mode\", value: false, new ConfigDescription(\"Log what the mod is doing to tamed creatures.\", (AcceptableValueBase)null, Array.Empty<object>()), synchronizedSetting: false);"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 10,
+      "text": "public abstract class OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 17,
+      "text": "public abstract ConfigEntryBase BaseConfig { get; }"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 128,
+      "text": "public readonly Dictionary<OwnConfigEntryBase, object> configValues = new Dictionary<OwnConfigEntryBase, object>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 379,
+      "text": "ZPackage package = ConfigsToPackage(configSync.allConfigs.Select([ServerSync_002ENullableContext(0)] (OwnConfigEntryBase c) => c.BaseConfig), configSync.allCustomValues, entries, partial: false);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 406,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 408,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 409,
+      "text": "if (ownConfigEntryBase == null || isWritableConfig(ownConfigEntryBase))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 413,
+      "text": "__result = TomlTypeConverter.ConvertToString(ownConfigEntryBase.LocalBaseValue, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 419,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 424,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, string value)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 426,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 427,
+      "text": "if (ownConfigEntryBase == null || ownConfigEntryBase.LocalBaseValue == null)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 433,
+      "text": "ownConfigEntryBase.LocalBaseValue = TomlTypeConverter.ConvertToValue(value, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 474,
+      "text": "private readonly HashSet<OwnConfigEntryBase> allConfigs = new HashSet<OwnConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 483,
+      "text": "private OwnConfigEntryBase lockedConfig = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 580,
+      "text": "public SyncedConfigEntry<T> AddConfigEntry<[ServerSync_002ENullable(2)] T>(ConfigEntry<T> configEntry)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 582,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData((ConfigEntryBase)(object)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 583,
+      "text": "SyncedConfigEntry<T> syncedEntry = ownConfigEntryBase as SyncedConfigEntry<T>;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 586,
+      "text": "syncedEntry = new SyncedConfigEntry<T>(configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 587,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 590,
+      "text": "}.Concat(((ConfigEntryBase)configEntry).Description.Tags ?? Array.Empty<object>()).Concat(new SyncedConfigEntry<T>[1] { syncedEntry }).ToArray());"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 591,
+      "text": "configEntry.SettingChanged += [ServerSync_002ENullableContext(0)] (object _, EventArgs _) =>"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 595,
+      "text": "Broadcast(0L, (ConfigEntryBase)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 603,
+      "text": "public SyncedConfigEntry<T> AddLockingConfigEntry<[ServerSync_002ENullable(0)] T>(ConfigEntry<T> lockingConfig) where T : IConvertible"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 607,
+      "text": "throw new Exception(\"Cannot initialize locking ConfigEntry twice\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 609,
+      "text": "lockedConfig = AddConfigEntry<T>(lockingConfig);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 614,
+      "text": "return (SyncedConfigEntry<T>)lockedConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 732,
+      "text": "ConfigFile val2 = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 734,
+      "text": "foreach (KeyValuePair<OwnConfigEntryBase, object> configValue in parsedConfigs.configValues)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 742,
+      "text": "val2 = configValue.Key.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 787,
+      "text": "Dictionary<string, OwnConfigEntryBase> dictionary = allConfigs.Where([ServerSync_002ENullableContext(0)] (OwnConfigEntryBase c) => c.SynchronizedConfig).ToDictionary([ServerSync_002ENullableContext(0)] (OwnConfigEntryBase c) => c.BaseConfig.Definition.Section + \"_\" + c.BaseConfig.Definition.Key, [ServerSync_002ENullableContext(0)] (OwnConfigEntryBa"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 808,
+      "text": "OwnConfigEntryBase value2;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 858,
+      "text": "private static bool isWritableConfig(OwnConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 870,
+      "text": "foreach (OwnConfigEntryBase allConfig in allConfigs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 878,
+      "text": "ConfigFile val = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 880,
+      "text": "foreach (OwnConfigEntryBase item in allConfigs.Where([ServerSync_002ENullableContext(0)] (OwnConfigEntryBase config) => config.LocalBaseValue != null))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 884,
+      "text": "val = item.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1022,
+      "text": "private void Broadcast(long target, params ConfigEntryBase[] configs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1049,
+      "text": "private static OwnConfigEntryBase configData(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1051,
+      "text": "return config.Description.Tags?.OfType<OwnConfigEntryBase>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1055,
+      "text": "public static SyncedConfigEntry<T> ConfigData<[ServerSync_002ENullable(2)] T>(ConfigEntry<T> config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1057,
+      "text": "return ((ConfigEntryBase)config).Description.Tags?.OfType<SyncedConfigEntry<T>>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1060,
+      "text": "private static T configAttribute<[ServerSync_002ENullable(2)] T>(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1065,
+      "text": "private static Type configType(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1075,
+      "text": "private static ZPackage ConfigsToPackage([ServerSync_002ENullable(new byte[] { 2, 1 })] IEnumerable<ConfigEntryBase> configs = null, [ServerSync_002ENullable(new byte[] { 2, 1 })] IEnumerable<CustomSyncedValueBase> customValues = null, [ServerSync_002ENullable(new byte[] { 2, 1 })] IEnumerable<PackageEntry> packageEntries = null, bool partial = tru"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1079,
+      "text": "List<ConfigEntryBase> list = configs?.Where([ServerSync_002ENullableContext(0)] (ConfigEntryBase config) => configData(config).SynchronizedConfig).ToList() ?? new List<ConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1098,
+      "text": "foreach (ConfigEntryBase item3 in list)"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 10,
+      "text": "public class SyncedConfigEntry<[ServerSync_002ENullable(2)] T>(ConfigEntry<T> sourceConfig) : OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 12,
+      "text": "public readonly ConfigEntry<T> SourceConfig = sourceConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 14,
+      "text": "public override ConfigEntryBase BaseConfig => (ConfigEntryBase)(object)SourceConfig;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 312,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 319,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 326,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 333,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 340,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 347,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 354,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 361,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 368,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 375,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 382,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 389,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 396,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 403,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 410,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 417,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 424,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 431,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 438,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 445,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 452,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 459,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 466,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 473,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 480,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 487,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 494,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CBepInEx.Configuration.KeyboardShortcut\\u003E\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 30,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_SetTamed\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 31,
+      "text": "private static void Character_RPC_SetTamed_Postfix(Character __instance, bool tamed)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 8,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 15,
+      "text": "ZNetView val = TameView.Invoke(tameable);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 18,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 40,
+      "text": "private static readonly Action<BaseAI, ZDOID> SetTargetInfo = AccessTools.MethodDelegate<Action<BaseAI, ZDOID>>(AccessTools.Method(typeof(BaseAI), \"SetTargetInfo\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 44,
+      "text": "private static readonly Action<ZNetView> ClaimOwnership = AccessTools.MethodDelegate<Action<ZNetView>>(AccessTools.Method(typeof(ZNetView), \"ClaimOwnership\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 131,
+      "text": "ZNetView val2 = NView.Invoke(wild);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 145,
+      "text": "ZNetView val = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 164,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 190,
+      "text": "ZNetView val2 = NView.Invoke(val);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 244,
+      "text": "SetTargetInfo((BaseAI)(object)monsterAI, ZDOID.None);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 283,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 327,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 407,
+      "text": "ZNetView val3 = NView.Invoke(val);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 46,
+      "text": "ZNetView component = ((Component)monsterAI).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 61,
+      "text": "ZNetView chestView;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 83,
+      "text": "obj2.Create(position, Quaternion.identity, (Transform)null, 1f, -1, default(ZDOID));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 93,
+      "text": "private static bool IsPlayerChest(Container chest, out ZNetView chestView)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 95,
+      "text": "chestView = ((Component)chest).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 19,
+      "text": "ZNetView val = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 9,
+      "text": "private static readonly FieldRef<TeleportWorld, ZNetView> PortalView = AccessTools.FieldRefAccess<TeleportWorld, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 31,
+      "text": "ZNetView component = ((Component)item).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 57,
+      "text": "ZNetView val = PortalView.Invoke(portal);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 62,
+      "text": "ZDO zDO = ZDOMan.instance.GetZDO(val.GetZDO().GetConnectionZDOID((ConnectionType)1));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 44,
+      "text": "private readonly List<ZRpc> ValidatedClients = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 90,
+      "text": "if (patchInfo != null && patchInfo.Postfixes.Count([ServerSync_002ENullableContext(0)] (Patch p) => p.PatchMethod.DeclaringType == typeof(ConfigSync.RegisterRPCPatch)) > 0)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 161,
+      "text": "private string ErrorServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 166,
+      "text": "private string Error([ServerSync_002ENullable(2)] ZRpc rpc = null)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 176,
+      "text": "private static VersionCheck[] GetFailedServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 187,
+      "text": "private static void DisconnectClient(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 192,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 197,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg, [ServerSync_002ENullable(new byte[] { 2, 1, 1 })] Action<ZRpc, ZPackage> original)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 232,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 234,
+      "text": "private static bool RPC_PeerInfo(ZRpc rpc, ZNet __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 264,
+      "text": "IDictionary dictionary = (IDictionary)typeof(ZRpc).GetField(\"m_functions\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(peer.m_rpc);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 268,
+      "text": "Action<ZRpc, ZPackage> action = (Action<ZRpc, ZPackage>)obj.GetType().GetField(\"m_action\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(obj);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 269,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)([ServerSync_002ENullableContext(0)] (ZRpc rpc, [ServerSync_002ENullable(1)] ZPackage pkg) =>"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 276,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)CheckVersion);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 24,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 28,
+      "text": "public static ZRpc currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 32,
+      "text": "private static void Prefix(ZRpc __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 40,
+      "text": "internal static class RegisterRPCPatch"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 49,
+      "text": "ZRoutedRpc.instance.Register<ZPackage>(configSync2.Name + \" ConfigSync\", (Action<long, ZPackage>)configSync2.RPC_FromOtherClientConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 119,
+      "text": "peer.m_rpc.Register<ZPackage>(configSync.Name + \" ConfigSync\", (Action<ZRpc, ZPackage>)configSync.RPC_FromServerConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 153,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 277,
+      "text": "private static void Prefix([ServerSync_002ENullable(new byte[] { 2, 1, 1 })] ref Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 286,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 287,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 308,
+      "text": "private static void Postfix(Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 313,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 328,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 329,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 634,
+      "text": "private void RPC_FromServerConfigSync(ZRpc rpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 644,
+      "text": "private void RPC_FromOtherClientConfigSync(long sender, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 661,
+      "text": "ZRpc currentRpc = SnatchCurrentlyHandlingRPC.currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 906,
+      "text": "ZRoutedRpc rpc = ZRoutedRpc.instance;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 984,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1157,
+      "text": "ZRpc.Serialize(new object[1] { value }, ref package);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1224,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, package, ref source);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 86,
+      "text": "ZNetView val2 = TameView.Invoke(val);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Leveling/Leveling.cs",
+      "line": 29,
+      "text": "ZNetView component = ((Component)val).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 17,
+      "text": "private static readonly FieldRef<ZDOMan, Dictionary<ZDOID, ZDO>> AllZDOs = AccessTools.FieldRefAccess<ZDOMan, Dictionary<ZDOID, ZDO>>(\"m_objectsByID\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 21,
+      "text": "private static readonly Action<ZNetView> ClaimOwnership = AccessTools.MethodDelegate<Action<ZNetView>>(AccessTools.Method(typeof(ZNetView), \"ClaimOwnership\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 72,
+      "text": "HashSet<ZDOID> hashSet = new HashSet<ZDOID>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 76,
+      "text": "ZNetView val = TameView.Invoke(((Component)item).GetComponent<Tameable>());"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 79,
+      "text": "foreach (ZDO value in AllZDOs.Invoke(ZDOMan.instance).Values)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 110,
+      "text": "ZNetView val2 = TameView.Invoke(val);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 172,
+      "text": "ZNetView component = ((Component)character).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 878,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CCharacter,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 955,
+      "text": "\"type\": \"System.Action\\u00602\\u003CBaseAI,ZDOID\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 969,
+      "text": "\"type\": \"System.Action\\u00601\\u003CZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1379,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTeleportWorld,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1438,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1459,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CZDOMan,System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,ZDO\\u003E\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1473,
+      "text": "\"type\": \"System.Action\\u00601\\u003CZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1643,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1709,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1784,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CCharacter,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2643,
+      "text": "\"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2653,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2672,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2700,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2733,
+      "text": "\"type\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2811,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2983,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3109,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3962,
+      "text": "\"type\": \"ZRoutedRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4689,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4746,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4898,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4932,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6210,
+      "text": "\"signature\": \"System.Boolean BetterTames.Scripts.Feeding.Feeding::IsPlayerChest(Container,ZNetView\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6220,
+      "text": "\"type\": \"ZNetView\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7169,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Tuning.TuningPatches::Character_RPC_SetTamed_Postfix(Character,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7193,
+      "text": "\"RPC_SetTamed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8132,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8138,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8152,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8610,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8616,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8641,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8672,
+      "text": "\"signature\": \"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8688,
+      "text": "\"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8706,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8741,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8764,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.IDisposable.Dispose()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8782,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8793,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.Generic.IEnumerator\\u003CSystem.Object\\u003E.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8811,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.Reset()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8829,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8847,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8858,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8949,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Prefix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E\\u0026,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8963,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8988,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Postfix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 9002,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10681,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10687,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10697,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10703,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10724,
+      "text": "\"signature\": \"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10730,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10751,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10757,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10767,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10773,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10787,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10793,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10801,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10811,
+      "text": "\"signature\": \"System.Boolean ServerSync.VersionCheck::RPC_PeerInfo(ZRpc,ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10817,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 10829,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11145,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11151,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11178,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Action\\u00601\\u003CZNetView\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11179,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Action\\u00602\\u003CBaseAI,ZDOID\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11202,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CZNetView\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11239,
+      "text": "\"!1 System.Collections.Generic.Dictionary\\u00602/ValueCollection/Enumerator\\u003CZDOID,ZDO\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11256,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CCharacter,ZNetView\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11263,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11265,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTeleportWorld,ZNetView\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11266,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CZDOMan,System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,ZDO\\u003E\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11291,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CCharacter,ZNetView\\u003E(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11298,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CTameable,ZNetView\\u003E(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11300,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CTeleportWorld,ZNetView\\u003E(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11301,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CZDOMan,System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,ZDO\\u003E\\u003E(System.String)\","
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 23,
+      "text": "GameObject val = (Object.op_Implicit((Object)(object)ZNetScene.instance) ? ZNetScene.instance.GetPrefab(Utils.GetPrefabName(((Component)tameable).gameObject)) : null);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11925,
+      "text": "\"UnityEngine.GameObject ZNetScene::GetPrefab(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11956,
+      "text": "\"ZNetScene ZNetScene::get_instance()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3332,
+      "text": "IL_0028: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3337,
+      "text": "IL_003d: call ZNetScene ZNetScene::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3341,
+      "text": "IL_004d: callvirt UnityEngine.GameObject ZNetScene::GetPrefab(System.String)"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 30,
+      "text": "[HarmonyPatch(typeof(Character), \"RPC_SetTamed\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 31,
+      "text": "private static void Character_RPC_SetTamed_Postfix(Character __instance, bool tamed)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 40,
+      "text": "[HarmonyPatch(typeof(Character), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 41,
+      "text": "private static void Character_Awake_Postfix(Character __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<Character, float> RegenAllHpTime = AccessTools.FieldRefAccess<Character, float>(\"m_regenAllHPTime\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 38,
+      "text": "public static void Apply(Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 40,
+      "text": "RegenAllHpTime.Invoke(character) = Plugin.regenTime.Value;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 48,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 50,
+      "text": "if (((Component)allCharacter).TryGetComponent<Tameable>(ref tameable))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 54,
+      "text": "if (((Component)allCharacter).TryGetComponent<Procreation>(ref procreation))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 58,
+      "text": "if (((Component)allCharacter).TryGetComponent<Growup>(ref growup))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 62,
+      "text": "if (allCharacter.IsTamed())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 64,
+      "text": "Apply(allCharacter);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 18,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 20,
+      "text": "private static readonly FieldRef<Character, HitData> LastHit = AccessTools.FieldRefAccess<Character, HitData>(\"m_lastHit\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 22,
+      "text": "private static readonly FieldRef<Player, Character> HoveringCreature = AccessTools.FieldRefAccess<Player, Character>(\"m_hoveringCreature\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 24,
+      "text": "private static readonly Func<Character, float> GetHealth = AccessTools.MethodDelegate<Func<Character, float>>(AccessTools.Method(typeof(Character), \"GetHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 26,
+      "text": "private static readonly Func<Character, float> GetMaxHealth = AccessTools.MethodDelegate<Func<Character, float>>(AccessTools.Method(typeof(Character), \"GetMaxHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 28,
+      "text": "private static readonly Action<Character, float> SetHealth = AccessTools.MethodDelegate<Action<Character, float>>(AccessTools.Method(typeof(Character), \"SetHealth\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 30,
+      "text": "private static readonly Func<Humanoid, ItemData> GetCurrentWeapon = AccessTools.MethodDelegate<Func<Humanoid, ItemData>>(AccessTools.Method(typeof(Humanoid), \"GetCurrentWeapon\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 46,
+      "text": "private static readonly Func<Player, bool> TakeInput = AccessTools.MethodDelegate<Func<Player, bool>>(AccessTools.Method(typeof(Player), \"TakeInput\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 48,
+      "text": "private static readonly FieldRef<Character, Vector3> MoveDir = AccessTools.FieldRefAccess<Character, Vector3>(\"m_moveDir\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 50,
+      "text": "private static readonly FieldRef<Character, Vector3> CurrentVel = AccessTools.FieldRefAccess<Character, Vector3>(\"m_currentVel\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 52,
+      "text": "private static readonly FieldRef<Character, Rigidbody> Body = AccessTools.FieldRefAccess<Character, Rigidbody>(\"m_body\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 54,
+      "text": "private static readonly FieldRef<Character, ZSyncAnimation> ZAnim = AccessTools.FieldRefAccess<Character, ZSyncAnimation>(\"m_zanim\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 68,
+      "text": "private static readonly FieldRef<Player, int> InteractMask = AccessTools.FieldRefAccess<Player, int>(\"m_interactMask\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 70,
+      "text": "private static readonly HashSet<Character> Downed = new HashSet<Character>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 72,
+      "text": "private static readonly Predicate<Character> IsGone = (Character c) => (Object)(object)c == (Object)null;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 88,
+      "text": "private static void DebugLog(Character character, MonsterAI monsterAI, string when)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 97,
+      "text": "Animator componentInChildren = ((Component)character).GetComponentInChildren<Animator>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 113,
+      "text": "character.m_name,"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 116,
+      "text": "}) + $\"moveDir={MoveDir.Invoke(character)} currentVel={CurrentVel.Invoke(character)} \" + string.Format(\"forward_speed={0:0.00} \", ((Object)(object)componentInChildren != (Object)null) ? componentInChildren.GetFloat(\"forward_speed\") : (-1f)) + string.Format(\"animSleeping={0}\", (((Object)(object)componentInChildren != (Object)null) & flag) && compone"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 119,
+      "text": "public static bool WildWillFight(Character wild)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 139,
+      "text": "public static bool IsDowned(Character? character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 141,
+      "text": "if ((Object)(object)character == (Object)null || !character.IsTamed())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 145,
+      "text": "ZNetView val = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 153,
+      "text": "public static bool TryDown(Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 155,
+      "text": "if (!character.IsTamed() || GetHealth(character) > 0f)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 160,
+      "text": "if (!((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 164,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 170,
+      "text": "if (!IsProtected(zDO) || KilledWithButcherKnife(character))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 175,
+      "text": "SetHealth(character, 1f);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 176,
+      "text": "Calm(val, character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 178,
+      "text": "Downed.Add(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 179,
+      "text": "DebugLog(character, val, \"downed\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 185,
+      "text": "Character val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 186,
+      "text": "if (!((Component)monsterAI).TryGetComponent<Character>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 235,
+      "text": "private static void Calm(MonsterAI monsterAI, Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 245,
+      "text": "CurrentVel.Invoke(character) = Vector3.zero;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 246,
+      "text": "Rigidbody val = Body.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 251,
+      "text": "ZSyncAnimation val2 = ZAnim.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 260,
+      "text": "public static string? HoverLine(Character character, ZDO zdo)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 263,
+      "text": "if (!character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 275,
+      "text": "public static string AddPrompt(Character character, string hoverText)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 279,
+      "text": "if (hoverText.Length == 0 || !character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 283,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 302,
+      "text": "Character val = (Character)((key is Character) ? key : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 320,
+      "text": "private static string? NameColor(Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 323,
+      "text": "if (!character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 327,
+      "text": "ZNetView val2 = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 335,
+      "text": "Downed.Add(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 338,
+      "text": "Downed.Remove(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 346,
+      "text": "public static void FindDownedHover(Player player, ref Character hoverCreature)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 357,
+      "text": "int num = Physics.RaycastNonAlloc(transform.position, transform.forward, HoverHits, 50f, InteractMask.Invoke(player));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 358,
+      "text": "Character val = null;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 363,
+      "text": "Character val3 = (((Object)(object)val2.collider.attachedRigidbody != (Object)null) ? ((Component)val2.collider.attachedRigidbody).GetComponent<Character>() : ((Component)val2.collider).GetComponent<Character>());"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 364,
+      "text": "if (!((Object)(object)val3 == (Object)null) && !((Object)(object)val3 == (Object)(object)player) && !(val2.distance >= num2))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 381,
+      "text": "Character val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 382,
+      "text": "if (value.IsPressed() && ((Component)tameable).TryGetComponent<Character>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 393,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 394,
+      "text": "if ((Object)(object)localPlayer == (Object)null || !TakeInput(localPlayer))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 403,
+      "text": "Character val = HoveringCreature.Invoke(localPlayer);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 414,
+      "text": "((Character)localPlayer).Message((MessageType)2, val.GetHoverName() + \" \" + (flag ? \"protected\" : \"not protected\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 464,
+      "text": "private static bool KilledWithButcherKnife(Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 466,
+      "text": "HitData obj = LastHit.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 467,
+      "text": "Character obj2 = ((obj != null) ? obj.GetAttacker() : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 468,
+      "text": "Humanoid val = (Humanoid)(object)((obj2 is Humanoid) ? obj2 : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 469,
+      "text": "if (val != null && ((Character)val).IsPlayer())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 11,
+      "text": "[HarmonyPatch(typeof(Character), \"CheckDeath\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 12,
+      "text": "private static bool Character_CheckDeath_Prefix(Character __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 18,
+      "text": "[HarmonyPatch(typeof(Character), \"ApplyDamage\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 19,
+      "text": "private static bool Character_ApplyDamage_Prefix(Character __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 28,
+      "text": "return !Protection.IsDowned(((Component)__instance).GetComponent<Character>());"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 35,
+      "text": "if (__result && Protection.IsDowned(((Component)__instance).GetComponent<Character>()))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 61,
+      "text": "[HarmonyPatch(typeof(Character), \"GetHoverText\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 62,
+      "text": "private static void Character_GetHoverText_Postfix(Character __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 75,
+      "text": "[HarmonyPatch(typeof(Player), \"FindHoverObject\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 76,
+      "text": "private static void Player_FindHoverObject_Postfix(Player __instance, ref Character hoverCreature)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 84,
+      "text": "typeof(Character),"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 85,
+      "text": "typeof(Character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 87,
+      "text": "private static void BaseAI_IsEnemy_Postfix(Character a, Character b, ref bool __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 89,
+      "text": "if (!__result && Plugin.tamesFightOwnKind.Value && (Object)(object)a != (Object)null && (Object)(object)b != (Object)null && (Object)(object)a != (Object)(object)b && a.IsTamed() != b.IsTamed() && !a.IsPlayer() && !b.IsPlayer())"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 195,
+      "text": "showTamingTimer = ConfigSync(\"2 - Timers\", \"Show Taming Timer\", value: true, new ConfigDescription(\"Show how long a creature you are taming has left, counting any taming boost from players nearby. The timer is marked paused while the creature is hungry or frightened, since taming stops then.\", (AcceptableValueBase)null, Array.Empty<object>()), sync"
+    },
+    {
+      "file": "csharp/BetterTames/Plugin.cs",
+      "line": 253,
+      "text": "chestRange = ConfigSync(\"9 - Feeding\", \"Chest Range\", 10f, new ConfigDescription(\"How far, in meters, a creature reaches for a chest. It eats in place and never walks to it. Only chests a player built count, not dungeon or other world loot.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(2f, 30f), Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 16,
+      "text": "private static readonly FieldRef<Humanoid, EffectList> ConsumeEffects = AccessTools.FieldRefAccess<Humanoid, EffectList>(\"m_consumeItemEffects\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 40,
+      "text": "Character val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 42,
+      "text": "if (!((Component)monsterAI).TryGetComponent<Character>(ref val) || !((Component)monsterAI).TryGetComponent<Tameable>(ref val2) || !(val.IsTamed() ? Plugin.tamesEatFromChests.Value : Plugin.wildEatFromChests.Value))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 66,
+      "text": "else if (!(Vector3.Distance(((Component)val3).transform.position, position) > value) && IsPlayerChest(val3, out chestView) && chestView.IsOwner())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 77,
+      "text": "Humanoid val5 = (Humanoid)(object)((val is Humanoid) ? val : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 93,
+      "text": "private static bool IsPlayerChest(Container chest, out ZNetView chestView)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/TimerPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Character), \"GetHoverText\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/TimerPatches.cs",
+      "line": 10,
+      "text": "private static void Character_GetHoverText_Postfix(Character __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Character, ZNetView> NView = AccessTools.FieldRefAccess<Character, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 13,
+      "text": "private static readonly List<Player> NearbyPlayers = new List<Player>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 17,
+      "text": "public static string AddTo(Character character, string hoverText)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 19,
+      "text": "ZNetView val = NView.Invoke(character);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 26,
+      "text": "Add(Taming(character, zDO));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 27,
+      "text": "Add(Breeding(character, zDO));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 28,
+      "text": "Add(Growth(character, zDO));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 29,
+      "text": "Add(BetterTames.Scripts.Protection.Protection.HoverLine(character, zDO));"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 37,
+      "text": "return character.GetHoverName() + \"\\n\" + text;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 55,
+      "text": "private static string? Taming(Character character, ZDO zdo)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 57,
+      "text": "if (!Plugin.showTamingTimer.Value || character.IsTamed())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 61,
+      "text": "Tameable component = ((Component)character).GetComponent<Tameable>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 72,
+      "text": "BaseAI baseAI = character.GetBaseAI();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 84,
+      "text": "NearbyPlayers.Clear();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 85,
+      "text": "Player.GetPlayersInRange(((Component)tameable).transform.position, tameable.m_tamingSpeedMultiplierRange, NearbyPlayers);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 86,
+      "text": "foreach (Player nearbyPlayer in NearbyPlayers)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 88,
+      "text": "if (((Character)nearbyPlayer).GetSEMan().HaveStatusAttribute((StatusAttribute)8))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 96,
+      "text": "private static string? Breeding(Character character, ZDO zdo)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 98,
+      "text": "if (!Plugin.showBreedingTimer.Value || !character.IsTamed())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 102,
+      "text": "Procreation component = ((Component)character).GetComponent<Procreation>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 120,
+      "text": "private static string? Growth(Character character, ZDO zdo)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 126,
+      "text": "Growup component = ((Component)character).GetComponent<Growup>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/PortalPatches.cs",
+      "line": 10,
+      "text": "private static void TeleportWorld_Teleport_Postfix(TeleportWorld __instance, Player player)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/PortalPatches.cs",
+      "line": 12,
+      "text": "Portals.OnTeleport(__instance, player);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 13,
+      "text": "public static void OnTeleport(TeleportWorld portal, Player player)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 21,
+      "text": "if (!Plugin.portalTeleport.Value || (Object)(object)player != (Object)(object)Player.m_localPlayer || !((Character)player).IsTeleporting() || !TryGetExit(portal, out var exit))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 26,
+      "text": "foreach (Character item in BetterTames.Scripts.CatchUp.CatchUp.FollowersOf(player.GetPlayerName()))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Portals/Portals.cs",
+      "line": 28,
+      "text": "if (!(Vector3.Distance(((Component)item).transform.position, ((Component)player).transform.position) > value))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "typeof(ZPlayFabSocket).GetField(\"m_remotePlayerId\").SetValue(bufferingSocket, val2.m_remotePlayerId);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(Character), \"SetLevel\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 24,
+      "text": "private static void Character_SetLevel_Prefix(Character __instance, ref int level)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 9,
+      "text": "private static Character? birthingParent;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 13,
+      "text": "birthingParent = ((Component)procreation).GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 21,
+      "text": "public static void AdjustNewbornLevel(Character character, ref int level)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 23,
+      "text": "if (!((Object)(object)birthingParent == (Object)null) && !((Object)(object)character == (Object)(object)birthingParent))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 12,
+      "text": "private static readonly Func<Player, bool> TakeInput = AccessTools.MethodDelegate<Func<Player, bool>>(AccessTools.Method(typeof(Player), \"TakeInput\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 34,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 36,
+      "text": "if (((Component)allCharacter).TryGetComponent<Tameable>(ref tameable))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 49,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 50,
+      "text": "if ((Object)(object)localPlayer == (Object)null || !TakeInput(localPlayer))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 57,
+      "text": "MassCommand(localPlayer, follow: true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 63,
+      "text": "MassCommand(localPlayer, follow: false);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 67,
+      "text": "private static void MassCommand(Player player, bool follow)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 76,
+      "text": "string playerName = player.GetPlayerName();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 80,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 82,
+      "text": "if (!allCharacter.IsTamed() || !((Component)allCharacter).TryGetComponent<Tameable>(ref val) || !val.m_commandable || (Object)(object)((Component)allCharacter).GetComponent<MonsterAI>() == (Object)null || Vector3.Distance(((Component)allCharacter).transform.position, ((Component)player).transform.position) > value)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 90,
+      "text": "if (!(follow ? (text.Length > 0) : (text != playerName)))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 92,
+      "text": "val.Command((Humanoid)(object)player, false);"
+    }
+  ],
+  "Taming/breeding": [
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 10,
+      "text": "private static void Tameable_Awake_Postfix(Tameable __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 17,
+      "text": "private static void Procreation_Awake_Postfix(Procreation __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 23,
+      "text": "[HarmonyPatch(typeof(Growup), \"Start\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/TuningPatches.cs",
+      "line": 24,
+      "text": "private static void Growup_Start_Postfix(Growup __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 8,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 12,
+      "text": "public static void Apply(Tameable tameable)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 14,
+      "text": "tameable.m_tamingTime = (float)Plugin.tamingTime.Value * 60f;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 15,
+      "text": "ZNetView val = TameView.Invoke(tameable);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 19,
+      "text": "if (zDO.GetFloat(ZDOVars.s_tameTimeLeft, tameable.m_tamingTime) > tameable.m_tamingTime)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 21,
+      "text": "zDO.Set(ZDOVars.s_tameTimeLeft, tameable.m_tamingTime);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 26,
+      "text": "public static void Apply(Procreation procreation)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 28,
+      "text": "procreation.m_requiredLovePoints = Plugin.lovePoints.Value;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 29,
+      "text": "procreation.m_maxCreatures = Plugin.maxCreaturesNearby.Value;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 30,
+      "text": "procreation.m_totalCheckRange = Plugin.maxCreaturesRange.Value;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 33,
+      "text": "public static void Apply(Growup growup)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 35,
+      "text": "growup.m_growTime = (float)Plugin.growthTime.Value * 60f;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 45,
+      "text": "Tameable tameable = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 46,
+      "text": "Procreation procreation = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 47,
+      "text": "Growup growup = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 50,
+      "text": "if (((Component)allCharacter).TryGetComponent<Tameable>(ref tameable))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 52,
+      "text": "Apply(tameable);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 54,
+      "text": "if (((Component)allCharacter).TryGetComponent<Procreation>(ref procreation))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 56,
+      "text": "Apply(procreation);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 58,
+      "text": "if (((Component)allCharacter).TryGetComponent<Growup>(ref growup))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Tuning/Tuning.cs",
+      "line": 60,
+      "text": "Apply(growup);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 32,
+      "text": "private static readonly Action<MonsterAI> Sleep = AccessTools.MethodDelegate<Action<MonsterAI>>(AccessTools.Method(typeof(MonsterAI), \"Sleep\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 34,
+      "text": "private static readonly Action<MonsterAI> Wakeup = AccessTools.MethodDelegate<Action<MonsterAI>>(AccessTools.Method(typeof(MonsterAI), \"Wakeup\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 36,
+      "text": "private static readonly Action<BaseAI> StopMoving = AccessTools.MethodDelegate<Action<BaseAI>>(AccessTools.Method(typeof(BaseAI), \"StopMoving\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 38,
+      "text": "private static readonly Action<MonsterAI, bool> SetAlerted = AccessTools.MethodDelegate<Action<MonsterAI, bool>>(AccessTools.Method(typeof(MonsterAI), \"SetAlerted\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 40,
+      "text": "private static readonly Action<BaseAI, ZDOID> SetTargetInfo = AccessTools.MethodDelegate<Action<BaseAI, ZDOID>>(AccessTools.Method(typeof(BaseAI), \"SetTargetInfo\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 42,
+      "text": "private static readonly Func<MonsterAI, bool> IsSleeping = AccessTools.MethodDelegate<Func<MonsterAI, bool>>(AccessTools.Method(typeof(MonsterAI), \"IsSleeping\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 88,
+      "text": "private static void DebugLog(Character character, MonsterAI monsterAI, string when)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 115,
+      "text": "IsSleeping(monsterAI)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 121,
+      "text": "BaseAI baseAI = wild.GetBaseAI();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 122,
+      "text": "if ((Object)(object)baseAI == (Object)null || !baseAI.IsAlerted())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 126,
+      "text": "Tameable val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 127,
+      "text": "if (!((Component)wild).TryGetComponent<Tameable>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 159,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 160,
+      "text": "if (!((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 183,
+      "text": "public static bool UpdateRecovery(MonsterAI monsterAI)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 186,
+      "text": "if (!((Component)monsterAI).TryGetComponent<Character>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 206,
+      "text": "Calm(monsterAI, val);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 207,
+      "text": "if (!IsSleeping(monsterAI))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 209,
+      "text": "Sleep(monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 214,
+      "text": "DebugLog(val, monsterAI, \"recovering\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 222,
+      "text": "Wakeup(monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 235,
+      "text": "private static void Calm(MonsterAI monsterAI, Character character)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 242,
+      "text": "StopMoving((BaseAI)(object)monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 243,
+      "text": "SetAlerted(monsterAI, arg2: false);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 244,
+      "text": "SetTargetInfo((BaseAI)(object)monsterAI, ZDOID.None);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 262,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 263,
+      "text": "if (!character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 278,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 279,
+      "text": "if (hoverText.Length == 0 || !character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 322,
+      "text": "MonsterAI val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 323,
+      "text": "if (!character.IsTamed() || !((Component)character).TryGetComponent<MonsterAI>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 376,
+      "text": "public static bool SwallowsInteract(Tameable tameable)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 382,
+      "text": "if (value.IsPressed() && ((Component)tameable).TryGetComponent<Character>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 404,
+      "text": "MonsterAI val2 = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 405,
+      "text": "if (!((Object)(object)val == (Object)null) && val.IsTamed() && ((Component)val).TryGetComponent<MonsterAI>(ref val2))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 25,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 26,
+      "text": "private static bool Procreation_Procreate_Prefix(Procreation __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 32,
+      "text": "[HarmonyPatch(typeof(Procreation), \"ReadyForProcreation\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 33,
+      "text": "private static void Procreation_ReadyForProcreation_Postfix(Procreation __instance, ref bool __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 42,
+      "text": "[HarmonyPatch(typeof(MonsterAI), \"UpdateSleep\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 43,
+      "text": "private static bool MonsterAI_UpdateSleep_Prefix(MonsterAI __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 49,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Interact\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 50,
+      "text": "private static bool Tameable_Interact_Prefix(Tameable __instance, ref bool __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 82,
+      "text": "[HarmonyPatch(typeof(BaseAI), \"IsEnemy\", new Type[]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/ProtectionPatches.cs",
+      "line": 87,
+      "text": "private static void BaseAI_IsEnemy_Postfix(Character a, Character b, ref bool __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 17,
+      "text": "[HarmonyPatch(typeof(MonsterAI), \"FindClosestConsumableItem\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 18,
+      "text": "private static void MonsterAI_FindClosestConsumableItem_Postfix(MonsterAI __instance, ItemDrop __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<MonsterAI, List<ItemDrop>> ConsumeItems = AccessTools.FieldRefAccess<MonsterAI, List<ItemDrop>>(\"m_consumeItems\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 12,
+      "text": "private static readonly FieldRef<MonsterAI, Action<ItemDrop>> OnConsumedItem = AccessTools.FieldRefAccess<MonsterAI, Action<ItemDrop>>(\"m_onConsumedItem\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 14,
+      "text": "private static readonly FieldRef<BaseAI, ZSyncAnimation> Animator = AccessTools.FieldRefAccess<BaseAI, ZSyncAnimation>(\"m_animator\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 30,
+      "text": "public static void TryEatFromChest(MonsterAI monsterAI)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 41,
+      "text": "Tameable val2 = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 42,
+      "text": "if (!((Component)monsterAI).TryGetComponent<Character>(ref val) || !((Component)monsterAI).TryGetComponent<Tameable>(ref val2) || !(val.IsTamed() ? Plugin.tamesEatFromChests.Value : Plugin.wildEatFromChests.Value))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 46,
+      "text": "ZNetView component = ((Component)monsterAI).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 51,
+      "text": "List<ItemDrop> list = ConsumeItems.Invoke(monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 72,
+      "text": "ZSyncAnimation obj = Animator.Invoke((BaseAI)(object)monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 86,
+      "text": "OnConsumedItem.Invoke(monsterAI)?.Invoke(foodPrefab);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 61,
+      "text": "Tameable component = ((Component)character).GetComponent<Tameable>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 72,
+      "text": "BaseAI baseAI = character.GetBaseAI();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 73,
+      "text": "if (component.IsHungry() || ((Object)(object)baseAI != (Object)null && baseAI.IsAlerted()))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 80,
+      "text": "private static float TamingSpeed(Tameable tameable)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 85,
+      "text": "Player.GetPlayersInRange(((Component)tameable).transform.position, tameable.m_tamingSpeedMultiplierRange, NearbyPlayers);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 90,
+      "text": "num *= tameable.m_tamingBoostMultiplier;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 102,
+      "text": "Procreation component = ((Component)character).GetComponent<Procreation>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Timers/Timers.cs",
+      "line": 126,
+      "text": "Growup component = ((Component)character).GetComponent<Growup>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 10,
+      "text": "private static void Procreation_Procreate_Prefix(Procreation __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 16,
+      "text": "[HarmonyPatch(typeof(Procreation), \"Procreate\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/OffspringPatches.cs",
+      "line": 17,
+      "text": "private static void Procreation_Procreate_Finalizer()"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 11,
+      "text": "public static void BeginProcreate(Procreation procreation)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Breeding/Offspring.cs",
+      "line": 13,
+      "text": "birthingParent = ((Component)procreation).GetComponent<Character>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/CommandPatches.cs",
+      "line": 9,
+      "text": "[HarmonyPatch(typeof(Tameable), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/CommandPatches.cs",
+      "line": 10,
+      "text": "private static void Tameable_Awake_Postfix(Tameable __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 16,
+      "text": "public static void Apply(Tameable tameable)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 18,
+      "text": "if (Plugin.commandAllTames.Value && (Object)(object)((Component)tameable).GetComponent<MonsterAI>() != (Object)null)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 20,
+      "text": "tameable.m_commandable = true;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 23,
+      "text": "GameObject val = (Object.op_Implicit((Object)(object)ZNetScene.instance) ? ZNetScene.instance.GetPrefab(Utils.GetPrefabName(((Component)tameable).gameObject)) : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 24,
+      "text": "Tameable val2 = (Object.op_Implicit((Object)(object)val) ? val.GetComponent<Tameable>() : null);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 27,
+      "text": "tameable.m_commandable = val2.m_commandable;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 33,
+      "text": "Tameable tameable = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 36,
+      "text": "if (((Component)allCharacter).TryGetComponent<Tameable>(ref tameable))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 38,
+      "text": "Apply(tameable);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 79,
+      "text": "Tameable val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 82,
+      "text": "if (!allCharacter.IsTamed() || !((Component)allCharacter).TryGetComponent<Tameable>(ref val) || !val.m_commandable || (Object)(object)((Component)allCharacter).GetComponent<MonsterAI>() == (Object)null || Vector3.Distance(((Component)allCharacter).transform.position, ((Component)player).transform.position) > value)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 11,
+      "text": "private static readonly FieldRef<Tameable, ZNetView> TameView = AccessTools.FieldRefAccess<Tameable, ZNetView>(\"m_nview\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 19,
+      "text": "private static readonly FieldRef<BaseAI, AgentType> PathAgent = AccessTools.FieldRefAccess<BaseAI, AgentType>(\"m_pathAgentType\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 76,
+      "text": "ZNetView val = TameView.Invoke(((Component)item).GetComponent<Tameable>());"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 105,
+      "text": "Tameable val = default;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 108,
+      "text": "if (allCharacter.IsTamed() && ((Component)allCharacter).TryGetComponent<Tameable>(ref val))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 142,
+      "text": "BaseAI baseAI = character.GetBaseAI();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 143,
+      "text": "if ((Object)(object)baseAI == (Object)null)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 147,
+      "text": "AgentType val = PathAgent.Invoke(baseAI);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 927,
+      "text": "\"type\": \"System.Action\\u00601\\u003CMonsterAI\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 934,
+      "text": "\"type\": \"System.Action\\u00601\\u003CMonsterAI\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 941,
+      "text": "\"type\": \"System.Action\\u00601\\u003CBaseAI\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 948,
+      "text": "\"type\": \"System.Action\\u00602\\u003CMonsterAI,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 955,
+      "text": "\"type\": \"System.Action\\u00602\\u003CBaseAI,ZDOID\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 962,
+      "text": "\"type\": \"System.Func\\u00602\\u003CMonsterAI,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1203,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1210,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Action\\u00601\\u003CItemDrop\\u003E\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1217,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CBaseAI,ZSyncAnimation\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1438,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1466,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CBaseAI,Pathfinding/AgentType\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1643,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1709,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CTameable,ZNetView\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5328,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Breeding.Offspring::BeginProcreate(Procreation)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5333,
+      "text": "\"name\": \"procreation\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5334,
+      "text": "\"type\": \"Procreation\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5375,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Breeding.OffspringPatches::Procreation_Procreate_Prefix(Procreation)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5381,
+      "text": "\"type\": \"Procreation\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5394,
+      "text": "\"Procreation\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5407,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Breeding.OffspringPatches::Procreation_Procreate_Finalizer()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5421,
+      "text": "\"Procreation\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5481,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Protection.Protection::DebugLog(Character,MonsterAI,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5490,
+      "text": "\"name\": \"monsterAI\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5491,
+      "text": "\"type\": \"MonsterAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5562,
+      "text": "\"signature\": \"System.Boolean BetterTames.Scripts.Protection.Protection::UpdateRecovery(MonsterAI)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5567,
+      "text": "\"name\": \"monsterAI\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5568,
+      "text": "\"type\": \"MonsterAI\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5578,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Protection.Protection::Calm(MonsterAI,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5583,
+      "text": "\"name\": \"monsterAI\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5584,
+      "text": "\"type\": \"MonsterAI\""
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 30,
+      "text": "private static readonly Func<Humanoid, ItemData> GetCurrentWeapon = AccessTools.MethodDelegate<Func<Humanoid, ItemData>>(AccessTools.Method(typeof(Humanoid), \"GetCurrentWeapon\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 10,
+      "text": "[HarmonyPatch(typeof(Container), \"Awake\")]"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 11,
+      "text": "private static void Container_Awake_Postfix(Container __instance)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/FeedingPatches.cs",
+      "line": 18,
+      "text": "private static void MonsterAI_FindClosestConsumableItem_Postfix(MonsterAI __instance, ItemDrop __result)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 10,
+      "text": "private static readonly FieldRef<MonsterAI, List<ItemDrop>> ConsumeItems = AccessTools.FieldRefAccess<MonsterAI, List<ItemDrop>>(\"m_consumeItems\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 12,
+      "text": "private static readonly FieldRef<MonsterAI, Action<ItemDrop>> OnConsumedItem = AccessTools.FieldRefAccess<MonsterAI, Action<ItemDrop>>(\"m_onConsumedItem\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 18,
+      "text": "private static readonly Func<Container, Inventory> GetInventory = AccessTools.MethodDelegate<Func<Container, Inventory>>(AccessTools.Method(typeof(Container), \"GetInventory\", (Type[])null, (Type[])null), (object)null, true);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 20,
+      "text": "private static readonly List<Container> Chests = new List<Container>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 22,
+      "text": "public static void Register(Container container)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 24,
+      "text": "if (!Chests.Contains(container))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 26,
+      "text": "Chests.Add(container);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 51,
+      "text": "List<ItemDrop> list = ConsumeItems.Invoke(monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 60,
+      "text": "Container val3 = Chests[num];"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 68,
+      "text": "Inventory val4 = GetInventory(val3);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 69,
+      "text": "if (val4 != null && FindFood(val4, list, out ItemData food, out ItemDrop foodPrefab))"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 93,
+      "text": "private static bool IsPlayerChest(Container chest, out ZNetView chestView)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 103,
+      "text": "private static bool FindFood(Inventory inventory, List<ItemDrop> consumeItems, out ItemData food, out ItemDrop foodPrefab)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 107,
+      "text": "foreach (ItemData allItem in inventory.GetAllItems())"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 109,
+      "text": "ItemDrop val = Match(allItem, consumeItems);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 130,
+      "text": "private static ItemDrop? Match(ItemData item, List<ItemDrop> consumeItems)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 132,
+      "text": "foreach (ItemDrop consumeItem in consumeItems)"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 134,
+      "text": "if (consumeItem.m_itemData.m_shared.m_name == item.m_shared.m_name)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 920,
+      "text": "\"type\": \"System.Func\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1203,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1210,
+      "text": "\"type\": \"HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Action\\u00601\\u003CItemDrop\\u003E\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1230,
+      "text": "\"name\": \"GetInventory\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1231,
+      "text": "\"type\": \"System.Func\\u00602\\u003CContainer,Inventory\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1238,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CContainer\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6178,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Feeding.Feeding::Register(Container)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6183,
+      "text": "\"name\": \"container\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6184,
+      "text": "\"type\": \"Container\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6210,
+      "text": "\"signature\": \"System.Boolean BetterTames.Scripts.Feeding.Feeding::IsPlayerChest(Container,ZNetView\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6216,
+      "text": "\"type\": \"Container\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6230,
+      "text": "\"signature\": \"System.Boolean BetterTames.Scripts.Feeding.Feeding::FindFood(Inventory,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E,ItemDrop/ItemData\\u0026,ItemDrop\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6235,
+      "text": "\"name\": \"inventory\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6236,
+      "text": "\"type\": \"Inventory\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6240,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6244,
+      "text": "\"type\": \"ItemDrop/ItemData\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6248,
+      "text": "\"type\": \"ItemDrop\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6258,
+      "text": "\"signature\": \"ItemDrop BetterTames.Scripts.Feeding.Feeding::Match(ItemDrop/ItemData,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6260,
+      "text": "\"returnType\": \"ItemDrop\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6264,
+      "text": "\"type\": \"ItemDrop/ItemData\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6268,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6289,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Feeding.FeedingPatches::Container_Awake_Postfix(Container)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6295,
+      "text": "\"type\": \"Container\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6308,
+      "text": "\"Container\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6321,
+      "text": "\"signature\": \"System.Void BetterTames.Scripts.Feeding.FeedingPatches::MonsterAI_FindClosestConsumableItem_Postfix(MonsterAI,ItemDrop)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6331,
+      "text": "\"type\": \"ItemDrop\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11184,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Func\\u00602\\u003CContainer,Inventory\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11185,
+      "text": "\"!!0 HarmonyLib.AccessTools::MethodDelegate\\u003CSystem.Func\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E\\u003E(System.Reflection.MethodInfo,System.Object,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11232,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop/ItemData\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11233,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11236,
+      "text": "\"!0 System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::get_Item(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11246,
+      "text": "\"!1 System.Func\\u00602\\u003CContainer,Inventory\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11247,
+      "text": "\"!1 System.Func\\u00602\\u003CHumanoid,ItemDrop/ItemData\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11259,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Action\\u00601\\u003CItemDrop\\u003E\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11260,
+      "text": "\"!1\\u0026 HarmonyLib.AccessTools/FieldRef\\u00602\\u003CMonsterAI,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11294,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CMonsterAI,System.Action\\u00601\\u003CItemDrop\\u003E\\u003E(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11295,
+      "text": "\"HarmonyLib.AccessTools/FieldRef\\u00602\\u003C!!0,!!1\\u003E HarmonyLib.AccessTools::FieldRefAccess\\u003CMonsterAI,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E\\u003E(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11305,
+      "text": "\"ItemDrop BetterTames.Scripts.Feeding.Feeding::Match(ItemDrop/ItemData,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11321,
+      "text": "\"System.Boolean BetterTames.Scripts.Feeding.Feeding::FindFood(Inventory,System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E,ItemDrop/ItemData\\u0026,ItemDrop\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11322,
+      "text": "\"System.Boolean BetterTames.Scripts.Feeding.Feeding::IsPlayerChest(Container,ZNetView\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11336,
+      "text": "\"System.Boolean Inventory::RemoveItem(ItemDrop/ItemData,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11385,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop/ItemData\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11386,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CItemDrop\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11389,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::Contains(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11482,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CItemDrop/ItemData\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11483,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11491,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CItemDrop/ItemData\\u003E Inventory::GetAllItems()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11520,
+      "text": "\"System.Int32 System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11521,
+      "text": "\"System.Int32 System.Collections.Generic.List\\u00601\\u003CItemDrop\\u003E::get_Count()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11691,
+      "text": "\"System.Void BetterTames.Scripts.Feeding.Feeding::Register(Container)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11791,
+      "text": "\"System.Void System.Action\\u00601\\u003CItemDrop\\u003E::Invoke(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11824,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11825,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11826,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CContainer\\u003E::RemoveAt(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 12072,
+      "text": "\"GetInventory\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1759,
+      "text": "IL_0035: ldsfld System.Func`2<Humanoid,ItemDrop/ItemData> BetterTames.Scripts.Protection.Protection::GetCurrentWeapon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1761,
+      "text": "IL_003b: callvirt !1 System.Func`2<Humanoid,ItemDrop/ItemData>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1767,
+      "text": "IL_0049: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1768,
+      "text": "IL_004e: ldfld System.Boolean ItemDrop/ItemData/SharedData::m_tamedOnly"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1828,
+      "text": "IL_00c9: call !!0 HarmonyLib.AccessTools::MethodDelegate<System.Func`2<Humanoid,ItemDrop/ItemData>>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1829,
+      "text": "IL_00ce: stsfld System.Func`2<Humanoid,ItemDrop/ItemData> BetterTames.Scripts.Protection.Protection::GetCurrentWeapon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2148,
+      "text": "// System.Void BetterTames.Scripts.Feeding.Feeding::Register(Container)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2150,
+      "text": "IL_0000: ldsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2152,
+      "text": "IL_0006: callvirt System.Boolean System.Collections.Generic.List`1<Container>::Contains(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2154,
+      "text": "IL_0010: ldsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2156,
+      "text": "IL_0016: callvirt System.Void System.Collections.Generic.List`1<Container>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2160,
+      "text": ".locals Character, Tameable, ZNetView, System.Collections.Generic.List`1<ItemDrop>, UnityEngine.Vector3, System.Single, System.Int32, Container, ZNetView, Inventory, ItemDrop/ItemData, ItemDrop, Humanoid, ZDOID"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2194,
+      "text": "IL_006f: ldsfld HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Collections.Generic.List`1<ItemDrop>> BetterTames.Scripts.Feeding.Feeding::ConsumeItems"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2196,
+      "text": "IL_0075: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Collections.Generic.List`1<ItemDrop>>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2202,
+      "text": "IL_0083: callvirt System.Int32 System.Collections.Generic.List`1<ItemDrop>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2212,
+      "text": "IL_00a7: ldsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2213,
+      "text": "IL_00ac: callvirt System.Int32 System.Collections.Generic.List`1<Container>::get_Count()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2218,
+      "text": "IL_00ba: ldsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2220,
+      "text": "IL_00c1: callvirt !0 System.Collections.Generic.List`1<Container>::get_Item(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2226,
+      "text": "IL_00d5: ldsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2228,
+      "text": "IL_00dc: callvirt System.Void System.Collections.Generic.List`1<Container>::RemoveAt(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2239,
+      "text": "IL_0104: call System.Boolean BetterTames.Scripts.Feeding.Feeding::IsPlayerChest(Container,ZNetView&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2244,
+      "text": "IL_011a: ldsfld System.Func`2<Container,Inventory> BetterTames.Scripts.Feeding.Feeding::GetInventory"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2246,
+      "text": "IL_0121: callvirt !1 System.Func`2<Container,Inventory>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2254,
+      "text": "IL_0136: call System.Boolean BetterTames.Scripts.Feeding.Feeding::FindFood(Inventory,System.Collections.Generic.List`1<ItemDrop>,ItemDrop/ItemData&,ItemDrop&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2259,
+      "text": "IL_0145: callvirt System.Boolean Inventory::RemoveItem(ItemDrop/ItemData,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2294,
+      "text": "IL_01b3: ldsfld HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Action`1<ItemDrop>> BetterTames.Scripts.Feeding.Feeding::OnConsumedItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2296,
+      "text": "IL_01b9: callvirt !1& HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Action`1<ItemDrop>>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2303,
+      "text": "IL_01c9: callvirt System.Void System.Action`1<ItemDrop>::Invoke(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2314,
+      "text": "// System.Boolean BetterTames.Scripts.Feeding.Feeding::IsPlayerChest(Container,ZNetView&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2343,
+      "text": "// System.Boolean BetterTames.Scripts.Feeding.Feeding::FindFood(Inventory,System.Collections.Generic.List`1<ItemDrop>,ItemDrop/ItemData&,ItemDrop&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2344,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>, ItemDrop/ItemData, ItemDrop, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2352,
+      "text": "IL_0007: callvirt System.Collections.Generic.List`1<ItemDrop/ItemData> Inventory::GetAllItems()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2353,
+      "text": "IL_000c: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<ItemDrop/ItemData>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2357,
+      "text": "IL_0019: call !0 System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2361,
+      "text": "IL_0021: call ItemDrop BetterTames.Scripts.Feeding.Feeding::Match(ItemDrop/ItemData,System.Collections.Generic.List`1<ItemDrop>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2389,
+      "text": "IL_006e: call System.Boolean System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2393,
+      "text": "IL_007c: constrained. System.Collections.Generic.List`1/Enumerator<ItemDrop/ItemData>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2405,
+      "text": "// ItemDrop BetterTames.Scripts.Feeding.Feeding::Match(ItemDrop/ItemData,System.Collections.Generic.List`1<ItemDrop>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2406,
+      "text": ".locals System.Collections.Generic.List`1/Enumerator<ItemDrop>, ItemDrop, ItemDrop"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2408,
+      "text": "IL_0001: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<ItemDrop>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2412,
+      "text": "IL_000e: call !0 System.Collections.Generic.List`1/Enumerator<ItemDrop>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2415,
+      "text": "IL_0015: ldfld ItemDrop/ItemData ItemDrop::m_itemData"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2416,
+      "text": "IL_001a: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2417,
+      "text": "IL_001f: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2419,
+      "text": "IL_0025: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2420,
+      "text": "IL_002a: ldfld System.String ItemDrop/ItemData/SharedData::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2427,
+      "text": "IL_0042: call System.Boolean System.Collections.Generic.List`1/Enumerator<ItemDrop>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2431,
+      "text": "IL_0050: constrained. System.Collections.Generic.List`1/Enumerator<ItemDrop>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2443,
+      "text": "IL_0005: call HarmonyLib.AccessTools/FieldRef`2<!!0,!!1> HarmonyLib.AccessTools::FieldRefAccess<MonsterAI,System.Collections.Generic.List`1<ItemDrop>>(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2444,
+      "text": "IL_000a: stsfld HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Collections.Generic.List`1<ItemDrop>> BetterTames.Scripts.Feeding.Feeding::ConsumeItems"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2446,
+      "text": "IL_0014: call HarmonyLib.AccessTools/FieldRef`2<!!0,!!1> HarmonyLib.AccessTools::FieldRefAccess<MonsterAI,System.Action`1<ItemDrop>>(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2447,
+      "text": "IL_0019: stsfld HarmonyLib.AccessTools/FieldRef`2<MonsterAI,System.Action`1<ItemDrop>> BetterTames.Scripts.Feeding.Feeding::OnConsumedItem"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2454,
+      "text": "IL_003c: ldtoken Container"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2456,
+      "text": "IL_0046: ldstr \"GetInventory\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2462,
+      "text": "IL_0054: call !!0 HarmonyLib.AccessTools::MethodDelegate<System.Func`2<Container,Inventory>>(System.Reflection.MethodInfo,System.Object,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2463,
+      "text": "IL_0059: stsfld System.Func`2<Container,Inventory> BetterTames.Scripts.Feeding.Feeding::GetInventory"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2464,
+      "text": "IL_005e: newobj System.Void System.Collections.Generic.List`1<Container>::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2465,
+      "text": "IL_0063: stsfld System.Collections.Generic.List`1<Container> BetterTames.Scripts.Feeding.Feeding::Chests"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2468,
+      "text": "// System.Void BetterTames.Scripts.Feeding.FeedingPatches::Container_Awake_Postfix(Container)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2471,
+      "text": "IL_0001: call System.Void BetterTames.Scripts.Feeding.Feeding::Register(Container)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2474,
+      "text": "// System.Void BetterTames.Scripts.Feeding.FeedingPatches::MonsterAI_FindClosestConsumableItem_Postfix(MonsterAI,ItemDrop)"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 97,
+      "text": "Animator componentInChildren = ((Component)character).GetComponentInChildren<Animator>();"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 101,
+      "text": "AnimatorControllerParameter[] parameters = componentInChildren.parameters;"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Protection/Protection.cs",
+      "line": 414,
+      "text": "((Character)localPlayer).Message((MessageType)2, val.GetHoverName() + \" \" + (flag ? \"protected\" : \"not protected\"), 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 14,
+      "text": "private static readonly FieldRef<BaseAI, ZSyncAnimation> Animator = AccessTools.FieldRefAccess<BaseAI, ZSyncAnimation>(\"m_animator\");"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Feeding/Feeding.cs",
+      "line": 72,
+      "text": "ZSyncAnimation obj = Animator.Invoke((BaseAI)(object)monsterAI);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.Commands/Commands.cs",
+      "line": 106,
+      "text": "((Character)player).Message((MessageType)2, text2, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/BetterTames.Scripts.CatchUp/CatchUp.cs",
+      "line": 100,
+      "text": "((Character)player).Message((MessageType)2, text, 0, (Sprite)null, false);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1216,
+      "text": "\"name\": \"Animator\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11203,
+      "text": "\"!!0 UnityEngine.Component::GetComponentInChildren\\u003CUnityEngine.Animator\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11410,
+      "text": "\"System.Boolean UnityEngine.Animator::GetBool(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11578,
+      "text": "\"System.Single UnityEngine.Animator::GetFloat(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11633,
+      "text": "\"System.String UnityEngine.AnimatorControllerParameter::get_name()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11707,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 11921,
+      "text": "\"UnityEngine.AnimatorControllerParameter[] UnityEngine.Animator::get_parameters()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 12104,
+      "text": "\"m_animator\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 761,
+      "text": ".locals UnityEngine.Animator, System.Boolean, UnityEngine.AnimatorControllerParameter[], System.Int32"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 767,
+      "text": "IL_0011: callvirt !!0 UnityEngine.Component::GetComponentInChildren<UnityEngine.Animator>()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 776,
+      "text": "IL_0026: callvirt UnityEngine.AnimatorControllerParameter[] UnityEngine.Animator::get_parameters()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 783,
+      "text": "IL_0035: ldelem.any UnityEngine.AnimatorControllerParameter"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 784,
+      "text": "IL_003a: callvirt System.String UnityEngine.AnimatorControllerParameter::get_name()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 846,
+      "text": "IL_00ed: callvirt System.Single UnityEngine.Animator::GetFloat(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 858,
+      "text": "IL_0115: callvirt System.Boolean UnityEngine.Animator::GetBool(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1654,
+      "text": "IL_00f6: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2261,
+      "text": "IL_014b: ldsfld HarmonyLib.AccessTools/FieldRef`2<BaseAI,ZSyncAnimation> BetterTames.Scripts.Feeding.Feeding::Animator"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2448,
+      "text": "IL_001e: ldstr \"m_animator\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2450,
+      "text": "IL_0028: stsfld HarmonyLib.AccessTools/FieldRef`2<BaseAI,ZSyncAnimation> BetterTames.Scripts.Feeding.Feeding::Animator"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2962,
+      "text": "IL_008d: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3543,
+      "text": "IL_0199: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

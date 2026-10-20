@@ -1,0 +1,20 @@
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.RepresentationModel;
+
+[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(0)]
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+internal sealed class _003C49dbd2d1_002Df836_002D48c2_002Db06c_002D61ff70163263_003EYamlNodeIdentityEqualityComparer : IEqualityComparer<_003C9bd7dc0e_002Da92c_002D42b1_002Db9bf_002D8bdf32b007ce_003EYamlNode>
+{
+	public bool Equals([_003Cbd4e6ae6_002Dd13b_002D434d_002D986e_002Df512108ab738_003EAllowNull] _003C9bd7dc0e_002Da92c_002D42b1_002Db9bf_002D8bdf32b007ce_003EYamlNode x, [_003Cbd4e6ae6_002Dd13b_002D434d_002D986e_002Df512108ab738_003EAllowNull] _003C9bd7dc0e_002Da92c_002D42b1_002Db9bf_002D8bdf32b007ce_003EYamlNode y)
+	{
+		return x == y;
+	}
+
+	public int GetHashCode(_003C9bd7dc0e_002Da92c_002D42b1_002Db9bf_002D8bdf32b007ce_003EYamlNode obj)
+	{
+		return obj.GetHashCode();
+	}
+}

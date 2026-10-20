@@ -1,0 +1,17 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 6967988756625867017
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 6339088040716100688
+  },
+  "m_Name": "",
+  "m_syncPosition": 1,
+  "m_syncRotation": 1,
+  "m_syncScale": 0,
+  "m_syncBodyVelocity": 0,
+  "m_characterParentSync": 0
+}

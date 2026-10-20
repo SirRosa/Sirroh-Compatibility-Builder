@@ -1,0 +1,60 @@
+{
+  "m_Name": "quickoutline",
+  "m_PreloadTable": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -6090589401790733240
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1799155862265806252
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -8059422131994640245
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": -707507822120624319
+    }
+  ],
+  "m_Container": [
+    [
+      "assets/materials/outlinefill.mat",
+      {
+        "preloadIndex": 2,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -707507822120624319
+        }
+      }
+    ],
+    [
+      "assets/materials/outlinemask.mat",
+      {
+        "preloadIndex": 0,
+        "preloadSize": 2,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": -6090589401790733240
+        }
+      }
+    ]
+  ],
+  "m_MainAsset": {
+    "preloadIndex": 0,
+    "preloadSize": 0,
+    "asset": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "m_RuntimeCompatibility": 1,
+  "m_AssetBundleName": "quickoutline",
+  "m_Dependencies": [],
+  "m_IsStreamedSceneAssetBundle": false,
+  "m_ExplicitDataLayout": 0,
+  "m_PathFlags": 7,
+  "m_SceneHashes": []
+}

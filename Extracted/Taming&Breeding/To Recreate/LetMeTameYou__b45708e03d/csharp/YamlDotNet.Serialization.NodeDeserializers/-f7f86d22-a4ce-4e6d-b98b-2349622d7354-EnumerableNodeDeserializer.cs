@@ -1,0 +1,33 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using YamlDotNet.Core;
+
+namespace YamlDotNet.Serialization.NodeDeserializers;
+
+internal sealed class _003Cf7f86d22_002Da4ce_002D4e6d_002Db98b_002D2349622d7354_003EEnumerableNodeDeserializer : _003Cb785578c_002Db96c_002D492b_002D85eb_002Da7a6a41c8875_003EINodeDeserializer
+{
+	[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+	public bool Deserialize(_003C7c152f22_002D242a_002D414b_002D85f1_002D679cb123b4c6_003EIParser parser, Type expectedType, [_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(new byte[] { 1, 1, 1, 2 })] Func<_003C7c152f22_002D242a_002D414b_002D85f1_002D679cb123b4c6_003EIParser, Type, object> nestedObjectDeserializer, [_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)] out object value, _003Ccf1bb9c3_002D9707_002D4afa_002Daa6b_002D02a0a9430a5f_003EObjectDeserializer rootDeserializer)
+	{
+		Type type;
+		if (expectedType == typeof(IEnumerable))
+		{
+			type = typeof(object);
+		}
+		else
+		{
+			Type implementationOfOpenGenericInterface = expectedType.GetImplementationOfOpenGenericInterface(typeof(IEnumerable<>));
+			if (implementationOfOpenGenericInterface != expectedType)
+			{
+				value = null;
+				return false;
+			}
+			type = implementationOfOpenGenericInterface.GetGenericArguments()[0];
+		}
+		Type arg = typeof(List<>).MakeGenericType(type);
+		value = nestedObjectDeserializer(parser, arg);
+		return true;
+	}
+}

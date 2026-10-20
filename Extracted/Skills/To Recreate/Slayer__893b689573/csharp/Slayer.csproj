@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Slayer</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Slayer.Assets.krom_no_bg.png" />
+    <EmbeddedResource Include="Slayer.Assets.krom_no_bg.png" LogicalName="Slayer.Assets.krom_no_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="assembly_valheim" />
+    <Reference Include="0Harmony" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="Jotunn" />
+  </ItemGroup>
+</Project>

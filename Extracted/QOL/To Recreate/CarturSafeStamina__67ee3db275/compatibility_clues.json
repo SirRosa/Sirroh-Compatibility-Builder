@@ -1,0 +1,1447 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 10,
+      "text": "[BepInPlugin(\"com.jekkle.valheim.cartursafestamina\", \"Cartur's Safe Stamina\", \"1.0.13\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 11,
+      "text": "public class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 49,
+      "text": "SafeRadius = ((BaseUnityPlugin)this).Config.Bind<float>(\"General\", \"SafeRadius\", 25f, \"No stamina cost for sprint/jump/build/swim/attacks/sneak when no enemy is within this many meters.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 50,
+      "text": "AffectSprint = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSprint\", true, \"Free sprint stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 51,
+      "text": "AffectJump = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectJump\", true, \"Free jump stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 52,
+      "text": "AffectBuild = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectBuild\", true, \"Free build/repair/remove stamina when safe. Covers every build tool, so planting with the cultivator and levelling with the hoe are free too.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 53,
+      "text": "AffectSwim = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSwim\", true, \"Free swim stamina when safe. Note this also removes the drowning risk while safe, since drowning only starts once stamina is empty.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 54,
+      "text": "AffectAttacks = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectAttacks\", true, \"Free attack stamina when safe - chopping wood, mining, and weapon swings all pay through the same cost.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 55,
+      "text": "AffectSneak = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSneak\", true, \"Free sneak/crouch stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 56,
+      "text": "AffectEncumbered = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectEncumbered\", false, \"Over the weight limit and safe: walking costs no stamina and stamina refills. Off by default, so being over-loaded costs you as in vanilla.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 57,
+      "text": "IgnoredCreatures = ((BaseUnityPlugin)this).Config.Bind<string>(\"General\", \"IgnoredCreatures\", \"\", \"Comma-separated creatures that never count as an enemy nearby, by prefab name or by the name shown in game (e.g. T.W.I.G). For modded creatures that are hostile by faction but never fight.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 59,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)\"Cartur's Safe Stamina 1.0.13 loaded.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 195,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 200,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 866,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 867,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 904,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 20,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 28,
+      "text": "IL_0025: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 36,
+      "text": "IL_0045: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 44,
+      "text": "IL_0065: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 52,
+      "text": "IL_0085: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 60,
+      "text": "IL_00a5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 68,
+      "text": "IL_00c5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 76,
+      "text": "IL_00e5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0105: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 98,
+      "text": "IL_0143: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 278,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedBracket.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateStats\", new Type[] { typeof(float) })]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetAttackStamina.cs",
+      "line": 6,
+      "text": "[HarmonyPatch(typeof(Attack), \"GetAttackStamina\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SwimStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifySwimStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedDrain.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"UseStamina\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 58,
+      "text": "Harmony.CreateAndPatchAll(typeof(Plugin).Assembly, \"com.jekkle.valheim.cartursafestamina\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_JumpStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifyJumpStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateStats\", new Type[] { typeof(float) })]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SneakStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifySneakStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_RunStaminaDrain.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifyRunStaminaDrain\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetBuildStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"GetBuildStamina\")]"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 341,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 361,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 381,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 401,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 421,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 441,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 461,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 484,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 515,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 868,
+      "text": "\"HarmonyLib.Harmony HarmonyLib.Harmony::CreateAndPatchAll(System.Reflection.Assembly,System.String)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 95,
+      "text": "IL_013c: call HarmonyLib.Harmony HarmonyLib.Harmony::CreateAndPatchAll(System.Reflection.Assembly,System.String)"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 19,
+      "text": "public static ConfigEntry<float> SafeRadius;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 21,
+      "text": "public static ConfigEntry<bool> AffectSprint;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 23,
+      "text": "public static ConfigEntry<bool> AffectJump;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 25,
+      "text": "public static ConfigEntry<bool> AffectBuild;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 27,
+      "text": "public static ConfigEntry<bool> AffectSwim;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 29,
+      "text": "public static ConfigEntry<bool> AffectAttacks;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 31,
+      "text": "public static ConfigEntry<bool> AffectSneak;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 33,
+      "text": "public static ConfigEntry<bool> AffectEncumbered;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 35,
+      "text": "public static ConfigEntry<string> IgnoredCreatures;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 49,
+      "text": "SafeRadius = ((BaseUnityPlugin)this).Config.Bind<float>(\"General\", \"SafeRadius\", 25f, \"No stamina cost for sprint/jump/build/swim/attacks/sneak when no enemy is within this many meters.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 50,
+      "text": "AffectSprint = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSprint\", true, \"Free sprint stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 51,
+      "text": "AffectJump = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectJump\", true, \"Free jump stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 52,
+      "text": "AffectBuild = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectBuild\", true, \"Free build/repair/remove stamina when safe. Covers every build tool, so planting with the cultivator and levelling with the hoe are free too.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 53,
+      "text": "AffectSwim = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSwim\", true, \"Free swim stamina when safe. Note this also removes the drowning risk while safe, since drowning only starts once stamina is empty.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 54,
+      "text": "AffectAttacks = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectAttacks\", true, \"Free attack stamina when safe - chopping wood, mining, and weapon swings all pay through the same cost.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 55,
+      "text": "AffectSneak = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectSneak\", true, \"Free sneak/crouch stamina when safe.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 56,
+      "text": "AffectEncumbered = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"AffectEncumbered\", false, \"Over the weight limit and safe: walking costs no stamina and stamina refills. Off by default, so being over-loaded costs you as in vanilla.\");"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 57,
+      "text": "IgnoredCreatures = ((BaseUnityPlugin)this).Config.Bind<string>(\"General\", \"IgnoredCreatures\", \"\", \"Comma-separated creatures that never count as an enemy nearby, by prefab name or by the name shown in game (e.g. T.W.I.G). For modded creatures that are hostile by faction but never fight.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 234,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 241,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 248,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 255,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 262,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 269,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 276,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 283,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 290,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 859,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 860,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 861,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 863,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 864,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Single\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 865,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.String\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 866,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 20,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 25,
+      "text": "IL_001a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 26,
+      "text": "IL_001f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> CarturSafeStamina.Plugin::SafeRadius"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 28,
+      "text": "IL_0025: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 33,
+      "text": "IL_003a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 34,
+      "text": "IL_003f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSprint"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 36,
+      "text": "IL_0045: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 41,
+      "text": "IL_005a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 42,
+      "text": "IL_005f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectJump"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 44,
+      "text": "IL_0065: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 49,
+      "text": "IL_007a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 50,
+      "text": "IL_007f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectBuild"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 52,
+      "text": "IL_0085: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 57,
+      "text": "IL_009a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 58,
+      "text": "IL_009f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSwim"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 60,
+      "text": "IL_00a5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 65,
+      "text": "IL_00ba: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 66,
+      "text": "IL_00bf: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectAttacks"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 68,
+      "text": "IL_00c5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 73,
+      "text": "IL_00da: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 74,
+      "text": "IL_00df: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSneak"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 76,
+      "text": "IL_00e5: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 81,
+      "text": "IL_00fa: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 82,
+      "text": "IL_00ff: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectEncumbered"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0105: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 89,
+      "text": "IL_011e: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.String>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 90,
+      "text": "IL_0123: stsfld BepInEx.Configuration.ConfigEntry`1<System.String> CarturSafeStamina.Plugin::IgnoredCreatures"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 139,
+      "text": "IL_0033: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> CarturSafeStamina.Plugin::SafeRadius"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 140,
+      "text": "IL_0038: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 200,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.String> CarturSafeStamina.Plugin::IgnoredCreatures"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 201,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.String>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 296,
+      "text": "IL_0003: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSprint"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 297,
+      "text": "IL_0008: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 312,
+      "text": "IL_0003: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectJump"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 313,
+      "text": "IL_0008: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 325,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectBuild"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 326,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 338,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectAttacks"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 339,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 368,
+      "text": "IL_0003: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSwim"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 369,
+      "text": "IL_0008: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 383,
+      "text": "IL_0003: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSneak"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 384,
+      "text": "IL_0008: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 462,
+      "text": "IL_0008: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectEncumbered"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 463,
+      "text": "IL_000d: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 471,
+      "text": "IL_0023: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectSwim"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 472,
+      "text": "IL_0028: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 480,
+      "text": "IL_003e: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectAttacks"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 481,
+      "text": "IL_0043: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 489,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> CarturSafeStamina.Plugin::AffectEncumbered"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 490,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedBracket.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateStats\", new Type[] { typeof(float) })]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedBracket.cs",
+      "line": 12,
+      "text": "private static void Prefix(Player __instance)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedBracket.cs",
+      "line": 14,
+      "text": "Skip = Plugin.AffectEncumbered.Value && (Object)(object)__instance == (Object)(object)Player.m_localPlayer && ((Character)__instance).IsEncumbered() && Plugin.IsSafe(__instance);"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetAttackStamina.cs",
+      "line": 9,
+      "text": "private static void Postfix(ref float __result, Humanoid ___m_character)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetAttackStamina.cs",
+      "line": 13,
+      "text": "Player val = (Player)(object)((___m_character is Player) ? ___m_character : null);"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetAttackStamina.cs",
+      "line": 14,
+      "text": "if (val != null && !((Object)(object)val != (Object)(object)Player.m_localPlayer) && Plugin.IsSafe(val))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SwimStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifySwimStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SwimStamina.cs",
+      "line": 8,
+      "text": "private static void Postfix(ref float staminaUse, bool minZero, Character ___m_character)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SwimStamina.cs",
+      "line": 10,
+      "text": "if (minZero && Plugin.AffectSwim.Value && Plugin.IsLocalAndSafe(___m_character))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_EncumberedDrain.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"UseStamina\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 62,
+      "text": "public static bool IsLocalAndSafe(Character c)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 64,
+      "text": "Player val = (Player)(object)((c is Player) ? c : null);"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 65,
+      "text": "if (val != null && (Object)(object)val == (Object)(object)Player.m_localPlayer)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 72,
+      "text": "public static bool IsSafe(Player player)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 80,
+      "text": "if ((Object)(object)player == (Object)null)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 92,
+      "text": "Vector3 position = ((Component)player).transform.position;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 93,
+      "text": "foreach (Character allCharacter in Character.GetAllCharacters())"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 95,
+      "text": "if (!((Object)(object)allCharacter == (Object)null) && !((Object)(object)allCharacter == (Object)(object)player) && !allCharacter.IsDead() && BaseAI.IsEnemy((Character)(object)player, allCharacter))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 97,
+      "text": "Vector3 val = ((Component)allCharacter).transform.position - position;"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 98,
+      "text": "if (val.sqrMagnitude <= num && !IsIgnored(allCharacter))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 108,
+      "text": "private static bool IsIgnored(Character c)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_JumpStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifyJumpStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_JumpStamina.cs",
+      "line": 8,
+      "text": "private static void Postfix(ref float staminaUse, bool minZero, Character ___m_character)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_JumpStamina.cs",
+      "line": 10,
+      "text": "if (minZero && Plugin.AffectJump.Value && Plugin.IsLocalAndSafe(___m_character))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 7,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdateStats\", new Type[] { typeof(float) })]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 10,
+      "text": "private static void Postfix(Player __instance, float dt, ref float ___m_stamina, float ___m_staminaRegenTimer)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 12,
+      "text": "if (!((Object)(object)__instance != (Object)(object)Player.m_localPlayer) && !(___m_staminaRegenTimer > 0f) && BlockedAndAllowed(__instance) && Plugin.IsSafe(__instance))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 14,
+      "text": "float maxStamina = ((Character)__instance).GetMaxStamina();"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 19,
+      "text": "((Character)__instance).GetSEMan().ModifyStaminaRegen(ref num2);"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 25,
+      "text": "private static bool BlockedAndAllowed(Player p)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 27,
+      "text": "if (((Character)p).IsEncumbered())"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 31,
+      "text": "if (((Character)p).IsSwimming() && !((Character)p).IsOnGround())"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 35,
+      "text": "if (((Character)p).InAttack() || ((Character)p).InDodge())"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_UpdateStats.cs",
+      "line": 39,
+      "text": "return ((Character)p).IsWallRunning();"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SneakStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifySneakStaminaUsage\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SneakStamina.cs",
+      "line": 8,
+      "text": "private static void Postfix(ref float staminaUse, bool minZero, Character ___m_character)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_SneakStamina.cs",
+      "line": 10,
+      "text": "if (minZero && Plugin.AffectSneak.Value && Plugin.IsLocalAndSafe(___m_character))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_RunStaminaDrain.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(SEMan), \"ModifyRunStaminaDrain\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_RunStaminaDrain.cs",
+      "line": 8,
+      "text": "private static void Postfix(ref float drain, bool minZero, Character ___m_character)"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_RunStaminaDrain.cs",
+      "line": 10,
+      "text": "if (minZero && Plugin.AffectSprint.Value && Plugin.IsLocalAndSafe(___m_character))"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetBuildStamina.cs",
+      "line": 5,
+      "text": "[HarmonyPatch(typeof(Player), \"GetBuildStamina\")]"
+    },
+    {
+      "file": "csharp/CarturSafeStamina/Patch_GetBuildStamina.cs",
+      "line": 8,
+      "text": "private static void Postfix(Player __instance, ref float __result)"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 343,
+      "text": "\"SEMan\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 363,
+      "text": "\"SEMan\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 383,
+      "text": "\"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 423,
+      "text": "\"SEMan\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 443,
+      "text": "\"SEMan\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 463,
+      "text": "\"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 486,
+      "text": "\"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 517,
+      "text": "\"Player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 569,
+      "text": "\"signature\": \"System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 575,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 585,
+      "text": "\"signature\": \"System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 590,
+      "text": "\"name\": \"player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 591,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 601,
+      "text": "\"signature\": \"System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 607,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 639,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_RunStaminaDrain::Postfix(System.Single\\u0026,System.Boolean,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 652,
+      "text": "\"name\": \"___m_character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 653,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 663,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_JumpStamina::Postfix(System.Single\\u0026,System.Boolean,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 676,
+      "text": "\"name\": \"___m_character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 677,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 687,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_GetBuildStamina::Postfix(Player,System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 693,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 707,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_GetAttackStamina::Postfix(System.Single\\u0026,Humanoid)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 716,
+      "text": "\"name\": \"___m_character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 717,
+      "text": "\"type\": \"Humanoid\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 727,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_SwimStamina::Postfix(System.Single\\u0026,System.Boolean,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 740,
+      "text": "\"name\": \"___m_character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 741,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 751,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_SneakStamina::Postfix(System.Single\\u0026,System.Boolean,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 764,
+      "text": "\"name\": \"___m_character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 765,
+      "text": "\"type\": \"Character\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 775,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_UpdateStats::Postfix(Player,System.Single,System.Single\\u0026,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 781,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 803,
+      "text": "\"signature\": \"System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 809,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 819,
+      "text": "\"signature\": \"System.Void CarturSafeStamina.Patch_EncumberedBracket::Prefix(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 825,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 862,
+      "text": "\"!0 System.Collections.Generic.List\\u00601/Enumerator\\u003CCharacter\\u003E::get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 870,
+      "text": "\"SEMan Character::GetSEMan()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 871,
+      "text": "\"System.Boolean BaseAI::IsEnemy(Character,Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 872,
+      "text": "\"System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 873,
+      "text": "\"System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 874,
+      "text": "\"System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 875,
+      "text": "\"System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 876,
+      "text": "\"System.Boolean Character::InAttack()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 877,
+      "text": "\"System.Boolean Character::InDodge()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 878,
+      "text": "\"System.Boolean Character::IsDead()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 879,
+      "text": "\"System.Boolean Character::IsEncumbered()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 880,
+      "text": "\"System.Boolean Character::IsOnGround()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 881,
+      "text": "\"System.Boolean Character::IsSwimming()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 882,
+      "text": "\"System.Boolean Character::IsWallRunning()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 885,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601/Enumerator\\u003CCharacter\\u003E::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 889,
+      "text": "\"System.Collections.Generic.List\\u00601/Enumerator\\u003C!0\\u003E System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E::GetEnumerator()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 890,
+      "text": "\"System.Collections.Generic.List\\u00601\\u003CCharacter\\u003E Character::GetAllCharacters()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 894,
+      "text": "\"System.Single Character::GetMaxStamina()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 906,
+      "text": "\"System.Void SEMan::ModifyStaminaRegen(System.Single\\u0026)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 103,
+      "text": "// System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 104,
+      "text": ".locals Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 106,
+      "text": "IL_0001: isinst Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 111,
+      "text": "IL_000b: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 115,
+      "text": "IL_0018: call System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 120,
+      "text": "// System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 121,
+      "text": ".locals System.Single, UnityEngine.Vector3, System.Collections.Generic.List`1/Enumerator<Character>, Character, UnityEngine.Vector3"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 148,
+      "text": "IL_004c: call System.Collections.Generic.List`1<Character> Character::GetAllCharacters()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 149,
+      "text": "IL_0051: callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<Character>::GetEnumerator()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 153,
+      "text": "IL_005b: call !0 System.Collections.Generic.List`1/Enumerator<Character>::get_Current()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 164,
+      "text": "IL_0074: callvirt System.Boolean Character::IsDead()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 168,
+      "text": "IL_007d: call System.Boolean BaseAI::IsEnemy(Character,Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 181,
+      "text": "IL_00a2: call System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 187,
+      "text": "IL_00b3: call System.Boolean System.Collections.Generic.List`1/Enumerator<Character>::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 191,
+      "text": "IL_00be: constrained. System.Collections.Generic.List`1/Enumerator<Character>"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 198,
+      "text": "// System.Boolean CarturSafeStamina.Plugin::IsIgnored(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 266,
+      "text": "IL_00ab: ldfld System.String Character::m_name"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 292,
+      "text": "// System.Void CarturSafeStamina.Patch_RunStaminaDrain::Postfix(System.Single&,System.Boolean,Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 301,
+      "text": "IL_0011: call System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 308,
+      "text": "// System.Void CarturSafeStamina.Patch_JumpStamina::Postfix(System.Single&,System.Boolean,Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 316,
+      "text": "IL_0010: call System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 323,
+      "text": "// System.Void CarturSafeStamina.Patch_GetBuildStamina::Postfix(Player,System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 329,
+      "text": "IL_000d: call System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 336,
+      "text": "// System.Void CarturSafeStamina.Patch_GetAttackStamina::Postfix(System.Single&,Humanoid)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 337,
+      "text": ".locals Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 347,
+      "text": "IL_0017: isinst Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 352,
+      "text": "IL_0021: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 357,
+      "text": "IL_002f: call System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 364,
+      "text": "// System.Void CarturSafeStamina.Patch_SwimStamina::Postfix(System.Single&,System.Boolean,Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 372,
+      "text": "IL_0010: call System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 379,
+      "text": "// System.Void CarturSafeStamina.Patch_SneakStamina::Postfix(System.Single&,System.Boolean,Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 387,
+      "text": "IL_0010: call System.Boolean CarturSafeStamina.Plugin::IsLocalAndSafe(Character)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 394,
+      "text": "// System.Void CarturSafeStamina.Patch_UpdateStats::Postfix(Player,System.Single,System.Single&,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 397,
+      "text": "IL_0001: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 405,
+      "text": "IL_0017: call System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 408,
+      "text": "IL_001f: call System.Boolean CarturSafeStamina.Plugin::IsSafe(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 412,
+      "text": "IL_0028: callvirt System.Single Character::GetMaxStamina()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 420,
+      "text": "IL_0035: ldfld System.Single Player::m_staminaRegen"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 428,
+      "text": "IL_0045: ldfld System.Single Player::m_staminaRegen"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 431,
+      "text": "IL_004c: ldfld System.Single Player::m_staminaRegenTimeMultiplier"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 438,
+      "text": "IL_005b: callvirt SEMan Character::GetSEMan()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 440,
+      "text": "IL_0062: callvirt System.Void SEMan::ModifyStaminaRegen(System.Single&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 457,
+      "text": "// System.Boolean CarturSafeStamina.Patch_UpdateStats::BlockedAndAllowed(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 460,
+      "text": "IL_0001: callvirt System.Boolean Character::IsEncumbered()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 466,
+      "text": "IL_0014: callvirt System.Boolean Character::IsSwimming()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 469,
+      "text": "IL_001c: callvirt System.Boolean Character::IsOnGround()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 475,
+      "text": "IL_002f: callvirt System.Boolean Character::InAttack()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 478,
+      "text": "IL_0037: callvirt System.Boolean Character::InDodge()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 484,
+      "text": "IL_004a: callvirt System.Boolean Character::IsWallRunning()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 487,
+      "text": "// System.Void CarturSafeStamina.Patch_EncumberedBracket::Prefix(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 493,
+      "text": "IL_000d: ldsfld Player Player::m_localPlayer"
+    }
+  ],
+  "Taming/breeding": [
+    {
+      "file": "csharp/CarturSafeStamina/Plugin.cs",
+      "line": 95,
+      "text": "if (!((Object)(object)allCharacter == (Object)null) && !((Object)(object)allCharacter == (Object)(object)player) && !allCharacter.IsDead() && BaseAI.IsEnemy((Character)(object)player, allCharacter))"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 871,
+      "text": "\"System.Boolean BaseAI::IsEnemy(Character,Character)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 168,
+      "text": "IL_007d: call System.Boolean BaseAI::IsEnemy(Character,Character)"
+    }
+  ]
+}

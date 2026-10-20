@@ -1,0 +1,5 @@
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.Serialization;
+
+internal delegate TComponent _003C31eb9eed_002D785d_002D4044_002D9081_002Def6bfa032f83_003EWrapperFactory<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)] TArgument, [_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)] TComponentBase, TComponent>(TComponentBase wrapped, TArgument argument) where TComponent : TComponentBase;

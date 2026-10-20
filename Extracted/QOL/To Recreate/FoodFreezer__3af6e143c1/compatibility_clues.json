@@ -1,0 +1,503 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 11,
+      "text": "[BepInPlugin(\"com.foodfreezer.foodfreezer\", \"FoodFreezer\", \"1.0.0\")]"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 12,
+      "text": "public class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 32,
+      "text": "Enabled = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"Enabled\", true, \"Master toggle for FoodFreezer.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 33,
+      "text": "HearthCheckRadius = ((BaseUnityPlugin)this).Config.Bind<float>(\"General\", \"HearthCheckRadius\", 30f, \"Radius (meters) around the player to search for a hearth.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 34,
+      "text": "RequireLitFire = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"RequireLitFire\", true, \"Only freeze food while the hearth is burning.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 35,
+      "text": "FallbackToRestingBuff = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"FallbackToRestingBuff\", false, \"Also freeze food while the Rested/Resting status effect is active.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 44,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)(\"Patched \" + GeneralExtensions.FullDescription((MethodBase)methodInfo)));"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 46,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)string.Format(\"{0} {1} loaded ({2} UpdateFood overload(s) patched).\", \"FoodFreezer\", \"1.0.0\", array.Length));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 123,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 128,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 379,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 380,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 402,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13,
+      "text": "IL_0021: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 21,
+      "text": "IL_0045: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 29,
+      "text": "IL_0065: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 80,
+      "text": "IL_0100: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 96,
+      "text": "IL_0125: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 206,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 14,
+      "text": "public static ConfigEntry<bool> Enabled;"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 16,
+      "text": "public static ConfigEntry<float> HearthCheckRadius;"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 18,
+      "text": "public static ConfigEntry<bool> RequireLitFire;"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 20,
+      "text": "public static ConfigEntry<bool> FallbackToRestingBuff;"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 32,
+      "text": "Enabled = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"Enabled\", true, \"Master toggle for FoodFreezer.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 33,
+      "text": "HearthCheckRadius = ((BaseUnityPlugin)this).Config.Bind<float>(\"General\", \"HearthCheckRadius\", 30f, \"Radius (meters) around the player to search for a hearth.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 34,
+      "text": "RequireLitFire = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"RequireLitFire\", true, \"Only freeze food while the hearth is burning.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 35,
+      "text": "FallbackToRestingBuff = ((BaseUnityPlugin)this).Config.Bind<bool>(\"General\", \"FallbackToRestingBuff\", false, \"Also freeze food while the Rested/Resting status effect is active.\");"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 141,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 148,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 155,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 162,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 375,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Boolean\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 376,
+      "text": "\"!0 BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 377,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Boolean\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 378,
+      "text": "\"BepInEx.Configuration.ConfigEntry\\u00601\\u003C!!0\\u003E BepInEx.Configuration.ConfigFile::Bind\\u003CSystem.Single\\u003E(System.String,System.String,!!0,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 379,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10,
+      "text": "IL_0016: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11,
+      "text": "IL_001b: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13,
+      "text": "IL_0021: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 18,
+      "text": "IL_003a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Single>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 19,
+      "text": "IL_003f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Single> FoodFreezer.Plugin::HearthCheckRadius"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 21,
+      "text": "IL_0045: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 26,
+      "text": "IL_005a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 27,
+      "text": "IL_005f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::RequireLitFire"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 29,
+      "text": "IL_0065: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 34,
+      "text": "IL_007a: callvirt BepInEx.Configuration.ConfigEntry`1<!!0> BepInEx.Configuration.ConfigFile::Bind<System.Boolean>(System.String,System.String,!!0,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 35,
+      "text": "IL_007f: stsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::FallbackToRestingBuff"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 120,
+      "text": "IL_0018: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 122,
+      "text": "IL_001f: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::Enabled"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 123,
+      "text": "IL_0024: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 135,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::FallbackToRestingBuff"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 136,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 157,
+      "text": "IL_0000: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> FoodFreezer.Plugin::HearthCheckRadius"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 158,
+      "text": "IL_0005: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 166,
+      "text": "IL_001e: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Single> FoodFreezer.Plugin::HearthCheckRadius"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 167,
+      "text": "IL_0023: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Single>::get_Value()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 183,
+      "text": "IL_0049: ldsfld BepInEx.Configuration.ConfigEntry`1<System.Boolean> FoodFreezer.Plugin::RequireLitFire"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 184,
+      "text": "IL_004e: callvirt !0 BepInEx.Configuration.ConfigEntry`1<System.Boolean>::get_Value()"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 33,
+      "text": "HearthCheckRadius = ((BaseUnityPlugin)this).Config.Bind<float>(\"General\", \"HearthCheckRadius\", 30f, \"Radius (meters) around the player to search for a hearth.\");"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 37,
+      "text": "MethodInfo[] array = (from m in typeof(Player).GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 38,
+      "text": "where m.Name == \"UpdateFood\" && m.DeclaringType == typeof(Player) && m.ReturnType == typeof(void)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 49,
+      "text": "private static bool UpdateFoodPrefix(Player __instance)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 51,
+      "text": "if ((Object)(object)__instance == (Object)null || (Object)(object)__instance != (Object)(object)Player.m_localPlayer)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 62,
+      "text": "private static bool ShouldFreeze(Player player)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 66,
+      "text": "SEMan sEMan = ((Character)player).GetSEMan();"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 67,
+      "text": "if (sEMan.HaveStatusEffect(SEMan.s_statusEffectRested) || sEMan.HaveStatusEffect(SEMan.s_statusEffectResting))"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 72,
+      "text": "return IsNearBurningFire(player);"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 75,
+      "text": "private static bool IsNearBurningFire(Player player)"
+    },
+    {
+      "file": "csharp/FoodFreezer/Plugin.cs",
+      "line": 82,
+      "text": "Collider[] array = Physics.OverlapSphere(((Component)player).transform.position, HearthCheckRadius.Value, HearthLayerMask);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 263,
+      "text": "\"signature\": \"System.Boolean FoodFreezer.Plugin::UpdateFoodPrefix(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 269,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 279,
+      "text": "\"signature\": \"System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 284,
+      "text": "\"name\": \"player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 285,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 295,
+      "text": "\"signature\": \"System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 300,
+      "text": "\"name\": \"player\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 301,
+      "text": "\"type\": \"Player\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 381,
+      "text": "\"SEMan Character::GetSEMan()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 383,
+      "text": "\"System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 384,
+      "text": "\"System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 386,
+      "text": "\"System.Boolean SEMan::HaveStatusEffect(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 428,
+      "text": "\"Radius (meters) around the player to search for a hearth.\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17,
+      "text": "IL_0035: ldstr \"Radius (meters) around the player to search for a hearth.\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 40,
+      "text": "IL_0094: ldtoken Player"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 108,
+      "text": "// System.Boolean FoodFreezer.Plugin::UpdateFoodPrefix(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 115,
+      "text": "IL_000a: ldsfld Player Player::m_localPlayer"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 128,
+      "text": "IL_002e: call System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 133,
+      "text": "// System.Boolean FoodFreezer.Plugin::ShouldFreeze(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 134,
+      "text": ".locals SEMan"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 139,
+      "text": "IL_000d: callvirt SEMan Character::GetSEMan()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 142,
+      "text": "IL_0014: ldsfld System.Int32 SEMan::s_statusEffectRested"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 143,
+      "text": "IL_0019: callvirt System.Boolean SEMan::HaveStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 146,
+      "text": "IL_0021: ldsfld System.Int32 SEMan::s_statusEffectResting"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 147,
+      "text": "IL_0026: callvirt System.Boolean SEMan::HaveStatusEffect(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 152,
+      "text": "IL_0030: call System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 155,
+      "text": "// System.Boolean FoodFreezer.Plugin::IsNearBurningFire(Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 246,
+      "text": "IL_0018: ldtoken Player"
+    }
+  ]
+}

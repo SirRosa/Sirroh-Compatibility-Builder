@@ -1,0 +1,4910 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 65,
+      "text": "BaseUnityPlugin val = (BaseUnityPlugin)Chainloader.ManagerObject.GetComponent((Type)source.First((TypeInfo t) => t.IsClass && typeof(BaseUnityPlugin).IsAssignableFrom(t)));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 20,
+      "text": "[BepInPlugin(\"org.bepinex.plugins.blacksmithingexpanded\", \"Blacksmithing Expanded\", \"1.2.4\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 21,
+      "text": "public class BlacksmithingExpanded : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1028,
+      "text": "ConfigEntry<T> val = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1039,
+      "text": "configPath = Path.Combine(Path.GetDirectoryName(((BaseUnityPlugin)this).Config.ConfigFilePath), \"BlacksmithExpItemList.yml\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1078,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)$\"[BlacksmithingExpanded] Received synced whitelist: {whitelistedItems.Count} items\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1087,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)$\"[BlacksmithingExpanded] Received synced blacklist: {blacklistedItems.Count} items\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1100,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)$\"[BlacksmithingExpanded] Initialized successfully. Skill registered: {blacksmithSkill != null}\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1301,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)(\"[BlacksmithingExpanded] YAML not found at \" + configPath + \". Generating default YAML...\"));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1303,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)\"[BlacksmithingExpanded] Default YAML created. Please restart the client.\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1308,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)(\"[BlacksmithingExpanded] YAML filtering system initialized. File: \" + configPath));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1313,
+      "text": "((BaseUnityPlugin)this).Logger.LogError((object)$\"[BlacksmithingExpanded] Failed to initialize YAML filtering: {arg}\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1323,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)\"[BlacksmithingExpanded] YAML filtering disabled\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1345,
+      "text": "((BaseUnityPlugin)this).Logger.LogInfo((object)$\"[BlacksmithingExpanded] Loaded YAML config - Whitelist: {whitelistedItems.Count} items, Blacklist: {blacklistedItems.Count} items\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1348,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)(\"[BlacksmithingExpanded] Whitelisted items: \" + string.Join(\", \", whitelistedItems)));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1352,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)(\"[BlacksmithingExpanded] Blacklisted items: \" + string.Join(\", \", blacklistedItems)));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1357,
+      "text": "((BaseUnityPlugin)this).Logger.LogError((object)(\"[BlacksmithingExpanded] YAML parsing error: \" + ex.Message));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1358,
+      "text": "((BaseUnityPlugin)this).Logger.LogError((object)(\"[BlacksmithingExpanded] Check your YAML syntax in: \" + configPath));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1362,
+      "text": "((BaseUnityPlugin)this).Logger.LogError((object)$\"[BlacksmithingExpanded] Failed to load YAML config: {arg}\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1372,
+      "text": "((BaseUnityPlugin)this).Logger.LogDebug((object)(\"[BlacksmithingExpanded] Created default YAML file at \" + configPath));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1376,
+      "text": "((BaseUnityPlugin)this).Logger.LogError((object)$\"[BlacksmithingExpanded] Failed to create default YAML: {arg}\");"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 330,
+      "text": "private static BaseUnityPlugin? _plugin;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 377,
+      "text": "private static BaseUnityPlugin plugin"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 384,
+      "text": "BaseUnityPlugin? val = _plugin;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 387,
+      "text": "BaseUnityPlugin val2 = (BaseUnityPlugin)Chainloader.ManagerObject.GetComponent((Type)Assembly.GetExecutingAssembly().DefinedTypes.First((TypeInfo t) => t.IsClass && typeof(BaseUnityPlugin).IsAssignableFrom(t)));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3771,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3832,
+      "text": "\"type\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4178,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4183,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34513,
+      "text": "\"signature\": \"BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34515,
+      "text": "\"returnType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79332,
+      "text": "\"BepInEx.BaseUnityPlugin BepInEx.PluginInfo::get_Instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79333,
+      "text": "\"BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79334,
+      "text": "\"BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79347,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79349,
+      "text": "\"BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79350,
+      "text": "\"BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80440,
+      "text": "\"System.String BepInEx.BepInPlugin::get_GUID()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80657,
+      "text": "\"System.Version BepInEx.BepInPlugin::get_Version()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80658,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10084,
+      "text": ".locals System.Collections.Generic.IEnumerable`1<System.Reflection.TypeInfo>, BepInEx.BaseUnityPlugin, System.Reflection.ReflectionTypeLoadException, System.String"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10133,
+      "text": "IL_0098: castclass BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10136,
+      "text": "IL_009f: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10137,
+      "text": "IL_00a4: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10138,
+      "text": "IL_00a9: callvirt System.String BepInEx.BepInPlugin::get_GUID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 10163,
+      "text": "IL_0008: ldtoken BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11648,
+      "text": "IL_0045: callvirt BepInEx.BaseUnityPlugin BepInEx.PluginInfo::get_Instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12844,
+      "text": "// BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12846,
+      "text": "IL_0000: ldsfld BepInEx.BaseUnityPlugin SkillManager.Skill::_plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12864,
+      "text": "IL_0041: castclass BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12866,
+      "text": "IL_0047: stsfld BepInEx.BaseUnityPlugin SkillManager.Skill::_plugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12897,
+      "text": "IL_003d: call BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12898,
+      "text": "IL_0042: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12899,
+      "text": "IL_0047: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12900,
+      "text": "IL_004c: callvirt System.String BepInEx.BepInPlugin::get_GUID()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12910,
+      "text": "IL_0076: call BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12911,
+      "text": "IL_007b: callvirt BepInEx.PluginInfo BepInEx.BaseUnityPlugin::get_Info()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12912,
+      "text": "IL_0080: callvirt BepInEx.BepInPlugin BepInEx.PluginInfo::get_Metadata()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12913,
+      "text": "IL_0085: callvirt System.Version BepInEx.BepInPlugin::get_Version()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12941,
+      "text": "IL_0001: call BepInEx.BaseUnityPlugin SkillManager.Skill::get_plugin()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12942,
+      "text": "IL_0006: callvirt BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13646,
+      "text": "IL_0008: ldtoken BepInEx.BaseUnityPlugin"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13831,
+      "text": "IL_0002: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13862,
+      "text": "IL_0012: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13997,
+      "text": "IL_01de: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14860,
+      "text": "IL_0015: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14871,
+      "text": "IL_003c: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14880,
+      "text": "IL_0056: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14891,
+      "text": "IL_0076: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 14920,
+      "text": "IL_002a: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15035,
+      "text": "IL_017e: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15054,
+      "text": "IL_01c5: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15070,
+      "text": "IL_01fd: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15083,
+      "text": "IL_0228: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15091,
+      "text": "IL_0245: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15102,
+      "text": "IL_0266: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15159,
+      "text": "IL_0015: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15170,
+      "text": "IL_0035: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17928,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 18020,
+      "text": "IL_0050: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 18062,
+      "text": "IL_0050: call BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 512,
+      "text": "yield return new CodeInstruction(OpCodes.Ldsfld, (object)AccessTools.DeclaredField(typeof(ItemInfo), \"checkingForStackableItemData\"));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 513,
+      "text": "yield return new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"CheckItemDataIsStackableFindFree\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 631,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ItemData), \"m_stack\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 632,
+      "text": "FieldInfo fieldInfo2 = AccessTools.DeclaredField(typeof(ItemDrop), \"m_itemData\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 650,
+      "text": "list.Insert(i + 1, new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"ApplyCustomItemDataStackableAutoStack\", (Type[])null, (Type[])null)));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 656,
+      "text": "list.Insert(num + 1, new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"IsStackableItemDrop\", (Type[])null, (Type[])null)));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 672,
+      "text": "MethodInfo itemDeleter = AccessTools.DeclaredMethod(typeof(Inventory), \"RemoveItem\", new Type[1] { typeof(ItemData) }, (Type[])null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 678,
+      "text": "yield return new CodeInstruction(OpCodes.Stsfld, (object)AccessTools.DeclaredField(typeof(ItemInfo), \"currentlyUpgradingItem\"));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 740,
+      "text": "if (instruction.opcode == OpCodes.Stfld && CodeInstructionExtensions.OperandIs(instruction, (MemberInfo)AccessTools.DeclaredField(typeof(ItemData), \"m_dropPrefab\")))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 743,
+      "text": "yield return new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"CopyCustomDataFromUpgradedItem\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 819,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"Save\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"SaveInventoryPrefix\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)n"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 824,
+      "text": "val.Patch((MethodBase)item, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"SavePrefix\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 826,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"AddItem\", new Type[5]"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 833,
+      "text": "}, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"CheckItemDataStackableAddItem\", (Type[])null, (Type[])null)), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ApplyCustomItemDataStackableAddItem\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 834,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"CanAddItem\", new Type[2]"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 838,
+      "text": "}, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"SaveCheckingForStackableItemData\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(typeof(ItemInfo), \"ResetCheckingForStackableItemData\", (Type[])null), (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 839,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"AddItem\", new Type[1] { typeof(ItemData) }, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"SaveCheckingForStackableItemData\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(typeof(ItemInfo), \"ResetCheckingF"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 840,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"FindFreeStackSpace\", (Type[])null, (Type[])null), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"CheckStackableInFindFreeStackMethods\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 841,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(Inventory), \"FindFreeStackItem\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 842,
+      "text": "HarmonyMethod val2 = new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"CheckStackableInFindFreeStackMethods\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 843,
+      "text": "val.Patch((MethodBase)methodInfo, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ResetNewValuesOnStackable\", (Type[])null, (Type[])null)), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ApplyNewValuesOnStackable\", (Type[])null, (Type[])null)), val2, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 844,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(ItemDrop), \"AutoStackItems\", (Type[])null, (Type[])null), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"HandleAutostackableItems\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 845,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(InventoryGui), \"DoCrafting\", (Type[])null, (Type[])null), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"TransferCustomItemDataOnUpgrade\", (Type[])null, (Type[])null)), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"Re"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 850,
+      "text": "val.Patch((MethodBase)item2, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"RegisterForceLoadedTypes\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 852,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Player), \"Load\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"RegisterForceLoadedTypesOnPlayerLoaded\", (Type[])null, (Type[])null), 700, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, "
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 853,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"AddItem\", new Type[10]"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 865,
+      "text": "}, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"RegisterForceLoadedTypesAddItem\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 866,
+      "text": "MethodInfo methodInfo2 = AccessTools.DeclaredMethod(typeof(ItemDrop), \"Awake\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 867,
+      "text": "HarmonyMethod val3 = new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"TrackAwakeningItem\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 868,
+      "text": "val2 = new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ImportCustomDataOnUpgrade\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 869,
+      "text": "val.Patch((MethodBase)methodInfo2, val3, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ItemDropAwake\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null), val2, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 870,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(ItemDrop), \"Awake\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ItemDropAwakeDelayed\", (Type[])null, (Type[])null), 799, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 871,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(ItemData), \"Clone\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ItemDataClonePrefix\", (Type[])null, (Type[])null)), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ItemDataClonePostfix\", (Type[])null, (Type[])null), 500, (string["
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 872,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(ItemData), \"Clone\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"ItemDataClonePostfixDelayed\", (Type[])null, (Type[])null), 499, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (Harmony"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemData.cs",
+      "line": 20,
+      "text": "private static readonly FieldInfo parameterInfoClassImpl = AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 282,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"DoCrafting\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 361,
+      "text": "[HarmonyPatch(typeof(CraftingStation), \"GetLevel\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 423,
+      "text": "[HarmonyPatch(typeof(InventoryGui), \"DoCrafting\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 449,
+      "text": "[HarmonyPatch(typeof(ItemData), \"GetTooltip\", new Type[]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 481,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdatePlacementGhost\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 551,
+      "text": "[HarmonyPatch(typeof(Smelter), \"OnAddOre\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 686,
+      "text": "[HarmonyPatch(typeof(Smelter), \"UpdateSmelter\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 724,
+      "text": "[HarmonyPatch(typeof(Smelter), \"GetDeltaTime\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 763,
+      "text": "[HarmonyPatch(typeof(Attack), \"Start\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 794,
+      "text": "[HarmonyPatch(typeof(ItemDrop), \"Start\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 825,
+      "text": "[HarmonyPatch(typeof(ItemData), \"Clone\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1099,
+      "text": "harmony.PatchAll();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 15,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 80,
+      "text": "Patches patchInfo = PatchProcessor.GetPatchInfo((MethodBase)AccessTools.DeclaredMethod(typeof(ZNet), \"Awake\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 90,
+      "text": "val.PatchAll(item);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 175,
+      "text": "AccessTools.DeclaredField(typeof(ZNet), \"m_connectionStatus\").SetValue(null, (object)(ConnectionStatus)3);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 224,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 248,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 249,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 284,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 285,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 298,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 299,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 26,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 33,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 36,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 73,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 74,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 96,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 99,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 120,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Shutdown\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 123,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 259,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 274,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 290,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 316,
+      "text": "AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\").SetValue(val, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 349,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 350,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 381,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 384,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 397,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 400,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 552,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 640,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 641,
+      "text": "SyncedList val = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 949,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1185,
+      "text": "AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\").SetValue(parameterInfo, type);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 293,
+      "text": "[HarmonyPatch(typeof(Skills), \"IsSkillValid\")]"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 492,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(FejdStartup), \"Awake\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_FejdStartup\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 493,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"GetSkillDef\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_GetSkillDef\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 494,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"CheatRaiseSkill\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_CheatRaiseskill\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 495,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"CheatResetSkill\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_CheatResetSkill\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 496,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Localization), \"LoadCSV\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(LocalizeKey), \"AddLocalizedKeys\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 497,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Terminal), \"InitTerminal\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Terminal_InitTerminal_Prefix\", (Type[])null, (Type[])null)), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Terminal_InitTerminal\", (Type[])null, (Type"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 498,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Localization), \"SetupLanguage\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(LocalizationCache), \"LocalizationPostfix\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 499,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"OnDeath\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_OnDeath_Prefix\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_OnDeath_"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 895,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 932,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1066,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1137,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1157,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1433,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1453,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2137,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3987,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5313,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5390,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5410,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5430,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5458,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5525,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5545,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5565,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5610,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5630,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5650,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29141,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29164,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29377,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29406,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29456,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29487,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29971,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29998,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31137,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31146,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31173,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31182,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31209,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31218,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31241,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31250,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80386,
+      "text": "\"System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80393,
+      "text": "\"System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80743,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80744,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Type)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 582,
+      "text": "IL_0061: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 814,
+      "text": "IL_0051: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 819,
+      "text": "IL_0067: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2003,
+      "text": "IL_003c: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2804,
+      "text": "IL_02a6: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3060,
+      "text": "IL_0045: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3067,
+      "text": "IL_0064: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3346,
+      "text": "IL_002a: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3362,
+      "text": "IL_005a: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3387,
+      "text": "IL_0097: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3468,
+      "text": "IL_0055: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 900,
+      "text": "internal static ConfigEntry<float> cfg_SkillGainFactor;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 902,
+      "text": "internal static ConfigEntry<float> cfg_SkillEffectFactor;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 904,
+      "text": "internal static ConfigEntry<int> cfg_InfusionTierInterval;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 906,
+      "text": "internal static ConfigEntry<float> cfg_ChanceExtraItemAt100;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 908,
+      "text": "internal static ConfigEntry<float> cfg_SmelterSaveOreChanceAt100;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 910,
+      "text": "internal static ConfigEntry<bool> cfg_EnableSmeltingSpeedBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 912,
+      "text": "internal static ConfigEntry<bool> cfg_EnableKilnSpeedBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 914,
+      "text": "internal static ConfigEntry<string> cfg_BlacksmithingStations;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 916,
+      "text": "internal static ConfigEntry<float> cfg_SmeltingSpeedBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 918,
+      "text": "internal static ConfigEntry<float> cfg_KilnSpeedBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 920,
+      "text": "internal static ConfigEntry<float> cfg_InfusionExpireTime;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 922,
+      "text": "internal static ConfigEntry<bool> cfg_ShowInfusionVisualEffect;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 924,
+      "text": "internal static ConfigEntry<bool> cfg_ShowBlacksmithLevelInTooltip;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 926,
+      "text": "internal static ConfigEntry<bool> cfg_ShowInfusionInTooltip;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 928,
+      "text": "internal static ConfigEntry<float> cfg_FirstCraftBonusXP;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 930,
+      "text": "internal static ConfigEntry<float> UpgradeBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 932,
+      "text": "internal static ConfigEntry<bool> cfg_EnableStationLevelBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 934,
+      "text": "internal static ConfigEntry<bool> cfg_UseYamlFiltering;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 936,
+      "text": "internal static ConfigEntry<bool> cfg_LogFilteredItems;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 938,
+      "text": "internal static ConfigEntry<int> cfg_DurabilityTierInterval;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 940,
+      "text": "internal static ConfigEntry<float> cfg_DurabilityBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 942,
+      "text": "internal static ConfigEntry<float> cfg_DurabilityBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 944,
+      "text": "internal static ConfigEntry<bool> cfg_RespectOriginalDurability;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 946,
+      "text": "internal static ConfigEntry<float> cfg_MaxDurabilityCap;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 948,
+      "text": "internal static ConfigEntry<bool> cfg_AllowNonRepairableItems;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 950,
+      "text": "internal static ConfigEntry<bool> cfg_EnableDurabilityBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 952,
+      "text": "internal static ConfigEntry<bool> cfg_EnableDamageBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 954,
+      "text": "internal static ConfigEntry<bool> cfg_EnableArmorBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 956,
+      "text": "internal static ConfigEntry<int> cfg_StatTierInterval;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 958,
+      "text": "internal static ConfigEntry<float> cfg_ArmorBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 960,
+      "text": "internal static ConfigEntry<float> cfg_ArmorBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 962,
+      "text": "internal static ConfigEntry<float> cfg_ArmorCap;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 964,
+      "text": "internal static ConfigEntry<int> cfg_DamageBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 966,
+      "text": "internal static ConfigEntry<float> cfg_StatBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 968,
+      "text": "internal static ConfigEntry<bool> cfg_UsePercentageDamageBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 970,
+      "text": "internal static ConfigEntry<float> cfg_DamagePercentageBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 972,
+      "text": "internal static ConfigEntry<bool> cfg_UsePercentageUpgradeBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 974,
+      "text": "internal static ConfigEntry<float> cfg_StatPercentageBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 976,
+      "text": "internal static ConfigEntry<bool> cfg_EnableElementalBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 978,
+      "text": "internal static ConfigEntry<bool> cfg_AlwaysAddElementalAtMax;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 980,
+      "text": "internal static ConfigEntry<int> cfg_ElementalUnlockLevel;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 982,
+      "text": "internal static ConfigEntry<float> cfg_FireBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 984,
+      "text": "internal static ConfigEntry<float> cfg_FrostBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 986,
+      "text": "internal static ConfigEntry<float> cfg_LightningBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 988,
+      "text": "internal static ConfigEntry<float> cfg_PoisonBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 990,
+      "text": "internal static ConfigEntry<float> cfg_SpiritBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 992,
+      "text": "internal static ConfigEntry<bool> cfg_BoostElementalWeapons;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 994,
+      "text": "internal static ConfigEntry<float> cfg_ElementalWeaponBoostChance;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 996,
+      "text": "internal static ConfigEntry<bool> cfg_UsePercentageElementalBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 998,
+      "text": "internal static ConfigEntry<float> cfg_ElementalPercentageBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1000,
+      "text": "internal static ConfigEntry<bool> cfg_EnableShieldBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1002,
+      "text": "internal static ConfigEntry<float> cfg_TimedBlockBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1004,
+      "text": "internal static ConfigEntry<float> cfg_TimedBlockBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1006,
+      "text": "internal static ConfigEntry<float> cfg_BlockPowerBonusPerTier;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1008,
+      "text": "internal static ConfigEntry<float> cfg_BlockPowerBonusPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1010,
+      "text": "internal static ConfigEntry<bool> cfg_EnableExtraItemBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1012,
+      "text": "internal static ConfigEntry<bool> cfg_EnableOreSaveBonus;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1014,
+      "text": "internal static ConfigEntry<float> cfg_XPPerCraft;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1016,
+      "text": "internal static ConfigEntry<float> cfg_XPPerSmelt;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1018,
+      "text": "internal static ConfigEntry<float> cfg_XPPerRepair;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1020,
+      "text": "internal static ConfigEntry<float> cfg_XPPerUpgrade;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1024,
+      "text": "private ConfigEntry<T> AddConfig<T>(string group, string name, T value, string description, bool sync = true)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1028,
+      "text": "ConfigEntry<T> val = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1029,
+      "text": "SyncedConfigEntry<T> syncedConfigEntry = configSync.AddConfigEntry<T>(val);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1030,
+      "text": "syncedConfigEntry.SynchronizedConfig = sync;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1039,
+      "text": "configPath = Path.Combine(Path.GetDirectoryName(((BaseUnityPlugin)this).Config.ConfigFilePath), \"BlacksmithExpItemList.yml\");"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 7,
+      "text": "public abstract class OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 13,
+      "text": "public abstract ConfigEntryBase BaseConfig { get; }"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 115,
+      "text": "public readonly Dictionary<OwnConfigEntryBase, object?> configValues = new Dictionary<OwnConfigEntryBase, object>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 362,
+      "text": "ZPackage package = ConfigsToPackage(configSync.allConfigs.Select((OwnConfigEntryBase c) => c.BaseConfig), configSync.allCustomValues, entries, partial: false);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 381,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 385,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 387,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 388,
+      "text": "if (ownConfigEntryBase == null || isWritableConfig(ownConfigEntryBase))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 392,
+      "text": "__result = TomlTypeConverter.ConvertToString(ownConfigEntryBase.LocalBaseValue, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 397,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, string value)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 403,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 404,
+      "text": "if (ownConfigEntryBase == null || ownConfigEntryBase.LocalBaseValue == null)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 410,
+      "text": "ownConfigEntryBase.LocalBaseValue = TomlTypeConverter.ConvertToValue(value, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 447,
+      "text": "private readonly HashSet<OwnConfigEntryBase> allConfigs = new HashSet<OwnConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 455,
+      "text": "private OwnConfigEntryBase? lockedConfig = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 545,
+      "text": "public SyncedConfigEntry<T> AddConfigEntry<T>(ConfigEntry<T> configEntry)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 547,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData((ConfigEntryBase)(object)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 548,
+      "text": "SyncedConfigEntry<T> syncedEntry = ownConfigEntryBase as SyncedConfigEntry<T>;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 551,
+      "text": "syncedEntry = new SyncedConfigEntry<T>(configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 552,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 555,
+      "text": "}.Concat(((ConfigEntryBase)configEntry).Description.Tags ?? Array.Empty<object>()).Concat(new SyncedConfigEntry<T>[1] { syncedEntry }).ToArray());"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 556,
+      "text": "configEntry.SettingChanged += (object _, EventArgs _) =>"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 560,
+      "text": "Broadcast(0L, (ConfigEntryBase)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 568,
+      "text": "public SyncedConfigEntry<T> AddLockingConfigEntry<T>(ConfigEntry<T> lockingConfig) where T : IConvertible"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 572,
+      "text": "throw new Exception(\"Cannot initialize locking ConfigEntry twice\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 574,
+      "text": "lockedConfig = AddConfigEntry<T>(lockingConfig);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 579,
+      "text": "return (SyncedConfigEntry<T>)lockedConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 697,
+      "text": "ConfigFile val2 = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 699,
+      "text": "foreach (KeyValuePair<OwnConfigEntryBase, object> configValue in parsedConfigs.configValues)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 707,
+      "text": "val2 = configValue.Key.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 752,
+      "text": "Dictionary<string, OwnConfigEntryBase> dictionary = allConfigs.Where((OwnConfigEntryBase c) => c.SynchronizedConfig).ToDictionary((OwnConfigEntryBase c) => c.BaseConfig.Definition.Section + \"_\" + c.BaseConfig.Definition.Key, (OwnConfigEntryBase c) => c);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 773,
+      "text": "OwnConfigEntryBase value2;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 823,
+      "text": "private static bool isWritableConfig(OwnConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 835,
+      "text": "foreach (OwnConfigEntryBase allConfig in allConfigs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 843,
+      "text": "ConfigFile val = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 845,
+      "text": "foreach (OwnConfigEntryBase item in allConfigs.Where((OwnConfigEntryBase config) => config.LocalBaseValue != null))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 849,
+      "text": "val = item.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 987,
+      "text": "private void Broadcast(long target, params ConfigEntryBase[] configs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1013,
+      "text": "private static OwnConfigEntryBase? configData(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1015,
+      "text": "return config.Description.Tags?.OfType<OwnConfigEntryBase>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1018,
+      "text": "public static SyncedConfigEntry<T>? ConfigData<T>(ConfigEntry<T> config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1020,
+      "text": "return ((ConfigEntryBase)config).Description.Tags?.OfType<SyncedConfigEntry<T>>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1023,
+      "text": "private static T configAttribute<T>(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1028,
+      "text": "private static Type configType(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1038,
+      "text": "private static ZPackage ConfigsToPackage(IEnumerable<ConfigEntryBase>? configs = null, IEnumerable<CustomSyncedValueBase>? customValues = null, IEnumerable<PackageEntry>? packageEntries = null, bool partial = true)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1042,
+      "text": "List<ConfigEntryBase> list = configs?.Where((ConfigEntryBase config) => configData(config).SynchronizedConfig).ToList() ?? new List<ConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1061,
+      "text": "foreach (ConfigEntryBase item3 in list)"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 7,
+      "text": "public class SyncedConfigEntry<T>(ConfigEntry<T> sourceConfig) : OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 9,
+      "text": "public readonly ConfigEntry<T> SourceConfig = sourceConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 11,
+      "text": "public override ConfigEntryBase BaseConfig => (ConfigEntryBase)(object)SourceConfig;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 517,
+      "text": "ConfigEntry<float> skillGain = config(text, \"Skill gain factor\", skill.SkillGainFactor, new ConfigDescription(\"The rate at which you gain experience for the skill.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(0.01f, 5f), new object[1]"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 529,
+      "text": "ConfigEntry<float> skillEffect = config(text, \"Skill effect factor\", skill.SkillEffectFactor, new ConfigDescription(\"The power of the skill, based on the default power.\", (AcceptableValueBase)(object)new AcceptableValueRange<float>(0.01f, 5f), new object[1]"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 541,
+      "text": "ConfigEntry<int> skillLoss = config(text, \"Skill loss\", skill.skillLoss, new ConfigDescription(\"How much experience to lose on death.\", (AcceptableValueBase)(object)new AcceptableValueRange<int>(0, 100), new object[1]"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 712,
+      "text": "private static ConfigEntry<T> config<T>(string group, string name, T value, ConfigDescription description)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 714,
+      "text": "ConfigEntry<T> val = plugin.Config.Bind<T>(group, name, value, description);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 715,
+      "text": "configSync?.GetType().GetMethod(\"AddConfigEntry\").MakeGenericMethod(typeof(T))"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 720,
+      "text": "private static ConfigEntry<T> config<T>(string group, string name, T value, string description)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 724,
+      "text": "return config(group, name, value, new ConfigDescription(description, (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 331,
+      "text": "\"name\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 371,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 378,
+      "text": "\"name\": \"ServerSync.SyncedConfigEntry\\u00601\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 379,
+      "text": "\"baseType\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 393,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 402,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 740,
+      "text": "\"type\": \"System.Collections.Generic.HashSet\\u00601\\u003CServerSync.OwnConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 768,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1088,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Object\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1234,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,BepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1435,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1455,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1542,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1549,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1556,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,ServerSync.OwnConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1577,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1612,
+      "text": "\"type\": \"System.Func\\u00602\\u003CBepInEx.Configuration.ConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1637,
+      "text": "\"type\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1650,
+      "text": "\"name\": \"configEntry\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1651,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1708,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4080,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4087,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4094,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Int32\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4371,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.Single\\u003E\","
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 419,
+      "text": "if (!ZNetView.m_forceDisableInit)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 714,
+      "text": "ZNetView component = ((Component)item).GetComponent<ZNetView>();"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 750,
+      "text": "if (ZNetView.m_forceDisableInit)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemData.cs",
+      "line": 91,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, val, ref list);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemData.cs",
+      "line": 113,
+      "text": "ZRpc.Serialize(new object[1] { value.GetValue(this) }, ref val);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 574,
+      "text": "ZNetView nview = __instance.m_nview;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 667,
+      "text": "__instance.m_nview.InvokeRPC(\"RPC_AddFuel\", Array.Empty<object>());"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 698,
+      "text": "ZNetView nview = __instance.m_nview;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 705,
+      "text": "Dictionary<ZDOID, WorkstationInfusion> dictionary = InfusionsFor(__instance, flag);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 732,
+      "text": "ZNetView nview = __instance.m_nview;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 878,
+      "text": "internal static Dictionary<ZDOID, WorkstationInfusion> smelterInfusions = new Dictionary<ZDOID, WorkstationInfusion>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 880,
+      "text": "internal static Dictionary<ZDOID, WorkstationInfusion> kilnInfusions = new Dictionary<ZDOID, WorkstationInfusion>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 882,
+      "text": "internal static Dictionary<ZDOID, WorkstationInfusion> blastFurnaceInfusions = new Dictionary<ZDOID, WorkstationInfusion>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 884,
+      "text": "private static readonly Dictionary<ZDOID, float> originalBlastFurnaceSpeeds = new Dictionary<ZDOID, float>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 886,
+      "text": "private static readonly Dictionary<ZDOID, float> originalSmelterSpeeds = new Dictionary<ZDOID, float>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 888,
+      "text": "private static readonly Dictionary<ZDOID, float> originalKilnSpeeds = new Dictionary<ZDOID, float>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 890,
+      "text": "private static readonly Dictionary<ZDOID, GameObject> activeGlowEffects = new Dictionary<ZDOID, GameObject>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2046,
+      "text": "private static float GetBaseSpeed(Smelter smelter, ZDOID uid, bool isKiln, bool isBlastFurnace)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2050,
+      "text": "Dictionary<ZDOID, float> dictionary;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2066,
+      "text": "private static Dictionary<ZDOID, WorkstationInfusion> InfusionsFor(Smelter smelter, bool isKiln)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2068,
+      "text": "Dictionary<ZDOID, WorkstationInfusion> result;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2080,
+      "text": "private static void ManageInfusionGlow(Transform workstation, ZDOID zdoid, bool enable)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2097,
+      "text": "if (activeGlowEffects.TryGetValue(zdoid, out var value))"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2103,
+      "text": "activeGlowEffects.Remove(zdoid);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2110,
+      "text": "if (enable && !activeGlowEffects.ContainsKey(zdoid))"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2121,
+      "text": "activeGlowEffects[zdoid] = val;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2123,
+      "text": "else if (!enable && activeGlowEffects.TryGetValue(zdoid, out value2))"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2129,
+      "text": "activeGlowEffects.Remove(zdoid);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 36,
+      "text": "private readonly List<ZRpc> ValidatedClients = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 81,
+      "text": "if (patchInfo != null && patchInfo.Postfixes.Count((Patch p) => p.PatchMethod.DeclaringType == typeof(ConfigSync.RegisterRPCPatch)) > 0)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 152,
+      "text": "private string ErrorServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 157,
+      "text": "private string Error(ZRpc? rpc = null)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 167,
+      "text": "private static VersionCheck[] GetFailedServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 178,
+      "text": "private static void DisconnectClient(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 183,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 188,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg, Action<ZRpc, ZPackage>? original)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 225,
+      "text": "private static bool RPC_PeerInfo(ZRpc rpc, ZNet __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 255,
+      "text": "IDictionary dictionary = (IDictionary)typeof(ZRpc).GetField(\"m_functions\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(peer.m_rpc);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 259,
+      "text": "Action<ZRpc, ZPackage> action = (Action<ZRpc, ZPackage>)obj.GetType().GetField(\"m_action\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(obj);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 260,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)((ZRpc rpc, ZPackage pkg) =>"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 267,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)CheckVersion);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 24,
+      "text": "public static ZRpc? currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 27,
+      "text": "private static void Prefix(ZRpc __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 34,
+      "text": "internal static class RegisterRPCPatch"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 42,
+      "text": "ZRoutedRpc.instance.Register<ZPackage>(configSync2.Name + \" ConfigSync\", (Action<long, ZPackage>)configSync2.RPC_FromOtherClientConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 108,
+      "text": "peer.m_rpc.Register<ZPackage>(configSync.Name + \" ConfigSync\", (Action<ZRpc, ZPackage>)configSync.RPC_FromServerConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 260,
+      "text": "private static void Prefix(ref Dictionary<Assembly, BufferingSocket>? __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 291,
+      "text": "private static void Postfix(Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 599,
+      "text": "private void RPC_FromServerConfigSync(ZRpc rpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 609,
+      "text": "private void RPC_FromOtherClientConfigSync(long sender, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 626,
+      "text": "ZRpc? currentRpc = SnatchCurrentlyHandlingRPC.currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 871,
+      "text": "ZRoutedRpc rpc = ZRoutedRpc.instance;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 949,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1120,
+      "text": "ZRpc.Serialize(new object[1] { value }, ref package);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1187,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, package, ref source);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 897,
+      "text": "\"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 907,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 926,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 946,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 979,
+      "text": "\"type\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1021,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1160,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1259,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1747,
+      "text": "\"type\": \"ZRoutedRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2254,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2311,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2396,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2421,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4294,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4301,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4308,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4315,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4322,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4329,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4336,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,UnityEngine.GameObject\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28660,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28666,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 28680,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29130,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29136,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29153,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29176,
+      "text": "\"signature\": \"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29184,
+      "text": "\"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29202,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29229,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29252,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.IDisposable.Dispose()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29270,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29281,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.Generic.IEnumerator\\u003CSystem.Object\\u003E.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29299,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.Reset()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29317,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29335,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29346,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29429,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Prefix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E\\u0026,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29443,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29468,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Postfix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 29482,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 30992,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 30998,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31008,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31014,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31035,
+      "text": "\"signature\": \"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31041,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31062,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31068,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31078,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31084,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31098,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31104,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31112,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31122,
+      "text": "\"signature\": \"System.Boolean ServerSync.VersionCheck::RPC_PeerInfo(ZRpc,ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31128,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31140,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31402,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 31408,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36221,
+      "text": "\"signature\": \"System.Single BlacksmithingExpanded.BlacksmithingExpanded::GetBaseSpeed(Smelter,ZDOID,System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36231,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36249,
+      "text": "\"signature\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E BlacksmithingExpanded.BlacksmithingExpanded::InfusionsFor(Smelter,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36251,
+      "text": "\"returnType\": \"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36269,
+      "text": "\"signature\": \"System.Void BlacksmithingExpanded.BlacksmithingExpanded::ManageInfusionGlow(UnityEngine.Transform,ZDOID,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36278,
+      "text": "\"name\": \"zdoid\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36279,
+      "text": "\"type\": \"ZDOID\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79157,
+      "text": "\"!!0 UnityEngine.Component::GetComponent\\u003CZNetView\\u003E()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79360,
+      "text": "\"ISocket ZRpc::GetSocket()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79379,
+      "text": "\"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79445,
+      "text": "\"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79525,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79526,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79527,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,System.Single\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79528,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,UnityEngine.GameObject\\u003E::ContainsKey(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79529,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,UnityEngine.GameObject\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79530,
+      "text": "\"System.Boolean System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,UnityEngine.GameObject\\u003E::TryGetValue(!0,!1\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79576,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Contains(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79577,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79883,
+      "text": "\"System.Boolean ZNetView::IsValid()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79937,
+      "text": "\"System.Collections.Generic.Dictionary\\u00602\\u003CZDOID,BlacksmithingExpanded.BlacksmithingExpanded/WorkstationInfusion\\u003E BlacksmithingExpanded.BlacksmithingExpanded::InfusionsFor(Smelter,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80158,
+      "text": "\"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80418,
+      "text": "\"System.Single BlacksmithingExpanded.BlacksmithingExpanded::GetBaseSpeed(Smelter,ZDOID,System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80472,
+      "text": "\"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80474,
+      "text": "\"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80688,
+      "text": "\"System.Void BlacksmithingExpanded.BlacksmithingExpanded::ManageInfusionGlow(UnityEngine.Transform,ZDOID,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80799,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80800,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    }
+  ],
+  "World/prefabs": [
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 447,
+      "text": "GameObject itemPrefab = ObjectDB.instance.GetItemPrefab(food.m_name);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1438,
+      "text": "ObjectDB instance = ObjectDB.instance;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79372,
+      "text": "\"ObjectDB ObjectDB::get_instance()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82168,
+      "text": "\"UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8642,
+      "text": "IL_0019: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 8645,
+      "text": "IL_0024: callvirt UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15332,
+      "text": "IL_0024: call ObjectDB ObjectDB::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15341,
+      "text": "IL_003b: call UnityEngine.GameObject ObjectDB::GetItemPrefab(System.String)"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 443,
+      "text": "private static void RegisterForceLoadedTypesOnPlayerLoaded(Player __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 852,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Player), \"Load\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"RegisterForceLoadedTypesOnPlayerLoaded\", (Type[])null, (Type[])null), 700, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, "
+    },
+    {
+      "file": "csharp/YamlDotNet.Core.Tokens/TagDirective.cs",
+      "line": 28,
+      "text": "throw new ArgumentException(\"Tag handle must start and end with '!' and contain alphanumerical characters only.\", \"handle\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/LookAheadBuffer.cs",
+      "line": 111,
+      "text": "throw new ArgumentOutOfRangeException(\"length\", \"The length must be between 1 and the number of characters in the buffer. Use the Peek() and / or Cache() methods to fill the buffer.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 266,
+      "text": "CharacterAnalyzer<StringLookAheadBuffer> characterAnalyzer = new CharacterAnalyzer<StringLookAheadBuffer>(bufferWrapper.Buffer);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 268,
+      "text": "bool flag4 = characterAnalyzer.IsWhiteBreakOrZero(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 284,
+      "text": "while (!characterAnalyzer.EndOfInput)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 288,
+      "text": "if (characterAnalyzer.Check(\"#,[]{}&*!|>\\\"%@`'\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 292,
+      "text": "flag9 = characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 293,
+      "text": "flag17 |= characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 295,
+      "text": "if (characterAnalyzer.Check(\"?:\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 303,
+      "text": "if (characterAnalyzer.Check('-') & flag4)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 311,
+      "text": "if (characterAnalyzer.Check(\",?[]{}\"))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 315,
+      "text": "if (characterAnalyzer.Check(':'))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 323,
+      "text": "if (characterAnalyzer.Check('#') & flag3)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 328,
+      "text": "flag17 |= characterAnalyzer.Check('\\'');"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 330,
+      "text": "if (!flag16 && !characterAnalyzer.IsPrintable())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 334,
+      "text": "if (characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 338,
+      "text": "if (characterAnalyzer.IsSpace())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 344,
+      "text": "if (characterAnalyzer.Buffer.Position >= characterAnalyzer.Buffer.Length - 1)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 356,
+      "text": "else if (characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 362,
+      "text": "if (characterAnalyzer.Buffer.Position >= characterAnalyzer.Buffer.Length - 1)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 383,
+      "text": "flag3 = characterAnalyzer.IsWhiteBreakOrZero();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 384,
+      "text": "characterAnalyzer.Skip(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 385,
+      "text": "if (!characterAnalyzer.EndOfInput)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 387,
+      "text": "flag4 = characterAnalyzer.IsWhiteBreakOrZero(1);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1148,
+      "text": "private static bool IsSpace(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1150,
+      "text": "return character == ' ';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1153,
+      "text": "private static bool IsBreak(char character, out char breakChar)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1155,
+      "text": "switch (character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1164,
+      "text": "breakChar = character;"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1172,
+      "text": "private static bool IsBlank(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1174,
+      "text": "if (character != ' ')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1176,
+      "text": "return character == '\\t';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1181,
+      "text": "private static bool IsPrintable(char character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1183,
+      "text": "switch (character)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1186,
+      "text": "if (character != '\\u0085' && (character < '\\u00a0' || character > '\\ud7ff'))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1188,
+      "text": "if (character >= '\\ue000')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1190,
+      "text": "return character <= '\\ufffd';"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1655,
+      "text": "CharacterAnalyzer<StringLookAheadBuffer> characterAnalyzer = new CharacterAnalyzer<StringLookAheadBuffer>(bufferWrapper.Buffer);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1656,
+      "text": "if (characterAnalyzer.IsSpace() || characterAnalyzer.IsBreak())"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1663,
+      "text": "if (value.Length == 0 || !characterAnalyzer.IsBreak(value.Length - 1))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1667,
+      "text": "else if (value.Length >= 2 && characterAnalyzer.IsBreak(value.Length - 2))"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1771,
+      "text": "private void WriteBreak(char breakCharacter = '\\n')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1773,
+      "text": "if (breakCharacter == '\\n')"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Emitter.cs",
+      "line": 1779,
+      "text": "output.Write(breakCharacter);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/MergingParser.cs",
+      "line": 205,
+      "text": "throw new SemanticErrorException(@event.Value.Start, @event.Value.End, \"Unrecognized merge key pattern\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/AnchorName.cs",
+      "line": 23,
+      "text": "throw new ArgumentException(\"Anchor cannot be empty or contain disallowed characters: []{},\\nThe value was '\" + value + \"'.\", \"value\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 42,
+      "text": "private readonly CharacterAnalyzer<LookAheadBuffer> analyzer;"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 118,
+      "text": "analyzer = new CharacterAnalyzer<LookAheadBuffer>(new LookAheadBuffer(input, 1024));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 157,
+      "text": "private char ReadCurrentCharacter()"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 374,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning for the next token, found character that cannot start any token.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 458,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 539,
+      "text": "throw new SemanticErrorException(in start, cursor.Mark(), \"While scanning a version directive, did not find preceding <document end>.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 671,
+      "text": "throw new SemanticErrorException(previousAnchor.Start, previousAnchor.End, \"Anchor before sequence entry on same line is not allowed.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 779,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 957,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1038,
+      "text": "throw new SemanticErrorException(in end, cursor.Mark(), \"While scanning a literal block scalar, found extra spaces in first line.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1042,
+      "text": "throw new SemanticErrorException(in end, cursor.Mark(), \"While scanning a literal block scalar, found more spaces in lines above first content line.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1144,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a quoted scalar, found unknown escape character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1194,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a quoted scalar, found invalid Unicode character escape code.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1205,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1218,
+      "text": "builder2.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1378,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1391,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a plain scalar, found a tab character that violate indentation.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1395,
+      "text": "builder2.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1467,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1479,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a directive, found unexpected non-alphabetical character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1503,
+      "text": "throw new SyntaxErrorException(in start, cursor.Mark(), \"While scanning a %YAML directive, did not find expected digit or '.' character.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1550,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1619,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1622,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Scanner.cs",
+      "line": 1626,
+      "text": "builder.Append(ReadCurrentCharacter());"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/CharacterAnalyzer.cs",
+      "line": 7,
+      "text": "internal readonly struct CharacterAnalyzer<TBuffer> where TBuffer : ILookAheadBuffer"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/CharacterAnalyzer.cs",
+      "line": 13,
+      "text": "public CharacterAnalyzer(TBuffer buffer)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/CharacterAnalyzer.cs",
+      "line": 269,
+      "text": "public bool Check(string expectedCharacters, int offset = 0)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/CharacterAnalyzer.cs",
+      "line": 272,
+      "text": "return Polyfills.Contains(expectedCharacters, c);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 146,
+      "text": "throw new SemanticErrorException(token?.Start ?? Mark.Empty, token?.End ?? Mark.Empty, \"Did not find expected <stream-start>.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 189,
+      "text": "token = GetCurrentToken() ?? throw new SemanticErrorException(\"Reached the end of the stream while parsing a document start\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 192,
+      "text": "throw new SemanticErrorException(token.Start, token.End, \"Did not find expected <document start>.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 205,
+      "text": "token = GetCurrentToken() ?? throw new SemanticErrorException(\"Reached the end of the stream while parsing a document start\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 224,
+      "text": "throw new SemanticErrorException(versionDirective.Start, versionDirective.End, \"Found duplicate %YAML directive.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 228,
+      "text": "throw new SemanticErrorException(versionDirective.Start, versionDirective.End, \"Found incompatible YAML document.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 241,
+      "text": "throw new SemanticErrorException(tagDirective.Start, tagDirective.End, \"Found duplicate %TAG directive.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 295,
+      "text": "throw new SemanticErrorException(in start, error.End, error.Value);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 297,
+      "text": "Token token = GetCurrentToken() ?? throw new SemanticErrorException(\"Reached the end of the stream while parsing a node\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 324,
+      "text": "throw new SemanticErrorException(in start3, anchor4.End, \"While parsing a node, found more than one anchor.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 328,
+      "text": "throw new SemanticErrorException(in start4, anchorAlias2.End, \"While parsing a node, did not find expected token.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 338,
+      "text": "throw new SemanticErrorException(error2.Start, error2.End, error2.Value);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 349,
+      "text": "throw new SemanticErrorException(tag3.Start, tag3.End, \"While parsing a node, found undefined tag handle.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 355,
+      "text": "token = GetCurrentToken() ?? throw new SemanticErrorException(\"Reached the end of the stream while parsing a node\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 384,
+      "text": "throw new SemanticErrorException(error3.Start, error3.End, error3.Value);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 392,
+      "text": "throw new SemanticErrorException(currentToken.Start, currentToken.End, \"While parsing a flow mapping, did not find expected ',' or '}'.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 425,
+      "text": "throw new SemanticErrorException(token.Start, token.End, \"While parsing a node, did not find expected node content.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 430,
+      "text": "Token token = GetCurrentToken() ?? throw new SemanticErrorException(\"Reached the end of the stream while parsing a document end\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 442,
+      "text": "throw new SemanticErrorException(in start, in end, \"Did not find expected <document end>.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 479,
+      "text": "throw new SemanticErrorException(token?.Start ?? Mark.Empty, token?.End ?? Mark.Empty, \"While parsing a block collection, did not find expected '-' indicator.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 542,
+      "text": "throw new SemanticErrorException(token?.Start ?? Mark.Empty, token?.End ?? Mark.Empty, \"While parsing a block mapping, did not find expected key.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 562,
+      "text": "throw new SemanticErrorException(in start, error.End, error.Value);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 583,
+      "text": "throw new SemanticErrorException(token?.Start ?? Mark.Empty, token?.End ?? Mark.Empty, \"While parsing a flow sequence, did not find expected ',' or ']'.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/Parser.cs",
+      "line": 664,
+      "text": "throw new SemanticErrorException(token?.Start ?? Mark.Empty, token?.End ?? Mark.Empty, \"While parsing a flow mapping,  did not find expected ',' or '}'.\");"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/SemanticErrorException.cs",
+      "line": 5,
+      "text": "internal class SemanticErrorException : YamlException"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/SemanticErrorException.cs",
+      "line": 7,
+      "text": "public SemanticErrorException(string message)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/SemanticErrorException.cs",
+      "line": 12,
+      "text": "public SemanticErrorException(in Mark start, in Mark end, string message)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Core/SemanticErrorException.cs",
+      "line": 17,
+      "text": "public SemanticErrorException(string message, Exception inner)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 27,
+      "text": "public DamageTypes damages;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 292,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 293,
+      "text": "if (((localPlayer != null) ? ((Humanoid)localPlayer).GetInventory() : null) == null || (Object)(object)__state?.m_item == (Object)null)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 297,
+      "text": "int playerBlacksmithingLevel = GetPlayerBlacksmithingLevel(localPlayer);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 298,
+      "text": "ItemData val = FindMostRecentCraftedItem(localPlayer, __state);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 303,
+      "text": "ApplyCraftingBonuses(val, Math.Max(playerBlacksmithingLevel, 1));"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 309,
+      "text": "float num = HandleCraftingXP(localPlayer, val);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 315,
+      "text": "playerBlacksmithingLevel,"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 322,
+      "text": "float num2 = cfg_ChanceExtraItemAt100.Value * ((float)playerBlacksmithingLevel / 100f);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 326,
+      "text": "((Humanoid)localPlayer).GetInventory().AddItem(val2);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 327,
+      "text": "((Character)localPlayer).Message((MessageType)1, \"Masterwork crafting created an extra item!\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 332,
+      "text": "private static ItemData FindMostRecentCraftedItem(Player player, Recipe recipe)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 334,
+      "text": "Inventory inventory = ((Humanoid)player).GetInventory();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 370,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 371,
+      "text": "if (!((Object)(object)localPlayer == (Object)null))"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 373,
+      "text": "int playerBlacksmithingLevel = GetPlayerBlacksmithingLevel(localPlayer);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 374,
+      "text": "int num = CalculateWorkbenchBonus(__instance.m_name, playerBlacksmithingLevel);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 428,
+      "text": "Player localPlayer = Player.m_localPlayer;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 429,
+      "text": "if (((localPlayer != null) ? ((Humanoid)localPlayer).GetInventory() : null) == null)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 433,
+      "text": "foreach (ItemData allItem in ((Humanoid)localPlayer).GetInventory().GetAllItems())"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 440,
+      "text": "int playerBlacksmithingLevel = GetPlayerBlacksmithingLevel(localPlayer);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 441,
+      "text": "GiveBlacksmithingXP(localPlayer, cfg_XPPerUpgrade.Value);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 442,
+      "text": "ApplyCraftingBonuses(allItem, playerBlacksmithingLevel);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 481,
+      "text": "[HarmonyPatch(typeof(Player), \"UpdatePlacementGhost\")]"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 484,
+      "text": "public static readonly Dictionary<long, Dictionary<string, int>> playerItemQualities = new Dictionary<long, Dictionary<string, int>>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 490,
+      "text": "private static void Postfix(Player __instance)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 499,
+      "text": "private static void CheckForUpgrades(Player player)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 501,
+      "text": "Inventory inventory = ((Humanoid)player).GetInventory();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 506,
+      "text": "long playerID = player.GetPlayerID();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 507,
+      "text": "if (!playerItemQualities.TryGetValue(playerID, out var value))"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 510,
+      "text": "playerItemQualities[playerID] = value;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 526,
+      "text": "GiveBlacksmithingXP(player, cfg_XPPerUpgrade.Value);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 527,
+      "text": "int playerBlacksmithingLevel = GetPlayerBlacksmithingLevel(player);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 528,
+      "text": "Debug.Log((object)$\"[BlacksmithingExpanded] Applying upgrade bonuses at level {playerBlacksmithingLevel}\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 529,
+      "text": "ApplyCraftingBonuses(allItem, playerBlacksmithingLevel);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 554,
+      "text": "private static void Postfix(Smelter __instance, Humanoid user, bool __result)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 568,
+      "text": "Player val = (Player)(object)((user is Player) ? user : null);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 586,
+      "text": "int playerBlacksmithingLevel = GetPlayerBlacksmithingLevel(val);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 592,
+      "text": "int num = playerBlacksmithingLevel / cfg_InfusionTierInterval.Value;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 664,
+      "text": "float num4 = cfg_SmelterSaveOreChanceAt100.Value * ((float)playerBlacksmithingLevel / 100f);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 766,
+      "text": "private static void Prefix(Attack __instance, ItemData weapon, Humanoid character)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 774,
+      "text": "Player val = (Player)(object)((character is Player) ? character : null);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1131,
+      "text": "HashSet<long> connectedPlayerIds = new HashSet<long>();"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1132,
+      "text": "foreach (Player player in Player.GetAllPlayers())"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1134,
+      "text": "connectedPlayerIds.Add(player.GetPlayerID());"
+    }
+  ],
+  "Skills": [
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1495,
+      "text": "((Character)(object)player).RaiseSkill(\"Blacksmithing\", value);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 314,
+      "text": "private readonly SkillDef skillDef;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 340,
+      "text": "return skillDef.m_increseStep;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 344,
+      "text": "skillDef.m_increseStep = value;"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 445,
+      "text": "skillDef = new SkillDef"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 493,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"GetSkillDef\", (Type[])null, (Type[])null), (HarmonyMethod)null, new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_GetSkillDef\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 494,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Skills), \"CheatRaiseSkill\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(Skill), \"Patch_Skills_CheatRaiseskill\", (Type[])null, (Type[])null)), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 557,
+      "text": "private static void Patch_Skills_GetSkillDef(ref SkillDef? __result, List<SkillDef> ___m_skills, SkillType type)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 562,
+      "text": "SkillDef val = GetSkillDef(type);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 571,
+      "text": "private static bool Patch_Skills_CheatRaiseskill(Skills __instance, string name, float value, Player ___m_player)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 660,
+      "text": "AddSkill(Terminal.commands[\"raiseskill\"]);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 677,
+      "text": "private static SkillDef? GetSkillDef(SkillType skillType)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 686,
+      "text": "return skill.skillDef;"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 8,
+      "text": "public static float GetSkillFactor(this Character character, string name)"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 11,
+      "text": "return character.GetSkillFactor(Skill.fromName(name)) * Skill.skillByName[name].SkillEffectFactor;"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 14,
+      "text": "public static float GetSkillFactor(this Skills skills, string name)"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 17,
+      "text": "return skills.GetSkillFactor(Skill.fromName(name)) * Skill.skillByName[name].SkillEffectFactor;"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 20,
+      "text": "public static void RaiseSkill(this Character character, string name, float value = 1f)"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 23,
+      "text": "character.RaiseSkill(Skill.fromName(name), value);"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 26,
+      "text": "public static void RaiseSkill(this Skills skill, string name, float value = 1f)"
+    },
+    {
+      "file": "csharp/SkillManager/SkillExtensions.cs",
+      "line": 29,
+      "text": "skill.RaiseSkill(Skill.fromName(name), value);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3615,
+      "text": "\"name\": \"skillDef\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3616,
+      "text": "\"type\": \"Skills/SkillDef\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34287,
+      "text": "\"signature\": \"System.Void SkillManager.Skill::Patch_Skills_GetSkillDef(Skills/SkillDef\\u0026,System.Collections.Generic.List\\u00601\\u003CSkills/SkillDef\\u003E,Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34293,
+      "text": "\"type\": \"Skills/SkillDef\\u0026\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34297,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CSkills/SkillDef\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34311,
+      "text": "\"signature\": \"System.Boolean SkillManager.Skill::Patch_Skills_CheatRaiseskill(Skills,System.String,System.Single,Player)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34421,
+      "text": "\"signature\": \"Skills/SkillDef SkillManager.Skill::GetSkillDef(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34423,
+      "text": "\"returnType\": \"Skills/SkillDef\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35522,
+      "text": "\"signature\": \"System.Single SkillManager.SkillExtensions::GetSkillFactor(Character,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35549,
+      "text": "\"signature\": \"System.Single SkillManager.SkillExtensions::GetSkillFactor(Skills,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35576,
+      "text": "\"signature\": \"System.Void SkillManager.SkillExtensions::RaiseSkill(Character,System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 35607,
+      "text": "\"signature\": \"System.Void SkillManager.SkillExtensions::RaiseSkill(Skills,System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79384,
+      "text": "\"Skills/SkillDef SkillManager.Skill::GetSkillDef(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80423,
+      "text": "\"System.Single Character::GetSkillFactor(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80427,
+      "text": "\"System.Single Skills::GetSkillFactor(Skills/SkillType)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80738,
+      "text": "\"System.Void Character::RaiseSkill(Skills/SkillType,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80872,
+      "text": "\"System.Void SkillManager.SkillExtensions::RaiseSkill(Character,System.String,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80873,
+      "text": "\"System.Void Skills::RaiseSkill(Skills/SkillType,System.Single)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80875,
+      "text": "\"System.Void Skills/SkillDef::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 81058,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CSkills/SkillDef\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82765,
+      "text": "\"CheatRaiseSkill\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82918,
+      "text": "\"GetSkillDef\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83070,
+      "text": "\"Patch_Skills_CheatRaiseskill\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83072,
+      "text": "\"Patch_Skills_GetSkillDef\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 83095,
+      "text": "\"raiseskill\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11733,
+      "text": "IL_0001: ldfld Skills/SkillDef SkillManager.Skill::skillDef"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11734,
+      "text": "IL_0006: ldfld System.Single Skills/SkillDef::m_increseStep"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11741,
+      "text": "IL_0002: ldfld Skills/SkillDef SkillManager.Skill::skillDef"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11743,
+      "text": "IL_0008: stfld System.Single Skills/SkillDef::m_increseStep"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11988,
+      "text": "IL_0059: newobj System.Void Skills/SkillDef::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11993,
+      "text": "IL_006a: stfld System.String Skills/SkillDef::m_description"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11996,
+      "text": "IL_0071: stfld UnityEngine.Sprite Skills/SkillDef::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11999,
+      "text": "IL_007c: stfld System.Single Skills/SkillDef::m_increseStep"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12002,
+      "text": "IL_0083: stfld Skills/SkillType Skills/SkillDef::m_skill"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12003,
+      "text": "IL_0088: stfld Skills/SkillDef SkillManager.Skill::skillDef"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12072,
+      "text": "IL_0073: ldstr \"GetSkillDef\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12079,
+      "text": "IL_008a: ldstr \"Patch_Skills_GetSkillDef\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12092,
+      "text": "IL_00af: ldstr \"CheatRaiseSkill\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12098,
+      "text": "IL_00c5: ldstr \"Patch_Skills_CheatRaiseskill\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12398,
+      "text": "// System.Void SkillManager.Skill::Patch_Skills_GetSkillDef(Skills/SkillDef&,System.Collections.Generic.List`1<Skills/SkillDef>,Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12399,
+      "text": ".locals Skills/SkillDef, System.Boolean"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12405,
+      "text": "IL_0006: call Skills/SkillDef SkillManager.Skill::GetSkillDef(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12418,
+      "text": "IL_001a: callvirt System.Void System.Collections.Generic.List`1<Skills/SkillDef>::Add(!0)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12426,
+      "text": "// System.Boolean SkillManager.Skill::Patch_Skills_CheatRaiseskill(Skills,System.String,System.Single,Player)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12489,
+      "text": "IL_00bc: ldfld Skills/SkillDef Skills/Skill::m_info"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12490,
+      "text": "IL_00c1: ldfld UnityEngine.Sprite Skills/SkillDef::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12730,
+      "text": "IL_0013: ldstr \"raiseskill\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12741,
+      "text": "// Skills/SkillDef SkillManager.Skill::GetSkillDef(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12742,
+      "text": ".locals SkillManager.Skill, System.Boolean, Skills/SkillDef"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12761,
+      "text": "IL_0025: ldfld Skills/SkillDef SkillManager.Skill::skillDef"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13738,
+      "text": "// System.Single SkillManager.SkillExtensions::GetSkillFactor(Character,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13743,
+      "text": "IL_0007: callvirt System.Single Character::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13751,
+      "text": "// System.Single SkillManager.SkillExtensions::GetSkillFactor(Skills,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13756,
+      "text": "IL_0007: callvirt System.Single Skills::GetSkillFactor(Skills/SkillType)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13764,
+      "text": "// System.Void SkillManager.SkillExtensions::RaiseSkill(Character,System.String,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13770,
+      "text": "IL_0008: callvirt System.Void Character::RaiseSkill(Skills/SkillType,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13774,
+      "text": "// System.Void SkillManager.SkillExtensions::RaiseSkill(Skills,System.String,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13780,
+      "text": "IL_0008: callvirt System.Void Skills::RaiseSkill(Skills/SkillType,System.Single)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 15498,
+      "text": "IL_0034: call System.Void SkillManager.SkillExtensions::RaiseSkill(Character,System.String,System.Single)"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 43,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 45,
+      "text": "return DictionaryExtensions.GetOrAdd(cache, type, (Type t, (object container, ITypeInspector innerTypeDescriptor) context) =>"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 47,
+      "text": "var (container2, typeInspector) = context;"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 48,
+      "text": "return typeInspector.GetProperties(t, container2).ToList();"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CachedTypeInspector.cs",
+      "line": 49,
+      "text": "}, (container, innerTypeDescriptor));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/WritablePropertiesTypeInspector.cs",
+      "line": 90,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableFieldsTypeInspector.cs",
+      "line": 73,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CompositeTypeInspector.cs",
+      "line": 55,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/CompositeTypeInspector.cs",
+      "line": 57,
+      "text": "return typeInspectors.SelectMany((ITypeInspector i) => i.GetProperties(type, container));"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/NamingConventionTypeInspector.cs",
+      "line": 29,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/NamingConventionTypeInspector.cs",
+      "line": 31,
+      "text": "return innerTypeDescriptor.GetProperties(type, container).Select((IPropertyDescriptor p) =>"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableAndWritablePropertiesTypeInspector.cs",
+      "line": 26,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadableAndWritablePropertiesTypeInspector.cs",
+      "line": 28,
+      "text": "return from p in innerTypeDescriptor.GetProperties(type, container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/ReadablePropertiesTypeInspector.cs",
+      "line": 90,
+      "text": "public override IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 15,
+      "text": "public abstract IEnumerable<IPropertyDescriptor> GetProperties(Type type, object? container);"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 17,
+      "text": "public IPropertyDescriptor GetProperty(Type type, object? container, string name, [MaybeNullWhen(true)] bool ignoreUnmatched, bool caseInsensitivePropertyMatching)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 19,
+      "text": "IEnumerable<IPropertyDescriptor> enumerable = ((!caseInsensitivePropertyMatching) ? (from p in GetProperties(type, container)"
+    },
+    {
+      "file": "csharp/YamlDotNet.Serialization.TypeInspectors/TypeInspectorSkeleton.cs",
+      "line": 21,
+      "text": "select p) : (from p in GetProperties(type, container)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 8,
+      "text": "namespace ItemDataManager;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 17,
+      "text": "public ItemData ItemData { get; private set; }"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 36,
+      "text": "internal ForeignItemInfo(ItemData itemData, object foreignItemInfo)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 38,
+      "text": "ItemData = itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 91,
+      "text": "public bool Remove<T>(T itemData) where T : class"
+    },
+    {
+      "file": "csharp/ItemDataManager/ForeignItemInfo.cs",
+      "line": 93,
+      "text": "return call(\"Remove\", new object[1] { itemData }, new Type[1], typeof(T)) as bool? == true;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 13,
+      "text": "namespace ItemDataManager;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 16,
+      "text": "public class ItemInfo : IEnumerable<ItemData>, IEnumerable"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 26,
+      "text": "private Dictionary<string, ItemData> data = new Dictionary<string, ItemData>();"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 32,
+      "text": "private static ItemData? awakeningItem;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 44,
+      "text": "private static ItemData? checkingForStackableItemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 46,
+      "text": "private static Dictionary<string, string>? newValuesOnStackable;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 48,
+      "text": "private static ItemData? currentlyUpgradingItem;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 71,
+      "text": "public ItemData ItemData { get; private set; }"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 77,
+      "text": "return Get<StringItemData>(key)?.Value;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 81,
+      "text": "GetOrCreate<StringItemData>(key).Value = value ?? \"\";"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 141,
+      "text": "internal ItemInfo(ItemData itemData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 143,
+      "text": "ItemData = itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 145,
+      "text": "List<string> list = ItemData.m_customData.Keys.ToList();"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 157,
+      "text": "if ((object)type != null && typeof(ItemData).IsAssignableFrom(type))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 165,
+      "text": "public T GetOrCreate<T>(string key = \"\") where T : ItemData, new()"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 170,
+      "text": "public T? Add<T>(string key = \"\") where T : ItemData, new()"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 178,
+      "text": "if (ItemData.m_customData.ContainsKey(text2) || (awakeningItem != ItemData && data.ContainsKey(text)))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 182,
+      "text": "ItemData.m_customData[text2] = \"\";"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 183,
+      "text": "ItemDataManager.ItemData.constructingInfo = selfReference ?? (selfReference = new WeakReference<ItemInfo>(this));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 200,
+      "text": "if (!typeof(ItemData).IsAssignableFrom(typeof(T)) || typeof(T) == typeof(ItemData))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 202,
+      "text": "throw new Exception(\"Trying to get value from ItemDataManager for class not inheriting from ItemData\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 213,
+      "text": "if (!fetchedClassKeys.Contains(text) && awakeningItem != ItemData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 217,
+      "text": "if (ItemData.m_customData.ContainsKey(text2))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 226,
+      "text": "public Dictionary<string, T> GetAll<T>() where T : ItemData"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 229,
+      "text": "return data.Values.Where((ItemData o) => o is T).ToDictionary((ItemData o) => o.Key, (ItemData o) => (T)o);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 234,
+      "text": "return Remove<StringItemData>(key);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 237,
+      "text": "public bool Remove<T>(string key = \"\") where T : ItemData"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 241,
+      "text": "if (ItemData.m_customData.Remove(key3))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 253,
+      "text": "public bool Remove<T>(T itemData) where T : ItemData"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 255,
+      "text": "if (typeof(T) == itemData.GetType())"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 257,
+      "text": "return Remove<T>(itemData.Key);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 259,
+      "text": "return (bool)removeMethod.MakeGenericMethod(itemData.GetType()).Invoke(this, new object[1] { itemData.Key });"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 262,
+      "text": "private ItemData? constructDataObj(string fullkey, string key)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 266,
+      "text": "if ((object)type == null || !typeof(ItemData).IsAssignableFrom(type))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 270,
+      "text": "ItemDataManager.ItemData.constructingInfo = selfReference ?? (selfReference = new WeakReference<ItemInfo>(this));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 271,
+      "text": "ItemData itemData = (ItemData)Activator.CreateInstance(type);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 272,
+      "text": "data[key] = itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 273,
+      "text": "itemData.info = selfReference;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 274,
+      "text": "itemData.Key = ((array.Length > 1) ? array[1] : \"\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 275,
+      "text": "itemData.CustomDataKey = fullkey;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 276,
+      "text": "itemData.Load();"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 277,
+      "text": "return itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 282,
+      "text": "foreach (ItemData value in data.Values)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 290,
+      "text": "if (awakeningItem == ItemData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 295,
+      "text": "List<string> list = ItemData.m_customData.Keys.ToList();"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 309,
+      "text": "public IEnumerator<ItemData> GetEnumerator()"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 320,
+      "text": "private static void SavePrefix(ItemData __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 325,
+      "text": "private static void SaveInventoryPrefix(Inventory __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 327,
+      "text": "foreach (ItemData item in __instance.m_inventory)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 333,
+      "text": "private static void SaveItem(ItemData item)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 341,
+      "text": "public Dictionary<string, string>? IsStackableWithOtherInfo(ItemInfo? info)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 351,
+      "text": "string text = data[item].TryStack(info.data[item]);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 358,
+      "text": "foreach (KeyValuePair<string, ItemData> datum in info.data)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 362,
+      "text": "string text2 = info.data[datum.Key].TryStack(null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 371,
+      "text": "foreach (KeyValuePair<string, ItemData> datum2 in data)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 375,
+      "text": "string text3 = data[datum2.Key].TryStack(null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 386,
+      "text": "private static void RegisterForceLoadedTypesAddItem(ItemData? __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 395,
+      "text": "private static void RegisterForceLoadedTypes(ItemData itemData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 401,
+      "text": "if (itemData.m_customData.ContainsKey(text))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 403,
+      "text": "itemData.Data().constructDataObj(text, key);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 408,
+      "text": "private static void ItemDropAwake(ItemDrop __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 410,
+      "text": "GameObject dropPrefab = __instance.m_itemData.m_dropPrefab;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 411,
+      "text": "if (dropPrefab != null && ItemExtensions.itemInfo.TryGetValue(dropPrefab.GetComponent<ItemDrop>().m_itemData, out var value))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 413,
+      "text": "__instance.m_itemData.Data().isCloned = new HashSet<string>(value.data.Values.Select((ItemData i) => i.CustomDataKey));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 417,
+      "text": "private static void ItemDropAwakeDelayed(ItemDrop __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 421,
+      "text": "RegisterForceLoadedTypes(__instance.m_itemData);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 425,
+      "text": "private static void ItemDataClonePrefix(ItemData __instance, ItemData __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 430,
+      "text": "private static void ItemDataClonePostfix(ItemData __instance, ItemData __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 434,
+      "text": "__result.Data().isCloned = new HashSet<string>(value.data.Values.Select((ItemData i) => i.CustomDataKey));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 438,
+      "text": "private static void ItemDataClonePostfixDelayed(ItemData __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 448,
+      "text": "if (itemPrefab.GetComponent<ItemDrop>().m_itemData == food.m_item)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 457,
+      "text": "private static void SaveCheckingForStackableItemData(ItemData item)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 459,
+      "text": "checkingForStackableItemData = item;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 462,
+      "text": "private static void ResetCheckingForStackableItemData()"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 464,
+      "text": "checkingForStackableItemData = null;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 467,
+      "text": "private static IEnumerable<CodeInstruction> CheckStackableInFindFreeStackMethods(IEnumerable<CodeInstruction> instructionsEnumerable)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 512,
+      "text": "yield return new CodeInstruction(OpCodes.Ldsfld, (object)AccessTools.DeclaredField(typeof(ItemInfo), \"checkingForStackableItemData\"));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 513,
+      "text": "yield return new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"CheckItemDataIsStackableFindFree\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 521,
+      "text": "private static bool CheckItemDataIsStackableFindFree(ItemData item, ItemData? target)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 527,
+      "text": "Dictionary<string, string> dictionary = IsStackable(item, target);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 530,
+      "text": "newValuesOnStackable = dictionary;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 536,
+      "text": "private static void ResetNewValuesOnStackable()"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 538,
+      "text": "newValuesOnStackable = null;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 541,
+      "text": "private static void ApplyNewValuesOnStackable(ItemData? __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 543,
+      "text": "if (__result == null || newValuesOnStackable == null)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 547,
+      "text": "foreach (KeyValuePair<string, string> item in newValuesOnStackable)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 553,
+      "text": "private static Dictionary<string, string>? IsStackable(ItemData a, ItemData b)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 558,
+      "text": "return itemInfo.IsStackableWithOtherInfo(b.Data());"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 563,
+      "text": "return itemInfo2.IsStackableWithOtherInfo(null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 568,
+      "text": "private static bool CheckItemDataStackableAddItem(Inventory __instance, ItemData item, int x, int y, ref Dictionary<string, string>? __state, ref bool __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 570,
+      "text": "ItemData itemAt = __instance.GetItemAt(x, y);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 573,
+      "text": "Dictionary<string, string> dictionary = IsStackable(item, itemAt);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 584,
+      "text": "private static void ApplyCustomItemDataStackableAddItem(Inventory __instance, int x, int y, Dictionary<string, string>? __state, bool __result)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 596,
+      "text": "private static void ApplyCustomItemDataStackableAutoStack(ItemDrop item, Dictionary<string, string> customData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 598,
+      "text": "item.m_itemData.m_customData = customData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 601,
+      "text": "private static Dictionary<string, string>? IsStackableItemDrop(ItemDrop drop, ItemData item)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 603,
+      "text": "return IsStackable(drop.m_itemData, item);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 606,
+      "text": "private static IEnumerable<CodeInstruction> HandleAutostackableItems(IEnumerable<CodeInstruction> instructionList, ILGenerator ilg)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 631,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ItemData), \"m_stack\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 632,
+      "text": "FieldInfo fieldInfo2 = AccessTools.DeclaredField(typeof(ItemDrop), \"m_itemData\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 649,
+      "text": "LocalBuilder localBuilder2 = ilg.DeclareLocal(typeof(ItemData));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 650,
+      "text": "list.Insert(i + 1, new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"ApplyCustomItemDataStackableAutoStack\", (Type[])null, (Type[])null)));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 656,
+      "text": "list.Insert(num + 1, new CodeInstruction(OpCodes.Call, (object)AccessTools.DeclaredMethod(typeof(ItemInfo), \"IsStackableItemDrop\", (Type[])null, (Type[])null)));"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 667,
+      "text": "throw new Exception(\"Found no stack store in a branch\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 670,
+      "text": "private static IEnumerable<CodeInstruction> TransferCustomItemDataOnUpgrade(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 672,
+      "text": "MethodInfo itemDeleter = AccessTools.DeclaredMethod(typeof(Inventory), \"RemoveItem\", new Type[1] { typeof(ItemData) }, (Type[])null);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 689,
+      "text": "private static void CopyCustomDataFromUpgradedItem(ItemDrop item)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 693,
+      "text": "item.m_itemData.m_customData = currentlyUpgradingItem.m_customData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 696,
+      "text": "ItemExtensions.itemInfo.Add(item.m_itemData, itemInfo);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 697,
+      "text": "item.m_itemData.m_quality = currentlyUpgradingItem.m_quality + 1;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 698,
+      "text": "item.m_itemData.m_variant = currentlyUpgradingItem.m_variant;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 699,
+      "text": "itemInfo.ItemData = item.m_itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 701,
+      "text": "foreach (ItemData value in itemInfo.data.Values)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 709,
+      "text": "GameObject dropPrefab = item.m_itemData.m_dropPrefab;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 710,
+      "text": "if (dropPrefab == null || item.m_itemData.m_customData.Count != 0)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 720,
+      "text": "item.m_itemData.m_customData = new Dictionary<string, string>(dropPrefab.GetComponent<ItemDrop>().m_itemData.m_customData);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 726,
+      "text": "val.Set(ZDOVars.s_dataCount, item.m_itemData.m_customData.Count, false);"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 727,
+      "text": "foreach (KeyValuePair<string, string> customDatum in item.m_itemData.m_customData)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 740,
+      "text": "if (instruction.opcode == OpCodes.Stfld && CodeInstructionExtensions.OperandIs(instruction, (MemberInfo)AccessTools.DeclaredField(typeof(ItemData), \"m_dropPrefab\")))"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 748,
+      "text": "private static void TrackAwakeningItem(ItemDrop __instance)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 752,
+      "text": "awakeningItem = __instance.m_itemData;"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 818,
+      "text": "Harmony val = new Harmony(\"org.bepinex.helpers.ItemDataManager\");"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 819,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"Save\", (Type[])null, (Type[])null), new HarmonyMethod(AccessTools.DeclaredMethod(typeof(ItemInfo), \"SaveInventoryPrefix\", (Type[])null, (Type[])null), 800, (string[])null, (string[])null, (bool?)null), (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)null, (HarmonyMethod)n"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 820,
+      "text": "foreach (MethodInfo item in from m in typeof(ItemData).GetMethods(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 826,
+      "text": "val.Patch((MethodBase)AccessTools.DeclaredMethod(typeof(Inventory), \"AddItem\", new Type[5]"
+    },
+    {
+      "file": "csharp/ItemDataManager/ItemInfo.cs",
+      "line": 828,
+      "text": "typeof(ItemData),"
+    }
+  ],
+  "Rendering/assets": [
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 327,
+      "text": "((Character)localPlayer).Message((MessageType)1, \"Masterwork crafting created an extra item!\", 0, (Sprite)null, false);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1022,
+      "text": "private static Sprite s_skillIcon;"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1042,
+      "text": "s_skillIcon = LoadEmbeddedSprite(\"smithing.png\", 64, 64);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 1045,
+      "text": "throw new Exception(\"Failed to load embedded sprite: smithing.png\");"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2252,
+      "text": "private static Sprite LoadEmbeddedSprite(string resourceName, int width, int height)"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2268,
+      "text": "Texture2D val = new Texture2D(width, height);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2271,
+      "text": "return Sprite.Create(val, new Rect(0f, 0f, (float)width, (float)height), Vector2.zero);"
+    },
+    {
+      "file": "csharp/BlacksmithingExpanded/BlacksmithingExpanded.cs",
+      "line": 2276,
+      "text": "Debug.LogError((object)$\"[BlacksmithingExpanded] Failed to load sprite {resourceName}: {arg}\");"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 424,
+      "text": ": this(englishName, loadSprite(icon, 64, 64))"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 428,
+      "text": "public Skill(string englishName, Sprite icon)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 696,
+      "text": "private static Texture2D loadTexture(string name)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 700,
+      "text": "Texture2D val = new Texture2D(0, 0);"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 705,
+      "text": "private static Sprite loadSprite(string name, int width, int height)"
+    },
+    {
+      "file": "csharp/SkillManager/Skill.cs",
+      "line": 709,
+      "text": "return Sprite.Create(loadTexture(name), new Rect(0f, 0f, (float)width, (float)height), Vector2.zero);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4798,
+      "text": "\"type\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34229,
+      "text": "\"signature\": \"System.Void SkillManager.Skill::.ctor(System.String,UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34239,
+      "text": "\"type\": \"UnityEngine.Sprite\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34462,
+      "text": "\"signature\": \"UnityEngine.Texture2D SkillManager.Skill::loadTexture(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34464,
+      "text": "\"returnType\": \"UnityEngine.Texture2D\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34478,
+      "text": "\"signature\": \"UnityEngine.Sprite SkillManager.Skill::loadSprite(System.String,System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 34480,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36369,
+      "text": "\"signature\": \"UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::LoadEmbeddedSprite(System.String,System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 36371,
+      "text": "\"returnType\": \"UnityEngine.Sprite\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 79665,
+      "text": "\"System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80737,
+      "text": "\"System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 80857,
+      "text": "\"System.Void SkillManager.Skill::.ctor(System.String,UnityEngine.Sprite)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 81323,
+      "text": "\"System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82170,
+      "text": "\"UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::LoadEmbeddedSprite(System.String,System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82171,
+      "text": "\"UnityEngine.Sprite SkillManager.Skill::loadSprite(System.String,System.Int32,System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82172,
+      "text": "\"UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82173,
+      "text": "\"UnityEngine.Texture2D SkillManager.Skill::loadTexture(System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82607,
+      "text": "\"[BlacksmithingExpanded] Failed to load sprite {0}: {1}\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 82878,
+      "text": "\"Failed to load embedded sprite: smithing.png\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11947,
+      "text": "IL_0007: call UnityEngine.Sprite SkillManager.Skill::loadSprite(System.String,System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11948,
+      "text": "IL_000c: call System.Void SkillManager.Skill::.ctor(System.String,UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11953,
+      "text": "// System.Void SkillManager.Skill::.ctor(System.String,UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 11996,
+      "text": "IL_0071: stfld UnityEngine.Sprite Skills/SkillDef::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12490,
+      "text": "IL_00c1: ldfld UnityEngine.Sprite Skills/SkillDef::m_icon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12492,
+      "text": "IL_00c7: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12797,
+      "text": "// UnityEngine.Texture2D SkillManager.Skill::loadTexture(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12798,
+      "text": ".locals UnityEngine.Texture2D, UnityEngine.Texture2D"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12802,
+      "text": "IL_0003: newobj System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12809,
+      "text": "IL_001a: call System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12817,
+      "text": "// UnityEngine.Sprite SkillManager.Skill::loadSprite(System.String,System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12820,
+      "text": "IL_0001: call UnityEngine.Texture2D SkillManager.Skill::loadTexture(System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 12829,
+      "text": "IL_001e: call UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13872,
+      "text": "IL_003a: call UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::LoadEmbeddedSprite(System.String,System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13873,
+      "text": "IL_003f: stsfld UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::s_skillIcon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13874,
+      "text": "IL_0044: ldsfld UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::s_skillIcon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13880,
+      "text": "IL_0053: ldstr \"Failed to load embedded sprite: smithing.png\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13884,
+      "text": "IL_0063: ldsfld UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::s_skillIcon"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 13885,
+      "text": "IL_0068: newobj System.Void SkillManager.Skill::.ctor(System.String,UnityEngine.Sprite)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17835,
+      "text": "// UnityEngine.Sprite BlacksmithingExpanded.BlacksmithingExpanded::LoadEmbeddedSprite(System.String,System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17836,
+      "text": ".locals System.IO.Stream, System.Boolean, UnityEngine.Sprite, System.IO.MemoryStream, System.Byte[], UnityEngine.Texture2D, System.Boolean, System.Exception"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17867,
+      "text": "IL_0041: newobj System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17871,
+      "text": "IL_004c: call System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17885,
+      "text": "IL_0072: call UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 17908,
+      "text": "IL_009c: ldstr \"[BlacksmithingExpanded] Failed to load sprite {0}: {1}\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 18909,
+      "text": "IL_015f: callvirt System.Void Character::Message(MessageHud/MessageType,System.String,System.Int32,UnityEngine.Sprite,System.Boolean)"
+    }
+  ]
+}

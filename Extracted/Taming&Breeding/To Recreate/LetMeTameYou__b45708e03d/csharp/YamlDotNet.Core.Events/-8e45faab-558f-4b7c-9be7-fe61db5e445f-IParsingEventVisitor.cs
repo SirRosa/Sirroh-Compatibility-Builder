@@ -1,0 +1,29 @@
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.Core.Events;
+
+[_003C82913185_002D597c_002D40dc_002D9ac4_002Dfc8a83fa3787_003ENullableContext(1)]
+internal interface _003C8e45faab_002D558f_002D4b7c_002D9be7_002Dfe61db5e445f_003EIParsingEventVisitor
+{
+	void Visit(_003C3010bf72_002Dd2cd_002D45d1_002D9245_002Db3b55fbfa5a0_003EAnchorAlias e);
+
+	void Visit(_003Cd41714f7_002D4f61_002D432e_002D8a83_002Ded593f31e526_003EStreamStart e);
+
+	void Visit(_003C50667387_002D32a0_002D4cfa_002D90ba_002D9e18d76632e5_003EStreamEnd e);
+
+	void Visit(_003C11d343a3_002Dad11_002D4df1_002D9f55_002Da2bc7ef77934_003EDocumentStart e);
+
+	void Visit(_003C7d138b59_002Dd981_002D4379_002Daac9_002D8cdf906ac673_003EDocumentEnd e);
+
+	void Visit(_003C8284bc76_002D89b7_002D4bf8_002Daa46_002D39da1e634380_003EScalar e);
+
+	void Visit(_003C9f7de5d2_002Dfe16_002D493d_002D8158_002D378a5bfd51bb_003ESequenceStart e);
+
+	void Visit(_003Caa8581b2_002D1caa_002D46f6_002Db8ec_002D0b62fd9dce90_003ESequenceEnd e);
+
+	void Visit(_003Ca19ef90a_002D64a0_002D4d7e_002Db490_002D56e422b0103d_003EMappingStart e);
+
+	void Visit(_003C446b682a_002D36b6_002D46ea_002Db1c3_002D0616b60e5c52_003EMappingEnd e);
+
+	void Visit(_003C287713a7_002D26e2_002D40c3_002Dbfea_002D1c61c7a66cba_003EComment e);
+}

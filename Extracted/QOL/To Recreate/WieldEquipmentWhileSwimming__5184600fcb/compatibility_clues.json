@@ -1,0 +1,2624 @@
+{
+  "BepInEx plugin/dependencies": [
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 14,
+      "text": "[BepInPlugin(\"blacks7ar.WieldEquipmentWhileSwimming\", \"WieldEquipmentWhileSwimming\", \"1.1.4\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 15,
+      "text": "public class Plugin : BaseUnityPlugin"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 149,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 171,
+      "text": "((BaseUnityPlugin)this).Config.SaveOnConfigSet = false;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 177,
+      "text": "((BaseUnityPlugin)this).Config.SaveOnConfigSet = true;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 178,
+      "text": "((BaseUnityPlugin)this).Config.Save();"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 185,
+      "text": "((BaseUnityPlugin)this).Config.Save();"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 198,
+      "text": "\"baseType\": \"BepInEx.BaseUnityPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 203,
+      "text": "\"name\": \"BepInEx.BepInPlugin\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7555,
+      "text": "\"BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7807,
+      "text": "\"System.Void BepInEx.BaseUnityPlugin::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 34,
+      "text": "IL_0031: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 84,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 130,
+      "text": "IL_00ab: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 134,
+      "text": "IL_00b7: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 146,
+      "text": "IL_0001: call BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 175,
+      "text": "IL_0001: call System.Void BepInEx.BaseUnityPlugin::.ctor()"
+    }
+  ],
+  "Harmony patches": [
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 46,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 49,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 50,
+      "text": "[HarmonyPatch(typeof(Character), \"IsSwimming\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 106,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 107,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"EquipItem\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 112,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 113,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"UpdateEquipment\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 180,
+      "text": "_harmony.PatchAll(executingAssembly);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 15,
+      "text": "[HarmonyPatch]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 80,
+      "text": "Patches patchInfo = PatchProcessor.GetPatchInfo((MethodBase)AccessTools.DeclaredMethod(typeof(ZNet), \"Awake\", (Type[])null, (Type[])null));"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 90,
+      "text": "val.PatchAll(item);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 175,
+      "text": "AccessTools.DeclaredField(typeof(ZNet), \"m_connectionStatus\").SetValue(null, (object)(ConnectionStatus)3);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 224,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 248,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 249,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 284,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Disconnect\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 285,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 298,
+      "text": "[HarmonyPatch(typeof(FejdStartup), \"ShowConnectError\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 299,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 26,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 33,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Awake\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 36,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 73,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 74,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 96,
+      "text": "[HarmonyPatch(typeof(ZNet), \"OnNewConnection\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 99,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 120,
+      "text": "[HarmonyPatch(typeof(ZNet), \"Shutdown\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 123,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 259,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 274,
+      "text": "FieldInfo fieldInfo = AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 290,
+      "text": "[HarmonyPostfix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 316,
+      "text": "AccessTools.DeclaredField(typeof(ZNetPeer), \"m_socket\").SetValue(val, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 349,
+      "text": "MethodInfo listContainsId = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 350,
+      "text": "SyncedList adminList = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 381,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 384,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 397,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 400,
+      "text": "[HarmonyPrefix]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 552,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 640,
+      "text": "MethodInfo methodInfo = AccessTools.DeclaredMethod(typeof(ZNet), \"ListContainsId\", (Type[])null, (Type[])null);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 641,
+      "text": "SyncedList val = (SyncedList)AccessTools.DeclaredField(typeof(ZNet), \"m_adminList\").GetValue(ZNet.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 943,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1179,
+      "text": "AccessTools.DeclaredField(typeof(ParameterInfo), \"ClassImpl\").SetValue(parameterInfo, type);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 440,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1221,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1266,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1444,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1532,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1560,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1998,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2026,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3152,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3718,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3724,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3745,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3751,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3772,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3778,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4950,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4981,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5218,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5247,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5297,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5328,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5829,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5864,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7147,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7156,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7183,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7192,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7219,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7228,
+      "text": "\"name\": \"HarmonyLib.HarmonyPrefix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7251,
+      "text": "\"name\": \"HarmonyLib.HarmonyPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7260,
+      "text": "\"name\": \"HarmonyLib.HarmonyPostfix\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7745,
+      "text": "\"System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7750,
+      "text": "\"System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7816,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7817,
+      "text": "\"System.Void HarmonyLib.Harmony::PatchAll(System.Type)\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 140,
+      "text": "IL_00cd: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Reflection.Assembly)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1024,
+      "text": "IL_0061: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1256,
+      "text": "IL_0051: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1261,
+      "text": "IL_0067: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2445,
+      "text": "IL_003c: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3246,
+      "text": "IL_02a6: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3502,
+      "text": "IL_0045: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3509,
+      "text": "IL_0064: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3788,
+      "text": "IL_002a: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3804,
+      "text": "IL_005a: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3829,
+      "text": "IL_0097: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3910,
+      "text": "IL_0055: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4227,
+      "text": "IL_002d: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4245,
+      "text": "IL_0067: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4268,
+      "text": "IL_00a4: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4485,
+      "text": "IL_00d3: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 4491,
+      "text": "IL_00ed: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 5986,
+      "text": "IL_0012: call System.Reflection.MethodInfo HarmonyLib.AccessTools::DeclaredMethod(System.Type,System.String,System.Type[],System.Type[])"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6046,
+      "text": "IL_00c4: callvirt System.Void HarmonyLib.Harmony::PatchAll(System.Type)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 6428,
+      "text": "IL_001d: call System.Reflection.FieldInfo HarmonyLib.AccessTools::DeclaredField(System.Type,System.String)"
+    }
+  ],
+  "Configuration": [
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 35,
+      "text": "public Action<ConfigEntryBase> CustomDrawer;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 136,
+      "text": "private static ConfigEntry<Toggle> _serverConfigLocked;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 138,
+      "text": "private static ConfigEntry<UseOptions> _useOptions;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 140,
+      "text": "private static ConfigEntry<string> _useCustom;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 142,
+      "text": "private static ConfigEntry<string> _blackList;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 144,
+      "text": "private ConfigEntry<T> config<T>(string group, string name, T value, ConfigDescription description, bool synchronizedConfig = true)"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 148,
+      "text": "ConfigDescription val = new ConfigDescription(description.Description + (synchronizedConfig ? \" [Synced with Server]\" : \" [Not Synced with Server]\"), description.AcceptableValues, description.Tags);"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 149,
+      "text": "ConfigEntry<T> val2 = ((BaseUnityPlugin)this).Config.Bind<T>(group, name, value, val);"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 150,
+      "text": "_configSync.AddConfigEntry<T>(val2).SynchronizedConfig = synchronizedConfig;"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 154,
+      "text": "private ConfigEntry<T> config2<T>(string group, string name, T value, string desc, bool synchronizedConfig = true)"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 162,
+      "text": "return config(group, name, value, new ConfigDescription(desc, (AcceptableValueBase)null, new object[1] { configurationManagerAttributes }), synchronizedConfig);"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 172,
+      "text": "_serverConfigLocked = config(\"1- ServerSync\", \"Lock Configuration\", Toggle.On, new ConfigDescription(\"If On, the configuration is locked and can be changed by server admins only.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 173,
+      "text": "_configSync.AddLockingConfigEntry<Toggle>(_serverConfigLocked);"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 174,
+      "text": "_useOptions = config(\"2- General\", \"Allow\", UseOptions.All, new ConfigDescription(\"Allow selected options to use in water.\", (AcceptableValueBase)null, Array.Empty<object>()));"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 188,
+      "text": "private static void TextBox(ConfigEntryBase entryBase)"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 7,
+      "text": "internal abstract class OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/OwnConfigEntryBase.cs",
+      "line": 13,
+      "text": "public abstract ConfigEntryBase BaseConfig { get; }"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 115,
+      "text": "public readonly Dictionary<OwnConfigEntryBase, object?> configValues = new Dictionary<OwnConfigEntryBase, object>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 362,
+      "text": "ZPackage package = ConfigsToPackage(configSync.allConfigs.Select((OwnConfigEntryBase c) => c.BaseConfig), configSync.allCustomValues, entries, partial: false);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 381,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"GetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 385,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, ref string __result)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 387,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 388,
+      "text": "if (ownConfigEntryBase == null || isWritableConfig(ownConfigEntryBase))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 392,
+      "text": "__result = TomlTypeConverter.ConvertToString(ownConfigEntryBase.LocalBaseValue, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 397,
+      "text": "[HarmonyPatch(typeof(ConfigEntryBase), \"SetSerializedValue\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 401,
+      "text": "private static bool Prefix(ConfigEntryBase __instance, string value)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 403,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData(__instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 404,
+      "text": "if (ownConfigEntryBase == null || ownConfigEntryBase.LocalBaseValue == null)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 410,
+      "text": "ownConfigEntryBase.LocalBaseValue = TomlTypeConverter.ConvertToValue(value, __instance.SettingType);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 447,
+      "text": "private readonly HashSet<OwnConfigEntryBase> allConfigs = new HashSet<OwnConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 455,
+      "text": "private OwnConfigEntryBase? lockedConfig = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 545,
+      "text": "public SyncedConfigEntry<T> AddConfigEntry<T>(ConfigEntry<T> configEntry)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 547,
+      "text": "OwnConfigEntryBase ownConfigEntryBase = configData((ConfigEntryBase)(object)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 548,
+      "text": "SyncedConfigEntry<T> syncedEntry = ownConfigEntryBase as SyncedConfigEntry<T>;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 551,
+      "text": "syncedEntry = new SyncedConfigEntry<T>(configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 552,
+      "text": "AccessTools.DeclaredField(typeof(ConfigDescription), \"<Tags>k__BackingField\").SetValue(((ConfigEntryBase)configEntry).Description, new object[1]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 555,
+      "text": "}.Concat(((ConfigEntryBase)configEntry).Description.Tags ?? Array.Empty<object>()).Concat(new SyncedConfigEntry<T>[1] { syncedEntry }).ToArray());"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 556,
+      "text": "configEntry.SettingChanged += (object _, EventArgs _) =>"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 560,
+      "text": "Broadcast(0L, (ConfigEntryBase)configEntry);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 568,
+      "text": "public SyncedConfigEntry<T> AddLockingConfigEntry<T>(ConfigEntry<T> lockingConfig) where T : IConvertible"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 572,
+      "text": "throw new Exception(\"Cannot initialize locking ConfigEntry twice\");"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 574,
+      "text": "lockedConfig = AddConfigEntry<T>(lockingConfig);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 579,
+      "text": "return (SyncedConfigEntry<T>)lockedConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 697,
+      "text": "ConfigFile val2 = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 699,
+      "text": "foreach (KeyValuePair<OwnConfigEntryBase, object> configValue in parsedConfigs.configValues)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 707,
+      "text": "val2 = configValue.Key.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 746,
+      "text": "Dictionary<string, OwnConfigEntryBase> dictionary = allConfigs.Where((OwnConfigEntryBase c) => c.SynchronizedConfig).ToDictionary((OwnConfigEntryBase c) => c.BaseConfig.Definition.Section + \"_\" + c.BaseConfig.Definition.Key, (OwnConfigEntryBase c) => c);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 767,
+      "text": "OwnConfigEntryBase value2;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 817,
+      "text": "private static bool isWritableConfig(OwnConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 829,
+      "text": "foreach (OwnConfigEntryBase allConfig in allConfigs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 837,
+      "text": "ConfigFile val = null;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 839,
+      "text": "foreach (OwnConfigEntryBase item in allConfigs.Where((OwnConfigEntryBase config) => config.LocalBaseValue != null))"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 843,
+      "text": "val = item.BaseConfig.ConfigFile;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 981,
+      "text": "private void Broadcast(long target, params ConfigEntryBase[] configs)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1007,
+      "text": "private static OwnConfigEntryBase? configData(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1009,
+      "text": "return config.Description.Tags?.OfType<OwnConfigEntryBase>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1012,
+      "text": "public static SyncedConfigEntry<T>? ConfigData<T>(ConfigEntry<T> config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1014,
+      "text": "return ((ConfigEntryBase)config).Description.Tags?.OfType<SyncedConfigEntry<T>>().SingleOrDefault();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1017,
+      "text": "private static T configAttribute<T>(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1022,
+      "text": "private static Type configType(ConfigEntryBase config)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1032,
+      "text": "private static ZPackage ConfigsToPackage(IEnumerable<ConfigEntryBase>? configs = null, IEnumerable<CustomSyncedValueBase>? customValues = null, IEnumerable<PackageEntry>? packageEntries = null, bool partial = true)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1036,
+      "text": "List<ConfigEntryBase> list = configs?.Where((ConfigEntryBase config) => configData(config).SynchronizedConfig).ToList() ?? new List<ConfigEntryBase>();"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1055,
+      "text": "foreach (ConfigEntryBase item3 in list)"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 7,
+      "text": "internal class SyncedConfigEntry<T>(ConfigEntry<T> sourceConfig) : OwnConfigEntryBase"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 9,
+      "text": "public readonly ConfigEntry<T> SourceConfig = sourceConfig;"
+    },
+    {
+      "file": "csharp/ServerSync/SyncedConfigEntry.cs",
+      "line": 11,
+      "text": "public override ConfigEntryBase BaseConfig => (ConfigEntryBase)(object)SourceConfig;"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 258,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CWieldEquipmentWhileSwimming.Plugin/Toggle\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 265,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CWieldEquipmentWhileSwimming.Plugin/UseOptions\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 272,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 279,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CSystem.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 371,
+      "text": "\"type\": \"System.Action\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 466,
+      "text": "\"type\": \"System.Action\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 572,
+      "text": "\"name\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 628,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 635,
+      "text": "\"name\": \"ServerSync.SyncedConfigEntry\\u00601\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 636,
+      "text": "\"baseType\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 666,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 675,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1045,
+      "text": "\"type\": \"System.Collections.Generic.HashSet\\u00601\\u003CServerSync.OwnConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1073,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1475,
+      "text": "\"type\": \"System.Collections.Generic.Dictionary\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Object\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1655,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,BepInEx.Configuration.ConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2000,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2028,
+      "text": "\"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2160,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2176,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.String\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2192,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,ServerSync.OwnConfigEntryBase\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2240,
+      "text": "\"type\": \"System.Func\\u00602\\u003CServerSync.OwnConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2326,
+      "text": "\"type\": \"System.Func\\u00602\\u003CBepInEx.Configuration.ConfigEntryBase,System.Boolean\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2360,
+      "text": "\"type\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2391,
+      "text": "\"name\": \"configEntry\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2392,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2476,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3564,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E WieldEquipmentWhileSwimming.Plugin::config(System.String,System.String,T,BepInEx.Configuration.ConfigDescription,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3566,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3582,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigDescription\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3596,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E WieldEquipmentWhileSwimming.Plugin::config2(System.String,System.String,T,System.String,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3598,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3650,
+      "text": "\"signature\": \"System.Void WieldEquipmentWhileSwimming.Plugin::TextBox(BepInEx.Configuration.ConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3656,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3841,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntryBase ServerSync.OwnConfigEntryBase::get_BaseConfig()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3843,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3852,
+      "text": "\"signature\": \"System.Void ServerSync.OwnConfigEntryBase::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3863,
+      "text": "\"signature\": \"System.Void ServerSync.SyncedConfigEntry\\u00601::.ctor(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3869,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3879,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntryBase ServerSync.SyncedConfigEntry\\u00601::get_BaseConfig()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3881,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3890,
+      "text": "\"signature\": \"T ServerSync.SyncedConfigEntry\\u00601::get_Value()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3901,
+      "text": "\"signature\": \"System.Void ServerSync.SyncedConfigEntry\\u00601::set_Value(T)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3917,
+      "text": "\"signature\": \"System.Void ServerSync.SyncedConfigEntry\\u00601::AssignLocalValue(T)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4405,
+      "text": "\"signature\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E ServerSync.ConfigSync::AddConfigEntry(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4407,
+      "text": "\"returnType\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4410,
+      "text": "\"name\": \"configEntry\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4411,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4421,
+      "text": "\"signature\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E ServerSync.ConfigSync::AddLockingConfigEntry(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4423,
+      "text": "\"returnType\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4427,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4533,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync::isWritableConfig(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4539,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4649,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::Broadcast(System.Int64,BepInEx.Configuration.ConfigEntryBase[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4659,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase[]\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4689,
+      "text": "\"signature\": \"ServerSync.OwnConfigEntryBase ServerSync.ConfigSync::configData(BepInEx.Configuration.ConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4691,
+      "text": "\"returnType\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4695,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4705,
+      "text": "\"signature\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E ServerSync.ConfigSync::ConfigData(BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4707,
+      "text": "\"returnType\": \"ServerSync.SyncedConfigEntry\\u00601\\u003CT\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4711,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntry\\u00601\\u003CT\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4721,
+      "text": "\"signature\": \"T ServerSync.ConfigSync::configAttribute(BepInEx.Configuration.ConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4727,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4737,
+      "text": "\"signature\": \"System.Type ServerSync.ConfigSync::configType(BepInEx.Configuration.ConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4743,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4769,
+      "text": "\"signature\": \"ZPackage ServerSync.ConfigSync::ConfigsToPackage(System.Collections.Generic.IEnumerable\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E,System.Collections.Generic.IEnumerable\\u00601\\u003CServerSync.CustomSyncedValueBase\\u003E,System.Collections.Generic.IEnumerable\\u00601\\u003CServerSync.ConfigSync/PackageEntry\\u003E,System.Boo"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4775,
+      "text": "\"type\": \"System.Collections.Generic.IEnumerable\\u00601\\u003CBepInEx.Configuration.ConfigEntryBase\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4873,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::\\u003CAddLockingConfigEntry\\u003Eb__35_0(System.Object,System.EventArgs)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5611,
+      "text": "\"signature\": \"BepInEx.Configuration.ConfigEntryBase ServerSync.ConfigSync/SendConfigsAfterLogin/\\u003C\\u003Ec::\\u003CPostfix\\u003Eb__2_2(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5613,
+      "text": "\"returnType\": \"BepInEx.Configuration.ConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5617,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5806,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/PreventSavingServerInfo::Prefix(BepInEx.Configuration.ConfigEntryBase,System.String\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5812,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5841,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/PreventConfigRereadChangingValues::Prefix(BepInEx.Configuration.ConfigEntryBase,System.String)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5847,
+      "text": "\"type\": \"BepInEx.Configuration.ConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5984,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/\\u003C\\u003Ec::\\u003CReadConfigsFromPackage\\u003Eb__49_0(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5990,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6009,
+      "text": "\"signature\": \"System.String ServerSync.ConfigSync/\\u003C\\u003Ec::\\u003CReadConfigsFromPackage\\u003Eb__49_1(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6015,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6034,
+      "text": "\"signature\": \"ServerSync.OwnConfigEntryBase ServerSync.ConfigSync/\\u003C\\u003Ec::\\u003CReadConfigsFromPackage\\u003Eb__49_2(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6036,
+      "text": "\"returnType\": \"ServerSync.OwnConfigEntryBase\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6040,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6109,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/\\u003C\\u003Ec::\\u003CresetConfigsFromServer\\u003Eb__53_0(ServerSync.OwnConfigEntryBase)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 6115,
+      "text": "\"type\": \"ServerSync.OwnConfigEntryBase\""
+    }
+  ],
+  "Network/RPC": [
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 36,
+      "text": "private readonly List<ZRpc> ValidatedClients = new List<ZRpc>();"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 81,
+      "text": "if (patchInfo != null && patchInfo.Postfixes.Count((Patch p) => p.PatchMethod.DeclaringType == typeof(ConfigSync.RegisterRPCPatch)) > 0)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 152,
+      "text": "private string ErrorServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 157,
+      "text": "private string Error(ZRpc? rpc = null)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 167,
+      "text": "private static VersionCheck[] GetFailedServer(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 178,
+      "text": "private static void DisconnectClient(ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 183,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 188,
+      "text": "private static void CheckVersion(ZRpc rpc, ZPackage pkg, Action<ZRpc, ZPackage>? original)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 223,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 225,
+      "text": "private static bool RPC_PeerInfo(ZRpc rpc, ZNet __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 255,
+      "text": "IDictionary dictionary = (IDictionary)typeof(ZRpc).GetField(\"m_functions\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(peer.m_rpc);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 259,
+      "text": "Action<ZRpc, ZPackage> action = (Action<ZRpc, ZPackage>)obj.GetType().GetField(\"m_action\", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(obj);"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 260,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)((ZRpc rpc, ZPackage pkg) =>"
+    },
+    {
+      "file": "csharp/ServerSync/VersionCheck.cs",
+      "line": 267,
+      "text": "peer.m_rpc.Register<ZPackage>(\"ServerSync VersionCheck\", (Action<ZRpc, ZPackage>)CheckVersion);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 21,
+      "text": "[HarmonyPatch(typeof(ZRpc), \"HandlePackage\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 24,
+      "text": "public static ZRpc? currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 27,
+      "text": "private static void Prefix(ZRpc __instance)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 34,
+      "text": "internal static class RegisterRPCPatch"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 42,
+      "text": "ZRoutedRpc.instance.Register<ZPackage>(configSync2.Name + \" ConfigSync\", (Action<long, ZPackage>)configSync2.RPC_FromOtherClientConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 108,
+      "text": "peer.m_rpc.Register<ZPackage>(configSync.Name + \" ConfigSync\", (Action<ZRpc, ZPackage>)configSync.RPC_FromServerConfigSync);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 137,
+      "text": "[HarmonyPatch(typeof(ZNet), \"RPC_PeerInfo\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 260,
+      "text": "private static void Prefix(ref Dictionary<Assembly, BufferingSocket>? __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 269,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 270,
+      "text": "object? obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 291,
+      "text": "private static void Postfix(Dictionary<Assembly, BufferingSocket> __state, ZNet __instance, ZRpc rpc)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 296,
+      "text": "object obj = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 311,
+      "text": "AccessTools.DeclaredField(typeof(ZRpc), \"m_socket\").SetValue(rpc, bufferingSocket.Original);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 312,
+      "text": "object? obj2 = AccessTools.DeclaredMethod(typeof(ZNet), \"GetPeer\", new Type[1] { typeof(ZRpc) }, (Type[])null).Invoke(__instance, new object[1] { rpc });"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 599,
+      "text": "private void RPC_FromServerConfigSync(ZRpc rpc, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 609,
+      "text": "private void RPC_FromOtherClientConfigSync(long sender, ZPackage package)"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 626,
+      "text": "ZRpc? currentRpc = SnatchCurrentlyHandlingRPC.currentRpc;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 865,
+      "text": "ZRoutedRpc rpc = ZRoutedRpc.instance;"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 943,
+      "text": "List<ZNetPeer> list = (List<ZNetPeer>)AccessTools.DeclaredField(typeof(ZRoutedRpc), \"m_peers\").GetValue(ZRoutedRpc.instance);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1114,
+      "text": "ZRpc.Serialize(new object[1] { value }, ref package);"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 1181,
+      "text": "ZRpc.Deserialize(new ParameterInfo[2] { null, parameterInfo }, package, ref source);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1223,
+      "text": "\"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1233,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1252,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1280,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1313,
+      "text": "\"type\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1391,
+      "text": "\"name\": \"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1563,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 1689,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 2542,
+      "text": "\"type\": \"ZRoutedRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3269,
+      "text": "\"type\": \"System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3326,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3478,
+      "text": "\"type\": \"ZRpc\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3512,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4453,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4459,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4473,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4931,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4937,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4962,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 4993,
+      "text": "\"signature\": \"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5009,
+      "text": "\"ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5027,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5062,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5085,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.IDisposable.Dispose()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5103,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::MoveNext()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5114,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.Generic.IEnumerator\\u003CSystem.Object\\u003E.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5132,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.Reset()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5150,
+      "text": "\"signature\": \"System.Object ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::System.Collections.IEnumerator.get_Current()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5168,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5179,
+      "text": "\"signature\": \"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5270,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Prefix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E\\u0026,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5284,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5309,
+      "text": "\"signature\": \"System.Void ServerSync.ConfigSync/SendConfigsAfterLogin::Postfix(System.Collections.Generic.Dictionary\\u00602\\u003CSystem.Reflection.Assembly,ServerSync.ConfigSync/SendConfigsAfterLogin/BufferingSocket\\u003E,ZNet,ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 5323,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7002,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7008,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7018,
+      "text": "\"signature\": \"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7024,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7045,
+      "text": "\"signature\": \"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7051,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7072,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7078,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7088,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7094,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7108,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7114,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7122,
+      "text": "\"type\": \"System.Action\\u00602\\u003CZRpc,ZPackage\\u003E\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7132,
+      "text": "\"signature\": \"System.Boolean ServerSync.VersionCheck::RPC_PeerInfo(ZRpc,ZNet)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7138,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7150,
+      "text": "\"RPC_PeerInfo\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7466,
+      "text": "\"signature\": \"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7472,
+      "text": "\"type\": \"ZRpc\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7561,
+      "text": "\"ISocket ZRpc::GetSocket()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7571,
+      "text": "\"ServerSync.VersionCheck[] ServerSync.VersionCheck::GetFailedServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7594,
+      "text": "\"System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::\\u003CPostfix\\u003Eb__2(ZNetPeer)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7617,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Contains(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7618,
+      "text": "\"System.Boolean System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Remove(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7697,
+      "text": "\"System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7767,
+      "text": "\"System.String ServerSync.VersionCheck::Error(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7769,
+      "text": "\"System.String ServerSync.VersionCheck::ErrorServer(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7835,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7836,
+      "text": "\"System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7859,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch::\\u003CPostfix\\u003Eg__SendAdmin|0_1(System.Collections.Generic.List\\u00601\\u003CZNetPeer\\u003E,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7860,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003CPostfix\\u003Eg__WatchAdminListChanges|0_0\\u003Ed::.ctor(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7861,
+      "text": "\"System.Void ServerSync.ConfigSync/RegisterRPCPatch/\\u003C\\u003Ec__DisplayClass0_0::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7879,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage,System.Action\\u00602\\u003CZRpc,ZPackage\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7880,
+      "text": "\"System.Void ServerSync.VersionCheck::CheckVersion(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7881,
+      "text": "\"System.Void ServerSync.VersionCheck::DisconnectClient(ZRpc)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7890,
+      "text": "\"System.Void ServerSync.VersionCheck/\\u003C\\u003Ec__DisplayClass36_0::\\u003CRegisterAndCheckVersion\\u003Eb__0(ZRpc,ZPackage)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7898,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::.ctor(System.Object,System.IntPtr)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7899,
+      "text": "\"System.Void System.Action\\u00602\\u003CZRpc,ZPackage\\u003E::Invoke(!0,!1)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7930,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::.ctor()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7931,
+      "text": "\"System.Void System.Collections.Generic.List\\u00601\\u003CZRpc\\u003E::Add(!0)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7992,
+      "text": "\"System.Void ZRoutedRpc::InvokeRoutedRPC(System.Int64,System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7993,
+      "text": "\"System.Void ZRoutedRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CSystem.Int64,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7994,
+      "text": "\"System.Void ZRpc::Deserialize(System.Reflection.ParameterInfo[],ZPackage,System.Collections.Generic.List\\u00601\\u003CSystem.Object\\u003E\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7995,
+      "text": "\"System.Void ZRpc::Invoke(System.String,System.Object[])\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7996,
+      "text": "\"System.Void ZRpc::Register\\u003CZPackage\\u003E(System.String,System.Action\\u00602\\u003CZRpc,!!0\\u003E)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7997,
+      "text": "\"System.Void ZRpc::Serialize(System.Object[],ZPackage\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8011,
+      "text": "\"ZRoutedRpc ZRoutedRpc::get_instance()\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1179,
+      "text": "// System.Void ServerSync.ConfigSync::RPC_FromServerConfigSync(ZRpc,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1209,
+      "text": "// System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1228,
+      "text": "IL_0011: ldsfld ZRpc ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::currentRpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 1234,
+      "text": "IL_001d: call ISocket ZRpc::GetSocket()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2442,
+      "text": "IL_002d: ldtoken ZRoutedRpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2446,
+      "text": "IL_0041: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 2974,
+      "text": "IL_0125: call System.Void ZRpc::Serialize(System.Object[],ZPackage&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3261,
+      "text": "IL_02c6: call System.Void ZRpc::Deserialize(System.Reflection.ParameterInfo[],ZPackage,System.Collections.Generic.List`1<System.Object>&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3311,
+      "text": "// System.Void ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::Prefix(ZRpc)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3314,
+      "text": "IL_0001: stsfld ZRpc ServerSync.ConfigSync/SnatchCurrentlyHandlingRPC::currentRpc"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3317,
+      "text": "// System.Void ServerSync.ConfigSync/RegisterRPCPatch::Postfix(ZNet)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3332,
+      "text": "IL_0023: call ZRoutedRpc ZRoutedRpc::get_instance()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3338,
+      "text": "IL_0039: ldftn System.Void ServerSync.ConfigSync::RPC_FromOtherClientConfigSync(System.Int64,ZPackage)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3340,
+      "text": "IL_0044: callvirt System.Void ZRoutedRpc::Register<ZPackage>(System.String,System.Action`2<System.Int64,!!0>)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3376,
+      "text": "IL_009f: call System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::<Postfix>g__WatchAdminListChanges|0_0()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3383,
+      "text": "// System.Collections.IEnumerator ServerSync.ConfigSync/RegisterRPCPatch::<Postfix>g__WatchAdminListChanges|0_0()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3384,
+      "text": ".locals ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d, System.Collections.IEnumerator"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3386,
+      "text": "IL_0001: newobj System.Void ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::.ctor(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3393,
+      "text": "// System.Void ServerSync.ConfigSync/RegisterRPCPatch::<Postfix>g__SendAdmin|0_1(System.Collections.Generic.List`1<ZNetPeer>,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3443,
+      "text": "// System.Void ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::.ctor(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3450,
+      "text": "IL_0009: stfld System.Int32 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>1__state"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3453,
+      "text": "// System.Void ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::System.IDisposable.Dispose()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3457,
+      "text": "IL_0002: stfld ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>8__1"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3460,
+      "text": "IL_0009: stfld System.Collections.Generic.List`1<System.String> ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<CurrentList>5__2"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3463,
+      "text": "IL_0010: stfld System.Collections.Generic.List`1<ZNetPeer> ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<adminPeer>5__3"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3466,
+      "text": "IL_0017: stfld System.Collections.Generic.List`1<ZNetPeer> ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<nonAdminPeer>5__4"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3469,
+      "text": "IL_001f: stfld System.Int32 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>1__state"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3472,
+      "text": "// System.Boolean ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::MoveNext()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3475,
+      "text": "IL_0001: ldfld System.Int32 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>1__state"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3490,
+      "text": "IL_001d: stfld System.Int32 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>1__state"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3492,
+      "text": "IL_0023: newobj System.Void ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3493,
+      "text": "IL_0028: stfld ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>8__1"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3496,
+      "text": "IL_002f: ldfld ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>8__1"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3503,
+      "text": "IL_004a: stfld System.Reflection.MethodInfo ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0::listContainsId"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3505,
+      "text": "IL_0050: ldfld ServerSync.ConfigSync/RegisterRPCPatch/<>c__DisplayClass0_0 ServerSync.ConfigSync/RegisterRPCPatch/<<Postfix>g__WatchAdminListChanges|0_0>d::<>8__1"
+    }
+  ],
+  "Characters/combat": [
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 50,
+      "text": "[HarmonyPatch(typeof(Character), \"IsSwimming\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 51,
+      "text": "private static bool IsSwimming_Prefix(Humanoid __instance, float ___m_swimTimer, ref bool __result)"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 57,
+      "text": "if (!(___m_swimTimer < 0.5f) || !((Character)__instance).IsPlayer())"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 107,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"EquipItem\")]"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 113,
+      "text": "[HarmonyPatch(typeof(Humanoid), \"UpdateEquipment\")]"
+    },
+    {
+      "file": "csharp/ServerSync/ConfigSync.cs",
+      "line": 279,
+      "text": "typeof(ZPlayFabSocket).GetField(\"m_remotePlayerId\").SetValue(bufferingSocket, val2.m_remotePlayerId);"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3699,
+      "text": "\"signature\": \"System.Boolean WieldEquipmentWhileSwimming.Plugin/Patches::IsSwimming_Prefix(Humanoid,System.Single,System.Boolean\\u0026)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3705,
+      "text": "\"type\": \"Humanoid\""
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3726,
+      "text": "\"Character\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3753,
+      "text": "\"Humanoid\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 3780,
+      "text": "\"Humanoid\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7562,
+      "text": "\"ItemDrop/ItemData Humanoid::GetLeftItem()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7563,
+      "text": "\"ItemDrop/ItemData Humanoid::GetRightItem()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7573,
+      "text": "\"System.Boolean Character::IsPlayer()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7574,
+      "text": "\"System.Boolean Humanoid::HideHandItems(System.Boolean,System.Boolean)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 8088,
+      "text": "\"m_remotePlayerId\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 203,
+      "text": "// System.Boolean WieldEquipmentWhileSwimming.Plugin/Patches::IsSwimming_Prefix(Humanoid,System.Single,System.Boolean&)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 209,
+      "text": "IL_0009: callvirt System.Boolean Character::IsPlayer()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 257,
+      "text": "IL_0094: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 265,
+      "text": "IL_00ae: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 271,
+      "text": "IL_00c5: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 279,
+      "text": "IL_00df: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 287,
+      "text": "IL_00f8: callvirt System.Boolean Humanoid::HideHandItems(System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 295,
+      "text": "IL_0104: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 298,
+      "text": "IL_010c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 309,
+      "text": "IL_0132: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 315,
+      "text": "IL_0149: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 318,
+      "text": "IL_0151: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 329,
+      "text": "IL_0177: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 337,
+      "text": "IL_0190: callvirt System.Boolean Humanoid::HideHandItems(System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 345,
+      "text": "IL_019c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 348,
+      "text": "IL_01a4: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 357,
+      "text": "IL_01c3: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 363,
+      "text": "IL_01da: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 366,
+      "text": "IL_01e2: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 375,
+      "text": "IL_0201: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 383,
+      "text": "IL_021a: callvirt System.Boolean Humanoid::HideHandItems(System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 391,
+      "text": "IL_0226: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 399,
+      "text": "IL_0240: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 410,
+      "text": "IL_026c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 416,
+      "text": "IL_0283: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 424,
+      "text": "IL_029d: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 435,
+      "text": "IL_02c6: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 443,
+      "text": "IL_02df: callvirt System.Boolean Humanoid::HideHandItems(System.Boolean,System.Boolean)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3845,
+      "text": "IL_00c3: ldstr \"m_remotePlayerId\""
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 3849,
+      "text": "IL_00d0: ldfld System.String ZPlayFabSocket::m_remotePlayerId"
+    }
+  ],
+  "Inventory/items": [
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 61,
+      "text": "StackTrace stackTrace = new StackTrace();"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 63,
+      "text": "for (int i = 2; i < stackTrace.FrameCount && i < 10; i++)"
+    },
+    {
+      "file": "csharp/WieldEquipmentWhileSwimming/Plugin.cs",
+      "line": 65,
+      "text": "text = text + GeneralExtensions.FullDescription(stackTrace.GetFrame(i).GetMethod()) + \"_\";"
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7562,
+      "text": "\"ItemDrop/ItemData Humanoid::GetLeftItem()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7563,
+      "text": "\"ItemDrop/ItemData Humanoid::GetRightItem()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7579,
+      "text": "\"System.Boolean ItemDrop/ItemData::IsWeapon()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7704,
+      "text": "\"System.Diagnostics.StackFrame System.Diagnostics.StackTrace::GetFrame(System.Int32)\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7721,
+      "text": "\"System.Int32 System.Diagnostics.StackTrace::get_FrameCount()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7749,
+      "text": "\"System.Reflection.MethodBase System.Diagnostics.StackFrame::GetMethod()\","
+    },
+    {
+      "file": "metadata/metadata.json",
+      "line": 7935,
+      "text": "\"System.Void System.Diagnostics.StackTrace::.ctor()\","
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 204,
+      "text": ".locals System.Diagnostics.StackTrace, System.String, System.Int32, WieldEquipmentWhileSwimming.Plugin/UseOptions"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 213,
+      "text": "IL_0012: newobj System.Void System.Diagnostics.StackTrace::.ctor()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 223,
+      "text": "IL_0025: callvirt System.Diagnostics.StackFrame System.Diagnostics.StackTrace::GetFrame(System.Int32)"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 224,
+      "text": "IL_002a: callvirt System.Reflection.MethodBase System.Diagnostics.StackFrame::GetMethod()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 235,
+      "text": "IL_0045: callvirt System.Int32 System.Diagnostics.StackTrace::get_FrameCount()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 257,
+      "text": "IL_0094: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 265,
+      "text": "IL_00ae: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 266,
+      "text": "IL_00b3: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 271,
+      "text": "IL_00c5: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 279,
+      "text": "IL_00df: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 280,
+      "text": "IL_00e4: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 295,
+      "text": "IL_0104: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 298,
+      "text": "IL_010c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 299,
+      "text": "IL_0111: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 300,
+      "text": "IL_0116: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 309,
+      "text": "IL_0132: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 310,
+      "text": "IL_0137: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 315,
+      "text": "IL_0149: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 318,
+      "text": "IL_0151: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 319,
+      "text": "IL_0156: ldfld ItemDrop/ItemData/SharedData ItemDrop/ItemData::m_shared"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 320,
+      "text": "IL_015b: ldfld ItemDrop/ItemData/ItemType ItemDrop/ItemData/SharedData::m_itemType"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 329,
+      "text": "IL_0177: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 330,
+      "text": "IL_017c: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 345,
+      "text": "IL_019c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 348,
+      "text": "IL_01a4: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 349,
+      "text": "IL_01a9: callvirt System.Boolean ItemDrop/ItemData::IsWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 357,
+      "text": "IL_01c3: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 358,
+      "text": "IL_01c8: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 363,
+      "text": "IL_01da: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 366,
+      "text": "IL_01e2: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 367,
+      "text": "IL_01e7: callvirt System.Boolean ItemDrop/ItemData::IsWeapon()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 375,
+      "text": "IL_0201: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 376,
+      "text": "IL_0206: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 391,
+      "text": "IL_0226: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 399,
+      "text": "IL_0240: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 400,
+      "text": "IL_0245: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 410,
+      "text": "IL_026c: callvirt ItemDrop/ItemData Humanoid::GetRightItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 411,
+      "text": "IL_0271: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 416,
+      "text": "IL_0283: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 424,
+      "text": "IL_029d: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 425,
+      "text": "IL_02a2: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 435,
+      "text": "IL_02c6: callvirt ItemDrop/ItemData Humanoid::GetLeftItem()"
+    },
+    {
+      "file": "metadata/instructions.il",
+      "line": 436,
+      "text": "IL_02cb: ldfld UnityEngine.GameObject ItemDrop/ItemData::m_dropPrefab"
+    }
+  ]
+}

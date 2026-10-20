@@ -1,0 +1,406 @@
+﻿{
+  "input": "NoSlopeSlide.dll",
+  "assembly": "NoSlopeSlide, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null",
+  "version": "0.1.0.0",
+  "modules": [
+    {
+      "name": "NoSlopeSlide.dll",
+      "mvid": "a2b81c99-af10-4d15-8020-031df84e431c"
+    }
+  ],
+  "references": [
+    "0Harmony, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "BepInEx, Version=5.4.23.5, Culture=neutral, PublicKeyToken=null",
+    "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "attributes": [
+    {
+      "name": "System.Runtime.CompilerServices.CompilationRelaxationsAttribute",
+      "arguments": [
+        "8"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.CompilerServices.RuntimeCompatibilityAttribute",
+      "arguments": [],
+      "properties": [
+        {
+          "name": "WrapNonExceptionThrows",
+          "value": "True"
+        }
+      ],
+      "fields": []
+    },
+    {
+      "name": "System.Diagnostics.DebuggableAttribute",
+      "arguments": [
+        "2"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTitleAttribute",
+      "arguments": [
+        "NoSlopeSlide"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyDescriptionAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyConfigurationAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCompanyAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyProductAttribute",
+      "arguments": [
+        "NoSlopeSlide"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyCopyrightAttribute",
+      "arguments": [
+        "Copyright \u00A9  2021"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyTrademarkAttribute",
+      "arguments": [
+        ""
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.ComVisibleAttribute",
+      "arguments": [
+        "False"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.InteropServices.GuidAttribute",
+      "arguments": [
+        "e3243d22-4307-4008-ba36-9f326008cde5"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Reflection.AssemblyFileVersionAttribute",
+      "arguments": [
+        "0.1.0"
+      ],
+      "properties": [],
+      "fields": []
+    },
+    {
+      "name": "System.Runtime.Versioning.TargetFrameworkAttribute",
+      "arguments": [
+        ".NETFramework,Version=v4.8"
+      ],
+      "properties": [
+        {
+          "name": "FrameworkDisplayName",
+          "value": ".NET Framework 4.8"
+        }
+      ],
+      "fields": []
+    }
+  ],
+  "types": [
+    {
+      "name": "\u003CModule\u003E",
+      "baseType": null,
+      "visibility": "Class",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "NoSlopeSlide.NoSlopeSlide",
+      "baseType": "BepInEx.BaseUnityPlugin",
+      "visibility": "Public, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "BepInEx.BepInPlugin",
+          "arguments": [
+            "orax.NoSlopeSlide",
+            "NoSlopeSlide",
+            "0.1.0"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [
+        {
+          "name": "PluginGUID",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "orax.NoSlopeSlide",
+          "decorators": []
+        },
+        {
+          "name": "PluginName",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "NoSlopeSlide",
+          "decorators": []
+        },
+        {
+          "name": "PluginVersion",
+          "type": "System.String",
+          "attributes": "Public, Static, Literal, HasDefault",
+          "constant": "0.1.0",
+          "decorators": []
+        },
+        {
+          "name": "Enabled",
+          "type": "BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E",
+          "attributes": "Public, Static",
+          "constant": null,
+          "decorators": []
+        },
+        {
+          "name": "_harmony",
+          "type": "HarmonyLib.Harmony",
+          "attributes": "Private",
+          "constant": null,
+          "decorators": []
+        }
+      ],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "NoSlopeSlide.Patch",
+      "baseType": "System.Object",
+      "visibility": "BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "NoSlopeSlide.Patch/Character_ApplySlide_Patch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Character",
+            "ApplySlide"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    },
+    {
+      "name": "NoSlopeSlide.Patch/Character_UpdateMotion_Patch",
+      "baseType": "System.Object",
+      "visibility": "NestedPrivate, BeforeFieldInit",
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "HarmonyLib.HarmonyPatch",
+          "arguments": [
+            "Character",
+            "UpdateMotion"
+          ],
+          "properties": [],
+          "fields": []
+        }
+      ],
+      "fields": [],
+      "properties": [],
+      "events": []
+    }
+  ],
+  "methods": [
+    {
+      "signature": "System.Void NoSlopeSlide.NoSlopeSlide::Awake()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 20
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.NoSlopeSlide::OnDestroy()",
+      "visibility": "Private, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 8
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.NoSlopeSlide::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.Patch::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Boolean NoSlopeSlide.Patch/Character_ApplySlide_Patch::Prefix(Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Boolean",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 16
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.Patch/Character_ApplySlide_Patch::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::Prefix(Character)",
+      "visibility": "Private, Static, HideBySig",
+      "returnType": "System.Void",
+      "parameters": [
+        {
+          "name": "__instance",
+          "type": "Character"
+        }
+      ],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 67
+    },
+    {
+      "signature": "System.Void NoSlopeSlide.Patch/Character_UpdateMotion_Patch::.ctor()",
+      "visibility": "Public, HideBySig, SpecialName, RTSpecialName",
+      "returnType": "System.Void",
+      "parameters": [],
+      "attributes": [],
+      "isPInvoke": false,
+      "pinvoke": null,
+      "hasBody": true,
+      "instructions": 3
+    }
+  ],
+  "resources": [],
+  "calledMethods": [
+    "!!0 UnityEngine.Component::GetComponent\u003CUnityEngine.Rigidbody\u003E()",
+    "!0 BepInEx.Configuration.ConfigEntry\u00601\u003CSystem.Boolean\u003E::get_Value()",
+    "BepInEx.Configuration.ConfigEntry\u00601\u003C!!0\u003E BepInEx.Configuration.ConfigFile::Bind\u003CSystem.Boolean\u003E(System.String,System.String,!!0,System.String)",
+    "BepInEx.Configuration.ConfigFile BepInEx.BaseUnityPlugin::get_Config()",
+    "BepInEx.Logging.ManualLogSource BepInEx.BaseUnityPlugin::get_Logger()",
+    "Ship Character::GetStandingOnShip()",
+    "System.Boolean Character::IsAttached()",
+    "System.Boolean Character::IsDead()",
+    "System.Boolean Character::IsOnGround()",
+    "System.Boolean Character::IsPlayer()",
+    "System.Boolean Character::IsRiding()",
+    "System.Boolean Character::IsSwimming()",
+    "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)",
+    "System.Boolean UnityEngine.Vector3::op_Inequality(UnityEngine.Vector3,UnityEngine.Vector3)",
+    "System.Single UnityEngine.Vector3::get_sqrMagnitude()",
+    "System.Void BepInEx.BaseUnityPlugin::.ctor()",
+    "System.Void BepInEx.Logging.ManualLogSource::LogInfo(System.Object)",
+    "System.Void HarmonyLib.Harmony::.ctor(System.String)",
+    "System.Void HarmonyLib.Harmony::PatchAll()",
+    "System.Void HarmonyLib.Harmony::UnpatchSelf()",
+    "System.Void System.Object::.ctor()",
+    "System.Void UnityEngine.Rigidbody::AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)",
+    "System.Void UnityEngine.Vector3::Normalize()",
+    "UnityEngine.Vector3 Character::GetMoveDir()",
+    "UnityEngine.Vector3 UnityEngine.Physics::get_gravity()",
+    "UnityEngine.Vector3 UnityEngine.Vector3::get_zero()",
+    "UnityEngine.Vector3 UnityEngine.Vector3::op_UnaryNegation(UnityEngine.Vector3)",
+    "UnityEngine.Vector3 UnityEngine.Vector3::ProjectOnPlane(UnityEngine.Vector3,UnityEngine.Vector3)"
+  ],
+  "stringLiterals": [
+    "Enable this mod.",
+    "Enabled",
+    "General",
+    "NoSlopeSlide v0.1.0 loaded.",
+    "orax.NoSlopeSlide"
+  ],
+  "totals": {
+    "types": 5,
+    "methods": 8,
+    "strings": 5,
+    "calledMethods": 29,
+    "resources": 0
+  }
+}

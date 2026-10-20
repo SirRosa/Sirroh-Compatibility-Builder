@@ -1,0 +1,381 @@
+[
+  {
+    "source": "0000_LetMeTameYou.lmty_assets",
+    "objects": [
+      {
+        "index": 0,
+        "type": "GameObject",
+        "pathId": "-8830399635378246434",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00000_GameObject_collider.json"
+      },
+      {
+        "index": 1,
+        "type": "Sprite",
+        "pathId": "-8408031071810994355",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00001_Sprite_NewDragonEgg.png"
+      },
+      {
+        "index": 2,
+        "type": "Transform",
+        "pathId": "-8348251254355672145",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00002_Transform_00002_Transform.json"
+      },
+      {
+        "index": 3,
+        "type": "Texture2D",
+        "pathId": "-8206672791378357589",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00003_Texture2D_NewRockyEgg.png"
+      },
+      {
+        "index": 4,
+        "type": "Sprite",
+        "pathId": "-7980026259691147867",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00004_Sprite_NewRockyEgg.png"
+      },
+      {
+        "index": 5,
+        "type": "MonoScript",
+        "pathId": "-6766405830603527344",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00005_MonoScript_ZNetView.json"
+      },
+      {
+        "index": 6,
+        "type": "MeshFilter",
+        "pathId": "-6719621158903103615",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00006_MeshFilter_00006_MeshFilter.json"
+      },
+      {
+        "index": 7,
+        "type": "MonoBehaviour",
+        "pathId": "-6577273127180073922",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00007_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 8,
+        "type": "Texture2D",
+        "pathId": "-6528674481901690810",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00008_Texture2D_NewChickenEgg.png"
+      },
+      {
+        "index": 9,
+        "type": "Transform",
+        "pathId": "-6483485409502838713",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00009_Transform_00009_Transform.json"
+      },
+      {
+        "index": 10,
+        "type": "ParticleSystemRenderer",
+        "pathId": "-5879216471019438463",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00010_ParticleSystemRenderer_00010_ParticleSystemRenderer.json"
+      },
+      {
+        "index": 11,
+        "type": "MonoScript",
+        "pathId": "-4929274236611494294",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00011_MonoScript_ItemDrop.json"
+      },
+      {
+        "index": 12,
+        "type": "Shader",
+        "pathId": "-4850512016903265157",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00012_Shader_unnamed.json"
+      },
+      {
+        "index": 13,
+        "type": "Transform",
+        "pathId": "-4516185462333704289",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00013_Transform_00013_Transform.json"
+      },
+      {
+        "index": 14,
+        "type": "MeshRenderer",
+        "pathId": "-4408988584386159041",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00014_MeshRenderer_00014_MeshRenderer.json"
+      },
+      {
+        "index": 15,
+        "type": "MonoBehaviour",
+        "pathId": "-4130422179159141618",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00015_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 16,
+        "type": "MonoBehaviour",
+        "pathId": "-3826085976610438171",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00016_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 17,
+        "type": "BoxCollider",
+        "pathId": "-3360499203341825839",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00017_BoxCollider_00017_BoxCollider.json"
+      },
+      {
+        "index": 18,
+        "type": "Texture2D",
+        "pathId": "-3215113687407556328",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00018_Texture2D_JVLmock_starspark.png"
+      },
+      {
+        "index": 19,
+        "type": "Transform",
+        "pathId": "-3068949790059954802",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00019_Transform_00019_Transform.json"
+      },
+      {
+        "index": 20,
+        "type": "Texture2D",
+        "pathId": "-2802781245273507780",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00020_Texture2D_LMTYStickNormalCombinedSmall.png"
+      },
+      {
+        "index": 21,
+        "type": "Mesh",
+        "pathId": "-2738417110629585175",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00021_Mesh_LMTYStick.001.json",
+        "mesh": "unity_assets/0000_LetMeTameYou.lmty_assets/00021_Mesh_LMTYStick.001.obj"
+      },
+      {
+        "index": 22,
+        "type": "GameObject",
+        "pathId": "-2398715659923944291",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00022_GameObject_TamingStick.json"
+      },
+      {
+        "index": 23,
+        "type": "MonoBehaviour",
+        "pathId": "-2179744616865472330",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00023_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 24,
+        "type": "Texture2D",
+        "pathId": "-2071691724490353217",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00024_Texture2D_LMTYStickSpec.png"
+      },
+      {
+        "index": 25,
+        "type": "BoxCollider",
+        "pathId": "-1713858751931311857",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00025_BoxCollider_00025_BoxCollider.json"
+      },
+      {
+        "index": 26,
+        "type": "Material",
+        "pathId": "-1595017369407133874",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00026_Material_LMTYStickAlphaTest.json"
+      },
+      {
+        "index": 27,
+        "type": "MonoBehaviour",
+        "pathId": "-1282883312166926902",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00027_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 28,
+        "type": "GameObject",
+        "pathId": "-1260455158007988758",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00028_GameObject_LMTY_TamingTool.json"
+      },
+      {
+        "index": 29,
+        "type": "Rigidbody",
+        "pathId": "-711060219038796087",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00029_Rigidbody_00029_Rigidbody.json"
+      },
+      {
+        "index": 30,
+        "type": "AssetBundle",
+        "pathId": "1",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00030_AssetBundle_lmty_assets.json"
+      },
+      {
+        "index": 31,
+        "type": "Shader",
+        "pathId": "89324583943775895",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00031_Shader_unnamed.json"
+      },
+      {
+        "index": 32,
+        "type": "Transform",
+        "pathId": "912519225330899964",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00032_Transform_00032_Transform.json"
+      },
+      {
+        "index": 33,
+        "type": "Sprite",
+        "pathId": "1031200657461445095",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00033_Sprite_tamingtool.png"
+      },
+      {
+        "index": 34,
+        "type": "GameObject",
+        "pathId": "1194892700068173884",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00034_GameObject_attach.json"
+      },
+      {
+        "index": 35,
+        "type": "MeshFilter",
+        "pathId": "1332066325252503773",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00035_MeshFilter_00035_MeshFilter.json"
+      },
+      {
+        "index": 36,
+        "type": "GameObject",
+        "pathId": "1855051983229156857",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00036_GameObject_collider.json"
+      },
+      {
+        "index": 37,
+        "type": "ParticleSystem",
+        "pathId": "2907436768670406010",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00037_ParticleSystem_00037_ParticleSystem.json"
+      },
+      {
+        "index": 38,
+        "type": "Texture2D",
+        "pathId": "3128912771433658546",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00038_Texture2D_tamingtool.png"
+      },
+      {
+        "index": 39,
+        "type": "GameObject",
+        "pathId": "3680752095752745093",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00039_GameObject_attach.json"
+      },
+      {
+        "index": 40,
+        "type": "Rigidbody",
+        "pathId": "4075783952233880069",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00040_Rigidbody_00040_Rigidbody.json"
+      },
+      {
+        "index": 41,
+        "type": "MonoBehaviour",
+        "pathId": "4196159067935696004",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00041_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 42,
+        "type": "Material",
+        "pathId": "4467893445354652928",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00042_Material_LMTYStick.json"
+      },
+      {
+        "index": 43,
+        "type": "ParticleSystem",
+        "pathId": "4586685034417452220",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00043_ParticleSystem_00043_ParticleSystem.json"
+      },
+      {
+        "index": 44,
+        "type": "Transform",
+        "pathId": "4778104735068842861",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00044_Transform_00044_Transform.json"
+      },
+      {
+        "index": 45,
+        "type": "Shader",
+        "pathId": "4943423701212729458",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00045_Shader_unnamed.json"
+      },
+      {
+        "index": 46,
+        "type": "MeshRenderer",
+        "pathId": "4947187105966918028",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00046_MeshRenderer_00046_MeshRenderer.json"
+      },
+      {
+        "index": 47,
+        "type": "MonoBehaviour",
+        "pathId": "5085537835647792513",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00047_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 48,
+        "type": "Material",
+        "pathId": "5174628962119999810",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00048_Material_JVLmock_item_particle.json"
+      },
+      {
+        "index": 49,
+        "type": "GameObject",
+        "pathId": "5655801327854570194",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00049_GameObject_TamingStick.json"
+      },
+      {
+        "index": 50,
+        "type": "Shader",
+        "pathId": "6066598371517989514",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00050_Shader_Custom_Vegetation.json"
+      },
+      {
+        "index": 51,
+        "type": "Transform",
+        "pathId": "6177413767701056349",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00051_Transform_00051_Transform.json"
+      },
+      {
+        "index": 52,
+        "type": "MonoScript",
+        "pathId": "6339088040716100688",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00052_MonoScript_ZSyncTransform.json"
+      },
+      {
+        "index": 53,
+        "type": "Sprite",
+        "pathId": "6660897017818528663",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00053_Sprite_NewChickenEgg.png"
+      },
+      {
+        "index": 54,
+        "type": "GameObject",
+        "pathId": "6967988756625867017",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00054_GameObject_LMTY_TamingTooTest1.json"
+      },
+      {
+        "index": 55,
+        "type": "Material",
+        "pathId": "7196409882079820079",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00055_Material_LMTYStickAlpha.json"
+      },
+      {
+        "index": 56,
+        "type": "MonoScript",
+        "pathId": "7327573337360734397",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00056_MonoScript_Floating.json"
+      },
+      {
+        "index": 57,
+        "type": "MonoBehaviour",
+        "pathId": "7337749255747052043",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00057_MonoBehaviour_unnamed.json"
+      },
+      {
+        "index": 58,
+        "type": "Texture2D",
+        "pathId": "7420537356336560937",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00058_Texture2D_NewDragonEgg.png"
+      },
+      {
+        "index": 59,
+        "type": "Transform",
+        "pathId": "7540311576752983218",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00059_Transform_00059_Transform.json"
+      },
+      {
+        "index": 60,
+        "type": "Texture2D",
+        "pathId": "7740393368292195206",
+        "file": "unity_assets/0000_LetMeTameYou.lmty_assets/00060_Texture2D_LMTYStickSmall.png"
+      },
+      {
+        "index": 61,
+        "type": "ParticleSystemRenderer",
+        "pathId": "8787795989032434509",
+        "typetree": "unity_assets/0000_LetMeTameYou.lmty_assets/00061_ParticleSystemRenderer_00061_ParticleSystemRenderer.json"
+      }
+    ],
+    "errors": []
+  }
+]

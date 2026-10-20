@@ -1,0 +1,14 @@
+namespace YamlDotNet.Core.Tokens;
+
+internal sealed class _003C02cc0f8e_002Dc0d1_002D47cc_002D8c27_002Dc121cf2ad4c9_003EFlowMappingStart : _003Cf0484293_002Dc2f9_002D46d3_002Dbedc_002D375db65eb72f_003EToken
+{
+	public _003C02cc0f8e_002Dc0d1_002D47cc_002D8c27_002Dc121cf2ad4c9_003EFlowMappingStart()
+		: this(in _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark.Empty, in _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark.Empty)
+	{
+	}
+
+	public _003C02cc0f8e_002Dc0d1_002D47cc_002D8c27_002Dc121cf2ad4c9_003EFlowMappingStart(in _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark start, in _003Ce5bc99aa_002D79b4_002D461f_002D9c4d_002D5af7da5eb1b8_003EMark end)
+		: base(in start, in end)
+	{
+	}
+}

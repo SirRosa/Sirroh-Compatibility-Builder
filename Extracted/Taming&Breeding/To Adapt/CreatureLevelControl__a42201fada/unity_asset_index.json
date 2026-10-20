@@ -1,0 +1,166 @@
+[
+  {
+    "source": "0006_CreatureLevelControl.assets.cllc_vfx",
+    "objects": [
+      {
+        "index": 0,
+        "type": "GameObject",
+        "pathId": "-8715636831619945659",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00000_GameObject_CLLC_Eff.json"
+      },
+      {
+        "index": 1,
+        "type": "ParticleSystem",
+        "pathId": "-8075536264292357824",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00001_ParticleSystem_00001_ParticleSystem.json"
+      },
+      {
+        "index": 2,
+        "type": "Material",
+        "pathId": "-7963907286071434616",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00002_Material_Trail48cg.json"
+      },
+      {
+        "index": 3,
+        "type": "Texture2D",
+        "pathId": "-7757630129681056783",
+        "file": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00003_Texture2D_Ice2.png"
+      },
+      {
+        "index": 4,
+        "type": "Material",
+        "pathId": "-7333432679192460894",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00004_Material_Ice3.json"
+      },
+      {
+        "index": 5,
+        "type": "Transform",
+        "pathId": "-7226785898658612445",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00005_Transform_00005_Transform.json"
+      },
+      {
+        "index": 6,
+        "type": "ParticleSystemRenderer",
+        "pathId": "-6813724575973254652",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00006_ParticleSystemRenderer_00006_ParticleSystemRenderer.json"
+      },
+      {
+        "index": 7,
+        "type": "Texture2D",
+        "pathId": "-5057468317463985418",
+        "file": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00007_Texture2D_Trail58.png"
+      },
+      {
+        "index": 8,
+        "type": "Texture2D",
+        "pathId": "-4646834378953846735",
+        "file": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00008_Texture2D_Gradient17.png"
+      },
+      {
+        "index": 9,
+        "type": "GameObject",
+        "pathId": "-4272152137561318532",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00009_GameObject_Smoke.json"
+      },
+      {
+        "index": 10,
+        "type": "Transform",
+        "pathId": "-3912571066487109049",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00010_Transform_00010_Transform.json"
+      },
+      {
+        "index": 11,
+        "type": "ParticleSystemRenderer",
+        "pathId": "-1586521616971095747",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00011_ParticleSystemRenderer_00011_ParticleSystemRenderer.json"
+      },
+      {
+        "index": 12,
+        "type": "GameObject",
+        "pathId": "-375372474729895596",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00012_GameObject_Scaler.json"
+      },
+      {
+        "index": 13,
+        "type": "AssetBundle",
+        "pathId": "1",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00013_AssetBundle_cllc_vfx.json"
+      },
+      {
+        "index": 14,
+        "type": "Shader",
+        "pathId": "2391109734448446470",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00014_Shader_unnamed.json"
+      },
+      {
+        "index": 15,
+        "type": "Material",
+        "pathId": "2400458477577888684",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00015_Material_Gradient17cg2.json"
+      },
+      {
+        "index": 16,
+        "type": "Texture2D",
+        "pathId": "2506895321784075383",
+        "file": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00016_Texture2D_Gradient3r.png"
+      },
+      {
+        "index": 17,
+        "type": "Mesh",
+        "pathId": "3276229400515869524",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00017_Mesh_EGACrystalPiese.json",
+        "mesh": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00017_Mesh_EGACrystalPiese.obj"
+      },
+      {
+        "index": 18,
+        "type": "Texture2D",
+        "pathId": "3554895233995225250",
+        "file": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00018_Texture2D_Trail48.png"
+      },
+      {
+        "index": 19,
+        "type": "GameObject",
+        "pathId": "3916293812648289931",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00019_GameObject_eff.json"
+      },
+      {
+        "index": 20,
+        "type": "Transform",
+        "pathId": "5878907374660627551",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00020_Transform_00020_Transform.json"
+      },
+      {
+        "index": 21,
+        "type": "Mesh",
+        "pathId": "6289505209069268440",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00021_Mesh_QuadToCircle.json",
+        "mesh": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00021_Mesh_QuadToCircle.obj"
+      },
+      {
+        "index": 22,
+        "type": "Transform",
+        "pathId": "6643908347596120576",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00022_Transform_00022_Transform.json"
+      },
+      {
+        "index": 23,
+        "type": "ParticleSystem",
+        "pathId": "7296985840847850153",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00023_ParticleSystem_00023_ParticleSystem.json"
+      },
+      {
+        "index": 24,
+        "type": "Shader",
+        "pathId": "7372847635757022675",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00024_Shader_unnamed.json"
+      },
+      {
+        "index": 25,
+        "type": "Shader",
+        "pathId": "8702488859957822594",
+        "typetree": "unity_assets/0006_CreatureLevelControl.assets.cllc_vfx/00025_Shader_unnamed.json"
+      }
+    ],
+    "errors": []
+  }
+]

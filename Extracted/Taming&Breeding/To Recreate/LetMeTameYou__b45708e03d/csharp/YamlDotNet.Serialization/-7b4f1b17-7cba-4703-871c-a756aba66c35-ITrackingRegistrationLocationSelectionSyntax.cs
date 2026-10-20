@@ -1,0 +1,8 @@
+using System.Runtime.CompilerServices;
+
+namespace YamlDotNet.Serialization;
+
+internal interface _003C7b4f1b17_002D7cba_002D4703_002D871c_002Da756aba66c35_003EITrackingRegistrationLocationSelectionSyntax<[_003Cc9216621_002D2aa3_002D4985_002Db7b7_002D77b5f3db303b_003ENullable(2)] TBaseRegistrationType>
+{
+	void InsteadOf<TRegistrationType>() where TRegistrationType : TBaseRegistrationType;
+}
