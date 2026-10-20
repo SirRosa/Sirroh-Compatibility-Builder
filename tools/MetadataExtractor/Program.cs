@@ -58,7 +58,7 @@ try
 {
     using var asm = AssemblyDefinition.ReadAssembly(input, new ReaderParameters
     {
-        ReadSymbols = false, InMemory = true, ReadingMode = ReadingMode.Immediate
+        ReadSymbols = false, InMemory = true, ReadingMode = ReadingMode.Deferred
     });
     var methods = new List<object>();
     var types = new List<object>();
