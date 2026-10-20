@@ -34,13 +34,23 @@ static object? ArgValue(CustomAttributeArgument a)
 }
 static object AttributeInfo(CustomAttribute a)
 {
-    return new
+    // Cecil sometimes needs unavailable BepInEx/Valheim dependencies to deserialize
+    // enum-valued attribute arguments. Never discard the rest of an assembly for this.
+    try
     {
-        name = a.AttributeType.FullName,
-        arguments = a.ConstructorArguments.Select(ArgValue).ToArray(),
-        properties = a.Properties.Select(p => new { name = p.Name, value = ArgValue(p.Argument) }).ToArray(),
-        fields = a.Fields.Select(f => new { name = f.Name, value = ArgValue(f.Argument) }).ToArray()
-    };
+        return new
+        {
+            name = a.AttributeType.FullName,
+            arguments = a.ConstructorArguments.Select(ArgValue).ToArray(),
+            properties = a.Properties.Select(p => new { name = p.Name, value = ArgValue(p.Argument) }).ToArray(),
+            fields = a.Fields.Select(f => new { name = f.Name, value = ArgValue(f.Argument) }).ToArray()
+        };
+    }
+    catch (Exception e)
+    {
+        return new { name = a.AttributeType.FullName,
+                     unresolvedArguments = true, reason = e.Message };
+    }
 }
 static string Hash(byte[] b) => Convert.ToHexString(SHA256.HashData(b)).ToLowerInvariant();
 
