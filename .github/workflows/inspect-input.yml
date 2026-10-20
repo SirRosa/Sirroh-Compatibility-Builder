@@ -1,0 +1,43 @@
+name: Inspect compatibility archive
+
+on:
+  push:
+    paths:
+      - 'SirrohOverhaul_Compatibility_Set.zip'
+      - '.github/workflows/inspect-input.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect archive entries and unpack safely
+        shell: python
+        run: |
+          import zipfile, pathlib, collections, json, hashlib
+          src = pathlib.Path("SirrohOverhaul_Compatibility_Set.zip")
+          root = pathlib.Path("inspected_input")
+          root.mkdir(exist_ok=True)
+          with zipfile.ZipFile(src) as z:
+              entries = z.infolist()
+              print(f"ARCHIVE {src}: {len(entries)} entries")
+              for entry in entries:
+                  p = pathlib.PurePosixPath(entry.filename.replace("\\", "/"))
+                  if p.is_absolute() or ".." in p.parts:
+                      print("SKIP UNSAFE PATH", entry.filename)
+                      continue
+                  print(f"FILE {entry.file_size:>12} {entry.filename}")
+                  if not entry.is_dir():
+                      destination = root.joinpath(*p.parts)
+                      destination.parent.mkdir(parents=True, exist_ok=True)
+                      with z.open(entry) as inp, destination.open("wb") as out:
+                          import shutil
+                          shutil.copyfileobj(inp, out)
+          files = [p for p in root.rglob("*") if p.is_file()]
+          print("FILE COUNT", len(files))
+          print("BY EXTENSION", dict(collections.Counter(p.suffix.lower() for p in files)))
+          print("SHA256 ZIP", hashlib.sha256(src.read_bytes()).hexdigest())
