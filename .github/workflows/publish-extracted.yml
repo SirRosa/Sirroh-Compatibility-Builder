@@ -1,0 +1,99 @@
+name: Publish extracted mods to repository
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/publish-extracted.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install extractor tooling
+        shell: bash
+        run: |
+          dotnet tool install ilspycmd --tool-path "$RUNNER_TEMP/ilspy"
+          dotnet build tools/MetadataExtractor/MetadataExtractor.csproj --configuration Release
+          python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Extract every DLL
+        shell: bash
+        run: |
+          python scripts/extract_all.py \
+            --input SirrohOverhaul_Compatibility_Set.zip \
+            --output extracted-analysis \
+            --ilspy "$RUNNER_TEMP/ilspy/ilspycmd" \
+            --metadata "tools/MetadataExtractor/bin/Release/net8.0/MetadataExtractor.dll" \
+            --unity
+      - name: Preserve original grouping and verify extracted data
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, shutil
+          src = pathlib.Path("extracted-analysis")
+          dest = pathlib.Path("Extracted")
+          data = json.loads((src / "manifest.json").read_text(encoding="utf8"))
+          if data["dllCount"] != 20:
+              raise RuntimeError(f"Expected 20 DLLs; got {data['dllCount']}")
+          if len(data["mods"]) != 20:
+              raise RuntimeError("Missing DLL results")
+          bad = [x["originalPath"] for x in data["mods"] if not
+                 (x.get("steps",{}).get("decompile",{}).get("ok") and
+                  x.get("steps",{}).get("metadata",{}).get("ok"))]
+          if bad:
+              raise RuntimeError(f"Incomplete extraction, not publishing: {bad}")
+          if dest.exists():
+              shutil.rmtree(dest)
+          shutil.copytree(src / "mods", dest)
+          shutil.copy2(src / "SUMMARY.md", dest / "SUMMARY.md")
+          shutil.copy2(src / "manifest.json", dest / "manifest.json")
+          (dest / "README.md").write_text(
+              "# Decompiled mod analysis\n\n"
+              "Folders retain the categories and To Adapt / To Recreate organization "
+              "of the input archive. Each mod folder contains reconstructed C# files, "
+              "IL, managed metadata, embedded resources and available Unity assets.\n\n"
+              "Recovered third-party material is intended for interoperability research; "
+              "it is not the original author-maintained source code. Refer to the original "
+              "mods and their licenses before redistribution.\n",
+              encoding="utf8"
+          )
+          entries = [x for x in dest.rglob("*") if x.is_file()]
+          print(f"Publishing {len(entries)} files in {len(data['mods'])} mod folders")
+          for x in data["mods"]:
+              path = dest / pathlib.Path(x["originalPath"]).parent / (
+                  pathlib.Path(x["originalPath"]).stem + "__" + x["sha256"][:10])
+              if not (path / "csharp").is_dir() or not (path / "metadata" / "metadata.json").is_file():
+                  raise RuntimeError(f"Incomplete output folder: {path}")
+          PY
+      - name: Commit extracted sources and assets on main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- Extracted
+          if git diff --cached --quiet; then
+            echo "No changes; extraction already on main"
+          else
+            git commit -m "data: publish 20 reconstructed mod source and asset directories"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          echo "### Published repository contents" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Folder: \`Extracted/\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- DLLs: 20" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: \`$(git rev-parse HEAD)\`" >> "$GITHUB_STEP_SUMMARY"
