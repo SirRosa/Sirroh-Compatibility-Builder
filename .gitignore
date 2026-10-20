@@ -1,0 +1,7 @@
+# Recovered third-party source code and binary resources belong in CI artifacts, not Git history.
+/extracted-analysis/
+/inspected_input/
+__pycache__/
+*.pyc
+**/bin/
+**/obj/

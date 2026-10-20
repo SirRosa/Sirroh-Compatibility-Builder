@@ -1,0 +1,53 @@
+name: Bulk decompile Valheim mod DLLs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'SirrohOverhaul_Compatibility_Set.zip'
+      - 'scripts/extract_all.py'
+      - 'tools/MetadataExtractor/**'
+      - 'requirements.txt'
+      - '.github/workflows/extract-all.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ILSpy and compile Mono.Cecil extractor
+        run: |
+          dotnet tool install ilspycmd --tool-path "$RUNNER_TEMP/ilspy"
+          dotnet build tools/MetadataExtractor/MetadataExtractor.csproj --configuration Release
+      - name: Install Unity asset extraction dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Bulk extract 20 DLLs
+        shell: bash
+        run: |
+          python scripts/extract_all.py \
+            --input SirrohOverhaul_Compatibility_Set.zip \
+            --output extracted-analysis \
+            --ilspy "$RUNNER_TEMP/ilspy/ilspycmd" \
+            --metadata "tools/MetadataExtractor/bin/Release/net8.0/MetadataExtractor.dll" \
+            --unity
+      - name: Publish complete extraction as downloadable artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compatibility-source-and-assets
+          path: extracted-analysis/
+          if-no-files-found: warn
+          retention-days: 30
+          compression-level: 6
