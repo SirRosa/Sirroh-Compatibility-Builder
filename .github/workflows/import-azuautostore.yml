@@ -1,0 +1,102 @@
+name: Import and decompile AzuAutoStore 3.1.7
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-azuautostore.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-azuautostore
+  cancel-in-progress: false
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download exact official Hexium package and verify the user-supplied DLL hash
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLSs --retry 3 --connect-timeout 20             'https://cdn.hexium.gg/upload/12/3.1.7.zip' -o "$RUNNER_TEMP/azu-3.1.7.zip"
+          python - "$RUNNER_TEMP/azu-3.1.7.zip" "$RUNNER_TEMP/azu-for-extraction.zip" <<'PY'
+          import hashlib, pathlib, sys, zipfile
+          upstream, output = map(pathlib.Path, sys.argv[1:])
+          expected = "a609e7209832fb96af11fe3a0f6c499d4ed54f599289d23df0826a51bde640ee"
+          with zipfile.ZipFile(upstream) as package:
+              matches = [x for x in package.infolist()
+                         if not x.is_dir() and pathlib.PurePosixPath(x.filename).name == "AzuAutoStore.dll"]
+              if len(matches) != 1:
+                  raise RuntimeError(f"Expected exactly one AzuAutoStore.dll, found {len(matches)}")
+              if matches[0].file_size > 2_000_000:
+                  raise RuntimeError("Unexpected DLL size")
+              content = package.read(matches[0])
+          sha = hashlib.sha256(content).hexdigest()
+          print(f"Official package DLL SHA-256: {sha}, bytes={len(content)}")
+          if sha != expected:
+              raise RuntimeError("Hexium DLL differs from user upload: aborting")
+          with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+              archive.writestr("QOL/To Adapt/AzuAutoStore.dll", content)
+          PY
+      - name: Install ILSpy and metadata extractor
+        shell: bash
+        run: |
+          set -euo pipefail
+          dotnet tool install ilspycmd --tool-path "$RUNNER_TEMP/ilspy"
+          dotnet build tools/MetadataExtractor/MetadataExtractor.csproj -c Release
+          python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Decompile verified assembly
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/extract_all.py             --input "$RUNNER_TEMP/azu-for-extraction.zip"             --output "$RUNNER_TEMP/azu-extracted"             --ilspy "$RUNNER_TEMP/ilspy/ilspycmd"             --metadata "tools/MetadataExtractor/bin/Release/net8.0/MetadataExtractor.dll"             --unity
+      - name: Validate and publish only AzuAutoStore extraction (preserve existing mods)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "$RUNNER_TEMP/azu-extracted" <<'PY'
+          import json, pathlib, shutil, sys
+          src = pathlib.Path(sys.argv[1])
+          manifest = json.loads((src / "manifest.json").read_text())
+          if manifest.get("dllCount") != 1 or len(manifest.get("mods", [])) != 1:
+              raise RuntimeError("Expected exactly one decompiled DLL")
+          mod = manifest["mods"][0]
+          if mod["sha256"] != "a609e7209832fb96af11fe3a0f6c499d4ed54f599289d23df0826a51bde640ee":
+              raise RuntimeError("Extraction digest differs from uploaded DLL")
+          for stage in ("decompile", "metadata"):
+              if not mod["steps"][stage].get("ok"):
+                  raise RuntimeError(f"{stage} failed: {mod['steps'][stage]}")
+          rel = pathlib.Path(mod["output"]).relative_to("mods")
+          source = src / mod["output"]
+          dest = pathlib.Path("Extracted") / rel
+          if not (source / "csharp").is_dir() or not (source / "metadata" / "instructions.il").is_file():
+              raise RuntimeError("Output missing C# or IL")
+          if dest.exists():
+              shutil.rmtree(dest)
+          dest.parent.mkdir(parents=True, exist_ok=True)
+          shutil.copytree(source, dest)
+          print(f"Published: {dest}")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "Extracted/QOL/To Adapt/AzuAutoStore__a609e72098"
+          if git diff --cached --quiet; then
+            echo "Extracted DLL already unchanged"
+          else
+            git commit -m "data: decompile verified AzuAutoStore 3.1.7 assembly"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
