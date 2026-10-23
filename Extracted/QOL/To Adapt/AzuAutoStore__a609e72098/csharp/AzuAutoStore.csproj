@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>AzuAutoStore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="AzuAutoStore.Example.yml" />
+    <None Remove="AzuAutoStore.translations.English.yml" />
+    <None Remove="AzuAutoStore.assets.border.png" />
+    <None Remove="ILRepack.List" />
+    <EmbeddedResource Include="AzuAutoStore.Example.yml" LogicalName="AzuAutoStore.Example.yml" />
+    <EmbeddedResource Include="AzuAutoStore.translations.English.yml" LogicalName="AzuAutoStore.translations.English.yml" />
+    <EmbeddedResource Include="AzuAutoStore.assets.border.png" LogicalName="AzuAutoStore.assets.border.png" />
+    <EmbeddedResource Include="ILRepack.List" LogicalName="ILRepack.List" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="BepInEx" />
+    <Reference Include="assembly_guiutils" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.13/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony" />
+    <Reference Include="assembly_valheim" />
+    <Reference Include="assembly_utils" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="BepInEx" />
+  </ItemGroup>
+</Project>
